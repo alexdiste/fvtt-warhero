@@ -3,17 +3,17 @@
  * @extends {ActorSheet}
  */
 
-import { CrucibleUtility } from "./crucible-utility.js";
+import { WarheroUtility } from "./warhero-utility.js";
 
 /* -------------------------------------------- */
-export class CrucibleActorSheet extends ActorSheet {
+export class WarheroActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
 
     return mergeObject(super.defaultOptions, {
-      classes: ["fvtt-crucible-rpg", "sheet", "actor"],
-      template: "systems/fvtt-crucible-rpg/templates/actor-sheet.html",
+      classes: ["fvtt-warhero", "sheet", "actor"],
+      template: "systems/fvtt-warhero/templates/actor-sheet.html",
       width: 960,
       height: 720,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }],
@@ -46,13 +46,10 @@ export class CrucibleActorSheet extends ActorSheet {
       equippedWeapons: this.actor.checkAndPrepareEquipments(duplicate(this.actor.getEquippedWeapons()) ),
       equippedArmor: this.actor.getEquippedArmor(),
       equippedShield: this.actor.getEquippedShield(),
-      feats: duplicate(this.actor.getFeats()),
       subActors: duplicate(this.actor.getSubActors()),
       race: duplicate(this.actor.getRace()),
       moneys: duplicate(this.actor.getMoneys()),
       encCapacity: this.actor.getEncumbranceCapacity(),
-      saveRolls: this.actor.getSaveRoll(),
-      conditions: this.actor.getConditions(),
       description: await TextEditor.enrichHTML(this.object.system.biodata.description, {async: true}),
       notes: await TextEditor.enrichHTML(this.object.system.biodata.notes, {async: true}),
       containersTree: this.actor.containersTree,
@@ -91,7 +88,7 @@ export class CrucibleActorSheet extends ActorSheet {
     // Delete Inventory Item
     html.find('.item-delete').click(ev => {
       const li = $(ev.currentTarget).parents(".item")
-      CrucibleUtility.confirmDelete(this, li)
+      WarheroUtility.confirmDelete(this, li)
     })
     html.find('.item-add').click(ev => {
       let dataType = $(ev.currentTarget).data("type")

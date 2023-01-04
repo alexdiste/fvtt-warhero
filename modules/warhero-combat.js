@@ -1,7 +1,7 @@
-import { CrucibleUtility } from "./crucible-utility.js";
+import { WarheroUtility } from "./warhero-utility.js";
 
 /* -------------------------------------------- */
-export class CrucibleCombat extends Combat {
+export class WarheroCombat extends Combat {
   
   /* -------------------------------------------- */
   async rollInitiative(ids, formula = undefined, messageOptions = {} ) {

@@ -1,3 +1,13 @@
 {
-  
+  "WH.conf.short": "Short",
+  "WH.conf.long": "Long",
+  "WH.conf.twohanded": "Two-Handed",
+  "WH.conf.shooting": "Shooting",
+  "WH.conf.throwing": "Throwing",
+  "WH.conf.lightarmor" : "Light",
+  "WH.conf.mediumarmor": "Medium",
+  "WH.conf.heavyarmor": "Heavy", 
+  "WH.conf.lightshield": "Light",
+  "WH.conf.mediumshield": "Medium",
+  "WH.conf.towershield": "Tower"
 }

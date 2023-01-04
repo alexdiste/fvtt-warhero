@@ -1,8 +1,8 @@
 
-export class CrucibleHotbar {
+export class WarheroHotbar {
 
   static async addToHotbar(item, slot) {
-    let command = `game.system.cruciblerpg.CrucibleHotbar.rollMacro("${item.name}", "${item.type}");`;
+    let command = `game.system.cruciblerpg.WarheroHotbar.rollMacro("${item.name}", "${item.type}");`;
     let macro = game.macros.contents.find(m => (m.name === item.name) && (m.command === command));
     if (!macro) {
       macro = await Macro.create({

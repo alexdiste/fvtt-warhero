@@ -1,5 +1,5 @@
 /**
- * Crucible system
+ * Warhero system
  * Author: Uberwald
  * Software License: Prop
  */
@@ -8,15 +8,15 @@
 
 /* -------------------------------------------- */
 // Import Modules
-import { CrucibleActor } from "./crucible-actor.js";
-import { CrucibleItemSheet } from "./crucible-item-sheet.js";
-import { CrucibleActorSheet } from "./crucible-actor-sheet.js";
-import { CrucibleNPCSheet } from "./crucible-npc-sheet.js";
-import { CrucibleUtility } from "./crucible-utility.js";
-import { CrucibleCombat } from "./crucible-combat.js";
-import { CrucibleItem } from "./crucible-item.js";
-import { CrucibleHotbar } from "./crucible-hotbar.js"
-import { CrucibleCommands } from "./crucible-commands.js"
+import { WarheroActor } from "./warhero-actor.js";
+import { WarheroItemSheet } from "./warhero-item-sheet.js";
+import { WarheroActorSheet } from "./warhero-actor-sheet.js";
+import { WarheroNPCSheet } from "./warhero-npc-sheet.js";
+import { WarheroUtility } from "./warhero-utility.js";
+import { WarheroCombat } from "./warhero-combat.js";
+import { WarheroItem } from "./warhero-item.js";
+import { WarheroHotbar } from "./warhero-hotbar.js"
+import { WarheroCommands } from "./warhero-commands.js"
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
@@ -25,16 +25,16 @@ import { CrucibleCommands } from "./crucible-commands.js"
 /************************************************************************************/
 Hooks.once("init", async function () {
 
-  console.log(`Initializing Crucible RPG`);
+  console.log(`Initializing Warhero RPG`);
   
   game.system.cruciblerpg = {
-    CrucibleHotbar,
-    CrucibleCommands
+    WarheroHotbar,
+    WarheroCommands
   }
 
   /* -------------------------------------------- */
   // preload handlebars templates
-  CrucibleUtility.preloadHandlebarsTemplates();
+  WarheroUtility.preloadHandlebarsTemplates();
 
   /* -------------------------------------------- */
   // Set an initiative formula for the system 
@@ -44,27 +44,27 @@ Hooks.once("init", async function () {
   };
 
   /* -------------------------------------------- */
-  game.socket.on("system.fvtt-crucible-rpg", data => {
-    CrucibleUtility.onSocketMesssage(data)
+  game.socket.on("system.fvtt-warhero", data => {
+    WarheroUtility.onSocketMesssage(data)
   });
 
   /* -------------------------------------------- */
   // Define custom Entity classes
-  CONFIG.Combat.documentClass = CrucibleCombat
-  CONFIG.Actor.documentClass = CrucibleActor
-  CONFIG.Item.documentClass = CrucibleItem
-  //CONFIG.Token.objectClass = CrucibleToken
+  CONFIG.Combat.documentClass = WarheroCombat
+  CONFIG.Actor.documentClass = WarheroActor
+  CONFIG.Item.documentClass = WarheroItem
+  //CONFIG.Token.objectClass = WarheroToken
 
   /* -------------------------------------------- */
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("fvtt-crucible", CrucibleActorSheet, { types: ["character"], makeDefault: true });
-  Actors.registerSheet("fvtt-crucible", CrucibleNPCSheet, { types: ["npc"], makeDefault: false });
+  Actors.registerSheet("fvtt-crucible", WarheroActorSheet, { types: ["character"], makeDefault: true });
+  Actors.registerSheet("fvtt-crucible", WarheroNPCSheet, { types: ["npc"], makeDefault: false });
 
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("fvtt-crucible", CrucibleItemSheet, { makeDefault: true });
+  Items.registerSheet("fvtt-crucible", WarheroItemSheet, { makeDefault: true });
 
-  CrucibleUtility.init()
+  WarheroUtility.init()
 });
 
 /* -------------------------------------------- */
@@ -73,7 +73,7 @@ function welcomeMessage() {
     user: game.user.id,
     whisper: [game.user.id],
     content: `<div id="welcome-message-crucible"><span class="rdd-roll-part">
-    <strong>Welcome to the Crucible RPG.</strong>
+    <strong>Welcome to the Warhero RPG.</strong>
     ` });
 }
 
@@ -98,9 +98,9 @@ Hooks.once("ready", function () {
   }
 
   welcomeMessage();
-  CrucibleUtility.ready()
-  CrucibleCommands.init()
-  CrucibleHotbar.initDropbar()
+  WarheroUtility.ready()
+  WarheroCommands.init()
+  WarheroHotbar.initDropbar()
 
 })
 

@@ -1,19 +1,19 @@
 /* -------------------------------------------- */
 
-import { CrucibleUtility } from "./crucible-utility.js";
-import { CrucibleRollDialog } from "./crucible-roll-dialog.js";
+import { WarheroUtility } from "./warhero-utility.js";
+import { WarheroRollDialog } from "./warhero-roll-dialog.js";
 
 /* -------------------------------------------- */
 const __saveFirstToKey = { r: "reflex", f: "fortitude", w: "willpower"}
 
 /* -------------------------------------------- */
-export class CrucibleCommands {
+export class WarheroCommands {
 
   static init() {
     if (!game.system.cruciblerpg.commands) {
-      const crucibleCommands = new CrucibleCommands();
-      crucibleCommands.registerCommand({ path: ["/rtarget"], func: (content, msg, params) => CrucibleCommands.rollTarget(msg, params), descr: "Launch the target roll window" });
-      crucibleCommands.registerCommand({ path: ["/rsave"], func: (content, msg, params) => CrucibleCommands.rollSave(msg, params), descr: "Performs a save roll" });
+      const crucibleCommands = new WarheroCommands();
+      crucibleCommands.registerCommand({ path: ["/rtarget"], func: (content, msg, params) => WarheroCommands.rollTarget(msg, params), descr: "Launch the target roll window" });
+      crucibleCommands.registerCommand({ path: ["/rsave"], func: (content, msg, params) => WarheroCommands.rollSave(msg, params), descr: "Performs a save roll" });
       game.system.cruciblerpg.commands = crucibleCommands;
     }
   }
@@ -93,7 +93,7 @@ export class CrucibleCommands {
     if (command && command.func) {
       const result = command.func(content, msg, params);
       if (result == false) {
-        CrucibleCommands._chatAnswer(msg, command.descr);
+        WarheroCommands._chatAnswer(msg, command.descr);
       }
       return true;
     }

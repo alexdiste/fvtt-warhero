@@ -102,66 +102,51 @@
    }
   },
   "Item": {
-    "types": [ "race", "skill", "armor", "shield", "equipment", "weapon", "money" , "feat", "spell", "condition", "poison"],
-    "poison": {
+    "types": [ "race", "weapon", "armor", "shield", "equipment", "money" , "skill", "power", "spell", "condition", "class"],
+    "condition": {
       "description": ""
     },
-    "condition": {
-      "advantage": false,
-      "disadvantage": false,
-      "rolladvantage": false,
-      "rolldisadvantage": false,
-      "loosehpround": false,
-      "loohproundvalue": 0,
-      "noadvantage": false,
-      "attackdisadvantage": false,
-      "defensedisadvantage": false,
-      "targetadvantage": false,
-      "noaction": false,
+    "class": {
+      "weapons": {
+        "short": false,
+        "long": false,
+        "twohanded": false,
+        "shotgun": false,  
+        "throwing": false  
+      },
+      "armors": {
+        "light": false,
+        "medium": false,
+        "heavy": false
+      },
+      "shields": {
+        "light": false,
+        "medium": false,
+        "tower": false
+      },
       "description": ""
     },
     "race": {
       "description": ""
     },
-    "feat": {
-      "isfeatdie": false,
-      "issl": false,
-      "sl": 0,
+    "skill": {
       "description": ""
     },
-    "skill": {
-      "ability": "",
-      "armorpenalty": false,
-      "isproficient": false,
-      "isweaponskill": false,
-      "isshieldskill": false,
-      "isfeatdie": false,
-      "issl2": false,
-      "islore": false,
-      "skilltype": "",
-      "isinnate": false,
-      "bonusdice": "",
-      "background": 0,
-      "basic": 0,
-      "class": 0,
-      "exp": 0,
-      "explevel": 0,
+    "weapon": {
+      "weapontype": "short",
+      "damage": "1d6",
+      "cost": 0,
+      "equipped": false,
       "description": ""
     },
     "armor": {
-      "armortype": "",
-      "absorprionroll": "",
-      "damagedroll": "",
-      "isproficient": false,
-      "minstr": 0,
-      "skillpenalty": 0,
+      "armortype": "light",
       "equipped": false,
       "cost": 0,
       "description":""
     },
     "shield": {
-      "shielddie": "",
-      "skill": "",
+      "shieldtype": "light",
       "equipped": false,
       "cost": 0,
       "description":""
@@ -176,23 +161,17 @@
       "containerid": "",
       "description":""
     },
+    "power": {
+      "level1": "",
+      "level2": "",
+      "level3": "",
+      "level4_1": "",
+      "level4_2": "",
+      "description": ""
+    },
     "money" : {
       "value": 0,
       "quantity": 0,
-      "description": ""
-    },
-    "weapon": {
-      "isproficient": false,
-      "skill": "",
-      "qualities": "",
-      "flaws": "",
-      "damage": "",
-      "isranged": false,
-      "range": "",
-      "maxrange": "",
-      "minstr": 0,
-      "cost": 0,
-      "equipped": false,
       "description": ""
     },
     "spell":{

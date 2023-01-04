@@ -18,33 +18,22 @@
 
         <div class="tab" data-group="primary">
           <ul>
-            <li class="flexrow"><label class="generic-label">Shield die</label>
-              <select class="competence-base flexrow" type="text" name="system.shielddie" value="{{data.shielddie}}" data-dtype="String">
-                {{#select data.shielddie}}
-                <option value="d6">d6</option>
-                <option value="d8">d8</option>
-                <option value="d10">d10</option>
-                {{/select}}
-              </select> 
-            </li>
-
-            <li class="flexrow"><label class="generic-label">Associated skill</label>
-              <select class="competence-base flexrow" type="text" name="system.skill" value="{{data.skill}}" data-dtype="String">
-                {{#select data.skill}}
-                  {{#each shieldSkills as |skill idx|}}
-                  <option value="{{skill.name}}">{{skill.name}}</option>
+            <li class="flexrow"><label class="generic-label">Shield typer</label>
+              <select class="competence-base flexrow" type="text" name="system.shieldtype" value="{{system.shieldtype}}" data-dtype="String">
+                {{#select system.shieldtype}}
+                  {{#each config.armorTypes as |type key|}}
+                    <option value="{{key}}">{{localiser type.label}}</option>
                   {{/each}}
                 {{/select}}
               </select> 
             </li>
-  
-  
+
             <li class="flexrow"><label class="generic-label">Equipped ?</label>
-              <label class="attribute-value checkbox"><input type="checkbox" name="system.equipped" {{checked data.equipped}}/></label>
+              <label class="attribute-value checkbox"><input type="checkbox" name="system.equipped" {{checked system.equipped}}/></label>
             </li>
 
             <li class="flexrow"><label class="generic-label">Cost</label>
-              <input type="text" class="input-numeric-short padd-right" name="system.cost" value="{{data.cost}}" data-dtype="Number"/>
+              <input type="text" class="input-numeric-short padd-right" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
             </li>
 
           </ul>

@@ -1,6 +1,6 @@
-import { CrucibleUtility } from "./crucible-utility.js";
+import { WarheroUtility } from "./warhero-utility.js";
 
 /* -------------------------------------------- */
-export class CrucibleToken extends Token {
+export class WarheroToken extends Token {
   
 }

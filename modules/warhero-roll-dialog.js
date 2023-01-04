@@ -1,14 +1,14 @@
-import { CrucibleUtility } from "./crucible-utility.js";
+import { WarheroUtility } from "./warhero-utility.js";
 
-export class CrucibleRollDialog extends Dialog {
+export class WarheroRollDialog extends Dialog {
 
   /* -------------------------------------------- */
   static async create(actor, rollData) {
 
-    let options = { classes: ["CrucibleDialog"], width: 540, height: 340, 'z-index': 99999 };
-    let html = await renderTemplate('systems/fvtt-crucible-rpg/templates/roll-dialog-generic.html', rollData);
+    let options = { classes: ["WarheroDialog"], width: 540, height: 340, 'z-index': 99999 };
+    let html = await renderTemplate('systems/fvtt-warhero/templates/roll-dialog-generic.html', rollData);
 
-    return new CrucibleRollDialog(actor, rollData, html, options);
+    return new WarheroRollDialog(actor, rollData, html, options);
   }
 
   /* -------------------------------------------- */
@@ -39,12 +39,12 @@ export class CrucibleRollDialog extends Dialog {
 
   /* -------------------------------------------- */
   roll() {
-    CrucibleUtility.rollCrucible(this.rollData)
+    WarheroUtility.rollWarhero(this.rollData)
   }
 
   /* -------------------------------------------- */
   async refreshDialog() {
-    const content = await renderTemplate("systems/fvtt-crucible-rpg/templates/roll-dialog-generic.html", this.rollData)
+    const content = await renderTemplate("systems/fvtt-warhero/templates/roll-dialog-generic.html", this.rollData)
     this.data.content = content
     this.render(true)
   }

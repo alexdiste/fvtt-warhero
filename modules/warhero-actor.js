@@ -1,6 +1,6 @@
 /* -------------------------------------------- */
-import { CrucibleUtility } from "./crucible-utility.js";
-import { CrucibleRollDialog } from "./crucible-roll-dialog.js";
+import { WarheroUtility } from "./warhero-utility.js";
+import { WarheroRollDialog } from "./warhero-roll-dialog.js";
 
 /* -------------------------------------------- */
 const coverBonusTable = { "nocover": 0, "lightcover": 2, "heavycover": 4, "entrenchedcover": 6 };
@@ -16,7 +16,7 @@ const __subkey2title = {
  * Extend the base Actor entity by defining a custom roll data structure which is ideal for the Simple system.
  * @extends {Actor}
  */
-export class CrucibleActor extends Actor {
+export class WarheroActor extends Actor {
 
   /* -------------------------------------------- */
   /**
@@ -43,7 +43,7 @@ export class CrucibleActor extends Actor {
     }
 
     if (data.type == 'character') {
-      const skills = await CrucibleUtility.loadCompendium("fvtt-crucible-rpg.skills");
+      const skills = await WarheroUtility.loadCompendium("fvtt-warhero.skills");
       data.items = skills.map(i => i.toObject())
     }
     if (data.type == 'npc') {
@@ -113,41 +113,41 @@ export class CrucibleActor extends Actor {
   /* -------------------------------------------- */
   getMoneys() {
     let comp = this.items.filter(item => item.type == 'money');
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getFeats() {
     let comp = duplicate(this.items.filter(item => item.type == 'feat') || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getFeatsWithDie() {
     let comp = duplicate(this.items.filter(item => item.type == 'feat' && item.system.isfeatdie) || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getFeatsWithSL() {
     let comp = duplicate(this.items.filter(item => item.type == 'feat' && item.system.issl) || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getLore() {
     let comp = duplicate(this.items.filter(item => item.type == 'spell') || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getEquippedWeapons() {
     let comp = duplicate(this.items.filter(item => item.type == 'weapon' && item.system.equipped) || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getArmors() {
     let comp = duplicate(this.items.filter(item => item.type == 'armor') || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getEquippedArmor() {
@@ -160,7 +160,7 @@ export class CrucibleActor extends Actor {
   /* -------------------------------------------- */
   getShields() {
     let comp = duplicate(this.items.filter(item => item.type == 'shield') || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getEquippedShield() {
@@ -190,13 +190,13 @@ export class CrucibleActor extends Actor {
   /* -------------------------------------------- */
   getConditions() {
     let comp = duplicate(this.items.filter(item => item.type == 'condition') || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getWeapons() {
     let comp = duplicate(this.items.filter(item => item.type == 'weapon') || []);
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
@@ -212,9 +212,9 @@ export class CrucibleActor extends Actor {
   getSkills() {
     let comp = duplicate(this.items.filter(item => item.type == 'skill') || [])
     for (let skill of comp) {
-      CrucibleUtility.updateSkill(skill)
+      WarheroUtility.updateSkill(skill)
     }
-    CrucibleUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByName(comp)
     return comp
   }
 
@@ -273,17 +273,17 @@ export class CrucibleActor extends Actor {
     return {
       reflex: {
         "label": "Reflex Save",
-        "img": "systems/fvtt-crucible-rpg/images/icons/saves/reflex_save.webp",
+        "img": "systems/fvtt-warhero/images/icons/saves/reflex_save.webp",
         "value": this.system.abilities.agi.value + this.system.abilities.wit.value
       },
       fortitude: {
         "label": "Fortitude Save",
-        "img": "systems/fvtt-crucible-rpg/images/icons/saves/fortitude_save.webp",
+        "img": "systems/fvtt-warhero/images/icons/saves/fortitude_save.webp",
         "value": this.system.abilities.str.value + this.system.abilities.con.value
       },
       willpower: {
         "label": "Willpower Save",
-        "img": "systems/fvtt-crucible-rpg/images/icons/saves/will_save.webp",
+        "img": "systems/fvtt-warhero/images/icons/saves/will_save.webp",
         "value": this.system.abilities.int.value + this.system.abilities.cha.value
       }
     }
@@ -309,7 +309,7 @@ export class CrucibleActor extends Actor {
     // Compute whole enc
     let enc = 0
     for (let item of equipments) {
-      //item.data.idrDice = CrucibleUtility.getDiceFromLevel(Number(item.data.idr))
+      //item.data.idrDice = WarheroUtility.getDiceFromLevel(Number(item.data.idr))
       if (item.system.equipped) {
         if (item.system.iscontainer) {
           enc += item.system.contentsEnc
@@ -343,8 +343,8 @@ export class CrucibleActor extends Actor {
 
   /* -------------------------------------------- */
   async incDecHP(formula) {
-    let dmgRoll = new Roll(formula+"[crucible-orange]").roll({ async: false })
-    await CrucibleUtility.showDiceSoNice(dmgRoll, game.settings.get("core", "rollMode"))
+    let dmgRoll = new Roll(formula+"[warhero-orange]").roll({ async: false })
+    await WarheroUtility.showDiceSoNice(dmgRoll, game.settings.get("core", "rollMode"))
     let hp = duplicate(this.system.secondary.hp)
     hp.value = Number(hp.value) + Number(dmgRoll.total)
     this.update({ 'system.secondary.hp': hp })
@@ -431,7 +431,7 @@ export class CrucibleActor extends Actor {
   /* -------------------------------------------- */
   syncRoll(rollData) {
     this.lastRollId = rollData.rollId;
-    CrucibleUtility.saveRollData(rollData);
+    WarheroUtility.saveRollData(rollData);
   }
 
   /* -------------------------------------------- */
@@ -540,7 +540,7 @@ export class CrucibleActor extends Actor {
       return
     }
 
-    let rollData = CrucibleUtility.getBasicRollData()
+    let rollData = WarheroUtility.getBasicRollData()
     rollData.alias = this.name
     rollData.actorImg = this.img
     rollData.actorId = this.id
@@ -600,7 +600,7 @@ export class CrucibleActor extends Actor {
       ui.notifications.warn("You are targetting a token with a skill : please use a Weapon instead.")
       return
     }
-    CrucibleUtility.rollCrucible(rollData)
+    WarheroUtility.rollWarhero(rollData)
   }
 
   /* -------------------------------------------- */
@@ -612,7 +612,7 @@ export class CrucibleActor extends Actor {
         return
       }
       skill = duplicate(skill)
-      CrucibleUtility.updateSkill(skill)
+      WarheroUtility.updateSkill(skill)
       let abilityKey = skill.system.ability
       let rollData = this.getCommonRollData(abilityKey)
       rollData.mode = "skill"
@@ -634,7 +634,7 @@ export class CrucibleActor extends Actor {
       let skill = this.items.find(item => item.name.toLowerCase() == weapon.system.skill.toLowerCase())
       if (skill) {
         skill = duplicate(skill)
-        CrucibleUtility.updateSkill(skill)
+        WarheroUtility.updateSkill(skill)
         let abilityKey = skill.system.ability
         let rollData = this.getCommonRollData(abilityKey)
         rollData.mode = "weapon"
@@ -644,8 +644,8 @@ export class CrucibleActor extends Actor {
         if (!rollData.forceDisadvantage) { // This is an attack, check if disadvantaged
           rollData.forceDisadvantage = this.isAttackDisadvantage()
         }
-        /*if (rollData.weapon.system.isranged && rollData.tokensDistance > CrucibleUtility.getWeaponMaxRange(rollData.weapon) ) {
-          ui.notifications.warn(`Your target is out of range of your weapon (max: ${CrucibleUtility.getWeaponMaxRange(rollData.weapon)}  - current : ${rollData.tokensDistance})` )
+        /*if (rollData.weapon.system.isranged && rollData.tokensDistance > WarheroUtility.getWeaponMaxRange(rollData.weapon) ) {
+          ui.notifications.warn(`Your target is out of range of your weapon (max: ${WarheroUtility.getWeaponMaxRange(rollData.weapon)}  - current : ${rollData.tokensDistance})` )
           return
         }*/
         this.startRoll(rollData)
@@ -663,7 +663,7 @@ export class CrucibleActor extends Actor {
       let skill = this.items.find(item => item.name.toLowerCase() == weapon.system.skill.toLowerCase())
       if (skill) {
         skill = duplicate(skill)
-        CrucibleUtility.updateSkill(skill)
+        WarheroUtility.updateSkill(skill)
         let abilityKey = skill.system.ability
         let rollData = this.getCommonRollData(abilityKey)
         rollData.defenderTokenId = undefined // Cleanup
@@ -693,10 +693,10 @@ export class CrucibleActor extends Actor {
     rollData.mode = "rangeddefense"
     if ( attackRollData) {
       rollData.attackRollData = duplicate(attackRollData)
-      rollData.effectiveRange = CrucibleUtility.getWeaponRange(attackRollData.weapon)
+      rollData.effectiveRange = WarheroUtility.getWeaponRange(attackRollData.weapon)
       rollData.tokensDistance = attackRollData.tokensDistance // QoL copy
     }
-    rollData.sizeDice = CrucibleUtility.getSizeDice(this.system.biodata.size)
+    rollData.sizeDice = WarheroUtility.getSizeDice(this.system.biodata.size)
     rollData.distanceBonusDice = 0 //Math.max(0, Math.floor((rollData.tokensDistance - rollData.effectiveRange) + 0.5))
     rollData.hasCover = "none"
     rollData.situational = "none"
@@ -731,36 +731,36 @@ export class CrucibleActor extends Actor {
       let messages = ["Armor applied"]
 
       if (rollData) {
-        if (CrucibleUtility.isArmorLight(armor) && CrucibleUtility.isWeaponPenetrating(rollData.attackRollData.weapon)) {
+        if (WarheroUtility.isArmorLight(armor) && WarheroUtility.isWeaponPenetrating(rollData.attackRollData.weapon)) {
           return { armorIgnored: true, nbSuccess: 0, messages: ["Armor ignored : Penetrating weapons ignore Light Armors."] }
         }
-        if (CrucibleUtility.isWeaponPenetrating(rollData.attackRollData.weapon)) {
+        if (WarheroUtility.isWeaponPenetrating(rollData.attackRollData.weapon)) {
           messages.push("Armor reduced by 1 (Penetrating weapon)")
           reduce = 1
         }
-        if (CrucibleUtility.isWeaponLight(rollData.attackRollData.weapon)) {
+        if (WarheroUtility.isWeaponLight(rollData.attackRollData.weapon)) {
           messages.push("Armor with advantage (Light weapon)")
           advantage = true
         }
-        if (CrucibleUtility.isWeaponHeavy(rollData.attackRollData.weapon)) {
+        if (WarheroUtility.isWeaponHeavy(rollData.attackRollData.weapon)) {
           messages.push("Armor with disadvantage (Heavy weapon)")
           disadvantage = true
         }
-        if (CrucibleUtility.isWeaponHack(rollData.attackRollData.weapon)) {
+        if (WarheroUtility.isWeaponHack(rollData.attackRollData.weapon)) {
           messages.push("Armor reduced by 1 (Hack weapon)")
           reduce = 1
         }
-        if (CrucibleUtility.isWeaponUndamaging(rollData.attackRollData.weapon)) {
+        if (WarheroUtility.isWeaponUndamaging(rollData.attackRollData.weapon)) {
           messages.push("Armor multiplied by 2 (Undamaging weapon)")
           multiply = 2
         }
       }
       let diceColor = armor.system.absorprionroll
-      let armorResult = await CrucibleUtility.getRollTableFromDiceColor(diceColor, false)
+      let armorResult = await WarheroUtility.getRollTableFromDiceColor(diceColor, false)
       console.log("Armor log", armorResult)
       let armorValue = Math.max(0, (Number(armorResult.text) + reduce) * multiply)
       if (advantage || disadvantage) {
-        let armorResult2 = await CrucibleUtility.getRollTableFromDiceColor(diceColor, false)
+        let armorResult2 = await WarheroUtility.getRollTableFromDiceColor(diceColor, false)
         let armorValue2 = Math.max(0, (Number(armorResult2.text) + reduce) * multiply)
         if (advantage) {
           armorValue = (armorValue2 > armorValue) ? armorValue2 : armorValue
@@ -801,7 +801,7 @@ export class CrucibleActor extends Actor {
   /* -------------------------------------------- */
   async startRoll(rollData) {
     this.syncRoll(rollData)
-    let rollDialog = await CrucibleRollDialog.create(this, rollData)
+    let rollDialog = await WarheroRollDialog.create(this, rollData)
     rollDialog.render(true)
   }
 

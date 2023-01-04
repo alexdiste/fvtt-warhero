@@ -3,17 +3,17 @@
  * @extends {ActorSheet}
  */
 
-import { CrucibleUtility } from "./crucible-utility.js";
+import { WarheroUtility } from "./warhero-utility.js";
 
 /* -------------------------------------------- */
-export class CrucibleNPCSheet extends ActorSheet {
+export class WarheroNPCSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
 
     return mergeObject(super.defaultOptions, {
-      classes: ["crucible-rpg", "sheet", "actor"],
-      template: "systems/fvtt-crucible-rpg/templates/npc-sheet.html",
+      classes: ["warhero-rpg", "sheet", "actor"],
+      template: "systems/fvtt-warhero/templates/npc-sheet.html",
       width: 640,
       height: 720,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "stats" }],
@@ -88,7 +88,7 @@ export class CrucibleNPCSheet extends ActorSheet {
     // Delete Inventory Item
     html.find('.item-delete').click(ev => {
       const li = $(ev.currentTarget).parents(".item")
-      CrucibleUtility.confirmDelete(this, li)
+      WarheroUtility.confirmDelete(this, li)
     })
     html.find('.item-add').click(ev => {
       let dataType = $(ev.currentTarget).data("type")

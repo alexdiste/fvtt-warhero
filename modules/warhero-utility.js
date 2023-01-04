@@ -1,32 +1,24 @@
 /* -------------------------------------------- */
-import { CrucibleCombat } from "./crucible-combat.js";
-import { CrucibleCommands } from "./crucible-commands.js";
+import { WarheroCombat } from "./warhero-combat.js";
+import { WarheroCommands } from "./warhero-commands.js";
 
 /* -------------------------------------------- */
-const __level2Dice = ["d0", "d4", "d6", "d8", "d10", "d12"];
-const __name2DiceValue = { "0": 0, "d0": 0, "d4": 4, "d6": 6, "d8": 8, "d10": 10, "d12": 12 }
-const __skillLevel2Dice = ["0d8", "1d8", "2d8", "3d8", "4d8", '6d8', "8d8", "10d8"]
-const __color2RollTable = {
-  blue: "Blue Armor Die", black: "Black Armor Die", green: "Green Armor Die", purple: "Purple Armor Die",
-  white: "White Armor Die", red: "Red Armor Die", blackgreen: "Black & Green Armor Dice"
-}
-const __size2Dice = [{ nb: 0, dice: "d0" }, { nb: 5, dice: "d8" }, { nb: 3, dice: "d8" }, { nb: 2, dice: "d8" }, { nb: 1, dice: "d8" }, { nb: 1, dice: "d6" }, { nb: 1, noAddFirst: true, dice: "d6" }]
 
 /* -------------------------------------------- */
-export class CrucibleUtility {
+export class WarheroUtility {
 
 
   /* -------------------------------------------- */
   static async init() {
-    Hooks.on('renderChatLog', (log, html, data) => CrucibleUtility.chatListeners(html));
+    Hooks.on('renderChatLog', (log, html, data) => WarheroUtility.chatListeners(html));
     /*Hooks.on("dropCanvasData", (canvas, data) => {
-      CrucibleUtility.dropItemOnToken(canvas, data)
+      WarheroUtility.dropItemOnToken(canvas, data)
     });*/
 
     this.rollDataStore = {}
     this.defenderStore = {}
 
-    CrucibleCommands.init();
+    WarheroCommands.init();
 
     Handlebars.registerHelper('count', function (list) {
       return list.length;
@@ -57,7 +49,7 @@ export class CrucibleUtility {
 
   /*-------------------------------------------- */
   static gameSettings() {
-    /*game.settings.register("fvtt-crucible-rpg", "dice-color-skill", {
+    /*game.settings.register("fvtt-warhero", "dice-color-skill", {
       name: "Dice color for skills",
       hint: "Set the dice color for skills",
       scope: "world",
@@ -68,7 +60,7 @@ export class CrucibleUtility {
     })
 
     Hooks.on('renderSettingsConfig', (event) => {
-      const element = event.element[0].querySelector(`[name='fvtt-crucible-rpg.dice-color-skill']`)
+      const element = event.element[0].querySelector(`[name='fvtt-warhero.dice-color-skill']`)
       if (!element) return
       // Replace placeholder element
       console.log("Element Found !!!!")
@@ -78,7 +70,7 @@ export class CrucibleUtility {
   /*-------------------------------------------- */
   static addDiceColors() {
     game.dice3d.addColorset({
-      name: 'crucible-orange',
+      name: 'warhero-orange',
       category: "crucible",
       foreground: '#9F8003',
       background: "#FFA500",
@@ -86,7 +78,7 @@ export class CrucibleUtility {
     }, "preferred");
 
     game.dice3d.addColorset({
-      name: 'crucible-purple',
+      name: 'warhero-purple',
       category: "crucible",
       foreground: '#9F8003',
       background: "#800080",
@@ -94,7 +86,7 @@ export class CrucibleUtility {
     }, "preferred");
 
     game.dice3d.addColorset({
-      name: 'crucible-darkgreen',
+      name: 'warhero-darkgreen',
       category: "crucible",
       foreground: '#9F8003',
       background: "#006400",
@@ -123,12 +115,12 @@ export class CrucibleUtility {
 
   /* -------------------------------------------- */
   static async ready() {
-    const skills = await CrucibleUtility.loadCompendium("fvtt-crucible-rpg.skills")
+    const skills = await WarheroUtility.loadCompendium("fvtt-warhero.skills")
     this.skills = skills.map(i => i.toObject())
     this.weaponSkills = duplicate(this.skills.filter(item => item.system.isweaponskill))
     this.shieldSkills = duplicate(this.skills.filter(item => item.system.isshieldskill))
 
-    const rollTables = await CrucibleUtility.loadCompendium("fvtt-crucible-rpg.rolltables")
+    const rollTables = await WarheroUtility.loadCompendium("fvtt-warhero.rolltables")
     this.rollTables = rollTables.map(i => i.toObject())
 
     this.addDiceColors()
@@ -143,7 +135,7 @@ export class CrucibleUtility {
 
   /* -------------------------------------------- */
   static async loadCompendium(compendium, filter = item => true) {
-    let compendiumData = await CrucibleUtility.loadCompendiumData(compendium)
+    let compendiumData = await WarheroUtility.loadCompendiumData(compendium)
     return compendiumData.filter(filter)
   }
 
@@ -222,7 +214,7 @@ export class CrucibleUtility {
   static async getRollTableFromDiceColor(diceColor, displayChat = true) {
     let rollTableName = __color2RollTable[diceColor]
     if (rollTableName) {
-      const pack = game.packs.get("fvtt-crucible-rpg.rolltables")
+      const pack = game.packs.get("fvtt-warhero.rolltables")
       const index = await pack.getIndex()
       const entry = index.find(e => e.name === rollTableName)
       let table = await pack.getDocument(entry._id)
@@ -237,7 +229,7 @@ export class CrucibleUtility {
 
   /* -------------------------------------------- */
   static async getCritical(level, weapon) {
-    const pack = game.packs.get("fvtt-crucible-rpg.rolltables")
+    const pack = game.packs.get("fvtt-warhero.rolltables")
 
     let tableName = "Crit " + level + " (" + this.upperFirst(weapon.system.damage) + ")"
     const index = await pack.getIndex()
@@ -255,7 +247,7 @@ export class CrucibleUtility {
     })
     html.on("click", '.roll-defense-melee', event => {
       let rollId = $(event.currentTarget).data("roll-id")
-      let rollData = CrucibleUtility.getRollData(rollId)
+      let rollData = WarheroUtility.getRollData(rollId)
       rollData.defenseWeaponId = $(event.currentTarget).data("defense-weapon-id")
       let actor = game.canvas.tokens.get(rollData.defenderTokenId).actor
       if (actor && (game.user.isGM || actor.isOwner)) {
@@ -264,7 +256,7 @@ export class CrucibleUtility {
     })
     html.on("click", '.roll-defense-ranged', event => {
       let rollId = $(event.currentTarget).data("roll-id")
-      let rollData = CrucibleUtility.getRollData(rollId)
+      let rollData = WarheroUtility.getRollData(rollId)
       let defender = game.canvas.tokens.get(rollData.defenderTokenId).actor
       if (defender && (game.user.isGM || defender.isOwner)) {
         defender.rollDefenseRanged(rollData)
@@ -277,14 +269,14 @@ export class CrucibleUtility {
   static async preloadHandlebarsTemplates() {
 
     const templatePaths = [
-      'systems/fvtt-crucible-rpg/templates/editor-notes-gm.html',
-      'systems/fvtt-crucible-rpg/templates/partial-roll-select.html',
-      'systems/fvtt-crucible-rpg/templates/partial-actor-ability-block.html',
-      'systems/fvtt-crucible-rpg/templates/partial-actor-status.html',
-      'systems/fvtt-crucible-rpg/templates/partial-options-abilities.html',
-      'systems/fvtt-crucible-rpg/templates/partial-item-nav.html',
-      'systems/fvtt-crucible-rpg/templates/partial-item-description.html',
-      'systems/fvtt-crucible-rpg/templates/partial-actor-equipment.html'
+      'systems/fvtt-warhero/templates/editor-notes-gm.html',
+      'systems/fvtt-warhero/templates/partial-roll-select.html',
+      'systems/fvtt-warhero/templates/partial-actor-ability-block.html',
+      'systems/fvtt-warhero/templates/partial-actor-status.html',
+      'systems/fvtt-warhero/templates/partial-options-abilities.html',
+      'systems/fvtt-warhero/templates/partial-item-nav.html',
+      'systems/fvtt-warhero/templates/partial-item-description.html',
+      'systems/fvtt-warhero/templates/partial-actor-equipment.html'
     ]
     return loadTemplates(templatePaths);
   }
@@ -297,7 +289,7 @@ export class CrucibleUtility {
   }
 
   static findChatMessageId(current) {
-    return CrucibleUtility.getChatMessageId(CrucibleUtility.findChatMessage(current));
+    return WarheroUtility.getChatMessageId(WarheroUtility.findChatMessage(current));
   }
 
   static getChatMessageId(node) {
@@ -305,7 +297,7 @@ export class CrucibleUtility {
   }
 
   static findChatMessage(current) {
-    return CrucibleUtility.findNodeMatching(current, it => it.classList.contains('chat-message') && it.attributes.getNamedItem('data-message-id'));
+    return WarheroUtility.findNodeMatching(current, it => it.classList.contains('chat-message') && it.attributes.getNamedItem('data-message-id'));
   }
 
   static findNodeMatching(current, predicate) {
@@ -313,7 +305,7 @@ export class CrucibleUtility {
       if (predicate(current)) {
         return current;
       }
-      return CrucibleUtility.findNodeMatching(current.parentElement, predicate);
+      return WarheroUtility.findNodeMatching(current.parentElement, predicate);
     }
     return undefined;
   }
@@ -357,7 +349,7 @@ export class CrucibleUtility {
   }
   /* -------------------------------------------- */
   static saveRollData(rollData) {
-    game.socket.emit("system.crucible-rpg", {
+    game.socket.emit("system.warhero-rpg", {
       name: "msg_update_roll", data: rollData
     }); // Notify all other clients of the roll    
     this.updateRollData(rollData)
@@ -380,7 +372,7 @@ export class CrucibleUtility {
           name: defender.name,
           alias: defender.name,
           //user: defender.id,
-          content: await renderTemplate(`systems/fvtt-crucible-rpg/templates/chat-request-defense.html`, rollData),
+          content: await renderTemplate(`systems/fvtt-warhero/templates/chat-request-defense.html`, rollData),
           whisper: [defender.id].concat(ChatMessage.getWhisperRecipients('GM')),
         })
       }
@@ -426,7 +418,7 @@ export class CrucibleUtility {
 
   /* -------------------------------------------- */
   static async getFumble(weapon) {
-    const pack = game.packs.get("fvtt-crucible-rpg.rolltables")
+    const pack = game.packs.get("fvtt-warhero.rolltables")
     const index = await pack.getIndex()
     let entry
 
@@ -456,16 +448,16 @@ export class CrucibleUtility {
         result.damageWeaponFormula = result.defenderDamage + dmgDice
         result.defenderHPLossValue = await defender.incDecHP("-" + result.damageWeaponFormula)
       }
-      if (result.fumble || (result.dangerous_fumble && CrucibleUtility.isWeaponDangerous(rollData.attackRollData.weapon))) {
+      if (result.fumble || (result.dangerous_fumble && WarheroUtility.isWeaponDangerous(rollData.attackRollData.weapon))) {
         result.fumbleDetails = await this.getFumble(rollData.weapon)
       }
       if (result.critical_1 || result.critical_2) {
-        let isDeadly = CrucibleUtility.isWeaponDeadly(rollData.attackRollData.weapon)
+        let isDeadly = WarheroUtility.isWeaponDeadly(rollData.attackRollData.weapon)
         result.critical = await this.getCritical((result.critical_1) ? "I" : "II", rollData.attackRollData.weapon)
         result.criticalText = result.critical.text
       }
       this.createChatWithRollMode(rollData.alias, {
-        content: await renderTemplate(`systems/fvtt-crucible-rpg/templates/chat-attack-defense-result.html`, rollData)
+        content: await renderTemplate(`systems/fvtt-warhero/templates/chat-attack-defense-result.html`, rollData)
       })
       console.log("Results processed", rollData)
     }
@@ -490,7 +482,7 @@ export class CrucibleUtility {
       if (game.user.isGM) {
         this.processSuccessResult(rollData)
       } else {
-        game.socket.emit("system.fvtt-crucible-rpg", { msg: "msg_gm_process_attack_defense", data: rollData });
+        game.socket.emit("system.fvtt-warhero", { msg: "msg_gm_process_attack_defense", data: rollData });
       }
     }
   }
@@ -583,7 +575,7 @@ export class CrucibleUtility {
   }
 
   /* -------------------------------------------- */
-  static async rollCrucible(rollData) {
+  static async rollWarhero(rollData) {
 
     let actor = game.actors.get(rollData.actorId)
 
@@ -622,9 +614,9 @@ export class CrucibleUtility {
 
       if (rollData.skill.system.isfeatdie) {
         rollData.hasFeatDie = true
-        diceFormula += "+ 1d10cs>=5[crucible-purple]"
+        diceFormula += "+ 1d10cs>=5[warhero-purple]"
       } else {
-        diceFormula += `+ 0d10cs>=5[crucible-purple]`
+        diceFormula += `+ 0d10cs>=5[warhero-purple]`
       }
       if (rollData.skill.system.bonusdice != "none") {
         rollData.hasBonusDice = rollData.skill.system.bonusdice
@@ -639,10 +631,10 @@ export class CrucibleUtility {
     // advantage => 8
     let advFormula = "+ 0d8cs>=5"
     if (rollData.advantage == "advantage1" || rollData.forceAdvantage) {
-      advFormula = "+ 1d8cs>=5[crucible-darkgreen]"
+      advFormula = "+ 1d8cs>=5[warhero-darkgreen]"
     }
     if (rollData.advantage == "advantage2") {
-      advFormula = "+ 2d8cs>=5[crucible-darkgreen]"
+      advFormula = "+ 2d8cs>=5[warhero-darkgreen]"
     }
     diceFormula += advFormula
 
@@ -699,7 +691,7 @@ export class CrucibleUtility {
       rollData.rollOrder = 1
       rollData.rollType = (rollData.rollAdvantage == "roll-advantage") ? "Advantage" : "Disadvantage"
       this.createChatWithRollMode(rollData.alias, {
-        content: await renderTemplate(`systems/fvtt-crucible-rpg/templates/chat-generic-result.html`, rollData)
+        content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
       })
 
       rollData.rollOrder = 2
@@ -709,7 +701,7 @@ export class CrucibleUtility {
       rollData.roll = myRoll2 // Tmp switch to display the proper results
       rollData.nbSuccess = myRoll2.total
       this.createChatWithRollMode(rollData.alias, {
-        content: await renderTemplate(`systems/fvtt-crucible-rpg/templates/chat-generic-result.html`, rollData)
+        content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
       })
       rollData.roll = myRoll // Revert the tmp switch
       rollData.nbSuccess = myRoll.total
@@ -743,7 +735,7 @@ export class CrucibleUtility {
     actor.lastRoll = rollData
 
     this.createChatWithRollMode(rollData.alias, {
-      content: await renderTemplate(`systems/fvtt-crucible-rpg/templates/chat-generic-result.html`, rollData)
+      content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
     })
     console.log("Rolldata result", rollData)
 
@@ -794,7 +786,7 @@ export class CrucibleUtility {
     chatGM.whisper = this.getUsers(user => user.isGM);
     chatGM.content = "Blinde message of " + game.user.name + "<br>" + chatOptions.content;
     console.log("blindMessageToGM", chatGM);
-    game.socket.emit("system.fvtt-crucible-rpg", { msg: "msg_gm_chat_message", data: chatGM });
+    game.socket.emit("system.fvtt-warhero", { msg: "msg_gm_chat_message", data: chatGM });
   }
 
 
@@ -855,13 +847,13 @@ export class CrucibleUtility {
       rollMode: game.settings.get("core", "rollMode"),
       advantage: "none"
     }
-    CrucibleUtility.updateWithTarget(rollData)
+    WarheroUtility.updateWithTarget(rollData)
     return rollData
   }
 
   /* -------------------------------------------- */
   static updateWithTarget(rollData) {
-    let target = CrucibleUtility.getTarget()
+    let target = WarheroUtility.getTarget()
     if (target) {
       rollData.defenderTokenId = target.id
     }

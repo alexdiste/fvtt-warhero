@@ -1,17 +1,17 @@
-import { CrucibleUtility } from "./crucible-utility.js";
+import { WarheroUtility } from "./warhero-utility.js";
 
 /**
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
  */
-export class CrucibleItemSheet extends ItemSheet {
+export class WarheroItemSheet extends ItemSheet {
 
   /** @override */
   static get defaultOptions() {
 
     return mergeObject(super.defaultOptions, {
-      classes: ["fvtt-crucible-rpg", "sheet", "item"],
-      template: "systems/fvtt-crucible-rpg/templates/item-sheet.html",
+      classes: ["fvtt-warhero", "sheet", "item"],
+      template: "systems/fvtt-warhero/templates/item-sheet.html",
       dragDrop: [{ dragSelector: null, dropSelector: null }],
       width: 620,
       height: 550,
@@ -50,7 +50,7 @@ export class CrucibleItemSheet extends ItemSheet {
   async getData() {
     
     if ( this.object.type == "skill") {
-      CrucibleUtility.updateSkill(this.object)
+      WarheroUtility.updateSkill(this.object)
     }
     let objectData = duplicate(this.object.system)
 
@@ -63,8 +63,8 @@ export class CrucibleItemSheet extends ItemSheet {
       name: this.object.name,
       editable: this.isEditable,
       cssClass: this.isEditable ? "editable" : "locked",
-      weaponSkills: CrucibleUtility.getWeaponSkills(),
-      shieldSkills: CrucibleUtility.getShieldSkills(),
+      weaponSkills: WarheroUtility.getWeaponSkills(),
+      shieldSkills: WarheroUtility.getShieldSkills(),
       description: await TextEditor.enrichHTML(this.object.system.description, {async: true}),
       data: itemData,
       limited: this.object.limited,
@@ -92,7 +92,7 @@ export class CrucibleItemSheet extends ItemSheet {
 
   /* -------------------------------------------- */
   postItem() {
-    let chatData = duplicate(CrucibleUtility.data(this.item));
+    let chatData = duplicate(WarheroUtility.data(this.item));
     if (this.actor) {
       chatData.actor = { id: this.actor.id };
     }
@@ -107,8 +107,8 @@ export class CrucibleItemSheet extends ItemSheet {
         payload: chatData,
       });
 
-    renderTemplate('systems/fvtt-crucible-rpg/templates/post-item.html', chatData).then(html => {
-      let chatOptions = CrucibleUtility.chatDataSetup(html);
+    renderTemplate('systems/fvtt-warhero/templates/post-item.html', chatData).then(html => {
+      let chatOptions = WarheroUtility.chatDataSetup(html);
       ChatMessage.create(chatOptions)
     });
   }
@@ -159,7 +159,7 @@ export class CrucibleItemSheet extends ItemSheet {
   /* -------------------------------------------- */
   get template() {
     let type = this.item.type;
-    return `systems/fvtt-crucible-rpg/templates/item-${type}-sheet.html`;
+    return `systems/fvtt-warhero/templates/item-${type}-sheet.html`;
   }
 
   /* -------------------------------------------- */
