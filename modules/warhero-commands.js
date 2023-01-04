@@ -10,11 +10,11 @@ const __saveFirstToKey = { r: "reflex", f: "fortitude", w: "willpower"}
 export class WarheroCommands {
 
   static init() {
-    if (!game.system.cruciblerpg.commands) {
+    if (!game.system.warhero.commands) {
       const crucibleCommands = new WarheroCommands();
-      crucibleCommands.registerCommand({ path: ["/rtarget"], func: (content, msg, params) => WarheroCommands.rollTarget(msg, params), descr: "Launch the target roll window" });
-      crucibleCommands.registerCommand({ path: ["/rsave"], func: (content, msg, params) => WarheroCommands.rollSave(msg, params), descr: "Performs a save roll" });
-      game.system.cruciblerpg.commands = crucibleCommands;
+      //crucibleCommands.registerCommand({ path: ["/rtarget"], func: (content, msg, params) => WarheroCommands.rollTarget(msg, params), descr: "Launch the target roll window" });
+      //crucibleCommands.registerCommand({ path: ["/rsave"], func: (content, msg, params) => WarheroCommands.rollSave(msg, params), descr: "Performs a save roll" });
+      game.system.warhero.commands = crucibleCommands;
     }
   }
 

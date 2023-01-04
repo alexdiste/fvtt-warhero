@@ -66,33 +66,6 @@ export class WarheroUtility {
       console.log("Element Found !!!!")
     })    */
   }
-
-  /*-------------------------------------------- */
-  static addDiceColors() {
-    game.dice3d.addColorset({
-      name: 'warhero-orange',
-      category: "crucible",
-      foreground: '#9F8003',
-      background: "#FFA500",
-      visibility: 'visible'
-    }, "preferred");
-
-    game.dice3d.addColorset({
-      name: 'warhero-purple',
-      category: "crucible",
-      foreground: '#9F8003',
-      background: "#800080",
-      visibility: 'visible'
-    }, "preferred");
-
-    game.dice3d.addColorset({
-      name: 'warhero-darkgreen',
-      category: "crucible",
-      foreground: '#9F8003',
-      background: "#006400",
-      visibility: 'visible'
-    }, "preferred");
-  }
   
   /*-------------------------------------------- */
   static upperFirst(text) {
@@ -115,16 +88,6 @@ export class WarheroUtility {
 
   /* -------------------------------------------- */
   static async ready() {
-    const skills = await WarheroUtility.loadCompendium("fvtt-warhero.skills")
-    this.skills = skills.map(i => i.toObject())
-    this.weaponSkills = duplicate(this.skills.filter(item => item.system.isweaponskill))
-    this.shieldSkills = duplicate(this.skills.filter(item => item.system.isshieldskill))
-
-    const rollTables = await WarheroUtility.loadCompendium("fvtt-warhero.rolltables")
-    this.rollTables = rollTables.map(i => i.toObject())
-
-    this.addDiceColors()
-
   }
 
   /* -------------------------------------------- */
