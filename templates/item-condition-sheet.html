@@ -1,0 +1,64 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name" /></h1>
+    </div>
+  </header>
+  {{> systems/fvtt-crucible-rpg/templates/partial-item-nav.html}}
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    <div class="tab details" data-group="primary" data-tab="description">
+
+      <label class="generic-label">Description</label>
+      <div class="medium-editor item-text-long-line">
+        {{editor description target="system.description" button=true owner=owner editable=editable}}
+      </div>
+    </div>
+
+    <div class="tab details" data-group="primary" data-tab="details">
+      <ul>  
+        <li class="flexrow"><label class="generic-label">Provides 1 Advantage ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.advantage" {{checked data.advantage}}/></label>
+        </li>
+        <li class="flexrow"><label class="generic-label">Provides 1 Disadvantage ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.disadvantage" {{checked data.disadvantage}}/></label>
+        </li>
+        <li class="flexrow"><label class="generic-label">Provides Roll Advantage ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.rolladvantage" {{checked data.rolladvantage}}/></label>
+        </li>
+        <li class="flexrow"><label class="generic-label">Provides Roll Disadvantage ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.rolldisadvantage" {{checked data.rolldisadvantage}}/></label>
+        </li>
+        <li class="flexrow"><label class="generic-label">Loose HP per round ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.loosehpround" {{checked data.loosehpround}}/></label>
+        </li>
+        {{#if data.loosehpround}}
+          <li class="flexrow"><label class="generic-label">Number of HP : </label>
+            <input type="text" class="input-numeric-short padd-right" name="system.loohproundvalue" value="{{data.loohproundvalue}}" data-dtype="Number"/>
+          </li>
+        {{/if}}
+        <li class="flexrow"><label class="generic-label">No advantage possible ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.noadvantage" {{checked data.noadvantage}}/></label>
+        </li>
+        <li class="flexrow"><label class="generic-label">Disadvantage on attack ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.attackdisadvantage" {{checked data.attackdisadvantage}}/></label>
+        </li>
+        <li class="flexrow"><label class="generic-label">Disadvantage on defense ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.defensedisadvantage" {{checked data.defensedisadvantage}}/></label>
+        </li>
+        <li class="flexrow"><label class="generic-label">Provides advantage to attacker ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.targetadvantage" {{checked data.targetadvantage}}/></label>
+        </li>
+        <li class="flexrow"><label class="generic-label">No action possible ?</label>
+          <label class="attribute-value checkbox"><input type="checkbox" name="system.noaction" {{checked data.noaction}}/></label>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+</form>

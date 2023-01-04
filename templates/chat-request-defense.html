@@ -1,0 +1,46 @@
+<div class="chat-message-header">
+  {{#if actorImg}}
+  <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
+  {{/if}}
+  <h4 class=chat-actor-name>{{alias}}</h4>
+</div>
+
+<hr>
+
+{{#if img}}
+<div>
+  <img class="chat-icon" src="{{img}}" alt="{{name}}" />
+</div>
+{{/if}}
+
+<div class="flexcol">
+</div>
+
+<div>
+  
+  {{#if isRangedAttack}}
+  <div>{{defender.name}} is under Ranged attack. He must roll a Target Roll to defend himself.</div>
+  {{else}}
+  <div>{{defender.name}} is under Melee attack. He must roll a Defense Roll to defend himself.</div>
+  {{/if}}
+
+  <ul>
+    {{#if isRangedAttack}}
+      <li>
+        <button class="chat-card-button roll-defense-ranged" data-roll-id="{{@root.rollId}}">Roll Target !</button>
+      </li>
+    {{else}}
+      <li>
+        {{#each defenderWeapons as |weapon idx|}}
+        <button class="chat-card-button roll-defense-melee" data-defense-weapon-id="{{weapon._id}}"
+          data-roll-id="{{@root.rollId}}">{{weapon.name}}</button>
+        {{/each}}
+      </li>
+    {{/if}}
+    </ul>
+  <!-- <button class="chat-card-button reroll-level-remaining" data-roll-id="{{rollId}}">Reroll</button> -->
+
+  </ul>
+</div>
+
+</div>

@@ -1,0 +1,214 @@
+{
+  "authors": [
+    {
+      "name": "Uberwald",
+      "flags": {}
+    }
+  ],
+  "description": "Warhero RPG system for FoundryVTT",
+  "esmodules": [
+    "modules/warhero-main.js"
+  ],
+  "gridDistance": 5,
+  "gridUnits": "m",
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "license": "LICENSE.txt",
+  "packs": [
+    {
+      "type": "Item",
+      "label": "Armors",
+      "name": "armor",
+      "path": "packs/armor.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Equipments",
+      "name": "equipment",
+      "path": "packs/equipment.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Shields",
+      "name": "shields",
+      "path": "packs/shields.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Weapons",
+      "name": "weapons",
+      "path": "packs/weapons.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Conditions",
+      "name": "conditions",
+      "path": "packs/conditions.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Currency",
+      "name": "currency",
+      "path": "packs/currency.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Lore - Air",
+      "name": "lore-air",
+      "path": "packs/lore-air.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Lore - Earth",
+      "name": "lore-earth",
+      "path": "packs/lore-earth.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Lore - Fire",
+      "name": "lore-fire",
+      "path": "packs/lore-fire.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Lore - Water",
+      "name": "lore-water",
+      "path": "packs/lore-water.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Lore - Shadow",
+      "name": "lore-shadow",
+      "path": "packs/lore-shadow.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Skills",
+      "name": "skills",
+      "path": "packs/skills.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Feats",
+      "name": "feats",
+      "path": "packs/feats.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Poisons",
+      "name": "poisons",
+      "path": "packs/poisons.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Powers - Class",
+      "name": "classpowers",
+      "path": "packs/classpowers.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Tricks & Traps",
+      "name": "trickstraps",
+      "path": "packs/trickstraps.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Action Tokens",
+      "name": "action-tokens",
+      "path": "packs/action-tokens.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "Powers - Monsters",
+      "name": "monster-powers",
+      "path": "packs/monster-powers.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "RollTable",
+      "label": "Rolltables",
+      "name": "rolltables",
+      "path": "packs/rolltables.db",
+      "system": "fvtt-crucible-rpg",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "primaryTokenAttribute": "secondary.hp",
+  "secondaryTokenAttribute": "secondary.effort",
+  "socket": true,
+  "styles": [
+    "styles/simple.css"
+  ],
+  "version": "10.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "title": "Warhero RPG",
+  "manifest": "https://raw.githubusercontent.com/213gaming/Crucible/main/system.json",
+  "download": "https://github.com/213gaming/Crucible/archive/refs/tags/v10.0.23.zip",
+  "url": "https://github.com/213gaming/Crucible",
+  "background": "images/ui/crucible_welcome_page.webp",
+  "id": "fvtt-warhero"
+}

@@ -1,0 +1,167 @@
+<form class="skill-roll-dialog">
+  <header class="roll-dialog-header">
+    {{#if img}}
+    <img class="actor-icon" src="{{img}}" data-edit="img" title="{{name}}" />
+    {{/if}}
+    <h1 class="dialog-roll-title roll-dialog-header">{{title}}</h1>
+  </header>
+
+    <div class="flexcol">
+      
+      {{#if sizeDice}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Size basic dices : </span>
+        <span class="roll-dialog-label">{{sizeDice.nb}}{{sizeDice.dice}}</span>
+      </div>
+
+      <div class="flexrow">
+        <span class="roll-dialog-label">Distance bonus dice(s) : </span>
+        <select class="status-small-label color-class-common" type="text" id="distanceBonusDice" value="{{distanceBonusDice}}" data-dtype="String" >
+          {{#select distanceBonusDice}}
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          {{/select}}
+        </select>
+      </div>
+      {{/if}}
+
+      {{#if hasCover}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Cover : </span>
+        <select class="status-small-label color-class-common" type="text" id="hasCover" value="{{hasCover}}" data-dtype="String" >
+          {{#select hasCover}}
+          <option value="none">None</option>
+          <option value="cover50">Cover at 50% (+1 dice)</option>
+          {{/select}}
+        </select>
+      </div>
+      {{/if}}
+
+      {{#if situational}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Situational : </span>
+        <select class="status-small-label color-class-common" type="text" id="situational" value="{{situational}}" data-dtype="String" >
+          {{#select situational}}
+          <option value="none">None</option>
+          <option value="dodge">Dodge (+1 dice)</option>
+          <option value="prone">Prone (+1 dice)</option>
+          <option value="moving">Moving (+1 dice)</option>
+          <option value="Engaged">Engaged (+1 dice)</option>
+          {{/select}}
+        </select>
+      </div>
+      {{/if}}
+
+
+      {{#if save}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">{{save.label}} : </span>
+        <span class="roll-dialog-label">{{save.value}}d6</span>
+      </div>
+      {{/if}}
+
+      {{#if ability}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Ability : </span>
+        <span class="roll-dialog-label">{{ability.value}}d6</span>
+      </div>
+      {{/if}}
+
+      {{#if weapon}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Weapon : </span>
+        <span class="roll-dialog-label">{{weapon.name}}</span>
+      </div>
+      {{/if}}
+
+      {{#if shield}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Use shield ? : </span>
+        <span class="roll-dialog-label"><input type="checkbox" id="useshield" name="useshield" {{checked useshield}}/></span>
+      </div>
+      <div class="flexrow">
+        <span class="roll-dialog-label">{{shield.name}} : </span>
+        <span class="roll-dialog-label">{{shield.data.shielddie}}</span>
+      </div>
+      {{/if}}
+
+      {{#if skill}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Skill : </span>
+        <span class="roll-dialog-label">{{skill.name}} - {{skill.data.skilldice}}</span>
+      </div>
+      <div class="flexrow">
+        <span class="roll-dialog-label">Feature die or SL+2? : </span>
+        <span class="roll-dialog-label">{{#if skill.data.isfeatdie}} Yes {{else}} No {{/if}}</span>
+      </div>
+      {{/if}}
+
+      {{#if noAdvantage}} 
+        <div>
+          <span class="roll-dialog-label">No advantage due to condition : {{noAdvantage.name}}</span>
+        </div>
+      {{else}}
+        <div class="flexrow">
+          <span class="roll-dialog-label">Advantage : </span>
+          <select class="status-small-label color-class-common" type="text" id="advantage" value="{{advantage}}" data-dtype="String" >
+            {{#select advantage}}
+            <option value="none">None</option>
+            <option value="advantage1">1 Advantage</option>
+            <option value="advantage2">2 Advantages</option>
+            {{/select}}
+          </select>
+        </div>
+      {{/if}}
+      
+      <div class="flexrow">
+        <span class="roll-dialog-label">Disadvantage : </span>
+        <select class="status-small-label color-class-common" type="text" id="disadvantage" value="{{disadvantage}}" data-dtype="String" >
+          {{#select disadvantage}}
+          <option value="none">None</option>
+          <option value="disadvantage1">1 Disadvantage</option>
+          <option value="disadvantage2">2 Disadvantages</option>
+          {{/select}}
+        </select>
+      </div>
+
+      <div class="flexrow">
+        <span class="roll-dialog-label">Roll with Advantage/Disadvantage : </span>
+        <select class="status-small-label color-class-common" type="text" id="rollAdvantage" value="{{rollAdvantage}}" data-dtype="String" >
+          {{#select rollAdvantage}}
+          <option value="none">None</option>
+          <option value="roll-advantage">Roll with Advantage</option>
+          <option value="roll-disadvantage">Roll with Disadvantage</option>
+          {{/select}}
+        </select>
+      </div>
+
+      {{#if forceAdvantage}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">1 Advantage from condition : {{forceAdvantage.name}} 
+          {{#if advantageFromTarget}} (Provided by targetted actor) {{/if}}
+        </span>
+      </div>
+      {{/if}}
+      {{#if forceDisadvantage}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">1 Disadvantage from condition : {{forceDisadvantage.name}} </span>
+      </div>
+      {{/if}}
+      {{#if forceRollAdvantage}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Roll Advantage from condition : {{forceRollAdvantage.name}} </span>
+      </div>
+      {{/if}}
+      {{#if forceRollDisadvantage}}
+      <div class="flexrow">
+        <span class="roll-dialog-label">Roll Disadvantage from condition : {{forceRollDisadvantage.name}} </span>
+      </div>
+      {{/if}}
+
+
+  </div>
+
+</form>

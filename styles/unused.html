@@ -1,0 +1,60 @@
+{{!-- Carac Tab --}}
+<div class="tab items" data-group="primary" data-tab="statistics">
+
+  <div class="grid grid-2col">
+    <div class="">
+      <div class="flexrow"> 
+        <span class="generic-label packed-left"><a class="generic-pool-roll"><button class="chat-card-button">Dice Pool</button></a></span>
+      </div>
+    </div>
+
+    <div class="">
+
+      <ul>
+        <li class="item flexrow list-item" data-key="momentum">
+          <span class="stat-label flexrow" name="momentum">                 <h4>{{data.momentum.label}}</h4>               </span>
+          <input type="text" class="padd-right" name="data.momentum.value" value="{{data.momentum.value}}" data-dtype="Number"/>
+          <input type="text" class="padd-right" name="data.momentum.max" value="{{data.momentum.max}}" data-dtype="Number"/>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<ul>
+  <li class="item flexrow list-item" data-key="mr">
+    <span class="stat-label flexrow" name="mr">
+      <a class="roll-mr" data-stat-key="{{mr}}"><h4>{{data.mr.label}}</h4></a>
+    </span>
+    <select class="carac-base flexrow" type="text" name="data.mr.value" value="{{data.mr.value}}"
+      data-dtype="Number" >
+      {{#select data.mr.value}}
+      {{{@root.optionsDiceList}}}
+      {{/select}}
+    </select>
+    <input type="text" class="padd-right input-numeric-short" name="data.mr.mod" value="{{data.mr.mod}}" data-dtype="Number"/>
+  </li>
+
+</ul>
+
+
+<li class="item flexrow list-item" data-attr-key="{{key}}">            
+  {{#each data.secondary as |stat2 key|}}
+  {{#if stat2.iscombat}}
+    <span class="stat-label" name="{{key}}">
+      <h4>{{stat2.label}} : </h4>
+    </span>
+    <span class="small-label padd-right packed-left">Cur</span><input type="text" class="padd-right update-field input-numeric-short" data-field-name="data.secondary.{{key}}.value" value="{{stat2.value}}" data-dtype="Number"/>
+    <span class="small-label padd-right packed-left">&nbsp;Max</span><input type="text" class="padd-right update-field input-numeric-short" data-field-name="data.secondary.{{key}}.max" value="{{stat2.max}}" data-dtype="Number"/>
+  {{/if}}
+{{/each}}
+</li>
+<li class="item flexrow list-item" data-key="momentum">
+  <span class="stat-label flexrow" name="momentum"><h4>{{data.momentum.label}}:</h4></span>
+  <span class="small-label padd-right packed-left">Cur</span><input type="text" class="padd-right update-field input-numeric-short" data-field-name="data.momentum.value" value="{{data.momentum.value}}" data-dtype="Number"/>
+  <span class="small-label padd-right packed-left">&nbsp;Max</span><input type="text" class="padd-right update-field input-numeric-short" data-field-name="data.momentum.max" value="{{data.momentum.max}}" data-dtype="Number"/>
+</li>

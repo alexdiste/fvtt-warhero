@@ -1,0 +1,84 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+      <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+      <div class="header-fields">
+          <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+      </div>
+  </header>
+  
+  {{> systems/fvtt-crucible-rpg/templates/partial-item-nav.html}}
+
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{> systems/fvtt-crucible-rpg/templates/partial-item-description.html}}
+    
+    <div class="tab details" data-group="primary" data-tab="details">
+
+      <div class="tab" data-group="primary">
+        <ul>
+          <!-- <li class="flexrow"><label class="generic-label">Ability</label>
+            <select class="competence-base flexrow" type="text" name="data.ability" value="{{data.ability}}" data-dtype="String">
+              {{#select data.ability}}
+              {{> systems/fvtt-crucible-rpg/templates/partial-options-abilities.html}}
+              {{/select}}
+            </select> 
+          </li> -->
+
+          <li class="flexrow"><label class="generic-label">Is proficient ?</label>
+            <label class="attribute-value checkbox"><input type="checkbox" name="system.isproficient" {{checked data.isproficient}}/></label>
+          </li>
+
+          <li class="flexrow"><label class="generic-label">Associated skill</label>
+            <select class="competence-base flexrow" type="text" name="system.skill" value="{{data.skill}}" data-dtype="String">
+              {{#select data.skill}}
+                {{#each weaponSkills as |skill idx|}}
+                <option value="{{skill.name}}">{{skill.name}}</option>
+                {{/each}}
+              {{/select}}
+            </select> 
+          </li>
+
+          <li class="flexrow"><label class="generic-label">Qualities (comma separated list)</label>
+            <input type="text" class="padd-right" name="system.qualities" value="{{data.qualities}}" data-dtype="String"/>
+          </li>
+
+          <li class="flexrow"><label class="generic-label">Flaws (comma separated list)</label>
+            <input type="text" class="padd-right" name="system.flaws" value="{{data.flaws}}" data-dtype="String"/>
+          </li>
+
+          <li class="flexrow"><label class="generic-label">Damage</label>
+            <input type="text" class="right" name="system.damage" value="{{data.damage}}" data-dtype="String"/>
+          </li>
+
+          <li class="flexrow"><label class="generic-label">Is ranged weapon ?</label>
+            <label class="attribute-value checkbox"><input type="checkbox" name="system.isranged" {{checked data.isranged}}/></label>
+          </li>
+          {{#if data.isranged}}
+            <li class="flexrow"><label class="generic-label">Effective Range</label>
+              <input type="text" class="right" name="system.range" value="{{data.range}}" data-dtype="String"/>
+            </li>
+            <li class="flexrow"><label class="generic-label">Max range</label>
+              <input type="text" class="right" name="system.maxrange" value="{{data.maxrange}}" data-dtype="String"/>
+            </li>
+          {{/if}}
+
+          <li class="flexrow"><label class="generic-label">Minimum strength</label>
+            <input type="text" class="input-numeric-short padd-right" name="system.minstr" value="{{data.minstr}}" data-dtype="Number"/>
+          </li>
+
+          <li class="flexrow"><label class="generic-label">Equipped ?</label>
+            <label class="attribute-value checkbox"><input type="checkbox" name="system.equipped" {{checked data.equipped}}/></label>
+          </li>
+
+          <li class="flexrow"><label class="generic-label">Cost</label>
+            <input type="text" class="input-numeric-short padd-right" name="system.cost" value="{{data.cost}}" data-dtype="Number"/>
+          </li>
+
+        </ul>
+    </div>
+  </div>
+
+  </section>
+</form>

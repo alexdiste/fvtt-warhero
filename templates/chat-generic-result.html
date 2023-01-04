@@ -1,0 +1,149 @@
+<div class="chat-message-header">
+  {{#if actorImg}}
+  <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
+  {{/if}}
+  <h4 class=chat-actor-name>{{alias}}</h4>
+</div>
+
+  <hr>
+  
+  {{#if img}}
+  <div >
+    <img class="chat-icon" src="{{img}}" alt="{{name}}" />
+  </div>
+  {{/if}}
+
+  <div class="flexcol">
+    </div>
+
+    <div>
+      <ul>
+        {{#if (eq rollOrder 1)}}
+        <li><strong>Roll with {{rollType}} - Roll 1</strong></li>
+        {{/if}}
+        {{#if (eq rollOrder 2)}}
+        <li><strong>Roll with {{rollType}} - Roll 2</strong></li>
+        {{/if}}
+        {{#if (eq rollOrder 3)}}
+        <li><strong>Roll with {{rollType}} - Final result !</strong></li>
+        {{/if}}
+
+        {{#if save}}  
+        <li>Save : {{save.label}} - {{save.value}}d6 
+          ({{#each roll.terms.0.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+
+        {{#if sizeDice}}
+        <li>Size/Range/Cover/Situational dices 
+          ({{#each roll.terms.0.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+
+        {{#if ability}}  
+        <li>Ability : {{ability.label}} - {{ability.value}}d6 
+          ({{#each roll.terms.0.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+
+        {{#if skill}}
+        <li>Skill : {{skill.name}} - {{skill.data.skilldice}} 
+          {{#if featSL}}
+           - with Feat SL +{{featSL}}
+          {{/if}}
+          &nbsp;({{#each roll.terms.2.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+
+        {{#if noAdvantage}} 
+          <li>No advantage due to condition : {{noAdvantage.name}}</li>
+        {{else}}
+          {{#if (or (eq advantage "advantage1") forceAdvantage)}}
+          <li>1 Advantage Die !
+            &nbsp;({{#each roll.terms.8.results as |die idx|}}
+            {{die.result}}&nbsp;
+            {{/each}})
+          </li>
+          {{/if}}
+          {{#if (eq advantage "advantage2") }}
+          <li>2 Advantage Dice !
+            &nbsp;({{#each roll.terms.8.results as |die idx|}}
+            {{die.result}}&nbsp;
+            {{/each}})
+          </li>
+          {{/if}}
+        {{/if}}
+
+        {{#if (or (eq disadvantage "disadvantage1") forceDisadvantage)}}
+        <li>1 Disadvantage Die !
+          &nbsp;({{#each roll.terms.10.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+        {{#if (eq disadvantage "disadvantage2")}}
+        <li>2 Disadvantage Dice !
+          &nbsp;({{#each roll.terms.10.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+        {{#if (eq rollAdvantage "roll-advantage")}}
+        <li>Roll with Advantage !</li>
+        {{/if}}
+        {{#if (eq rollAdvantage "roll-disadvantage")}}
+        <li>Roll with Disadvantage !</li>
+        {{/if}}
+        
+        {{#if skillArmorPenalty}}
+        <li>Armor Penalty : {{skillArmorPenalty}} Disadvantage Dice 
+          &nbsp;({{#each roll.terms.12.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+
+        {{#if hasBonusDice}}
+        <li>Skill bonus dice : {{hasBonusDice}} 
+          &nbsp;({{#each roll.terms.6.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+        
+        {{#if complexSkillDisadvantage}}
+        <li>Roll with Disadvantage because of Complex Skill at SL 0 !</li>
+        {{/if}}
+        
+        {{#if hasFeatDie}}
+        <li>Feat Die :  d10 
+          &nbsp;({{#each roll.terms.4.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+        
+        {{#if useshield}}  
+        <li>Shield : {{shield.name}} - {{shield.data.shielddie}} 
+          ({{#each roll.terms.14.results as |die idx|}}
+          {{die.result}}&nbsp;
+          {{/each}})
+        </li>
+        {{/if}}
+
+        <li><strong>Number of successes</strong> {{nbSuccess}} </li>
+
+        <!-- <button class="chat-card-button reroll-level-remaining" data-roll-id="{{rollId}}">Reroll</button> -->
+
+      </ul>  
+    </div>
+
+  </div>

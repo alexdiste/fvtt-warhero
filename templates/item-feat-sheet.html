@@ -1,0 +1,35 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+
+    {{> systems/fvtt-crucible-rpg/templates/partial-item-nav.html}}
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+      {{> systems/fvtt-crucible-rpg/templates/partial-item-description.html}}
+
+      <div class="tab details" data-group="primary" data-tab="details">
+        <ul>
+            <li class="flexrow"><label class="generic-label">Add feat die  ?</label>
+              <label class="attribute-value checkbox"><input type="checkbox" name="system.isfeatdie" {{checked data.isfeatdie}}/></label>
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Add SL  ?</label>
+              <label class="attribute-value checkbox"><input type="checkbox" name="system.issl" {{checked data.issl}}/></label>
+            </li>
+
+            {{#if data.issl}}
+            <li class="flexrow"><label class="generic-label">SL value</label>
+              <input type="text" class="" name="data.sl" value="{{system.sl}}" data-dtype="Number"/>
+            </li>
+            {{/if}}
+
+          </ul>
+        </div>
+    </section>
+</form>

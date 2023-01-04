@@ -1,0 +1,19 @@
+<li class="item flexrow list-item item-ability-roll" data-attr-key="{{key}}">
+  <span class="ability-label ability-margin" name="{{key}}">
+    <h4 class="ability-text-white ability-margin"><a class="roll-ability ability-margin" data-ability-key="{{key}}">{{ability.label}}</a></h4>
+  </span>
+  <select class="status-small-label color-class-common" type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}"
+    data-dtype="Number" {{#unless @root.editScore}}disabled{{/unless}}>
+    {{#select ability.value}}
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    {{/select}}
+  </select>
+</li>

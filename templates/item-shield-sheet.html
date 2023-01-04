@@ -1,0 +1,55 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+    
+    {{> systems/fvtt-crucible-rpg/templates/partial-item-nav.html}}
+
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+      {{> systems/fvtt-crucible-rpg/templates/partial-item-description.html}}
+      
+      <div class="tab details" data-group="primary" data-tab="details">
+
+        <div class="tab" data-group="primary">
+          <ul>
+            <li class="flexrow"><label class="generic-label">Shield die</label>
+              <select class="competence-base flexrow" type="text" name="system.shielddie" value="{{data.shielddie}}" data-dtype="String">
+                {{#select data.shielddie}}
+                <option value="d6">d6</option>
+                <option value="d8">d8</option>
+                <option value="d10">d10</option>
+                {{/select}}
+              </select> 
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Associated skill</label>
+              <select class="competence-base flexrow" type="text" name="system.skill" value="{{data.skill}}" data-dtype="String">
+                {{#select data.skill}}
+                  {{#each shieldSkills as |skill idx|}}
+                  <option value="{{skill.name}}">{{skill.name}}</option>
+                  {{/each}}
+                {{/select}}
+              </select> 
+            </li>
+  
+  
+            <li class="flexrow"><label class="generic-label">Equipped ?</label>
+              <label class="attribute-value checkbox"><input type="checkbox" name="system.equipped" {{checked data.equipped}}/></label>
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Cost</label>
+              <input type="text" class="input-numeric-short padd-right" name="system.cost" value="{{data.cost}}" data-dtype="Number"/>
+            </li>
+
+          </ul>
+      </div>
+    </div>
+
+    </section>
+</form>

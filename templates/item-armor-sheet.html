@@ -1,0 +1,92 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+    
+    {{> systems/fvtt-crucible-rpg/templates/partial-item-nav.html}}
+
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+      {{> systems/fvtt-crucible-rpg/templates/partial-item-description.html}}
+      
+      <div class="tab details" data-group="primary" data-tab="details">
+
+        <div class="tab" data-group="primary">
+          <ul>
+            <li class="flexrow"><label class="generic-label">Type</label>
+              <select class="competence-base flexrow" type="text" name="system.armortype" value="{{data.armortype}}" data-dtype="String">
+                {{#select data.armortype}}
+                <option value="clothes">Clothes</option>
+                <option value="paddedlight">Padded (Light)</option>
+                <option value="leatherlight">Leather/Hide (Light)</option>
+                <option value="leathermedium">Studded Leather (Medium)</option>
+                <option value="chain">Chain (Medium)</option>
+                <option value="scale">Scale (Heavy)</option>
+                <option value="scale">Scale (Heavy)</option>
+                <option value="platemail">Plate Mail (Heavy)</option>
+                <option value="platefull">Full Plate (Heavy)</option>
+                {{/select}}
+              </select> 
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Absorption roll</label>
+              <select class="competence-base flexrow" type="text" name="system.absorprionroll" value="{{data.absorprionroll}}" data-dtype="String">
+                {{#select data.absorprionroll}}
+                <option value="none">None</option>
+                <option value="white">White</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="black">Black</option>
+                <option value="blackgreen">Black+Green</option>
+                {{/select}}
+              </select> 
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Damaged roll</label>
+              <select class="competence-base flexrow" type="text" name="system.damagedroll" value="{{data.damagedroll}}" data-dtype="String">
+                {{#select data.damagedroll}}
+                <option value="none">None</option>
+                <option value="white">White</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="black">Black</option>
+                <option value="blackgreen">Black+Green</option>
+                {{/select}}
+              </select> 
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Is proficient ?</label>
+              <label class="attribute-value checkbox"><input type="checkbox" name="system.isproficient" {{checked data.isproficient}}/></label>
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Minimum strength</label>
+              <input type="text" class="input-numeric-short padd-right" name="system.minstr" value="{{data.minstr}}" data-dtype="Number"/>
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Skill penalty</label>
+              <input type="text" class="input-numeric-short padd-right" name="system.skillpenalty" value="{{data.skillpenalty}}" data-dtype="Number"/>
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Equipped ?</label>
+              <label class="attribute-value checkbox"><input type="checkbox" name="system.equipped" {{checked data.equipped}}/></label>
+            </li>
+
+            <li class="flexrow"><label class="generic-label">Cost</label>
+              <input type="text" class="input-numeric-short padd-right" name="system.cost" value="{{data.cost}}" data-dtype="Number"/>
+            </li>
+
+          </ul>
+      </div>
+    </div>
+
+    </section>
+</form>

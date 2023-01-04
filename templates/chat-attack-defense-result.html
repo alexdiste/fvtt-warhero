@@ -1,0 +1,75 @@
+<div class="chat-message-header">
+  {{#if actorImg}}
+  <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
+  {{/if}}
+  <h4 class=chat-actor-name>{{alias}}</h4>
+</div>
+
+  <hr>
+  
+  {{#if img}}
+  <div >
+    <img class="chat-icon" src="{{img}}" alt="{{name}}" />
+  </div>
+  {{/if}}
+
+  <div class="flexcol">
+    </div>
+
+    <div>
+      <ul>
+        <li><strong>Fight result !</strong></li>
+        {{#if successDetails.fumbleDetails}}
+        <li>Fumble ! :  {{successDetails.fumbleDetails.data.text}} </li>
+        {{/if}}
+
+
+        {{#if armorResult}}
+          <li>Armor initial result : {{armorResult.rawArmor}}</li>
+          {{#each armorResult.messages as |message idx|}}
+            <li>{{message}}</li>
+          {{/each}}
+        {{/if}}
+
+        {{#if successDetails.hack_vs_shields}} 
+        <li>Hack weapon : check shield !</li>
+        {{/if}}
+
+        {{#if successDetails.entangle}} 
+        <li>Entangle weapon : attacker can entangle !</li>
+        {{/if}}
+        
+        {{#if successDetails.knockback}} 
+        <li>Knockback weapon : check knockback !</li>
+        {{/if}}
+        
+        {{#if successDetails.hack_armors}} 
+        <li>Hack weapon : check armor damage !</li>
+        {{/if}}
+
+        {{#if successDetails.penetrating_impale}} 
+        <li>Penetrating weapon : apply the Impale condition !</li>
+        {{/if}}
+
+        {{#if (or successDetails.critical_1 successDetails.critical_2)}} 
+        <li>Critical {{#if successDetails.critical_1}} 1 {{else}} 2 {{/if}} : {{successDetails.criticalText}} </li>
+        {{/if}}
+
+        {{#if successDetails.attackerHPLossValue}}
+        <li>Attacker has lost HP :  {{successDetails.attackerHPLossValue}} HP </li>
+        {{/if}}
+
+        {{#if successDetails.defenderHPLossValue}}
+        <li>Defender has lost HP :  {{successDetails.defenderHPLossValue}} HP </li>
+        {{/if}}
+
+        <li>Success details : {{successDetails.result}} </li>
+
+        <li><strong>Final successes</strong> {{sumSuccess}} </li>
+
+        <!-- <button class="chat-card-button reroll-level-remaining" data-roll-id="{{rollId}}">Reroll</button> -->
+
+      </ul>  
+    </div>
+
+  </div>

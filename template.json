@@ -1,0 +1,205 @@
+{
+  "Actor": {
+    "types": ["character", "npc"],
+    "templates": {
+      "biodata": {
+        "biodata": {
+          "class": "",
+          "age": 0,
+          "size": 0,
+          "weight": "",
+          "height": "",
+          "hair": "",
+          "sex": "",
+          "eyes": "",
+          "background": "",
+          "description": "",
+          "notes": "",
+          "gmnotes": ""
+        }
+      },
+      "core": {
+        "subactors": [],
+        "abilities": {
+          "str":{ 
+            "label": "Strength",
+            "abbrev": "str",
+            "col": 1,
+            "value": 1
+          },
+          "agi":{ 
+            "label": "Agility",
+            "abbrev": "agi",
+            "col": 1,
+            "value": 1
+          },
+          "dex":{ 
+            "label": "Dexterity",
+            "abbrev": "dex",
+            "col": 1,
+            "value": 1
+          },
+          "con":{ 
+            "label": "Constitution",
+            "abbrev": "con",
+            "col": 1,
+            "value": 1
+          },
+          "int":{ 
+            "label": "Intelligence",
+            "abbrev": "int",
+            "col": 2,
+            "value": 1
+          },
+          "wit":{ 
+            "label": "Wits",
+            "abbrev": "wit",
+            "col": 2,
+            "value": 1
+          },
+          "cha":{ 
+            "label": "Charisma",
+            "abbrev": "cha",
+            "col": 2,
+            "value": 1
+          }
+        },
+        "secondary": {
+          "hp": {
+            "label": "Hitpoint",
+            "abbrev": "hb",
+            "value": -1,
+            "max": 0
+          },
+          "effort": {
+            "label": "Effort",
+            "abbrev": "eff",
+            "value": -1,
+            "max": 0
+          }
+        },
+        "social": {
+          "fame": {
+            "label": "Fame",
+            "value": 0
+          },
+          "reputation": {
+            "label": "Reputation",
+            "value": 0
+          }
+        }
+      },
+      "npccore": {
+        "npctype": "",
+        "description": ""
+      }
+    },
+    "character": {
+      "templates": [ "biodata", "core" ]
+    },
+    "npc": {
+      "templates": [ "biodata", "core" ]
+   }
+  },
+  "Item": {
+    "types": [ "race", "skill", "armor", "shield", "equipment", "weapon", "money" , "feat", "spell", "condition", "poison"],
+    "poison": {
+      "description": ""
+    },
+    "condition": {
+      "advantage": false,
+      "disadvantage": false,
+      "rolladvantage": false,
+      "rolldisadvantage": false,
+      "loosehpround": false,
+      "loohproundvalue": 0,
+      "noadvantage": false,
+      "attackdisadvantage": false,
+      "defensedisadvantage": false,
+      "targetadvantage": false,
+      "noaction": false,
+      "description": ""
+    },
+    "race": {
+      "description": ""
+    },
+    "feat": {
+      "isfeatdie": false,
+      "issl": false,
+      "sl": 0,
+      "description": ""
+    },
+    "skill": {
+      "ability": "",
+      "armorpenalty": false,
+      "isproficient": false,
+      "isweaponskill": false,
+      "isshieldskill": false,
+      "isfeatdie": false,
+      "issl2": false,
+      "islore": false,
+      "skilltype": "",
+      "isinnate": false,
+      "bonusdice": "",
+      "background": 0,
+      "basic": 0,
+      "class": 0,
+      "exp": 0,
+      "explevel": 0,
+      "description": ""
+    },
+    "armor": {
+      "armortype": "",
+      "absorprionroll": "",
+      "damagedroll": "",
+      "isproficient": false,
+      "minstr": 0,
+      "skillpenalty": 0,
+      "equipped": false,
+      "cost": 0,
+      "description":""
+    },
+    "shield": {
+      "shielddie": "",
+      "skill": "",
+      "equipped": false,
+      "cost": 0,
+      "description":""
+    },
+    "equipment": {
+      "equiptype": "",
+      "cost": 0,
+      "quantity": 0,
+      "equipped": false,
+      "iscontainer": false,
+      "containercapacity": 0,
+      "containerid": "",
+      "description":""
+    },
+    "money" : {
+      "value": 0,
+      "quantity": 0,
+      "description": ""
+    },
+    "weapon": {
+      "isproficient": false,
+      "skill": "",
+      "qualities": "",
+      "flaws": "",
+      "damage": "",
+      "isranged": false,
+      "range": "",
+      "maxrange": "",
+      "minstr": 0,
+      "cost": 0,
+      "equipped": false,
+      "description": ""
+    },
+    "spell":{
+      "lore": "",
+      "circle": 1,
+      "range": "",
+      "description": ""
+    }
+  }
+}
