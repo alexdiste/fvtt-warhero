@@ -1,12 +1,16 @@
 import { WarheroUtility } from "./warhero-utility.js";
 
 export const defaultItemImg = {
-  skill: "systems/fvtt-warhero/images/icons/icon_skill.webp",
-  armor: "systems/fvtt-warhero/images/icons/icon_armour.webp",
-  weapon: "systems/fvtt-warhero/images/icons/icon_weapon.webp",
-  equipment: "systems/fvtt-warhero/images/icons/icon_equipment.webp",
-  race: "systems/fvtt-warhero/images/icons/icon_race.webp",
-  money: "systems/fvtt-warhero/images/icons/icon_money.webp",
+  skill: "systems/fvtt-warhero/images/icons/skills.svg",
+  armor: "systems/fvtt-warhero/images/icons/difesa.webp",
+  weapon: "systems/fvtt-warhero/images/icons/two-handed-sword.svg",
+  equipment: "systems/fvtt-warhero/images/icons/swap-bag.svg",
+  shield: "systems/fvtt-warhero/images/icons/difensiva.webp",
+  race: "systems/fvtt-warhero/images/icons/razze.webp",
+  class: "systems/fvtt-warhero/images/icons/classe.webp",
+  money: "systems/fvtt-warhero/images/icons/two-coins.svg",
+  power: "systems/fvtt-warhero/images/icons/magia.webp",
+  condition: "systems/fvtt-warhero/images/icons/stordenti.webp",
 }
 
 /**

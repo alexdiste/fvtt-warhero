@@ -102,7 +102,7 @@
    }
   },
   "Item": {
-    "types": [ "race", "weapon", "armor", "shield", "equipment", "money" , "skill", "power", "spell", "condition", "class"],
+    "types": [ "race", "weapon", "armor", "shield", "equipment", "money" , "skill", "power", "condition", "class"],
     "condition": {
       "description": ""
     },
@@ -137,18 +137,26 @@
       "damage": "1d6",
       "cost": 0,
       "equipped": false,
+      "slotused": 1,
+      "slotlocation": "weapon1",
       "description": ""
     },
     "armor": {
       "armortype": "light",
       "equipped": false,
+      "damagereduction": 1,
       "cost": 0,
+      "slotused": 1,
+      "slotlocation": "armor",
       "description":""
     },
     "shield": {
       "shieldtype": "light",
+      "parrybonus": 1,
       "equipped": false,
       "cost": 0,
+      "slotused": 1,
+      "slotlocation": "shield",
       "description":""
     },
     "equipment": {
@@ -156,9 +164,8 @@
       "cost": 0,
       "quantity": 0,
       "equipped": false,
-      "iscontainer": false,
-      "containercapacity": 0,
-      "containerid": "",
+      "slotused": 1,
+      "slotlocation": "backpack",
       "description":""
     },
     "power": {

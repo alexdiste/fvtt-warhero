@@ -9,5 +9,25 @@
   "WH.conf.heavyarmor": "Heavy", 
   "WH.conf.lightshield": "Light",
   "WH.conf.mediumshield": "Medium",
-  "WH.conf.towershield": "Tower"
+  "WH.conf.towershield": "Tower",
+
+  "WH.conf.head": "Head",
+  "WH.conf.cloak": "Cloak",
+  "WH.conf.weapon1": "Weapon 1",
+  "WH.conf.weapon2": "Weapon 2",
+  "WH.conf.gloves": "Gloves",
+  "WH.conf.dress": "Dress",
+  "WH.conf.boots": "Boots",
+  "WH.conf.ring": "Ring",
+  "WH.conf.belt": "Belt",
+  "WH.conf.quiver": "Quiver",
+  "WH.conf.armor": "Armor",
+  "WH.conf.shield": "Shield",
+  "WH.conf.backpack": "Backpack",
+  "WH.conf.beltpouch1": "Beltpouch 1",
+  "WH.conf.beltpouch2": "Beltpouch 2",
+  "WH.conf.beltpouch3": "Beltpouch 3",
+
+  "WH.ui.level": "Level",
+  "WH.ui.notes": "Notes"
 }

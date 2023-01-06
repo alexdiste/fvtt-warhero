@@ -32,13 +32,8 @@
             <input type="text" class="item-field-label-medium " name="system.damage" value="{{system.damage}}" data-dtype="String"/>
           </li>
 
-          <li class="flexrow"><label class="item-field-label-medium ">Equipped ?</label>
-            <label class="item-field-label-medium  checkbox"><input type="checkbox" name="system.equipped" {{checked system.equipped}}/></label>
-          </li>
 
-          <li class="flexrow"><label class="item-field-label-medium ">Cost</label>
-            <input type="text" class="item-field-label-medium " name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
-          </li>
+          {{> systems/fvtt-warhero/templates/partial-item-common-equipment.html}}
 
         </ul>
     </div>

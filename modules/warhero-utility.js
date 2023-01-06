@@ -239,7 +239,8 @@ export class WarheroUtility {
       'systems/fvtt-warhero/templates/partial-options-abilities.html',
       'systems/fvtt-warhero/templates/partial-item-nav.html',
       'systems/fvtt-warhero/templates/partial-item-description.html',
-      'systems/fvtt-warhero/templates/partial-actor-equipment.html'
+      'systems/fvtt-warhero/templates/partial-item-common-equipment.html',
+      'systems/fvtt-warhero/templates/partial-actor-equipment.html',
     ]
     return loadTemplates(templatePaths);
   }
@@ -518,9 +519,6 @@ export class WarheroUtility {
 
   /* -------------------------------------------- */
   static updateSkill(skill) {
-    skill.system.level = skill.system.background + skill.system.basic + skill.system.class + skill.system.explevel
-    if (skill.system.level > 7) { skill.system.level = 7 }
-    skill.system.skilldice = __skillLevel2Dice[skill.system.level]
   }
 
   /* -------------------------------------------- */

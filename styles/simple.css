@@ -1510,29 +1510,6 @@
     min-width:2rem;
     max-width: 2rem;
   }
-  
-  .dice-pool-stack {
-    flex: 1 1 5rem;
-    display: flex !important;
-    flex-grow: 0;
-    justify-content: flex-start;
-  }
-  .dice-pool-label {
-    margin-left: 4px;
-  }
-  .dice-pool-div {
-    border-left: 4px;
-    border-radius: 2px;
-    margin-bottom: 1rem;
-    background-color: #403f3e40;
-  }
-  
-  .dice-pool-image {
-    border: 0;
-    margin-left: 4px;
-    min-width: 48px;
-    min-height: 48px;
-    max-width: 48px;
-    max-height: 48px;
-    flex-grow: 0;
+  form .notes {
+    color: rgba(214, 230, 230, 0.95);
   }

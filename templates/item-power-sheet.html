@@ -1,0 +1,54 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+    
+    {{> systems/fvtt-warhero/templates/partial-item-nav.html}}
+
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+      <div class="tab description" data-group="primary" data-tab="description">
+        <div>
+          <label class="generic-label">{{localize WH.ui.level}} 1</label>
+          <div class="small-editor item-text-long-line">
+          {{editor level1 target="system.level1" button=true owner=owner editable=editable}}
+          </div>
+        </div>
+        <div>
+          <label class="generic-label">{{localize WH.ui.level}} 2</label>
+          <div class="small-editor item-text-long-line">
+          {{editor level2 target="system.level2" button=true owner=owner editable=editable}}
+          </div>
+        </div>
+        <div>
+          <label class="generic-label">{{localize WH.ui.level}} 3</label>
+          <div class="small-editor item-text-long-line">
+          {{editor level3 target="system.level3" button=true owner=owner editable=editable}}
+          </div>
+        </div>
+        <div>
+          <label class="generic-label">{{localize WH.ui.level}} 4</label>
+          <div class="small-editor item-text-long-line">
+          {{editor level4 target="system.level4" button=true owner=owner editable=editable}}
+          </div>
+        </div>
+        <div>
+          <label class="generic-label">{{localize WH.ui.notes}}</label>
+          <div class="small-editor item-text-long-line">
+          {{editor description target="system.description" button=true owner=owner editable=editable}}
+          </div>
+        </div>
+
+      </div>
+            
+      <div class="tab details" data-group="primary" data-tab="details">
+
+      </div>
+
+    </section>
+</form>
