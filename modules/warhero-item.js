@@ -1,7 +1,7 @@
 import { WarheroUtility } from "./warhero-utility.js";
 
 export const defaultItemImg = {
-  skill: "systems/fvtt-warhero/images/icons/skills.svg",
+  skill: "systems/fvtt-warhero/images/icons/talenti.webp",
   armor: "systems/fvtt-warhero/images/icons/difesa.webp",
   weapon: "systems/fvtt-warhero/images/icons/two-handed-sword.svg",
   equipment: "systems/fvtt-warhero/images/icons/swap-bag.svg",
