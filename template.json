@@ -127,7 +127,13 @@
       "description": ""
     },
     "race": {
-      "description": ""
+      "description": "",
+      "hpprogresion": "hp2",
+      "languages": "",
+      "attributebonus": "",
+      "weapons": "", 
+      "shields": "", 
+      "armors": "" 
     },
     "skill": {
       "description": ""
@@ -137,6 +143,7 @@
       "damage": "1d6",
       "cost": 0,
       "equipped": false,
+      "quantity": 1,
       "slotused": 1,
       "slotlocation": "weapon1",
       "description": ""
@@ -146,6 +153,7 @@
       "equipped": false,
       "damagereduction": 1,
       "cost": 0,
+      "quantity": 1,
       "slotused": 1,
       "slotlocation": "armor",
       "description":""
@@ -155,6 +163,7 @@
       "parrybonus": 1,
       "equipped": false,
       "cost": 0,
+      "quantity": 1,
       "slotused": 1,
       "slotlocation": "shield",
       "description":""
@@ -162,7 +171,7 @@
     "equipment": {
       "equiptype": "",
       "cost": 0,
-      "quantity": 0,
+      "quantity": 1,
       "equipped": false,
       "slotused": 1,
       "slotlocation": "backpack",

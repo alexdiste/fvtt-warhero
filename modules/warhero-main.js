@@ -87,10 +87,10 @@ Hooks.once("ready", function () {
   // User warning
   if (!game.user.isGM && game.user.character == undefined) {
     ui.notifications.info("Warning ! No character linked to your user !");
-    ChatMessage.create({
+    /*ChatMessage.create({
       content: "<b>WARNING</b> The player  " + game.user.name + " is not linked to a character !",
       user: game.user._id
-    });
+    });*/
   }
   
   // CSS patch for v9

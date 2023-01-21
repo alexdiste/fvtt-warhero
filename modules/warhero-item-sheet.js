@@ -69,9 +69,15 @@ export class WarheroItemSheet extends ItemSheet {
       limited: this.object.limited,
       options: this.options,
       owner: this.document.isOwner,
+      abilities: duplicate(game.model.Actor.character.abilities),
       isGM: game.user.isGM
     }
-
+    if ( this.object.type == "power") {
+      formData.level1 = await TextEditor.enrichHTML(this.object.system.level1, {async: true})
+      formData.level2 = await TextEditor.enrichHTML(this.object.system.level2, {async: true})
+      formData.level3 = await TextEditor.enrichHTML(this.object.system.level3, {async: true})
+      formData.level4 = await TextEditor.enrichHTML(this.object.system.level4, {async: true})
+    }
     this.options.editable = !(this.object.origin == "embeddedItem");
     console.log("ITEM DATA", formData, this);
     return formData;

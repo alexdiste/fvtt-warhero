@@ -1,0 +1,54 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name" /></h1>
+    </div>
+  </header>
+  {{> systems/fvtt-warhero/templates/partial-item-nav.html}}
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    <div class="tab details" data-group="primary" data-tab="description">
+
+      <label class="generic-label">Description</label>
+      <div class="medium-editor item-text-long-line">
+        {{editor description target="system.description" button=true owner=owner editable=editable}}
+      </div>
+    </div>
+
+    <div class="tab details" data-group="primary" data-tab="details">
+      <ul>
+
+        {{#each system.weapons as |weaponflag key|}}
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.weapons"}} {{key}}</label>
+            <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                  name="system.weapons.{{key}}" {{checked weaponflag}}/>
+
+          </li>
+        {{/each}}
+
+        {{#each system.armors as |armorflag key|}}
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.armors"}} {{key}}</label>
+            <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                  name="system.armors.{{key}}" {{checked armorflag}}/>
+
+          </li>
+        {{/each}}
+
+        {{#each system.shields as |shieldflag key|}}
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.shields"}} {{key}}</label>
+          <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                name="system.shields.{{key}}" {{checked shieldflag}}/>
+
+        </li>
+      {{/each}}
+
+
+      </ul>
+
+    </div>
+
+  </section>
+</form>

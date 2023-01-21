@@ -1265,32 +1265,6 @@
   {
     color: #CCC
   }
-  #pause > img {
-    content: url(../images/ui/crucible_pause_logo.jpg);
-    height: 160px;
-    width: 160px;
-    top: -80px;
-    left: calc(50% - 132px);
-  }
-  
-  #logo {
-    content : url(../images/ui/crucible_game_logo.png);
-    width: 100px;
-    height: 60px;
-  }
-  
-  .dice-cell {  
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 60px;
-    text-align: center;
-  }
-  
-  .dice-formula,
-  .dice-total {
-    height: 54px;
-    position:relative;
-  }
   
   /* =================== 1. ACTOR SHEET FONT STYLES =========== *//*
   Agility AGI: #02a41d     Also Used for Ranged Damage
@@ -1445,6 +1419,11 @@
     max-width: 24rem;
     min-width: 24rem;
   }
+  .item-name-label-header-long3 {
+    flex-grow:2;
+    max-width: 30rem;
+    min-width: 30rem;
+  }
   .item-name-label {
     flex-grow:2;
     max-width: 10rem;
@@ -1500,7 +1479,7 @@
   }
   .alternate-list {
     margin-top: 4px;
-    flex-wrap: nowrap;
+    fong2ex-wrap: nowrap;
   }
   .item-filler {
     flex-grow: 6;  

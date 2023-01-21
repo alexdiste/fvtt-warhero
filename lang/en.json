@@ -29,5 +29,12 @@
   "WH.conf.beltpouch3": "Beltpouch 3",
 
   "WH.ui.level": "Level",
-  "WH.ui.notes": "Notes"
+  "WH.ui.notes": "Notes",
+
+  "WH.ui.hpprog": "HP Progression",
+  "WH.ui.lan": "Languages",
+  "WH.ui.attrbonus": "Attribute (+4/Lvl4, +2/Lvl8)",
+  "WH.ui.weapons": "Weapons",
+  "WH.ui.armors": "Armors",
+  "WH.ui.shields": "Shields"
 }

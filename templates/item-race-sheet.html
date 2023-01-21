@@ -20,6 +20,40 @@
 
     <div class="tab details" data-group="primary" data-tab="details">
       <ul>
+
+        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.hpprog"}}</label>
+          <select class="item-field-label-long " type="text" name="system.hpprogresion" value="{{system.hpprogresion}}" data-dtype="String">
+            {{#select system.hpprogresion}}
+              {{#each config.progressionList as |prog key|}}
+                <option value="{{key}}">{{localize prog}}</option>
+              {{/each}}
+            {{/select}}
+          </select> 
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.lan"}}</label>
+          <input type="text" class="item-field-label-long" name="system.languages" value="{{system.languages}}" data-dtype="String"/>
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.attrbonus"}}</label>
+          <select class="item-field-label-long " type="text" name="system.attributebonus" value="{{system.attributebonus}}" data-dtype="String">
+            {{#select system.attributebonus}}
+              {{#each abilities as |ability key|}}
+                <option value="{{key}}">{{ability.label}}</option>
+              {{/each}}
+            {{/select}}
+          </select> 
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.weapons"}}</label>
+          <input type="text" class="item-field-label-long3 " name="system.weapons" value="{{system.weapons}}" data-dtype="String"/>
+        </li>
+        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.armors"}}</label>
+          <input type="text" class="item-field-label-long3 " name="system.armors" value="{{system.armors}}" data-dtype="String"/>
+        </li>
+        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.shields"}}</label>
+          <input type="text" class="item-field-label-long3 " name="system.shields" value="{{system.shields}}" data-dtype="String"/>
+        </li>
       </ul>
 
     </div>

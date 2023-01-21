@@ -37,6 +37,12 @@ export const WARHERO_CONFIG = {
     beltpouch1:  {nbslots: 4, label: "WH.conf.beltpouch1"},
     beltpouch2:  {nbslots: 4, label: "WH.conf.beltpouch2"},
     beltpouch3:  {nbslots: 4, label: "WH.conf.beltpouch3"},
+  },
+
+  progressionList: {
+    "high": "High (+6HP/Lvl)",
+    "medium": "Medium (+4HP/Lvl)",
+    "low": "Low (+2 HP/Lvl)"
   }
 
 }
