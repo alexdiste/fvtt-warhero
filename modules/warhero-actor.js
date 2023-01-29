@@ -64,25 +64,6 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   computeHitPoints() {
     if (this.type == "character") {
-      let hp = duplicate(this.system.secondary.hp)
-      let max = (this.system.abilities.str.value + this.system.abilities.con.value) * 6
-      if (max != hp.max || hp.value > max) {
-        hp.max = max
-        hp.value = max // Init case
-        this.update({ 'system.secondary.hp': hp })
-      }
-    }
-  }
-  /* -------------------------------------------- */
-  computeEffortPoints() {
-    if (this.type == "character") {
-      let effort = duplicate(this.system.secondary.effort)
-      let max = (this.system.abilities.con.value + this.system.abilities.int.value) * 6
-      if (max != effort.max || effort.value > max) {
-        effort.max = max
-        effort.value = max // Init case
-        this.update({ 'system.secondary.effort': effort })
-      }
     }
   }
 
@@ -90,10 +71,7 @@ export class WarheroActor extends Actor {
   prepareDerivedData() {
 
     if (this.type == 'character' || game.user.isGM) {
-      this.system.encCapacity = this.getEncumbranceCapacity()
-      this.buildContainerTree()
       this.computeHitPoints()
-      this.computeEffortPoints()
     }
 
     super.prepareDerivedData();
@@ -150,12 +128,10 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
-  getEquippedArmor() {
-    let comp = this.items.find(item => item.type == 'armor' && item.system.equipped)
-    if (comp) {
-      return duplicate(comp)
-    }
-    return undefined
+  getPowers() {
+    let comp = duplicate(this.items.filter(item => item.type == 'power') || []);
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp;
   }
   /* -------------------------------------------- */
   getShields() {
@@ -163,17 +139,15 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
-  getEquippedShield() {
-    let comp = this.items.find(item => item.type == 'shield' && item.system.equipped)
-    if (comp) {
-      return duplicate(comp)
-    }
-    return undefined
-  }
   /* -------------------------------------------- */
   getRace() {
     let race = this.items.filter(item => item.type == 'race')
     return race[0] ?? [];
+  }
+  /* -------------------------------------------- */
+  getClass() {
+    let classWH = this.items.filter(item => item.type == 'class')
+    return classWH[0] ?? [];
   }
   /* -------------------------------------------- */
   checkAndPrepareEquipment(item) {
@@ -186,7 +160,22 @@ export class WarheroActor extends Actor {
     }
     return listItem
   }
-
+  /* -------------------------------------------- */
+  buildEquipmentsSlot() {
+    let containers = {}
+    for(let slotName in game.system.warhero.config.slotNames) {
+      let slotDef = game.system.warhero.config.slotNames[slotName]
+      containers[slotName] = duplicate(slotDef)
+      containers[slotName].content = this.items.filter(it => (it.type == 'weapon' || it.type == 'armor' || it.type == 'shield'||it.type == 'equipment')  
+                                      && it.system.slotlocation == slotName )
+      let slotUsed = 0
+      for(let item of containers[slotName].content) {
+        slotUsed += item.system.slotused
+      }
+      containers[slotName].slotUsed = slotUsed
+    }
+    return containers
+  }
   /* -------------------------------------------- */
   getConditions() {
     let comp = duplicate(this.items.filter(item => item.type == 'condition') || []);
@@ -533,97 +522,24 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  getCommonRollData(abilityKey = undefined) {
-    let noAction = this.isNoAction()
-    if (noAction) {
-      ui.notifications.warn("You can't do any actions du to the condition : " + noAction.name)
-      return
-    }
-
+  getCommonRollData() {
     let rollData = WarheroUtility.getBasicRollData()
     rollData.alias = this.name
     rollData.actorImg = this.img
     rollData.actorId = this.id
     rollData.img = this.img
-    rollData.featsDie = this.getFeatsWithDie()
-    rollData.featsSL = this.getFeatsWithSL()
-    rollData.armors = this.getArmors()
-    rollData.conditions = this.getConditions()
-    rollData.featDieName = "none"
-    rollData.featSLName = "none"
-    rollData.rollAdvantage = "none"
-    rollData.advantage = "none"
-    rollData.disadvantage = "none"
-    rollData.forceAdvantage = this.isForcedAdvantage()
-    rollData.forceDisadvantage = this.isForcedDisadvantage()
-    rollData.forceRollAdvantage = this.isForcedRollAdvantage()
-    rollData.forceRollDisadvantage = this.isForcedRollDisadvantage()
-    rollData.noAdvantage = this.isNoAdvantage()
-    if (rollData.defenderTokenId) {
-      let defenderToken = game.canvas.tokens.get(rollData.defenderTokenId)
-      let defender = defenderToken.actor
-
-      // Distance management
-      let token = this.token
-      if (!token) {
-        let tokens = this.getActiveTokens()
-        token = tokens[0]
-      }
-      if (token) {
-        const ray = new Ray(token.object?.center || token.center, defenderToken.center)
-        rollData.tokensDistance = canvas.grid.measureDistances([{ ray }], { gridSpaces: false })[0] / canvas.grid.grid.options.dimensions.distance
-      } else {
-        ui.notifications.info("No token connected to this actor, unable to compute distance.")
-        return
-      }
-      if (defender) {
-        rollData.forceAdvantage = defender.isAttackerAdvantage()
-        rollData.advantageFromTarget = true
-      }
-    }
-
-    if (abilityKey) {
-      rollData.ability = this.getAbility(abilityKey)
-      rollData.selectedKill = undefined
-    }
-
     console.log("ROLLDATA", rollData)
 
     return rollData
   }
 
   /* -------------------------------------------- */
-  rollAbility(abilityKey) {
-    let rollData = this.getCommonRollData(abilityKey)
-    rollData.mode = "ability"
-    if (rollData.target) {
-      ui.notifications.warn("You are targetting a token with a skill : please use a Weapon instead.")
-      return
-    }
-    WarheroUtility.rollWarhero(rollData)
-  }
-
-  /* -------------------------------------------- */
-  rollSkill(skillId) {
-    let skill = this.items.get(skillId)
-    if (skill) {
-      if (skill.system.islore && skill.system.level == 0) {
-        ui.notifications.warn("You can't use Lore Skills with a SL of 0.")
-        return
-      }
-      skill = duplicate(skill)
-      WarheroUtility.updateSkill(skill)
-      let abilityKey = skill.system.ability
-      let rollData = this.getCommonRollData(abilityKey)
-      rollData.mode = "skill"
-      rollData.skill = skill
-      rollData.img = skill.img
-      if (rollData.target) {
-        ui.notifications.warn("You are targetting a token with a skill : please use a Weapon instead.")
-        return
-      }
-      this.startRoll(rollData)
-    }
+  rollFromType(rollType, rollKey) {
+    let stat = duplicate(this.system[rollType][rollKey])
+    let rollData = this.getCommonRollData()
+    rollData.mode = rollType
+    rollData.stat = stat
+    this.startRoll(rollData)
   }
 
   /* -------------------------------------------- */
@@ -655,149 +571,7 @@ export class WarheroActor extends Actor {
     }
   }
 
-  /* -------------------------------------------- */
-  rollDefenseMelee(attackRollData) {
-    let weapon = this.items.get(attackRollData.defenseWeaponId)
-    if (weapon) {
-      weapon = duplicate(weapon)
-      let skill = this.items.find(item => item.name.toLowerCase() == weapon.system.skill.toLowerCase())
-      if (skill) {
-        skill = duplicate(skill)
-        WarheroUtility.updateSkill(skill)
-        let abilityKey = skill.system.ability
-        let rollData = this.getCommonRollData(abilityKey)
-        rollData.defenderTokenId = undefined // Cleanup
-        rollData.mode = "weapondefense"
-        rollData.shield = this.getEquippedShield()
-        rollData.attackRollData = duplicate(attackRollData)
-        rollData.skill = skill
-        rollData.weapon = weapon
-        rollData.img = weapon.img
-        if (!rollData.forceDisadvantage) { // This is an attack, check if disadvantaged
-          rollData.forceDisadvantage = this.isDefenseDisadvantage()
-        }
 
-        this.startRoll(rollData)
-      } else {
-        ui.notifications.warn("Unable to find the relevant skill for weapon " + weapon.name)
-      }
-    } else {
-      ui.notifications.warn("Weapon not found ! ")
-    }
-  }
-
-  /* -------------------------------------------- */
-  rollDefenseRanged(attackRollData) {
-    let rollData = this.getCommonRollData()
-    rollData.defenderTokenId = undefined // Cleanup
-    rollData.mode = "rangeddefense"
-    if ( attackRollData) {
-      rollData.attackRollData = duplicate(attackRollData)
-      rollData.effectiveRange = WarheroUtility.getWeaponRange(attackRollData.weapon)
-      rollData.tokensDistance = attackRollData.tokensDistance // QoL copy
-    }
-    rollData.sizeDice = WarheroUtility.getSizeDice(this.system.biodata.size)
-    rollData.distanceBonusDice = 0 //Math.max(0, Math.floor((rollData.tokensDistance - rollData.effectiveRange) + 0.5))
-    rollData.hasCover = "none"
-    rollData.situational = "none"
-    rollData.useshield = false
-    rollData.shield = this.getEquippedShield()
-    this.startRoll(rollData)
-  }
-
-  /* -------------------------------------------- */
-  rollShieldDie() {
-    let shield = this.getEquippedShield()
-    if (shield) {
-      shield = duplicate(shield)
-      let rollData = this.getCommonRollData()
-      rollData.mode = "shield"
-      rollData.shield = shield
-      rollData.useshield = true
-      rollData.img = shield.img
-      this.startRoll(rollData)
-    }
-  }
-
-  /* -------------------------------------------- */
-  async rollArmorDie(rollData = undefined) {
-    let armor = this.getEquippedArmor()
-    if (armor) {
-      armor = duplicate(armor)
-      let reduce = 0
-      let multiply = 1
-      let disadvantage = false
-      let advantage = false
-      let messages = ["Armor applied"]
-
-      if (rollData) {
-        if (WarheroUtility.isArmorLight(armor) && WarheroUtility.isWeaponPenetrating(rollData.attackRollData.weapon)) {
-          return { armorIgnored: true, nbSuccess: 0, messages: ["Armor ignored : Penetrating weapons ignore Light Armors."] }
-        }
-        if (WarheroUtility.isWeaponPenetrating(rollData.attackRollData.weapon)) {
-          messages.push("Armor reduced by 1 (Penetrating weapon)")
-          reduce = 1
-        }
-        if (WarheroUtility.isWeaponLight(rollData.attackRollData.weapon)) {
-          messages.push("Armor with advantage (Light weapon)")
-          advantage = true
-        }
-        if (WarheroUtility.isWeaponHeavy(rollData.attackRollData.weapon)) {
-          messages.push("Armor with disadvantage (Heavy weapon)")
-          disadvantage = true
-        }
-        if (WarheroUtility.isWeaponHack(rollData.attackRollData.weapon)) {
-          messages.push("Armor reduced by 1 (Hack weapon)")
-          reduce = 1
-        }
-        if (WarheroUtility.isWeaponUndamaging(rollData.attackRollData.weapon)) {
-          messages.push("Armor multiplied by 2 (Undamaging weapon)")
-          multiply = 2
-        }
-      }
-      let diceColor = armor.system.absorprionroll
-      let armorResult = await WarheroUtility.getRollTableFromDiceColor(diceColor, false)
-      console.log("Armor log", armorResult)
-      let armorValue = Math.max(0, (Number(armorResult.text) + reduce) * multiply)
-      if (advantage || disadvantage) {
-        let armorResult2 = await WarheroUtility.getRollTableFromDiceColor(diceColor, false)
-        let armorValue2 = Math.max(0, (Number(armorResult2.text) + reduce) * multiply)
-        if (advantage) {
-          armorValue = (armorValue2 > armorValue) ? armorValue2 : armorValue
-          messages.push(`Armor advantage - Roll 1 = ${armorValue} - Roll 2 = ${armorValue2}`)
-        }
-        if (disadvantage) {
-          armorValue = (armorValue2 < armorValue) ? armorValue2 : armorValue
-          messages.push(`Armor disadvantage - Roll 1 = ${armorValue} - Roll 2 = ${armorValue2}`)
-        }
-      }
-      armorResult.armorValue = armorValue
-      if (!rollData) {
-        ChatMessage.create({ content: "Armor result : " + armorValue })
-      }
-      messages.push("Armor result : " + armorValue)
-      return { armorIgnored: false, nbSuccess: armorValue, rawArmor: armorResult.text, messages: messages }
-    }
-    return { armorIgnored: true, nbSuccess: 0, messages: ["No armor equipped."] }
-  }
-
-  /* -------------------------------------------- */
-  rollSave(saveKey) {
-    let saves = this.getSaveRoll()
-    let save = saves[saveKey]
-    if (save) {
-      save = duplicate(save)
-      let rollData = this.getCommonRollData()
-      rollData.mode = "save"
-      rollData.save = save
-      if (rollData.target) {
-        ui.notifications.warn("You are targetting a token with a save roll - Not authorized.")
-        return
-      }
-      this.startRoll(rollData)
-    }
-
-  }
   /* -------------------------------------------- */
   async startRoll(rollData) {
     this.syncRoll(rollData)

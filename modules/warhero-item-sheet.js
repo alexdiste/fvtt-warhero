@@ -69,7 +69,6 @@ export class WarheroItemSheet extends ItemSheet {
       limited: this.object.limited,
       options: this.options,
       owner: this.document.isOwner,
-      abilities: duplicate(game.model.Actor.character.abilities),
       isGM: game.user.isGM
     }
     if ( this.object.type == "power") {

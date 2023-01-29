@@ -1,0 +1,36 @@
+<li class="item flexrow list-item item-stat-roll" data-attr-key="{{key}}">
+  <span class="item-field-label-medium" name="{{key}}">
+    <h4 class="item-field-label-medium">
+      {{#if roll}}
+      <a class="roll-this stat-margin" data-type="{{path}}" data-key="{{key}}">{{localize stat.label}}</a>
+      {{else}}
+      {{localize stat.label}}
+      {{/if}}
+    </h4>
+  </span>
+
+  {{#if (eq style "dropdown")}}
+  <select class="item-field-label-medium" type="text" name="system.{{path}}.{{key}}.value" value="{{stat.value}}"
+    data-dtype="Number" {{#unless @root.editScore}}disabled{{/unless}}>
+    {{#select stat.value}}
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    {{/select}}
+  </select>
+  {{/if}}
+
+  {{#if (eq style "edit")}}
+    <input type="text" class="item-field-label-medium " name="system.{{path}}.{{key}}.value" value="{{stat.value}}" data-dtype="Number"/>
+    {{#if hasmax}}
+      <input type="text" class="item-field-label-medium " name="system.{{path}}.{{key}}.max" value="{{stat.max}}" data-dtype="Number"/>
+    {{/if}}
+  {{/if}}
+
+</li>

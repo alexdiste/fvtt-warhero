@@ -14,7 +14,7 @@ export class WarheroActorSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["fvtt-warhero", "sheet", "actor"],
       template: "systems/fvtt-warhero/templates/actor-sheet.html",
-      width: 960,
+      width: 720,
       height: 720,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }],
       dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }],
@@ -24,8 +24,7 @@ export class WarheroActorSheet extends ActorSheet {
 
   /* -------------------------------------------- */
   async getData() {
-    const objectData = this.object.system
-    let actorData = duplicate(objectData)
+    const objectData = duplicate(this.object.system)
 
     let formData = {
       title: this.title,
@@ -35,25 +34,21 @@ export class WarheroActorSheet extends ActorSheet {
       name: this.actor.name,
       editable: this.isEditable,
       cssClass: this.isEditable ? "editable" : "locked",
-      data: actorData,
+      system: objectData,
       limited: this.object.limited,
       skills: this.actor.getSkills( ),
       weapons: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getWeapons()) ),
       armors: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getArmors())),
       shields: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getShields())),
-      spells: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getLore())),
+      powers: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getPowers())),
       equipments: this.actor.checkAndPrepareEquipments(duplicate(this.actor.getEquipmentsOnly()) ),
-      equippedWeapons: this.actor.checkAndPrepareEquipments(duplicate(this.actor.getEquippedWeapons()) ),
-      equippedArmor: this.actor.getEquippedArmor(),
-      equippedShield: this.actor.getEquippedShield(),
+      slotEquipments: this.actor.buildEquipmentsSlot(),
       subActors: duplicate(this.actor.getSubActors()),
       race: duplicate(this.actor.getRace()),
+      class: duplicate(this.actor.getClass()),
       moneys: duplicate(this.actor.getMoneys()),
-      encCapacity: this.actor.getEncumbranceCapacity(),
       description: await TextEditor.enrichHTML(this.object.system.biodata.description, {async: true}),
       notes: await TextEditor.enrichHTML(this.object.system.biodata.notes, {async: true}),
-      containersTree: this.actor.containersTree,
-      encCurrent: this.actor.encCurrent,
       options: this.options,
       owner: this.document.isOwner,
       editScore: this.options.editScore,
@@ -136,34 +131,15 @@ export class WarheroActorSheet extends ActorSheet {
       this.actor.incDecAmmo( li.data("item-id"), +1 )
     } );
             
-    html.find('.roll-ability').click((event) => {
-      const abilityKey = $(event.currentTarget).data("ability-key");
-      this.actor.rollAbility(abilityKey);
+    html.find('.roll-this').click((event) => {
+      const rollType = $(event.currentTarget).data("type")
+      const statKey = $(event.currentTarget).data("key")
+      this.actor.rollFromType(rollType, statKey)
     });
-    html.find('.roll-skill').click((event) => {
-      const li = $(event.currentTarget).parents(".item")
-      const skillId = li.data("item-id")
-      this.actor.rollSkill(skillId)
-    });    
-
     html.find('.roll-weapon').click((event) => {
       const li = $(event.currentTarget).parents(".item");
       const skillId = li.data("item-id")
       this.actor.rollWeapon(skillId)
-    });
-    html.find('.roll-armor-die').click((event) => {
-      this.actor.rollArmorDie()
-    });
-    html.find('.roll-shield-die').click((event) => {
-      this.actor.rollShieldDie()
-    });
-    html.find('.roll-target-die').click((event) => {
-      this.actor.rollDefenseRanged()
-    });
-    
-    html.find('.roll-save').click((event) => {
-      const saveKey = $(event.currentTarget).data("save-key")
-      this.actor.rollSave(saveKey)
     });
     
     

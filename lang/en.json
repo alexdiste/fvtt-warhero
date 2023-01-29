@@ -36,5 +36,23 @@
   "WH.ui.attrbonus": "Attribute (+4/Lvl4, +2/Lvl8)",
   "WH.ui.weapons": "Weapons",
   "WH.ui.armors": "Armors",
-  "WH.ui.shields": "Shields"
+  "WH.ui.shields": "Shields",
+
+  "WH.ui.Strength": "Strength",
+  "WH.ui.Instinct": "Instinct",
+  "WH.ui.Mind": "Mind",
+  "WH.ui.Type": "Type",
+  "WH.ui.HitPoints": "Hit Points",
+  "WH.ui.Defence": "Defence",
+  "WH.ui.Throw2Hit": "Throw to Hit",
+  "WH.ui.Mana": "Mana",
+  "WH.ui.Initiative": "Initiative",
+  "WH.ui.Movement": "Movement",
+  
+  "WH.ui.Qty": "Qty",
+  "WH.ui.maxslots": "Max slots",
+  "WH.ui.slotsused": "Slots used",
+  "WH.ui.Damage": "Damage",
+  "WH.ui.parrybonus": "Parry bonus",
+  "WH.ui.damagereduction": "Damage reduction"
 }

@@ -13,6 +13,7 @@
           "sex": "",
           "eyes": "",
           "background": "",
+          "religion": "",
           "description": "",
           "notes": "",
           "gmnotes": ""
@@ -20,72 +21,70 @@
       },
       "core": {
         "subactors": [],
-        "abilities": {
-          "str":{ 
-            "label": "Strength",
+        "statistics": {
+          "str": {
+            "label": "WH.ui.Strength",
             "abbrev": "str",
-            "col": 1,
-            "value": 1
-          },
-          "agi":{ 
-            "label": "Agility",
-            "abbrev": "agi",
-            "col": 1,
-            "value": 1
-          },
-          "dex":{ 
-            "label": "Dexterity",
-            "abbrev": "dex",
-            "col": 1,
-            "value": 1
-          },
-          "con":{ 
-            "label": "Constitution",
-            "abbrev": "con",
-            "col": 1,
-            "value": 1
-          },
-          "int":{ 
-            "label": "Intelligence",
-            "abbrev": "int",
-            "col": 2,
-            "value": 1
-          },
-          "wit":{ 
-            "label": "Wits",
-            "abbrev": "wit",
-            "col": 2,
-            "value": 1
-          },
-          "cha":{ 
-            "label": "Charisma",
-            "abbrev": "cha",
-            "col": 2,
-            "value": 1
-          }
-        },
-        "secondary": {
-          "hp": {
-            "label": "Hitpoint",
-            "abbrev": "hb",
-            "value": -1,
-            "max": 0
-          },
-          "effort": {
-            "label": "Effort",
-            "abbrev": "eff",
-            "value": -1,
-            "max": 0
-          }
-        },
-        "social": {
-          "fame": {
-            "label": "Fame",
+            "style": "dropdown",
             "value": 0
           },
-          "reputation": {
-            "label": "Reputation",
+          "ist": {
+            "label": "WH.ui.Instinct",
+            "abbrev": "ist",
+            "style": "dropdown",
             "value": 0
+          },
+          "min": {
+            "label": "WH.ui.Mind",
+            "abbrev": "min",
+            "style": "dropdown",
+            "value": 0
+          }
+        },
+        "attributes": {
+          "hp":{ 
+            "label": "WH.ui.HitPoints",
+            "abbrev": "hp",
+            "style": "edit",
+            "hasmax": true,
+            "max": 1,
+            "value": 1
+          },
+          "def":{ 
+            "label": "WH.ui.Defence",
+            "abbrev": "def",
+            "style": "edit",
+            "max": 1,
+            "value": 1
+          },
+          "txc":{ 
+            "label": "WH.ui.Throw2Hit",
+            "abbrev": "txc",
+            "style": "edit",
+            "max": 1,
+            "value": 1
+          },
+          "mana":{ 
+            "label": "WH.ui.Mana",
+            "abbrev": "pm",
+            "style": "edit",
+            "hasmax": true,
+            "max": 1,
+            "value": 1
+          },
+          "ini":{ 
+            "label": "WH.ui.Initiative",
+            "abbrev": "ini",
+            "style": "dropdown",
+            "max": 1,
+            "value": 1
+          },
+          "mov":{ 
+            "label": "WH.ui.Movement",
+            "abbrev": "mov",
+            "style": "dropdown",
+            "max": 1,
+            "value": 1
           }
         }
       },

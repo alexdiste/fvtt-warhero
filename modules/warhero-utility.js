@@ -234,7 +234,7 @@ export class WarheroUtility {
     const templatePaths = [
       'systems/fvtt-warhero/templates/editor-notes-gm.html',
       'systems/fvtt-warhero/templates/partial-roll-select.html',
-      'systems/fvtt-warhero/templates/partial-actor-ability-block.html',
+      'systems/fvtt-warhero/templates/partial-actor-stat-block.html',
       'systems/fvtt-warhero/templates/partial-actor-status.html',
       'systems/fvtt-warhero/templates/partial-options-abilities.html',
       'systems/fvtt-warhero/templates/partial-item-nav.html',
@@ -541,94 +541,12 @@ export class WarheroUtility {
     let actor = game.actors.get(rollData.actorId)
 
     // ability/save/size => 0
-    let diceFormula
-    let startFormula = "0d6cs>=5[blue]"
-    if (rollData.ability) {
-      startFormula = String(rollData.ability.value) + "d6cs>=5[blue]"
+    let diceFormula = "1d20"
+    if ( rollData.stat) {
+      diceFormula += "+" + rollData.stat.value
     }
-    if (rollData.save) {
-      startFormula = String(rollData.save.value) + "d6cs>=5[blue]"
-    }
-    if (rollData.sizeDice) {
-      let nb = rollData.sizeDice.nb + rollData.distanceBonusDice + this.getDiceFromCover(rollData.hasCover) + this.getDiceFromSituational(rollData.situational)
-      startFormula = String(nb) + String(rollData.sizeDice.dice) + "cs>=5[blue]"
-    }
-    diceFormula = startFormula
-
-    // skill => 2
-    // feat => 4
-    // bonus => 6
-    if (rollData.skill) {
-      let level = rollData.skill.system.level
-      if (rollData.skill.system.issl2) {
-        rollData.hasSLBonus = true
-        level += 2
-        if (level > 7) { level = 7 }
-      }
-      rollData.skill.system.skilldice = __skillLevel2Dice[level]
-      diceFormula += "+" + String(rollData.skill.system.skilldice) + "cs>=5[black]"
-
-      if (rollData.skill.system.skilltype == "complex" && rollData.skill.system.level == 0) {
-        rollData.complexSkillDisadvantage = true
-        rollData.rollAdvantage = "roll-disadvantage"
-      }
-
-      if (rollData.skill.system.isfeatdie) {
-        rollData.hasFeatDie = true
-        diceFormula += "+ 1d10cs>=5[warhero-purple]"
-      } else {
-        diceFormula += `+ 0d10cs>=5[warhero-purple]`
-      }
-      if (rollData.skill.system.bonusdice != "none") {
-        rollData.hasBonusDice = rollData.skill.system.bonusdice
-        diceFormula += `+ ${rollData.hasBonusDice}cs>=5[black]`
-      } else {
-        diceFormula += `+ 0d6cs>=5[black]`
-      }
-    } else {
-      diceFormula += `+ 0d8cs=>5 + 0d10cs>=5 + 0d6cs>=5`
-    }
-
-    // advantage => 8
-    let advFormula = "+ 0d8cs>=5"
-    if (rollData.advantage == "advantage1" || rollData.forceAdvantage) {
-      advFormula = "+ 1d8cs>=5[warhero-darkgreen]"
-    }
-    if (rollData.advantage == "advantage2") {
-      advFormula = "+ 2d8cs>=5[warhero-darkgreen]"
-    }
-    diceFormula += advFormula
-
-    // disadvantage => 10
-    let disFormula = "- 0d8cs>=5"
-    if (rollData.disadvantage == "disadvantage1" || rollData.forceDisadvantage) {
-      disFormula = "- 1d8cs>=5[red]"
-    }
-    if (rollData.disadvantage == "disadvantage2") {
-      disFormula = "- 2d8cs>=5[red]"
-    }
-    diceFormula += disFormula
-
-    // armor => 12
-    let skillArmorPenalty = 0
-    for (let armor of rollData.armors) {
-      if (armor.system.equipped) {
-        skillArmorPenalty += armor.system.skillpenalty
-      }
-    }
-    if (rollData.skill && rollData.skill.system.armorpenalty && skillArmorPenalty > 0) {
-      rollData.skillArmorPenalty = skillArmorPenalty
-      diceFormula += `- ${skillArmorPenalty}d8cs>=5`
-    } else {
-      diceFormula += `- 0d8cs>=5`
-    }
-
-    // shield => 14
-    if (rollData.useshield && rollData.shield) {
-      diceFormula += "+ 1" + String(rollData.shield.system.shielddie) + "cs>=5[yellow]"
-    } else {
-      diceFormula += " + 0d6cs>=5"
-    }
+    diceFormula += "+" + rollData.bonusMalus
+    rollData.diceFormula = diceFormula
 
     // Performs roll
     console.log("Roll formula", diceFormula)
@@ -637,74 +555,16 @@ export class WarheroUtility {
       myRoll = new Roll(diceFormula).roll({ async: false })
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
     }
-    rollData.rollOrder = 0
     rollData.roll = myRoll
-    rollData.nbSuccess = myRoll.total
 
-    if (rollData.rollAdvantage == "none" && rollData.forceRollAdvantage) {
-      rollData.rollAdvantage = "roll-advantage"
-    }
-    if (rollData.rollAdvantage == "none" && rollData.forceRollDisadvantage) {
-      rollData.rollAdvantage = "roll-disadvantage"
-    }
-    if (rollData.rollAdvantage != "none") {
-
-      rollData.rollOrder = 1
-      rollData.rollType = (rollData.rollAdvantage == "roll-advantage") ? "Advantage" : "Disadvantage"
-      this.createChatWithRollMode(rollData.alias, {
-        content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
-      })
-
-      rollData.rollOrder = 2
-      let myRoll2 = new Roll(diceFormula).roll({ async: false })
-      await this.showDiceSoNice(myRoll2, game.settings.get("core", "rollMode"))
-
-      rollData.roll = myRoll2 // Tmp switch to display the proper results
-      rollData.nbSuccess = myRoll2.total
-      this.createChatWithRollMode(rollData.alias, {
-        content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
-      })
-      rollData.roll = myRoll // Revert the tmp switch
-      rollData.nbSuccess = myRoll.total
-
-      if (rollData.rollAdvantage == "roll-advantage") {
-        if (myRoll2.total > rollData.nbSuccess) {
-          hasChanged = true
-          rollData.roll = myRoll2
-          rollData.nbSuccess = myRoll2.total
-        }
-      } else {
-        if (myRoll2.total < rollData.nbSuccess) {
-          rollData.roll = myRoll2
-          rollData.nbSuccess = myRoll2.total
-        }
-      }
-      rollData.rollOrder = 3
-    }
-    rollData.nbSuccess = Math.max(0, rollData.nbSuccess)
-
-    rollData.isFirstRollAdvantage = false
-    // Manage exp
-    if (rollData.skill && rollData.skill.system.level > 0) {
-      let nbSkillSuccess = rollData.roll.terms[2].total
-      if (nbSkillSuccess == 0 || nbSkillSuccess == rollData.skill.system.level) {
-        actor.incrementSkillExp(rollData.skill.id, 1)
-      }
-    }
-
-    this.saveRollData(rollData)
     actor.lastRoll = rollData
 
-    this.createChatWithRollMode(rollData.alias, {
+    let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
     })
+    msg.setFlag("world", "rolldata", rollData)
     console.log("Rolldata result", rollData)
 
-    // Message response
-    this.displayDefenseMessage(rollData)
-
-    // Manage defense result
-    this.processAttackDefense(rollData)
   }
 
   /* -------------------------------------------- */
@@ -798,7 +658,7 @@ export class WarheroUtility {
         break;
     }
     chatOptions.alias = chatOptions.alias || name;
-    ChatMessage.create(chatOptions);
+    return ChatMessage.create(chatOptions);
   }
 
   /* -------------------------------------------- */
@@ -806,7 +666,8 @@ export class WarheroUtility {
     let rollData = {
       rollId: randomID(16),
       rollMode: game.settings.get("core", "rollMode"),
-      advantage: "none"
+      advantage: "none",
+      bonusMalus: 0
     }
     WarheroUtility.updateWithTarget(rollData)
     return rollData
@@ -821,8 +682,8 @@ export class WarheroUtility {
   }
 
   /* -------------------------------------------- */
-  static createChatWithRollMode(name, chatOptions) {
-    this.createChatMessage(name, game.settings.get("core", "rollMode"), chatOptions)
+  static async createChatWithRollMode(name, chatOptions) {
+    return this.createChatMessage(name, game.settings.get("core", "rollMode"), chatOptions)
   }
 
   /* -------------------------------------------- */

@@ -11,79 +11,46 @@
           <div class="flexrow">
             <div class="ability-item">
               <ul>
-                {{#each data.abilities as |ability key|}}
-                {{#if (eq ability.col 1)}}
-                {{> systems/fvtt-crucible-rpg/templates/partial-actor-ability-block.html ability=ability key=key}}
-                {{/if}}
+                {{#each system.statistics as |stat key|}}
+                {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key=key path="statistics" roll=true}}
                 {{/each}}
-              </ul>
-
-              <li class="item flexrow list-item" data-attr-key="class">
-                <span class="ability-label " name="class">
-                  <h4 class="ability-text-white ability-margin">Class</h4>
-                </span>
-                <select class="competence-base flexrow" type="text" name="system.biodata.class" value="{{data.biodata.class}}" data-dtype="String">
-                  {{#select data.biodata.class}}
-                  <option value="chaplain">Chaplain</option>
-                  <option value="magus">Magus</option>
-                  <option value="martial">Martial</option>
-                  <option value="skalawag">Skalawag</option>
-                  <option value="warden">Warden</option>
-                  {{/select}}
-                </select>
-              </li>
-            
+              </ul>            
             </div>
 
             <div class="ability-item">
               <ul>
-                {{#each data.abilities as |ability key|}}
-                {{#if (eq ability.col 2)}}
-                {{> systems/fvtt-crucible-rpg/templates/partial-actor-ability-block.html ability=ability key=key}}
-                {{/if}}
-                {{/each}}
-
-                {{#if equippedArmor}}
-                <li class="item flexrow list-item" data-attr-key="class">
-                  <img class="sheet-competence-img" src="{{equippedArmor.img}}" />
-                  <span class="ability-label " name="class">
-                    <h4 class="ability-text-white ability-margin"><a class="roll-armor-die ability-margin">{{equippedArmor.name}}</a></h4>
-                  </span>
-                </li>
-                {{/if}}
-                {{#if equippedShield}}
-                <li class="item flexrow list-item" data-attr-key="class">              
-                  <img class="sheet-competence-img" src="{{equippedShield.img}}" />
-                  <span class="ability-label " name="equippedShield">
-                    <h4 class="ability-text-white ability-margin"><a class="roll-shield-die ability-margin">{{equippedShield.name}}</a></h4>
-                  </span>
-                </li>
-                {{/if}}
-                <li class="item flexrow list-item" data-attr-key="class">              
-                  <img class="sheet-competence-img" src="systems/fvtt-crucible-rpg/images/icons/feats/Marksman (Ballistic).webp" />
-                  <span class="ability-label " name="rollTarget">
-                    <h4 class="ability-text-white ability-margin"><a class="roll-target-die ability-margin">Target Roll</a></h4>
-                  </span>
-                </li>
-
+              <li class="flexrow item" data-item-id="{{race._id}}">
+                <label class="item-field-label-medium">Race</label>
+                <a class="item-edit"><img class="sheet-competence-img" src="{{race.img}}"></a>
+                <input type="text" class="item-field-label-medium" disabled value="{{race.name}}" data-dtype="String" />
+              </li>  
+              <li class="flexrow item" data-item-id="{{class._id}}">
+                <label class="item-field-label-medium">Class</label>
+                <a class="item-edit"><img class="sheet-competence-img" src="{{class.img}}"></a>
+                <input type="text" class="item-field-label-medium" disabled value="{{class.name}}" data-dtype="String" />
+              </li>  
+              <li class="flexrow item" >
+                <label class="item-field-label-medium">Religion</label>
+                <input type="text" class="item-field-label-medium" name="system.biodata.religion" value="{{system.biodata.religion}}" data-dtype="String" />
+              </li>  
               </ul>
             </div>
 
-            <div class="ability-item status-block">
-              {{> systems/fvtt-crucible-rpg/templates/partial-actor-status.html}}
+            <div class="ability-item">
             </div>
-
           </div>
+          
         </div>
       </div>
+
     </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="skills">Skills</a>
+    <a class="item" data-tab="main">Main</a>
     <a class="item" data-tab="combat">Combat</a>
-    <a class="item" data-tab="lore">Lore</a>
+    <a class="item" data-tab="power">Powers</a>
     <a class="item" data-tab="equipment">Equipment</a>
     <a class="item" data-tab="biodata">Biography</a>
   </nav>
@@ -92,38 +59,17 @@
   <section class="sheet-body">
 
     {{!-- Skills Tab --}}
-    <div class="tab skills" data-group="primary" data-tab="skills">
+    <div class="tab main" data-group="primary" data-tab="main">
 
-      <ul class="stat-list alternate-list item-list">
-        <li class="item flexrow list-item items-title-bg">
-          <span class="item-name-label-header">
-            <h3><label class="items-title-text">Skills</label></h3>
-          </span>
-          <span class="item-field-label-short">
-            <label class="short-label">Ability</label>
-          </span>
-          <span class="item-field-label-short">
-            <label class="short-label">Dice</label>
-          </span>
-          <span class="item-field-label-long">
-            <label class="short-label">Background</label>
-          </span>
-        </li>
-        {{#each skills as |skill key|}}
-        <li class="item stat flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
-          <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
-              src="{{skill.img}}" /></a>
-          <span class="item-name-label"><a class="roll-skill">{{skill.name}}</a></span>
-          <span class="item-field-label-short">{{upper skill.system.ability}}</span>
-          <span class="item-field-label-short">{{skill.system.skilldice}}</span>
-          <span class="item-field-label-long">&nbsp;-&nbsp;</span>
-          <div class="item-filler">&nbsp;</div>
-          <div class="item-controls item-controls-fixed">
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        {{/each}}
-      </ul>
+      <div class="ability-item">
+        <ul>
+          {{#each system.attributes as |attr key|}}
+          {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=attr key=key path="attributes" roll=false}}
+          {{/each}}
+
+        </ul>
+      </div>
+
     </div>
 
     {{!-- Combat Tab --}}
@@ -137,56 +83,21 @@
                 <h3><label class="items-title-text">Weapons</label></h3>
               </span>
               <span class="item-field-label-short">
-                <label class="short-label">Ability</label>
+                <label class="short-label">{{localize "WH.ui.Type"}}</label>
               </span>
               <span class="item-field-label-medium">
-                <label class="short-label">Range</label>
+                <label class="short-label">{{localize "WH.ui.Damage"}}</label>
               </span>
             </li>
-            {{#each equippedWeapons as |weapon key|}}
+            {{#each weapons as |weapon key|}}
             <li class="item flexrow list-item list-item-shadow" data-item-id="{{weapon._id}}">
               <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
                   src="{{weapon.img}}" /></a>
               <span class="item-name-label-long"><a class ="roll-weapon">{{weapon.name}}</a></span>
 
-              <span class="item-field-label-short">{{weapon.system.ability}}</span>
+              <span class="item-field-label-short">{{weapon.system.weapontype}}</span>
 
-              <span class="item-field-label-medium">{{perk.system.range}}</span>
-
-              <div class="item-filler">&nbsp;</div>
-              <div class="item-controls item-controls-fixed">
-                <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-              </div>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
-
-        <div>
-          <ul class="stat-list alternate-list">
-            <li class="item flexrow list-item items-title-bg">
-              <span class="item-name-label-header-long">
-                <h3><label class="items-title-text">Feats</label></h3>
-              </span>
-              <span class="item-field-label-medium">
-                <label class="short-label">Feature Die?</label>
-              </span>
-              <span class="item-field-label-medium">
-                <label class="short-label">SL?</label>
-              </span>
-              <span class="item-field-label-medium">
-                <label class="short-label">SL</label>
-              </span>
-            </li>
-            {{#each feats as |feat key|}}
-            <li class="item flexrow list-item list-item-shadow" data-item-id="{{feat._id}}">
-              <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
-                  src="{{feat.img}}" /></a>
-              <span class="item-name-label-long">{{feat.name}}</span>
-
-              <span class="item-field-label-medium">{{upperFirst feat.system.isfeatdie}}</span>
-              <span class="item-field-label-medium">{{upperFirst feat.system.issl}}</span>
-              <span class="item-field-label-medium">{{feat.system.sl}}</span>
+              <span class="item-field-label-medium">{{perk.system.damage}}</span>
 
               <div class="item-filler">&nbsp;</div>
               <div class="item-controls item-controls-fixed">
@@ -201,14 +112,57 @@
           <ul class="stat-list alternate-list">
             <li class="item flexrow list-item items-title-bg">
               <span class="item-name-label-header-long">
-                <h3><label class="items-title-text">Conditions</label></h3>
+                <h3><label class="items-title-text">Shields</label></h3>
+              </span>
+              <span class="item-field-label-short">
+                <label class="short-label">{{localize "WH.ui.Type"}}</label>
+              </span>
+              <span class="item-field-label-medium">
+                <label class="short-label">{{localize "WH.ui.parrybonus"}}</label>
               </span>
             </li>
-            {{#each conditions as |condition key|}}
-            <li class="item flexrow list-item list-item-shadow" data-item-id="{{condition._id}}">
+            {{#each shields as |shield key|}}
+            <li class="item flexrow list-item list-item-shadow" data-item-id="{{shield._id}}">
               <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
-                  src="{{condition.img}}" /></a>
-              <span class="item-name-label-long">{{condition.name}}</span>
+                  src="{{shield.img}}" /></a>
+              <span class="item-name-label-long"><a class ="roll-weapon">{{shield.name}}</a></span>
+
+              <span class="item-field-label-short">{{shield.system.shieldtype}}</span>
+
+              <span class="item-field-label-medium">{{shield.system.parrybonus}}</span>
+
+              <div class="item-filler">&nbsp;</div>
+              <div class="item-controls item-controls-fixed">
+                <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+              </div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+
+        <div>
+          <ul class="stat-list alternate-list">
+            <li class="item flexrow list-item items-title-bg">
+              <span class="item-name-label-header-long">
+                <h3><label class="items-title-text">Armors</label></h3>
+              </span>
+              <span class="item-field-label-short">
+                <label class="short-label">{{localize "WH.ui.Type"}}</label>
+              </span>
+              <span class="item-field-label-medium">
+                <label class="short-label">{{localize "WH.ui.damagereduction"}}</label>
+              </span>
+            </li>
+            {{#each armors as |armor key|}}
+            <li class="item flexrow list-item list-item-shadow" data-item-id="{{armor._id}}">
+              <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+                  src="{{armor.img}}" /></a>
+              <span class="item-name-label-long"><a class ="roll-weapon">{{armor.name}}</a></span>
+
+              <span class="item-field-label-short">{{armor.system.armortype}}</span>
+
+              <span class="item-field-label-medium">{{armor.system.damagereduction}}</span>
+
               <div class="item-filler">&nbsp;</div>
               <div class="item-controls item-controls-fixed">
                 <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
@@ -222,37 +176,25 @@
     </div>
 
 
-    {{!-- Lore Tab --}}
-    <div class="tab lore" data-group="primary" data-tab="lore">
+    {{!-- Powers Tab --}}
+    <div class="tab power" data-group="primary" data-tab="power">
 
       <div class="flexcol">
 
         <ul class="stat-list alternate-list">
           <li class="item flexrow list-item items-title-bg">
             <span class="item-name-label-header">
-              <h3><label class="items-title-text">Lore</label></h3>
-            </span>
-            <span class="item-field-label-medium">
-              <label class="short-label">Lore</label>
-            </span>
-            <span class="item-field-label-short">
-              <label class="short-label">Circle</label>
-            </span>
-            <span class="item-field-label-medium">
-              <label class="short-label">Range</label>
+              <h3><label class="items-title-text">Powers</label></h3>
             </span>
           </li>
 
-          {{#each spells as |spell key|}}
-          <li class="item stat flexrow list-item list-item-shadow" data-item-id="{{spell._id}}">
+          {{#each powers as |power key|}}
+          <li class="item stat flexrow list-item list-item-shadow" data-item-id="{{power._id}}">
             <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
-                src="{{spell.img}}" /></a>
+                src="{{power.img}}" /></a>
             <span class="item-name-label">
-              <a class="power-roll">{{spell.name}}</a>
+              <a class="power-roll">{{power.name}}</a>
             </span>
-            <span class="item-field-label-medium">{{upperFirst spell.system.lore}}</span>
-            <span class="item-field-label-short">{{upperFirst spell.system.circle}}</span>
-            <span class="item-field-label-medium">{{upperFirst spell.system.range}}</span>
             <div class="item-filler">&nbsp;</div>
             <div class="item-controls item-controls-fixed">
               <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
@@ -268,52 +210,44 @@
     {{!-- Equipement Tab --}}
     <div class="tab equipment" data-group="primary" data-tab="equipment">
 
-      <div class="flexrow">
-        <h3>Encumbrance</h3>
-        <span class="small-label">Current : {{encCurrent}}</span>
-        <span class="small-label">Capacity : {{encCapacity}}</span>
-      </div>
-
+      {{#each slotEquipments as |slot slotKey|}}
       <ul class="item-list alternate-list">
         <li class="item flexrow list-item items-title-bg">
           <span class="item-name-label-header">
-            <h3><label class="items-title-text">Money</label></h3>
+            <h3><label class="items-title-text">{{localize slot.label}}</label></h3>
+          </span>          
+          <span class="item-field-label-medium">
+            <label class="short-label">{{localize "WH.ui.Type"}}</label>
           </span>
           <span class="item-field-label-long">
-            <label class="short-label">Qty</label>
+            <label class="short-label">{{localize "WH.ui.Qty"}}</label>
           </span>
           <span class="item-field-label-medium">
-            <label class="short-label">Weight</label>
+            <label class="short-label">{{localize "WH.ui.maxslots"}}: {{slot.nbslots}}</label>
           </span>
           <span class="item-field-label-medium">
-            <label class="short-label">IDR</label>
+            <label class="short-label">{{localize "WH.ui.slotsused"}}: {{slot.slotUsed}}</label>
           </span>
           <div class="item-filler">&nbsp;</div>
           <div class="item-controls item-controls-fixed">
             <a class="item-control item-add" data-type="money" title="Create Item"><i class="fas fa-plus"></i></a>
           </div>
         </li>
-        {{#each moneys as |money key|}}
-        <li class="item flexrow list-item list-item-shadow" data-item-id="{{money._id}}">
+        {{#each slot.content as |item itemKey|}}
+        <li class="item flexrow list-item list-item-shadow" data-item-id="{{item._id}}">
           <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
-              src="{{money.img}}" /></a>
-          <span class="item-name-label">{{money.name}}</span>
+              src="{{item.img}}" /></a>
+          <span class="item-name-label">{{item.name}}</span>
+
+          <span class="item-field-label-medium">
+            <label class="short-label">{{upperFirst item.type}}</label>
+          </span>
 
           <span class="item-field-label-long"><label>
-              {{money.system.quantity}}
+              {{item.system.quantity}}
               (<a class="quantity-minus plus-minus-button"> -</a>/<a class="quantity-plus plus-minus-button">+</a>)
             </label>
           </span>
-          <span class="item-field-label-medium">
-            <label>{{money.system.weight}}</label>
-          </span>
-          <span class="item-field-label-medium">
-            {{#if money.system.idrDice}}
-            <a class="roll-idr" data-dice-value="{{money.data.idrDice}}">{{money.system.idrDice}}</a>
-            {{else}}
-            &nbsp;-&nbsp;
-            {{/if}}
-          </span>
 
           <div class="item-filler">&nbsp;</div>
           <div class="item-controls item-controls-fixed">
@@ -322,128 +256,8 @@
         </li>
         {{/each}}
       </ul>
+      {{/each}}
 
-      <ul class="item-list alternate-list">
-        <li class="item flexrow list-item items-title-bg">
-          <span class="item-name-label-header">
-            <h3><label class="items-title-text">Weapons</label></h3>
-          </span>
-          <span class="item-field-label-short">
-            <label class="short-label">Attack</label>
-          </span>
-          <span class="item-field-label-short">
-            <label class="short-label">Damage</label>
-          </span>
-          <div class="item-controls item-controls-fixed">
-            <a class="item-control item-add" data-type="weapon" title="Create Item"><i class="fas fa-plus"></i></a>
-          </div>
-        </li>
-        {{#each weapons as |weapon key|}}
-        <li class="item flexrow list-item list-item-shadow" data-item-id="{{weapon._id}}">
-          <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
-              src="{{weapon.img}}" /></a>
-          <span class="item-name-label">{{weapon.name}}</span>
-          <span class="item-field-label-short"><label>{{upper weapon.system.ability}}</label></span>
-          <span class="item-field-label-short"><label>{{upper weapon.system.damage}}</label></span>
-
-          <div class="item-filler">&nbsp;</div>
-          <div class="item-controls item-controls-fixed">
-            <a class="item-control item-equip" title="Worn">{{#if weapon.system.equipped}}<i
-                class="fas fa-circle"></i>{{else}}<i class="fas fa-genderless"></i>{{/if}}</a>
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        {{/each}}
-      </ul>
-
-      <ul class="item-list alternate-list">
-        <li class="item flexrow list-item items-title-bg">
-          <span class="item-name-label-header">
-            <h3><label class="items-title-text">Armors</label></h3>
-          </span>
-          <span class="item-field-label-short">
-            <label class="short-label">Type</label>
-          </span>
-          <span class="item-field-label-short">
-            <label class="short-label">Absorption</label>
-          </span>
-
-          <div class="item-filler">&nbsp;</div>
-          <div class="item-controls item-controls-fixed">
-            <a class="item-control item-add" data-type="armor" title="Create Item"><i class="fas fa-plus"></i></a>
-          </div>
-        </li>
-        {{#each armors as |armor key|}}
-        <li class="item list-item flexrow list-item-shadow" data-item-id="{{armor._id}}">
-          <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
-              src="{{armor.img}}" /></a>
-          <span class="item-name-label">{{armor.name}}</span>
-          <span class="item-field-label-short">{{upper armor.system.armortype}}</span>
-          <span class="item-field-label-short">{{armor.system.absorprionroll}}</span>
-
-          <div class="item-filler">&nbsp;</div>
-          <div class="item-controls item-controls-fixed">
-            <a class="item-control item-equip" title="Worn">{{#if armor.system.equipped}}<i
-                class="fas fa-circle"></i>{{else}}<i class="fas fa-genderless"></i>{{/if}}</a>
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        {{/each}}
-      </ul>
-
-      <ul class="item-list alternate-list">
-        <li class="item flexrow list-item items-title-bg">
-          <span class="item-name-label-header">
-            <h3><label class="items-title-text">Shields</label></h3>
-          </span>
-          <span class="item-field-label-short">
-            <label class="short-label">Dice</label>
-          </span>
-          <div class="item-filler">&nbsp;</div>
-          <div class="item-controls item-controls-fixed">
-            <a class="item-control item-add" data-type="shield" title="Create Item"><i class="fas fa-plus"></i></a>
-          </div>
-        </li>
-        {{#each shields as |shield key|}}
-        <li class="item flexrow list-item list-item-shadow" data-item-id="{{shield._id}}">
-          <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
-              src="{{shield.img}}" /></a>
-          <span class="item-name-label">{{shield.name}}</span>
-          <span class="item-field-label-short">{{shield.system.levelDice}}</span>
-
-          <div class="item-filler">&nbsp;</div>
-          <div class="item-controls item-controls-fixed">
-            <a class="item-control item-equip" title="Worn">{{#if shield.system.equipped}}<i
-                class="fas fa-circle"></i>{{else}}<i class="fas fa-genderless"></i>{{/if}}</a>
-            <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        {{/each}}
-      </ul>
-
-      <ul class="item-list alternate-list">
-        <li class="item flexrow list-item items-title-bg">
-          <span class="item-name-label-header">
-            <h3><label class="items-title-text">Equipment</label></h3>
-          </span>
-          <span class="item-field-label-long">
-            <label class="short-label">Quantity</label>
-          </span>
-          <div class="item-filler">&nbsp;</div>
-          <div class="item-controls item-controls-fixed">
-            <a class="item-control item-add" data-type="equipment" title="Create Item"><i class="fas fa-plus"></i></a>
-          </div>
-
-        </li>
-        {{#each containersTree as |equip key|}}
-        {{> systems/fvtt-crucible-rpg/templates/partial-actor-equipment.html equip=equip level=1}}
-        <ul class="item-list list-item-shadow2 list-item-margin1">
-          {{#each equip.data.contents as |subgear key|}}
-          {{> systems/fvtt-crucible-rpg/templates/partial-actor-equipment.html equip=subgear level=2}}
-          {{/each}}
-        </ul>
-        {{/each}}
-      </ul>
 
       <hr>
 
@@ -500,11 +314,6 @@
               <label class="generic-label">Preferred Hand</label>
               <input type="text" class="" name="system.biodata.preferredhand" value="{{data.biodata.preferredhand}}"
                 data-dtype="String" />
-            </li>
-            <li class="flexrow item" data-item-id="{{race._id}}">
-              <label class="generic-label">Race</label>
-              <a class="item-edit"><img class="stat-icon" src="{{race.img}}"></a>
-              <input type="text" class="" name="system.biodata.racename" value="{{data.biodata.racename}}" data-dtype="String" />
             </li>
           </ul>
         </div>
