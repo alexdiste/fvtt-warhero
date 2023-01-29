@@ -28,9 +28,9 @@
             "style": "dropdown",
             "value": 0
           },
-          "ist": {
-            "label": "WH.ui.Instinct",
-            "abbrev": "ist",
+          "dex": {
+            "label": "WH.ui.Dexterity",
+            "abbrev": "dex",
             "style": "dropdown",
             "value": 0
           },

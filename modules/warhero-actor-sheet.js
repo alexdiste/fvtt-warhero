@@ -137,12 +137,21 @@ export class WarheroActorSheet extends ActorSheet {
       this.actor.rollFromType(rollType, statKey)
     });
     html.find('.roll-weapon').click((event) => {
-      const li = $(event.currentTarget).parents(".item");
-      const skillId = li.data("item-id")
-      this.actor.rollWeapon(skillId)
+      const li = $(event.currentTarget).parents(".item")
+      const weaponId = li.data("item-id")
+      this.actor.rollWeapon(weaponId)
     });
-    
-    
+    html.find('.power-roll').click((event) => {
+      const li = $(event.currentTarget).parents(".item")
+      const powerId = li.data("item-id")
+      this.actor.rollPower(powerId)
+    });    
+    html.find('.roll-damage').click((event) => {
+      const li = $(event.currentTarget).parents(".item")
+      const weaponId = li.data("item-id")
+      this.actor.rollDamage(weaponId)
+    });    
+        
     html.find('.lock-unlock-sheet').click((event) => {
       this.options.editScore = !this.options.editScore;
       this.render(true);

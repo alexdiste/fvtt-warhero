@@ -37,9 +37,11 @@
   "WH.ui.weapons": "Weapons",
   "WH.ui.armors": "Armors",
   "WH.ui.shields": "Shields",
+  "WH.ui.weapon": "Weapon",
 
   "WH.ui.Strength": "Strength",
   "WH.ui.Instinct": "Instinct",
+  "WH.ui.Dexterity": "Dexterity",
   "WH.ui.Mind": "Mind",
   "WH.ui.Type": "Type",
   "WH.ui.HitPoints": "Hit Points",
@@ -48,6 +50,7 @@
   "WH.ui.Mana": "Mana",
   "WH.ui.Initiative": "Initiative",
   "WH.ui.Movement": "Movement",
+  "WH.ui.power": "Power",
   
   "WH.ui.Qty": "Qty",
   "WH.ui.maxslots": "Max slots",

@@ -540,6 +540,30 @@ export class WarheroUtility {
 
     let actor = game.actors.get(rollData.actorId)
 
+    if ( rollData.mode == "power") {
+      let manaCost = Array.from(rollData.powerLevel)[0]
+      if( actor.spentMana(manaCost)) {
+        let powerKey  = "level"+rollData.powerLevel
+        rollData.powerText = rollData.power.system[powerKey]
+        let msg = await this.createChatWithRollMode(rollData.alias, {
+          content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
+        })
+        msg.setFlag("world", "rolldata", rollData)
+      }
+      return
+    }
+    if ( rollData.mode == "damage") {
+      let myRoll = new Roll(rollData.weapon.damageFormula + "+" + rollData.bonusMalus).roll({ async: false })
+      await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
+      rollData.roll = myRoll
+  
+      let msg = await this.createChatWithRollMode(rollData.alias, {
+        content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
+      })
+      msg.setFlag("world", "rolldata", rollData)
+      return
+    }
+
     // ability/save/size => 0
     let diceFormula = "1d20"
     if ( rollData.stat) {
@@ -667,7 +691,9 @@ export class WarheroUtility {
       rollId: randomID(16),
       rollMode: game.settings.get("core", "rollMode"),
       advantage: "none",
-      bonusMalus: 0
+      bonusMalus: 0,
+      powerLevel: "1",
+      hasBM: true
     }
     WarheroUtility.updateWithTarget(rollData)
     return rollData

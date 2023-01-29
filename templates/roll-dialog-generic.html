@@ -17,8 +17,14 @@
 
       {{#if weapon}}
       <div class="flexrow">
-        <span class="roll-dialog-label">Weapon : </span>
-        <span class="roll-dialog-label">{{weapon.name}}</span>
+        <span class="item-field-label-medium">Weapon : </span>
+        <span class="item-field-label-medium">{{weapon.name}}</span>
+        {{#if (eq mode "damage")}}
+          <div class="flexrow">
+            <span class="item-field-label-medium">Damage : </span>
+            <span class="item-field-label-medium">{{weapon.damageFormula}}</span>
+          </div>
+        {{/if}}
       </div>
       {{/if}}
 
@@ -33,6 +39,26 @@
       </div>
       {{/if}}
 
+      {{#if power}}
+      <div class="flexrow">
+        <span class="item-field-label-medium">Power : </span>
+        <span class="item-field-label-medium">{{power.name}}</span>
+      </div>
+      <div class="flexrow">
+        <span class="item-field-label-medium">Power Level : </span>
+        <select class="item-field-label-medium" type="text" id="powerLevel" value="{{powerLevel}}">
+          {{#select powerLevel}}
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4_1">4 - 1</option>
+            <option value="4_2">4 - 2</option>
+          {{/select}}
+        </select>
+      </div>
+      {{/if}}
+
+      {{#if hasBM}}
       <div class="flexrow">
         <span class="item-field-label-medium">Bonus/Malus : </span>
         <select class="item-field-label-medium" type="text" id="bonusMalus" value="{{bonusMalus}}">
@@ -53,6 +79,8 @@
           {{/select}}
         </select>
       </div>
-  </div>
+      {{/if}}
+
+    </div>
 
 </form>

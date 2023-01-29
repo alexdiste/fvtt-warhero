@@ -13,19 +13,26 @@
   </div>
   {{/if}}
 
-  <div class="flexcol">
-    </div>
+  <div>
+    <ul>
+      {{#if stat}}
+      <li>{{localize stat.label}} : {{stat.value}}</li>
+      {{/if}}
+      {{#if weapon}}
+      <li>{{localize "WH.ui.weapon"}} : {{weapon.name}}</li>
+      {{/if}}
+      {{#if hasBM}}
+      <li>Bonus/Malus : {{bonusMalus}}</li>
+      {{/if}}
+      
+      {{#if power}}
+      <li>{{localize "WH.ui.power"}} : {{power.name}}</li>
+      <li>{{{powerText}}}</li>
+      {{else}}
+      <li><strong>Result : {{roll.total}} </strong></li>
+      {{/if}}
 
-    <div>
-      <ul>
-        {{#if stat}}
-        <li>{{localize stat.label}} : {{stat.value}}</li>
-        {{/if}}
-        <li>Bonus/Malus : {{bonusMalus}}</li>
-  
-        <li><strong>Result : {{roll.total}} </strong></li>
-
-      </ul>  
-    </div>
+    </ul>  
+  </div>
 
   </div>

@@ -82,7 +82,7 @@
               <span class="item-name-label-header-long">
                 <h3><label class="items-title-text">Weapons</label></h3>
               </span>
-              <span class="item-field-label-short">
+              <span class="item-field-label-medium">
                 <label class="short-label">{{localize "WH.ui.Type"}}</label>
               </span>
               <span class="item-field-label-medium">
@@ -93,11 +93,11 @@
             <li class="item flexrow list-item list-item-shadow" data-item-id="{{weapon._id}}">
               <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
                   src="{{weapon.img}}" /></a>
-              <span class="item-name-label-long"><a class ="roll-weapon">{{weapon.name}}</a></span>
+              <span class="item-name-label-long"><a class="roll-weapon"><i class="fa-solid fa-dice-d20"></i>{{weapon.name}}</a></span>
 
-              <span class="item-field-label-short">{{weapon.system.weapontype}}</span>
+              <span class="item-field-label-medium">{{weapon.system.weapontype}}</span>
 
-              <span class="item-field-label-medium">{{perk.system.damage}}</span>
+              <span class="item-field-label-medium"><a class="roll-damage"><i class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula}}</a></span>
 
               <div class="item-filler">&nbsp;</div>
               <div class="item-controls item-controls-fixed">
@@ -125,7 +125,7 @@
             <li class="item flexrow list-item list-item-shadow" data-item-id="{{shield._id}}">
               <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
                   src="{{shield.img}}" /></a>
-              <span class="item-name-label-long"><a class ="roll-weapon">{{shield.name}}</a></span>
+              <span class="item-name-label-long">{{shield.name}}</span>
 
               <span class="item-field-label-short">{{shield.system.shieldtype}}</span>
 
@@ -157,7 +157,7 @@
             <li class="item flexrow list-item list-item-shadow" data-item-id="{{armor._id}}">
               <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
                   src="{{armor.img}}" /></a>
-              <span class="item-name-label-long"><a class ="roll-weapon">{{armor.name}}</a></span>
+              <span class="item-name-label-long">{{armor.name}}</span>
 
               <span class="item-field-label-short">{{armor.system.armortype}}</span>
 
@@ -193,7 +193,7 @@
             <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
                 src="{{power.img}}" /></a>
             <span class="item-name-label">
-              <a class="power-roll">{{power.name}}</a>
+              <a class="power-roll"><i class="fa-solid fa-dice-d20"></i>{{power.name}}</a>
             </span>
             <div class="item-filler">&nbsp;</div>
             <div class="item-controls item-controls-fixed">

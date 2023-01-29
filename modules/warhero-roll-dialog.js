@@ -58,23 +58,8 @@ export class WarheroRollDialog extends Dialog {
     }
     $(function () { onLoad(); });
 
-    html.find('#advantage').change((event) => {
-      this.rollData.advantage = event.currentTarget.value
-    })
-    html.find('#disadvantage').change((event) => {
-      this.rollData.disadvantage = event.currentTarget.value
-    })
-    html.find('#rollAdvantage').change((event) => {
-      this.rollData.rollAdvantage = event.currentTarget.value
-    })
-    html.find('#useshield').change((event) => {
-      this.rollData.useshield = event.currentTarget.checked
-    })
-    html.find('#hasCover').change((event) => {
-      this.rollData.hasCover = event.currentTarget.value
-    })
-    html.find('#situational').change((event) => {
-      this.rollData.situational = event.currentTarget.value
+    html.find('#powerLevel').change((event) => {
+      this.rollData.powerLevel = event.currentTarget.value
     })
     html.find('#bonusMalus').change((event) => {
       this.rollData.bonusMalus = Number(event.currentTarget.value)

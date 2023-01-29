@@ -183,8 +183,22 @@ export class WarheroActor extends Actor {
     return comp;
   }
   /* -------------------------------------------- */
+  prepareWeapon(weapon) {
+    let formula = weapon.system.damage
+    if (weapon.system.weapontype == "long") {
+      formula += "+" + this.system.statistics.str.value
+    }
+    if (weapon.system.weapontype == "twohanded") {
+      formula += "+" + Math.floor(this.system.statistics.str.value*1.5)
+    }
+    weapon.damageFormula = formula
+  }
+  /* -------------------------------------------- */
   getWeapons() {
     let comp = duplicate(this.items.filter(item => item.type == 'weapon') || []);
+    for (let weapon of comp) {
+      this.prepareWeapon(weapon)
+    }
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
@@ -522,6 +536,15 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
+  spentMana( mana) {
+    if ( Number(mana) > this.system.attributes.mana.value) {
+      ui.notifications.warn("Not enough Mana points !")
+      return false
+    }
+    this.update({'system.attributes.mana.value': this.system.attributes.mana.value-mana})
+    return true
+  } 
+  /* -------------------------------------------- */
   getCommonRollData() {
     let rollData = WarheroUtility.getBasicRollData()
     rollData.alias = this.name
@@ -547,31 +570,41 @@ export class WarheroActor extends Actor {
     let weapon = this.items.get(weaponId)
     if (weapon) {
       weapon = duplicate(weapon)
-      let skill = this.items.find(item => item.name.toLowerCase() == weapon.system.skill.toLowerCase())
-      if (skill) {
-        skill = duplicate(skill)
-        WarheroUtility.updateSkill(skill)
-        let abilityKey = skill.system.ability
-        let rollData = this.getCommonRollData(abilityKey)
-        rollData.mode = "weapon"
-        rollData.skill = skill
-        rollData.weapon = weapon
-        rollData.img = weapon.img
-        if (!rollData.forceDisadvantage) { // This is an attack, check if disadvantaged
-          rollData.forceDisadvantage = this.isAttackDisadvantage()
-        }
-        /*if (rollData.weapon.system.isranged && rollData.tokensDistance > WarheroUtility.getWeaponMaxRange(rollData.weapon) ) {
-          ui.notifications.warn(`Your target is out of range of your weapon (max: ${WarheroUtility.getWeaponMaxRange(rollData.weapon)}  - current : ${rollData.tokensDistance})` )
-          return
-        }*/
-        this.startRoll(rollData)
-      } else {
-        ui.notifications.warn("Unable to find the relevant skill for weapon " + weapon.name)
-      }
+      let rollData = this.getCommonRollData()
+      rollData.mode = "weapon"
+      rollData.stat = duplicate(this.system.statistics.dex)
+      rollData.weapon = weapon
+      rollData.img = weapon.img
+      this.startRoll(rollData)
     }
   }
-
-
+  /* -------------------------------------------- */
+  rollDamage(weaponId) {
+    let weapon = this.items.get(weaponId)
+    if (weapon) {
+      weapon = duplicate(weapon)
+      this.prepareWeapon(weapon)
+      let rollData = this.getCommonRollData()
+      rollData.mode = "damage"
+      rollData.weapon = weapon
+      rollData.img = weapon.img
+      this.startRoll(rollData)
+    }
+  }
+  /* -------------------------------------------- */
+  rollPower(powerId) {
+    let power = this.items.get(powerId)
+    if (power) {
+      power = duplicate(power)
+      let rollData = this.getCommonRollData()
+      rollData.mode = "power"
+      rollData.power = power
+      rollData.img = power.img
+      rollData.hasBM = false
+      this.startRoll(rollData)
+    }
+  }
+  
   /* -------------------------------------------- */
   async startRoll(rollData) {
     this.syncRoll(rollData)
