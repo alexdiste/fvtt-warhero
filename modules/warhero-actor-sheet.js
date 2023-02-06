@@ -24,7 +24,13 @@ export class WarheroActorSheet extends ActorSheet {
 
   /* -------------------------------------------- */
   async getData() {
+
+    this.actor.setLevel()
+    this.actor.computeDRTotal()
+    this.actor.computeParryBonusTotal()
+    this.actor.computeBonusLanguages()
     const objectData = duplicate(this.object.system)
+    let race = this.actor.getRace()
 
     let formData = {
       title: this.title,
@@ -36,7 +42,9 @@ export class WarheroActorSheet extends ActorSheet {
       cssClass: this.isEditable ? "editable" : "locked",
       system: objectData,
       limited: this.object.limited,
-      skills: this.actor.getSkills( ),
+      skills: this.actor.getNormalSkills( ),
+      classSkills: this.actor.getClassSkills( ),
+      languages: this.actor.getLanguages( ),
       weapons: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getWeapons()) ),
       armors: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getArmors())),
       shields: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getShields())),
@@ -44,7 +52,7 @@ export class WarheroActorSheet extends ActorSheet {
       equipments: this.actor.checkAndPrepareEquipments(duplicate(this.actor.getEquipmentsOnly()) ),
       slotEquipments: this.actor.buildEquipmentsSlot(),
       subActors: duplicate(this.actor.getSubActors()),
-      race: duplicate(this.actor.getRace()),
+      race: duplicate(race),
       class: duplicate(this.actor.getClass()),
       moneys: duplicate(this.actor.getMoneys()),
       description: await TextEditor.enrichHTML(this.object.system.biodata.description, {async: true}),
@@ -54,8 +62,10 @@ export class WarheroActorSheet extends ActorSheet {
       editScore: this.options.editScore,
       isGM: game.user.isGM
     }
-    this.formData = formData;
-
+    if ( race && race.name) {
+      formData.hpprogression = game.system.warhero.config.progressionList[race.system.hpprogresion]
+    }
+    this.formData = formData
     console.log("PC : ", formData, this.object);
     return formData;
   }
@@ -135,6 +145,11 @@ export class WarheroActorSheet extends ActorSheet {
       const rollType = $(event.currentTarget).data("type")
       const statKey = $(event.currentTarget).data("key")
       this.actor.rollFromType(rollType, statKey)
+    });
+    html.find('.roll-save').click((event) => {
+      const rollType = $(event.currentTarget).data("type")
+      const statKey = $(event.currentTarget).data("key")
+      this.actor.rollSaveFromType(rollType, statKey)
     });
     html.find('.roll-weapon').click((event) => {
       const li = $(event.currentTarget).parents(".item")

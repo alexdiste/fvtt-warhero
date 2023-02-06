@@ -562,8 +562,8 @@
   
   .list-item {
     margin: 0.125rem;
-    box-shadow: inset 0px 0px 1px #00000096;
-    border-radius: 0.25rem;
+    /*box-shadow: inset 0px 0px 1px #00000096;
+    border-radius: 0.25rem;*/
     padding: 0.125rem;
     flex: 1 1 5rem;
     display: flex !important;
@@ -1388,6 +1388,9 @@
     background: black;
     color: white;
   }
+  .items-title-bg-red {
+    background: darkred;
+  }
   .items-title-text {
     margin-left: 4px;
   }
@@ -1465,8 +1468,8 @@
   .item-field-label-vlong {
     flex-grow:1;
     margin-top: 4px;
-    max-width: 14rem;
-    min-width: 14rem;
+    max-width: 12rem;
+    min-width: 12rem;
   }
   .item-field-label-vlong2 {
     flex-grow:1;

@@ -208,23 +208,6 @@ export class WarheroUtility {
     html.on("click", '.view-item-from-chat', event => {
       game.system.crucible.creator.openItemView(event)
     })
-    html.on("click", '.roll-defense-melee', event => {
-      let rollId = $(event.currentTarget).data("roll-id")
-      let rollData = WarheroUtility.getRollData(rollId)
-      rollData.defenseWeaponId = $(event.currentTarget).data("defense-weapon-id")
-      let actor = game.canvas.tokens.get(rollData.defenderTokenId).actor
-      if (actor && (game.user.isGM || actor.isOwner)) {
-        actor.rollDefenseMelee(rollData)
-      }
-    })
-    html.on("click", '.roll-defense-ranged', event => {
-      let rollId = $(event.currentTarget).data("roll-id")
-      let rollData = WarheroUtility.getRollData(rollId)
-      let defender = game.canvas.tokens.get(rollData.defenderTokenId).actor
-      if (defender && (game.user.isGM || defender.isOwner)) {
-        defender.rollDefenseRanged(rollData)
-      }
-    })
 
   }
 
@@ -317,11 +300,6 @@ export class WarheroUtility {
       name: "msg_update_roll", data: rollData
     }); // Notify all other clients of the roll    
     this.updateRollData(rollData)
-  }
-
-  /* -------------------------------------------- */
-  static getRollData(id) {
-    return this.rollDataStore[id]
   }
 
   /* -------------------------------------------- */
@@ -518,10 +496,6 @@ export class WarheroUtility {
   }
 
   /* -------------------------------------------- */
-  static updateSkill(skill) {
-  }
-
-  /* -------------------------------------------- */
   static getDiceFromCover(cover) {
     if (cover == "cover50") return 1
     return 0
@@ -533,6 +507,30 @@ export class WarheroUtility {
     if (cover == "moving") return 1
     if (cover == "engaged") return 1
     return 0
+  }
+  /* -------------------------------------------- */
+  static async rollParry(rollData) {
+    let actor = game.actors.get(rollData.actorId)
+    // ability/save/size => 0
+    let diceFormula = "1d12+" + rollData.stat.value
+    let myRoll = rollData.roll
+    if (!myRoll) { // New rolls only of no rerolls
+      myRoll = new Roll(diceFormula).roll({ async: false })
+      await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
+    }
+    rollData.roll = myRoll
+    rollData.isSuccess = false
+    if (myRoll.total >= 12 || myRoll.terms[0].results[0].result == 12) {
+      rollData.isSuccess = true
+    }
+    if (myRoll.terms[0].results[0].result == 1) {
+      rollData.isSuccess = false
+    }
+    let msg = await this.createChatWithRollMode(rollData.alias, {
+      content: await renderTemplate(`systems/fvtt-warhero/templates/chat-parry-result.html`, rollData)
+    })
+    msg.setFlag("world", "rolldata", rollData)
+    console.log("Rolldata result", rollData)
   }
 
   /* -------------------------------------------- */
@@ -569,6 +567,9 @@ export class WarheroUtility {
     if ( rollData.stat) {
       diceFormula += "+" + rollData.stat.value
     }
+    if ( rollData.usemWeaponMalus) {
+      diceFormula += "+" + rollData.mWeaponMalus
+    }
     diceFormula += "+" + rollData.bonusMalus
     rollData.diceFormula = diceFormula
 
@@ -580,8 +581,6 @@ export class WarheroUtility {
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
     }
     rollData.roll = myRoll
-
-    actor.lastRoll = rollData
 
     let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)

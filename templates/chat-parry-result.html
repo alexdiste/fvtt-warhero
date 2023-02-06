@@ -15,27 +15,13 @@
 
   <div>
     <ul>
-      {{#if stat}}
       <li>{{localize stat.label}} : {{stat.value}}</li>
-      {{/if}}
-      {{#if weapon}}
-      <li>{{localize "WH.ui.weapon"}} : {{weapon.name}}</li>
-      {{/if}}
-      {{#if hasBM}}
-      <li>Bonus/Malus : {{bonusMalus}}</li>
-      {{/if}}
-*
-      {{#if usemWeaponMalus}}
-      <li>Multiple weapons malus : {{mWeaponMalus}}</li>
-      {{/if}}
-
-      {{#if power}}
-      <li>{{localize "WH.ui.power"}} : {{power.name}}</li>
-      <li>{{{powerText}}}</li>
-      {{else}}
       <li><strong>Result : {{roll.total}} </strong></li>
+      {{#if isSuccess}}
+      <li><strong>Parry success ! </strong></li>
+      {{else}}
+      <li><strong>Parry failed ! </strong></li>
       {{/if}}
-
     </ul>  
   </div>
 

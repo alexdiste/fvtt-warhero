@@ -5,7 +5,7 @@ export class WarheroRollDialog extends Dialog {
   /* -------------------------------------------- */
   static async create(actor, rollData) {
 
-    let options = { classes: ["WarheroDialog"], width: 320, height: 'fit-content', 'z-index': 99999 };
+    let options = { classes: ["WarheroDialog"], width: 420, height: 'fit-content', 'z-index': 99999 };
     let html = await renderTemplate('systems/fvtt-warhero/templates/roll-dialog-generic.html', rollData);
 
     return new WarheroRollDialog(actor, rollData, html, options);
@@ -64,6 +64,10 @@ export class WarheroRollDialog extends Dialog {
     html.find('#bonusMalus').change((event) => {
       this.rollData.bonusMalus = Number(event.currentTarget.value)
     })
+    html.find('#usemWeaponMalus').change((event) => {
+      this.rollData.usemWeaponMalus = event.currentTarget.checked
+    })
+    
     
   }
 }

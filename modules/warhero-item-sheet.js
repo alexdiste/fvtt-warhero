@@ -49,9 +49,6 @@ export class WarheroItemSheet extends ItemSheet {
   /* -------------------------------------------- */
   async getData() {
     
-    if ( this.object.type == "skill") {
-      WarheroUtility.updateSkill(this.object)
-    }
     let objectData = duplicate(this.object.system)
 
     let itemData = objectData
@@ -66,6 +63,7 @@ export class WarheroItemSheet extends ItemSheet {
       config: game.system.warhero.config,
       description: await TextEditor.enrichHTML(this.object.system.description, {async: true}),
       system: itemData,
+      statistics: duplicate(game.system.template.Actor.templates.core.statistics),
       limited: this.object.limited,
       options: this.options,
       owner: this.document.isOwner,

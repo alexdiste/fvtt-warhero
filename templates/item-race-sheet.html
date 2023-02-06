@@ -21,7 +21,7 @@
     <div class="tab details" data-group="primary" data-tab="details">
       <ul>
 
-        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.hpprog"}}</label>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.hpprog"}}</label>
           <select class="item-field-label-long " type="text" name="system.hpprogresion" value="{{system.hpprogresion}}" data-dtype="String">
             {{#select system.hpprogresion}}
               {{#each config.progressionList as |prog key|}}
@@ -31,30 +31,62 @@
           </select> 
         </li>
 
-        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.lan"}}</label>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.lan"}}</label>
           <input type="text" class="item-field-label-long" name="system.languages" value="{{system.languages}}" data-dtype="String"/>
         </li>
 
-        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.attrbonus"}}</label>
-          <select class="item-field-label-long " type="text" name="system.attributebonus" value="{{system.attributebonus}}" data-dtype="String">
-            {{#select system.attributebonus}}
-              {{#each abilities as |ability key|}}
-                <option value="{{key}}">{{ability.label}}</option>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.attrbonus"}} Lvl 1</label>
+          <select class="item-field-label-long " type="text" name="system.attributebonus1" value="{{system.attributebonus1}}" data-dtype="String">
+            {{#select system.attributebonus1}}
+              {{#each statistics as |ability key|}}
+                <option value="{{key}}">{{localize ability.label}}</option>
+              {{/each}}
+            {{/select}}
+          </select> 
+        </li>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.attrbonus"}} Lvl 4</label>
+          <select class="item-field-label-long " type="text" name="system.attributebonus4" value="{{system.attributebonus4}}" data-dtype="String">
+            {{#select system.attributebonus4}}
+              {{#each statistics as |ability key|}}
+                <option value="{{key}}">{{localize ability.label}}</option>
+              {{/each}}
+            {{/select}}
+          </select> 
+        </li>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.attrbonus"}} Lvl 8</label>
+          <select class="item-field-label-long " type="text" name="system.attributebonus8" value="{{system.attributebonus8}}" data-dtype="String">
+            {{#select system.attributebonus8}}
+              {{#each statistics as |ability key|}}
+                <option value="{{key}}">{{localize ability.label}}</option>
               {{/each}}
             {{/select}}
           </select> 
         </li>
 
-        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.weapons"}}</label>
-          <input type="text" class="item-field-label-long3 " name="system.weapons" value="{{system.weapons}}" data-dtype="String"/>
+        {{#each system.weapons as |weaponflag key|}}
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.weapons"}} {{key}}</label>
+            <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                  name="system.weapons.{{key}}" {{checked weaponflag}}/>
+
+          </li>
+        {{/each}}
+
+        {{#each system.armors as |armorflag key|}}
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.armors"}} {{key}}</label>
+            <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                  name="system.armors.{{key}}" {{checked armorflag}}/>
+
+          </li>
+        {{/each}}
+
+        {{#each system.shields as |shieldflag key|}}
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.shields"}} {{key}}</label>
+          <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                name="system.shields.{{key}}" {{checked shieldflag}}/>
+
         </li>
-        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.armors"}}</label>
-          <input type="text" class="item-field-label-long3 " name="system.armors" value="{{system.armors}}" data-dtype="String"/>
-        </li>
-        <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.shields"}}</label>
-          <input type="text" class="item-field-label-long3 " name="system.shields" value="{{system.shields}}" data-dtype="String"/>
-        </li>
-      </ul>
+      {{/each}}
+     </ul>
 
     </div>
 

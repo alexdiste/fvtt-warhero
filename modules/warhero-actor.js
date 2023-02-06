@@ -170,7 +170,7 @@ export class WarheroActor extends Actor {
                                       && it.system.slotlocation == slotName )
       let slotUsed = 0
       for(let item of containers[slotName].content) {
-        slotUsed += item.system.slotused
+        slotUsed += item.system.slotused * ((item.system.quantity) ? item.system.quantity : 1)
       }
       containers[slotName].slotUsed = slotUsed
     }
@@ -210,13 +210,25 @@ export class WarheroActor extends Actor {
     }
     return item;
   }
-
   /* -------------------------------------------- */
+  getLanguages() {
+    let comp = this.items.filter(it => it.type == "language")
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp
+  }
+  /* -------------------------------------------- */
+  getNormalSkills() {
+    let comp = this.items.filter(it => it.type == "skill" && !it.system.classskill)
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp
+  }
+  getClassSkills() {
+    let comp = this.items.filter(it => it.type == "skill" && it.system.classskill)
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp
+  }
   getSkills() {
     let comp = duplicate(this.items.filter(item => item.type == 'skill') || [])
-    for (let skill of comp) {
-      WarheroUtility.updateSkill(skill)
-    }
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp
   }
@@ -534,7 +546,33 @@ export class WarheroActor extends Actor {
   isAttackerAdvantage() {
     return this.items.find(cond => cond.type == "condition" && cond.system.targetadvantage)
   }
-
+  /* -------------------------------------------- */
+  setLevel() {
+    let xp = this.system.secondary.xp.value
+    this.system.secondary.xp.level = Math.floor(xp/10)
+  }
+  /* -------------------------------------------- */
+  computeDRTotal() {
+    let armors = this.items.filter(it => it.type == "armor")
+    let dr = 0
+    for (let armor of armors) {
+      dr += armor.system.damagereduction
+    }
+    this.system.secondary.drbonustotal.value = this.system.secondary.drbonus.value + dr 
+  }
+  /* -------------------------------------------- */
+  computeParryBonusTotal() {
+    let shields = this.items.filter(it => it.type == "shield")
+    let parry = 0
+    for (let shield of shields) {
+      parry += shield.system.parrybonus
+    }
+    this.system.secondary.parrybonustotal.value = this.system.secondary.parrybonus.value + parry 
+  }
+  /* -------------------------------------------- */
+  computeBonusLanguages() {
+    this.system.secondary.nblanguage.value = Math.floor(this.system.statistics.min.value / 2)
+  }
   /* -------------------------------------------- */
   spentMana( mana) {
     if ( Number(mana) > this.system.attributes.mana.value) {
@@ -562,9 +600,21 @@ export class WarheroActor extends Actor {
     let rollData = this.getCommonRollData()
     rollData.mode = rollType
     rollData.stat = stat
+    if ( rollKey == "parrybonustotal") {
+      WarheroUtility.rollParry(rollData)
+      return
+    }
     this.startRoll(rollData)
   }
-
+  /* -------------------------------------------- */
+  rollSaveFromType(rollType, rollKey) {
+    let stat = duplicate(this.system[rollType][rollKey])
+    let rollData = this.getCommonRollData()
+    rollData.mode = "save"
+    rollData.stat = stat
+    this.startRoll(rollData)
+  }
+  
   /* -------------------------------------------- */
   rollWeapon(weaponId) {
     let weapon = this.items.get(weaponId)
@@ -572,7 +622,13 @@ export class WarheroActor extends Actor {
       weapon = duplicate(weapon)
       let rollData = this.getCommonRollData()
       rollData.mode = "weapon"
-      rollData.stat = duplicate(this.system.statistics.dex)
+      if (weapon.system.weapontype ==="shooting" || weapon.system.weapontype ==="throwing") {
+        rollData.stat = duplicate(this.system.attributes.txcr)
+      } else {
+        rollData.stat = duplicate(this.system.attributes.txcm)
+      }
+      rollData.usemWeaponMalus =
+      rollData.mWeaponMalus = this.system.secondary.malusmultiweapon.value
       rollData.weapon = weapon
       rollData.img = weapon.img
       this.startRoll(rollData)

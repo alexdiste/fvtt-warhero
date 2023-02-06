@@ -15,8 +15,27 @@
 
       <div class="tab details" data-group="primary" data-tab="details">
         <ul>
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.isclassskill"}}</label>
+            <input type="checkbox" name="system.classskill" {{checked system.classskill}}/>
+          </li>
+          {{#if system.classskill}}
+            <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.unlimited"}}</label>
+              <input type="checkbox" name="system.unlimited" {{checked system.unlimited}}/>
+            </li>
 
-          </ul>
-        </div>
+            {{#if system.unlimited}}
+
+            {{else}}
+              <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.currentuse"}}</label>
+                <input type="text" class="item-field-label-medium " name="system.currentuse" value="{{system.currentuse}}" data-dtype="Number"/>
+              </li>
+              <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.maxuse"}}</label>
+                <input type="text" class="item-field-label-medium " name="system.maxuse" value="{{system.maxuse}}" data-dtype="Number"/>
+              </li>
+            {{/if}}
+          {{/if}}
+        </ul>
+
+      </div>
     </section>
 </form>

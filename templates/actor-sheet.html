@@ -12,32 +12,30 @@
             <div class="ability-item">
               <ul>
                 {{#each system.statistics as |stat key|}}
-                {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key=key path="statistics" roll=true}}
+                {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key=key path="statistics" fieldClass="item-field-label-medium"}}
                 {{/each}}
               </ul>            
             </div>
 
             <div class="ability-item">
               <ul>
-              <li class="flexrow item" data-item-id="{{race._id}}">
-                <label class="item-field-label-medium">Race</label>
-                <a class="item-edit"><img class="sheet-competence-img" src="{{race.img}}"></a>
-                <input type="text" class="item-field-label-medium" disabled value="{{race.name}}" data-dtype="String" />
-              </li>  
-              <li class="flexrow item" data-item-id="{{class._id}}">
-                <label class="item-field-label-medium">Class</label>
-                <a class="item-edit"><img class="sheet-competence-img" src="{{class.img}}"></a>
-                <input type="text" class="item-field-label-medium" disabled value="{{class.name}}" data-dtype="String" />
-              </li>  
-              <li class="flexrow item" >
-                <label class="item-field-label-medium">Religion</label>
-                <input type="text" class="item-field-label-medium" name="system.biodata.religion" value="{{system.biodata.religion}}" data-dtype="String" />
-              </li>  
+                <li class="item flexrow list-item " data-item-id="{{race._id}}">
+                  <label class="item-field-label-medium">Race</label>
+                  <a class="item-edit"><img class="sheet-competence-img" src="{{race.img}}"></a>
+                  <input type="text" class="item-field-label-medium" disabled value="{{race.name}}" data-dtype="String" />
+                </li>  
+                <li class="item flexrow list-item" data-item-id="{{class._id}}">
+                  <label class="item-field-label-medium">Class</label>
+                  <a class="item-edit"><img class="sheet-competence-img" src="{{class.img}}"></a>
+                  <input type="text" class="item-field-label-medium" disabled value="{{class.name}}" data-dtype="String" />
+                </li>  
+                <li class="item flexrow list-item" >
+                  <label class="item-field-label-medium">Religion</label>
+                  <input type="text" class="item-field-label-medium" name="system.biodata.religion" value="{{system.biodata.religion}}" data-dtype="String" />
+                </li>  
               </ul>
             </div>
 
-            <div class="ability-item">
-            </div>
           </div>
           
         </div>
@@ -50,6 +48,7 @@
   <nav class="sheet-tabs tabs" data-group="primary">
     <a class="item" data-tab="main">Main</a>
     <a class="item" data-tab="combat">Combat</a>
+    <a class="item" data-tab="skill">Skills&Effects</a>
     <a class="item" data-tab="power">Powers</a>
     <a class="item" data-tab="equipment">Equipment</a>
     <a class="item" data-tab="biodata">Biography</a>
@@ -60,14 +59,36 @@
 
     {{!-- Skills Tab --}}
     <div class="tab main" data-group="primary" data-tab="main">
+      
+      <div class="flexrow">
 
-      <div class="ability-item">
-        <ul>
-          {{#each system.attributes as |attr key|}}
-          {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=attr key=key path="attributes" roll=false}}
-          {{/each}}
+        <div class="ability-item">
+          <ul>
+            {{#each system.attributes as |attr key|}}
+            {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=attr key=key path="attributes" fieldClass="item-field-label-vlong"}}
+            {{/each}}
 
-        </ul>
+          </ul>
+        </div>
+
+        <div class="ability-item">
+          <ul>
+            {{#each system.secondary as |second key|}}
+            {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=second key=key path="secondary" fieldClass="item-field-label-vlong"}}
+            {{/each}}
+
+            <li class="item flexrow list-item item-stat-roll" data-attr-key="{{key}}">
+              <span class="item-field-label-vlong" name="{{key}}">
+                <h4 class="item-field-label-vlong">
+                  {{localize "WH.ui.xphp"}}
+                </h4>
+              </span>
+              <span class="item-field-label-long" >{{hpprogression}}</span>
+            </li>
+
+          </ul>
+        </div>
+
       </div>
 
     </div>
@@ -175,6 +196,93 @@
       </div>
     </div>
 
+    {{!-- Skills Tab --}}
+    <div class="tab skill" data-group="primary" data-tab="skill">
+      <div class="flexcol">
+
+        <div>
+          <ul class="stat-list alternate-list">
+            <li class="item flexrow list-item items-title-bg">
+              <span class="item-name-label-header-long">
+                <h3><label class="items-title-text">{{localize "WH.ui.classSkills"}}</label></h3>
+              </span>
+              <span class="item-field-label-medium">
+                <label class="short-label">{{localize "WH.ui.currentuse"}}</label>
+              </span>
+              <span class="item-field-label-medium">
+                <label class="short-label">{{localize "WH.ui.maxuse"}}</label>
+              </span>
+            </li>
+            {{#each classSkills as |skill key|}}
+            <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+              <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+                  src="{{skill.img}}" /></a>
+              <span class="item-name-label-long">{{skill.name}}</a></span>
+              
+              {{#if skill.system.unlimited}}
+              <span class="item-field-label-medium">N/A</span>
+              <span class="item-field-label-medium">N/A</span>
+              {{else}}
+              <span class="item-field-label-medium">{{skill.system.currentuse}}</span>
+              <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
+              {{/if}}
+
+              <div class="item-filler">&nbsp;</div>
+              <div class="item-controls item-controls-fixed">
+                <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+              </div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+
+        <div>
+          <ul class="stat-list alternate-list">
+            <li class="item flexrow list-item items-title-bg">
+              <span class="item-name-label-header-long">
+                <h3><label class="items-title-text">{{localize "WH.ui.skills"}}</label></h3>
+              </span>
+            </li>
+            {{#each skills as |skill key|}}
+            <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+              <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+                  src="{{skill.img}}" /></a>
+              <span class="item-name-label-long">{{skill.name}}</span>
+
+              <div class="item-filler">&nbsp;</div>
+              <div class="item-controls item-controls-fixed">
+                <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+              </div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+
+        <div>
+          <ul class="stat-list alternate-list">
+            <li class="item flexrow list-item items-title-bg">
+              <span class="item-name-label-header-long">
+                <h3><label class="items-title-text">{{localize "WH.ui.languages"}}</label></h3>
+              </span>
+            </li>
+            {{#each languages as |language key|}}
+            <li class="item flexrow list-item list-item-shadow" data-item-id="{{language._id}}">
+              <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+                  src="{{language.img}}" /></a>
+              <span class="item-name-label-long">{{language.name}}</span>
+
+              <div class="item-filler">&nbsp;</div>
+              <div class="item-controls item-controls-fixed">
+                <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+              </div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
 
     {{!-- Powers Tab --}}
     <div class="tab power" data-group="primary" data-tab="power">
@@ -212,7 +320,7 @@
 
       {{#each slotEquipments as |slot slotKey|}}
       <ul class="item-list alternate-list">
-        <li class="item flexrow list-item items-title-bg">
+        <li class="item flexrow list-item items-title-bg {{#if (gt slot.slotUsed slot.nbslots)}}items-title-bg-red{{/if}}">
           <span class="item-name-label-header">
             <h3><label class="items-title-text">{{localize slot.label}}</label></h3>
           </span>          
@@ -230,7 +338,7 @@
           </span>
           <div class="item-filler">&nbsp;</div>
           <div class="item-controls item-controls-fixed">
-            <a class="item-control item-add" data-type="money" title="Create Item"><i class="fas fa-plus"></i></a>
+            <a class="item-control item-add" data-type="{{itemtype}}" title="Create Item"><i class="fas fa-plus"></i></a>
           </div>
         </li>
         {{#each slot.content as |item itemKey|}}
@@ -289,6 +397,11 @@
               <label class="generic-label">Hair</label>
               <input type="text" class="" name="system.biodata.hair" value="{{data.biodata.hair}}" data-dtype="String" />
             </li>
+            <li class="flexrow item">
+              <label class="generic-label">Preferred Hand</label>
+              <input type="text" class="" name="system.biodata.preferredhand" value="{{data.biodata.preferredhand}}"
+                data-dtype="String" />
+            </li>
           </ul>
         </div>
        <div>
@@ -309,11 +422,6 @@
             <li class="flexrow item">
               <label class="generic-label">Sex</label>
               <input type="text" class="" name="system.biodata.sex" value="{{data.biodata.sex}}" data-dtype="String" />
-            </li>
-            <li class="flexrow item">
-              <label class="generic-label">Preferred Hand</label>
-              <input type="text" class="" name="system.biodata.preferredhand" value="{{data.biodata.preferredhand}}"
-                data-dtype="String" />
             </li>
           </ul>
         </div>
