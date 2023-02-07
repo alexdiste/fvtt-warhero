@@ -519,12 +519,18 @@ export class WarheroUtility {
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
     }
     rollData.roll = myRoll
+    rollData.diceFormula = diceFormula
+    rollData.diceResult = myRoll.terms[0].results[0].result
     rollData.isSuccess = false
-    if (myRoll.total >= 12 || myRoll.terms[0].results[0].result == 12) {
+    if (myRoll.total >= 12 || rollData.diceResult == 12) {
       rollData.isSuccess = true
+      if (rollData.diceResult == 12) {
+        rollData.isCriticalSuccess = true
+      }
     }
-    if (myRoll.terms[0].results[0].result == 1) {
+    if (rollData.diceResult == 1) {
       rollData.isSuccess = false
+      rollData.isCriticalFailure = true
     }
     let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await renderTemplate(`systems/fvtt-warhero/templates/chat-parry-result.html`, rollData)
@@ -554,6 +560,8 @@ export class WarheroUtility {
       let myRoll = new Roll(rollData.weapon.damageFormula + "+" + rollData.bonusMalus).roll({ async: false })
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
       rollData.roll = myRoll
+      rollData.diceFormula = myRoll.formula
+      rollData.diceResult = myRoll.terms[0].results[0].result
   
       let msg = await this.createChatWithRollMode(rollData.alias, {
         content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
@@ -571,7 +579,6 @@ export class WarheroUtility {
       diceFormula += "+" + rollData.mWeaponMalus
     }
     diceFormula += "+" + rollData.bonusMalus
-    rollData.diceFormula = diceFormula
 
     // Performs roll
     console.log("Roll formula", diceFormula)
@@ -581,6 +588,14 @@ export class WarheroUtility {
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
     }
     rollData.roll = myRoll
+    rollData.diceFormula = diceFormula
+    rollData.diceResult = myRoll.terms[0].results[0].result
+    if (rollData.diceResult == 20) {
+      rollData.isCriticalSuccess = true
+    }
+    if (rollData.diceResult == 1) {
+      rollData.isCriticalFailure = true
+    }
 
     let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)

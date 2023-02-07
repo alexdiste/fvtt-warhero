@@ -17,6 +17,18 @@
     <ul>
       <li>{{localize stat.label}} : {{stat.value}}</li>
       <li><strong>Result : {{roll.total}} </strong></li>
+
+      <li>Formula : {{diceFormula}}</li>
+      {{#if isCriticalSuccess}}
+        <li><span class="crit-success">Dice result : {{diceResult}}</span></li>
+      {{else}}
+        {{#if isCriticalFailure}}
+          <li><span class="crit-failure">Dice result : {{diceResult}}</span></li>
+        {{else}}
+          <li>Dice result : <span>{{diceResult}}</span></li>
+        {{/if}}
+      {{/if}}
+
       {{#if isSuccess}}
       <li><strong>Parry success ! </strong></li>
       {{else}}

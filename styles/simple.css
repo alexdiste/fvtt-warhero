@@ -1495,3 +1495,9 @@
   form .notes {
     color: rgba(214, 230, 230, 0.95);
   }
+  .crit-success {
+    color: darkgreen;
+  }
+  .crit-failure {
+    color: darkred;
+  }

@@ -203,6 +203,12 @@ export class WarheroActor extends Actor {
     return comp;
   }
   /* -------------------------------------------- */
+  getConditions() {
+    let comp = duplicate(this.items.filter(item => item.type == 'condition') || []);
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp;
+  }
+  /* -------------------------------------------- */
   getItemById(id) {
     let item = this.items.find(item => item.id == id);
     if (item) {
@@ -364,6 +370,28 @@ export class WarheroActor extends Actor {
     hp.value = Number(hp.value) + Number(dmgRoll.total)
     this.update({ 'system.secondary.hp': hp })
     return Number(dmgRoll.total)
+  }
+  /* -------------------------------------------- */
+  updateCompetency(competency, obj) {
+    for(let key in obj) {
+      if (obj[key]) {
+        competency[key] = true
+      }
+    }
+  }
+  getCompetency() {
+    let myRace = this.getRace()
+    let myClass = this.getClass()
+    let competency = { weapons: {}, armors: {}, shields: {}}
+    if ( myRace.system && myClass.system) {
+      this.updateCompetency(competency.weapons, myRace.system.weapons)
+      this.updateCompetency(competency.armors, myRace.system.armors)
+      this.updateCompetency(competency.shields, myRace.system.shields)
+      this.updateCompetency(competency.weapons, myClass.system.weapons)
+      this.updateCompetency(competency.armors, myClass.system.armors)
+      this.updateCompetency(competency.shields, myClass.system.shields)
+    }
+    return competency
   }
 
   /* -------------------------------------------- */
@@ -549,7 +577,7 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   setLevel() {
     let xp = this.system.secondary.xp.value
-    this.system.secondary.xp.level = Math.floor(xp/10)
+    this.system.secondary.xp.level = 1 + Math.floor(xp/10)
   }
   /* -------------------------------------------- */
   computeDRTotal() {

@@ -70,12 +70,18 @@
   "WH.ui.parrybonustotal": "Parry bonus total",
   "WH.ui.drbonustotal": "DR bonus total",
   "WH.ui.counterspell": "Counter spell",
-  "WH.ui.createitem": "Create item",
+  "WH.ui.createitem": "Bonus to percentage throws",
   "WH.ui.classSkills": "Class Skills",
-  "WH.ui.skills": "Skills",
+  "WH.ui.skills": "Skills based on level",
   "WH.ui.isclassskill": "Class skill ?",
   "WH.ui.unlimited": "Unlimited use ?",
   "WH.ui.currentuse": "Current use",
   "WH.ui.maxuse": "Max use",
-  "WH.ui.languages": "Languages"
+  "WH.ui.languages": "Languagess",
+  "WH.ui.languagesbonus": "Bonus Languages (mind/2)",
+  "WH.ui.competency": "Competency",
+  "WH.ui.conditions": "Conditions",
+  "WH.ui.effect": "Effect",
+  
+  "WH.chat.save": "Save"
 }

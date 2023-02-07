@@ -56,6 +56,7 @@
             "abbrev": "hp",
             "style": "edit",
             "hasmax": true,
+            "isheader": true,
             "max": 1,
             "value": 1
           },
@@ -98,6 +99,7 @@
             "abbrev": "pm",
             "style": "edit",
             "hasmax": true,
+            "isheader": true,
             "max": 1,
             "value": 1
           },
@@ -187,7 +189,7 @@
             "value": 0            
           },
           "nblanguage": {
-            "label": "WH.ui.languages",
+            "label": "WH.ui.languagesbonus",
             "abbrev": "nblanguage",
             "style": "edit",
             "disabled": true,
@@ -208,14 +210,15 @@
    }
   },
   "Item": {
-    "types": [ "equipment", "race", "weapon", "armor", "shield", "money" , "skill", "power", "language", "condition", "class"],
+    "types": [ "equipment", "race", "weapon", "armor", "shield", "skill", "power", "language", "condition", "class"],
     "templates": {
       "commonclassrace": {
         "weapons": {
           "short": false,
           "long": false,
           "twohanded": false,
-          "shotgun": false,  
+          "shooting": false,
+          "polearm": false,
           "throwing": false  
         },
         "armors": {
@@ -231,6 +234,7 @@
       }
     },
     "condition": {
+      "shortdescription": "",
       "description": ""
     },
     "class": {
@@ -247,6 +251,7 @@
       "templates": ["commonclassrace"]
     },
     "language": {
+      "shortdescription": "",
       "description": ""
     },
     "skill": {
@@ -301,11 +306,6 @@
       "level3": "",
       "level4_1": "",
       "level4_2": "",
-      "description": ""
-    },
-    "money" : {
-      "value": 0,
-      "quantity": 0,
       "description": ""
     },
     "spell":{
