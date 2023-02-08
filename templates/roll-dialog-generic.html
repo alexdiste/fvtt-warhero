@@ -59,15 +59,7 @@
       </div>
       <div class="flexrow">
         <span class="item-field-label-long">Power Level : </span>
-        <select class="item-field-label-medium" type="text" id="powerLevel" value="{{powerLevel}}">
-          {{#select powerLevel}}
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4_1">4 - 1</option>
-            <option value="4_2">4 - 2</option>
-          {{/select}}
-        </select>
+        <span class="item-field-label-medium">{{power.system.level}}</span>
       </div>
       {{/if}}
 

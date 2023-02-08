@@ -172,6 +172,7 @@ export class WarheroActor extends Actor {
       for(let item of containers[slotName].content) {
         slotUsed += item.system.slotused * ((item.system.quantity) ? item.system.quantity : 1)
       }
+      slotUsed = Math.ceil(slotUsed)
       containers[slotName].slotUsed = slotUsed
     }
     return containers
@@ -683,6 +684,7 @@ export class WarheroActor extends Actor {
       let rollData = this.getCommonRollData()
       rollData.mode = "power"
       rollData.power = power
+      rollData.powerLevel = power.system.level
       rollData.img = power.img
       rollData.hasBM = false
       this.startRoll(rollData)

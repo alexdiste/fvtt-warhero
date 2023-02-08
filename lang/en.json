@@ -10,6 +10,7 @@
   "WH.conf.lightshield": "Light",
   "WH.conf.mediumshield": "Medium",
   "WH.conf.towershield": "Tower",
+  "WH.conf.polearm": "Polearm",
 
   "WH.conf.head": "Head",
   "WH.conf.cloak": "Cloak",
@@ -83,5 +84,7 @@
   "WH.ui.conditions": "Conditions",
   "WH.ui.effect": "Effect",
   
+  "WH.ui.magicschool": "Magic School",
+
   "WH.chat.save": "Save"
 }

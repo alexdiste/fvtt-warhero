@@ -33,20 +33,24 @@
       {{#if usemWeaponMalus}}
       <li>Multiple weapons malus : {{mWeaponMalus}}</li>
       {{/if}}
-
-      <li>Formula : {{diceFormula}}</li>
-      {{#if isCriticalSuccess}}
-        <li><span class="crit-success">Dice result : {{diceResult}}</span></li>
-      {{else}}
-        {{#if isCriticalFailure}}
-          <li><span class="crit-failure">Dice result : {{diceResult}}</span></li>
+      
+      {{#if diceFormula}}
+        <li>Formula : {{diceFormula}}</li>
+        {{#if isCriticalSuccess}}
+          <li><span class="crit-success">Dice result : {{diceResult}}</span></li>
         {{else}}
-          <li>Dice result : <span>{{diceResult}}</span></li>
+          {{#if isCriticalFailure}}
+            <li><span class="crit-failure">Dice result : {{diceResult}}</span></li>
+          {{else}}
+            <li>Dice result : <span>{{diceResult}}</span></li>
+          {{/if}}
         {{/if}}
       {{/if}}
 
       {{#if power}}
       <li>{{localize "WH.ui.power"}} : {{power.name}}</li>
+      <li>{{localize "WH.ui.magicschool"}} : {{power.system.magicschool}}</li>
+      <li>{{localize "WH.ui.level"}} : {{power.system.level}}</li>
       <li>{{{powerText}}}</li>
       {{else}}
       <li><strong>Result : {{roll.total}} </strong></li>

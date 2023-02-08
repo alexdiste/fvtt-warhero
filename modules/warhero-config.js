@@ -4,6 +4,7 @@ export const WARHERO_CONFIG = {
     short: {damage: "1d6", label: "WH.conf.short"},
     long:  {damage: "1d8", label: "WH.conf.long"},
     twohanded:  {damage: "3d6", label: "WH.conf.twohanded"},
+    polearm:  {damage: "1d6", label: "WH.conf.polearm"},
     shooting:  {damage: "2d6", label: "WH.conf.shooting"},
     throwing:  {damage: "1d8", label: "WH.conf.throwing"},
   },
