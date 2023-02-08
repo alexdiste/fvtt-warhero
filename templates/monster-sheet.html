@@ -192,16 +192,8 @@
               <span class="item-name-label-long"><a class="roll-weapon"><i class="fa-solid fa-dice-d20"></i>{{weapon.name}}</a></span>
 
               <span class="item-field-label-medium">{{weapon.system.weapontype}}</span>
-              
-              {{#if (eq system.weapontype "special")}}
-              <span class="item-field-label-medium"><a class="roll-damage"><i class="fa-solid fa-dice-d20"></i>{{weapon.system.damageformula}}</a></span>
-              {{else}}
-              <span class="item-field-label-medium"><a class="roll-damage"><i class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula}}</a></span>
-              {{/if}}
 
-              {{#if (eq system.weapontype "polearm")}}
-              <span class="item-field-label-medium"><a class="roll-damage-2hands"><i class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula2Hands}}</a></span>
-              {{/if}}
+              <span class="item-field-label-medium"><a class="roll-damage"><i class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula}}</a></span>
 
               <div class="item-filler">&nbsp;</div>
               <div class="item-controls item-controls-fixed">

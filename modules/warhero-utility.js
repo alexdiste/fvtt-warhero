@@ -66,7 +66,7 @@ export class WarheroUtility {
       console.log("Element Found !!!!")
     })    */
   }
-  
+
   /*-------------------------------------------- */
   static upperFirst(text) {
     if (typeof text !== 'string') return text
@@ -544,10 +544,10 @@ export class WarheroUtility {
 
     let actor = game.actors.get(rollData.actorId)
 
-    if ( rollData.mode == "power") {
+    if (rollData.mode == "power") {
       let manaCost = Array.from(rollData.powerLevel)[0]
-      if( actor.spentMana(manaCost)) {
-        let powerKey  = "level"+rollData.powerLevel
+      if (actor.spentMana(manaCost)) {
+        let powerKey = "level" + rollData.powerLevel
         rollData.powerText = rollData.power.system[powerKey]
         let msg = await this.createChatWithRollMode(rollData.alias, {
           content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
@@ -556,13 +556,19 @@ export class WarheroUtility {
       }
       return
     }
-    if ( rollData.mode == "damage") {
-      let myRoll = new Roll(rollData.weapon.damageFormula + "+" + rollData.bonusMalus).roll({ async: false })
+    if (rollData.mode == "damage") {
+      let formula
+      if (rollData.weapon.system.weapontype == "special") {
+        formula = rollData.weapon.system.damageformula
+      } else {
+        formula = (rollData.is2hands) ? rollData.weapon.damageFormula2Hands : rollData.weapon.damageFormula
+      }
+      let myRoll = new Roll(formula + "+" + rollData.bonusMalus, actor.system).roll({ async: false })
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
       rollData.roll = myRoll
       rollData.diceFormula = myRoll.formula
       rollData.diceResult = myRoll.terms[0].results[0].result
-  
+
       let msg = await this.createChatWithRollMode(rollData.alias, {
         content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
       })
@@ -570,12 +576,17 @@ export class WarheroUtility {
       return
     }
 
-    // ability/save/size => 0
-    let diceFormula = "1d20"
-    if ( rollData.stat) {
-      diceFormula += "+" + rollData.stat.value
+    let diceFormula
+    if (rollData.weapon.system.weapontype == "special") {
+      diceFormula = rollData.weapon.system.rollformula
+    } else {
+      // ability/save/size => 0
+      diceFormula = "1d20"
+      if (rollData.stat) {
+        diceFormula += "+" + rollData.stat.value
+      }
     }
-    if ( rollData.usemWeaponMalus) {
+    if (rollData.usemWeaponMalus) {
       diceFormula += "+" + rollData.mWeaponMalus
     }
     diceFormula += "+" + rollData.bonusMalus
@@ -584,7 +595,7 @@ export class WarheroUtility {
     console.log("Roll formula", diceFormula)
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
-      myRoll = new Roll(diceFormula).roll({ async: false })
+      myRoll = new Roll(diceFormula, actor.system).roll({ async: false })
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
     }
     rollData.roll = myRoll
@@ -619,7 +630,19 @@ export class WarheroUtility {
       return 0;
     })
   }
-
+  static sortArrayObjectsByNameAndLevel(myArray) {
+    myArray.sort((a, b) => {
+      let fa = a.system.level + a.name.toLowerCase();
+      let fb = b.system.level + b.name.toLowerCase();
+      if (fa < fb) {
+        return -1;
+      }
+      if (fa > fb) {
+        return 1;
+      }
+      return 0;
+    })
+  }
   /* -------------------------------------------- */
   static getUsers(filter) {
     return game.users.filter(filter).map(user => user.id);

@@ -12,6 +12,7 @@ import { WarheroActor } from "./warhero-actor.js";
 import { WarheroItemSheet } from "./warhero-item-sheet.js";
 import { WarheroActorSheet } from "./warhero-actor-sheet.js";
 import { WarheroNPCSheet } from "./warhero-npc-sheet.js";
+import { WarheroMonsterSheet } from "./warhero-monster-sheet.js";
 import { WarheroUtility } from "./warhero-utility.js";
 import { WarheroCombat } from "./warhero-combat.js";
 import { WarheroItem } from "./warhero-item.js";
@@ -60,11 +61,12 @@ Hooks.once("init", async function () {
   /* -------------------------------------------- */
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("fvtt-crucible", WarheroActorSheet, { types: ["character"], makeDefault: true });
-  Actors.registerSheet("fvtt-crucible", WarheroNPCSheet, { types: ["npc"], makeDefault: false });
+  Actors.registerSheet("fvtt-warhero", WarheroActorSheet, { types: ["character"], makeDefault: true });
+  Actors.registerSheet("fvtt-warhero", WarheroNPCSheet, { types: ["npc"], makeDefault: false });
+  Actors.registerSheet("fvtt-warhero", WarheroMonsterSheet, { types: ["monster"], makeDefault: false });
 
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("fvtt-crucible", WarheroItemSheet, { makeDefault: true });
+  Items.registerSheet("fvtt-warhero", WarheroItemSheet, { makeDefault: true });
 
   WarheroUtility.init()
 });

@@ -18,7 +18,7 @@
 
       <div class="tab" data-group="primary">
         <ul>
-          <li class="flexrow"><label class="item-field-label-medium ">Type</label>
+          <li class="flexrow"><label class="item-field-label-long ">Type</label>
             <select class="item-field-label-medium " type="text" name="system.weapontype" value="{{system.weapontype}}" data-dtype="String">
               {{#select system.weapontype}}
                 {{#each config.weaponTypes as |type key|}}
@@ -27,11 +27,25 @@
               {{/select}}
             </select> 
           </li>
-
-          <li class="flexrow"><label class="item-field-label-medium ">Damage</label>
+          
+          {{#if (eq system.weapontype "special")}}
+          <li class="flexrow"><label class="item-field-label-vlong2 ">Raw Roll Formula (ex: 1d20+@statistics.str.value)</label>
+            <input type="text" class="item-field-label-long " name="system.rollformula" value="{{system.rollformula}}" data-dtype="String"/>
+          </li>          
+          <li class="flexrow"><label class="item-field-label-vlong2 ">Raw Damage Formula (ex: 1d6+(@statistics.str.value/2))</label>
+            <input type="text" class="item-field-label-long " name="system.damageformula" value="{{system.damageformula}}" data-dtype="String"/>
+          </li>          
+          {{else}}          
+          <li class="flexrow"><label class="item-field-label-long ">Damage</label>
             <input type="text" class="item-field-label-medium " name="system.damage" value="{{system.damage}}" data-dtype="String"/>
           </li>
-
+          {{/if}}
+          
+          {{#if (eq system.weapontype "polearm")}}
+          <li class="flexrow"><label class="item-field-label-long ">Damage 2 arms</label>
+            <input type="text" class="item-field-label-medium " name="system.damage2hands" value="{{system.damage2hands}}" data-dtype="String"/>
+          </li>
+          {{/if}}
 
           {{> systems/fvtt-warhero/templates/partial-item-common-equipment.html}}
 

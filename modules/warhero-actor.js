@@ -133,6 +133,19 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
+  sortPowers() {
+    let schools = {}
+    for(let power of this.items) {
+      if (power.type == "power") {
+        power = duplicate(power)
+        let school = schools[power.system.magicschool] || []
+        school.push(power)
+        WarheroUtility.sortArrayObjectsByNameAndLevel(school)
+        schools[power.system.magicschool] = school
+      }
+    }
+    return schools
+  }
   /* -------------------------------------------- */
   getShields() {
     let comp = duplicate(this.items.filter(item => item.type == 'shield') || []);
@@ -186,11 +199,15 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   prepareWeapon(weapon) {
     let formula = weapon.system.damage
-    if (weapon.system.weapontype == "long") {
+    if (weapon.system.weapontype == "long" || weapon.system.weapontype == "short") {
       formula += "+" + this.system.statistics.str.value
     }
     if (weapon.system.weapontype == "twohanded") {
       formula += "+" + Math.floor(this.system.statistics.str.value*1.5)
+    }
+    if (weapon.system.weapontype == "polearm") {
+      formula += "+" + Math.floor(this.system.statistics.str.value*1)
+      weapon.damageFormula2Hands =  weapon.system.damage2hands + "+" + Math.floor(this.system.statistics.str.value*1.5)
     }
     weapon.damageFormula = formula
   }
@@ -664,7 +681,7 @@ export class WarheroActor extends Actor {
     }
   }
   /* -------------------------------------------- */
-  rollDamage(weaponId) {
+  rollDamage(weaponId, is2hands = false) {
     let weapon = this.items.get(weaponId)
     if (weapon) {
       weapon = duplicate(weapon)
@@ -672,6 +689,7 @@ export class WarheroActor extends Actor {
       let rollData = this.getCommonRollData()
       rollData.mode = "damage"
       rollData.weapon = weapon
+      rollData.is2hands = is2hands
       rollData.img = weapon.img
       this.startRoll(rollData)
     }

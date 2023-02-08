@@ -9,21 +9,42 @@
     <div class="flexcol">
 
       {{#if weapon}}
-      <div class="flexrow">
-        <span class="roll-dialog-long">Weapon : </span>
-        <span class="item-field-label-medium">{{weapon.name}}</span>
+        <div class="flexrow">
+            <span class="item-field-label-vlong">Weapon : </span>
+            <span class="item-field-label-vlong">{{weapon.name}}</span>
+        </div>
+        
         {{#if (eq mode "damage")}}
+          {{#if (eq weapon.system.weapontype "special")}}
+            <div class="flexrow">
+              <span class="item-field-label-vlong">Damage : </span>
+              <span class="item-field-label-vlong">{{weapon.system.damageformula}}</span>
+            </div>
+          {{else}}
+            <div class="flexrow">
+              <span class="item-field-label-vlong">Damage : </span>
+              {{#if is2hands}}
+                <span class="item-field-label-vlong">{{weapon.damageFormula2Hands}}</span>
+              {{else}}
+                <span class="item-field-label-vlong">{{weapon.damage}}</span>
+              {{/if}}
+            </div>
+          {{/if}}
+
+        {{else}}
+          {{#if (eq weapon.system.weapontype "special")}}
           <div class="flexrow">
-            <span class="roll-dialog-long">Damage : </span>
-            <span class="item-field-label-medium">{{weapon.damageFormula}}</span>
-          </div>
+            <span class="item-field-label-vlong">Roll Formula : </span>
+            <span class="item-field-label-vlong">{{weapon.system.rollformula}}</span>
+           </div>
+          {{/if}}
         {{/if}}
-      </div>
+
       {{/if}}
 
       {{#if stat}}
       <div class="flexrow">
-        <span class="roll-dialog-long">{{localize stat.label}}</span>
+        <span class="item-field-label-vlong">{{localize stat.label}}</span>
         {{#if (eq mode "save")}}
           <span class="item-field-label-medium">{{stat.save}}</span>
         {{else}}
@@ -33,7 +54,7 @@
 
         {{#if stat.istxc}}
         <div class="flexrow">
-          <span class="roll-dialog-long">Multiple weapons malus ({{mWeaponMalus}})? </span>
+          <span class="item-field-label-vlong">Multiple weapons malus ({{mWeaponMalus}})? </span>
           <span class="item-field-label-medium"><input type="checkbox" id="usemWeaponMalus" name="usemWeaponMalus" {{checked usemWeaponMalus}}/></span>          
         {{/if}}
         </div>
@@ -41,31 +62,31 @@
 
       {{#if shield}}
       <div class="flexrow">
-        <span class="roll-dialog-long">Use shield ? : </span>
+        <span class="item-field-label-vlong">Use shield ? : </span>
         <span class="roll-dialog-label">
           <input type="checkbox" id="useshield" name="useshield" {{checked useshield}}/>
         </span>
       </div>
       <div class="flexrow">
-        <span class="roll-dialog-long">{{shield.name}} : </span>
-        <span class="roll-dialog-label">{{shield.data.shielddie}}</span>
+        <span class="item-field-label-vlong">{{shield.name}} : </span>
+        <span class="item-field-label-medium">{{shield.data.shielddie}}</span>
       </div>
       {{/if}}
 
       {{#if power}}
       <div class="flexrow">
-        <span class="item-field-label-long">Power : </span>
+        <span class="item-field-label-vlong">Power : </span>
         <span class="item-field-label-medium">{{power.name}}</span>
       </div>
       <div class="flexrow">
-        <span class="item-field-label-long">Power Level : </span>
+        <span class="item-field-label-vlong">Power Level : </span>
         <span class="item-field-label-medium">{{power.system.level}}</span>
       </div>
       {{/if}}
 
       {{#if hasBM}}
       <div class="flexrow">
-        <span class="roll-dialog-long">Bonus/Malus : </span>
+        <span class="item-field-label-vlong">Bonus/Malus : </span>
         <select class="item-field-label-medium" type="text" id="bonusMalus" value="{{bonusMalus}}">
           {{#select bonusMalus}}
             <option value="-6">-6</option>

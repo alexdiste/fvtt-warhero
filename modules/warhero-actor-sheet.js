@@ -10,7 +10,7 @@ export class WarheroActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
-
+    
     return mergeObject(super.defaultOptions, {
       classes: ["fvtt-warhero", "sheet", "actor"],
       template: "systems/fvtt-warhero/templates/actor-sheet.html",
@@ -49,7 +49,7 @@ export class WarheroActorSheet extends ActorSheet {
       conditions: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getConditions()) ),
       armors: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getArmors())),
       shields: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getShields())),
-      powers: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getPowers())),
+      powers: this.actor.sortPowers(),
       equipments: this.actor.checkAndPrepareEquipments(duplicate(this.actor.getEquipmentsOnly()) ),
       slotEquipments: this.actor.buildEquipmentsSlot(),
       subActors: duplicate(this.actor.getSubActors()),
@@ -168,7 +168,11 @@ export class WarheroActorSheet extends ActorSheet {
       const weaponId = li.data("item-id")
       this.actor.rollDamage(weaponId)
     });    
-        
+    html.find('.roll-damage-2hands').click((event) => {
+      const li = $(event.currentTarget).parents(".item")
+      const weaponId = li.data("item-id")
+      this.actor.rollDamage(weaponId, true)
+    });        
     html.find('.lock-unlock-sheet').click((event) => {
       this.options.editScore = !this.options.editScore;
       this.render(true);
