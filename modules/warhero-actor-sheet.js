@@ -56,7 +56,7 @@ export class WarheroActorSheet extends ActorSheet {
       competency: this.actor.getCompetency(),
       race: duplicate(race),
       class: duplicate(this.actor.getClass()),
-      moneys: duplicate(this.actor.getMoneys()),
+      //moneys: duplicate(this.actor.getMoneys()),
       description: await TextEditor.enrichHTML(this.object.system.biodata.description, {async: true}),
       notes: await TextEditor.enrichHTML(this.object.system.biodata.notes, {async: true}),
       options: this.options,

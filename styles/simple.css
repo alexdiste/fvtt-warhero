@@ -1548,3 +1548,6 @@ form .notes {
 .directory .directory-header .header-search input {
   color: rgba(52, 52, 52, 0.95);
 }
+a.content-link, a.inline-roll {
+  color: #222;
+}
