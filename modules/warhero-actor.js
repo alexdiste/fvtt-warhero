@@ -390,10 +390,11 @@ export class WarheroActor extends Actor {
     return Number(dmgRoll.total)
   }
   /* -------------------------------------------- */
-  updateCompetency(competency, obj) {
+  updateCompetency(competency, obj, labelTab) {
     for(let key in obj) {
       if (obj[key]) {
-        competency[key] = true
+        //console.log("Parsing", key) //game.system.warhero.config.weaponTypes[key].label)
+        competency[key] = { enabled: true, label: labelTab[key].label }
       }
     }
   }
@@ -402,12 +403,12 @@ export class WarheroActor extends Actor {
     let myClass = this.getClass()
     let competency = { weapons: {}, armors: {}, shields: {}}
     if ( myRace.system && myClass.system) {
-      this.updateCompetency(competency.weapons, myRace.system.weapons)
-      this.updateCompetency(competency.armors, myRace.system.armors)
-      this.updateCompetency(competency.shields, myRace.system.shields)
-      this.updateCompetency(competency.weapons, myClass.system.weapons)
-      this.updateCompetency(competency.armors, myClass.system.armors)
-      this.updateCompetency(competency.shields, myClass.system.shields)
+      this.updateCompetency(competency.weapons, myRace.system.weapons, game.system.warhero.config.weaponTypes)
+      this.updateCompetency(competency.armors, myRace.system.armors, game.system.warhero.config.armorTypes)
+      this.updateCompetency(competency.shields, myRace.system.shields, game.system.warhero.config.shieldTypes)
+      this.updateCompetency(competency.weapons, myClass.system.weapons, game.system.warhero.config.weaponTypes)
+      this.updateCompetency(competency.armors, myClass.system.armors, game.system.warhero.config.armorTypes)
+      this.updateCompetency(competency.shields, myClass.system.shields, game.system.warhero.config.shieldTypes)
     }
     return competency
   }

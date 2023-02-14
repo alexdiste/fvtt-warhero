@@ -20,7 +20,7 @@
             <div class="ability-item">
               <ul>
                 <li class="item flexrow list-item " data-item-id="{{race._id}}">
-                  <label class="item-field-label-medium">Race</label>
+                  <label class="item-field-label-medium">{{localize "WH.ui.race"}}</label>
                   <a class="item-edit"><img class="sheet-competence-img" src="{{race.img}}"></a>
                   <input type="text" class="item-field-label-medium" disabled value="{{race.name}}" data-dtype="String" />
                   <div class="item-controls item-controls-fixed">
@@ -28,7 +28,7 @@
                   </div>  
                 </li>  
                 <li class="item flexrow list-item" data-item-id="{{class._id}}">
-                  <label class="item-field-label-medium">Class</label>
+                  <label class="item-field-label-medium">{{localize "WH.ui.class"}}</label>
                   <a class="item-edit"><img class="sheet-competence-img" src="{{class.img}}"></a>
                   <input type="text" class="item-field-label-medium" disabled value="{{class.name}}" data-dtype="String" />
                   <div class="item-controls item-controls-fixed">
@@ -36,7 +36,7 @@
                   </div>  
                 </li>  
                 <li class="item flexrow list-item" >
-                  <label class="item-field-label-medium">Religion</label>
+                  <label class="item-field-label-medium">{{localize "WH.ui.religion"}}</label>
                   <input type="text" class="item-field-label-medium" name="system.biodata.religion" value="{{system.biodata.religion}}" data-dtype="String" />
                 </li>  
               </ul>
@@ -96,10 +96,10 @@
                   <h3><label class="items-title-text">{{localize "WH.ui.competency"}}</label></h3>
                 </span>
               </li>
-              {{#each competency.weapons as |flag key|}}
-                {{#if flag}}
+              {{#each competency.weapons as |cdata key|}}
+                {{#if cdata}}
                   <li class="item flexrow list-item list-item-shadow" data-item-id="{{language._id}}">
-                    <span class="item-name-label-long">{{localize "WH.ui.weapons"}} {{key}}</span>
+                    <span class="item-name-label-long">{{localize "WH.ui.weapons"}} {{localize cdata.label}}</span>
                     </li>
                 {{/if}}
               {{/each}}
