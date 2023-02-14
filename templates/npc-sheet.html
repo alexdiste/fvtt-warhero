@@ -64,12 +64,12 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="main">Main</a>
-    <a class="item" data-tab="combat">Combat</a>
-    <a class="item" data-tab="skill">Skills&Effects</a>
-    <a class="item" data-tab="power">Powers</a>
-    <a class="item" data-tab="equipment">Equipment</a>
-    <a class="item" data-tab="biodata">Biography</a>
+    <a class="item" data-tab="main">{{localize "WH.ui.main"}}</a>
+    <a class="item" data-tab="combat">{{localize "WH.ui.combat"}}</a>
+    <a class="item" data-tab="skill">{{localize "WH.ui.skillstab"}}</a>
+    <a class="item" data-tab="power">{{localize "WH.ui.powers"}}</a>
+    <a class="item" data-tab="equipment">{{localize "WH.ui.equipment"}}</a>
+    <a class="item" data-tab="biodata">{{localize "WH.ui.biography"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -176,7 +176,7 @@
           <ul class="stat-list alternate-list">
             <li class="item flexrow list-item items-title-bg">
               <span class="item-name-label-header-long">
-                <h3><label class="items-title-text">Weapons</label></h3>
+                <h3><label class="items-title-text">{{localize "WH.ui.weapons"}}</label></h3>
               </span>
               <span class="item-field-label-medium">
                 <label class="short-label">{{localize "WH.ui.Type"}}</label>
@@ -192,8 +192,16 @@
               <span class="item-name-label-long"><a class="roll-weapon"><i class="fa-solid fa-dice-d20"></i>{{weapon.name}}</a></span>
 
               <span class="item-field-label-medium">{{weapon.system.weapontype}}</span>
-
+              
+              {{#if (eq system.weapontype "special")}}
+              <span class="item-field-label-medium"><a class="roll-damage"><i class="fa-solid fa-dice-d20"></i>{{weapon.system.damageformula}}</a></span>
+              {{else}}
               <span class="item-field-label-medium"><a class="roll-damage"><i class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula}}</a></span>
+              {{/if}}
+
+              {{#if (eq system.weapontype "polearm")}}
+              <span class="item-field-label-medium"><a class="roll-damage-2hands"><i class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula2Hands}}</a></span>
+              {{/if}}
 
               <div class="item-filler">&nbsp;</div>
               <div class="item-controls item-controls-fixed">
@@ -208,7 +216,7 @@
           <ul class="stat-list alternate-list">
             <li class="item flexrow list-item items-title-bg">
               <span class="item-name-label-header-long">
-                <h3><label class="items-title-text">Shields</label></h3>
+                <h3><label class="items-title-text">{{localize "WH.ui.shields"}}</label></h3>
               </span>
               <span class="item-field-label-short">
                 <label class="short-label">{{localize "WH.ui.Type"}}</label>
@@ -240,7 +248,7 @@
           <ul class="stat-list alternate-list">
             <li class="item flexrow list-item items-title-bg">
               <span class="item-name-label-header-long">
-                <h3><label class="items-title-text">Armors</label></h3>
+                <h3><label class="items-title-text">{{localize "WH.ui.armors"}}</label></h3>
               </span>
               <span class="item-field-label-short">
                 <label class="short-label">{{localize "WH.ui.Type"}}</label>
@@ -378,6 +386,7 @@
       </div>
     </div>
 
+
     {{!-- Powers Tab --}}
     <div class="tab power" data-group="primary" data-tab="power">
 
@@ -476,28 +485,20 @@
         <div>
           <ul class="item-list alternate-list">
             <li class="item flexrow">
-              <label class="generic-label">Origin</label>
+              <label class="generic-label">{{localize "WH.ui.origin"}}</label>
               <input type="text" class="" name="system.biodata.origin" value="{{data.biodata.origin}}"
                 data-dtype="String" />
             </li>
             <li class="item flexrow">
-              <label class="generic-label">Age</label>
+              <label class="generic-label">{{localize "WH.ui.age"}}</label>
               <input type="text" class="" name="system.biodata.age" value="{{data.biodata.age}}" data-dtype="String" />
             </li>
             <li class="item flexrow">
-              <label class="generic-label">Height</label>
+              <label class="generic-label">{{localize "WH.ui.height"}}</label>
               <input type="text" class="" name="system.biodata.height" value="{{data.biodata.height}}" data-dtype="String" />
             </li>
-            <li class="item flexrow">
-              <label class="generic-label">Eyes</label>
-              <input type="text" class="" name="system.biodata.eyes" value="{{data.biodata.eyes}}" data-dtype="String" />
-            </li>
-            <li class="item flexrow">
-              <label class="generic-label">Hair</label>
-              <input type="text" class="" name="system.biodata.hair" value="{{data.biodata.hair}}" data-dtype="String" />
-            </li>
             <li class="flexrow item">
-              <label class="generic-label">Preferred Hand</label>
+              <label class="generic-label">{{localize "WH.ui.preferredhand"}}</label>
               <input type="text" class="" name="system.biodata.preferredhand" value="{{data.biodata.preferredhand}}"
                 data-dtype="String" />
             </li>
@@ -506,7 +507,7 @@
        <div>
           <ul>
             <li class="flexrow item">
-              <label class="generic-label">Size</label>
+              <label class="generic-label">{{localize "WH.ui.size"}}</label>
               <select class="competence-base flexrow" type="text" name="system.biodata.size" value="{{data.biodata.size}}" data-dtype="Number">
                 {{#select data.biodata.size}}
                 <option value="1">Tiny</option>
@@ -519,8 +520,16 @@
               </select> 
             </li>
             <li class="flexrow item">
-              <label class="generic-label">Sex</label>
+              <label class="generic-label">{{localize "WH.ui.gender"}}</label>
               <input type="text" class="" name="system.biodata.sex" value="{{data.biodata.sex}}" data-dtype="String" />
+            </li>
+            <li class="item flexrow">
+              <label class="generic-label">{{localize "WH.ui.eyes"}}</label>
+              <input type="text" class="" name="system.biodata.eyes" value="{{data.biodata.eyes}}" data-dtype="String" />
+            </li>
+            <li class="item flexrow">
+              <label class="generic-label">{{localize "WH.ui.hair"}}</label>
+              <input type="text" class="" name="system.biodata.hair" value="{{data.biodata.hair}}" data-dtype="String" />
             </li>
           </ul>
         </div>
@@ -528,13 +537,13 @@
 
 
       <hr>
-      <h3>Background : </h3>
+      <h3>{{localize "WH.ui.background"}} : </h3>
       <div class="form-group editor">
         {{editor description target="system.biodata.description" button=true owner=owner
         editable=editable}}
       </div>
       <hr>
-      <h3>Notes : </h3>
+      <h3>{{localize "WH.ui.notes"}} : </h3>
       <div class="form-group editor">
         {{editor notes target="system.biodata.notes" button=true owner=owner editable=editable}}
       </div>

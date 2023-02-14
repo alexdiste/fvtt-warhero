@@ -18,7 +18,7 @@
 
         <div class="tab" data-group="primary">
           <ul>
-            <li class="flexrow"><label class="item-field-label-medium ">Type</label>
+            <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.type"}}</label>
               <select class="item-field-label-medium" type="text" name="system.armortype" value="{{system.armortype}}" data-dtype="String">
                 {{#select system.armortype}}
                   {{#each config.armorTypes as |type key|}}
@@ -28,7 +28,7 @@
               </select> 
             </li>
 
-            <li class="flexrow"><label class="item-field-label-medium ">Damage reduction</label>
+            <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.damagereduction"}}</label>
               <input type="text" class="item-field-label-medium " name="system.damagereduction" value="{{system.damagereduction}}" data-dtype="Number"/>
             </li>
 

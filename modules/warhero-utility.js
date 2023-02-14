@@ -216,10 +216,8 @@ export class WarheroUtility {
 
     const templatePaths = [
       'systems/fvtt-warhero/templates/editor-notes-gm.html',
-      'systems/fvtt-warhero/templates/partial-roll-select.html',
       'systems/fvtt-warhero/templates/partial-actor-stat-block.html',
       'systems/fvtt-warhero/templates/partial-actor-status.html',
-      'systems/fvtt-warhero/templates/partial-options-abilities.html',
       'systems/fvtt-warhero/templates/partial-item-nav.html',
       'systems/fvtt-warhero/templates/partial-item-description.html',
       'systems/fvtt-warhero/templates/partial-item-common-equipment.html',

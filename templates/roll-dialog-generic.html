@@ -10,19 +10,19 @@
 
       {{#if weapon}}
         <div class="flexrow">
-            <span class="item-field-label-vlong">Weapon : </span>
+            <span class="item-field-label-vlong">{{localize "WH.ui.weapon"}} : </span>
             <span class="item-field-label-vlong">{{weapon.name}}</span>
         </div>
         
         {{#if (eq mode "damage")}}
           {{#if (eq weapon.system.weapontype "special")}}
             <div class="flexrow">
-              <span class="item-field-label-vlong">Damage : </span>
+              <span class="item-field-label-vlong">{{localize "WH.ui.damage"}} : </span>
               <span class="item-field-label-vlong">{{weapon.system.damageformula}}</span>
             </div>
           {{else}}
             <div class="flexrow">
-              <span class="item-field-label-vlong">Damage : </span>
+              <span class="item-field-label-vlong">{{localize "WH.ui.damage"}} : </span>
               {{#if is2hands}}
                 <span class="item-field-label-vlong">{{weapon.damageFormula2Hands}}</span>
               {{else}}
@@ -34,7 +34,7 @@
         {{else}}
           {{#if (eq weapon.system.weapontype "special")}}
           <div class="flexrow">
-            <span class="item-field-label-vlong">Roll Formula : </span>
+            <span class="item-field-label-vlong">{{localize "WH.chat.rollformula"}} : </span>
             <span class="item-field-label-vlong">{{weapon.system.rollformula}}</span>
            </div>
           {{/if}}
@@ -54,7 +54,7 @@
 
         {{#if stat.istxc}}
         <div class="flexrow">
-          <span class="item-field-label-vlong">Multiple weapons malus ({{mWeaponMalus}})? </span>
+          <span class="item-field-label-vlong">{{localize "WH.chat.mweaponmalus}}" ({{mWeaponMalus}})? </span>
           <span class="item-field-label-medium"><input type="checkbox" id="usemWeaponMalus" name="usemWeaponMalus" {{checked usemWeaponMalus}}/></span>          
         {{/if}}
         </div>
@@ -62,7 +62,7 @@
 
       {{#if shield}}
       <div class="flexrow">
-        <span class="item-field-label-vlong">Use shield ? : </span>
+        <span class="item-field-label-vlong">{{localize "WH.chat.useshield"}} : </span>
         <span class="roll-dialog-label">
           <input type="checkbox" id="useshield" name="useshield" {{checked useshield}}/>
         </span>
@@ -75,11 +75,11 @@
 
       {{#if power}}
       <div class="flexrow">
-        <span class="item-field-label-vlong">Power : </span>
+        <span class="item-field-label-vlong">{{localize "WH.chat.power"}} : </span>
         <span class="item-field-label-medium">{{power.name}}</span>
       </div>
       <div class="flexrow">
-        <span class="item-field-label-vlong">Power Level : </span>
+        <span class="item-field-label-vlong">{{localize "WH.chat.powerlevel"}} : </span>
         <span class="item-field-label-medium">{{power.system.level}}</span>
       </div>
       {{/if}}

@@ -18,6 +18,12 @@
       "name": "English",
       "path": "lang/en.json",
       "flags": {}
+    },
+    {
+      "lang": "it",
+      "name": "English",
+      "path": "lang/it.json",
+      "flags": {}
     }
   ],
   "license": "LICENSE.txt",
@@ -101,7 +107,7 @@
   "styles": [
     "styles/simple.css"
   ],
-  "version": "10.0.25",
+  "version": "10.0.26",
   "compatibility": {
     "minimum": "10",
     "verified": "10",
@@ -109,7 +115,7 @@
   },
   "title": "Warhero RPG",
   "manifest": "https://www.uberwald.me/gitea/public/fvtt-warhero/raw/branch/master/system.json",
-  "download": "https://www.uberwald.me/gitea/uberwald/fvtt-warhero/archive/fvtt-warhero-10.0.25.zip",
+  "download": "https://www.uberwald.me/gitea/uberwald/fvtt-warhero/archive/fvtt-warhero-10.0.26.zip",
   "url": "https://www.uberwald.me/gitea/public/fvtt-warhero",
   "background": "images/ui/warhero_welcome_page.webp",
   "id": "fvtt-warhero"
