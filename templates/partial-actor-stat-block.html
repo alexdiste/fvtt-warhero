@@ -34,11 +34,11 @@
   {{/if}}
   
   {{#if hassave}}
-    <span class="item-field-label-short" name="{{key}}">
-      <h4 class="item-field-label-short">
+    <span class="item-field-label-medium" name="{{key}}">
+      <h4 class="item-field-label-medium">
       <i class="fa-solid fa-dice-d20"></i>
         <a class="roll-save stat-margin" data-type="{{path}}" data-key="{{key}}">
-          {{localize "WH.ui.save"}}
+          {{localize (concat "WH.ui.save" key)}}
         </a>
       </h4>
     </span>

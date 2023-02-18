@@ -103,17 +103,17 @@
                     </li>
                 {{/if}}
               {{/each}}
-              {{#each competency.shields as |flag key|}}
-                {{#if flag}}
+              {{#each competency.shields as |cdata key|}}
+                {{#if cdata}}
                   <li class="item flexrow list-item list-item-shadow" data-item-id="{{language._id}}">
-                    <span class="item-name-label-long">{{localize "WH.ui.shields"}} {{key}}</span>
+                    <span class="item-name-label-long">{{localize "WH.ui.shields"}} {{localize cdata.label}}</span>
                     </li>
                   {{/if}}
                 {{/each}}
-              {{#each competency.armors as |flag key|}}
-                {{#if flag}}
+              {{#each competency.armors as |cdata key|}}
+                {{#if cdata}}
                   <li class="item flexrow list-item list-item-shadow" data-item-id="{{language._id}}">
-                    <span class="item-name-label-long">{{localize "WH.ui.armors"}} {{key}}</span>
+                    <span class="item-name-label-long">{{localize "WH.ui.armors"}} {{localize cdata.label}}</span>
                     </li>
                 {{/if}}
               {{/each}}
@@ -446,7 +446,7 @@
           </span>
           <div class="item-filler">&nbsp;</div>
           <div class="item-controls item-controls-fixed">
-            <a class="item-control item-add" data-type="{{itemtype}}" title="Create Item"><i class="fas fa-plus"></i></a>
+            <a class="item-control item-add" data-type="{{itemtype}}" data-slot="{{slotKey}}" title="Create Item"><i class="fas fa-plus"></i></a>
           </div>
         </li>
         {{#each slot.content as |item itemKey|}}
@@ -486,20 +486,20 @@
           <ul class="item-list alternate-list">
             <li class="item flexrow">
               <label class="generic-label">{{localize "WH.ui.origin"}}</label>
-              <input type="text" class="" name="system.biodata.origin" value="{{data.biodata.origin}}"
+              <input type="text" class="" name="system.biodata.origin" value="{{system.biodata.origin}}"
                 data-dtype="String" />
             </li>
             <li class="item flexrow">
               <label class="generic-label">{{localize "WH.ui.age"}}</label>
-              <input type="text" class="" name="system.biodata.age" value="{{data.biodata.age}}" data-dtype="String" />
+              <input type="text" class="" name="system.biodata.age" value="{{system.biodata.age}}" data-dtype="String" />
             </li>
             <li class="item flexrow">
               <label class="generic-label">{{localize "WH.ui.height"}}</label>
-              <input type="text" class="" name="system.biodata.height" value="{{data.biodata.height}}" data-dtype="String" />
+              <input type="text" class="" name="system.biodata.height" value="{{system.biodata.height}}" data-dtype="String" />
             </li>
             <li class="flexrow item">
               <label class="generic-label">{{localize "WH.ui.preferredhand"}}</label>
-              <input type="text" class="" name="system.biodata.preferredhand" value="{{data.biodata.preferredhand}}"
+              <input type="text" class="" name="system.biodata.preferredhand" value="{{system.biodata.preferredhand}}"
                 data-dtype="String" />
             </li>
           </ul>
@@ -508,8 +508,8 @@
           <ul>
             <li class="flexrow item">
               <label class="generic-label">{{localize "WH.ui.size"}}</label>
-              <select class="competence-base flexrow" type="text" name="system.biodata.size" value="{{data.biodata.size}}" data-dtype="Number">
-                {{#select data.biodata.size}}
+              <select class="competence-base flexrow" type="text" name="system.biodata.size" value="{{system.biodata.size}}" data-dtype="Number">
+                {{#select system.biodata.size}}
                 <option value="1">Tiny</option>
                 <option value="2">Small</option>
                 <option value="3">Medium</option>
@@ -521,15 +521,15 @@
             </li>
             <li class="flexrow item">
               <label class="generic-label">{{localize "WH.ui.gender"}}</label>
-              <input type="text" class="" name="system.biodata.sex" value="{{data.biodata.sex}}" data-dtype="String" />
+              <input type="text" class="" name="system.biodata.sex" value="{{system.biodata.sex}}" data-dtype="String" />
             </li>
             <li class="item flexrow">
               <label class="generic-label">{{localize "WH.ui.eyes"}}</label>
-              <input type="text" class="" name="system.biodata.eyes" value="{{data.biodata.eyes}}" data-dtype="String" />
+              <input type="text" class="" name="system.biodata.eyes" value="{{system.biodata.eyes}}" data-dtype="String" />
             </li>
             <li class="item flexrow">
               <label class="generic-label">{{localize "WH.ui.hair"}}</label>
-              <input type="text" class="" name="system.biodata.hair" value="{{data.biodata.hair}}" data-dtype="String" />
+              <input type="text" class="" name="system.biodata.hair" value="{{system.biodata.hair}}" data-dtype="String" />
             </li>
           </ul>
         </div>

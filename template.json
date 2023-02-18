@@ -10,7 +10,7 @@
         "biodata": {
           "class": "",
           "age": 0,
-          "size": 0,
+          "size": 3,
           "weight": "",
           "height": "",
           "hair": "",
@@ -332,6 +332,7 @@
       "equipped": false,
       "slotused": 1,
       "slotlocation": "backpack",
+      "providedslot": 0,
       "description": ""
     },
     "power": {

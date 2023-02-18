@@ -1551,3 +1551,7 @@ form .notes {
 a.content-link, a.inline-roll {
   color: #222;
 }
+.journal-page-header,
+.journal-page-content {
+  color: #222;
+}

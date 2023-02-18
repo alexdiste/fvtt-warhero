@@ -99,7 +99,8 @@ export class WarheroActorSheet extends ActorSheet {
     })
     html.find('.item-add').click(ev => {
       let dataType = $(ev.currentTarget).data("type")
-      this.actor.createEmbeddedDocuments('Item', [{ name: "NewItem", type: dataType }], { renderSheet: true })
+      let slotKey = $(ev.currentTarget).data("slot")
+      this.actor.createEmbeddedDocuments('Item', [{ name: "NewItem", type: dataType, system: { slotlocation: slotKey} }], { renderSheet: true })
     })
         
     html.find('.equip-activate').click(ev => {

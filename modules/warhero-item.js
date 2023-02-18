@@ -11,6 +11,7 @@ export const defaultItemImg = {
   money: "systems/fvtt-warhero/images/icons/two-coins.svg",
   power: "systems/fvtt-warhero/images/icons/magia.webp",
   condition: "systems/fvtt-warhero/images/icons/stordenti.webp",
+  language: "systems/fvtt-warhero/images/icons/linguaggi.webp"
 }
 
 /**

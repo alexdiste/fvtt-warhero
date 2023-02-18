@@ -22,7 +22,7 @@
       <ul>
 
         {{#each system.weapons as |weaponflag key|}}
-          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.weapons"}} {{key}}</label>
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.weapons"}} {{localize (concat "WH.conf." key)}}</label>
             <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
                   name="system.weapons.{{key}}" {{checked weaponflag}}/>
 
@@ -30,7 +30,7 @@
         {{/each}}
 
         {{#each system.armors as |armorflag key|}}
-          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.armors"}} {{key}}</label>
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.armors"}} {{localize (concat "WH.conf." key "armor")}}</label>
             <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
                   name="system.armors.{{key}}" {{checked armorflag}}/>
 
@@ -38,7 +38,7 @@
         {{/each}}
 
         {{#each system.shields as |shieldflag key|}}
-        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.shields"}} {{key}}</label>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.shields"}} {{localize (concat "WH.conf." key "shield")}}</label>
           <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
                 name="system.shields.{{key}}" {{checked shieldflag}}/>
 

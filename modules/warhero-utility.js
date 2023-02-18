@@ -19,7 +19,16 @@ export class WarheroUtility {
     this.defenderStore = {}
 
     WarheroCommands.init();
-
+    
+    Handlebars.registerHelper('concat', function () {
+      var outStr = '';
+      for (var arg in arguments) {
+        if (typeof arguments[arg] != 'object') {
+          outStr += arguments[arg];
+        }
+      }
+      return outStr;
+    });
     Handlebars.registerHelper('count', function (list) {
       return list.length;
     })
@@ -575,7 +584,7 @@ export class WarheroUtility {
     }
 
     let diceFormula
-    if (rollData.weapon.system.weapontype == "special") {
+    if (rollData.weapon && rollData.weapon.system.weapontype == "special") {
       diceFormula = rollData.weapon.system.rollformula
     } else {
       // ability/save/size => 0

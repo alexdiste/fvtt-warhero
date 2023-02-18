@@ -135,7 +135,7 @@ export class WarheroActor extends Actor {
   }
   sortPowers() {
     let schools = {}
-    for(let power of this.items) {
+    for (let power of this.items) {
       if (power.type == "power") {
         power = duplicate(power)
         let school = schools[power.system.magicschool] || []
@@ -176,14 +176,16 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   buildEquipmentsSlot() {
     let containers = {}
-    for(let slotName in game.system.warhero.config.slotNames) {
+    for (let slotName in game.system.warhero.config.slotNames) {
       let slotDef = game.system.warhero.config.slotNames[slotName]
       containers[slotName] = duplicate(slotDef)
-      containers[slotName].content = this.items.filter(it => (it.type == 'weapon' || it.type == 'armor' || it.type == 'shield'||it.type == 'equipment')  
-                                      && it.system.slotlocation == slotName )
+      containers[slotName].content = this.items.filter(it => (it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment')
+                                                       && it.system.slotlocation == slotName)
       let slotUsed = 0
-      for(let item of containers[slotName].content) {
-        slotUsed += item.system.slotused * ((item.system.quantity) ? item.system.quantity : 1)
+      for (let item of containers[slotName].content) {
+        let q = (item.system.quantity) ? item.system.quantity : 1
+        containers[slotName].nbslots += (item.system.providedslot?? 0) * q
+        slotUsed += item.system.slotused * q
       }
       slotUsed = Math.ceil(slotUsed)
       containers[slotName].slotUsed = slotUsed
@@ -203,11 +205,11 @@ export class WarheroActor extends Actor {
       formula += "+" + this.system.statistics.str.value
     }
     if (weapon.system.weapontype == "twohanded") {
-      formula += "+" + Math.floor(this.system.statistics.str.value*1.5)
+      formula += "+" + Math.floor(this.system.statistics.str.value * 1.5)
     }
     if (weapon.system.weapontype == "polearm") {
-      formula += "+" + Math.floor(this.system.statistics.str.value*1)
-      weapon.damageFormula2Hands =  weapon.system.damage2hands + "+" + Math.floor(this.system.statistics.str.value*1.5)
+      formula += "+" + Math.floor(this.system.statistics.str.value * 1)
+      weapon.damageFormula2Hands = weapon.system.damage2hands + "+" + Math.floor(this.system.statistics.str.value * 1.5)
     }
     weapon.damageFormula = formula
   }
@@ -382,7 +384,7 @@ export class WarheroActor extends Actor {
 
   /* -------------------------------------------- */
   async incDecHP(formula) {
-    let dmgRoll = new Roll(formula+"[warhero-orange]").roll({ async: false })
+    let dmgRoll = new Roll(formula + "[warhero-orange]").roll({ async: false })
     await WarheroUtility.showDiceSoNice(dmgRoll, game.settings.get("core", "rollMode"))
     let hp = duplicate(this.system.secondary.hp)
     hp.value = Number(hp.value) + Number(dmgRoll.total)
@@ -391,7 +393,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   updateCompetency(competency, obj, labelTab) {
-    for(let key in obj) {
+    for (let key in obj) {
       if (obj[key]) {
         //console.log("Parsing", key) //game.system.warhero.config.weaponTypes[key].label)
         competency[key] = { enabled: true, label: labelTab[key].label }
@@ -401,11 +403,13 @@ export class WarheroActor extends Actor {
   getCompetency() {
     let myRace = this.getRace()
     let myClass = this.getClass()
-    let competency = { weapons: {}, armors: {}, shields: {}}
-    if ( myRace.system && myClass.system) {
+    let competency = { weapons: {}, armors: {}, shields: {} }
+    if (myRace.system) {
       this.updateCompetency(competency.weapons, myRace.system.weapons, game.system.warhero.config.weaponTypes)
       this.updateCompetency(competency.armors, myRace.system.armors, game.system.warhero.config.armorTypes)
       this.updateCompetency(competency.shields, myRace.system.shields, game.system.warhero.config.shieldTypes)
+    }
+    if (myClass.system) {
       this.updateCompetency(competency.weapons, myClass.system.weapons, game.system.warhero.config.weaponTypes)
       this.updateCompetency(competency.armors, myClass.system.armors, game.system.warhero.config.armorTypes)
       this.updateCompetency(competency.shields, myClass.system.shields, game.system.warhero.config.shieldTypes)
@@ -596,7 +600,7 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   setLevel() {
     let xp = this.system.secondary.xp.value
-    this.system.secondary.xp.level = 1 + Math.floor(xp/10)
+    this.system.secondary.xp.level = 1 + Math.floor(xp / 10)
   }
   /* -------------------------------------------- */
   computeDRTotal() {
@@ -605,7 +609,7 @@ export class WarheroActor extends Actor {
     for (let armor of armors) {
       dr += armor.system.damagereduction
     }
-    this.system.secondary.drbonustotal.value = this.system.secondary.drbonus.value + dr 
+    this.system.secondary.drbonustotal.value = this.system.secondary.drbonus.value + dr
   }
   /* -------------------------------------------- */
   computeParryBonusTotal() {
@@ -614,21 +618,21 @@ export class WarheroActor extends Actor {
     for (let shield of shields) {
       parry += shield.system.parrybonus
     }
-    this.system.secondary.parrybonustotal.value = this.system.secondary.parrybonus.value + parry 
+    this.system.secondary.parrybonustotal.value = this.system.secondary.parrybonus.value + parry
   }
   /* -------------------------------------------- */
   computeBonusLanguages() {
     this.system.secondary.nblanguage.value = Math.floor(this.system.statistics.min.value / 2)
   }
   /* -------------------------------------------- */
-  spentMana( mana) {
-    if ( Number(mana) > this.system.attributes.mana.value) {
+  spentMana(mana) {
+    if (Number(mana) > this.system.attributes.mana.value) {
       ui.notifications.warn("Not enough Mana points !")
       return false
     }
-    this.update({'system.attributes.mana.value': this.system.attributes.mana.value-mana})
+    this.update({ 'system.attributes.mana.value': this.system.attributes.mana.value - mana })
     return true
-  } 
+  }
   /* -------------------------------------------- */
   getCommonRollData() {
     let rollData = WarheroUtility.getBasicRollData()
@@ -647,7 +651,7 @@ export class WarheroActor extends Actor {
     let rollData = this.getCommonRollData()
     rollData.mode = rollType
     rollData.stat = stat
-    if ( rollKey == "parrybonustotal") {
+    if (rollKey == "parrybonustotal") {
       WarheroUtility.rollParry(rollData)
       return
     }
@@ -661,7 +665,7 @@ export class WarheroActor extends Actor {
     rollData.stat = stat
     this.startRoll(rollData)
   }
-  
+
   /* -------------------------------------------- */
   rollWeapon(weaponId) {
     let weapon = this.items.get(weaponId)
@@ -669,13 +673,13 @@ export class WarheroActor extends Actor {
       weapon = duplicate(weapon)
       let rollData = this.getCommonRollData()
       rollData.mode = "weapon"
-      if (weapon.system.weapontype ==="shooting" || weapon.system.weapontype ==="throwing") {
+      if (weapon.system.weapontype === "shooting" || weapon.system.weapontype === "throwing") {
         rollData.stat = duplicate(this.system.attributes.txcr)
       } else {
         rollData.stat = duplicate(this.system.attributes.txcm)
       }
       rollData.usemWeaponMalus =
-      rollData.mWeaponMalus = this.system.secondary.malusmultiweapon.value
+        rollData.mWeaponMalus = this.system.secondary.malusmultiweapon.value
       rollData.weapon = weapon
       rollData.img = weapon.img
       this.startRoll(rollData)
@@ -709,7 +713,7 @@ export class WarheroActor extends Actor {
       this.startRoll(rollData)
     }
   }
-  
+
   /* -------------------------------------------- */
   async startRoll(rollData) {
     this.syncRoll(rollData)

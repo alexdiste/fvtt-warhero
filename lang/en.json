@@ -44,6 +44,9 @@
   "WH.ui.Strength": "Strength",
   "WH.ui.Instinct": "Instinct",
   "WH.ui.Dexterity": "Dexterity",
+  "WH.ui.savestr": "Str Save",
+  "WH.ui.savedex": "Dex Save",
+  "WH.ui.savemin": "Mind Save",
   "WH.ui.Mind": "Mind",
   "WH.ui.Type": "Type",
   "WH.ui.HitPoints": "Hit Points",
@@ -113,6 +116,8 @@
   "WH.ui.quantity": "Quantity",
   "WH.ui.cost": "Cost",
   "WH.ui.details": "Details",
+  "WH.ui.magicschool": "Magic School",
+  "WH.ui.providedslot": "Provided slot",
 
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",

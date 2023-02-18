@@ -69,12 +69,6 @@ export class WarheroItemSheet extends ItemSheet {
       owner: this.document.isOwner,
       isGM: game.user.isGM
     }
-    if ( this.object.type == "power") {
-      formData.level1 = await TextEditor.enrichHTML(this.object.system.level1, {async: true})
-      formData.level2 = await TextEditor.enrichHTML(this.object.system.level2, {async: true})
-      formData.level3 = await TextEditor.enrichHTML(this.object.system.level3, {async: true})
-      formData.level4 = await TextEditor.enrichHTML(this.object.system.level4, {async: true})
-    }
     this.options.editable = !(this.object.origin == "embeddedItem");
     console.log("ITEM DATA", formData, this);
     return formData;
@@ -130,11 +124,6 @@ export class WarheroItemSheet extends ItemSheet {
       const item = this.object.options.actor.getOwnedItem(li.data("item-id"));
       item.sheet.render(true);
     });
-
-    html.find('.delete-spec').click(ev => {
-      this.object.update({ "data.specialisation": [{ name: 'None' }] });
-    });
-
     html.find('.delete-subitem').click(ev => {
       this.deleteSubitem(ev);
     });
@@ -145,15 +134,6 @@ export class WarheroItemSheet extends ItemSheet {
       let itemId = li.data("item-id");
       let itemType = li.data("item-type");
     });
-
-    html.find('.view-subitem').click(ev => {
-      this.viewSubitem(ev);
-    });
-
-    html.find('.view-spec').click(ev => {
-      this.manageSpec();
-    });
-
   }
 
   

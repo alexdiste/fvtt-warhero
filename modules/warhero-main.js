@@ -73,12 +73,12 @@ Hooks.once("init", async function () {
 
 /* -------------------------------------------- */
 function welcomeMessage() {
-  ChatMessage.create({
+  /*ChatMessage.create({
     user: game.user.id,
     whisper: [game.user.id],
     content: `<div id="welcome-message-crucible"><span class="rdd-roll-part">
     <strong>Welcome to the Warhero RPG.</strong>
-    ` });
+    ` });*/
 }
 
 /* -------------------------------------------- */
