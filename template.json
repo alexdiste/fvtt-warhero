@@ -240,7 +240,8 @@
       "language",
       "condition",
       "class",
-      "genericitem"
+      "genericitem",
+      "money"
     ],
     "templates": {
       "commonclassrace": {
@@ -263,6 +264,11 @@
           "tower": false
         }
       }
+    },
+    "money": {
+      "quantity": 0,
+      "slotlocation": "backpack",
+      "description": ""
     },
     "genericitem": {
       "description": ""

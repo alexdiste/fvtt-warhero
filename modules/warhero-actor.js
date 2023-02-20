@@ -179,13 +179,17 @@ export class WarheroActor extends Actor {
     for (let slotName in game.system.warhero.config.slotNames) {
       let slotDef = game.system.warhero.config.slotNames[slotName]
       containers[slotName] = duplicate(slotDef)
-      containers[slotName].content = this.items.filter(it => (it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment')
+      containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment')
                                                        && it.system.slotlocation == slotName)
       let slotUsed = 0
-      for (let item of containers[slotName].content) {
+      for (let item of containers[slotName].content) {        
         let q = (item.system.quantity) ? item.system.quantity : 1
         containers[slotName].nbslots += (item.system.providedslot?? 0) * q
-        slotUsed += item.system.slotused * q
+        if ( item.type == "money") {
+          slotUsed += Math.ceil(item.system.quantity / 1000)
+        } else {
+          slotUsed += item.system.slotused * q          
+        }
       }
       slotUsed = Math.ceil(slotUsed)
       containers[slotName].slotUsed = slotUsed
