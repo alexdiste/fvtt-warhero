@@ -191,7 +191,7 @@
                   src="{{weapon.img}}" /></a>
               <span class="item-name-label-long"><a class="roll-weapon"><i class="fa-solid fa-dice-d20"></i>{{weapon.name}}</a></span>
 
-              <span class="item-field-label-medium">{{weapon.system.weapontype}}</span>
+              <span class="item-field-label-medium">{{localize (concat "WH.conf." weapon.system.weapontype)}}</span>
               
               {{#if (eq system.weapontype "special")}}
               <span class="item-field-label-medium"><a class="roll-damage"><i class="fa-solid fa-dice-d20"></i>{{weapon.system.damageformula}}</a></span>
@@ -306,7 +306,9 @@
               <span class="item-field-label-medium">N/A</span>
               <span class="item-field-label-medium">N/A</span>
               {{else}}
-              <span class="item-field-label-medium">{{skill.system.currentuse}}</span>
+              <span class="item-field-label-medium">{{skill.system.currentuse}}
+                (<a class="skill-use-minus plus-minus-button">&nbsp;-</a>/<a class="skill-use-plus plus-minus-button">+</a>)
+              </span>
               <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
               {{/if}}
 

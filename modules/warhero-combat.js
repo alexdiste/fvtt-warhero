@@ -9,7 +9,7 @@ export class WarheroCombat extends Combat {
     for (let cId = 0; cId < ids.length; cId++) {
       const c = this.combatants.get(ids[cId]);
       let id = c._id || c.id;
-      let initBonus = c.actor ? c.actor.getInitiativeScore( this.id, id ) : -1;
+      let initBonus = c.actor ? await c.actor.getInitiativeScore( this.id, id ) : -1;
       await this.updateEmbeddedDocuments("Combatant", [ { _id: id, initiative: initBonus } ]);
     }
 

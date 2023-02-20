@@ -552,7 +552,7 @@ export class WarheroUtility {
     let actor = game.actors.get(rollData.actorId)
 
     if (rollData.mode == "power") {
-      let manaCost = Array.from(rollData.powerLevel)[0]
+      let manaCost = rollData.powerLevel
       if (actor.spentMana(manaCost)) {
         let powerKey = "level" + rollData.powerLevel
         rollData.powerText = rollData.power.system[powerKey]
@@ -591,6 +591,9 @@ export class WarheroUtility {
       diceFormula = "1d20"
       if (rollData.stat) {
         diceFormula += "+" + rollData.stat.value
+      }
+      if (rollData.statBonus) {
+        diceFormula += "+" + rollData.statBonus.value
       }
     }
     if (rollData.usemWeaponMalus) {

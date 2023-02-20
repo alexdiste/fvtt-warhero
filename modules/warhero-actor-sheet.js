@@ -134,6 +134,15 @@ export class WarheroActorSheet extends ActorSheet {
       const li = $(event.currentTarget).parents(".item");
       this.actor.incDecQuantity( li.data("item-id"), +1 );
     } );
+    html.find('.skill-use-minus').click(event => {
+      const li = $(event.currentTarget).parents(".item");
+      this.actor.incDecSkillUse( li.data("item-id"), -1 );
+    } );
+    html.find('.skill-use-plus').click(event => {
+      const li = $(event.currentTarget).parents(".item");
+      this.actor.incDecSkillUse( li.data("item-id"), +1 );
+    } );
+    
 
     html.find('.ammo-minus').click(event => {
       const li = $(event.currentTarget).parents(".item")

@@ -118,7 +118,8 @@
   "WH.ui.details": "Details",
   "WH.ui.magicschool": "Magic School",
   "WH.ui.providedslot": "Provided slot",
-
+  "WH.ui.skilllevelacquired": "Acquired at level",
+  
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
   "WH.chat.diceresult": "Dice result",
@@ -128,5 +129,7 @@
   "WH.chat.rollformula": "Roll Formula",
   "WH.chat.useshield":"Use shield ?",
   "WH.chat.power": "Power",
-  "WH.chat.powerlevel": "Power Level"
+  "WH.chat.powerlevel": "Power Level",
+
+  "WH.notif.skillmaxuse": "Maximum skill usage reach - Use is not allowed"
 }

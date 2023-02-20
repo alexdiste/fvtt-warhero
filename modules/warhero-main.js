@@ -72,16 +72,6 @@ Hooks.once("init", async function () {
 });
 
 /* -------------------------------------------- */
-function welcomeMessage() {
-  /*ChatMessage.create({
-    user: game.user.id,
-    whisper: [game.user.id],
-    content: `<div id="welcome-message-crucible"><span class="rdd-roll-part">
-    <strong>Welcome to the Warhero RPG.</strong>
-    ` });*/
-}
-
-/* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
 /* -------------------------------------------- */
 Hooks.once("ready", function () {
@@ -96,15 +86,14 @@ Hooks.once("ready", function () {
   }
   
   // CSS patch for v9
-  if (game.version) {
+  /*if (game.version) {
     let sidebar = document.getElementById("sidebar");
     sidebar.style.width = "min-content";
-  }
+  }*/
 
-  welcomeMessage();
+  //welcomeMessage();
   WarheroUtility.ready()
-  WarheroCommands.init()
-  WarheroHotbar.initDropbar()
+  //WarheroHotbar.initDropbar()
 
 })
 

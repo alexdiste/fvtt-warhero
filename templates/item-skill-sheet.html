@@ -23,6 +23,10 @@
             <input type="checkbox" name="system.unlimited" {{checked system.unlimited}}/>
           </li>
 
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.skilllevelacquired"}}</label>
+            <input type="text" class="item-field-label-medium " name="system.acquiredatlevel" value="{{system.acquiredatlevel}}" data-dtype="Number"/>
+          </li>
+
           {{#if system.unlimited}}
 
           {{else}}

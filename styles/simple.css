@@ -876,14 +876,34 @@ li {
 
 /*  background: rgb(105,85,65) url("../images/ui/texture_feuille_perso_onglets.webp") no-repeat right bottom;*/
 
-#sidebar.collapsed {
-  height: 470px !important;
-}
-
 #sidebar-tabs > .collapsed,
 #chat-controls .chat-control-icon {
   color: rgba(220, 220, 220, 0.75);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+
+#sidebar-tabs {
+  flex: 0 0 28px;
+  box-sizing: border-box;
+  margin: 0 0 3px;
+  border-bottom: 1px solid rgba(0,0,0,0);
+  box-shadow: inset 0 0 2rem rgba(0,0,0,0.5);
+}
+
+#sidebar-tabs > .item.active {
+  border: 1px solid rgba(114,98,72,1);
+  background: rgba(30, 25, 20, 0.75);
+  box-shadow: 0 0 6px inset rgba(114,98,72,1);
+}
+
+#sidebar #sidebar-tabs i{
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-position:center;
+  background-size:cover;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.75);
+
 }
 
 .sidebar-tab .directory-list .entity {
@@ -1026,21 +1046,6 @@ li {
   margin: 0 0 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
-}
-
-#sidebar-tabs > .item.active {
-  border: 1px solid rgba(114, 98, 72, 1);
-  background: rgba(30, 25, 20, 0.75);
-  box-shadow: 0 0 6px inset rgba(114, 98, 72, 1);
-}
-
-#sidebar #sidebar-tabs i {
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  background-position: center;
-  background-size: cover;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
 }
 
 /*--------------------------------------------------------------------------*/

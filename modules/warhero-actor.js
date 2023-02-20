@@ -461,12 +461,10 @@ export class WarheroActor extends Actor {
     }
   }
   /* -------------------------------------------- */
-  getInitiativeScore(combatId, combatantId) {
-    if (this.type == 'character') {
-      this.rollMR(true, combatId, combatantId)
-    }
-    console.log("Init required !!!!")
-    return -1;
+  async getInitiativeScore(combatId, combatantId) {
+    let roll = new Roll("1d20+"+this.system.attributes.ini.value).roll({async: false})
+    await WarheroUtility.showDiceSoNice(roll, game.settings.get("core", "rollMode"))
+    return roll.total
   }
 
   /* -------------------------------------------- */
@@ -547,7 +545,19 @@ export class WarheroActor extends Actor {
       }
     }
   }
-
+  /* -------------------------------------------- */
+  async incDecSkillUse(skillId, value) {
+    let skill = this.items.get(skillId)
+    if (skill) {
+      let newUse = skill.system.currentuse + value
+      if (newUse > skill.system.maxuse) {
+        ui.notifications.warn(game.i18n.localize("WH.notif.skillmaxuse"))
+        return
+      }
+      newUse = Math.max(newUse, 0)
+      this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.currentuse': newUse }]) 
+    }
+  }
   /* -------------------------------------------- */
   async incDecQuantity(objetId, incDec = 0) {
     let objetQ = this.items.get(objetId)
@@ -625,12 +635,14 @@ export class WarheroActor extends Actor {
     this.system.secondary.nblanguage.value = Math.floor(this.system.statistics.min.value / 2)
   }
   /* -------------------------------------------- */
-  spentMana(mana) {
-    if (Number(mana) > this.system.attributes.mana.value) {
+  spentMana(spentValue) {
+    let mana = duplicate(this.system.attributes.mana)
+    if (Number(spentValue) > mana.value) {
       ui.notifications.warn("Not enough Mana points !")
       return false
     }
-    this.update({ 'system.attributes.mana.value': this.system.attributes.mana.value - mana })
+    mana.value -= Number(spentValue)
+    this.update({ 'system.attributes.mana': mana })
     return true
   }
   /* -------------------------------------------- */
@@ -651,6 +663,10 @@ export class WarheroActor extends Actor {
     let rollData = this.getCommonRollData()
     rollData.mode = rollType
     rollData.stat = stat
+    if (stat && stat.stat)
+    {
+      rollData.statBonus = duplicate(this.system.statistics[stat.stat])
+    }
     if (rollKey == "parrybonustotal") {
       WarheroUtility.rollParry(rollData)
       return
@@ -678,8 +694,8 @@ export class WarheroActor extends Actor {
       } else {
         rollData.stat = duplicate(this.system.attributes.txcm)
       }
-      rollData.usemWeaponMalus =
-        rollData.mWeaponMalus = this.system.secondary.malusmultiweapon.value
+      rollData.usemWeaponMalus = false
+      rollData.mWeaponMalus = this.system.secondary.malusmultiweapon.value
       rollData.weapon = weapon
       rollData.img = weapon.img
       this.startRoll(rollData)
@@ -707,7 +723,7 @@ export class WarheroActor extends Actor {
       let rollData = this.getCommonRollData()
       rollData.mode = "power"
       rollData.power = power
-      rollData.powerLevel = power.system.level
+      rollData.powerLevel = Number(power.system.level)
       rollData.img = power.img
       rollData.hasBM = false
       this.startRoll(rollData)

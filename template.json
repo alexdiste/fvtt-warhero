@@ -111,6 +111,7 @@
             "label": "WH.ui.Initiative",
             "abbrev": "ini",
             "style": "edit",
+            "roll": true,
             "max": 1,
             "value": 1
           },
@@ -180,9 +181,11 @@
           },
           "counterspell": {
             "label": "WH.ui.counterspell",
+            "stat": "min",
             "abbrev": "counterspell",
             "style": "edit",
             "hasmax": true,
+            "roll": true,
             "max": 1,
             "value": 0
           },
@@ -236,7 +239,8 @@
       "power",
       "language",
       "condition",
-      "class"
+      "class",
+      "genericitem"
     ],
     "templates": {
       "commonclassrace": {
@@ -259,6 +263,9 @@
           "tower": false
         }
       }
+    },
+    "genericitem": {
+      "description": ""
     },
     "condition": {
       "shortdescription": "",
@@ -288,6 +295,7 @@
     "skill": {
       "classskill": false,
       "unlimited": false,
+      "acquiredatlevel": 0,
       "currentuse": 0,
       "maxuse": 0,
       "description": ""
