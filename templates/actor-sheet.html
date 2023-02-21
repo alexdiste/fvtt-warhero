@@ -428,6 +428,10 @@
     {{!-- Equipement Tab --}}
     <div class="tab equipment" data-group="primary" data-tab="equipment">
 
+      <div class="flexrow">
+        <label class="">{{localize "WH.ui.totalmoney"}} : {{totalMoney}}</label>
+      </div>
+
       {{#each slotEquipments as |slot slotKey|}}
       <ul class="item-list alternate-list">
         <li class="item flexrow list-item items-title-bg {{#if (gt slot.slotUsed slot.nbslots)}}items-title-bg-red{{/if}}">

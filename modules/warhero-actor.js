@@ -174,6 +174,12 @@ export class WarheroActor extends Actor {
     return listItem
   }
   /* -------------------------------------------- */
+  computeTotalMoney() {
+    let nbMoney = 0
+    this.items.forEach(it => {if (it.type == 'money') { nbMoney += it.system.quantity} } )
+    return nbMoney
+  } 
+  /* -------------------------------------------- */
   buildEquipmentsSlot() {
     let containers = {}
     for (let slotName in game.system.warhero.config.slotNames) {
