@@ -258,6 +258,11 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp
   }
+  getRaceSkills() {
+    let comp = this.items.filter(it => it.type == "skill" && it.system.raceskill)
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp
+  }
   getClassSkills() {
     let comp = this.items.filter(it => it.type == "skill" && it.system.classskill)
     WarheroUtility.sortArrayObjectsByName(comp)
@@ -312,7 +317,10 @@ export class WarheroActor extends Actor {
 
   /* ------------------------------------------- */
   getEquipments() {
-    return this.items.filter(item => item.type == 'shield' || item.type == 'armor' || item.type == "weapon" || item.type == "equipment");
+    return this.items.filter(item => item.type == 'shield' || item.type == 'armor' || item.type == "weapon" || item.type == "equipment" || item.type == "potion" || item.type == "poison"|| item.type == "trap" || item.type == "classitem");
+  }
+  getCompetencyItems() {
+    return duplicate(this.items.filter(item => item.type == "competency") || [])
   }
   /* ------------------------------------------- */
   getEquipmentsOnly() {
@@ -655,6 +663,14 @@ export class WarheroActor extends Actor {
     this.update({ 'system.attributes.mana': mana })
     return true
   }
+  
+  /* -------------------------------------------- */
+  incrementUse(rollData) {
+    let stat = duplicate(this.system[rollData.mode][rollData.statKey])
+    stat.nbuse++
+    this.update( { [`system.${rollData.mode}.${rollData.statKey}`]: stat })
+  }
+
   /* -------------------------------------------- */
   getCommonRollData() {
     let rollData = WarheroUtility.getBasicRollData()
@@ -672,10 +688,15 @@ export class WarheroActor extends Actor {
     let stat = duplicate(this.system[rollType][rollKey])
     let rollData = this.getCommonRollData()
     rollData.mode = rollType
+    rollData.statKey = rollKey
     rollData.stat = stat
     if (stat && stat.stat)
     {
       rollData.statBonus = duplicate(this.system.statistics[stat.stat])
+    }
+    if ( stat.hasuse && stat.nbuse >= stat.maxuse) {
+      ui.notifications.warn(game.i18n.localize("WH.notif.toomanyuses"))
+      return
     }
     if (rollKey == "parrybonustotal") {
       WarheroUtility.rollParry(rollData)

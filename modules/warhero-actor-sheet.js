@@ -42,7 +42,9 @@ export class WarheroActorSheet extends ActorSheet {
       cssClass: this.isEditable ? "editable" : "locked",
       system: objectData,
       limited: this.object.limited,
+      compentencyItems:this.actor.getCompetencyItems( ), 
       skills: this.actor.getNormalSkills( ),
+      raceSkills: this.actor.getRaceSkills( ),
       classSkills: this.actor.getClassSkills( ),
       languages: this.actor.getLanguages( ),
       weapons: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getWeapons()) ),
@@ -65,6 +67,9 @@ export class WarheroActorSheet extends ActorSheet {
       editScore: this.options.editScore,
       isGM: game.user.isGM
     }
+    // Dynamic patch
+    formData.system.secondary.counterspell.hasmax = false
+    // Race mngt
     if ( race && race.name) {
       formData.hpprogression = game.system.warhero.config.progressionList[race.system.hpprogresion]
     }

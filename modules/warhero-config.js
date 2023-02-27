@@ -45,6 +45,42 @@ export const WARHERO_CONFIG = {
     "high": "High (+6HP/Lvl)",
     "medium": "Medium (+4HP/Lvl)",
     "low": "Low (+2 HP/Lvl)"
+  },
+
+  poisonApplication: {
+    touch: "WH.ui.Touch", 
+    ingestion: "WH.ui.Ingestion", 
+    weapon: "WH.ui.Weapon"
+  },
+
+  saveType: {
+    halfdmg: "WH.ui.halfdamage", 
+    ignore: "WH.ui.ignoreeffect" 
+  },
+
+  conditionType : {
+    generic: "WH.ui.generic",
+    bless: "WH.ui.bless",
+    spell: "WH.ui.spell",
+    disease: "WH.ui.disease",
+    poison: "WH.ui.poison",
+    curse: "WH.u,i.curse"
+  },
+
+  conditionDuration: {
+    permanent: "WH.ui.permanent",
+    temporary: "WH.ui.temporary"
+  },
+
+  conditionSpecialDuration : {
+    infinite: "WH.ui.infinite", 
+    withineor: "WH.uiwithineor",
+    beginr: "WH.ui.beginr", 
+    nextr: "WH.ui.nextr", 
+    nextcombat: "WH.ui.nextcombat",
+    untilendcombat: "WH.ui.untilendcombat",
+    beginturn: "WH.ui.beginturn",
+    endturn: "WH.ui.endturn"
   }
 
 }

@@ -618,6 +618,10 @@ export class WarheroUtility {
       rollData.isCriticalFailure = true
     }
 
+    if ( rollData.stat.hasuse ) {
+      actor.incrementUse(rollData)
+    }
+
     let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
     })

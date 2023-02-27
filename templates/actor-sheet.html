@@ -75,7 +75,7 @@
   {{!-- Sheet Body --}}
   <section class="sheet-body">
 
-    {{!-- Skills Tab --}}
+    {{!-- Main Tab --}}
     <div class="tab main" data-group="primary" data-tab="main">
       
       <div class="flexrow">
@@ -117,6 +117,20 @@
                     </li>
                 {{/if}}
               {{/each}}
+
+              {{#each compentencyItems as |comp key|}}
+              <li class="item flexrow list-item list-item-shadow" data-item-id="{{comp._id}}">
+                <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+                    src="{{comp.img}}" /></a>
+                <span class="item-name-label-long">{{comp.name}}</span>
+  
+                <div class="item-filler">&nbsp;</div>
+                <div class="item-controls item-controls-fixed">
+                  <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                </div>
+              </li>
+              {{/each}}
+
             </ul>
           </div>
   
@@ -282,6 +296,44 @@
     {{!-- Skills Tab --}}
     <div class="tab skill" data-group="primary" data-tab="skill">
       <div class="flexcol">
+
+        <div>
+          <ul class="stat-list alternate-list">
+            <li class="item flexrow list-item items-title-bg">
+              <span class="item-name-label-header-long">
+                <h3><label class="items-title-text">{{localize "WH.ui.raceSkills"}}</label></h3>
+              </span>
+              <span class="item-field-label-medium">
+                <label class="short-label">{{localize "WH.ui.currentuse"}}</label>
+              </span>
+              <span class="item-field-label-medium">
+                <label class="short-label">{{localize "WH.ui.maxuse"}}</label>
+              </span>
+            </li>
+            {{#each raceSkills as |skill key|}}
+            <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+              <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+                  src="{{skill.img}}" /></a>
+              <span class="item-name-label-long">{{skill.name}}</a></span>
+              
+              {{#if skill.system.unlimited}}
+              <span class="item-field-label-medium">N/A</span>
+              <span class="item-field-label-medium">N/A</span>
+              {{else}}
+              <span class="item-field-label-medium">{{skill.system.currentuse}}
+                (<a class="skill-use-minus plus-minus-button">&nbsp;-</a>/<a class="skill-use-plus plus-minus-button">+</a>)
+              </span>
+              <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
+              {{/if}}
+
+              <div class="item-filler">&nbsp;</div>
+              <div class="item-controls item-controls-fixed">
+                <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+              </div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
 
         <div>
           <ul class="stat-list alternate-list">

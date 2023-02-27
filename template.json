@@ -184,10 +184,13 @@
             "stat": "min",
             "abbrev": "counterspell",
             "style": "edit",
-            "hasmax": true,
+            "hasmax": false,
             "roll": true,
             "max": 1,
-            "value": 0
+            "value": 0,
+            "hasuse": true,
+            "nbuse": 0,
+            "maxuse": 0
           },
           "createitem": {
             "label": "WH.ui.createitem",
@@ -241,7 +244,12 @@
       "condition",
       "class",
       "genericitem",
-      "money"
+      "money",
+      "potion",
+      "poison",
+      "trap",
+      "classitem",
+      "competency"
     ],
     "templates": {
       "commonclassrace": {
@@ -265,6 +273,53 @@
         }
       }
     },
+    "competency": {
+      "description": ""
+    },
+    "potion": {
+      "cost": 0,
+      "quantity": 1,
+      "slotused": 1,
+      "slotlocation": "armor",
+      "alchemycost": "",
+      "preparetime": "",
+      "durationround": 0,
+      "description": ""
+    },
+    "poison": {
+      "cost": 0,
+      "quantity": 1,
+      "slotused": 1,
+      "slotlocation": "armor",
+      "application": "",
+      "preparecost": "",
+      "preparetime": "",
+      "damageroll": "",
+      "durationround": 0,
+      "savesdc": 0,
+      "savetype": "",
+      "description": ""
+    },
+    "trap": {
+      "cost": 0,
+      "quantity": 1,
+      "slotused": 1,
+      "slotlocation": "armor",
+      "dcfind": 0,
+      "dcdisable": 0,
+      "throwtohit": 0,
+      "damageroll": "",
+      "description": ""
+    },
+    "classitem": {
+      "cost": 0,
+      "quantity": 1,
+      "slotused": 1,
+      "slotlocation": "armor",
+      "class": "",
+      "mandatoryfor": "",
+      "description": ""
+    },
     "money": {
       "quantity": 0,
       "slotlocation": "backpack",
@@ -274,7 +329,16 @@
       "description": ""
     },
     "condition": {
+      "conditiontype": "",
+      "duration": "",
+      "begin": "",
+      "specialduration": "",
+      "durationvalue": 0,
+      "durationunit": "",
       "shortdescription": "",
+      "dcsave": 0,
+      "incubationtime": "",
+      "diseaseduration": "",
       "description": ""
     },
     "class": {
@@ -299,6 +363,7 @@
       "description": ""
     },
     "skill": {
+      "raceskill": false,
       "classskill": false,
       "unlimited": false,
       "acquiredatlevel": 0,
