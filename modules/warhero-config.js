@@ -81,6 +81,13 @@ export const WARHERO_CONFIG = {
     untilendcombat: "WH.ui.untilendcombat",
     beginturn: "WH.ui.beginturn",
     endturn: "WH.ui.endturn"
+  },
+
+  identifiedState: {
+    unknown: "WH.conf.unknown",
+    yes:"WH.conf.yes",
+    no:"WH.conf.no",
+    notapplicable:"WH.conf.notapplicable"
   }
 
 }

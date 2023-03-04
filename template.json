@@ -243,7 +243,6 @@
       "language",
       "condition",
       "class",
-      "genericitem",
       "money",
       "potion",
       "poison",
@@ -280,7 +279,8 @@
       "cost": 0,
       "quantity": 1,
       "slotused": 1,
-      "slotlocation": "armor",
+      "slotlocation": "backpack",
+      "isidentified": "unknown",
       "alchemycost": "",
       "preparetime": "",
       "durationround": 0,
@@ -290,7 +290,8 @@
       "cost": 0,
       "quantity": 1,
       "slotused": 1,
-      "slotlocation": "armor",
+      "slotlocation": "backpack",
+      "isidentified": "unknown",
       "application": "",
       "preparecost": "",
       "preparetime": "",
@@ -304,7 +305,8 @@
       "cost": 0,
       "quantity": 1,
       "slotused": 1,
-      "slotlocation": "armor",
+      "slotlocation": "backpack",
+      "isidentified": "unknown",
       "dcfind": 0,
       "dcdisable": 0,
       "throwtohit": 0,
@@ -315,7 +317,8 @@
       "cost": 0,
       "quantity": 1,
       "slotused": 1,
-      "slotlocation": "armor",
+      "slotlocation": "backpack",
+      "isidentified": "unknown",
       "class": "",
       "mandatoryfor": "",
       "description": ""
@@ -323,9 +326,6 @@
     "money": {
       "quantity": 0,
       "slotlocation": "backpack",
-      "description": ""
-    },
-    "genericitem": {
       "description": ""
     },
     "condition": {
@@ -382,6 +382,7 @@
       "quantity": 1,
       "slotused": 1,
       "slotlocation": "weapon1",
+      "isidentified": "unknown",
       "description": ""
     },
     "armor": {
@@ -392,6 +393,7 @@
       "quantity": 1,
       "slotused": 1,
       "slotlocation": "armor",
+      "isidentified": "unknown",
       "description": ""
     },
     "shield": {
@@ -402,6 +404,7 @@
       "quantity": 1,
       "slotused": 1,
       "slotlocation": "shield",
+      "isidentified": "unknown",
       "description": ""
     },
     "equipment": {
@@ -412,6 +415,7 @@
       "slotused": 1,
       "slotlocation": "backpack",
       "providedslot": 0,
+      "isidentified": "unknown",
       "description": ""
     },
     "power": {

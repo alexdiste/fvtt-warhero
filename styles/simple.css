@@ -1496,6 +1496,12 @@ li {
   max-width: 9rem;
   min-width: 9rem;
 }
+.item-field-label-2rem {
+  flex-grow: 1;
+  margin-top: 4px;
+  max-width: 1.2rem;
+  min-width: 1.2rem;
+}
 .item-field-label-short {
   flex-grow: 1;
   margin-top: 4px;

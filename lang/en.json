@@ -15,7 +15,6 @@
     "TypeLanguage": "Language",
     "TypeCondition": "Condition",
     "TypeClass": "Class",
-    "TypeGenericitem": "Class",
     "TypeMoney": "Money",
     "TypePotion": "Potion",
     "TypePoison": "Poison",
@@ -54,6 +53,11 @@
   "WH.conf.beltpouch1": "Beltpouch 1",
   "WH.conf.beltpouch2": "Beltpouch 2",
   "WH.conf.beltpouch3": "Beltpouch 3",
+
+  "WH.conf.unknown": "Unknown",
+  "WH.conf.yes": "Yes",
+  "WH.conf.no": "No",
+  "WH.conf.notapplicable": "Not applicable",
 
   "WH.ui.level": "Level",
   "WH.ui.notes": "Notes",
@@ -185,7 +189,8 @@
   "WH.ui.diseaseduration": "Disease duration",
   "WH.ui.ignoreeffect": "Ignore effect",
   "WH.ui.raceSkills": "Race skills",
-
+  "WH.ui.identified": "Identified",
+  
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
   "WH.chat.diceresult": "Dice result",

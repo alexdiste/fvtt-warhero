@@ -31,8 +31,9 @@
     {{#if hasmax}}
       <input type="text" class="item-field-label-short " name="system.{{path}}.{{key}}.max" value="{{stat.max}}" data-dtype="Number"/>
     {{/if}}
-    {{#if hasuse}}
+    {{#if hasuse}}       
       <input type="text" class="item-field-label-short " name="system.{{path}}.{{key}}.nbuse" value="{{stat.nbuse}}" data-dtype="Number"/>
+      <label class="item-field-label-2rem">&nbsp;/&nbsp;</label>
       <input type="text" class="item-field-label-short " name="system.{{path}}.{{key}}.maxuse" value="{{stat.maxuse}}" data-dtype="Number"/>
     {{/if}}
   

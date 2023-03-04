@@ -56,7 +56,6 @@ Hooks.once("init", async function () {
   CONFIG.Combat.documentClass = WarheroCombat
   CONFIG.Actor.documentClass = WarheroActor
   CONFIG.Item.documentClass = WarheroItem
-  //CONFIG.Token.objectClass = WarheroToken
 
   /* -------------------------------------------- */
   // Register sheet application classes
@@ -79,28 +78,15 @@ Hooks.once("ready", function () {
   // User warning
   if (!game.user.isGM && game.user.character == undefined) {
     ui.notifications.info("Warning ! No character linked to your user !");
-    /*ChatMessage.create({
-      content: "<b>WARNING</b> The player  " + game.user.name + " is not linked to a character !",
-      user: game.user._id
-    });*/
   }
   
-  // CSS patch for v9
-  /*if (game.version) {
-    let sidebar = document.getElementById("sidebar");
-    sidebar.style.width = "min-content";
-  }*/
-
-  //welcomeMessage();
   WarheroUtility.ready()
-  //WarheroHotbar.initDropbar()
-
 })
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
 /* -------------------------------------------- */
-Hooks.on("chatMessage", (html, content, msg) => {
+/*Hooks.on("chatMessage", (html, content, msg) => {
   if (content[0] == '/') {
     let regExp = /(\S+)/g;
     let commands = content.match(regExp);
@@ -109,5 +95,5 @@ Hooks.on("chatMessage", (html, content, msg) => {
     }
   }
   return true;
-});
+});*/
 
