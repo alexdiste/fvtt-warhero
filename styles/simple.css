@@ -899,11 +899,10 @@ li {
 #sidebar #sidebar-tabs i{
   width: 23px;
   height: 23px;
-  display: inline-block;
+  /*display: inline-block;*/
   background-position:center;
   background-size:cover;
   text-shadow: 1px 1px 0 rgba(0,0,0,0.75);
-
 }
 
 .sidebar-tab .directory-list .entity {
@@ -916,6 +915,7 @@ li {
   background: rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
+
 .chat-message-header {
   background: rgba(220, 220, 210, 0.5);
   font-size: 1.1rem;
@@ -930,6 +930,7 @@ li {
 .chat-message .message-header .whisper-to {
   font-size: 0.9rem;
 }
+
 .chat-actor-name {
   padding: 4px;
 }
