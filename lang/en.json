@@ -58,6 +58,7 @@
   "WH.conf.yes": "Yes",
   "WH.conf.no": "No",
   "WH.conf.notapplicable": "Not applicable",
+  "WH.conf.undefined": "Not applicable",
 
   "WH.ui.level": "Level",
   "WH.ui.notes": "Notes",

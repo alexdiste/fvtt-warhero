@@ -12,8 +12,8 @@
 </li>
 
 <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.identified"}}</label>
-  <select class="item-field-label-long " type="text" name="system.identified" value="{{system.identified}}" data-dtype="String">
-    {{#select system.identified}}
+  <select class="item-field-label-long " type="text" name="system.isidentified" value="{{system.isidentified}}" data-dtype="String">
+    {{#select system.isidentified}}
       {{#each config.identifiedState as |type key|}}
         <option value="{{key}}">{{localize type}}</option>
       {{/each}}

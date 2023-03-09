@@ -1491,6 +1491,11 @@ li {
   max-width: 22rem;
   min-width: 22rem;
 }
+.item-name-label-long3 {
+  flex-grow: 2;
+  max-width: 32rem;
+  min-width: 32rem;
+}
 .item-name-label-level2 {
   flex-grow: 2;
   max-width: 9rem;

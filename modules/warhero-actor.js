@@ -162,6 +162,11 @@ export class WarheroActor extends Actor {
     let classWH = this.items.filter(item => item.type == 'class')
     return classWH[0] ?? [];
   }
+  getClasses() {
+    let comp = duplicate(this.items.filter(item => item.type == "class") || []);
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp;
+  }
   /* -------------------------------------------- */
   checkAndPrepareEquipment(item) {
   }
@@ -254,7 +259,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   getNormalSkills() {
-    let comp = this.items.filter(it => it.type == "skill" && !it.system.classskill)
+    let comp = this.items.filter(it => it.type == "skill" && !it.system.classskill && !it.system.raceskill)
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp
   }
