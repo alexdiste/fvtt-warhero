@@ -53,7 +53,18 @@
   "WH.conf.beltpouch1": "Beltpouch 1",
   "WH.conf.beltpouch2": "Beltpouch 2",
   "WH.conf.beltpouch3": "Beltpouch 3",
-
+  "WH.conf.scrollcase": "Scroll case",
+  "WH.conf.wandcase": "Wand case",
+  "WH.conf.potioncase": "Potion case",
+  "WH.conf.bagholding": "Bag of holding",
+  "WH.conf.quiverholding": "Quiver of holding",
+  "WH.conf.backpackholding": "Backpack of holding",
+  "WH.conf.smallchest": "Small chest",
+  "WH.conf.mediumchest": "Medium chest",
+  "WH.conf.largechest": "Large chest",
+  "WH.conf.hugechest": "Huge chest",
+  "WH.conf.partystorage": "Party chest/storage",
+  
   "WH.conf.unknown": "Unknown",
   "WH.conf.yes": "Yes",
   "WH.conf.no": "No",
@@ -192,6 +203,9 @@
   "WH.ui.raceSkills": "Race skills",
   "WH.ui.identified": "Identified",
   
+  "WH.ui.bodyslots": "Body",
+  "WH.ui.containerslot": "Containers",
+
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
   "WH.chat.diceresult": "Dice result",

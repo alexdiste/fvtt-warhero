@@ -11,6 +11,7 @@
 import { WarheroActor } from "./warhero-actor.js";
 import { WarheroItemSheet } from "./warhero-item-sheet.js";
 import { WarheroActorSheet } from "./warhero-actor-sheet.js";
+import { WarheroPartySheet } from "./warhero-party-sheet.js";
 import { WarheroNPCSheet } from "./warhero-npc-sheet.js";
 import { WarheroMonsterSheet } from "./warhero-monster-sheet.js";
 import { WarheroUtility } from "./warhero-utility.js";
@@ -63,6 +64,7 @@ Hooks.once("init", async function () {
   Actors.registerSheet("fvtt-warhero", WarheroActorSheet, { types: ["character"], makeDefault: true });
   Actors.registerSheet("fvtt-warhero", WarheroNPCSheet, { types: ["npc"], makeDefault: false });
   Actors.registerSheet("fvtt-warhero", WarheroMonsterSheet, { types: ["monster"], makeDefault: false });
+  Actors.registerSheet("fvtt-warhero", WarheroPartySheet, { types: ["party"], makeDefault: false });
 
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("fvtt-warhero", WarheroItemSheet, { makeDefault: true });

@@ -231,6 +231,7 @@ export class WarheroUtility {
       'systems/fvtt-warhero/templates/partial-item-description.html',
       'systems/fvtt-warhero/templates/partial-item-common-equipment.html',
       'systems/fvtt-warhero/templates/partial-actor-equipment.html',
+      'systems/fvtt-warhero/templates/partial-container.html',
     ]
     return loadTemplates(templatePaths);
   }

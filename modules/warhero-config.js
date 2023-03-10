@@ -21,6 +21,10 @@ export const WARHERO_CONFIG = {
     medium:  {parry: "3", label: "WH.conf.mediumshield"},
     tower:  {parry: "5", label: "WH.conf.towershield"},
   },
+  
+  partySlotNames : {
+    storage: {nbslots: 2000, itemtype:"equipment", label: "WH.conf.partystorage"}
+  },
 
   slotNames : {
     head: {nbslots: 1, itemtype:"armor", label: "WH.conf.head"},
@@ -31,14 +35,24 @@ export const WARHERO_CONFIG = {
     ring:  {nbslots: 10, itemtype:"equipment",label: "WH.conf.ring"},
     dress:  {nbslots: 1, itemtype:"equipment",label: "WH.conf.dress"},
     boots:  {nbslots: 1, itemtype:"equipment",label: "WH.conf.boots"},
-    belt:  {nbslots: 6, itemtype:"equipment",label: "WH.conf.belt"},
-    quiver:  {nbslots: 20, itemtype:"equipment",label: "WH.conf.quiver"},
     armor:  {nbslots: 1, itemtype:"armor",label: "WH.conf.armor"},
     shield:  {nbslots: 1, itemtype:"shield",label: "WH.conf.shield"},
-    backpack:  {nbslots: 12, itemtype:"equipment",label: "WH.conf.backpack"},
-    beltpouch1:  {nbslots: 4, itemtype:"equipment",label: "WH.conf.beltpouch1"},
-    beltpouch2:  {nbslots: 4, itemtype:"equipment", label: "WH.conf.beltpouch2"},
-    beltpouch3:  {nbslots: 4, itemtype:"equipment", label: "WH.conf.beltpouch3"},
+    belt:  {nbslots: 6, itemtype:"equipment", container: true, available: true, parent: undefined, label: "WH.conf.belt"},
+    quiver:  {nbslots: 20, itemtype:"equipment",container: true, available: true, parent: undefined, label: "WH.conf.quiver"},
+    backpack:  {nbslots: 12, itemtype:"equipment",container: true, available: true, parent: undefined, label: "WH.conf.backpack"},
+    beltpouch1:  {nbslots: 4, itemtype:"equipment",container: true, available: true, parent: undefined, label: "WH.conf.beltpouch1"},
+    beltpouch2:  {nbslots: 4, itemtype:"equipment", container: true, available: true, parent: undefined, label: "WH.conf.beltpouch2"},
+    beltpouch3:  {nbslots: 4, itemtype:"equipment", container: true, available: true, parent: undefined, label: "WH.conf.beltpouch3"},
+    scrollcase:  {nbslots: 17, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.scrollcase"},
+    wandcase:  {nbslots: 10, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.wandcase"},
+    potioncase:  {nbslots: 8, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.potioncase"},
+    bagholding:  {nbslots: 30, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.bagholding"},
+    quiverholding:  {nbslots: 9999, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.quiverholding"},
+    backpackholding:  {nbslots: 90, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.backpackholding"},
+    smallchest:  {nbslots: 6, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.smallchest"},
+    mediumchest:  {nbslots: 12, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.mediumchest"},
+    largechest:  {nbslots: 24, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.largechest"},
+    hugechest:  {nbslots: 24, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.hugechest"},
   },
 
   progressionList: {

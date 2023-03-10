@@ -52,13 +52,12 @@ export class WarheroActorSheet extends ActorSheet {
       armors: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getArmors())),
       shields: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getShields())),
       powers: this.actor.sortPowers(),
-      equipments: this.actor.checkAndPrepareEquipments(duplicate(this.actor.getEquipmentsOnly()) ),
-      slotEquipments: this.actor.buildEquipmentsSlot(),
       subActors: duplicate(this.actor.getSubActors()),
       competency: this.actor.getCompetency(),
       race: duplicate(race),
       classes: duplicate(this.actor.getClasses()),
       totalMoney: this.actor.computeTotalMoney(),
+      equipments: duplicate(this.actor.getEquipmentsOnly()),
       //moneys: duplicate(this.actor.getMoneys()),
       description: await TextEditor.enrichHTML(this.object.system.biodata.description, {async: true}),
       notes: await TextEditor.enrichHTML(this.object.system.biodata.notes, {async: true}),
@@ -66,6 +65,12 @@ export class WarheroActorSheet extends ActorSheet {
       owner: this.document.isOwner,
       editScore: this.options.editScore,
       isGM: game.user.isGM
+    }    
+    if (this.actor.type == "party") {
+      formData.partySlots = this.actor.buildPartySlots()
+    } else {
+      formData.equipmentContainers = this.actor.buildEquipmentsSlot()
+      formData.bodyContainers = this.actor.buildBodySlot()
     }
     // Dynamic patch
     formData.system.secondary.counterspell.hasmax = false

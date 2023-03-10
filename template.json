@@ -3,7 +3,8 @@
     "types": [
       "character",
       "npc",
-      "monster"
+      "monster",
+      "party"
     ],
     "templates": {
       "biodata": {
@@ -211,6 +212,11 @@
         "npctype": "",
         "description": ""
       }
+    },
+    "party": {
+      "templates": [
+        "biodata"
+      ]
     },
     "character": {
       "templates": [

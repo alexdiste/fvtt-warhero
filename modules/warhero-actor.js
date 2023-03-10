@@ -181,29 +181,82 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   computeTotalMoney() {
     let nbMoney = 0
-    this.items.forEach(it => {if (it.type == 'money') { nbMoney += it.system.quantity} } )
+    this.items.forEach(it => { if (it.type == 'money') { nbMoney += it.system.quantity } })
     return nbMoney
-  } 
+  }
+
+  /* -------------------------------------------- */
+  buildPartySlots() {
+    let containers = {}
+    for (let slotName in game.system.warhero.config.partySlotNames) {
+      let slotDef = game.system.warhero.config.partySlotNames[slotName]
+      containers[slotName] = duplicate(slotDef)
+      containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment') )
+      let slotUsed = 0
+      for (let item of containers[slotName].content) {
+        let q = (item.system.quantity) ? item.system.quantity : 1
+        containers[slotName].nbslots += (item.system.providedslot ?? 0) * q
+        if (item.type == "money") {
+          slotUsed += Math.ceil(item.system.quantity / 1000)
+        } else {
+          slotUsed += item.system.slotused * q
+        }
+      }
+      slotUsed = Math.ceil(slotUsed)
+      containers[slotName].slotUsed = slotUsed
+    }
+    return containers
+  }
+
+  /* -------------------------------------------- */
+  buildBodySlot() {
+    let containers = {}
+    for (let slotName in game.system.warhero.config.slotNames) {
+      let slotDef = game.system.warhero.config.slotNames[slotName]
+      if (!slotDef.container) {
+        containers[slotName] = duplicate(slotDef)
+        containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment')
+          && it.system.slotlocation == slotName)
+        let slotUsed = 0
+        for (let item of containers[slotName].content) {
+          let q = (item.system.quantity) ? item.system.quantity : 1
+          containers[slotName].nbslots += (item.system.providedslot ?? 0) * q
+          if (item.type == "money") {
+            slotUsed += Math.ceil(item.system.quantity / 1000)
+          } else {
+            slotUsed += item.system.slotused * q
+          }
+        }
+        slotUsed = Math.ceil(slotUsed)
+        containers[slotName].slotUsed = slotUsed
+      }
+    }
+    return containers
+  }
+
+
   /* -------------------------------------------- */
   buildEquipmentsSlot() {
     let containers = {}
     for (let slotName in game.system.warhero.config.slotNames) {
       let slotDef = game.system.warhero.config.slotNames[slotName]
-      containers[slotName] = duplicate(slotDef)
-      containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment')
-                                                       && it.system.slotlocation == slotName)
-      let slotUsed = 0
-      for (let item of containers[slotName].content) {        
-        let q = (item.system.quantity) ? item.system.quantity : 1
-        containers[slotName].nbslots += (item.system.providedslot?? 0) * q
-        if ( item.type == "money") {
-          slotUsed += Math.ceil(item.system.quantity / 1000)
-        } else {
-          slotUsed += item.system.slotused * q          
+      if (slotDef.container) {
+        containers[slotName] = duplicate(slotDef)
+        containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment')
+          && it.system.slotlocation == slotName)
+        let slotUsed = 0
+        for (let item of containers[slotName].content) {
+          let q = (item.system.quantity) ? item.system.quantity : 1
+          containers[slotName].nbslots += (item.system.providedslot ?? 0) * q
+          if (item.type == "money") {
+            slotUsed += Math.ceil(item.system.quantity / 1000)
+          } else {
+            slotUsed += item.system.slotused * q
+          }
         }
+        slotUsed = Math.ceil(slotUsed)
+        containers[slotName].slotUsed = slotUsed
       }
-      slotUsed = Math.ceil(slotUsed)
-      containers[slotName].slotUsed = slotUsed
     }
     return containers
   }
@@ -322,7 +375,7 @@ export class WarheroActor extends Actor {
 
   /* ------------------------------------------- */
   getEquipments() {
-    return this.items.filter(item => item.type == 'shield' || item.type == 'armor' || item.type == "weapon" || item.type == "equipment" || item.type == "potion" || item.type == "poison"|| item.type == "trap" || item.type == "classitem");
+    return this.items.filter(item => item.type == 'shield' || item.type == 'armor' || item.type == "weapon" || item.type == "equipment" || item.type == "potion" || item.type == "poison" || item.type == "trap" || item.type == "classitem");
   }
   getCompetencyItems() {
     return duplicate(this.items.filter(item => item.type == "competency") || [])
@@ -485,7 +538,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   async getInitiativeScore(combatId, combatantId) {
-    let roll = new Roll("1d20+"+this.system.attributes.ini.value).roll({async: false})
+    let roll = new Roll("1d20+" + this.system.attributes.ini.value).roll({ async: false })
     await WarheroUtility.showDiceSoNice(roll, game.settings.get("core", "rollMode"))
     return roll.total
   }
@@ -578,7 +631,7 @@ export class WarheroActor extends Actor {
         return
       }
       newUse = Math.max(newUse, 0)
-      this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.currentuse': newUse }]) 
+      this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.currentuse': newUse }])
     }
   }
   /* -------------------------------------------- */
@@ -668,12 +721,12 @@ export class WarheroActor extends Actor {
     this.update({ 'system.attributes.mana': mana })
     return true
   }
-  
+
   /* -------------------------------------------- */
   incrementUse(rollData) {
     let stat = duplicate(this.system[rollData.mode][rollData.statKey])
     stat.nbuse++
-    this.update( { [`system.${rollData.mode}.${rollData.statKey}`]: stat })
+    this.update({ [`system.${rollData.mode}.${rollData.statKey}`]: stat })
   }
 
   /* -------------------------------------------- */
@@ -695,11 +748,10 @@ export class WarheroActor extends Actor {
     rollData.mode = rollType
     rollData.statKey = rollKey
     rollData.stat = stat
-    if (stat && stat.stat)
-    {
+    if (stat && stat.stat) {
       rollData.statBonus = duplicate(this.system.statistics[stat.stat])
     }
-    if ( stat.hasuse && stat.nbuse >= stat.maxuse) {
+    if (stat.hasuse && stat.nbuse >= stat.maxuse) {
       ui.notifications.warn(game.i18n.localize("WH.notif.toomanyuses"))
       return
     }
