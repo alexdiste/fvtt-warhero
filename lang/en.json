@@ -2,7 +2,8 @@
   "ACTOR": {
     "TypeCharacter": "Character",
     "TypeNpc": "NPC",
-    "TypeMonster": "Monster"
+    "TypeMonster": "Monster",
+    "TypeParty": "Party"
   },
   "ITEM": {
     "TypeWeapon": "Weapon",
