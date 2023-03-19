@@ -490,14 +490,14 @@
       <h3>{{localize "WH.ui.bodyslots"}} : </h3>
 
       {{#each bodyContainers as |slot slotKey|}}
-        {{> systems/fvtt-warhero/templates/partial-container.html slot=slot}}
+        {{> systems/fvtt-warhero/templates/partial-container.html slot=slot slotKey=slotKey}}
       {{/each}}
 
       <hr>
       <h3>{{localize "WH.ui.containerslot"}} : </h3>
 
       {{#each equipmentContainers as |slot slotKey|}}
-        {{> systems/fvtt-warhero/templates/partial-container.html slot=slot}}
+        {{> systems/fvtt-warhero/templates/partial-container.html slot=slot slotKey=slotKey}}
       {{/each}}
 
       <hr>
