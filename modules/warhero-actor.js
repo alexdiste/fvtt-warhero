@@ -123,6 +123,11 @@ export class WarheroActor extends Actor {
     return comp;
   }
   /* -------------------------------------------- */
+  getEquippedArmors() {
+    let comp = duplicate(this.items.filter(item => item.type == 'armor' && item.system.slotlocation == 'armor') || []);
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp;
+  }
   getArmors() {
     let comp = duplicate(this.items.filter(item => item.type == 'armor') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
@@ -147,6 +152,11 @@ export class WarheroActor extends Actor {
     return schools
   }
   /* -------------------------------------------- */
+  getEquippedShields() {
+    let comp = duplicate(this.items.filter(item => item.type == 'shield' && item.system.slotlocation == "shield") || []);
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp;
+  }
   getShields() {
     let comp = duplicate(this.items.filter(item => item.type == 'shield') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
@@ -282,6 +292,14 @@ export class WarheroActor extends Actor {
     weapon.damageFormula = formula
   }
   /* -------------------------------------------- */
+  getEquippedWeapons() {
+    let comp = duplicate(this.items.filter(item => item.type == 'weapon' && (item.system.slotlocation == "weapon1" || item.system.slotlocation == "weapon2") ) || []);
+    for (let weapon of comp) {
+      this.prepareWeapon(weapon)
+    }
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp;
+  }
   getWeapons() {
     let comp = duplicate(this.items.filter(item => item.type == 'weapon') || []);
     for (let weapon of comp) {

@@ -62,8 +62,8 @@
             "style": "edit",
             "hasmax": true,
             "isheader": true,
-            "max": 1,
-            "value": 1
+            "max": 30,
+            "value": 30
           },
           "knowledge": {
             "label": "WH.ui.Knowledge",
@@ -71,15 +71,16 @@
             "style": "edit",
             "hasmax": false,
             "roll": true,
-            "max": 1,
-            "value": 1
+            "max": 0,
+            "value": 0
           },
           "def": {
             "label": "WH.ui.Defence",
             "abbrev": "def",
             "style": "edit",
-            "max": 1,
-            "value": 1
+            "iscombat": true,
+            "max": 12,
+            "value": 12
           },
           "txcm": {
             "label": "WH.ui.Throw2HitM",
@@ -87,8 +88,9 @@
             "istxc": true,
             "style": "edit",
             "roll": true,
-            "max": 1,
-            "value": 1
+            "iscombat": true,
+            "max": 0,
+            "value": 0
           },
           "txcr": {
             "label": "WH.ui.Throw2HitR",
@@ -96,8 +98,9 @@
             "istxc": true,
             "style": "edit",
             "roll": true,
-            "max": 1,
-            "value": 1
+            "iscombat": true,
+            "max": 0,
+            "value": 0
           },
           "mana": {
             "label": "WH.ui.Mana",
@@ -105,37 +108,38 @@
             "style": "edit",
             "hasmax": true,
             "isheader": true,
-            "max": 1,
-            "value": 1
+            "max": 3,
+            "value": 3
           },
           "ini": {
             "label": "WH.ui.Initiative",
             "abbrev": "ini",
             "style": "edit",
+            "iscombat": true,
             "roll": true,
-            "max": 1,
-            "value": 1
+            "max": 0,
+            "value": 0
           },
           "movearth": {
             "label": "WH.ui.Movement",
             "abbrev": "mov",
             "style": "edit",
-            "max": 1,
-            "value": 1
+            "max": 6,
+            "value": 6
           },
           "movswim": {
             "label": "WH.ui.MovementSwim",
             "abbrev": "mov",
             "style": "edit",
-            "max": 1,
-            "value": 1
+            "max": 0,
+            "value": 0
           },
           "movfly": {
             "label": "WH.ui.MovementFly",
             "abbrev": "mov",
             "style": "edit",
-            "max": 1,
-            "value": 1
+            "max": 0,
+            "value": 0
           }
         },
         "secondary": {
@@ -149,6 +153,7 @@
           "malusmultiweapon": {
             "label": "WH.ui.malusmultiweapon",
             "abbrev": "malusmultiweapon",
+            "iscombat": true,
             "style": "edit",
             "value": 0
           },
@@ -156,6 +161,7 @@
             "label": "WH.ui.drbonus",
             "abbrev": "drbonus",
             "style": "edit",
+            "iscombat": true,
             "value": 0
           },
           "drbonustotal": {
@@ -163,12 +169,14 @@
             "abbrev": "drbonustotal",
             "disabled": true,
             "style": "edit",
+            "iscombat": true,
             "value": 0
           },
           "parrybonus": {
             "label": "WH.ui.parrybonus",
             "abbrev": "parrybonus",
             "isparrybonus": true,
+            "iscombat": true,
             "style": "edit",
             "value": 0
           },
@@ -177,6 +185,7 @@
             "abbrev": "parrybonustotal",
             "disabled": true,
             "style": "edit",
+            "iscombat": true,
             "roll": true,
             "value": 0
           },
