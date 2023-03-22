@@ -708,7 +708,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   computeDRTotal() {
-    let armors = this.items.filter(it => it.type == "armor")
+    let armors = this.items.filter(it => it.type == "armor" && it.system.slotlocation == 'armor')
     let dr = 0
     for (let armor of armors) {
       dr += armor.system.damagereduction
@@ -717,7 +717,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   computeParryBonusTotal() {
-    let shields = this.items.filter(it => it.type == "shield")
+    let shields = this.items.filter(it => it.type == "shield" && it.system.slotlocation == 'shield')
     let parry = 0
     for (let shield of shields) {
       parry += shield.system.parrybonus
