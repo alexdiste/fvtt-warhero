@@ -413,6 +413,8 @@
       "slotused": 1,
       "slotlocation": "weapon1",
       "isidentified": "unknown",
+      "magiccharge": "notapplicable",
+      "chargevalue": 0,
       "description": ""
     },
     "armor": {
@@ -424,6 +426,8 @@
       "slotused": 1,
       "slotlocation": "armor",
       "isidentified": "unknown",
+      "magiccharge": "notapplicable",
+      "chargevalue": 0,
       "description": ""
     },
     "shield": {
@@ -435,6 +439,8 @@
       "slotused": 1,
       "slotlocation": "shield",
       "isidentified": "unknown",
+      "magiccharge": "notapplicable",
+      "chargevalue": 0,
       "description": ""
     },
     "equipment": {
@@ -446,6 +452,8 @@
       "slotlocation": "backpack",
       "providedslot": 0,
       "isidentified": "unknown",
+      "magiccharge": "notapplicable",
+      "chargevalue": 0,
       "description": ""
     },
     "power": {

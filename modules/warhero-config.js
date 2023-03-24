@@ -96,7 +96,11 @@ export const WARHERO_CONFIG = {
     beginturn: "WH.ui.beginturn",
     endturn: "WH.ui.endturn"
   },
-
+  magicCharge: {
+    notapplicable: "WH.ui.notapplicable",
+    chargedaily: "WH.ui.chargedaily",
+    chargelimited: "WH.ui.chargelimited",
+  },
   identifiedState: {
     unknown: "WH.conf.unknown",
     yes:"WH.conf.yes",

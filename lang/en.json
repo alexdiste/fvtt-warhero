@@ -207,6 +207,11 @@
   "WH.ui.secondaryclass": "Super warhero",
   "WH.ui.meleedamagebonus": "Melee damage bonus",
   "WH.ui.rangeddamagebonus": "Ranged damage bonus",
+  "WH.ui.notapplicable": "Not applicable",
+  "WH.ui.chargedaily": "Daily",
+  "WH.ui.chargelimited": "Limited",
+  "WH.ui.magiccharge": "Magic charges",
+  "WH.ui.chargevalue": "Charge value",
 
   "WH.ui.bodyslots": "Body",
   "WH.ui.containerslot": "Containers",
