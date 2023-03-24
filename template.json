@@ -11,7 +11,7 @@
         "biodata": {
           "class": "",
           "age": 0,
-          "size": 3,
+          "size": "medium",
           "weight": "",
           "height": "",
           "hair": "",
@@ -170,6 +170,20 @@
             "disabled": true,
             "style": "edit",
             "iscombat": true,
+            "value": 0
+          },
+          "meleedamagebonus": {
+            "label": "WH.ui.meleedamagebonus",
+            "abbrev": "meleedamagebonus",
+            "iscombat": true,
+            "style": "edit",
+            "value": 0
+          },
+          "rangeddamagebonus": {
+            "label": "WH.ui.rangeddamagebonus",
+            "abbrev": "rangeddamagebonus",
+            "iscombat": true,
+            "style": "edit",
             "value": 0
           },
           "parrybonus": {
@@ -360,6 +374,7 @@
       "templates": [
         "commonclassrace"
       ],
+      "issecondary": false,
       "description": ""
     },
     "race": {

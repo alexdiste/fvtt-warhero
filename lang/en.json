@@ -203,7 +203,11 @@
   "WH.ui.ignoreeffect": "Ignore effect",
   "WH.ui.raceSkills": "Race skills",
   "WH.ui.identified": "Identified",
-  
+  "WH.ui.isclasssecondary": "Secondary class ?",
+  "WH.ui.secondaryclass": "Super warhero",
+  "WH.ui.meleedamagebonus": "Melee damage bonus",
+  "WH.ui.rangeddamagebonus": "Ranged damage bonus",
+
   "WH.ui.bodyslots": "Body",
   "WH.ui.containerslot": "Containers",
 

@@ -168,9 +168,13 @@ export class WarheroActor extends Actor {
     return race[0] ?? [];
   }
   /* -------------------------------------------- */
-  getClass() {
-    let classWH = this.items.filter(item => item.type == 'class')
-    return classWH[0] ?? [];
+  getMainClass() {
+    let classWH = this.items.find(item => item.type == 'class' && !item.system.issecondary)
+    return classWH
+  }
+  getSecondaryClass() {
+    let classWH = this.items.find(item => item.type == 'class' && item.system.issecondary)
+    return classWH
   }
   getClasses() {
     let comp = duplicate(this.items.filter(item => item.type == "class") || []);
@@ -288,6 +292,14 @@ export class WarheroActor extends Actor {
     if (weapon.system.weapontype == "polearm") {
       formula += "+" + Math.floor(this.system.statistics.str.value * 1)
       weapon.damageFormula2Hands = weapon.system.damage2hands + "+" + Math.floor(this.system.statistics.str.value * 1.5)
+    }
+    if (weapon.system.weapontype == "throwing" || weapon.system.weapontype == "shooting") {
+      formula += "+"+this.system.secondary.rangeddamagebonus.value
+    } else if ( weapon.system.weapontype != "special" ) { 
+      formula += "+"+this.system.secondary.meleedamagebonus.value
+      if (weapon.damageFormula2Hands) {
+        weapon.damageFormula2Hands += "+"+this.system.secondary.meleedamagebonus.value
+      }
     }
     weapon.damageFormula = formula
   }
@@ -496,17 +508,23 @@ export class WarheroActor extends Actor {
   }
   getCompetency() {
     let myRace = this.getRace()
-    let myClass = this.getClass()
+    let myClass1 = this.getMainClass()
+    let myClass2 = this.getSecondaryClass()
     let competency = { weapons: {}, armors: {}, shields: {} }
     if (myRace.system) {
       this.updateCompetency(competency.weapons, myRace.system.weapons, game.system.warhero.config.weaponTypes)
       this.updateCompetency(competency.armors, myRace.system.armors, game.system.warhero.config.armorTypes)
       this.updateCompetency(competency.shields, myRace.system.shields, game.system.warhero.config.shieldTypes)
     }
-    if (myClass.system) {
-      this.updateCompetency(competency.weapons, myClass.system.weapons, game.system.warhero.config.weaponTypes)
-      this.updateCompetency(competency.armors, myClass.system.armors, game.system.warhero.config.armorTypes)
-      this.updateCompetency(competency.shields, myClass.system.shields, game.system.warhero.config.shieldTypes)
+    if (myClass1 && myClass1.system) {
+      this.updateCompetency(competency.weapons, myClass1.system.weapons, game.system.warhero.config.weaponTypes)
+      this.updateCompetency(competency.armors, myClass1.system.armors, game.system.warhero.config.armorTypes)
+      this.updateCompetency(competency.shields, myClass1.system.shields, game.system.warhero.config.shieldTypes)
+    }
+    if (myClass2 && myClass2.system) {
+      this.updateCompetency(competency.weapons, myClass2.system.weapons, game.system.warhero.config.weaponTypes)
+      this.updateCompetency(competency.armors, myClass2.system.armors, game.system.warhero.config.armorTypes)
+      this.updateCompetency(competency.shields, myClass2.system.shields, game.system.warhero.config.shieldTypes)
     }
     return competency
   }

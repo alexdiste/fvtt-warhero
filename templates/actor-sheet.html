@@ -27,30 +27,42 @@
                     <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
                   </div>  
                 </li>  
-                {{#if (count classes)}}
-                  {{#each classes as |class idx|}}
-                  <li class="item flexrow list-item" data-item-id="{{class._id}}">
-                    <label class="item-field-label-medium">{{localize "WH.ui.class"}}</label>
-                    <a class="item-edit"><img class="sheet-competence-img" src="{{class.img}}"></a>
-                    <input type="text" class="item-field-label-medium" disabled value="{{class.name}}" data-dtype="String" />
-                    <div class="item-controls item-controls-fixed">
-                      <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-                    </div>  
-                  </li>  
-                  {{/each}}
-                {{else}}
-                <li class="item flexrow list-item" data-item-id="{{class._id}}">
+                <li class="item flexrow list-item " data-item-id="{{mainClass._id}}">
                   <label class="item-field-label-medium">{{localize "WH.ui.class"}}</label>
-                  <a class="item-edit"><img class="sheet-competence-img" src="{{class.img}}"></a>
-                  <input type="text" class="item-field-label-medium" disabled value="{{class.name}}" data-dtype="String" />
+                  {{#if mainClass}}
+                  <a class="item-edit"><img class="sheet-competence-img" src="{{mainClass.img}}"></a>
+                  <input type="text" class="item-field-label-medium" disabled value="{{mainClass.name}}" data-dtype="String" />
+                  <div class="item-controls item-controls-fixed">
+                    <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                  </div>
+                  {{else}}
+                    <a class="item-edit"><img class="sheet-competence-img" src="icons/svg/mystery-man.svg"></a>
+                  {{/if}}
+                </li>  
+                <li class="item flexrow list-item " data-item-id="{{secondaryClass._id}}">
+                  <label class="item-field-label-medium">{{localize "WH.ui.secondaryclass"}}</label>
+                  {{#if secondaryClass}}
+                  <a class="item-edit"><img class="sheet-competence-img" src="{{secondaryClass.img}}"></a>
+                  <input type="text" class="item-field-label-medium" disabled value="{{secondaryClass.name}}" data-dtype="String" />
                   <div class="item-controls item-controls-fixed">
                     <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
                   </div>  
+                  {{else}}
+                    <a class="item-edit"><img class="sheet-competence-img" src="icons/svg/mystery-man.svg"></a>
+                  {{/if}}
                 </li>  
-                {{/if}}
                 <li class="item flexrow list-item" >
                   <label class="item-field-label-medium">{{localize "WH.ui.religion"}}</label>
                   <input type="text" class="item-field-label-medium" name="system.biodata.religion" value="{{system.biodata.religion}}" data-dtype="String" />
+                  &nbsp;&nbsp;
+                  <label class="item-field-label-short">{{localize "WH.ui.size"}}</label>
+                  <select class="item-field-label-short" type="text" name="system.biodata.size" value="{{system.biodata.size}}" data-dtype="Number">
+                      {{#select system.biodata.size}}
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                      {{/select}}
+                  </select>       
                 </li>  
               </ul>
             </div>      
@@ -167,6 +179,9 @@
             {{#with system.attributes.ini as |stat|}}
             {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="ini" path="attributes" fieldClass="item-field-label-vlong"}}
             {{/with}}
+            {{#with system.secondary.meleedamagebonus as |stat|}}
+            {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="meleedamagebonus" path="secondary" fieldClass="item-field-label-vlong"}}
+            {{/with}}
           </ul>
           <ul class="stat-list alternate-list">
             {{#with system.attributes.txcm as |stat|}}
@@ -174,6 +189,9 @@
             {{/with}}
             {{#with system.attributes.txcr as |stat|}}
             {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="txch" path="attributes" fieldClass="item-field-label-vlong"}}
+            {{/with}}
+            {{#with system.secondary.rangeddamagebonus as |stat|}}
+            {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="rangeddamagebonus" path="secondary" fieldClass="item-field-label-vlong"}}
             {{/with}}
           </ul>
         </div>
@@ -592,19 +610,6 @@
         </div>
        <div>
           <ul>
-            <li class="flexrow item">
-              <label class="generic-label">{{localize "WH.ui.size"}}</label>
-              <select class="competence-base flexrow" type="text" name="system.biodata.size" value="{{system.biodata.size}}" data-dtype="Number">
-                {{#select system.biodata.size}}
-                <option value="1">Tiny</option>
-                <option value="2">Small</option>
-                <option value="3">Medium</option>
-                <option value="4">Large</option>
-                <option value="5">Huge</option>
-                <option value="6">Gargantuan</option>
-                {{/select}}
-              </select> 
-            </li>
             <li class="flexrow item">
               <label class="generic-label">{{localize "WH.ui.gender"}}</label>
               <input type="text" class="" name="system.biodata.sex" value="{{system.biodata.sex}}" data-dtype="String" />
