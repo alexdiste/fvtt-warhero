@@ -55,6 +55,7 @@ export class WarheroActorSheet extends ActorSheet {
       equippedArmors: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getEquippedArmors())),
       equippedShields: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getEquippedShields())),
       powers: this.actor.sortPowers(),
+      allItems: this.actor.getAllItems(),
       subActors: duplicate(this.actor.getSubActors()),
       competency: this.actor.getCompetency(),
       race: duplicate(race),

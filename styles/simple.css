@@ -1543,7 +1543,7 @@ li {
 }
 .alternate-list {
   margin-top: 4px;
-  fong2ex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 .item-filler {
   flex-grow: 6;

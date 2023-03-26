@@ -21,11 +21,15 @@
               <ul>
                 <li class="item flexrow list-item " data-item-id="{{race._id}}">
                   <label class="item-field-label-medium">{{localize "WH.ui.race"}}</label>
+                  {{#if race}}
                   <a class="item-edit"><img class="sheet-competence-img" src="{{race.img}}"></a>
                   <input type="text" class="item-field-label-medium" disabled value="{{race.name}}" data-dtype="String" />
                   <div class="item-controls item-controls-fixed">
                     <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
                   </div>  
+                  {{else}}
+                    <a class="item-edit"><img class="sheet-competence-img" src="icons/svg/mystery-man.svg"></a>
+                  {{/if}}
                 </li>  
                 <li class="item flexrow list-item " data-item-id="{{mainClass._id}}">
                   <label class="item-field-label-medium">{{localize "WH.ui.class"}}</label>
@@ -640,6 +644,35 @@
       </div>
       <hr>
       </article>
+
+      {{#if isGM}}
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.allitems"}}</label></h3>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.type"}}</label>
+            </span>
+          </li>
+          {{#each allItems as |item key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{item._id}}">
+            <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+                src="{{item.img}}" /></a>
+            <span class="item-name-label-long">{{item.name}}</span>
+
+            <span class="item-field-label-medium">{{upperFirst item.type}}</span>
+            
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/if}}
     </div>
 
   </section>

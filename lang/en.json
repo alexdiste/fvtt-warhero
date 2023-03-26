@@ -212,7 +212,8 @@
   "WH.ui.chargelimited": "Limited",
   "WH.ui.magiccharge": "Magic charges",
   "WH.ui.chargevalue": "Charge value",
-
+  "WH.ui.allitems": "All items",
+  
   "WH.ui.bodyslots": "Body",
   "WH.ui.containerslot": "Containers",
 

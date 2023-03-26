@@ -151,6 +151,11 @@ export class WarheroActor extends Actor {
     }
     return schools
   }
+  getAllItems() {
+    let comp = duplicate(this.items || []);
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp;
+  }
   /* -------------------------------------------- */
   getEquippedShields() {
     let comp = duplicate(this.items.filter(item => item.type == 'shield' && item.system.slotlocation == "shield") || []);
