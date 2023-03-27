@@ -28,78 +28,6 @@
   ],
   "license": "LICENSE.txt",
   "packs": [
-    {
-      "type": "Item",
-      "label": "Races",
-      "name": "races",
-      "path": "packs/races.db",
-      "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "type": "Item",
-      "label": "Shields",
-      "name": "shields",
-      "path": "packs/shields.db",
-      "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "type": "Item",
-      "label": "Wepons",
-      "name": "weapons",
-      "path": "packs/weapons.db",
-      "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "type": "Item",
-      "label": "Ammunitions",
-      "name": "ammunitions",
-      "path": "packs/ammunitions.db",
-      "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "type": "Item",
-      "label": "Armors",
-      "name": "armors",
-      "path": "packs/armors.db",
-      "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "type": "Item",
-      "label": "Classes",
-      "name": "classes",
-      "path": "packs/classes.db",
-      "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "type": "Item",
-      "label": "Equipments",
-      "name": "equipments",
-      "path": "packs/equipments.db",
-      "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "type": "Item",
-      "label": "Powers",
-      "name": "powers",
-      "path": "packs/powers.db",
-      "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
-    }
   ],
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.mana",
@@ -107,7 +35,7 @@
   "styles": [
     "styles/simple.css"
   ],
-  "version": "10.0.48",
+  "version": "10.0.49",
   "compatibility": {
     "minimum": "10",
     "verified": "10",
@@ -115,7 +43,7 @@
   },
   "title": "Warhero RPG",
   "manifest": "https://www.uberwald.me/gitea/public/fvtt-warhero/raw/branch/master/system.json",
-  "download": "https://www.uberwald.me/gitea/uberwald/fvtt-warhero/archive/fvtt-warhero-10.0.48.zip",
+  "download": "https://www.uberwald.me/gitea/uberwald/fvtt-warhero/archive/fvtt-warhero-10.0.49.zip",
   "url": "https://www.uberwald.me/gitea/public/fvtt-warhero",
   "background": "images/ui/warhero_welcome_page.webp",
   "id": "fvtt-warhero"
