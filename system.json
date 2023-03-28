@@ -35,7 +35,7 @@
   "styles": [
     "styles/simple.css"
   ],
-  "version": "10.0.49",
+  "version": "10.0.50",
   "compatibility": {
     "minimum": "10",
     "verified": "10",
@@ -43,7 +43,7 @@
   },
   "title": "Warhero RPG",
   "manifest": "https://www.uberwald.me/gitea/public/fvtt-warhero/raw/branch/master/system.json",
-  "download": "https://www.uberwald.me/gitea/uberwald/fvtt-warhero/archive/fvtt-warhero-10.0.49.zip",
+  "download": "https://www.uberwald.me/gitea/uberwald/fvtt-warhero/archive/fvtt-warhero-10.0.50.zip",
   "url": "https://www.uberwald.me/gitea/public/fvtt-warhero",
   "background": "images/ui/warhero_welcome_page.webp",
   "id": "fvtt-warhero"
