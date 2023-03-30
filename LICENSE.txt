@@ -5,7 +5,6 @@ I had written permission from original author to create this game system for fou
 
 Icons coming from https://game-icons.net/ and they are covered from Creactive common license https://creativecommons.org/licenses/by/3.0/
 
-Overall entire project is covered by 
 
 ITALIAN
 Il regolamento di warhero che può essere trovato al seguente link: https://www.warhero.it/ appartiene a Tanzini Francesco ed è coperto da licenza Creative Commons Attribuzione - Non opere derivate 3.0 Italia https://creativecommons.org/licenses/by-nd/3.0/it/. 
