@@ -1,7 +1,7 @@
 {
   "authors": [
     {
-      "name": "AlexDiste","Uberwald"
+      "name": "Uberwald",
       "flags": {}
     }
   ],
@@ -27,23 +27,18 @@
     }
   ],
   "license": "LICENSE.txt",
-  "packs": [
-  ],
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.mana",
   "socket": true,
   "styles": [
     "styles/simple.css"
   ],
-  "version": "10.0.55",
+  "version": "10.0.56",
   "compatibility": {
     "minimum": "10",
     "verified": "10",
     "maximum": "10"
   },
   "title": "Warhero RPG",
-  "manifest": "https://github.com/alexdiste/fvtt-warhero/blob/master/system.json",  
-  "download": "",
-  "url": "https://github.com/alexdiste/fvtt-warhero",
   "id": "fvtt-warhero"
 }

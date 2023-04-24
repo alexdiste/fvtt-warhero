@@ -210,7 +210,7 @@ export class WarheroActor extends Actor {
     for (let slotName in game.system.warhero.config.partySlotNames) {
       let slotDef = game.system.warhero.config.partySlotNames[slotName]
       containers[slotName] = duplicate(slotDef)
-      containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment') )
+      containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem') )
       let slotUsed = 0
       for (let item of containers[slotName].content) {
         let q = (item.system.quantity) ? item.system.quantity : 1
@@ -234,7 +234,7 @@ export class WarheroActor extends Actor {
       let slotDef = game.system.warhero.config.slotNames[slotName]
       if (!slotDef.container) {
         containers[slotName] = duplicate(slotDef)
-        containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment')
+        containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
           && it.system.slotlocation == slotName)
         let slotUsed = 0
         for (let item of containers[slotName].content) {
@@ -261,7 +261,7 @@ export class WarheroActor extends Actor {
       let slotDef = game.system.warhero.config.slotNames[slotName]
       if (slotDef.container) {
         containers[slotName] = duplicate(slotDef)
-        containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment')
+        containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
           && it.system.slotlocation == slotName)
         let slotUsed = 0
         for (let item of containers[slotName].content) {

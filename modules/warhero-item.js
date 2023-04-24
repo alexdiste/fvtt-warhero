@@ -1,17 +1,22 @@
 import { WarheroUtility } from "./warhero-utility.js";
 
 export const defaultItemImg = {
-  skill: "systems/fvtt-warhero/images/icons/talenti.webp",
-  armor: "systems/fvtt-warhero/images/icons/difesa.webp",
-  weapon: "systems/fvtt-warhero/images/icons/two-handed-sword.svg",
   equipment: "systems/fvtt-warhero/images/icons/swap-bag.svg",
-  shield: "systems/fvtt-warhero/images/icons/difensiva.webp",
   race: "systems/fvtt-warhero/images/icons/razze.webp",
+  weapon: "systems/fvtt-warhero/images/icons/two-handed-sword.svg",
+  armor: "systems/fvtt-warhero/images/icons/difesa.webp",
+  shield: "systems/fvtt-warhero/images/icons/difensiva.webp",
+  skill: "systems/fvtt-warhero/images/icons/talenti.webp",  
+  power: "systems/fvtt-warhero/images/icons/magia.webp",
+  language: "systems/fvtt-warhero/images/icons/linguaggi.webp",
+  condition: "systems/fvtt-warhero/images/icons/stordenti.webp",  
   class: "systems/fvtt-warhero/images/icons/classe.webp",
   money: "systems/fvtt-warhero/images/icons/two-coins.svg",
-  power: "systems/fvtt-warhero/images/icons/magia.webp",
-  condition: "systems/fvtt-warhero/images/icons/stordenti.webp",
-  language: "systems/fvtt-warhero/images/icons/linguaggi.webp"
+  potion: "systems/fvtt-warhero/images/icons/swap-bag.svg",
+  poison: "systems/fvtt-warhero/images/icons/swap-bag.svg",
+  trap: "systems/fvtt-warhero/images/icons/swap-bag.svg",
+  classitem: "systems/fvtt-warhero/images/icons/swap-bag.svg",
+  competency: "systems/fvtt-warhero/images/icons/swap-bag.svg"  
 }
 
 /**

@@ -78,7 +78,7 @@ export const WARHERO_CONFIG = {
     spell: "WH.ui.spell",
     disease: "WH.ui.disease",
     poison: "WH.ui.poison",
-    curse: "WH.u,i.curse"
+    curse: "WH.ui.curse"
   },
 
   conditionDuration: {

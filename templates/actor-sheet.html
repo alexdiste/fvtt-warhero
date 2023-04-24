@@ -186,17 +186,20 @@
             {{#with system.secondary.meleedamagebonus as |stat|}}
             {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="meleedamagebonus" path="secondary" fieldClass="item-field-label-vlong"}}
             {{/with}}
+            {{#with system.secondary.malusmultiweapon as |stat|}}
+            {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="malusmultiweapon" path="secondary" fieldClass="item-field-label-vlong"}}
+            {{/with}}
           </ul>
           <ul class="stat-list alternate-list">
             {{#with system.attributes.txcm as |stat|}}
             {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="txcm" path="attributes" fieldClass="item-field-label-vlong"}}
             {{/with}}
             {{#with system.attributes.txcr as |stat|}}
-            {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="txch" path="attributes" fieldClass="item-field-label-vlong"}}
+            {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="txcr" path="attributes" fieldClass="item-field-label-vlong"}}
             {{/with}}
             {{#with system.secondary.rangeddamagebonus as |stat|}}
             {{> systems/fvtt-warhero/templates/partial-actor-stat-block.html stat=stat key="rangeddamagebonus" path="secondary" fieldClass="item-field-label-vlong"}}
-            {{/with}}
+            {{/with}}           
           </ul>
         </div>
 
@@ -562,7 +565,7 @@
       </div>
     </div>
 
-    {{!-- Equipement Tab --}}
+    {{!-- Equipment Tab --}}
     <div class="tab equipment" data-group="primary" data-tab="equipment">
 
       <div class="flexrow">

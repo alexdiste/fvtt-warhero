@@ -1,129 +1,19 @@
-/* ==================== (A) Fonts ==================== */
-
-:root {
-  /* =================== 1. ACTOR SHEET FONT STYLES =========== */
-  --window-header-title-font-size: 1.3rem;
-  --window-header-title-font-weight: normal;
-  --window-header-title-color: #f5f5f5;
-
-  --major-button-font-size: 1.05rem;
-  --major-button-font-weight: normal;
-  --major-button-color: #dadada;
-
-  --tab-header-font-size: 1rem;
-  --tab-header-font-weight: 700;
-  --tab-header-color: #403f3e;
-  --tab-header-color-active: #4a0404;
-
-  --actor-input-font-size: 0.8rem;
-  --actor-input-font-weight: 500;
-  --actor-input-color: black;
-
-  --actor-label-font-size: 0.8rem;
-  --actor-label-font-weight: 700;
-  --actor-label-color: #464331c4;
-
-  /* =================== 2. DEBUGGING HIGHLIGHTERS ============ */
-  --debug-background-color-red: #ff000054;
-  --debug-background-color-blue: #1d00ff54;
-  --debug-background-color-green: #54ff0054;
-
-  --debug-box-shadow-red: inset 0 0 2px red;
-  --debug-box-shadow-blue: inset 0 0 2px blue;
-  --debug-box-shadow-green: inset 0 0 2px green;
-}
-
-/*@import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;800&family=Roboto:wght@300;400;500&display=swap");*/
-/* Global styles & Font */
-.window-app {
-  text-align: justify;
-  font-size: 16px;
-  letter-spacing: 1px;
-  color: rgba(228, 240, 240, 0.75);
-  background: rgba(66, 66, 64, 0.95);
-}
-
-/* Fonts */
-.sheet header.sheet-header h1 input,
-.window-app .window-header,
-#actors .directory-list,
-#navigation #scene-list .scene.nav-item {
-  font-size: 1rem;
-  color: rgba(228, 240, 240, 0.75);
-  background: rgba(66, 66, 64, 0.95);
-} /* For title, sidebar character and scene */
-.sheet nav.sheet-tabs {
-  font-size: 0.8rem;
-  color: rgba(228, 240, 240, 0.75);
-  background: rgba(66, 66, 64, 0.95);
-} /* For nav and title */
-.window-app input,
-.fvtt-warhero .item-form,
-.sheet header.sheet-header .flex-group-center.flex-compteurs,
-.sheet header.sheet-header .flex-group-center.flex-fatigue,
-select,
-button,
-.item-checkbox,
-#sidebar,
-#players,
-#navigation #nav-toggle {
-  font-size: 0.8rem;
-  color: rgba(228, 240, 240, 0.75);
-  background: rgba(66, 66, 64, 0.95);
-}
-
-.window-header {
-  background: rgba(0, 0, 0, 0.75);
-}
-.dialog .window-content {
-  color: #ccdbe6;
-}
-.dialog-content,
-.dialog-buttons,
-.form-fields {
-  color: #ccdbe6;
-}
-.window-app.sheet .window-content {
-  margin: 0;
-  padding: 0;
-  color: #ccdbe6;
-}
 .strong-text {
   font-weight: bold;
 }
 
-.tabs .item.active,
-.blessures-list li ul li:first-child:hover,
+.tabs .item.active,.blessures-list li ul li:first-child:hover,
 a:hover {
   text-shadow: 1px 0px 0px #ff6600;
 }
-select {
-  background: rgba(228, 240, 240, 0.75);
-  color: rgba(66, 66, 64, 0.95);
-}
-select option {
-  background: rgba(228, 240, 240, 0.75);
-  color: rgba(66, 66, 64, 0.95);
-}
 
-.rollable:hover,
-.rollable:focus {
-  color: #000;
-  text-shadow: 0 0 10px red;
+.rollable:hover,.rollable:focus {
+  /*color: #000;
+  text-shadow: 0 0 10px red;*/
   cursor: pointer;
 }
-input:disabled {
-  color: #1c2058;
-}
-select:disabled {
-  color: #1c2058;
-}
-table {
-  border: 1px solid #7a7971;
-}
 
-.grid,
-.grid-2col {
+.grid,.grid-2col {
   display: grid;
   grid-column: span 2 / span 2;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -182,9 +72,7 @@ table {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.flex-group-center,
-.flex-group-left,
-.flex-group-right {
+.flex-group-center,.flex-group-left,.flex-group-right {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -233,7 +121,7 @@ table {
   flex: 'flex-shrink';
 }
 
-/* Styles limited to foundryvtt-vadentis sheets */
+/* Styles limited to foundryvtt sheets */
 
 .fvtt-warhero .sheet-header {
   -webkit-box-flex: 0;
@@ -278,8 +166,8 @@ table {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 .button-img:hover {
-  color: rgba(255, 255, 128, 0.7);
-  border: 1px solid rgba(255, 128, 0, 0.8);
+  /*color: rgba(255, 255, 128, 0.7);*/
+  border: 1px solid;
   cursor: pointer;
 }
 
@@ -352,6 +240,7 @@ table {
   background: #fff;
 }
 
+
 .fvtt-warhero .tox .tox-edit-area {
   padding: 0 8px;
 }
@@ -363,9 +252,9 @@ table {
 
 .fvtt-warhero .tabs {
   height: 40px;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  color: #000000;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  /*color: #000000;*/
 }
 
 .fvtt-warhero .tabs .item {
@@ -420,19 +309,14 @@ table {
 
 /* ======================================== */
 /* Sheet  */
-.window-app.sheet .window-content .sheet-header {
-  background: url('../images/ui/pc_sheet_bg.webp');
-}
-/*  background: #011d33 url("../images/ui/fond1.webp") repeat left top;*/
-/*color: rgba(168, 139, 139, 0.5);*/
 
 .window-app.sheet .window-content .sheet-header input[type='text'],
 .window-app.sheet .window-content .sheet-header input[type='number'],
 .window-app.sheet .window-content .sheet-header input[type='password'],
 .window-app.sheet .window-content .sheet-header input[type='date'],
 .window-app.sheet .window-content .sheet-header input[type='time'] {
-  color: rgba(228, 240, 240, 0.75);
-  background: rgba(66, 66, 64, 0.95);
+  /*color: rgba(228, 240, 240, 0.75);
+  background: rgba(66, 66, 64, 0.95);*/
   border: 1 none;
   margin-bottom: 0.25rem;
   margin-left: 2px;
@@ -443,8 +327,8 @@ table {
 .window-app.sheet .window-content .sheet-body input[type='password'],
 .window-app.sheet .window-content .sheet-body input[type='date'],
 .window-app.sheet .window-content .sheet-body input[type='time'] {
-  color: rgba(228, 240, 240, 0.75);
-  background: rgba(66, 66, 64, 0.95);
+  /*color: rgba(228, 240, 240, 0.75);
+  background: rgba(66, 66, 64, 0.95);*/
   border: 1 none;
   margin-bottom: 0.25rem;
   margin-left: 2px;
@@ -452,8 +336,8 @@ table {
 
 .window-app.sheet .window-content .sheet-body select,
 .window-app.sheet .window-content .sheet-header select {
-  color: rgba(228, 240, 240, 0.75);
-  background: rgba(66, 66, 64, 0.95);
+  /*color: rgba(228, 240, 240, 0.75);
+  background: rgba(66, 66, 64, 0.95);*/
   border: 1 none;
   margin-bottom: 0.25rem;
   margin-left: 2px;
@@ -462,9 +346,9 @@ table {
 .window-app .window-content,
 .window-app.sheet .window-content .sheet-body {
   font-size: 0.8rem;
-  background: url('../images/ui/pc_sheet_bg.webp') repeat left top;
+  /*background: url('../images/ui/pc_sheet_bg.webp') repeat left top;
   color: rgba(228, 240, 240, 0.75);
-  background: rgba(66, 66, 64, 0.95);
+  background: rgba(66, 66, 64, 0.95);*/
 }
 
 /*  background: rgba(245,245,240,0.6) url("../images/ui/sheet_background.webp") left top;*/
@@ -480,6 +364,7 @@ section.sheet-body {
   padding: 0;
 }
 
+/* For title, sidebar character and scene */
 .sheet nav.sheet-tabs {
   font-size: 0.7rem;
   font-weight: bold;
@@ -492,8 +377,8 @@ section.sheet-body {
   line-height: 1.5rem;
   border-top: 0 none;
   border-bottom: 0 none;
-  background-color: black;
-  color: beige;
+  /*background-color: black;*/
+  color: black;
 }
 
 /*  background: rgb(245,245,240) url("../images/ui/fond4.webp") repeat left top;*/
@@ -510,7 +395,7 @@ nav.sheet-tabs .item:after {
   right: 0;
   height: 2rem;
   width: 1px;
-  border-right: 1px dashed rgba(52, 52, 52, 0.25);
+  border-right: 1px dashed;
 }
 
 .sheet .tab[data-tab] {
@@ -552,7 +437,6 @@ section.sheet-body:after {
 
 /* ======================================== */
 /* Global UI elements  */
-
 /* ======================================== */
 
 h1,
@@ -562,13 +446,12 @@ h4 {
   font-weight: bold;
 }
 
-ul,
-ol {
+ul,ol {
   margin: 0;
   padding: 0;
 }
-ul,
-li {
+
+ul,li {
   list-style-type: none;
 }
 
@@ -581,15 +464,20 @@ li {
   padding: 0;
 }
 
-.alterne-list > .list-item:hover {
+/*.alterne-list > .list-item:hover {
   background: rgba(100, 100, 50, 0.25);
 }
+*/
+/*
 .alterne-list > .list-item:nth-child(even) {
   background: rgba(80, 60, 0, 0.1);
 }
+*/
+/*
 .alterne-list > .list-item:nth-child(odd) {
-  background: rgb(160, 130, 100, 0.05);
+  background: rgb(160, 130, 100, 0.05)
 }
+*/
 
 .specialisation-label {
   font-size: 0.8rem;
@@ -609,13 +497,13 @@ li {
   display: flex !important;
 }
 .list-item-shadow {
-  background: rgba(87, 60, 32, 0.35);
+  /*background: rgba(87, 60, 32, 0.35);*/
   /*flex-grow: 0;*/
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
 .list-item-shadow2 {
-  background: rgba(87, 60, 32, 0.25);
+  /*background: rgba(87, 60, 32, 0.25);*/
   flex-grow: 0;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -626,9 +514,12 @@ li {
 .item-display-hide {
   display: none;
 }
-.conteneur-type {
+
+/*.conteneur-type {
   background: rgb(200, 10, 100, 0.25);
 }
+*/
+
 .item-quantite {
   margin-left: 0.5rem;
 }
@@ -849,11 +740,11 @@ li {
 /* ======================================== */
 .item-checkbox {
   height: 25px;
-  border: 1px solid #736953a6;
+  border: 1px solid;
   border-left: none;
   font-weight: 500;
   font-size: 1rem;
-  color: black;
+  /*color: black;*/
   padding-top: 5px;
   margin-right: 0px;
   width: 45px;
@@ -871,42 +762,43 @@ li {
 #sidebar {
   font-size: 1rem;
   background-position: 100%;
-  color: rgba(220, 220, 220, 0.75);
+  /*color: rgba(220, 220, 220, 0.75);*/
 }
 
 /*  background: rgb(105,85,65) url("../images/ui/texture_feuille_perso_onglets.webp") no-repeat right bottom;*/
 
+/*
 #sidebar-tabs > .collapsed,
 #chat-controls .chat-control-icon {
   color: rgba(220, 220, 220, 0.75);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 0;
 }
 
 #sidebar-tabs {
   flex: 0 0 28px;
   box-sizing: border-box;
   margin: 0 0 3px;
-  border-bottom: 1px solid rgba(0,0,0,0);
-  box-shadow: inset 0 0 2rem rgba(0,0,0,0.5);
+  border-bottom: 1px solid;
+  box-shadow: inset 0 0 2rem;
 }
 
 #sidebar-tabs > .item.active {
-  border: 1px solid rgba(114,98,72,1);
+  border: 1px solid;
   background: rgba(30, 25, 20, 0.75);
-  box-shadow: 0 0 6px inset rgba(114,98,72,1);
+  box-shadow: 0 0 6px inset;
 }
 
 #sidebar #sidebar-tabs i{
   width: 23px;
   height: 23px;
-  /*display: inline-block;*/
+  display: inline-block;
   background-position:center;
   background-size:cover;
-  text-shadow: 1px 1px 0 rgba(0,0,0,0.75);
+  text-shadow: 1px 1px 0;
 }
 
 .sidebar-tab .directory-list .entity {
-  border-top: 1px dashed rgba(0, 0, 0, 0.25);
+  border-top: 1px dashed ;
   border-bottom: 0 none;
   padding: 0.25rem 0;
 }
@@ -914,10 +806,12 @@ li {
 .sidebar-tab .directory-list .entity:hover {
   background: rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  
 }
+*/
 
 .chat-message-header {
-  background: rgba(220, 220, 210, 0.5);
+  /*background: rgba(220, 220, 210, 0.5);*/
   font-size: 1.1rem;
   height: 48px;
   text-align: center;
@@ -964,8 +858,10 @@ li {
 }
 
 .dice-image-reroll {
+  /*
   background-color: rgba(115, 224, 115, 0.25);
   border-color: #011d33;
+  */
   box-sizing: border-box;
   border: 1px;
   border-radius: 0%;
@@ -999,13 +895,13 @@ li {
 }
 
 .chat-message {
-  background: rgba(220, 220, 210, 0.5);
+  /*background: rgba(220, 220, 210, 0.5);*/
   font-size: 0.9rem;
 }
 
 .chat-message.whisper {
-  background: rgba(220, 220, 210, 0.75);
-  border: 2px solid #545469;
+  /*background: rgba(220, 220, 210, 0.75);*/
+  border: 2px solid;
 }
 
 .chat-message .chat-icon {
@@ -1041,25 +937,17 @@ li {
   height: auto;
 }
 
-#sidebar-tabs {
-  flex: 0 0 32px;
-  box-sizing: border-box;
-  margin: 0 0 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
-  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
-}
-
 /*--------------------------------------------------------------------------*/
 /* Control, Tool, hotbar & navigation */
 
 #controls .scene-control,
 #controls .control-tool {
-  box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px;
   margin: 0 0 8px;
   border-radius: 0;
-  background: rgba(30, 25, 20, 1);
+  /*background: rgba(30, 25, 20, 1);*/
   background-origin: padding-box;
-  border-image: url(img/ui/footer-button.png) 10 repeat;
+  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
   border-image-width: 4px;
   border-image-outset: 0px;
 }
@@ -1068,65 +956,69 @@ li {
 #controls .control-tool.active,
 #controls .scene-control:hover,
 #controls .control-tool:hover {
-  background: rgba(72, 46, 28, 1);
+  /*background: rgba(72, 46, 28, 1);*/
   background-origin: padding-box;
-  border-image: url(img/ui/footer-button.png) 10 repeat;
+  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
   border-image-width: 4px;
   border-image-outset: 0px;
-  box-shadow: 0 0 3px #ff6400;
+  box-shadow: 0 0 3px;
 }
 
 #hotbar #action-bar #macro-list {
-  border: 1px solid rgba(72, 46, 28, 1);
-  box-shadow: 2px 2px 5px #000000;
+  border: 1px solid;
+  box-shadow: 2px 2px 5px;
 }
 
 #hotbar #action-bar .macro {
-  border-image: url(img/ui/bg_control.jpg) 21 repeat;
+  /*border-image: url(img/ui/bg_control.jpg) 21 repeat;*/
   border-image-slice: 6 6 6 6 fill;
   border-image-width: 6px 6px 6px 6px;
   border-image-outset: 0px 0px 0px 0px;
   border-radius: 0px;
 }
 
-#hotbar .bar-controls {
+/*#hotbar .bar-controls {
+  
   background: rgba(30, 25, 20, 1);
   border: 1px solid rgba(72, 46, 28, 1);
+  
 }
+*/
 
 #players {
-  border-image: url(img/ui/footer-button.png) 10 repeat;
+  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
   border-image-width: 4px;
   border-image-outset: 0px;
-  background: rgba(30, 25, 20, 1);
+  /*background: rgba(30, 25, 20, 1);*/
 }
 
-#navigation #scene-list .scene.nav-item.active {
+/*#navigation #scene-list .scene.nav-item.active {
   background: rgba(72, 46, 28, 1);
 }
+*/
 
 #navigation #scene-list .scene.nav-item {
-  background: rgba(30, 25, 20, 1);
+  /*background: rgba(30, 25, 20, 1);*/
   background-origin: padding-box;
-  border-image: url(img/ui/footer-button.png) 10 repeat;
+  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
   border-image-width: 4px;
   border-image-outset: 0px;
 }
 
 #navigation #scene-list .scene.view,
 #navigation #scene-list .scene.context {
-  background: rgba(72, 46, 28, 1);
+  /*background: rgba(72, 46, 28, 1);*/
   background-origin: padding-box;
-  border-image: url(img/ui/footer-button.png) 10 repeat;
+  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
   border-image-width: 4px;
   border-image-outset: 0px;
-  box-shadow: 0 0 3px #ff6400;
+  box-shadow: 0 0 3px;
 }
 
 #navigation #nav-toggle {
-  background: rgba(30, 25, 20, 1);
+  /*background: rgba(30, 25, 20, 1);*/
   background-origin: padding-box;
-  border-image: url(img/ui/footer-button.png) 10 repeat;
+  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
   border-image-width: 4px;
   border-image-outset: 0px;
 }
@@ -1141,7 +1033,7 @@ li {
 /* Tooltip text */
 .tooltip .tooltiptext {
   text-align: left;
-  background: rgba(231, 229, 226, 0.9);
+  /*background: rgba(231, 229, 226, 0.9);*/
   width: 150px;
   padding: 3px 0;
   font-size: 0.9rem;
@@ -1160,8 +1052,8 @@ li {
 .tooltip .ttt-fatigue {
   width: 360px;
 
-  background: rgba(30, 25, 20, 0.9);
-  border-image: url(img/ui/bg_control.jpg) 21 repeat;
+  /*background: rgba(30, 25, 20, 0.9);*/
+  /*border-image: url(img/ui/bg_control.jpg) 21 repeat;*/
   border-image-slice: 6 6 6 6 fill;
   border-image-width: 6px 6px 6px 6px;
   border-image-outset: 0px 0px 0px 0px;
@@ -1173,7 +1065,7 @@ li {
 
 .tooltip .ttt-ajustements {
   width: 150px;
-  background: rgba(220, 220, 210, 0.95);
+  /*background: rgba(220, 220, 210, 0.95);*/
   border-radius: 6px;
   font-size: 0.9rem;
   padding: 3px 0;
@@ -1184,7 +1076,7 @@ li {
 }
 .tooltip .ttt-xp {
   width: 250px;
-  background: rgba(220, 220, 210, 0.95);
+  /*background: rgba(220, 220, 210, 0.95);*/
   border-radius: 6px;
   font-size: 0.9rem;
   padding: 3px 0;
@@ -1197,18 +1089,18 @@ li {
 }
 
 .river-button {
-  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  box-shadow: inset 0px 1px 0px 0px;
   background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
-  background-color: #7d5d3b00;
+  /*background-color: #7d5d3b00;*/
   border-radius: 3px;
-  border: 2px ridge #846109;
+  border: 2px ridge;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  /*color: #ffffff;*/
   font-size: 0.8rem;
   padding: 2px 4px 0px 4px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #4d3534;
+  text-shadow: 0px 1px 0px;
   position: relative;
   margin: 4px;
 }
@@ -1216,24 +1108,26 @@ li {
 .chat-card-button {
   box-shadow: inset 0px 1px 0px 0px #a6827e;
   background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
-  background-color: #7d5d3b00;
+  /*background-color: #7d5d3b00;*/
   border-radius: 3px;
-  border: 2px ridge #846109;
+  border: 2px ridge;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  /*color: #ffffff;*/
   font-size: 0.8rem;
   padding: 4px 12px 0px 12px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #4d3534;
+  text-shadow: 0px 1px 0px;
   position: relative;
   margin: 2px;
 }
 
-.chat-card-button:hover {
+/*.chat-card-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
   background-color: red;
 }
+*/
+
 .chat-card-button:active {
   position: relative;
   top: 1px;
@@ -1241,17 +1135,18 @@ li {
 
 .plus-minus-button {
   box-shadow: inset 0px 1px 0px 0px #a6827e;
-  background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
-  background-color: #7d5d3b00;
+  /*background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);*/
+  background:gray;
+  /*background-color: #7d5d3b00;*/
   border-radius: 2px;
-  border: 1px ridge #846109;
+  border: 1px ridge;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  /*color: #ffffff;*/
   margin: 2px 2px 2px 2px;
   padding: 2px 2px 2px 2px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #4d3534;
+  text-shadow: 0px 1px 0px;
   position: relative;
   margin: 0px;
 }
@@ -1260,7 +1155,7 @@ li {
 .plus-minus-button:hover,
 .chat-card-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
-  background-color: red;
+  /*background-color: red;*/
 }
 
 .plus-minus-button:active,
@@ -1302,18 +1197,19 @@ li {
 .drop-spec1,
 .drop-spec2 {
   background: linear-gradient(to bottom, #6c95b9fc 5%, #105177ab 100%);
-  background-color: #7d5d3b00;
+  /*background-color: #7d5d3b00;*/
   border-radius: 3px;
-  border: 2px ridge #846109;
+  border: 2px ridge;
 }
 
 /*************************************************************/
 #pause {
   font-size: 2rem;
 }
-#pause > h3 {
-  color: #ccc;
+/*#pause > h3 {
+   color: #ccc;
 }
+*/
 
 /* =================== 1. ACTOR SHEET FONT STYLES =========== */ /*
   Agility AGI: #02a41d     Also Used for Ranged Damage
@@ -1327,6 +1223,7 @@ li {
   Perception PER: #f9c801     Also Used for Ranged Damage
   Focus FOC: #ff0084
   */
+  /*
 .color-class-black {
   background-color: black;
   background: black;
@@ -1377,6 +1274,7 @@ li {
 .color-class-common {
   background: rgba(185, 183, 40, 0.45);
 }
+*/
 .status-small-label {
   font-size: 0.65rem;
 }
@@ -1433,11 +1331,13 @@ li {
   max-height: 48px;
   border: 0;
 }
+/*si*/
 .items-title-bg {
   margin-top: 6px;
-  background: black;
-  color: white;
+  background: gray; 
+  color: black; 
 }
+/*si*/
 .items-title-bg-red {
   background: darkred;
 }
@@ -1553,22 +1453,30 @@ li {
   min-width: 2rem;
   max-width: 2rem;
 }
-form .notes {
+/*form .notes {
   color: rgba(214, 230, 230, 0.95);
 }
+*/
 .crit-success {
   color: darkgreen;
 }
 .crit-failure {
   color: darkred;
 }
+
+/*
 .directory .directory-header .header-search input {
   color: rgba(52, 52, 52, 0.95);
 }
-a.content-link, a.inline-roll {
+*/
+
+/*a.content-link, a.inline-roll {
   color: #222;
 }
-.journal-page-header,
+*/
+
+/*.journal-page-header,
 .journal-page-content {
   color: #222;
 }
+*/

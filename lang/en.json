@@ -65,11 +65,11 @@
   "WH.conf.largechest": "Large chest",
   "WH.conf.hugechest": "Huge chest",
   "WH.conf.partystorage": "Party chest/storage",
-  
+  "WH.conf.": "Non magic",
   "WH.conf.unknown": "Unknown",
   "WH.conf.yes": "Yes",
   "WH.conf.no": "No",
-  "WH.conf.notapplicable": "Not applicable",
+  "WH.conf.notapplicable": "Non magic",
   "WH.conf.undefined": "Not applicable",
 
   "WH.ui.level": "Level",
@@ -125,7 +125,7 @@
   "WH.ui.unlimited": "Unlimited use ?",
   "WH.ui.currentuse": "Current use",
   "WH.ui.maxuse": "Max use",
-  "WH.ui.languages": "Languagess",
+  "WH.ui.languages": "Languages",
   "WH.ui.languagesbonus": "Bonus Languages (mind/2)",
   "WH.ui.competency": "Competency",
   "WH.ui.conditions": "Conditions",
@@ -158,6 +158,7 @@
   "WH.ui.slotlocation": "Slot location",
   "WH.ui.quantity": "Quantity",
   "WH.ui.cost": "Cost",
+  "WH.ui.alchemycost": "Alchemist Cost",
   "WH.ui.details": "Details",
   "WH.ui.magicschool": "Magic School",
   "WH.ui.providedslot": "Provided slot",
@@ -216,10 +217,10 @@
   "WH.ui.small": "Small",
   "WH.ui.medium": "Medium",
   "WH.ui.large": "Large",
-  
+  "WH.ui.conditiontype":"Condition type",
   "WH.ui.bodyslots": "Body",
   "WH.ui.containerslot": "Containers",
-
+  "WH.ui.duration":"Duration",
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
   "WH.chat.diceresult": "Dice result",
