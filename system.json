@@ -42,5 +42,5 @@
   "title": "Warhero RPG",
   "id": "fvtt-warhero",
   "manifest": "https://raw.githubusercontent.com/alexdiste/fvtt-warhero/master/system.json",
-  "download":"https://github.com/alexdiste/fvtt-warhero/blob/master/latest.zip"
+  "download":"https://github.com/alexdiste/fvtt-warhero/raw/master/latest.zip"
 }
