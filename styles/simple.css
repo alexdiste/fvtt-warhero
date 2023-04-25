@@ -444,27 +444,6 @@ ul,li {
   list-style-type: none;
 }
 
-/*Fix for Journal*/
-journal-page-content>ol {
-  display: block;
-  list-style-type: decimal;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-journal-page-content>ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
 .sheet li {
   margin: 0.01rem;
   padding: 0.25rem;
@@ -1295,4 +1274,23 @@ journal-page-content>ul {
 }
 .crit-failure {
   color: darkred;
+}
+
+/*Fix for journal*/
+.journal-page-content>ol { 
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.journal-page-content>ul { 
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
