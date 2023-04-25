@@ -211,9 +211,7 @@ a:hover {
   flex: 0;
 }
 
-.fvtt-warhero .sheet-body,
-.fvtt-warhero .sheet-body .tab,
-.fvtt-warhero .sheet-body .tab .editor {
+.fvtt-warhero .sheet-body,.fvtt-warhero .sheet-body .tab,.fvtt-warhero .sheet-body .tab .editor {
   height: 100%;
   font-size: 0.8rem;
 }
@@ -307,9 +305,7 @@ a:hover {
   text-align: right;
 }
 
-/* ======================================== */
 /* Sheet  */
-
 .window-app.sheet .window-content .sheet-header input[type='text'],
 .window-app.sheet .window-content .sheet-header input[type='number'],
 .window-app.sheet .window-content .sheet-header input[type='password'],
@@ -334,8 +330,7 @@ a:hover {
   margin-left: 2px;
 }
 
-.window-app.sheet .window-content .sheet-body select,
-.window-app.sheet .window-content .sheet-header select {
+.window-app.sheet .window-content .sheet-body select,.window-app.sheet .window-content .sheet-header select {
   /*color: rgba(228, 240, 240, 0.75);
   background: rgba(66, 66, 64, 0.95);*/
   border: 1 none;
@@ -343,15 +338,15 @@ a:hover {
   margin-left: 2px;
 }
 
-.window-app .window-content,
-.window-app.sheet .window-content .sheet-body {
+.window-app .window-content,.window-app.sheet .window-content .sheet-body {
   font-size: 0.8rem;
-  /*background: url('../images/ui/pc_sheet_bg.webp') repeat left top;
-  color: rgba(228, 240, 240, 0.75);
+  /*color: rgba(228, 240, 240, 0.75);
   background: rgba(66, 66, 64, 0.95);*/
 }
 
-/*  background: rgba(245,245,240,0.6) url("../images/ui/sheet_background.webp") left top;*/
+section {
+  display: block;
+}
 
 section.sheet-body {
   padding: 0.25rem 0.5rem;
@@ -381,8 +376,6 @@ section.sheet-body {
   color: black;
 }
 
-/*  background: rgb(245,245,240) url("../images/ui/fond4.webp") repeat left top;*/
-
 nav.sheet-tabs .item {
   position: relative;
   padding: 0 0.25rem;
@@ -411,6 +404,7 @@ section.sheet-body:after {
 .sheet header.sheet-header .flex-compteurs {
   text-align: right;
 }
+
 .sheet header.sheet-header .resource-content {
   width: 2rem;
 }
@@ -428,21 +422,16 @@ section.sheet-body:after {
   padding: 0.25rem;
 }
 
-.window-app.sheet .window-content .carac-value,
-.window-app.sheet .window-content .competence-xp {
+.window-app.sheet .window-content .carac-value,.window-app.sheet .window-content .competence-xp {
   margin: 0.05rem;
   flex-basis: 3rem;
   text-align: center;
 }
 
-/* ======================================== */
-/* Global UI elements  */
-/* ======================================== */
 
-h1,
-h2,
-h3,
-h4 {
+/* Global UI elements  */
+
+h1,h2,h3,h4 {
   font-weight: bold;
 }
 
@@ -464,27 +453,11 @@ ul,li {
   padding: 0;
 }
 
-/*.alterne-list > .list-item:hover {
-  background: rgba(100, 100, 50, 0.25);
-}
-*/
-/*
-.alterne-list > .list-item:nth-child(even) {
-  background: rgba(80, 60, 0, 0.1);
-}
-*/
-/*
-.alterne-list > .list-item:nth-child(odd) {
-  background: rgb(160, 130, 100, 0.05)
-}
-*/
-
 .specialisation-label {
   font-size: 0.8rem;
 }
 
-.carac-label,
-.attr-label {
+.carac-label,.attr-label {
   font-weight: bold;
 }
 
@@ -508,9 +481,11 @@ ul,li {
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
+
 .item-display-show {
   display: block;
 }
+
 .item-display-hide {
   display: none;
 }
@@ -523,15 +498,19 @@ ul,li {
 .item-quantite {
   margin-left: 0.5rem;
 }
+
 .list-item-margin1 {
   margin-left: 1rem;
 }
+
 .list-item-margin2 {
   margin-left: 2rem;
 }
+
 .list-item-margin3 {
   margin-left: 3rem;
 }
+
 .list-item-margin4 {
   margin-left: 4rem;
 }
@@ -544,6 +523,7 @@ ul,li {
   flex-grow: 0;
   margin-right: 0.25rem;
 }
+
 .competence-column {
   flex-direction: column;
   align-content: flex-start;
@@ -551,27 +531,19 @@ ul,li {
   flex-grow: 0;
   flex-basis: 1;
 }
+
 .competence-header {
   align-content: flex-start;
   justify-content: flex-start;
   font-weight: bold;
   flex-grow: 0;
 }
-.secondaire-label,
-.arme-label,
-.generic-label,
-.competence-label,
-.devotion-label,
-.sort-label,
-.technique-label,
-.ability-label,
-.arme-label,
-.armure-label,
-.equipement-label,
-.description-label {
+
+.secondaire-label,.arme-label,.generic-label,.competence-label,.devotion-label,.sort-label,.technique-label,.ability-label,.arme-label,.armure-label,.equipement-label,.description-label {
   flex-grow: 2;
   margin-left: 4px;
 }
+
 .status-header-label {
   margin-left: 2px;
 }
@@ -579,9 +551,11 @@ ul,li {
   margin: 4px 0;
   min-width: 96px;
 }
+
 .short-label {
   flex-grow: 1;
 }
+
 .keyword-label {
   font-size: 0.85rem;
 }
@@ -599,55 +573,62 @@ ul,li {
   align-content: center;
 }
 
-.attribut-value,
-.carac-value {
+.attribut-value,.carac-value {
   flex-grow: 0;
   flex-basis: 64px;
   margin-right: 4px;
   margin-left: 4px;
 }
-.sante-value,
-.competence-value {
+
+.sante-value,.competence-value {
   flex-grow: 0;
   flex-basis: 2rem;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 }
+
 .description-value {
   flex-grow: 0;
   flex-basis: 4rem;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 }
+
 .competence-xp {
   flex-grow: 0;
   flex-basis: 2rem;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 }
+
 .blessures-title {
   font-weight: bold;
 }
+
 .alchimie-title {
   font-weight: bold;
 }
+
 .blessure-data {
   flex-direction: row;
   align-content: flex-start;
   justify-content: flex-start;
 }
+
 .blessures-soins {
   flex-grow: 0;
   flex-basis: 32px;
   margin-right: 4px;
   margin-left: 4px;
 }
+
 .blessures-loc {
   flex-grow: 0;
   flex-basis: 96px;
   margin-right: 4px;
   margin-left: 4px;
 }
+
 .pointsreve-value {
   flex-grow: 0;
   flex-basis: 64px;
@@ -655,8 +636,7 @@ ul,li {
   margin-left: 4px;
 }
 
-.input-sante-header,
-.stress-style {
+.input-sante-header,.stress-style {
   flex-grow: 0;
   flex-basis: 64px;
   margin-right: 4px;
@@ -702,12 +682,12 @@ ul,li {
   align-content: flex-start;
 }
 
-/* ======================================== */
 .tokenhudext {
   display: flex;
   flex: 0 !important;
   font-weight: 600;
 }
+
 .tokenhudext.left {
   justify-content: flex-start;
   flex-direction: column;
@@ -715,6 +695,7 @@ ul,li {
   top: 2.75rem;
   right: 4rem;
 }
+
 .tokenhudext.right {
   justify-content: flex-start;
   flex-direction: column;
@@ -722,6 +703,7 @@ ul,li {
   top: 2.75rem;
   left: 4rem;
 }
+
 .control-icon.tokenhudicon {
   width: fit-content;
   height: fit-content;
@@ -731,13 +713,11 @@ ul,li {
   line-height: 1rem;
   margin: 0.25rem;
 }
+
 .control-icon.tokenhudicon.right {
   margin-left: 8px;
 }
-#token-hud .status-effects.active {
-  z-index: 2;
-}
-/* ======================================== */
+
 .item-checkbox {
   height: 25px;
   border: 1px solid;
@@ -755,46 +735,6 @@ ul,li {
 
 .flex-actions-bar {
   flex-grow: 2;
-}
-
-/* ======================================== */
-/* Sidebar CSS */
-#sidebar {
-  font-size: 1rem;
-  background-position: 100%;
-  /*color: rgba(220, 220, 220, 0.75);*/
-}
-
-/*  background: rgb(105,85,65) url("../images/ui/texture_feuille_perso_onglets.webp") no-repeat right bottom;*/
-
-/*
-#sidebar-tabs > .collapsed,
-#chat-controls .chat-control-icon {
-  color: rgba(220, 220, 220, 0.75);
-  text-shadow: 1px 1px 0;
-}
-
-#sidebar-tabs {
-  flex: 0 0 28px;
-  box-sizing: border-box;
-  margin: 0 0 3px;
-  border-bottom: 1px solid;
-  box-shadow: inset 0 0 2rem;
-}
-
-#sidebar-tabs > .item.active {
-  border: 1px solid;
-  background: rgba(30, 25, 20, 0.75);
-  box-shadow: 0 0 6px inset;
-}
-
-#sidebar #sidebar-tabs i{
-  width: 23px;
-  height: 23px;
-  display: inline-block;
-  background-position:center;
-  background-size:cover;
-  text-shadow: 1px 1px 0;
 }
 
 .sidebar-tab .directory-list .entity {
@@ -820,8 +760,7 @@ ul,li {
   align-items: center;
 }
 
-.chat-message .message-header .flavor-text,
-.chat-message .message-header .whisper-to {
+.chat-message .message-header .flavor-text,.chat-message .message-header .whisper-to {
   font-size: 0.9rem;
 }
 
@@ -928,6 +867,7 @@ ul,li {
   width: auto;
   height: auto;
 }
+
 .combat-icon {
   border: 0;
   padding: 2px 2px 2px 2px;
@@ -935,92 +875,6 @@ ul,li {
   max-height: 24px;
   width: auto;
   height: auto;
-}
-
-/*--------------------------------------------------------------------------*/
-/* Control, Tool, hotbar & navigation */
-
-#controls .scene-control,
-#controls .control-tool {
-  box-shadow: 0 0 3px;
-  margin: 0 0 8px;
-  border-radius: 0;
-  /*background: rgba(30, 25, 20, 1);*/
-  background-origin: padding-box;
-  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
-  border-image-width: 4px;
-  border-image-outset: 0px;
-}
-
-#controls .scene-control.active,
-#controls .control-tool.active,
-#controls .scene-control:hover,
-#controls .control-tool:hover {
-  /*background: rgba(72, 46, 28, 1);*/
-  background-origin: padding-box;
-  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
-  border-image-width: 4px;
-  border-image-outset: 0px;
-  box-shadow: 0 0 3px;
-}
-
-#hotbar #action-bar #macro-list {
-  border: 1px solid;
-  box-shadow: 2px 2px 5px;
-}
-
-#hotbar #action-bar .macro {
-  /*border-image: url(img/ui/bg_control.jpg) 21 repeat;*/
-  border-image-slice: 6 6 6 6 fill;
-  border-image-width: 6px 6px 6px 6px;
-  border-image-outset: 0px 0px 0px 0px;
-  border-radius: 0px;
-}
-
-/*#hotbar .bar-controls {
-  
-  background: rgba(30, 25, 20, 1);
-  border: 1px solid rgba(72, 46, 28, 1);
-  
-}
-*/
-
-#players {
-  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
-  border-image-width: 4px;
-  border-image-outset: 0px;
-  /*background: rgba(30, 25, 20, 1);*/
-}
-
-/*#navigation #scene-list .scene.nav-item.active {
-  background: rgba(72, 46, 28, 1);
-}
-*/
-
-#navigation #scene-list .scene.nav-item {
-  /*background: rgba(30, 25, 20, 1);*/
-  background-origin: padding-box;
-  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
-  border-image-width: 4px;
-  border-image-outset: 0px;
-}
-
-#navigation #scene-list .scene.view,
-#navigation #scene-list .scene.context {
-  /*background: rgba(72, 46, 28, 1);*/
-  background-origin: padding-box;
-  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
-  border-image-width: 4px;
-  border-image-outset: 0px;
-  box-shadow: 0 0 3px;
-}
-
-#navigation #nav-toggle {
-  /*background: rgba(30, 25, 20, 1);*/
-  background-origin: padding-box;
-  /*border-image: url(img/ui/footer-button.png) 10 repeat;*/
-  border-image-width: 4px;
-  border-image-outset: 0px;
 }
 
 /* Tooltip container */
@@ -1151,15 +1005,12 @@ ul,li {
   margin: 0px;
 }
 
-.river-button:hover,
-.plus-minus-button:hover,
-.chat-card-button:hover {
+.river-button:hover,.plus-minus-button:hover,.chat-card-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
   /*background-color: red;*/
 }
 
-.plus-minus-button:active,
-.chat-card-button:active {
+.plus-minus-button:active,.chat-card-button:active {
   position: relative;
   top: 1px;
 }
@@ -1202,79 +1053,6 @@ ul,li {
   border: 2px ridge;
 }
 
-/*************************************************************/
-#pause {
-  font-size: 2rem;
-}
-/*#pause > h3 {
-   color: #ccc;
-}
-*/
-
-/* =================== 1. ACTOR SHEET FONT STYLES =========== */ /*
-  Agility AGI: #02a41d     Also Used for Ranged Damage
-  Mind MND: #a100fe
-  Social SOC: #fd7100
-  Strength STR: #5f3d00   Also Used For Melee Damage
-  Physique PHY: #990304   Also used For Damage Resistance
-  Combat COM: 0136ff      Also Used for Melee Attack
-  Defence DEF: #88826a    Also used in the Defence on Combat Tab
-  Stealth STL: #505050
-  Perception PER: #f9c801     Also Used for Ranged Damage
-  Focus FOC: #ff0084
-  */
-  /*
-.color-class-black {
-  background-color: black;
-  background: black;
-}
-.color-class-agi,
-.color-class-range {
-  background-color: #02a41d;
-  background: #02a41d;
-}
-.color-class-pool {
-  background-color: #c5c3c3;
-}
-.color-class-mnd {
-  background-color: #a100fe;
-}
-.color-class-soc {
-  background-color: #fd7100;
-}
-.color-class-str,
-.color-class-meleedmg {
-  background-color: #5f3d00;
-}
-.color-class-phy,
-.color-class-dmgres {
-  background-color: #990304;
-}
-.color-class-mr {
-  background-color: #050505;
-}
-.color-class-com,
-.color-class-melee {
-  background-color: #0136ff;
-}
-.color-class-def,
-.color-class-defence {
-  background-color: #88826a;
-}
-.color-class-stl {
-  background-color: #505050;
-}
-.color-class-per,
-.color-class-ranged {
-  background-color: #f9c801;
-}
-.color-class-foc {
-  background-color: #ff0084;
-}
-.color-class-common {
-  background: rgba(185, 183, 40, 0.45);
-}
-*/
 .status-small-label {
   font-size: 0.65rem;
 }
@@ -1317,8 +1095,7 @@ ul,li {
   max-height: 42px;
   min-height: 36px;
 }
-.item-ability-roll select,
-.item-ability-roll input {
+.item-ability-roll select,.item-ability-roll input {
   margin-top: 4px;
   margin-right: 2px;
 }
@@ -1331,6 +1108,7 @@ ul,li {
   max-height: 48px;
   border: 0;
 }
+
 /*si*/
 .items-title-bg {
   margin-top: 6px;
@@ -1341,142 +1119,145 @@ ul,li {
 .items-title-bg-red {
   background: darkred;
 }
+
 .items-title-text {
   margin-left: 4px;
 }
+
 .lock-icon {
   width: 16px;
   height: 16px;
 }
+
 .item-sheet-img {
   width: 64px;
   height: auto;
 }
+
 .item-name-img {
   flex-grow: 1;
   max-width: 2rem;
   min-width: 2rem;
 }
+
 .item-name-label-header {
   flex-grow: 2;
   max-width: 12rem;
   min-width: 12rem;
 }
+
 .item-name-label-header-long {
   flex-grow: 2;
   max-width: 14rem;
   min-width: 14rem;
 }
+
 .item-name-label-header-long2 {
   flex-grow: 2;
   max-width: 24rem;
   min-width: 24rem;
 }
+
 .item-name-label-header-long3 {
   flex-grow: 2;
   max-width: 30rem;
   min-width: 30rem;
 }
+
 .item-name-label {
   flex-grow: 2;
   max-width: 10rem;
   min-width: 10rem;
 }
+
 .item-name-label-long {
   flex-grow: 2;
   max-width: 12rem;
   min-width: 12rem;
 }
+
 .item-name-label-long2 {
   flex-grow: 2;
   max-width: 22rem;
   min-width: 22rem;
 }
+
 .item-name-label-long3 {
   flex-grow: 2;
   max-width: 32rem;
   min-width: 32rem;
 }
+
 .item-name-label-level2 {
   flex-grow: 2;
   max-width: 9rem;
   min-width: 9rem;
 }
+
 .item-field-label-2rem {
   flex-grow: 1;
   margin-top: 4px;
   max-width: 1.2rem;
   min-width: 1.2rem;
 }
+
 .item-field-label-short {
   flex-grow: 1;
   margin-top: 4px;
   max-width: 4rem;
   min-width: 4rem;
 }
+
 .item-field-label-medium {
   flex-grow: 1;
   margin-top: 4px;
   max-width: 6rem;
   min-width: 6rem;
 }
+
 .item-field-label-long {
   flex-grow: 1;
   margin-top: 4px;
   max-width: 8rem;
   min-width: 8rem;
 }
+
 .item-field-label-vlong {
   flex-grow: 1;
   margin-top: 4px;
   max-width: 12rem;
   min-width: 12rem;
 }
+
 .item-field-label-vlong2 {
   flex-grow: 1;
   margin-top: 4px;
   max-width: 24rem;
   min-width: 24rem;
 }
+
 .item-control-end {
   align-self: flex-end;
 }
+
 .alternate-list {
   margin-top: 4px;
   flex-wrap: nowrap;
 }
+
 .item-filler {
   flex-grow: 6;
   flex-shrink: 7;
 }
+
 .item-controls-fixed {
   min-width: 2rem;
   max-width: 2rem;
 }
-/*form .notes {
-  color: rgba(214, 230, 230, 0.95);
-}
-*/
+
 .crit-success {
   color: darkgreen;
 }
 .crit-failure {
   color: darkred;
 }
-
-/*
-.directory .directory-header .header-search input {
-  color: rgba(52, 52, 52, 0.95);
-}
-*/
-
-/*a.content-link, a.inline-roll {
-  color: #222;
-}
-*/
-
-/*.journal-page-header,
-.journal-page-content {
-  color: #222;
-}
-*/
