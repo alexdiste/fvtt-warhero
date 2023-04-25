@@ -23,7 +23,7 @@ export const WARHERO_CONFIG = {
   },
   
   partySlotNames : {
-    storage: {nbslots: 2000, itemtype:"equipment", label: "WH.conf.partystorage"}
+    storage: {nbslots: 200, itemtype:"equipment", label: "WH.conf.partystorage"}
   },
 
   slotNames : {
@@ -52,7 +52,7 @@ export const WARHERO_CONFIG = {
     smallchest:  {nbslots: 6, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.smallchest"},
     mediumchest:  {nbslots: 12, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.mediumchest"},
     largechest:  {nbslots: 24, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.largechest"},
-    hugechest:  {nbslots: 24, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.hugechest"},
+    hugechest:  {nbslots: 36, itemtype:"equipment", container: true, available: false, parent: undefined, label: "WH.conf.hugechest"},
   },
 
   progressionList: {
@@ -94,13 +94,16 @@ export const WARHERO_CONFIG = {
     nextcombat: "WH.ui.nextcombat",
     untilendcombat: "WH.ui.untilendcombat",
     beginturn: "WH.ui.beginturn",
-    endturn: "WH.ui.endturn"
+    endturn: "WH.ui.endturn",
+    endday: "WH.ui.endday"
   },
+
   magicCharge: {
     notapplicable: "WH.ui.notapplicable",
     chargedaily: "WH.ui.chargedaily",
     chargelimited: "WH.ui.chargelimited",
   },
+
   identifiedState: {
     unknown: "WH.conf.unknown",
     yes:"WH.conf.yes",

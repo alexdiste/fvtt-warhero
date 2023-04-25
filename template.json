@@ -415,6 +415,7 @@
       "isidentified": "unknown",
       "magiccharge": "notapplicable",
       "chargevalue": 0,
+      "chargevaluemax":0,
       "description": ""
     },
     "armor": {
@@ -428,6 +429,7 @@
       "isidentified": "unknown",
       "magiccharge": "notapplicable",
       "chargevalue": 0,
+      "chargevaluemax":0,
       "description": ""
     },
     "shield": {
@@ -441,6 +443,7 @@
       "isidentified": "unknown",
       "magiccharge": "notapplicable",
       "chargevalue": 0,
+      "chargevaluemax":0,
       "description": ""
     },
     "equipment": {
@@ -454,6 +457,7 @@
       "isidentified": "unknown",
       "magiccharge": "notapplicable",
       "chargevalue": 0,
+      "chargevaluemax":0,
       "description": ""
     },
     "power": {
