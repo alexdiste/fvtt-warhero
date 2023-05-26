@@ -36,10 +36,10 @@
   "styles": [
     "styles/simple.css"
   ],
-  "version": "11.0.0",
+  "version": "11.0.1",
   "compatibility": {
     "minimum": "10.291",
-    "verified": "10"
+    "verified": "11"
   },
   "title": "Warhero RPG",
   "id": "fvtt-warhero",
