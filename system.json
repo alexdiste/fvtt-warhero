@@ -1,0 +1,530 @@
+{
+  "authors": [
+    {
+      "name": "AlexDiste",
+      "flags": {}
+    },
+    {
+      "name": "Uberwald",
+      "flags": {}
+    }
+  ],
+  "description": "Warhero RPG system for FoundryVTT",
+  "esmodules": [
+    "modules/warhero-main.js"
+  ],
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "it",
+      "name": "English",
+      "path": "lang/it.json",
+      "flags": {}
+    }
+  ],
+  "license": "LICENSE.txt",
+  "primaryTokenAttribute": "attributes.hp",
+  "secondaryTokenAttribute": "attributes.mana",
+  "socket": true,
+  "styles": [
+    "styles/simple.css"
+  ],
+  "version": "11.1.1",
+  "compatibility": {
+    "minimum": "10.291",
+    "verified": "11"
+  },
+  "title": "Warhero RPG",
+  "id": "fvtt-warhero",
+  "manifest": "https://raw.githubusercontent.com/alexdiste/fvtt-warhero/master/system.json",
+  "download": "https://github.com/alexdiste/fvtt-warhero/raw/master/fvtt-11.1.1.zip",
+  "packs": [
+    {
+      "name": "competenze",
+      "label": "competenze",
+      "path": "packs/competenze",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "abilita-aggiuntive",
+      "label": "abilita-aggiuntive",
+      "path": "packs/abilita-aggiuntive",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "abilita-di-classe",
+      "label": "abilita-di-classe",
+      "path": "packs/abilita-di-classe",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "animali-ed-equipaggiamento",
+      "label": "animali-ed-equipaggiamento",
+      "path": "packs/animali-ed-equipaggiamento",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armature-medie",
+      "label": "armature-medie",
+      "path": "packs/armature-medie",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armi-da-tiro",
+      "label": "armi-da-tiro",
+      "path": "packs/armi-da-tiro",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armi-in-asta",
+      "label": "armi-in-asta",
+      "path": "packs/armi-in-asta",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armi-lunghe",
+      "label": "armi-lunghe",
+      "path": "packs/armi-lunghe",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "classi",
+      "label": "classi",
+      "path": "packs/classi",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "lingue",
+      "label": "lingue",
+      "path": "packs/lingue",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "munizioni",
+      "label": "munizioni",
+      "path": "packs/munizioni",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "equipaggiamento",
+      "label": "equipaggiamento",
+      "path": "packs/equipaggiamento",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "poteri",
+      "label": "poteri",
+      "path": "packs/poteri",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "razze",
+      "label": "razze",
+      "path": "packs/razze",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "vestiti",
+      "label": "vestiti",
+      "path": "packs/vestiti",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armature-leggere",
+      "label": "armature-leggere",
+      "path": "packs/armature-leggere",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armature-pesanti",
+      "label": "armature-pesanti",
+      "path": "packs/armature-pesanti",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armi-da-lancio",
+      "label": "armi-da-lancio",
+      "path": "packs/armi-da-lancio",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armi-a-due-mani",
+      "label": "armi-a-due-mani",
+      "path": "packs/armi-a-due-mani",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "attacchi-mostri",
+      "label": "attacchi-mostri",
+      "path": "packs/attacchi-mostri",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "armi-corte",
+      "label": "armi-corte",
+      "path": "packs/armi-corte",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "condizione",
+      "label": "condizione",
+      "path": "packs/condizione",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "abilita-di-razza",
+      "label": "abilita-di-razza",
+      "path": "packs/abilita-di-razza",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "scudi-leggeri",
+      "label": "scudi-leggeri",
+      "path": "packs/scudi-leggeri",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "scudi-pesanti",
+      "label": "scudi-pesanti",
+      "path": "packs/scudi-pesanti",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "scudi-torre",
+      "label": "scudi-torre",
+      "path": "packs/scudi-torre",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "pozioni",
+      "label": "pozioni",
+      "path": "packs/pozioni",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "malattie",
+      "label": "malattie",
+      "path": "packs/malattie",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "trappole",
+      "label": "trappole",
+      "path": "packs/trappole",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "veleni",
+      "label": "veleni",
+      "path": "packs/veleni",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "poteri-speciali",
+      "label": "poteri-speciali",
+      "path": "packs/poteri-speciali",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "mostri",
+      "label": "mostri",
+      "path": "packs/mostri",
+      "type": "Actor",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "evocazioni",
+      "label": "evocazioni",
+      "path": "packs/evocazioni",
+      "type": "Actor",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "compagni-animali",
+      "label": "compagni animali",
+      "path": "packs/compagni-animali",
+      "type": "Actor",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "famigli",
+      "label": "famigli",
+      "path": "packs/famigli",
+      "type": "Actor",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "equipaggiamento-per-classi",
+      "label": "equipaggiamento-per-classi",
+      "path": "packs/equipaggiamento-per-classi",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "sfere-di-magia",
+      "label": "sfere-di-magia",
+      "path": "packs/sfere-di-magia",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "azioni",
+      "label": "azioni",
+      "path": "packs/azioni",
+      "type": "Item",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+	{
+      "label": "strumenti&kit",
+      "type": "Item",
+      "name": "strumenti",
+      "path": "packs/strumenti",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+	{
+      "label": "Macro",
+      "type": "Macro",
+      "name": "macro",
+      "path": "packs/macro",
+      "system": "fvtt-warhero",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ]
+}

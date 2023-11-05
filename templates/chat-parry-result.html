@@ -1,0 +1,40 @@
+<div class="chat-message-header">
+  {{#if actorImg}}
+  <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
+  {{/if}}
+  <h4 class=chat-actor-name>{{alias}}</h4>
+</div>
+
+  <hr>
+  
+  {{#if img}}
+  <div >
+    <img class="chat-icon" src="{{img}}" alt="{{name}}" />
+  </div>
+  {{/if}}
+
+  <div>
+    <ul>
+      <li>{{localize stat.label}} : {{stat.value}}</li>
+      <li><strong>Result : {{roll.total}} </strong></li>
+
+      <li>Formula : {{diceFormula}}</li>
+      {{#if isCriticalSuccess}}
+        <li><span class="crit-success">{{localize "WH.chat.diceresult"}} : {{diceResult}}</span></li>
+      {{else}}
+        {{#if isCriticalFailure}}
+          <li><span class="crit-failure">{{localize "WH.chat.diceresult"}} : {{diceResult}}</span></li>
+        {{else}}
+          <li>{{localize "WH.chat.diceresult"}} : <span>{{diceResult}}</span></li>
+        {{/if}}
+      {{/if}}
+
+      {{#if isSuccess}}
+      <li><strong>{{localize "WH.chat.parysuccess"}} </strong></li>
+      {{else}}
+      <li><strong>{{localize "WH.chat.paryfailed"}} </strong></li>
+      {{/if}}
+    </ul>  
+  </div>
+
+  </div>

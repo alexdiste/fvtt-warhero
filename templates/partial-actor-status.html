@@ -1,0 +1,39 @@
+<ul class="status-block">
+  <li class="item flexrow list-item" data-attr-key="hp">
+    <span class="ability-label " name="hp">
+      <h4 class="ability-text-white ability-margin">HP</h4>
+    </span>
+    <span class="ability-label ability-margin">
+      <input class="input-numeric-short" name="system.secondary.hp.value" value="{{data.secondary.hp.value}}"></span>
+      {{#if (eq type "character")}}
+      <span class="ability-label ability-margin"> / {{data.secondary.hp.max}}</span>
+      {{else}}
+      <span class="ability-label ability-margin">/<input class="input-numeric-short" name="system.secondary.hp.max" value="{{data.secondary.hp.max}}"></span>
+    {{/if}}
+  </li>
+  <li class="item flexrow list-item" data-attr-key="hp">
+    <span class="ability-label " name="hp">
+      <h4 class="ability-text-white ability-margin">Effort</h4>
+    </span>
+    <span class="ability-label ability-margin">
+      <input class="input-numeric-short" name="system.secondary.effort.value" value="{{data.secondary.effort.value}}"></span>
+    {{#if (eq type "character")}}
+    <span class="ability-label ability-margin"> / {{data.secondary.effort.max}}</span>
+    {{else}}
+    <span class="ability-label ability-margin">/<input class="input-numeric-short" name="system.secondary.effort.max" value="{{data.secondary.effort.max}}"></span>
+    {{/if}}
+  </li>
+
+  <li>&nbsp;</li>
+
+  {{#each saveRolls as |save key|}}
+  <li class="item flexrow list-item" data-attr-key="{{key}}">
+    <img class="sheet-competence-img" src="{{save.img}}" />
+    <span class="ability-label" name="{{key}}">
+      <h4 class="ability-text-white ability-margin">    
+      <a class="roll-save ability-margin" data-save-key="{{key}}">{{save.label}} {{save.value}}</a></h4>
+    </span>
+  </li>
+  {{/each}}
+<ul>
+
