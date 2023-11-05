@@ -389,7 +389,7 @@
       "flags": {}
     }
   ],
-  "version": "11.1.1",
+  "version": "11.2.1",
   "compatibility": {
     "minimum": "10.291",
     "verified": "11"
@@ -397,5 +397,5 @@
   "title": "Warhero RPG",
   "id": "fvtt-warhero",
   "manifest": "https://raw.githubusercontent.com/alexdiste/fvtt-warhero/master/system.json",
-  "download": "https://github.com/alexdiste/fvtt-warhero/raw/master/fvtt-11.1.1.zip"
+  "download": "https://github.com/alexdiste/fvtt-warhero/raw/master/fvtt-11.2.1.zip"
 }
