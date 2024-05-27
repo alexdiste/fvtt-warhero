@@ -1,4 +1,14 @@
 {
+  "id": "fvtt-warhero",
+  "title": "Warhero RPG",
+  "description": "Warhero RPG system for FoundryVTT",
+  "version": "11.2.2",
+  "compatibility": {
+    "minimum": "10.291",
+    "verified": "11"
+  },
+  "manifest": "https://raw.githubusercontent.com/alexdiste/fvtt-warhero/master/system.json",
+  "download": "https://github.com/alexdiste/fvtt-warhero/raw/master/fvtt-11.2.2.zip",
   "authors": [
     {
       "name": "AlexDiste",
@@ -8,8 +18,7 @@
       "name": "Uberwald",
       "flags": {}
     }
-  ],
-  "description": "Warhero RPG system for FoundryVTT",
+  ],  
   "esmodules": [
     "modules/warhero-main.js"
   ],
@@ -505,14 +514,5 @@
         "ASSISTANT": "OWNER"
       }
     }
-  ],
-  "version": "11.2.1",
-  "compatibility": {
-    "minimum": "10.291",
-    "verified": "11"
-  },
-  "title": "Warhero RPG",
-  "id": "fvtt-warhero",
-  "manifest": "https://raw.githubusercontent.com/alexdiste/fvtt-warhero/master/system.json",
-  "download": "https://github.com/alexdiste/fvtt-warhero/raw/master/fvtt-11.2.1.zip"
+  ]
 }
