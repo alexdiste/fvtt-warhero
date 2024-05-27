@@ -36,7 +36,7 @@
   "styles": [
     "styles/simple.css"
   ],
-  "packs": [   
+  "packs": [
     {
       "label": "competenze",
       "type": "Item",
@@ -44,7 +44,10 @@
       "path": "packs/competenze",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -53,7 +56,10 @@
       "path": "packs/abilita-aggiuntive",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -62,7 +68,10 @@
       "path": "packs/abilita-di-classe",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -71,7 +80,10 @@
       "path": "packs/animali-ed-equipaggiamento",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -80,7 +92,10 @@
       "path": "packs/armature-medie",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -89,7 +104,10 @@
       "path": "packs/armi-da-tiro",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -98,7 +116,10 @@
       "path": "packs/armi-in-asta",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -107,7 +128,10 @@
       "path": "packs/armi-lunghe",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -116,7 +140,10 @@
       "path": "packs/classi",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -125,7 +152,10 @@
       "path": "packs/lingue",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -134,7 +164,10 @@
       "path": "packs/munizioni",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -143,7 +176,10 @@
       "path": "packs/equipaggiamento",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -152,7 +188,10 @@
       "path": "packs/poteri",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -161,7 +200,10 @@
       "path": "packs/razze",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "type": "Item",
@@ -170,7 +212,10 @@
       "path": "packs/vestiti",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "armature-leggere",
@@ -179,7 +224,10 @@
       "path": "packs/armature-leggere",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "armature-pesanti",
@@ -188,7 +236,10 @@
       "path": "packs/armature-pesanti",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "armi-da-lancio",
@@ -197,7 +248,10 @@
       "path": "packs/armi-da-lancio",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "armi-a-due-mani",
@@ -206,7 +260,10 @@
       "path": "packs/armi-a-due-mani",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "attacchi-mostri",
@@ -215,7 +272,10 @@
       "path": "packs/attacchi-mostri",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "armi-corte",
@@ -224,7 +284,10 @@
       "path": "packs/armi-corte",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "condizione",
@@ -233,7 +296,10 @@
       "path": "packs/condizione",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "abilita-di-razza",
@@ -242,7 +308,10 @@
       "path": "packs/abilita-di-razza",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "scudi-leggeri",
@@ -251,7 +320,10 @@
       "path": "packs/scudi-leggeri",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "scudi-pesanti",
@@ -260,7 +332,10 @@
       "path": "packs/scudi-pesanti",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "scudi-torre",
@@ -269,7 +344,10 @@
       "path": "packs/scudi-torre",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "pozioni",
@@ -278,7 +356,10 @@
       "path": "packs/pozioni",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "malattie",
@@ -287,16 +368,10 @@
       "path": "packs/malattie",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
-    },
-    {
-      "label": "trappole",
-      "type": "Item",
-      "name": "trappole",
-      "path": "packs/trappole",
-      "system": "fvtt-warhero",
-      "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "veleni",
@@ -305,7 +380,10 @@
       "path": "packs/veleni",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "poteri-speciali",
@@ -314,7 +392,22 @@
       "path": "packs/poteri-speciali",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "trappole",
+      "type": "Item",
+      "name": "trappole",
+      "path": "packs/trappole",
+      "system": "fvtt-warhero",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "mostri",
@@ -323,7 +416,10 @@
       "path": "packs/mostri",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "evocazioni",
@@ -332,16 +428,10 @@
       "path": "packs/evocazioni",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
-    },
-    {
-      "label": "compagni animali",
-      "type": "Actor",
-      "name": "compagni-animali",
-      "path": "packs/compagni-animali",
-      "system": "fvtt-warhero",
-      "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "famigli",
@@ -350,8 +440,23 @@
       "path": "packs/famigli",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
-    },    
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "trasporti",
+      "type": "Actor",
+      "name": "trasporti",
+      "path": "packs/trasporti",
+      "system": "fvtt-warhero",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
     {
       "label": "equipaggiamento-per-classi",
       "type": "Item",
@@ -359,7 +464,10 @@
       "path": "packs/equipaggiamento-per-classi",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "sfere-di-magia",
@@ -368,7 +476,10 @@
       "path": "packs/sfere-di-magia",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "label": "azioni",
@@ -377,16 +488,22 @@
       "path": "packs/azioni",
       "system": "fvtt-warhero",
       "flags": {},
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
-      "label": "warhero",
+      "label": "macro",
       "type": "Macro",
       "name": "macro",
       "path": "packs/macro",
       "system": "fvtt-warhero",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "version": "11.2.1",

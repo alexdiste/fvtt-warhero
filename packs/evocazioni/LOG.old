@@ -1,8 +1,15 @@
-2023/11/04-12:15:22.422148 7f325dffb700 Recovering log #1914
-2023/11/04-12:15:22.424073 7f325dffb700 Delete type=0 #1914
-2023/11/04-12:15:22.424098 7f325dffb700 Delete type=3 #1912
-2023/11/05-14:08:56.361106 7f2fb5c39700 Level-0 table #1919: started
-2023/11/05-14:08:56.361117 7f2fb5c39700 Level-0 table #1919: 0 bytes OK
-2023/11/05-14:08:56.361679 7f2fb5c39700 Delete type=0 #1917
-2023/11/05-14:08:56.362762 7f2fb5c39700 Manual compaction at level-0 from '!actors!C3ZB0n4Q1whA3CaS' @ 72057594037927935 : 1 .. '!actors.items!ssIAyKvNK7c5izYR.vg3WrnIJ2dJ1FNFb' @ 0 : 0; will stop at (end)
-2023/11/05-14:08:56.363484 7f2fb5c39700 Manual compaction at level-1 from '!actors!C3ZB0n4Q1whA3CaS' @ 72057594037927935 : 1 .. '!actors.items!ssIAyKvNK7c5izYR.vg3WrnIJ2dJ1FNFb' @ 0 : 0; will stop at (end)
+2024/05/18-06:11:35.568 19884 Recovering log #2938
+2024/05/18-06:11:35.575 19884 Delete type=0 #2938
+2024/05/18-06:11:35.575 19884 Delete type=3 #2936
+2024/05/18-06:12:56.300 1a428 Level-0 table #2943: started
+2024/05/18-06:12:56.312 1a428 Level-0 table #2943: 153390 bytes OK
+2024/05/18-06:12:56.317 1a428 Delete type=0 #2941
+2024/05/18-06:12:56.331 1a428 Manual compaction at level-0 from '!actors!5UpTd2zjykSljRSO' @ 72057594037927935 : 1 .. '!actors.items!vrxMyHOr7SrlYwUV.gsDo4khyYyK1rMBj' @ 0 : 0; will stop at (end)
+2024/05/18-06:12:56.341 1a428 Manual compaction at level-1 from '!actors!5UpTd2zjykSljRSO' @ 72057594037927935 : 1 .. '!actors.items!vrxMyHOr7SrlYwUV.gsDo4khyYyK1rMBj' @ 0 : 0; will stop at '!actors.items!vrxMyHOr7SrlYwUV.gsDo4khyYyK1rMBj' @ 689 : 1
+2024/05/18-06:12:56.341 1a428 Compacting 1@1 + 1@2 files
+2024/05/18-06:12:56.345 1a428 Generated table #2944@1: 183 keys, 153390 bytes
+2024/05/18-06:12:56.345 1a428 Compacted 1@1 + 1@2 files => 153390 bytes
+2024/05/18-06:12:56.349 1a428 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/05/18-06:12:56.349 1a428 Delete type=2 #2935
+2024/05/18-06:12:56.349 1a428 Delete type=2 #2943
+2024/05/18-06:12:56.360 1a428 Manual compaction at level-1 from '!actors.items!vrxMyHOr7SrlYwUV.gsDo4khyYyK1rMBj' @ 689 : 1 .. '!actors.items!vrxMyHOr7SrlYwUV.gsDo4khyYyK1rMBj' @ 0 : 0; will stop at (end)
