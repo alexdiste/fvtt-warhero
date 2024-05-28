@@ -88,7 +88,7 @@
       <div class="flexrow">
         <span class="item-field-label-vlong">Bonus/Malus : </span>
         <select class="item-field-label-medium" type="text" id="bonusMalus" value="{{bonusMalus}}">
-          {{selectOptions config.bonusMalusOptions selected=bonusMalus}}
+          {{selectOptions config.bonusMalusOptions selected=bonusMalus valueAttr="value" nameAttr="value" labelAttr="label"}}
         </select>
       </div>
       {{/if}}

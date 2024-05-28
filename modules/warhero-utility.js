@@ -755,7 +755,7 @@ export class WarheroUtility {
       bonusMalus: 0,
       powerLevel: "1",
       hasBM: true,
-      config: game.systemm.warhero.config
+      config: game.system.warhero.config
     }
     WarheroUtility.updateWithTarget(rollData)
     return rollData
