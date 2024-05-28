@@ -20,11 +20,7 @@
         <ul>
           <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.type"}}</label>
             <select class="item-field-label-medium " type="text" name="system.weapontype" value="{{system.weapontype}}" data-dtype="String">
-              {{#select system.weapontype}}
-                {{#each config.weaponTypes as |type key|}}
-                  <option value="{{key}}">{{localize type.label}}</option>
-                {{/each}}
-              {{/select}}
+              {{selectOptions config.weaponTypes selected=system.weapontype localize=true labelAttr="label"}}
             </select> 
           </li>
           

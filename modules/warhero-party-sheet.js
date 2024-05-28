@@ -11,7 +11,7 @@ export class WarheroPartySheet extends WarheroActorSheet {
   /** @override */
   static get defaultOptions() {
 
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["warhero-rpg", "sheet", "actor"],
       template: "systems/fvtt-warhero/templates/party-sheet.html",
       width: 640,
@@ -25,7 +25,7 @@ export class WarheroPartySheet extends WarheroActorSheet {
   /* -------------------------------------------- */
   async getData() {
 
-    const objectData = duplicate(this.object.system)
+    const objectData = foundry.utils.duplicate(this.object.system)
 
     let formData = {
       title: this.title,
@@ -38,8 +38,8 @@ export class WarheroPartySheet extends WarheroActorSheet {
       system: objectData,
       limited: this.object.limited,
       totalMoney: this.actor.computeTotalMoney(),
-      equipments: duplicate(this.actor.getEquipmentsOnly()),
-      //moneys: duplicate(this.actor.getMoneys()),
+      equipments: foundry.utils.duplicate(this.actor.getEquipmentsOnly()),
+      //moneys: foundry.utils.duplicate(this.actor.getMoneys()),
       description: await TextEditor.enrichHTML(this.object.system.biodata.description, {async: true}),
       notes: await TextEditor.enrichHTML(this.object.system.biodata.notes, {async: true}),
       options: this.options,

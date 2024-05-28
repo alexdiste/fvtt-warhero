@@ -18,21 +18,13 @@
 
         <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.conditiontype"}}</label>
           <select class="item-field-label-medium " type="text" name="system.conditiontype" value="{{system.conditiontype}}" data-dtype="String">
-            {{#select system.conditiontype}}
-              {{#each config.conditionType as |type key|}}
-                <option value="{{key}}">{{localize type}}</option>
-              {{/each}}
-            {{/select}}
+            {{selectOptions config.conditionType selected=system.conditiontype localize=true}}
           </select>             
         </li>
 
         <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.duration"}}</label>
           <select class="item-field-label-medium " type="text" name="system.duration" value="{{system.duration}}" data-dtype="String">
-            {{#select system.duration}}
-              {{#each config.conditionDuration as |type key|}}
-                <option value="{{key}}">{{localize type}}</option>
-              {{/each}}
-            {{/select}}
+            {{selectOptions config.conditionDuration selected=system.duration localize=true}}
           </select>             
         </li>
 
@@ -42,11 +34,7 @@
 
         <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.specialduration"}}</label>
           <select class="item-field-label-medium " type="text" name="system.specialduration" value="{{system.specialduration}}" data-dtype="String">
-            {{#select system.specialduration}}
-              {{#each config.conditionSpecialDuration as |type key|}}
-                <option value="{{key}}">{{localize type}}</option>
-              {{/each}}
-            {{/select}}
+            {{selectOptions config.conditionSpecialDuration selected=system.specialduration localize=true}}
           </select>             
         </li>
 

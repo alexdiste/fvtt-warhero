@@ -9,7 +9,7 @@ export class WarheroItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
 
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["fvtt-warhero", "sheet", "item"],
       template: "systems/fvtt-warhero/templates/item-sheet.html",
       dragDrop: [{ dragSelector: null, dropSelector: null }],
@@ -49,7 +49,7 @@ export class WarheroItemSheet extends ItemSheet {
   /* -------------------------------------------- */
   async getData() {
     
-    let objectData = duplicate(this.object.system)
+    let objectData = foundry.utils.duplicate(this.object.system)
 
     let itemData = objectData
     let formData = {
@@ -63,7 +63,7 @@ export class WarheroItemSheet extends ItemSheet {
       config: game.system.warhero.config,
       description: await TextEditor.enrichHTML(this.object.system.description, {async: true}),
       system: itemData,
-      statistics: duplicate(game.system.template.Actor.templates.core.statistics),
+      statistics: WarheroUtility.getActorStats(),
       limited: this.object.limited,
       options: this.options,
       owner: this.document.isOwner,
@@ -88,7 +88,7 @@ export class WarheroItemSheet extends ItemSheet {
 
   /* -------------------------------------------- */
   postItem() {
-    let chatData = duplicate(WarheroUtility.data(this.item));
+    let chatData = foundry.utils.duplicate(WarheroUtility.data(this.item));
     if (this.actor) {
       chatData.actor = { id: this.actor.id };
     }

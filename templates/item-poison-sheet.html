@@ -17,11 +17,7 @@
         <ul>
           <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.application"}}</label>
             <select class="item-field-label-medium " type="text" name="system.application" value="{{system.application}}" data-dtype="String">
-              {{#select system.application}}
-                {{#each config.poisonApplication as |type key|}}
-                  <option value="{{key}}">{{localize type}}</option>
-                {{/each}}
-              {{/select}}
+              {{selectOptions config.poisonApplication selected=system.application localize=true}}
             </select>             
           </li>
 
@@ -43,11 +39,7 @@
 
           <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.savetype"}}</label>
             <select class="item-field-label-long " type="text" name="system.savetype" value="{{system.savetype}}" data-dtype="String">
-              {{#select system.savetype}}
-                {{#each config.saveType as |type key|}}
-                  <option value="{{key}}">{{localize type}}</option>
-                {{/each}}
-              {{/select}}
+              {{selectOptions config.saveType selected=system.savetype localize=true}}
             </select>             
           </li>
 

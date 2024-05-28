@@ -509,14 +509,7 @@
             <li class="flexrow item">
               <label class="generic-label">{{localize "WH.ui.size"}}</label>
               <select class="competence-base flexrow" type="text" name="system.biodata.size" value="{{data.biodata.size}}" data-dtype="Number">
-                {{#select data.biodata.size}}
-                <option value="1">Tiny</option>
-                <option value="2">Small</option>
-                <option value="3">Medium</option>
-                <option value="4">Large</option>
-                <option value="5">Huge</option>
-                <option value="6">Gargantuan</option>
-                {{/select}}
+                {{selectOptions config.monsterSizeOptions selected=data.biodata.size localize=true}}
               </select> 
             </li>
             <li class="flexrow item">

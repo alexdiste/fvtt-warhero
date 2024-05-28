@@ -1,29 +1,30 @@
 {
-  "ACTOR": {
-    "TypeCharacter": "Character",
-    "TypeNpc": "NPC",
-    "TypeMonster": "Monster",
-    "TypeParty": "Party"
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC",
+      "monster": "Monster",
+      "party": "Party"
+    },
+    "Item": {
+      "weapon": "Weapon",
+      "equipment": "Equipment",
+      "race": "Race",
+      "armor": "Armor",
+      "shield": "Shield",
+      "skill": "Skill",
+      "power": "Power",
+      "language": "Language",
+      "dondition": "Condition",
+      "dlass": "Class",
+      "money": "Money",
+      "potion": "Potion",
+      "poison": "Poison",
+      "trap": "Trap",
+      "classitem": "Class item",
+      "competency": "Competency"  
+    }
   },
-  "ITEM": {
-    "TypeWeapon": "Weapon",
-    "TypeEquipment": "Equipment",
-    "TypeRace": "Race",
-    "TypeArmor": "Armor",
-    "TypeShield": "Shield",
-    "TypeSkill": "Skill",
-    "TypePower": "Power",
-    "TypeLanguage": "Language",
-    "TypeCondition": "Condition",
-    "TypeClass": "Class",
-    "TypeMoney": "Money",
-    "TypePotion": "Potion",
-    "TypePoison": "Poison",
-    "TypeTrap": "Trap",
-    "TypeClassitem": "Class item",
-    "TypeCompetency": "Competency"
-  },
-
   "WH.conf.short": "Short",
   "WH.conf.long": "Long",
   "WH.conf.twohanded": "Two-Handed",

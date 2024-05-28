@@ -96,45 +96,45 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   getFeats() {
-    let comp = duplicate(this.items.filter(item => item.type == 'feat') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'feat') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getFeatsWithDie() {
-    let comp = duplicate(this.items.filter(item => item.type == 'feat' && item.system.isfeatdie) || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'feat' && item.system.isfeatdie) || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getFeatsWithSL() {
-    let comp = duplicate(this.items.filter(item => item.type == 'feat' && item.system.issl) || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'feat' && item.system.issl) || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getLore() {
-    let comp = duplicate(this.items.filter(item => item.type == 'spell') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'spell') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getEquippedWeapons() {
-    let comp = duplicate(this.items.filter(item => item.type == 'weapon' && item.system.equipped) || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'weapon' && item.system.equipped) || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getEquippedArmors() {
-    let comp = duplicate(this.items.filter(item => item.type == 'armor' && item.system.slotlocation == 'armor') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'armor' && item.system.slotlocation == 'armor') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getArmors() {
-    let comp = duplicate(this.items.filter(item => item.type == 'armor') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'armor') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getPowers() {
-    let comp = duplicate(this.items.filter(item => item.type == 'power') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'power') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
@@ -142,7 +142,7 @@ export class WarheroActor extends Actor {
     let schools = {}
     for (let power of this.items) {
       if (power.type == "power") {
-        power = duplicate(power)
+        power = foundry.utils.duplicate(power)
         let school = schools[power.system.magicschool] || []
         school.push(power)
         WarheroUtility.sortArrayObjectsByNameAndLevel(school)
@@ -152,18 +152,18 @@ export class WarheroActor extends Actor {
     return schools
   }
   getAllItems() {
-    let comp = duplicate(this.items || []);
+    let comp = foundry.utils.duplicate(this.items || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getEquippedShields() {
-    let comp = duplicate(this.items.filter(item => item.type == 'shield' && item.system.slotlocation == "shield") || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'shield' && item.system.slotlocation == "shield") || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getShields() {
-    let comp = duplicate(this.items.filter(item => item.type == 'shield') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'shield') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
@@ -182,7 +182,7 @@ export class WarheroActor extends Actor {
     return classWH
   }
   getClasses() {
-    let comp = duplicate(this.items.filter(item => item.type == "class") || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == "class") || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
@@ -209,7 +209,7 @@ export class WarheroActor extends Actor {
     let containers = {}
     for (let slotName in game.system.warhero.config.partySlotNames) {
       let slotDef = game.system.warhero.config.partySlotNames[slotName]
-      containers[slotName] = duplicate(slotDef)
+      containers[slotName] = foundry.utils.duplicate(slotDef)
       containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem') )
       let slotUsed = 0
       for (let item of containers[slotName].content) {
@@ -233,7 +233,7 @@ export class WarheroActor extends Actor {
     for (let slotName in game.system.warhero.config.slotNames) {
       let slotDef = game.system.warhero.config.slotNames[slotName]
       if (!slotDef.container) {
-        containers[slotName] = duplicate(slotDef)
+        containers[slotName] = foundry.utils.duplicate(slotDef)
         containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
           && it.system.slotlocation == slotName)
         let slotUsed = 0
@@ -260,7 +260,7 @@ export class WarheroActor extends Actor {
     for (let slotName in game.system.warhero.config.slotNames) {
       let slotDef = game.system.warhero.config.slotNames[slotName]
       if (slotDef.container) {
-        containers[slotName] = duplicate(slotDef)
+        containers[slotName] = foundry.utils.duplicate(slotDef)
         containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
           && it.system.slotlocation == slotName)
         let slotUsed = 0
@@ -281,7 +281,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   getConditions() {
-    let comp = duplicate(this.items.filter(item => item.type == 'condition') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'condition') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
@@ -310,7 +310,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   getEquippedWeapons() {
-    let comp = duplicate(this.items.filter(item => item.type == 'weapon' && (item.system.slotlocation == "weapon1" || item.system.slotlocation == "weapon2") ) || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'weapon' && (item.system.slotlocation == "weapon1" || item.system.slotlocation == "weapon2") ) || []);
     for (let weapon of comp) {
       this.prepareWeapon(weapon)
     }
@@ -318,7 +318,7 @@ export class WarheroActor extends Actor {
     return comp;
   }
   getWeapons() {
-    let comp = duplicate(this.items.filter(item => item.type == 'weapon') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'weapon') || []);
     for (let weapon of comp) {
       this.prepareWeapon(weapon)
     }
@@ -327,7 +327,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   getConditions() {
-    let comp = duplicate(this.items.filter(item => item.type == 'condition') || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'condition') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
@@ -335,7 +335,7 @@ export class WarheroActor extends Actor {
   getItemById(id) {
     let item = this.items.find(item => item.id == id);
     if (item) {
-      item = duplicate(item)
+      item = foundry.utils.duplicate(item)
     }
     return item;
   }
@@ -362,14 +362,14 @@ export class WarheroActor extends Actor {
     return comp
   }
   getSkills() {
-    let comp = duplicate(this.items.filter(item => item.type == 'skill') || [])
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'skill') || [])
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp
   }
 
   /* -------------------------------------------- */
   getRelevantAbility(statKey) {
-    let comp = duplicate(this.items.filter(item => item.type == 'skill' && item.system.ability == ability) || []);
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'skill' && item.system.ability == ability) || []);
     return comp;
   }
 
@@ -413,11 +413,11 @@ export class WarheroActor extends Actor {
     return this.items.filter(item => item.type == 'shield' || item.type == 'armor' || item.type == "weapon" || item.type == "equipment" || item.type == "potion" || item.type == "poison" || item.type == "trap" || item.type == "classitem");
   }
   getCompetencyItems() {
-    return duplicate(this.items.filter(item => item.type == "competency") || [])
+    return foundry.utils.duplicate(this.items.filter(item => item.type == "competency") || [])
   }
   /* ------------------------------------------- */
   getEquipmentsOnly() {
-    return duplicate(this.items.filter(item => item.type == "equipment") || [])
+    return foundry.utils.duplicate(this.items.filter(item => item.type == "equipment") || [])
   }
 
   /* ------------------------------------------- */
@@ -443,7 +443,7 @@ export class WarheroActor extends Actor {
 
   /* ------------------------------------------- */
   async buildContainerTree() {
-    let equipments = duplicate(this.items.filter(item => item.type == "equipment") || [])
+    let equipments = foundry.utils.duplicate(this.items.filter(item => item.type == "equipment") || [])
     for (let equip1 of equipments) {
       if (equip1.system.iscontainer) {
         equip1.system.contents = []
@@ -495,9 +495,9 @@ export class WarheroActor extends Actor {
 
   /* -------------------------------------------- */
   async incDecHP(formula) {
-    let dmgRoll = new Roll(formula + "[warhero-orange]").roll({ async: false })
+    let dmgRoll = await new Roll(formula + "[warhero-orange]").roll()
     await WarheroUtility.showDiceSoNice(dmgRoll, game.settings.get("core", "rollMode"))
-    let hp = duplicate(this.system.secondary.hp)
+    let hp = foundry.utils.duplicate(this.system.secondary.hp)
     hp.value = Number(hp.value) + Number(dmgRoll.total)
     this.update({ 'system.secondary.hp': hp })
     return Number(dmgRoll.total)
@@ -588,13 +588,13 @@ export class WarheroActor extends Actor {
   getSubActors() {
     let subActors = [];
     for (let id of this.system.subactors) {
-      subActors.push(duplicate(game.actors.get(id)))
+      subActors.push(foundry.utils.duplicate(game.actors.get(id)))
     }
     return subActors;
   }
   /* -------------------------------------------- */
   async addSubActor(subActorId) {
-    let subActors = duplicate(this.system.subactors);
+    let subActors = foundry.utils.duplicate(this.system.subactors);
     subActors.push(subActorId);
     await this.update({ 'system.subactors': subActors });
   }
@@ -619,7 +619,7 @@ export class WarheroActor extends Actor {
   getOneSkill(skillId) {
     let skill = this.items.find(item => item.type == 'skill' && item.id == skillId)
     if (skill) {
-      skill = duplicate(skill);
+      skill = foundry.utils.duplicate(skill);
     }
     return skill;
   }
@@ -753,7 +753,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   spentMana(spentValue) {
-    let mana = duplicate(this.system.attributes.mana)
+    let mana = foundry.utils.duplicate(this.system.attributes.mana)
     if (Number(spentValue) > mana.value) {
       ui.notifications.warn("Not enough Mana points !")
       return false
@@ -765,7 +765,7 @@ export class WarheroActor extends Actor {
 
   /* -------------------------------------------- */
   incrementUse(rollData) {
-    let stat = duplicate(this.system[rollData.mode][rollData.statKey])
+    let stat = foundry.utils.duplicate(this.system[rollData.mode][rollData.statKey])
     stat.nbuse++
     this.update({ [`system.${rollData.mode}.${rollData.statKey}`]: stat })
   }
@@ -784,13 +784,13 @@ export class WarheroActor extends Actor {
 
   /* -------------------------------------------- */
   rollFromType(rollType, rollKey) {
-    let stat = duplicate(this.system[rollType][rollKey])
+    let stat = foundry.utils.duplicate(this.system[rollType][rollKey])
     let rollData = this.getCommonRollData()
     rollData.mode = rollType
     rollData.statKey = rollKey
     rollData.stat = stat
     if (stat && stat.stat) {
-      rollData.statBonus = duplicate(this.system.statistics[stat.stat])
+      rollData.statBonus = foundry.utils.duplicate(this.system.statistics[stat.stat])
     }
     if (stat.hasuse && stat.nbuse >= stat.maxuse) {
       ui.notifications.warn(game.i18n.localize("WH.notif.toomanyuses"))
@@ -804,7 +804,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   rollSaveFromType(rollType, rollKey) {
-    let stat = duplicate(this.system[rollType][rollKey])
+    let stat = foundry.utils.duplicate(this.system[rollType][rollKey])
     let rollData = this.getCommonRollData()
     rollData.mode = "save"
     rollData.stat = stat
@@ -815,13 +815,13 @@ export class WarheroActor extends Actor {
   rollWeapon(weaponId) {
     let weapon = this.items.get(weaponId)
     if (weapon) {
-      weapon = duplicate(weapon)
+      weapon = foundry.utils.duplicate(weapon)
       let rollData = this.getCommonRollData()
       rollData.mode = "weapon"
       if (weapon.system.weapontype === "shooting" || weapon.system.weapontype === "throwing") {
-        rollData.stat = duplicate(this.system.attributes.txcr)
+        rollData.stat = foundry.utils.duplicate(this.system.attributes.txcr)
       } else {
-        rollData.stat = duplicate(this.system.attributes.txcm)
+        rollData.stat = foundry.utils.duplicate(this.system.attributes.txcm)
       }
       rollData.usemWeaponMalus = false
       rollData.mWeaponMalus = this.system.secondary.malusmultiweapon.value
@@ -834,7 +834,7 @@ export class WarheroActor extends Actor {
   rollDamage(weaponId, is2hands = false) {
     let weapon = this.items.get(weaponId)
     if (weapon) {
-      weapon = duplicate(weapon)
+      weapon = foundry.utils.duplicate(weapon)
       this.prepareWeapon(weapon)
       let rollData = this.getCommonRollData()
       rollData.mode = "damage"
@@ -848,7 +848,7 @@ export class WarheroActor extends Actor {
   rollPower(powerId) {
     let power = this.items.get(powerId)
     if (power) {
-      power = duplicate(power)
+      power = foundry.utils.duplicate(power)
       let rollData = this.getCommonRollData()
       rollData.mode = "power"
       rollData.power = power

@@ -11,7 +11,7 @@ export class WarheroNPCSheet extends WarheroActorSheet {
   /** @override */
   static get defaultOptions() {
 
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["warhero-rpg", "sheet", "actor"],
       template: "systems/fvtt-warhero/templates/monster-sheet.html",
       width: 640,

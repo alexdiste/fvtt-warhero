@@ -109,6 +109,48 @@ export const WARHERO_CONFIG = {
     yes:"WH.conf.yes",
     no:"WH.conf.no",
     notapplicable:"WH.conf.notapplicable"
-  }
+  }, 
 
+  sizeOptions: {
+    small: "WH.ui.small",
+    medium: "WH.ui.medium",
+    large: "WH.ui.large"
+  }, 
+
+  monsterSizeOptions: {
+    "1": "Tiny",
+    "2": "Small",
+    "3": "Medium",
+    "4": "Large",
+    "5": "Huge",
+    "6": "Gargantuan"
+  }, 
+
+  statValueOptions: {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5", 
+    "6": "6",
+    "7": "7", 
+    "8": "8"
+  }, 
+
+  bonusMalusOptions : [
+    {value: "-6", label: "-6"},
+    {value: "-5", label: "-5"},
+    {value: "-4", label: "-4"},
+    {value: "-3", label: "-3"},
+    {value: "-2", label: "-2"},
+    {value: "-1", label: "-1"},
+    {value: "0", label: "0"},
+    {value: "1", label: "+1"},
+    {value: "2", label: "+2"},
+    {value: "3", label: "+3"},
+    {value: "4", label: "+4"},
+    {value: "5", label: "+5"},
+    {value: "6", label: "+6"}
+  ]
 }

@@ -1,29 +1,29 @@
 {
-  "ACTOR": {
-    "TypeCharacter": "PG",
-    "TypeNpc": "PNG",
-    "TypeMonster": "Mostro",
-	"TypeParty": "Gruppo"
+  "TYPES": {
+    "Actor" : {
+      "character": "PG",
+      "npc": "PNG",
+      "monster": "Mostro"
+    },
+    "Item": {
+      "weapon": "Arma",
+      "equipment": "Equipaggiamento",
+      "race": "Razza",
+      "armor": "Armatura",
+      "shield": "Scudo",
+      "skill": "Abilità",
+      "power": "Potere",
+      "language": "Lingua",
+      "condition": "Condizione",
+      "class": "Classe",
+      "money": "Mo",
+      "potion": "Pozione",
+      "poison": "Veleno",
+      "trap": "Trappola",
+      "classitem": "Oggetto di classe",
+      "competency": "Competenza"
+    } 
   },
-  "ITEM": {
-    "TypeWeapon": "Arma",
-    "TypeEquipment": "Equipaggiamento",
-    "TypeRace": "Razza",
-    "TypeArmor": "Armatura",
-    "TypeShield": "Scudo",
-    "TypeSkill": "Abilità",
-    "TypePower": "Potere",
-    "TypeLanguage": "Lingua",
-    "TypeCondition": "Condizione",
-    "TypeClass": "Classe",
-    "TypeMoney": "Mo",
-    "TypePotion": "Pozione",
-    "TypePoison": "Veleno",
-    "TypeTrap": "Trappola",
-    "TypeClassitem": "Oggetto di classe",
-    "TypeCompetency": "Competenza"
-  },
-
   "WH.conf.short": "Corte",
   "WH.conf.long": "Lunghe",
   "WH.conf.twohanded": "A due mani",

@@ -76,7 +76,16 @@ export class WarheroUtility {
     })    */
   }
 
-  /*-------------------------------------------- */
+  /*--------------------- ----------------------- */
+  static getActorStats() {
+    if (foundry.utils.isNewerVersion(game.version, "11")) {
+      return foundry.utils.duplicate(game.model.Actor.character.statistics)
+    } else {
+      return foundry.utils.duplicate(game.system.template.Actor.templates.core.statistics)
+    }
+  }
+
+  /*--------------------- ----------------------- */
   static upperFirst(text) {
     if (typeof text !== 'string') return text
     return text.charAt(0).toUpperCase() + text.slice(1)
@@ -84,15 +93,15 @@ export class WarheroUtility {
 
   /*-------------------------------------------- */
   static getSkills() {
-    return duplicate(this.skills)
+    return foundry.utils.duplicate(this.skills)
   }
   /*-------------------------------------------- */
   static getWeaponSkills() {
-    return duplicate(this.weaponSkills)
+    return foundry.utils.duplicate(this.weaponSkills)
   }
   /*-------------------------------------------- */
   static getShieldSkills() {
-    return duplicate(this.shieldSkills)
+    return foundry.utils.duplicate(this.shieldSkills)
   }
 
   /* -------------------------------------------- */
@@ -299,7 +308,7 @@ export class WarheroUtility {
 
     let id = rollData.rollId
     let oldRollData = this.rollDataStore[id] || {}
-    let newRollData = mergeObject(oldRollData, rollData)
+    let newRollData = foundry.utils.mergeObject(oldRollData, rollData)
     this.rollDataStore[id] = newRollData
   }
   /* -------------------------------------------- */
@@ -523,7 +532,7 @@ export class WarheroUtility {
     let diceFormula = "1d12+" + rollData.stat.value
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
-      myRoll = new Roll(diceFormula).roll({ async: false })
+      myRoll = await new Roll(diceFormula).roll()
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
     }
     rollData.roll = myRoll
@@ -571,7 +580,7 @@ export class WarheroUtility {
       } else {
         formula = (rollData.is2hands) ? rollData.weapon.damageFormula2Hands : rollData.weapon.damageFormula
       }
-      let myRoll = new Roll(formula + "+" + rollData.bonusMalus, actor.system).roll({ async: false })
+      let myRoll = await new Roll(formula + "+" + rollData.bonusMalus, actor.system).roll()
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
       rollData.roll = myRoll
       rollData.diceFormula = myRoll.formula
@@ -606,7 +615,7 @@ export class WarheroUtility {
     console.log("Roll formula", diceFormula)
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
-      myRoll = new Roll(diceFormula, actor.system).roll({ async: false })
+      myRoll = await new Roll(diceFormula, actor.system).roll()
       await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
     }
     rollData.roll = myRoll
@@ -679,7 +688,7 @@ export class WarheroUtility {
 
   /* -------------------------------------------- */
   static blindMessageToGM(chatOptions) {
-    let chatGM = duplicate(chatOptions);
+    let chatGM = foundry.utils.duplicate(chatOptions);
     chatGM.whisper = this.getUsers(user => user.isGM);
     chatGM.content = "Blinde message of " + game.user.name + "<br>" + chatOptions.content;
     console.log("blindMessageToGM", chatGM);
@@ -740,12 +749,13 @@ export class WarheroUtility {
   /* -------------------------------------------- */
   static getBasicRollData() {
     let rollData = {
-      rollId: randomID(16),
+      rollId: foundry.utils.randomID(16),
       rollMode: game.settings.get("core", "rollMode"),
       advantage: "none",
       bonusMalus: 0,
       powerLevel: "1",
-      hasBM: true
+      hasBM: true,
+      config: game.systemm.warhero.config
     }
     WarheroUtility.updateWithTarget(rollData)
     return rollData

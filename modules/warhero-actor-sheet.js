@@ -11,7 +11,7 @@ export class WarheroActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["fvtt-warhero", "sheet", "actor"],
       template: "systems/fvtt-warhero/templates/actor-sheet.html",
       width: 720,
@@ -29,7 +29,7 @@ export class WarheroActorSheet extends ActorSheet {
     this.actor.computeDRTotal()
     this.actor.computeParryBonusTotal()
     this.actor.computeBonusLanguages()
-    const objectData = duplicate(this.object.system)
+    const objectData = foundry.utils.duplicate(this.object.system)
     let race = this.actor.getRace()
 
     let formData = {
@@ -47,29 +47,30 @@ export class WarheroActorSheet extends ActorSheet {
       raceSkills: this.actor.getRaceSkills( ),
       classSkills: this.actor.getClassSkills( ),
       languages: this.actor.getLanguages( ),
-      weapons: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getWeapons()) ),
-      conditions: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getConditions()) ),
-      armors: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getArmors())),
-      shields: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getShields())),
-      equippedWeapons: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getEquippedWeapons())),
-      equippedArmors: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getEquippedArmors())),
-      equippedShields: this.actor.checkAndPrepareEquipments( duplicate(this.actor.getEquippedShields())),
+      weapons: this.actor.checkAndPrepareEquipments( foundry.utils.duplicate(this.actor.getWeapons()) ),
+      conditions: this.actor.checkAndPrepareEquipments( foundry.utils.duplicate(this.actor.getConditions()) ),
+      armors: this.actor.checkAndPrepareEquipments( foundry.utils.duplicate(this.actor.getArmors())),
+      shields: this.actor.checkAndPrepareEquipments( foundry.utils.duplicate(this.actor.getShields())),
+      equippedWeapons: this.actor.checkAndPrepareEquipments( foundry.utils.duplicate(this.actor.getEquippedWeapons())),
+      equippedArmors: this.actor.checkAndPrepareEquipments( foundry.utils.duplicate(this.actor.getEquippedArmors())),
+      equippedShields: this.actor.checkAndPrepareEquipments( foundry.utils.duplicate(this.actor.getEquippedShields())),
       powers: this.actor.sortPowers(),
       allItems: this.actor.getAllItems(),
-      subActors: duplicate(this.actor.getSubActors()),
+      subActors: foundry.utils.duplicate(this.actor.getSubActors()),
       competency: this.actor.getCompetency(),
-      race: duplicate(race),
+      race: foundry.utils.duplicate(race),
       mainClass: this.actor.getMainClass(),
       secondaryClass: this.actor.getSecondaryClass(),
       totalMoney: this.actor.computeTotalMoney(),
-      equipments: duplicate(this.actor.getEquipmentsOnly()),
-      //moneys: duplicate(this.actor.getMoneys()),
+      equipments: foundry.utils.duplicate(this.actor.getEquipmentsOnly()),
+      //moneys: foundry.utils.duplicate(this.actor.getMoneys()),
       description: await TextEditor.enrichHTML(this.object.system.biodata.description, {async: true}),
       notes: await TextEditor.enrichHTML(this.object.system.biodata.notes, {async: true}),
       options: this.options,
       owner: this.document.isOwner,
       editScore: this.options.editScore,
-      isGM: game.user.isGM
+      isGM: game.user.isGM,
+      config: game.system.warhero.config
     }    
     if (this.actor.type == "party") {
       formData.partySlots = this.actor.buildPartySlots()

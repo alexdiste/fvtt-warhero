@@ -22,11 +22,7 @@
         </li>  
       <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.slotlocation"}}</label>
         <select class="item-field-label-long " type="text" name="system.slotlocation" value="{{system.slotlocation}}" data-dtype="String">
-          {{#select system.slotlocation}}
-            {{#each config.slotNames as |type key|}}
-              <option value="{{key}}">{{localize type.label}}</option>
-            {{/each}}
-          {{/select}}
+          {{selectOptions config.slotNames selected=system.slotlocation localize=true labelAttr="label"}}
         </select> 
       </li>
     </ul>
