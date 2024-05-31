@@ -1,8 +1,5 @@
-2024/05/28-08:02:46.208569 7f31a38006c0 Recovering log #2948
-2024/05/28-08:02:46.219036 7f31a38006c0 Delete type=3 #2946
-2024/05/28-08:02:46.219092 7f31a38006c0 Delete type=0 #2948
-2024/05/28-08:27:03.484320 7f31a28006c0 Level-0 table #2954: started
-2024/05/28-08:27:03.484353 7f31a28006c0 Level-0 table #2954: 0 bytes OK
-2024/05/28-08:27:03.491788 7f31a28006c0 Delete type=0 #2952
-2024/05/28-08:27:03.491958 7f31a28006c0 Manual compaction at level-0 from '!items!0tmUpPJeFZZaMBY5' @ 72057594037927935 : 1 .. '!items!zxpYYryJcNlhxOLa' @ 0 : 0; will stop at (end)
-2024/05/28-08:27:03.491986 7f31a28006c0 Manual compaction at level-1 from '!items!0tmUpPJeFZZaMBY5' @ 72057594037927935 : 1 .. '!items!zxpYYryJcNlhxOLa' @ 0 : 0; will stop at (end)
+2024/05/29-10:06:20.559 1425c Log #2957: 0 ops saved to Table #2958 OK
+2024/05/29-10:06:20.559 1425c Archiving C:\Users\alex_\foundrydata\Data\systems\fvtt-warhero\packs\poteri-speciali/002957.log: OK
+2024/05/29-10:06:20.559 1425c Table #2950: 46 entries OK
+2024/05/29-10:06:20.559 1425c Archiving C:\Users\alex_\foundrydata\Data\systems\fvtt-warhero\packs\poteri-speciali/MANIFEST-002955: OK
+2024/05/29-10:06:20.569 1425c **** Repaired leveldb C:\Users\alex_\foundrydata\Data\systems\fvtt-warhero\packs\poteri-speciali; recovered 1 files; 20208 bytes. Some data may have been lost. ****
