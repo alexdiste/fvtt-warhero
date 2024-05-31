@@ -2,6 +2,7 @@
   "Actor": {
     "types": [
       "character",
+      "npc",
       "monster",
       "party"
     ],
@@ -229,6 +230,10 @@
             "value": 0
           }
         }
+      },
+      "npccore": {
+        "npctype": "",
+        "description": ""
       }
     },
     "party": {
@@ -237,6 +242,12 @@
       ]
     },
     "character": {
+      "templates": [
+        "biodata",
+        "core"
+      ]
+    },
+    "npc": {
       "templates": [
         "biodata",
         "core"
