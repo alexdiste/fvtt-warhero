@@ -20,20 +20,28 @@
             <div class="ability-item">
               <ul>
                 <li class="item flexrow list-item " data-item-id="{{race._id}}">
-                  <label class="item-field-label-medium">Race</label>
+                  <label class="item-field-label-medium">{{localize "WH.ui.race"}}</label>
+                  {{#if race}}
                   <a class="item-edit"><img class="sheet-competence-img" src="{{race.img}}"></a>
                   <input type="text" class="item-field-label-medium" disabled value="{{race.name}}" data-dtype="String" />
                   <div class="item-controls item-controls-fixed">
                     <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
                   </div>  
+                  {{else}}
+                    <a class="item-edit"><img class="sheet-competence-img" src="icons/svg/mystery-man.svg"></a>
+                  {{/if}}
                 </li>  
-                <li class="item flexrow list-item" data-item-id="{{class._id}}">
-                  <label class="item-field-label-medium">Class</label>
-                  <a class="item-edit"><img class="sheet-competence-img" src="{{class.img}}"></a>
-                  <input type="text" class="item-field-label-medium" disabled value="{{class.name}}" data-dtype="String" />
+                <li class="item flexrow list-item " data-item-id="{{mainClass._id}}">
+                  <label class="item-field-label-medium">{{localize "WH.ui.class"}}</label>
+                  {{#if mainClass}}
+                  <a class="item-edit"><img class="sheet-competence-img" src="{{mainClass.img}}"></a>
+                  <input type="text" class="item-field-label-medium" disabled value="{{mainClass.name}}" data-dtype="String" />
                   <div class="item-controls item-controls-fixed">
                     <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
-                  </div>  
+                  </div>
+                  {{else}}
+                    <a class="item-edit"><img class="sheet-competence-img" src="icons/svg/mystery-man.svg"></a>
+                  {{/if}}
                 </li>  
                 <li class="item flexrow list-item" >
                   <label class="item-field-label-medium">Religion</label>
