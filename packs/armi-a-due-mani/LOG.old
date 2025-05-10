@@ -1,3 +1,7 @@
-2025/04/30-08:13:19.875 15cc Recovering log #3404
-2025/04/30-08:13:19.881 15cc Delete type=0 #3404
-2025/04/30-08:13:19.881 15cc Delete type=3 #3402
+2025/05/10-06:50:49.878 7980 Recovering log #3444
+2025/05/10-06:50:49.885 7980 Delete type=0 #3444
+2025/05/10-06:50:49.885 7980 Delete type=3 #3442
+2025/05/10-06:51:31.359 856c Level-0 table #3449: started
+2025/05/10-06:51:31.359 856c Level-0 table #3449: 0 bytes OK
+2025/05/10-06:51:31.362 856c Delete type=0 #3447
+2025/05/10-06:51:31.373 856c Manual compaction at level-0 from '!items!LjW4PWE1dVLkLnXR' @ 72057594037927935 : 1 .. '!items!zP9ZYDG483ikrny1' @ 0 : 0; will stop at (end)
