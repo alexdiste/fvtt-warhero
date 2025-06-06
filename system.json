@@ -2,13 +2,13 @@
   "id": "fvtt-warhero",
   "title": "Warhero RPG",
   "description": "Warhero RPG system for FoundryVTT",
-  "version": "13.0.5",
+  "version": "13.0.8",
   "compatibility": {
     "minimum": "11",
-    "verified": "13.344"
+    "verified": "13.345"
   },
   "manifest": "https://raw.githubusercontent.com/alexdiste/fvtt-warhero/master/system.json",
-  "download": "https://github.com/alexdiste/fvtt-warhero/raw/master/fvtt-13-0-5.zip",
+  "download": "https://github.com/alexdiste/fvtt-warhero/raw/master/fvtt-13-0-8.zip",
   "authors": [
     {
       "name": "AlexDiste"
@@ -39,7 +39,7 @@
   "license": "LICENSE.txt",
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.mana",
-  "socket": true, 
+  "socket": true,
   "packs": [
     {
       "label": "manuale",
@@ -502,18 +502,6 @@
       "type": "Item",
       "name": "azioni",
       "path": "packs/azioni",
-      "system": "fvtt-warhero",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "label": "macro",
-      "type": "Macro",
-      "name": "macro",
-      "path": "packs/macro",
       "system": "fvtt-warhero",
       "flags": {},
       "ownership": {

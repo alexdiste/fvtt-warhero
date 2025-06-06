@@ -2,8 +2,7 @@
   "TYPES": {
     "Actor" : {
       "character": "PG",
-      "npc": "PNG",
-      "monster": "Mostro"
+	  "party": "Gruppo"
     },
     "Item": {
       "weapon": "Arma",
@@ -22,7 +21,7 @@
       "trap": "Trappola",
       "classitem": "Oggetto di classe",
       "competency": "Competenza"
-    } 
+    }
   },
   "WH.conf.short": "Corte",
   "WH.conf.long": "Lunghe",
@@ -31,7 +30,7 @@
   "WH.conf.throwing": "Da Lancio",
   "WH.conf.lightarmor" : "Leggera",
   "WH.conf.mediumarmor": "Media",
-  "WH.conf.heavyarmor": "Pesante", 
+  "WH.conf.heavyarmor": "Pesante",
   "WH.conf.lightshield": "Leggero",
   "WH.conf.mediumshield": "Medio",
   "WH.conf.towershield": "Torre",
@@ -70,7 +69,7 @@
   "WH.conf.yes": "Identificato",
   "WH.conf.no": "Non identificato",
   "WH.conf.notapplicable": "Non magico",
-  "WH.conf.undefined": "Non applicabile",  
+  "WH.conf.undefined": "Non applicabile",
   "WH.ui.level": "Livello",
   "WH.ui.notes": "Note",
 
@@ -100,7 +99,7 @@
   "WH.ui.MovementSwim": "Movimento (Nuoto)",
   "WH.ui.MovementFly": "Movimento (Volare)",
   "WH.ui.power": "Potere",
-  
+
   "WH.ui.Qty": "Quantitá",
   "WH.ui.maxslots": "Max slots",
   "WH.ui.slotsused": "Slots usati",
@@ -129,7 +128,7 @@
   "WH.ui.competency": "Competenze",
   "WH.ui.conditions": "Condizione",
   "WH.ui.effect": "Effetto",
-  
+
   "WH.ui.main": "Principale",
   "WH.ui.combat": "Combattimento",
   "WH.ui.skillstab": "Abilità ed effetti",
@@ -168,9 +167,9 @@
   "WH.ui.application": "Tipo di applicazione",
   "WH.ui.savesdc": "CD TS",
   "WH.ui.savetype": "Tipo del tiro salvezza",
-  "WH.ui.Touch": "Tocco", 
-  "WH.ui.Ingestion": "Ingestione", 
-  "WH.ui.Weapon": "Arma", 
+  "WH.ui.Touch": "Tocco",
+  "WH.ui.Ingestion": "Ingestione",
+  "WH.ui.Weapon": "Arma",
   "WH.ui.halfdamage": "Dimezza",
   "WH.ui.ignore": "Nega",
   "WH.ui.dcfind": "CD per trovare",
@@ -183,14 +182,14 @@
   "WH.ui.poison": "Veleno",
   "WH.ui.disease": "Malattia",
   "WH.ui.curse": "Maledizione",
-  "WH.ui.permanent": "Permanente", 
-  "WH.ui.temporary": "Temporanea", 
+  "WH.ui.permanent": "Permanente",
+  "WH.ui.temporary": "Temporanea",
   "WH.ui.begin": "Inizio",
   "WH.ui.specialduration": "Durata speciale",
-  "WH.ui.infinite": "Infinita", 
+  "WH.ui.infinite": "Infinita",
   "WH.uiwithineor": "Entro la fine del round",
-  "WH.ui.beginr": "All' inizio del prossimo round", 
-  "WH.ui.nextr": "Prossimo round", 
+  "WH.ui.beginr": "All' inizio del prossimo round",
+  "WH.ui.nextr": "Prossimo round",
   "WH.ui.nextcombat": "Al prossimo combattimento",
   "WH.ui.untilendcombat": "Fino alla fine del combattimento",
   "WH.ui.beginturn": "Inizio del turno",

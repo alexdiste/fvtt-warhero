@@ -10,16 +10,17 @@ export class WarheroUtility {
 
   /* -------------------------------------------- */
   static async init() {
-    Hooks.on('renderChatLog', (log, html, data) => WarheroUtility.chatListeners(html));
+    //Hooks.on('renderChatLog', (log, html, data) => WarheroUtility.chatListeners(html));
     /*Hooks.on("dropCanvasData", (canvas, data) => {
       WarheroUtility.dropItemOnToken(canvas, data)
-    });*/
+    });
+	*/
 
     this.rollDataStore = {}
     this.defenderStore = {}
 
     WarheroCommands.init();
-    
+
     Handlebars.registerHelper('concat', function () {
       var outStr = '';
       for (var arg in arguments) {
@@ -120,78 +121,7 @@ export class WarheroUtility {
     return compendiumData.filter(filter)
   }
 
-  /* -------------------------------------------- */
-  static isArmorLight(armor) {
-    if (armor && (armor.system.armortype.includes("light") || armor.system.armortype.includes("clothes"))) {
-      return true
-    }
-    return false
-  }
-  /* -------------------------------------------- */
-  static isWeaponPenetrating(weapon) {
-    if (weapon && weapon.system.qualities.toLowerCase().includes("penetrating")) {
-      return true
-    }
-    return false
-  }
-  /* -------------------------------------------- */
-  static isWeaponLight(weapon) {
-    if (weapon && weapon.system.qualities.toLowerCase().includes("light")) {
-      return true
-    }
-    return false
-  }
-  /* -------------------------------------------- */
-  static isWeaponHeavy(weapon) {
-    if (weapon && weapon.system.qualities.toLowerCase().includes("heavy")) {
-      return true
-    }
-    return false
-  }
-  /* -------------------------------------------- */
-  static isWeaponHack(weapon) {
-    if (weapon && weapon.system.qualities.toLowerCase().includes("hack")) {
-      return true
-    }
-    return false
-  }
-  /* -------------------------------------------- */
-  static isWeaponUndamaging(weapon) {
-    if (weapon && weapon.system.qualities.toLowerCase().includes("undamaging")) {
-      return true
-    }
-    return false
-  }
-  /* -------------------------------------------- */
-  static isWeaponDangerous(weapon) {
-    if (weapon && weapon.system.qualities.toLowerCase().includes("dangerous")) {
-      return true
-    }
-    return false
-  }
-  /* -------------------------------------------- */
-  static isWeaponDeadly(weapon) {
-    if (weapon && weapon.system.qualities.toLowerCase().includes("deadly")) {
-      return true
-    }
-    return false
-  }
-  static getWeaponRange(weapon) {
-    if (weapon && weapon.system.isranged) {
-      let rangeValue = weapon.system.range.replace(/[^0-9]/g, '')
-      return Number(rangeValue)
-    }
-    return false
-  }
-  static getWeaponMaxRange(weapon) {
-    if (weapon && weapon.system.isranged) {
-      let rangeValue = weapon.system.maxrange.replace(/[^0-9]/g, '')
-      return Number(rangeValue)
-    }
-    return false
-  }
-
-  /* -------------------------------------------- */
+  /* --------------------------------------------
   static async getRollTableFromDiceColor(diceColor, displayChat = true) {
     let rollTableName = __color2RollTable[diceColor]
     if (rollTableName) {
@@ -203,6 +133,7 @@ export class WarheroUtility {
       return draw.results.length > 0 ? draw.results[0] : undefined
     }
   }
+  */
   /* -------------------------------------------- */
   static getSizeDice(sizeValue) {
     return __size2Dice[sizeValue]
@@ -220,14 +151,16 @@ export class WarheroUtility {
     return draw.results.length > 0 ? draw.results[0] : undefined
   }
 
-  /* -------------------------------------------- */
+
+  /* --------------------------------------------
   static async chatListeners(html) {
 
     html.on("click", '.view-item-from-chat', event => {
       game.system.crucible.creator.openItemView(event)
     })
 
-  }
+  }*/
+
 
   /* -------------------------------------------- */
   static async preloadHandlebarsTemplates() {
@@ -315,7 +248,7 @@ export class WarheroUtility {
   static saveRollData(rollData) {
     game.socket.emit("system.warhero-rpg", {
       name: "msg_update_roll", data: rollData
-    }); // Notify all other clients of the roll    
+    }); // Notify all other clients of the roll
     this.updateRollData(rollData)
   }
 
@@ -338,7 +271,7 @@ export class WarheroUtility {
     }
   }
 
-  /* -------------------------------------------- */
+  /* --------------------------------------------
   static getSuccessResult(rollData) {
     if (rollData.sumSuccess <= -3) {
       if (rollData.attackRollData.weapon.system.isranged) {
@@ -374,8 +307,9 @@ export class WarheroUtility {
       return { result: "hit", defenderDamage: "3", critical_2: true, entangle: true, knockback: true, penetrating_impale: true, hack_armors: true }
     }
   }
+  */
 
-  /* -------------------------------------------- */
+  /* --------------------------------------------
   static async getFumble(weapon) {
     const pack = game.packs.get("fvtt-warhero.rolltables")
     const index = await pack.getIndex()
@@ -391,8 +325,10 @@ export class WarheroUtility {
     const draw = await table.draw({ displayChat: false, rollMode: "gmroll" })
     return draw.results.length > 0 ? draw.results[0] : undefined
   }
+  */
 
-  /* -------------------------------------------- */
+
+  /* --------------------------------------------
   static async processSuccessResult(rollData) {
     if (game.user.isGM) { // Only GM process this
       let result = rollData.successDetails
@@ -421,8 +357,9 @@ export class WarheroUtility {
       console.log("Results processed", rollData)
     }
   }
+  */
 
-  /* -------------------------------------------- */
+  /* --------------------------------------------
   static async processAttackDefense(rollData) {
     if (rollData.attackRollData) {
       //console.log("Defender token, ", rollData, rollData.defenderTokenId)
@@ -445,6 +382,7 @@ export class WarheroUtility {
       }
     }
   }
+  */
 
   /* -------------------------------------------- */
   static async onSocketMesssage(msg) {
@@ -512,12 +450,13 @@ export class WarheroUtility {
     }
   }
 
-  /* -------------------------------------------- */
+  /* --------------------------------------------
   static getDiceFromCover(cover) {
     if (cover == "cover50") return 1
     return 0
   }
-  /* -------------------------------------------- */
+  */
+  /* --------------------------------------------
   static getDiceFromSituational(cover) {
     if (cover == "prone") return 1
     if (cover == "dodge") return 1
@@ -525,6 +464,7 @@ export class WarheroUtility {
     if (cover == "engaged") return 1
     return 0
   }
+  */
   /* -------------------------------------------- */
   static async rollParry(rollData) {
     let actor = game.actors.get(rollData.actorId)
@@ -801,5 +741,4 @@ export class WarheroUtility {
     });
     d.render(true);
   }
-
 }

@@ -53,5 +53,4 @@ export class WarheroPartySheet extends WarheroActorSheet {
     console.log("PARTY : ", formData, this.object);
     return formData;
   }
-
 }

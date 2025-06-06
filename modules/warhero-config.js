@@ -117,15 +117,6 @@ export const WARHERO_CONFIG = {
     large: "WH.ui.large"
   }, 
 
-  monsterSizeOptions: {
-    "1": "Tiny",
-    "2": "Small",
-    "3": "Medium",
-    "4": "Large",
-    "5": "Huge",
-    "6": "Gargantuan"
-  }, 
-
   statValueOptions: {
     "0": "0",
     "1": "1",

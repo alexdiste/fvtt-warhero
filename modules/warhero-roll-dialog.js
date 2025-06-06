@@ -66,8 +66,6 @@ export class WarheroRollDialog extends Dialog {
     })
     html.find('#usemWeaponMalus').change((event) => {
       this.rollData.usemWeaponMalus = event.currentTarget.checked
-    })
-    
-    
+    })    
   }
 }

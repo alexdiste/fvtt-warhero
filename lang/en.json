@@ -2,8 +2,6 @@
   "TYPES": {
     "Actor": {
       "character": "Character",
-      "npc": "NPC",
-      "monster": "Monster",
       "party": "Party"
     },
     "Item": {
@@ -22,7 +20,7 @@
       "poison": "Poison",
       "trap": "Trap",
       "classitem": "Class item",
-      "competency": "Competency"  
+      "competency": "Competency"
     }
   },
   "WH.conf.short": "Short",
@@ -32,7 +30,7 @@
   "WH.conf.throwing": "Throwing",
   "WH.conf.lightarmor" : "Light",
   "WH.conf.mediumarmor": "Medium",
-  "WH.conf.heavyarmor": "Heavy", 
+  "WH.conf.heavyarmor": "Heavy",
   "WH.conf.lightshield": "Light",
   "WH.conf.mediumshield": "Medium",
   "WH.conf.towershield": "Tower",
@@ -102,7 +100,7 @@
   "WH.ui.MovementSwim": "Movement (Swim)",
   "WH.ui.MovementFly": "Movement (Fly)",
   "WH.ui.power": "Power",
-  
+
   "WH.ui.Qty": "Qty",
   "WH.ui.maxslots": "Max slots",
   "WH.ui.slotsused": "Slots used",
@@ -131,7 +129,7 @@
   "WH.ui.competency": "Competency",
   "WH.ui.conditions": "Conditions",
   "WH.ui.effect": "Effect",
-  
+
   "WH.ui.main": "Main",
   "WH.ui.combat": "Combat",
   "WH.ui.skillstab": "Skills&Effects",
@@ -170,9 +168,9 @@
   "WH.ui.application": "Application",
   "WH.ui.savesdc": "Saves DC",
   "WH.ui.savetype": "Save type",
-  "WH.ui.Touch": "Touch", 
-  "WH.ui.Ingestion": "Ingestion", 
-  "WH.ui.Weapon": "Weapon", 
+  "WH.ui.Touch": "Touch",
+  "WH.ui.Ingestion": "Ingestion",
+  "WH.ui.Weapon": "Weapon",
   "WH.ui.halfdamage": "Half-damage",
   "WH.ui.ignore": "Ignore effect",
   "WH.ui.dcfind": "DC to find",
@@ -185,14 +183,14 @@
   "WH.ui.poison": "Poison",
   "WH.ui.disease": "Disease",
   "WH.ui.curse": "Curse",
-  "WH.ui.permanent": "Permanent", 
-  "WH.ui.temporary": "Temporary", 
+  "WH.ui.permanent": "Permanent",
+  "WH.ui.temporary": "Temporary",
   "WH.ui.begin": "Begin",
   "WH.ui.specialduration": "Special duration",
-  "WH.ui.infinite": "Infinite", 
+  "WH.ui.infinite": "Infinite",
   "WH.uiwithineor": "Within end of round",
-  "WH.ui.beginr": "Beginning of round", 
-  "WH.ui.nextr": "Next round", 
+  "WH.ui.beginr": "Beginning of round",
+  "WH.ui.nextr": "Next round",
   "WH.ui.nextcombat": "Next combat",
   "WH.ui.untilendcombat": "Until end of combat",
   "WH.ui.beginturn": "Beginning of turn",

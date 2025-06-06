@@ -26,5 +26,4 @@ export class WarheroCombat extends Combat {
       await game.combat.previousTurn()
     }
   }
-
 }

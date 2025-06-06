@@ -140,5 +140,4 @@ export class WarheroCommands {
       ui.notifications.warn("/rsave syntax error : syntax is /rsave reflex, /rsave fortitude or /rsave willpower")
     }
   }
-
 }

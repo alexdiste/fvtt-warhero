@@ -1,6 +1,6 @@
 /**
  * Warhero system
- * Author: Uberwald
+ * Author: AlexDiste
  * Software License: Prop
  */
 
@@ -12,8 +12,6 @@ import { WarheroActor } from "./warhero-actor.js";
 import { WarheroItemSheet } from "./warhero-item-sheet.js";
 import { WarheroActorSheet } from "./warhero-actor-sheet.js";
 import { WarheroPartySheet } from "./warhero-party-sheet.js";
-import { WarheroNPCSheet } from "./warhero-npc-sheet.js";
-import { WarheroMonsterSheet } from "./warhero-monster-sheet.js";
 import { WarheroUtility } from "./warhero-utility.js";
 import { WarheroCombat } from "./warhero-combat.js";
 import { WarheroItem } from "./warhero-item.js";
@@ -43,7 +41,7 @@ Hooks.once("init", async function () {
   /* -------------------------------------------- */
   // Set an initiative formula for the system 
   CONFIG.Combat.initiative = {
-    formula: "1d6",
+    formula: "1d20",
     decimals: 1
   };
 
@@ -62,8 +60,6 @@ Hooks.once("init", async function () {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("fvtt-warhero", WarheroActorSheet, { types: ["character"], makeDefault: true });
-  Actors.registerSheet("fvtt-warhero", WarheroNPCSheet, { types: ["npc"], makeDefault: false });
-  Actors.registerSheet("fvtt-warhero", WarheroMonsterSheet, { types: ["monster"], makeDefault: false });
   Actors.registerSheet("fvtt-warhero", WarheroPartySheet, { types: ["party"], makeDefault: false });
 
   Items.unregisterSheet("core", ItemSheet);
@@ -84,18 +80,3 @@ Hooks.once("ready", function () {
   
   WarheroUtility.ready()
 })
-
-/* -------------------------------------------- */
-/*  Foundry VTT Initialization                  */
-/* -------------------------------------------- */
-/*Hooks.on("chatMessage", (html, content, msg) => {
-  if (content[0] == '/') {
-    let regExp = /(\S+)/g;
-    let commands = content.match(regExp);
-    if (game.system.cruciblerpg.commands.processChatCommand(commands, content, msg)) {
-      return false;
-    }
-  }
-  return true;
-});*/
-

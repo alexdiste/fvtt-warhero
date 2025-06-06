@@ -1,4 +1,3 @@
-
 export class WarheroHotbar {
 
   static async addToHotbar(item, slot) {
@@ -64,5 +63,4 @@ export class WarheroHotbar {
       return actor.rollSkill(item.id)
     }
   }
-
 }

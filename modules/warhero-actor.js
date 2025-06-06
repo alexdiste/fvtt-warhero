@@ -46,8 +46,6 @@ export class WarheroActor extends Actor {
       const skills = await WarheroUtility.loadCompendium("fvtt-warhero.skills");
       data.items = skills.map(i => i.toObject())
     }
-    if (data.type == 'npc') {
-    }
 
     return super.create(data, options);
   }
@@ -865,5 +863,4 @@ export class WarheroActor extends Actor {
     let rollDialog = await WarheroRollDialog.create(this, rollData)
     rollDialog.render(true)
   }
-
 }
