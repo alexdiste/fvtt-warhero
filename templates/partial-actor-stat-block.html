@@ -17,14 +17,14 @@
   {{/if}}
 
   {{#if (eq style "edit")}}
-    <input type="text" class="item-field-label-short " {{#if disabled}}disabled{{/if}} name="system.{{path}}.{{key}}.value" value="{{stat.value}}" data-dtype="Number"/>
+    <input type="text" class="item-field-label-short" {{#if disabled}}disabled{{/if}} name="system.{{path}}.{{key}}.value" value="{{stat.value}}" data-dtype="Number"/>
     {{#if hasmax}}
-      <input type="text" class="item-field-label-short " name="system.{{path}}.{{key}}.max" value="{{stat.max}}" data-dtype="Number"/>
+      <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.max" value="{{stat.max}}" data-dtype="Number"/>
     {{/if}}
     {{#if hasuse}}       
-      <input type="text" class="item-field-label-short " name="system.{{path}}.{{key}}.nbuse" value="{{stat.nbuse}}" data-dtype="Number"/>
-      <label class="item-field-label-2rem">&nbsp;/&nbsp;</label>
-      <input type="text" class="item-field-label-short " name="system.{{path}}.{{key}}.maxuse" value="{{stat.maxuse}}" data-dtype="Number"/>
+      <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.nbuse" value="{{stat.nbuse}}" data-dtype="Number"/>
+      <label class="item-field-label-2rem">/</label>
+      <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.maxuse" value="{{stat.maxuse}}" data-dtype="Number"/>
     {{/if}}
   
   {{/if}}
@@ -38,7 +38,7 @@
         </a>
       </h4>
     </span>
-    <input type="text" class="item-field-label-short " name="system.{{path}}.{{key}}.save" value="{{stat.save}}" data-dtype="Number"/>
+    <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.save" value="{{stat.save}}" data-dtype="Number"/>
   {{/if}}
 
   {{#if islevel}}
@@ -46,7 +46,7 @@
     <h4 class="item-field-label-short">{{localize "WH.ui.level"}}
     </h4>
   </span>
-    <input type="text" disabled class="item-field-label-short " value="{{stat.level}}" data-dtype="Number"/>
+    <input type="text" disabled class="item-field-label-short" value="{{stat.level}}" data-dtype="Number"/>
   {{/if}}
 
 </li>

@@ -1,7 +1,6 @@
 /**
  * Warhero system
  * Author: AlexDiste
- * Software License: Prop
  */
 
 /* -------------------------------------------- */
@@ -26,14 +25,14 @@ import { WARHERO_CONFIG } from "./warhero-config.js"
 /************************************************************************************/
 Hooks.once("init", async function () {
 
-  console.log(`Initializing Warhero RPG`);
+  console.log(`Initializing Warhero RPG`);  
   
   game.system.warhero = {
     WarheroHotbar,
     WarheroCommands,
     config: WARHERO_CONFIG
   }
-
+  
   /* -------------------------------------------- */
   // preload handlebars templates
   WarheroUtility.preloadHandlebarsTemplates();
