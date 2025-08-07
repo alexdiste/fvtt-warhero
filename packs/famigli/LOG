@@ -1,7 +1,3 @@
-2025/06/27-07:37:06.457 48f8 Recovering log #3712
-2025/06/27-07:37:06.464 48f8 Delete type=0 #3712
-2025/06/27-07:37:06.464 48f8 Delete type=3 #3711
-2025/06/27-07:37:07.947 4974 Level-0 table #3716: started
-2025/06/27-07:37:07.947 4974 Level-0 table #3716: 0 bytes OK
-2025/06/27-07:37:07.951 4974 Delete type=0 #3714
-2025/06/27-07:37:07.951 4974 Manual compaction at level-0 from '!actors!6mrm62EwfnsevPlY' @ 72057594037927935 : 1 .. '!actors.items!bZL2Q5RacoAlVLGN.tS1qcOBDPN1UAOoq' @ 0 : 0; will stop at (end)
+2025/08/07-06:55:45.100 4d70 Recovering log #3748
+2025/08/07-06:55:45.113 4d70 Delete type=0 #3748
+2025/08/07-06:55:45.113 4d70 Delete type=3 #3747
