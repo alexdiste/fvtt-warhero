@@ -1,3 +1,4 @@
+**WARHERO**
 ENGLISH
 The Warhero rulebook it belongs to Tanzini Francesco and can be found here https://www.warhero.it/.
 It is under Creative Common non derivative work license https://creativecommons.org/licenses/by-nd/3.0/it/.
