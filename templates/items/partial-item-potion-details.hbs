@@ -1,0 +1,23 @@
+<section class="tab equipment-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <ul>
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.alchemycost"}}</label>
+      <input type="text" class="item-field-label-medium " name="system.alchemycost" value="{{system.alchemycost}}"
+        data-dtype="String" />
+    </li>
+
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.preparetime"}}</label>
+      <input type="text" class="item-field-label-medium " name="system.preparetime" value="{{system.preparetime}}"
+        data-dtype="String" />
+    </li>
+
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.durationrounds"}}</label>
+      <input type="text" class="item-field-label-medium " name="system.durationround" value="{{system.durationround}}"
+        data-dtype="Number" />
+    </li>
+
+    {{> systems/fvtt-warhero/templates/items/partial-item-common-equipment.hbs}}
+
+  </ul>
+
+
+</section>

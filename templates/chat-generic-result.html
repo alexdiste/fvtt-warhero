@@ -1,0 +1,57 @@
+<div class="warhero-chat-message-header">
+  {{#if actorImg}}
+  <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
+  {{/if}}
+  <h4 class="chat-actor-name">{{alias}}</h4>
+</div>
+
+  <div class=warhero-chat-message-body>
+    {{#if img}}
+      <img class="chat-icon" src="{{img}}" alt="{{name}}" />
+    {{/if}}
+    <ul>
+      {{#if (eq mode "save")}}
+      <li>{{localize "WH.chat.save"}} {{localize stat.label}} : {{stat.save}}</li>
+      {{else}}
+        {{#if stat}}
+        <li>{{localize stat.label}} : {{stat.value}}</li>
+        {{/if}}
+      {{/if}}
+
+      {{#if weapon}}
+      <li>{{localize "WH.ui.weapon"}} : {{weapon.name}}</li>
+      {{/if}}
+      {{#if hasBM}}
+      <li>Bonus/Malus : {{bonusMalus}}</li>
+      {{/if}}
+
+      {{#if usemWeaponMalus}}
+      <li>{{localize "WH.chat.mweaponmalus"}}: {{mWeaponMalus}}</li>
+      {{/if}}
+
+      {{#if diceFormula}}
+        <li>Formula : {{diceFormula}}</li>
+        {{#if isCriticalSuccess}}
+          <li><span class="crit-success">{{localize "WH.chat.diceresult"}} : {{diceResult}}</span></li>
+        {{else}}
+          {{#if isCriticalFailure}}
+            <li><span class="crit-failure">{{localize "WH.chat.diceresult"}} : {{diceResult}}</span></li>
+          {{else}}
+            <li>{{localize "WH.chat.diceresult"}} : <span>{{diceResult}}</span></li>
+          {{/if}}
+        {{/if}}
+      {{/if}}
+
+      {{#if power}}
+      <li>{{localize "WH.ui.power"}} : {{power.name}}</li>
+      <li>{{localize "WH.ui.magicschool"}} : {{power.system.magicschool}}</li>
+      <li>{{localize "WH.ui.level"}} : {{power.system.level}}</li>
+      <li>{{{powerText}}}</li>
+      {{else}}
+      <li><strong>{{localize "WH.chat.result"}} : {{roll.total}} </strong></li>
+      {{/if}}
+
+    </ul>
+  </div>
+
+  </div>

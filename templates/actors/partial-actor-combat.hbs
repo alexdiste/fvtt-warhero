@@ -1,0 +1,239 @@
+<section class="tab-content-scrollable tab sheet-body character-{{ tab.id }} {{ tab.cssClass }}" data-tab="{{ tab.id }}"
+  data-group="{{ tab.group }}">
+  {{!-- Combat Tab --}}
+  <div class="">
+
+    <div class="flexcol">
+
+      <div class="grid grid2col">
+        <ul class="stat-list alternate-list">
+          {{#with system.attributes.def as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="def" path="attributes"
+          fieldClass="item-field-label-vlong"}}
+          {{/with}}
+          {{#with system.attributes.ini as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="ini" path="attributes"
+          fieldClass="item-field-label-vlong"}}
+          {{/with}}
+          {{#with system.secondary.meleedamagebonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="meleedamagebonus"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
+          {{#with system.secondary.malusmultiweapon as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="malusmultiweapon"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
+        </ul>
+        <ul class="stat-list alternate-list">
+          {{#with system.attributes.txcm as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="txcm" path="attributes"
+          fieldClass="item-field-label-vlong"}}
+          {{/with}}
+          {{#with system.attributes.txcr as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="txcr" path="attributes"
+          fieldClass="item-field-label-vlong"}}
+          {{/with}}
+          {{#with system.secondary.rangeddamagebonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="rangeddamagebonus"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
+        </ul>
+      </div>
+
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.weapons"}}</label></h3>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.Type"}}</label>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.Damage"}}</label>
+            </span>
+            <div class="item-filler">&nbsp;</div>
+          </li>
+          {{#each equippedWeapons as |weapon key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{weapon._id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
+                class="sheet-competence-img" src="{{weapon.img}}" /></a>
+            <span class="item-name-label-long"><a class="roll-weapon" data-action="roll-weapon"><i
+                  class="fa-solid fa-dice-d20"></i>{{weapon.name}}</a></span>
+
+            <span class="item-field-label-medium">{{localize (concat "WH.conf." weapon.system.weapontype)}}</span>
+
+            {{#if (eq system.weapontype "special")}}
+            <span class="item-field-label-medium"><a class="roll-damage" data-action="roll-damage"><i
+                  class="fa-solid fa-dice-d20"></i>{{weapon.system.damageformula}}</a></span>
+            {{else}}
+            <span class="item-field-label-medium"><a class="roll-damage" data-action="roll-damage"><i
+                  class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula}}</a></span>
+            {{/if}}
+
+            {{#if (eq system.weapontype "polearm")}}
+            <span class="item-field-label-medium"><a class="roll-damage-2hands" data-action="roll-damage-2hands"><i
+                  class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula2Hands}}</a></span>
+            {{/if}}
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                  class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="grid grid2col combat-secondary-values">
+        <ul class="stat-list alternate-list">
+          {{#with system.secondary.parrybonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="parrybonus"
+          path="secondary"
+          fieldClass="item-field-label-vlong"}}
+          {{/with}}
+        </ul>
+        <ul class="stat-list alternate-list">
+          {{#with system.secondary.parrybonustotal as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="parrybonustotal"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
+        </ul>
+      </div>
+
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.shields"}}</label></h3>
+            </span>
+            <span class="item-field-label-short">
+              <label class="short-label">{{localize "WH.ui.Type"}}</label>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.parrybonus"}}</label>
+            </span>
+            <div class="item-filler">&nbsp;</div>
+          </li>
+          {{#each equippedShields as |shield key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{shield._id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
+                class="sheet-competence-img" src="{{shield.img}}" /></a>
+            <span class="item-name-label-long">{{shield.name}}</span>
+
+            <span class="item-field-label-short">{{shield.system.shieldtype}}</span>
+
+            <span class="item-field-label-medium">{{shield.system.parrybonus}}</span>
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                  class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="grid grid2col combat-secondary-values">
+        <ul class="stat-list alternate-list">
+          {{#with system.secondary.drbonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="drbonus"
+          path="secondary"
+          fieldClass="item-field-label-vlong"}}
+          {{/with}}
+        </ul>
+        <ul class="stat-list alternate-list">
+          {{#with system.secondary.drbonustotal as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="drbonustotal"
+          path="secondary"
+          fieldClass="item-field-label-vlong"}}
+          {{/with}}
+        </ul>
+      </div>
+
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.armors"}}</label></h3>
+            </span>
+            <span class="item-field-label-short">
+              <label class="short-label">{{localize "WH.ui.Type"}}</label>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.damagereduction"}}</label>
+            </span>
+            <div class="item-filler">&nbsp;</div>
+
+          </li>
+          {{#each equippedArmors as |armor key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{armor._id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
+                class="sheet-competence-img" src="{{armor.img}}" /></a>
+            <span class="item-name-label-long">{{armor.name}}</span>
+
+            <span class="item-field-label-short">{{armor.system.armortype}}</span>
+
+            <span class="item-field-label-medium">{{armor.system.damagereduction}}</span>
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                  class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.competency"}}</label></h3>
+            </span>
+          </li>
+          {{#each competency.weapons as |cdata key|}}
+          {{#if cdata}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{language._id}}">
+            <span class="item-name-label-long">{{localize "WH.ui.weapons"}} {{localize cdata.label}}</span>
+          </li>
+          {{/if}}
+          {{/each}}
+          {{#each competency.shields as |cdata key|}}
+          {{#if cdata}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{language._id}}">
+            <span class="item-name-label-long">{{localize "WH.ui.shields"}} {{localize cdata.label}}</span>
+          </li>
+          {{/if}}
+          {{/each}}
+          {{#each competency.armors as |cdata key|}}
+          {{#if cdata}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{language._id}}">
+            <span class="item-name-label-long">{{localize "WH.ui.armors"}} {{localize cdata.label}}</span>
+          </li>
+          {{/if}}
+          {{/each}}
+
+          {{#each compentencyItems as |comp key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{comp._id}}">
+            <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+                src="{{comp.img}}" /></a>
+            <span class="item-name-label-long">{{comp.name}}</span>
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,43 @@
+<li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.slotsused"}}</label>
+  <input type="text" class="item-field-label-medium " name="system.slotused" value="{{system.slotused}}"
+    data-dtype="Number" />
+</li>
+<li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.slotlocation"}}</label>
+  <select class="item-field-label-long " type="text" name="system.slotlocation" value="{{system.slotlocation}}"
+    data-dtype="String">
+    {{selectOptions config.slotNames selected=system.slotlocation localize=true labelAttr="label"}}
+  </select>
+</li>
+
+<li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.identified"}}</label>
+  <select class="item-field-label-long " type="text" name="system.isidentified" value="{{system.isidentified}}"
+    data-dtype="String">
+    {{selectOptions config.identifiedState selected=system.isidentified localize=true}}
+  </select>
+</li>
+
+<li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.magiccharge"}}</label>
+  <select class="item-field-label-long " type="text" name="system.magiccharge" value="{{system.magiccharge}}"
+    data-dtype="String">
+    {{selectOptions config.magicCharge selected=system.magiccharge localize=true}}
+  </select>
+</li>
+
+<li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.chargevalue"}}</label>
+  <input type="text" class="item-field-label-medium " name="system.chargevalue" value="{{system.chargevalue}}"
+    data-dtype="Number" />
+</li>
+
+<li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.chargevaluemax"}}</label>
+  <input type="text" class="item-field-label-medium " name="system.chargevaluemax" value="{{system.chargevaluemax}}"
+    data-dtype="Number" />
+</li>
+
+<li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.quantity"}}</label>
+  <input type="text" class="item-field-label-medium " name="system.quantity" value="{{system.quantity}}"
+    data-dtype="Number" />
+</li>
+
+<li class="flexrow"><label class="item-field-label-medium">{{localize "WH.ui.cost"}}</label>
+  <input type="text" class="item-field-label-medium " name="system.cost" value="{{system.cost}}" data-dtype="Number" />
+</li>

@@ -1,0 +1,95 @@
+<section class="fvtt-warhero  sheet-header sheet-header-actor">
+  <div class="header-fields">
+    <h1 class="charname margin-right"><input name="name" type="text" value="{{name}}" placeholder="Name" /></h1>
+    <div class="flexrow">
+      <img class="profile-img" src="{{img}}" data-edit="img" data-action="editImage" data-tooltip="{{actor.name}}"
+        title="{{name}}" />
+      <div class="flexcol">
+
+        <div class="flexrow">
+          <div class="ability-item">
+            <ul>
+              {{#each system.statistics as |stat key|}}
+              {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key=key path="statistics"
+              fieldClass="item-field-label-medium"}}
+              {{/each}}
+            </ul>
+          </div>
+
+          <div class="ability-item">
+            <ul>
+              <li class="item flexrow list-item " data-item-id="{{race._id}}">
+                <label class="item-field-label-medium">{{localize "WH.ui.race"}}</label>
+                {{#if race}}
+                <a class="item-edit" data-action="item-edit"><img class="sheet-competence-img" src="{{race.img}}"></a>
+                <input type="text" class="item-field-label-race" disabled value="{{race.name}}" data-dtype="String" />
+                <div class="item-controls item-controls-fixed">
+                  <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                </div>
+                {{else}}
+                <a class="item-edit" data-action="item-edit" ><img class="sheet-competence-img"
+                    src="systems/fvtt-warhero/images/icons/dwarf-face.svg"></a>
+                {{/if}}
+              </li>
+              <li class="item flexrow list-item " data-item-id="{{mainClass._id}}">
+                <label class="item-field-label-medium">{{localize "WH.ui.class"}}</label>
+                {{#if mainClass}}
+                <a class="item-edit" data-action="item-edit" ><img class="sheet-competence-img" src="{{mainClass.img}}"></a>
+                <input type="text" class="item-field-label-race" disabled value="{{mainClass.name}}"
+                  data-dtype="String" />
+                <div class="item-controls item-controls-fixed">
+                  <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                </div>
+                {{else}}
+                <a class="item-edit" data-action="item-edit" ><img class="sheet-competence-img"
+                    src="systems/fvtt-warhero/images/icons/elf-helmet.svg"></a>
+                {{/if}}
+              </li>
+              <li class="item flexrow list-item " data-item-id="{{secondaryClass._id}}">
+                <label class="item-field-label-medium">{{localize "WH.ui.secondaryclass"}}</label>
+                {{#if secondaryClass}}
+                <a class="item-edit" data-action="item-edit"><img class="sheet-competence-img" src="{{secondaryClass.img}}"></a>
+                <input type="text" class="item-field-label-race" disabled value="{{secondaryClass.name}}"
+                  data-dtype="String" />
+                <div class="item-controls item-controls-fixed">
+                  <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                </div>
+                {{else}}
+                <a class="item-edit" data-action="item-edit" ><img class="sheet-competence-img"
+                    src="systems/fvtt-warhero/images/icons/elf-helmet.svg"></a>
+                {{/if}}
+              </li>
+              <li class="item flexrow list-item">
+                <label class="item-field-label-medium">{{localize "WH.ui.religion"}}</label>
+                <input type="text" class="item-field-label-medium" name="system.biodata.religion"
+                  value="{{system.biodata.religion}}" data-dtype="String" />
+                &nbsp;&nbsp;
+                <label class="item-field-label-short">{{localize "WH.ui.size"}}</label>
+                <select class="item-field-label-short" type="text" name="system.biodata.size"
+                  value="{{system.biodata.size}}" data-dtype="String">
+                  {{selectOptions config.sizeOptions selected=system.biodata.size localize=true}}
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flexrow">
+          {{#each system.attributes as |attr key|}}
+          {{#if attr.isheader}}
+          <div class="flexrow">
+            {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=attr key=key path="attributes"
+            fieldClass="item-field-label-medium"}}
+          </div>
+          {{/if}}
+          {{/each}}
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+</section>

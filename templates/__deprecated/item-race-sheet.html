@@ -1,0 +1,78 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name" /></h1>
+    </div>
+  </header>
+  {{> systems/fvtt-warhero/templates/partial-item-nav.html}}
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    <div class="tab details" data-group="primary" data-tab="description">
+
+      <label class="generic-label">Description</label>
+      <div class="editor item-text-long-line">
+        {{editor description target="system.description" button=true owner=owner editable=editable}}
+      </div>
+    </div>
+
+    <div class="tab details" data-group="primary" data-tab="details">
+      <ul>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.hpprog"}}</label>
+          <select class="item-field-label-long " type="text" name="system.hpprogresion" value="{{system.hpprogresion}}" data-dtype="String">
+            {{selectOptions config.progressionList selected=system.hpprogresion localize=true}}
+          </select> 
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.lan"}}</label>
+          <input type="text" class="item-field-label-long" name="system.languages" value="{{system.languages}}" data-dtype="String"/>
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.attrbonus"}} Lvl 1</label>
+          <select class="item-field-label-long " type="text" name="system.attributebonus1" value="{{system.attributebonus1}}" data-dtype="String">
+            {{selectOptions statistics selected=system.attributebonus1 localize=true labelAttr="label"}}
+          </select> 
+        </li>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.attrbonus"}} Lvl 4</label>
+          <select class="item-field-label-long " type="text" name="system.attributebonus4" value="{{system.attributebonus4}}" data-dtype="String">
+            {{selectOptions statistics selected=system.attributebonus4 localize=true labelAttr="label"}}
+          </select> 
+        </li>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.attrbonus"}} Lvl 8</label>
+          <select class="item-field-label-long " type="text" name="system.attributebonus8" value="{{system.attributebonus8}}" data-dtype="String">
+            {{selectOptions statistics selected=system.attributebonus8 localize=true labelAttr="label"}}
+          </select> 
+        </li>
+
+        {{#each system.weapons as |weaponflag key|}}
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.weapons"}} {{localize (concat "WH.conf." key)}}</label>
+            <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                  name="system.weapons.{{key}}" {{checked weaponflag}}/>
+
+          </li>
+        {{/each}}
+
+        {{#each system.armors as |armorflag key|}}
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.armors"}} {{localize (concat "WH.conf." key "armor")}}</label>
+            <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                  name="system.armors.{{key}}" {{checked armorflag}}/>
+
+          </li>
+        {{/each}}
+
+        {{#each system.shields as |shieldflag key|}}
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.shields"}} {{localize (concat "WH.conf." key "shield")}}</label>
+          <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+                name="system.shields.{{key}}" {{checked shieldflag}}/>
+
+        </li>
+      {{/each}}
+     </ul>
+
+    </div>
+
+  </section>
+</form>

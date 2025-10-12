@@ -1,0 +1,51 @@
+<ul class="item-list alternate-list">
+  <li class="item flexrow list-item items-title-bg {{#if (gt slot.slotUsed slot.nbslots)}}items-title-bg-red{{/if}}">
+    <span class="item-name-label-header equipment-slot-name">
+      <h3><label class="items-title-text">{{localize slot.label}}</label></h3>
+    </span>
+    <span class="item-field-label-medium">
+      <label class="short-label">{{localize "WH.ui.Type"}}</label>
+    </span>
+    <span class="item-field-label-long">
+      <label class="short-label">{{localize "WH.ui.Qty"}}</label>
+    </span>
+    <span class="item-field-label-medium">
+      <label class="short-label">{{localize "WH.ui.maxslots"}}: {{slot.nbslots}}</label>
+    </span>
+    <span class="item-field-label-medium">
+      <label class="short-label">{{localize "WH.ui.slotsused"}}: {{slot.slotUsed}}</label>
+    </span>
+    <div class="item-filler">&nbsp;</div>
+    <div class="item-controls item-controls-fixed">
+      <a class="item-control item-add" data-action="item-add" data-type="{{itemtype}}" data-slot="{{slotKey}}"
+        title="Create Item"><i class="fas fa-plus"></i></a>
+    </div>
+  </li>
+  {{#each slot.content as |item itemKey|}}
+  <li class="item flexrow list-item list-item-shadow" data-item-id="{{item._id}}">
+    <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img class="sheet-competence-img"
+        src="{{item.img}}" /></a>
+    <span class="item-name-label">{{item.name}}</span>
+
+    <span class="item-field-label-medium">
+      <label class="">{{upperFirst item.type}}</label>
+    </span>
+
+    <span class="item-field-label-long"><label>
+        {{item.system.quantity}}
+        (<a class="quantity-minus plus-minus-button" data-action="quantity-minus"> -</a>/<a
+          class="quantity-plus plus-minus-button" data-action="quantity-plus">+</a>)
+      </label>
+    </span>
+
+    <span class="item-field-label-medium">
+      <label class="short-label">{{localize (concat "WH.conf." item.system.isidentified)}}</label>
+    </span>
+
+    <div class="item-filler">&nbsp;</div>
+    <div class="item-controls item-controls-fixed">
+      <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+    </div>
+  </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,38 @@
+<section class="tab equipment-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <ul>
+
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.isclasssecondary"}}</label>
+      <input type="checkbox" name="system.issecondary" {{checked system.issecondary}} />
+    </li>
+
+    {{#each system.weapons as |weaponflag key|}}
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.weapons"}} {{localize (concat "WH.conf."
+        key)}}</label>
+      <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+        name="system.weapons.{{key}}" {{checked weaponflag}} />
+
+    </li>
+    {{/each}}
+
+    {{#each system.armors as |armorflag key|}}
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.armors"}} {{localize (concat "WH.conf."
+        key "armor")}}</label>
+      <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+        name="system.armors.{{key}}" {{checked armorflag}} />
+
+    </li>
+    {{/each}}
+
+    {{#each system.shields as |shieldflag key|}}
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.shields"}} {{localize (concat "WH.conf."
+        key "shield")}}</label>
+      <input type="checkbox" class="padd-right status-small-label color-class-common item-field-label-short"
+        name="system.shields.{{key}}" {{checked shieldflag}} />
+
+    </li>
+    {{/each}}
+
+
+  </ul>
+
+</section>

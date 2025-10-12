@@ -1,0 +1,156 @@
+<section class="tab-content-scrollable tab sheet-body character-{{ tab.id }} {{ tab.cssClass }}" data-tab="{{ tab.id }}"
+  data-group="{{ tab.group }}">
+  {{!-- Skills Tab --}}
+  <div>
+    <div class="flexcol">
+
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.raceSkills"}}</label></h3>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.currentuse"}}</label>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.maxuse"}}</label>
+            </span>
+          </li>
+          {{#each raceSkills as |skill key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
+                class="sheet-competence-img" src="{{skill.img}}" /></a>
+            <span class="item-name-label-long">{{skill.name}}</a></span>
+
+            {{#if skill.system.unlimited}}
+            <span class="item-field-label-medium">N/A</span>
+            <span class="item-field-label-medium">N/A</span>
+            {{else}}
+            <span class="item-field-label-medium">{{skill.system.currentuse}}
+              (<a class="skill-use-minus plus-minus-button">&nbsp;-</a>/<a
+                class="skill-use-plus plus-minus-button">+</a>)
+            </span>
+            <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
+            {{/if}}
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                  class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.classSkills"}}</label></h3>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.currentuse"}}</label>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.maxuse"}}</label>
+            </span>
+          </li>
+          {{#each classSkills as |skill key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
+                class="sheet-competence-img" src="{{skill.img}}" /></a>
+            <span class="item-name-label-long">{{skill.name}}</a></span>
+
+            {{#if skill.system.unlimited}}
+            <span class="item-field-label-medium">N/A</span>
+            <span class="item-field-label-medium">N/A</span>
+            {{else}}
+            <span class="item-field-label-medium">{{skill.system.currentuse}}
+              (<a class="skill-use-minus plus-minus-button">&nbsp;-</a>/<a
+                class="skill-use-plus plus-minus-button">+</a>)
+            </span>
+            <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
+            {{/if}}
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                  class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.skills"}}</label></h3>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.currentuse"}}</label>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.maxuse"}}</label>
+            </span>
+          </li>
+          {{#each skills as |skill key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
+                class="sheet-competence-img" src="{{skill.img}}" /></a>
+            <span class="item-name-label-long">{{skill.name}}</span>
+
+            {{#if skill.system.unlimited}}
+            <span class="item-field-label-medium">N/A</span>
+            <span class="item-field-label-medium">N/A</span>
+            {{else}}
+            <span class="item-field-label-medium">{{skill.system.currentuse}}</span>
+            <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
+            {{/if}}
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                  class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long">
+              <h3><label class="items-title-text">{{localize "WH.ui.conditions"}}</label></h3>
+            </span>
+            <span class="item-field-label-medium">
+              <label class="short-label">{{localize "WH.ui.effect"}}</label>
+            </span>
+          </li>
+          {{#each conditions as |cond key|}}
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{cond._id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
+                class="sheet-competence-img" src="{{cond.img}}" /></a>
+            <span class="item-name-label-long">{{cond.name}}</span>
+
+            <span class="item-field-label-medium">{{cond.system.shortdescription}}</span>
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                  class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>

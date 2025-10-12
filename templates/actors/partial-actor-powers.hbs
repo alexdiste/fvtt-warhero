@@ -1,0 +1,41 @@
+<section class="tab-content-scrollable tab sheet-body character-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}"
+  data-group="{{tab.group}}">
+  {{!-- Powers Tab --}}
+  <div>
+
+    <div class="flexcol">
+
+      {{#each powers as |school schoolKey|}}
+      <ul class="stat-list alternate-list">
+        <li class="item flexrow list-item items-title-bg">
+          <span class="item-name-label-header">
+            <h3><label class="items-title-text">{{schoolKey}}</label></h3>
+          </span>
+        </li>
+
+        {{#each school as |power key|}}
+        <li class="item stat flexrow list-item list-item-shadow" data-item-id="{{power._id}}">
+          <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img class="sheet-competence-img"
+              src="{{power.img}}" /></a>
+          <span class="item-name-label-long3">
+            <a class="power-roll" data-action="roll-power" data-power-id="{{power._id}}"><i
+                class="fa-solid fa-dice-d20"></i>{{power.name}}</a>
+          </span>
+          <span class="item-name-label-medium">
+            <a class="power-roll">{{power.system.level}}</a>
+          </span>
+          <div class="item-filler">&nbsp;</div>
+          <div class="item-controls item-controls-fixed">
+            <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                class="fas fa-trash"></i></a>
+          </div>
+        </li>
+        {{/each}}
+
+      </ul>
+      {{/each}}
+
+    </div>
+  </div>
+
+</section>

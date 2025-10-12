@@ -1,0 +1,7 @@
+2025/10/12-14:16:47.664 2c40 Recovering log #3949
+2025/10/12-14:16:47.670 2c40 Delete type=0 #3949
+2025/10/12-14:16:47.670 2c40 Delete type=3 #3947
+2025/10/12-14:18:46.745 2dbc Level-0 table #3954: started
+2025/10/12-14:18:46.745 2dbc Level-0 table #3954: 0 bytes OK
+2025/10/12-14:18:46.747 2dbc Delete type=0 #3952
+2025/10/12-14:18:46.747 2dbc Manual compaction at level-0 from '!items!1wSfmRfPaoASRMQZ' @ 72057594037927935 : 1 .. '!items!Uzf6iuCJrcrWM6Pt' @ 0 : 0; will stop at (end)

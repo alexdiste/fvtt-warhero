@@ -1,0 +1,32 @@
+<section
+  class="tab tab-content-scrollable sheet-body party-{{tab.id}}
+    {{tab.cssClass}}"
+  data-group="sheet"
+  data-tab="{{tab.id}}"
+>
+
+  <div>
+    <h3>{{localize "WH.ui.background"}} : </h3>
+    <div class="editor">
+      {{formInput
+        systemFields.biodata.fields.description
+        enriched=enrichedDescription
+        value=system.biodata.description
+        name="system.biodata.description"
+        toggled=true
+      }}
+    </div>
+    <hr />
+    <h3>{{localize "WH.ui.notes"}} : </h3>
+    <div class="editor">
+      {{formInput
+        systemFields.biodata.fields.notes
+        enriched=enrichedNotes
+        value=system.biodata.notes
+        name="system.biodata.notes"
+        toggled=true
+      }}
+    </div>
+  </div>
+
+</section>

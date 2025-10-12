@@ -1,0 +1,14 @@
+2025/10/12-14:16:47.582 2c40 Recovering log #670
+2025/10/12-14:16:47.596 2c40 Delete type=0 #670
+2025/10/12-14:16:47.596 2c40 Delete type=3 #668
+2025/10/12-14:18:46.714 2dbc Level-0 table #675: started
+2025/10/12-14:18:46.717 2dbc Level-0 table #675: 2892 bytes OK
+2025/10/12-14:18:46.720 2dbc Delete type=0 #673
+2025/10/12-14:18:46.728 2dbc Manual compaction at level-0 from '!journal!JR8yrYagSCX0mIr1' @ 72057594037927935 : 1 .. '!journal.pages!g4KBDQAp2l3hDbj3.zoH6BUJg8IGBK8G5' @ 0 : 0; will stop at '!journal.pages!JR8yrYagSCX0mIr1.uYaZg4s5dwzuOV8y' @ 349 : 1
+2025/10/12-14:18:46.728 2dbc Compacting 1@0 + 1@1 files
+2025/10/12-14:18:46.731 2dbc Generated table #676@0: 38 keys, 32557 bytes
+2025/10/12-14:18:46.731 2dbc Compacted 1@0 + 1@1 files => 32557 bytes
+2025/10/12-14:18:46.733 2dbc compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/10/12-14:18:46.733 2dbc Delete type=2 #625
+2025/10/12-14:18:46.734 2dbc Delete type=2 #675
+2025/10/12-14:18:46.734 2dbc Manual compaction at level-0 from '!journal.pages!JR8yrYagSCX0mIr1.uYaZg4s5dwzuOV8y' @ 349 : 1 .. '!journal.pages!g4KBDQAp2l3hDbj3.zoH6BUJg8IGBK8G5' @ 0 : 0; will stop at (end)

@@ -1,0 +1,27 @@
+<section class="tab-content-scrollable tab sheet-body character-{{ tab.id }} {{ tab.cssClass }}" data-tab="{{ tab.id }}"
+  data-group="{{ tab.group }}">
+  <div>
+
+    <div class="flexrow">
+      <label class="">{{localize "WH.ui.totalmoney"}} : {{totalMoney}}</label>
+    </div>
+
+    <hr>
+    <h3>{{localize "WH.ui.bodyslots"}} : </h3>
+
+    {{#each bodyContainers as |slot slotKey|}}
+    {{> systems/fvtt-warhero/templates/actors/partial-container.hbs slot=slot slotKey=slotKey}}
+    {{/each}}
+
+    <hr>
+    <h3>{{localize "WH.ui.containerslot"}} : </h3>
+
+    {{#each equipmentContainers as |slot slotKey|}}
+    {{> systems/fvtt-warhero/templates/actors/partial-container.hbs slot=slot slotKey=slotKey}}
+    {{/each}}
+
+    <hr>
+
+  </div>
+
+</section>

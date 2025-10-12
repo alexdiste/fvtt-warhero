@@ -1,0 +1,60 @@
+<li class="item flexrow list-item item-stat-roll" data-attr-key="{{key}}">
+  <span class="{{fieldClass}}" name="{{key}}">
+    <h4 class="{{fieldClass}}">
+      {{#if roll}}
+      <i class="fa-solid fa-dice-d20"></i><a class="roll-this stat-margin" data-action="roll-this" data-type="{{path}}"
+        data-key="{{key}}">&nbsp;{{localize stat.label}}</a>
+      {{else}}
+      {{localize stat.label}}
+      {{/if}}
+    </h4>
+  </span>
+
+  {{#if (eq style "dropdown")}}
+  <select class="item-field-label-short" type="text" name="system.{{path}}.{{key}}.value" value="{{stat.value}}"
+    data-dtype="Number" {{#unless @root.editScore}}disabled{{/unless}}>
+    {{selectOptions config.statValueOptions selected=stat.value}}
+  </select>
+  {{/if}}
+
+  {{#if (eq style "edit")}}
+  <input type="text" class="item-field-label-short" {{#if disabled}}disabled{{/if}} name="system.{{path}}.{{key}}.value"
+    value="{{stat.value}}" data-dtype="Number" />
+  {{#if hasmax}}
+  <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.max" value="{{stat.max}}"
+    data-dtype="Number" />
+  {{/if}}
+  {{#if hasuse}}
+  <span class="flexrow item-has-use">
+    <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.nbuse" value="{{stat.nbuse}}"
+      data-dtype="Number" />
+    <label class="item-field-label-2rem">/</label>
+    <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.maxuse" value="{{stat.maxuse}}"
+      data-dtype="Number" />
+  </span>
+  {{/if}}
+
+  {{/if}}
+
+  {{#if hassave}}
+  <span class="item-field-label-medium" name="{{key}}">
+    <h4 class="item-field-label-medium">
+      <i class="fa-solid fa-dice-d20"></i>
+      <a class="roll-save stat-margin" data-action="roll-save" data-type="{{path}}" data-key="{{key}}">
+        {{localize (concat "WH.ui.save" key)}}
+      </a>
+    </h4>
+  </span>
+  <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.save" value="{{stat.save}}"
+    data-dtype="Number" />
+  {{/if}}
+
+  {{#if islevel}}
+  <span class="item-field-label-short" name="{{key}}">
+    <h4 class="item-field-label-short">{{localize "WH.ui.level"}}
+    </h4>
+  </span>
+  <input type="text" disabled class="item-field-label-short" value="{{stat.level}}" data-dtype="Number" />
+  {{/if}}
+
+</li>

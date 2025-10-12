@@ -1,0 +1,598 @@
+.strong-text {
+  font-weight: bold;
+}
+
+.tabs .item.active,
+.blessures-list li ul li:first-child:hover,
+a:hover {
+  text-shadow: 1px 0px 0px #ff6600;
+}
+
+.rollable:hover,
+.rollable:focus {
+  /*color: #000;
+  text-shadow: 0 0 10px red;*/
+  cursor: pointer;
+}
+
+.grid,
+.grid-2col {
+  display: grid;
+  grid-column: span 2 / span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  margin: 2px 0;
+  padding: 0;
+}
+
+.grid-3col {
+  grid-column: span 3 / span 3;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4col {
+  grid-column: span 4 / span 4;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-5col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-6col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-7col {
+  grid-column: span 7 / span 7;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-8col {
+  grid-column: span 8 / span 8;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-9col {
+  grid-column: span 9 / span 9;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-10col {
+  grid-column: span 10 / span 10;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.grid-11col {
+  grid-column: span 11 / span 11;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+
+.grid-12col {
+  grid-column: span 12 / span 12;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.flex-group-center,
+.flex-group-left,
+.flex-group-right {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.flex-group-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-group-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.table-create-actor {
+  font-size: 0.8rem;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-shrink {
+  flex: 'flex-shrink';
+}
+
+/* Styles limited to foundryvtt sheets */
+
+.fvtt-warhero .sheet-header {
+  -webkit-box-flex: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.fvtt-warhero .sheet-header-actor {
+  min-height: 17rem;
+}
+
+.fvtt-warhero .align-items-start {
+  align-items: flex-start;
+}
+
+.character-equipment h3 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+
+/* Assurez-vous que la div-align-top garde son alignement */
+.fvtt-warhero .div-align-top {
+  vertical-align: top;
+  text-align: left;
+  align-self: flex-start;
+  /* Force l'alignement en haut */
+}
+
+.fvtt-warhero .tab-content-scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 5px;
+  flex: 1;
+  min-height: 0;
+}
+
+.fvtt-warhero .sheet-header .profile-img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 96px;
+  flex: 0 0 96px;
+  width: 96px;
+  height: auto;
+  max-height: 96px;
+  margin-top: 0px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-width: 0px;
+  object-position: 50% 0;
+}
+
+.equipment-slot-name {
+  min-width: 12rem;
+  max-width: 12rem;
+}
+
+.combat-secondary-values {
+  max-height: 2.5rem;
+}
+
+.item-stat-roll h4 {
+  margin-left: 6px;
+  font-size: 0.9rem;
+}
+
+.item-stat-roll input {
+  min-width: 3rem;
+  max-width: 3rem;
+}
+
+.item-sheet-img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 96px;
+  flex: 0 0 96px;
+  width: 96px;
+  height: auto;
+  max-height: 96px;
+  margin-top: 0px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-width: 0px;
+  object-position: 50% 0;
+}
+
+.warhero-chat-message-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+.item-name-label-header-long h3,
+.item-name-label-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-height: 1.4rem;
+  align-self: center;
+}
+
+.item-field-label-2rem {
+  text-align: center;
+}
+
+.item-field-label-race {
+  text-align: center;
+  min-width: 8rem;
+  max-width: 8rem;
+}
+
+.item-has-use {
+  margin-left: 4px;
+  max-width: 8rem;
+}
+
+.item-name-label-header .items-title-text,
+.item-name-label-header-long .items-title-text {
+  align-self: center;
+  color: black;
+  display: flex;
+  align-items: center;
+  min-height: 1.4rem;
+  margin-left: 4px;
+}
+
+.warhero-chat-message-header .chat-actor-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.warhero-chat-message-body {
+  display: flex;
+  margin-top: 4px;
+}
+
+.chat-icon,
+.warhero-chat-message-header .actor-icon,
+.roll-dialog-header .actor-icon {
+  width: 48px;
+  max-width: 48px;
+  height: auto;
+  max-height: 48px;
+  margin-top: 0px;
+  margin-right: 10px;
+  border-width: 0px;
+}
+
+.button-img {
+  vertical-align: baseline;
+  width: 8%;
+  height: 8%;
+  max-height: 48px;
+  border-width: 0;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.button-img:hover {
+  /*color: rgba(255, 255, 128, 0.7);*/
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.button-effect-img {
+  vertical-align: baseline;
+  width: 16px;
+  max-height: 16px;
+  height: 16;
+  border-width: 0;
+}
+
+.small-button-container {
+  height: 16px;
+  width: 16px;
+  border: 0;
+  vertical-align: bottom;
+}
+
+.fvtt-warhero .sheet-header .header-fields {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.fvtt-warhero .sheet-header h1.charname {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: 0;
+}
+
+.fvtt-warhero .sheet-header h1.charname input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.fvtt-warhero .sheet-tabs {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+
+.fvtt-warhero .sheet-body,
+.fvtt-warhero .sheet-body .tab,
+.fvtt-warhero .sheet-body .tab .editor {
+  height: 100%;
+  font-size: 0.8rem;
+}
+
+.editor {
+  border: 2;
+  height: 300px;
+  padding: 0 3px;
+}
+
+.medium-editor {
+  border: 2;
+  height: 240px;
+  padding: 0 3px;
+}
+
+.small-editor {
+  border: 2;
+  height: 120px;
+  padding: 0 3px;
+}
+
+.fvtt-warhero .tox .tox-editor-container {
+  background: #fff;
+}
+
+
+.fvtt-warhero .tox .tox-edit-area {
+  padding: 0 8px;
+}
+
+.fvtt-warhero .resource-label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fvtt-warhero .tabs {
+  height: 40px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  /*color: #000000;*/
+}
+
+.fvtt-warhero .tabs .item {
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.fvtt-warhero .tabs .item.active {
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+.fvtt-warhero .items-list {
+  list-style: none;
+  margin: 1px 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.fvtt-warhero .items-list .item-header {
+  font-weight: bold;
+}
+
+.fvtt-warhero .items-list .item {
+  height: 30px;
+  line-height: 24px;
+  padding: 1px 0;
+  border-bottom: 1px solid #bbb;
+}
+
+.fvtt-warhero .items-list .item .item-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 24px;
+  flex: 0 0 24px;
+  margin-right: 5px;
+}
+
+.fvtt-warhero .items-list .item img {
+  display: block;
+}
+
+.fvtt-warhero .items-list .item-name {
+  margin: 0;
+}
+
+.fvtt-warhero .items-list .item-controls {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 86px;
+  flex: 0 0 86px;
+  text-align: right;
+}
+
+.sheet-competence-img {
+  width: 24px;
+  max-width: 24px;
+  height: 24px;
+  max-height: 24px;
+  flex-grow: 0;
+  margin-right: 0.25rem;
+}
+
+.competence-column {
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-basis: 1;
+}
+
+.competence-header {
+  align-content: flex-start;
+  justify-content: flex-start;
+  font-weight: bold;
+  flex-grow: 0;
+}
+
+.crit-success {
+  color: darkgreen;
+}
+
+.crit-failure {
+  color: darkred;
+}
+
+.plus-minus {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.fvtt-warhero .tabs .item.active {
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+.river-button {
+  box-shadow: inset 0px 1px 0px 0px;
+  background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
+  /*background-color: #7d5d3b00;*/
+  border-radius: 3px;
+  border: 2px ridge;
+  display: inline-block;
+  cursor: pointer;
+  /*color: #ffffff;*/
+  font-size: 0.8rem;
+  padding: 2px 4px 0px 4px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px;
+  position: relative;
+  margin: 4px;
+}
+
+.chat-card-button {
+  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
+  /*background-color: #7d5d3b00;*/
+  border-radius: 3px;
+  border: 2px ridge;
+  display: inline-block;
+  cursor: pointer;
+  /*color: #ffffff;*/
+  font-size: 0.8rem;
+  padding: 4px 12px 0px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px;
+  position: relative;
+  margin: 2px;
+}
+
+.chat-card-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.plus-minus-button {
+  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  /*background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);*/
+  background: gray;
+  /*background-color: #7d5d3b00;*/
+  border-radius: 2px;
+  border: 1px ridge;
+  display: inline-block;
+  cursor: pointer;
+  /*color: #ffffff;*/
+  margin: 2px 2px 2px 2px;
+  padding: 2px 2px 2px 2px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px;
+  position: relative;
+  margin: 0px;
+}
+
+.river-button:hover,
+.plus-minus-button:hover,
+.chat-card-button:hover {
+  background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
+  /*background-color: red;*/
+}
+
+.plus-minus-button:active,
+.chat-card-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.plus-minus {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.drop-equipment-effect,
+.drop-power-effect,
+.drop-perk-effect,
+.drop-ability-effect,
+.drop-effect-specaffected,
+.drop-effect-spec,
+.drop-ability-weapon,
+.drop-ability-armor,
+.drop-race-perk,
+.drop-spec-perk,
+.drop-ability-power,
+.drop-ability-spec,
+.drop-spec-power,
+.drop-specialability,
+.drop-abilities,
+.drop-optionnal-abilities,
+.drop-virtue-vice-effect,
+.drop-virtue-vice,
+.drop-vice-virtue,
+.drop-specialperk1,
+.drop-perk2,
+.drop-spec1,
+.drop-spec2 {
+  background: linear-gradient(to bottom, #6c95b9fc 5%, #105177ab 100%);
+  /*background-color: #7d5d3b00;*/
+  border-radius: 3px;
+  border: 2px ridge;
+}
+
+/*si*/
+.items-title-bg {
+  margin-top: 6px;
+  background: gray;
+  color: black;
+}
+
+/*si*/
+.items-title-bg-red {
+  background: darkred;
+}

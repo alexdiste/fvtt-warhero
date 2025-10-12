@@ -1,0 +1,7 @@
+2025/10/12-14:16:47.599 75c Recovering log #87
+2025/10/12-14:16:47.605 75c Delete type=0 #87
+2025/10/12-14:16:47.605 75c Delete type=3 #85
+2025/10/12-14:18:46.720 2dbc Level-0 table #92: started
+2025/10/12-14:18:46.720 2dbc Level-0 table #92: 0 bytes OK
+2025/10/12-14:18:46.722 2dbc Delete type=0 #90
+2025/10/12-14:18:46.734 2dbc Manual compaction at level-0 from '!journal!3PmyYkxZ6xR3MjvN' @ 72057594037927935 : 1 .. '!journal.pages!52oupfOhqEFMza8o.erT2aGEJyXEtjv22' @ 0 : 0; will stop at (end)

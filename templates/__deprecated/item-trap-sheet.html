@@ -1,0 +1,40 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+
+    {{> systems/fvtt-warhero/templates/partial-item-nav.html}}
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+      {{> systems/fvtt-warhero/templates/partial-item-description.html}}
+
+      <div class="tab details" data-group="primary" data-tab="details">
+        <ul>
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.dcfind"}}</label>
+            <input type="text" class="item-field-label-short" name="system.dcfind" value="{{system.dcfind}}" data-dtype="Number"/>
+          </li>
+
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.dcdisable"}}</label>
+            <input type="text" class="item-field-label-short" name="system.dcdisable" value="{{system.dcdisable}}" data-dtype="Number"/>
+          </li>
+
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.throwtohit"}}</label>
+            <input type="text" class="item-field-label-medium " name="system.throwtohit" value="{{system.throwtohit}}" data-dtype="String"/>
+          </li>
+
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.damage"}}</label>
+            <input type="text" class="item-field-label-medium " name="system.damageroll" value="{{system.damageroll}}" data-dtype="String"/>
+          </li>
+          
+          {{> systems/fvtt-warhero/templates/partial-item-common-equipment.html}}
+
+        </ul>
+
+      </div>
+    </section>
+</form>

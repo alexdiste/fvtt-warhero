@@ -1,0 +1,100 @@
+<form class="skill-roll-dialog">
+  <header class="roll-dialog-header flexrow">
+    {{#if img}}
+    <img class="actor-icon" src="{{img}}" data-edit="img" title="{{name}}" />
+    {{/if}}
+    <h3 class="dialog-roll-title roll-dialog-header">{{localize title}}</h3>
+  </header>
+
+  <div class="flexcol">
+
+    {{#if weapon}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.ui.weapon"}} : </span>
+      <span class="item-field-label-vlong">{{weapon.name}}</span>
+    </div>
+
+    {{#if (eq mode "damage")}}
+    {{#if (eq weapon.system.weapontype "special")}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.ui.damage"}} : </span>
+      <span class="item-field-label-vlong">{{weapon.system.damageformula}}</span>
+    </div>
+    {{else}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.ui.damage"}} : </span>
+      {{#if is2hands}}
+      <span class="item-field-label-vlong">{{weapon.damageFormula2Hands}}</span>
+      {{else}}
+      <span class="item-field-label-vlong">{{weapon.damageFormula}}</span>
+      {{/if}}
+    </div>
+    {{/if}}
+
+    {{else}}
+    {{#if (eq weapon.system.weapontype "special")}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.chat.rollformula"}} : </span>
+      <span class="item-field-label-vlong">{{weapon.system.rollformula}}</span>
+    </div>
+    {{/if}}
+    {{/if}}
+
+    {{/if}}
+
+    {{#if stat}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize stat.label}}</span>
+      {{#if (eq mode "save")}}
+      <span class="item-field-label-medium">{{stat.save}}</span>
+      {{else}}
+      <span class="item-field-label-medium">{{stat.value}}</span>
+      {{/if}}
+    </div>
+
+    {{#if stat.istxc}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.chat.mweaponmalus"}} ({{mWeaponMalus}})? </span>
+      <span class="item-field-label-medium"><input type="checkbox" id="usemWeaponMalusCheck" name="usemWeaponMalusCheck"
+          {{checked usemWeaponMalus}} /></span>
+      {{/if}}
+    </div>
+    {{/if}}
+
+    {{#if shield}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.chat.useshield"}} : </span>
+      <span class="roll-dialog-label">
+        <input type="checkbox" id="useshield" name="useshield" {{checked useshield}} />
+      </span>
+    </div>
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{shield.name}} : </span>
+      <span class="item-field-label-medium">{{shield.data.shielddie}}</span>
+    </div>
+    {{/if}}
+
+    {{#if power}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.chat.power"}} : </span>
+      <span class="item-field-label-medium">{{power.name}}</span>
+    </div>
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.chat.powerlevel"}} : </span>
+      <span class="item-field-label-medium">{{power.system.level}}</span>
+    </div>
+    {{/if}}
+
+    {{#if hasBM}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">Bonus/Malus : </span>
+      <select class="item-field-label-medium" type="text" id="bonusMalus" value="{{bonusMalus}}">
+        {{selectOptions config.bonusMalusOptions selected=bonusMalus valueAttr="value" nameAttr="value"
+        labelAttr="label"}}
+      </select>
+    </div>
+    {{/if}}
+
+  </div>
+
+</form>

@@ -1,0 +1,37 @@
+<li class="item flexrow list-item list-item-shadow" data-item-id="{{equip._id}}">
+  <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img" src="{{equip.img}}" /></a>
+  {{#if (eq level 1)}}
+  <span class="item-name-label">{{equip.name}}</span>
+  {{else}}
+  <span class="item-name-label-level2">{{equip.name}}</span>
+  {{/if}}
+
+  <span class="item-field-label-long"><label>
+    {{equip.system.quantity}}
+    (<a class="quantity-minus plus-minus-button">-</a>/<a class="quantity-plus plus-minus-button">+</a>)
+  </label>
+  </span>          
+
+  <span class="item-field-label-medium">
+    &nbsp;-&nbsp;
+  </span>
+  <span class="item-field-label-short">
+    {{#if equip.system.iscontainer}}
+      {{equip.system.contentsEnc}}
+    {{else}}
+      {{mul equip.system.weight equip.system.quantity}}
+    {{/if}}
+  </span>
+  <span class="item-field-label-medium">
+    &nbsp;-&nbsp;
+  </span>
+
+  <div class="item-filler">&nbsp;</div>
+  <div class="item-controls item-controls-fixed">
+    {{#if (eq level 1)}}
+    <a class="item-control item-equip" title="Worn">{{#if equip.system.equipped}}<i
+        class="fas fa-circle"></i>{{else}}<i class="fas fa-genderless"></i>{{/if}}</a>
+    {{/if}}
+    <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+  </div>
+</li>

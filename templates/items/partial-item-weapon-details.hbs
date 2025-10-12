@@ -1,0 +1,37 @@
+<section class="tab equipment-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+
+  <ul>
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.type"}}</label>
+      <select class="item-field-label-medium " type="text" name="system.weapontype" value="{{system.weapontype}}"
+        data-dtype="String">
+        {{selectOptions config.weaponTypes selected=system.weapontype localize=true labelAttr="label"}}
+      </select>
+    </li>
+
+    {{#if (eq system.weapontype "special")}}
+    <li class="flexrow"><label class="item-field-label-vlong2 ">{{localize "WH.ui.rawroll"}}</label>
+      <input type="text" class="item-field-label-long " name="system.rollformula" value="{{system.rollformula}}"
+        data-dtype="String" />
+    </li>
+    <li class="flexrow"><label class="item-field-label-vlong2 ">{{localize "WH.ui.rawdamage"}}</label>
+      <input type="text" class="item-field-label-long " name="system.damageformula" value="{{system.damageformula}}"
+        data-dtype="String" />
+    </li>
+    {{else}}
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.damage"}}</label>
+      <input type="text" class="item-field-label-medium " name="system.damage" value="{{system.damage}}"
+        data-dtype="String" />
+    </li>
+    {{/if}}
+
+    {{#if (eq system.weapontype "polearm")}}
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.2hdamage"}}</label>
+      <input type="text" class="item-field-label-medium " name="system.damage2hands" value="{{system.damage2hands}}"
+        data-dtype="String" />
+    </li>
+    {{/if}}
+
+    {{> systems/fvtt-warhero/templates/items/partial-item-common-equipment.hbs}}
+
+  </ul>
+</section>

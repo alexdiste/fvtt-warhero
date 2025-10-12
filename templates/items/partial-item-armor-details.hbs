@@ -1,0 +1,18 @@
+<section class="tab equipment-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+<ul>
+  <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.type"}}</label>
+    <select class="item-field-label-medium" type="text" name="system.armortype" value="{{system.armortype}}"
+      data-dtype="String">
+      {{selectOptions config.armorTypes selected=system.armortype localize=true labelAttr="label"}}
+    </select>
+  </li>
+
+  <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.damagereduction"}}</label>
+    <input type="text" class="item-field-label-medium " name="system.damagereduction" value="{{system.damagereduction}}"
+      data-dtype="Number" />
+  </li>
+
+  {{> systems/fvtt-warhero/templates/items/partial-item-common-equipment.hbs}}
+
+</ul>
+</section>

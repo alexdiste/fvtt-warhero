@@ -1,0 +1,33 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+      <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+      <div class="header-fields">
+          <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+      </div>
+  </header>
+  
+  {{> systems/fvtt-warhero/templates/partial-item-nav.html}}
+
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{> systems/fvtt-warhero/templates/partial-item-description.html}}
+
+          
+    <div class="tab details" data-group="primary" data-tab="details">
+      <ul>
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.quantity"}}</label>
+          <input type="text" class="item-field-label-long" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+        </li>  
+      <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.slotlocation"}}</label>
+        <select class="item-field-label-long " type="text" name="system.slotlocation" value="{{system.slotlocation}}" data-dtype="String">
+          {{selectOptions config.slotNames selected=system.slotlocation localize=true labelAttr="label"}}
+        </select> 
+      </li>
+    </ul>
+      
+    </div>
+
+  </section>
+</form>

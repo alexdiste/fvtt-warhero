@@ -1,0 +1,38 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+    
+    {{> systems/fvtt-warhero/templates/partial-item-nav.html}}
+
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+      {{> systems/fvtt-warhero/templates/partial-item-description.html}}
+      
+      <div class="tab details" data-group="primary" data-tab="details">
+
+        <div class="tab" data-group="primary">
+          <ul>
+            <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.type"}}</label>
+              <select class="item-field-label-long " type="text" name="system.shieldtype" value="{{system.shieldtype}}" data-dtype="String">
+                {{selectOptions config.armorTypes selected=system.shieldtype localize=true labelAttr="label"}}
+              </select> 
+            </li>
+
+            <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.parrybonus"}}</label>
+              <input type="text" class="item-field-label-medium " name="system.parrybonus" value="{{system.parrybonus}}" data-dtype="Number"/>
+            </li>
+          
+            {{> systems/fvtt-warhero/templates/partial-item-common-equipment.html}}
+
+          </ul>
+      </div>
+    </div>
+
+    </section>
+</form>
