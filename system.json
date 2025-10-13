@@ -11,7 +11,11 @@
   "download": "https://github.com/alexdiste/fvtt-warhero/raw/main/fvtt-13-22.zip",
   "authors": [
     {
-      "name": "Uberwald","AlexDiste"
+      "name": "Uberwald",
+      "flags": {}
+    },
+	{
+      "name": "AlexDiste",
       "flags": {}
     }
   ],
