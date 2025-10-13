@@ -1,6 +1,7 @@
 **WARHERO**
 
 ENGLISH
+
 The Warhero rulebook it belongs to Tanzini Francesco and can be found here https://www.warhero.it/.
 It is under Creative Common non derivative work license https://creativecommons.org/licenses/by-nd/3.0/it/.
 I had written permission from original author to create this game system for foundry virtual table top. Sme little changes has been done to better adapt rulebook to foundry but they are very limited and however original author grant me the permission to do that.
