@@ -1,0 +1,7 @@
+2025/10/11-09:58:59.030 3834 Recovering log #3900
+2025/10/11-09:58:59.037 3834 Delete type=0 #3900
+2025/10/11-09:58:59.037 3834 Delete type=3 #3898
+2025/10/11-09:59:53.838 90a4 Level-0 table #3905: started
+2025/10/11-09:59:53.838 90a4 Level-0 table #3905: 0 bytes OK
+2025/10/11-09:59:53.840 90a4 Delete type=0 #3903
+2025/10/11-09:59:53.843 90a4 Manual compaction at level-0 from '!items!D6BG59NRucJeQ1iK' @ 72057594037927935 : 1 .. '!items!zDm6gv3vTBQiP8f2' @ 0 : 0; will stop at (end)
