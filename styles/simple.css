@@ -250,6 +250,12 @@ a:hover {
   max-width: 8rem;
 }
 
+.item-field-label-slots-used {
+  text-align: center;
+  min-width: 6.2rem;
+  max-width: 6.2rem;
+}
+
 .item-has-use {
   margin-left: 4px;
   max-width: 8rem;

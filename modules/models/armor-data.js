@@ -75,7 +75,7 @@ export class ArmorData extends foundry.abstract.TypeDataModel {
         initial: 1,
         required: false,
         min: 0,
-        integer: true,
+        integer: false,
         label: "WH.ui.slotused",
         hint: "WH.ui.slotused.hint"
       }),
