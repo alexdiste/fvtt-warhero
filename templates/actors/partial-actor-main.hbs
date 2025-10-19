@@ -46,13 +46,13 @@
             </li>
             {{#each languages as |language key|}}
             <li class="item flexrow list-item list-item-shadow" data-item-id="{{ language._id }}">
-              <a class="item-edit item-name-img" title="Edit Item"><img class="sheet-competence-img"
+              <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img class="sheet-competence-img"
                   src="{{ language.img }}" /></a>
               <span class="item-name-label-long">{{ language.name }}</span>
 
               <div class="item-filler">&nbsp;</div>
               <div class="item-controls item-controls-fixed">
-                <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
               </div>
             </li>
             {{/each}}
