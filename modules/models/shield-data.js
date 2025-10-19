@@ -31,7 +31,7 @@ export class ShieldData extends foundry.abstract.TypeDataModel {
         initial: "light",
         required: false,
         blank: false,
-        choices:armorChoices,
+        choices: armorChoices,
         label: "WH.ui.shieldtype",
         hint: "WH.ui.shieldtype.hint"
       }),
@@ -74,7 +74,7 @@ export class ShieldData extends foundry.abstract.TypeDataModel {
         initial: 1,
         required: false,
         min: 0,
-        integer: true,
+        integer: false,
         label: "WH.ui.slotused",
         hint: "WH.ui.slotused.hint"
       }),

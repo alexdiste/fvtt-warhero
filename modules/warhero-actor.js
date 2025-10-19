@@ -224,8 +224,9 @@ export class WarheroActor extends Actor {
           slotUsed += item.system.slotused * q
         }
       }
-      slotUsed = Math.ceil(slotUsed)
-      containers[slotName].slotUsed = slotUsed
+      // Keep 2 digits
+      slotUsed = Math.ceil(slotUsed * 100) / 100;
+      containers[slotName].slotUsed = slotUsed;
     }
     return containers
   }
@@ -249,7 +250,7 @@ export class WarheroActor extends Actor {
             slotUsed += item.system.slotused * q
           }
         }
-        slotUsed = Math.ceil(slotUsed)
+        slotUsed = Math.ceil(slotUsed * 100) / 100;
         containers[slotName].slotUsed = slotUsed
       }
     }
@@ -276,7 +277,7 @@ export class WarheroActor extends Actor {
             slotUsed += item.system.slotused * q
           }
         }
-        slotUsed = Math.ceil(slotUsed)
+        slotUsed = Math.ceil(slotUsed * 100) / 100;
         containers[slotName].slotUsed = slotUsed
       }
     }
@@ -730,7 +731,8 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   setLevel() {
-    let xp = this.system.secondary.xp.value
+    let xp = this.system?.secondary?.xp?.value
+    if (xp == undefined) return
     let level = 1 + Math.floor(xp / 10)
     if (level != this.system.secondary.xp.level) {
       this.update({ 'system.secondary.xp.level': level })
@@ -743,9 +745,12 @@ export class WarheroActor extends Actor {
     for (let armor of armors) {
       dr += armor.system.damagereduction
     }
-    let drbonustotal = this.system.secondary.drbonustotal.value + dr
+    let drbonustotal = dr
+    if (this.system?.secondary?.drbonustotal) {
+      drbonustotal = this.system.secondary.drbonustotal.value
+    }
     if (drbonustotal < 0) drbonustotal = 0
-    if (drbonustotal != this.system.secondary.drbonustotal.value) {
+    if (drbonustotal != this.system?.secondary?.drbonustotal?.value) {
       this.update({ 'system.secondary.drbonustotal.value': drbonustotal })
     }
   }
@@ -756,16 +761,18 @@ export class WarheroActor extends Actor {
     for (let shield of shields) {
       parry += shield.system.parrybonus
     }
-    let parrybonustotal = this.system.secondary.parrybonustotal.value + parry
+    if (this.system?.secondary?.parrybonustotal == undefined) return
+    let parrybonustotal = this.system?.secondary?.parrybonustotal?.value + parry
     if (parrybonustotal < 0) parrybonustotal = 0
-    if (parrybonustotal != this.system.secondary.parrybonustotal.value) {
+    if (parrybonustotal != this.system?.secondary?.parrybonustotal?.value) {
       this.update({ 'system.secondary.parrybonustotal.value': parrybonustotal })
     }
   }
   /* -------------------------------------------- */
   computeBonusLanguages() {
-    let nblanguage = Math.floor(this.system.statistics.min.value / 2)
-    if (nblanguage != this.system.secondary.nblanguage.value) {
+    if (!this.system?.statistics?.mind || this.system?.secondary?.nblanguage == undefined) return
+    let nblanguage = Math.floor(this.system.statistics.mind.max / 2)
+    if (nblanguage != this.system?.secondary?.nblanguage?.value) {
       this.update({ 'system.secondary.nblanguage.value': nblanguage })
     }
   }
