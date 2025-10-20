@@ -38,9 +38,12 @@
   "WH.conf.special": "Speciale",
 
   "WH.conf.head": "Testa",
+  "WH.conf.goggles": "Occhiali",
+  "WH.conf.necklace" :"Amuleto",
   "WH.conf.cloak": "Mantello",
   "WH.conf.weapon1": "Arma 1",
   "WH.conf.weapon2": "Arma 2",
+  "WH.conf.bracers": "Bracciali",
   "WH.conf.gloves": "Guanti",
   "WH.conf.dress": "Vestito",
   "WH.conf.boots": "Stivali",
