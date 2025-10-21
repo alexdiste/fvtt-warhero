@@ -23,7 +23,9 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       "roll-weapon": WarheroCharacterSheet.#onRollWeapon,
       "roll-damage": WarheroCharacterSheet.#onRollDamage,
       "roll-damage-2hands": WarheroCharacterSheet.#onRollDamage2Hands,
-      "roll-power": WarheroCharacterSheet.#onRollPower
+      "roll-power": WarheroCharacterSheet.#onRollPower,
+      "skill-minus": WarheroCharacterSheet.#onSkillUseMinus,
+      "skill-plus": WarheroCharacterSheet.#onSkillUsePlus
     }
   };
 
@@ -40,18 +42,23 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     },
     skills: {
       template: "systems/fvtt-warhero/templates/actors/partial-actor-skills.hbs",
+      scrollable: [""]
     },
     combat: {
       template: "systems/fvtt-warhero/templates/actors/partial-actor-combat.hbs",
+      scrollable: [""]
     },
     powers: {
       template: "systems/fvtt-warhero/templates/actors/partial-actor-powers.hbs",
+      scrollable: [""]
     },
     equipment: {
       template: "systems/fvtt-warhero/templates/actors/partial-actor-equipment.hbs",
+      scrollable: [""]
     },
     biography: {
       template: "systems/fvtt-warhero/templates/actors/partial-actor-biography.hbs",
+      scrollable: [""]
     }
   };
 
@@ -231,6 +238,21 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     const li = $(event.target).parents(".item")
     const weaponId = li.data("item-id")
     this.actor.rollDamage(weaponId, true)
+  }
+
+  static async #onSkillUseMinus(event, target) {
+    event.preventDefault();
+
+    const li = $(event.target).parents(".item")
+    const skillId = li.data("item-id")
+    this.actor.incDecSkillUse(skillId, -1)
+  }
+
+  static async #onSkillUsePlus(event, target) {
+    event.preventDefault();
+    const li = $(event.target).parents(".item")
+    const skillId = li.data("item-id")
+    this.actor.incDecSkillUse(skillId, 1)
   }
 
   /**
