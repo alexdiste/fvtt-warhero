@@ -34,10 +34,13 @@ export const WARHERO_CONFIG = {
 
   slotNames: {
     head: { nbslots: 1, itemtype: "armor", label: "WH.conf.head" },
+	goggles: { nbslots: 1, itemtype: "equipment", label: "WH.conf.goggles" },
+	necklace: { nbslots: 1, itemtype: "equipment", label: "WH.conf.necklace" },
     cloak: { nbslots: 1, itemtype: "equipment", label: "WH.conf.cloak" },
     weapon1: { nbslots: 1, itemtype: "weapon", label: "WH.conf.weapon1" },
     weapon2: { nbslots: 1, itemtype: "weapon", label: "WH.conf.weapon2" },
     gloves: { nbslots: 1, itemtype: "equipment", label: "WH.conf.gloves" },
+	bracers: { nbslots: 1, itemtype: "equipment", label: "WH.conf.bracers" },
     ring: { nbslots: 10, itemtype: "equipment", label: "WH.conf.ring" },
     dress: { nbslots: 1, itemtype: "equipment", label: "WH.conf.dress" },
     boots: { nbslots: 1, itemtype: "equipment", label: "WH.conf.boots" },

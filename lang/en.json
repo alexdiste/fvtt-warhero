@@ -38,9 +38,12 @@
   "WH.conf.special": "Special",
 
   "WH.conf.head": "Head",
+  "WH.conf.goggles": "Goggles",
+  "WH.conf.necklace" :"Necklace",
   "WH.conf.cloak": "Cloak",
   "WH.conf.weapon1": "Weapon 1",
   "WH.conf.weapon2": "Weapon 2",
+  "WH.conf.bracers": "Bracers",
   "WH.conf.gloves": "Gloves",
   "WH.conf.dress": "Dress",
   "WH.conf.boots": "Boots",
