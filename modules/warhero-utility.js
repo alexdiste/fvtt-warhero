@@ -609,6 +609,19 @@ export class WarheroUtility {
       return 0;
     })
   }
+  static sortArrayObjectsByNameAndLevelAcquired(myArray) {
+    myArray.sort((a, b) => {
+      let fa = a.system.acquiredatlevel + a.name.toLowerCase();
+      let fb = b.system.acquiredatlevel + b.name.toLowerCase();
+      if (fa < fb) {
+        return -1;
+      }
+      if (fa > fb) {
+        return 1;
+      }
+      return 0;
+    })
+  }
   /* -------------------------------------------- */
   static getUsers(filter) {
     return game.users.filter(filter).map(user => user.id);

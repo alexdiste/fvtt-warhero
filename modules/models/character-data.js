@@ -453,36 +453,6 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     this.hasMana = this.attributes.mana.value > 0;
   }
 
-  /**
-   * Validate character data
-   */
-  validateJoint(options = {}) {
-    super.validateJoint(options);
-
-    // Validate HP values
-    if (this.attributes.hp.value > this.attributes.hp.max) {
-      throw new foundry.data.validation.DataModelValidationFailure({
-        unresolved: true,
-        message: "Current HP cannot exceed maximum HP"
-      });
-    }
-
-    // Validate mana values
-    if (this.attributes.mana.value > this.attributes.mana.max) {
-      throw new foundry.data.validation.DataModelValidationFailure({
-        unresolved: true,
-        message: "Current mana cannot exceed maximum mana"
-      });
-    }
-
-    // Validate counterspell usage
-    if (this.secondary.counterspell.nbuse > this.secondary.counterspell.maxuse) {
-      throw new foundry.data.validation.DataModelValidationFailure({
-        unresolved: true,
-        message: "Counterspell uses cannot exceed maximum uses"
-      });
-    }
-  }
 
   /**
    * Migrate character data
@@ -491,74 +461,5 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     return super.migrateData(data);
   }
 
-  /**
-   * Rest the character (restore resources)
-   */
-  async rest(type = "short") {
-    const updateData = {};
 
-    if (type === "long") {
-      // Long rest - restore all resources
-      updateData["system.attributes.hp.value"] = this.attributes.hp.max;
-      updateData["system.attributes.mana.value"] = this.attributes.mana.max;
-      updateData["system.secondary.counterspell.nbuse"] = 0;
-    } else {
-      // Short rest - restore partial resources
-      const hpRestore = Math.floor(this.attributes.hp.max * 0.25);
-      updateData["system.attributes.hp.value"] = Math.min(
-        this.attributes.hp.max,
-        this.attributes.hp.value + hpRestore
-      );
-    }
-
-    return await this.parent.update(updateData);
-  }
-
-  /**
-   * Spend mana
-   */
-  async spendMana(amount) {
-    if (amount <= 0 || amount > this.attributes.mana.value) return false;
-
-    const updateData = {
-      "system.attributes.mana.value": this.attributes.mana.value - amount
-    };
-
-    await this.parent.update(updateData);
-    return true;
-  }
-
-  /**
-   * Take damage
-   */
-  async takeDamage(amount, type = "normal") {
-    if (amount <= 0) return false;
-
-    // Apply damage reduction
-    let finalDamage = Math.max(0, amount - this.secondary.drbonustotal.value);
-
-    const updateData = {
-      "system.attributes.hp.value": Math.max(0, this.attributes.hp.value - finalDamage)
-    };
-
-    await this.parent.update(updateData);
-    return true;
-  }
-
-  /**
-   * Heal damage
-   */
-  async heal(amount) {
-    if (amount <= 0) return false;
-
-    const updateData = {
-      "system.attributes.hp.value": Math.min(
-        this.attributes.hp.max,
-        this.attributes.hp.value + amount
-      )
-    };
-
-    await this.parent.update(updateData);
-    return true;
-  }
 }

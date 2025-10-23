@@ -228,6 +228,8 @@
   "WH.ui.bodyslots": "Body",
   "WH.ui.containerslot": "Containers",
   "WH.ui.duration":"Duration",
+  "WH.ui.isCustomAttackRoll": "Custom Attack Roll",
+
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
   "WH.chat.diceresult": "Dice result",

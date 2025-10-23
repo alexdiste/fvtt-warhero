@@ -256,9 +256,38 @@ a:hover {
   max-width: 6.2rem;
 }
 
+.item-field-label-medium {
+  min-width: 4.5rem;
+  max-width: 4.5rem;
+}
+
 .item-has-use {
   margin-left: 4px;
   max-width: 8rem;
+}
+
+.actor-skill-title1 {
+  min-width: 16rem;
+  max-width: 16rem;
+}
+
+.condition-effect-label {
+  min-width: 13.2rem;
+  max-width: 13.2rem;
+}
+
+.item-name-label-long {
+  min-width: 14rem;
+  max-width: 14rem;
+}
+
+.item-name-img {
+  width: 32px;
+  max-width: 32px;
+  height: 32px;
+  max-height: 32px;
+  flex-grow: 0;
+  margin-right: 0.25rem;
 }
 
 .item-name-label-header .items-title-text,
