@@ -228,6 +228,10 @@
   "WH.ui.containerslot": "Contenitori",
   "WH.ui.duration":"Durata",
   "WH.ui.isCustomAttackRoll": "Tiro di attacco personalizzato",
+  "WH.ui.resetSkillUse": "Resetta uso abilità",
+  "WH.ui.actorSleep": "Riposo",
+  "WH.ui.confirmresetskillsuse": "Conferma reset uso abilità",
+  "WH.ui.confirmresetskillsusecontent": "Sei sicuro di voler resettare tutti gli usi delle abilità?",
 
   "WH.chat.save": "Tiro salvezza su",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",
@@ -239,6 +243,7 @@
   "WH.chat.useshield":"Usare scudo?",
   "WH.chat.power": "Potere",
   "WH.chat.powerlevel": "Livello di potere",
+  "WH.chat.actorrested" : "{name} ha dormito recuperando tutti i PF, tutto il mana, tutti gli usi di contropotere e tutti gli usi delle abilità. Ricordati di controllare se hai già mangiato questo giorno o no, in caso negativo ricordati di scalare una razione",
 
   "WH.notif.skillmaxuse": "Usi massimi raggiunti",
   "WH.notif.toomanyuses": "Usi massimi raggiunti"

@@ -57,4 +57,11 @@
   <input type="text" disabled class="item-field-label-short" value="{{stat.level}}" data-dtype="Number" />
   {{/if}}
 
+  {{#if isRest}}
+  <span class="item-field-label-short" name="{{key}}">
+    <h4 class="item-field-label-short">{{localize "WH.ui.rest"}}
+    </h4>
+  </span>
+  {{/if}}
+
 </li>
