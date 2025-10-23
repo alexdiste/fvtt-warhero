@@ -227,6 +227,8 @@
   "WH.ui.bodyslots": "Corpo",
   "WH.ui.containerslot": "Contenitori",
   "WH.ui.duration":"Durata",
+  "WH.ui.isCustomAttackRoll": "Tiro di attacco personalizzato",
+
   "WH.chat.save": "Tiro salvezza su",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",
   "WH.chat.diceresult": "Risultato del dado",
@@ -240,4 +242,5 @@
 
   "WH.notif.skillmaxuse": "Usi massimi raggiunti",
   "WH.notif.toomanyuses": "Usi massimi raggiunti"
+
 }

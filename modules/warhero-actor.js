@@ -352,7 +352,7 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   getNormalSkills() {
     let comp = this.items.filter(it => it.type == "skill" && !it.system.classskill && !it.system.raceskill)
-    WarheroUtility.sortArrayObjectsByName(comp)
+    WarheroUtility.sortArrayObjectsByNameAndLevelAcquired(comp)
     return comp
   }
   getRaceSkills() {
@@ -770,8 +770,8 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   computeBonusLanguages() {
-    if (!this.system?.statistics?.mind || this.system?.secondary?.nblanguage == undefined) return
-    let nblanguage = Math.floor(this.system.statistics.mind.max / 2)
+    if (!this.system?.statistics?.min.value || this.system?.secondary?.nblanguage == undefined) return
+    let nblanguage = Math.floor(this.system.statistics.min.value / 2)
     if (nblanguage != this.system?.secondary?.nblanguage?.value) {
       this.update({ 'system.secondary.nblanguage.value': nblanguage })
     }
