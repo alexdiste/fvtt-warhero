@@ -57,13 +57,11 @@ export class SkillData extends foundry.abstract.TypeDataModel {
         hint: "WH.ui.currentuse.hint"
       }),
 
-      maxuse: new fields.NumberField({
-        initial: 0,
-        required: false,
-        min: 0,
-        integer: true,
-        label: "WH.ui.maxuse",
-        hint: "WH.ui.maxuse.hint"
+      maxuseFormula: new fields.StringField({
+        initial: "1",
+        required: true,
+        label: "WH.ui.maxuseFormula",
+        hint: "WH.ui.maxuseFormula.hint"
       }),
 
       description: new fields.HTMLField({
@@ -105,19 +103,13 @@ export class SkillData extends foundry.abstract.TypeDataModel {
     this.isRacial = this.raceskill;
     this.isClass = this.classskill;
     this.isGeneral = !this.raceskill && !this.classskill;
-  }
-
-  /**
-   * Validate skill data
-   */
-  validateJoint(options = {}) {
-    super.validateJoint(options);
-
-    if (!this.unlimited && this.maxuse > 0 && this.currentuse > this.maxuse) {
-      throw new foundry.data.validation.DataModelValidationFailure({
-        unresolved: true,
-        message: "Current use cannot exceed maximum use for limited skills"
-      });
+    this.maxuse = -1;
+    if (!this.unlimited && this.parent?.parent) {
+      if (!this.maxuseFormula || this.maxuseFormula.trim() === "") {
+        this.maxuseFormula = "1";
+      }
+      let roll = new Roll(String(this.maxuseFormula), this.parent.parent).evaluateSync();
+      this.maxuse = roll.total;
     }
   }
 
