@@ -667,6 +667,49 @@ export class WarheroActor extends Actor {
       }
     }
   }
+
+  /* -------------------------------------------- */
+  async restActor() {
+    const manamax = this.system.attributes.mana.max;
+    const hpmax = this.system.attributes.hp.max;
+
+    this.resetAllSkillUses(false);
+
+    let updates = []
+    updates.push({ "system.attributes.mana.value": manamax });
+    updates.push({ "system.attributes.hp.value": hpmax });
+    updates.push({ "system.secondary.counterspell.nbuse": 0 }); //resetta usi di contropotere
+
+    await this.update(updates);
+
+    ChatMessage.create({
+      user: game.user._id,
+      content: game.i18n.format("WH.chat.actorrested", { name: this.name })
+    });
+  }
+
+  /* -------------------------------------------- */
+  async resetAllSkillUses(askConfirmation = true) {
+    // Wait for confirmation
+    if (askConfirmation) {
+      let confirmed = await Dialog.confirm({
+        title: game.i18n.localize("WH.ui.confirmresetskillsusetitle"),
+        content: `<p>${game.i18n.localize("WH.ui.confirmresetskillsusecontent")}</p>`,
+        yes: () => true,
+        no: () => false
+      });
+      if (!confirmed) return;
+    }
+
+    let updates = []
+    for (let skill of this.items.filter(i => i.type === 'skill')) {
+      updates.push({ _id: skill.id, 'system.currentuse': 0 })
+    }
+    if (updates.length > 0) {
+      await this.updateEmbeddedDocuments('Item', updates)
+    }
+  }
+
   /* -------------------------------------------- */
   async incDecSkillUse(skillId, value) {
     let skill = this.items.get(skillId)
