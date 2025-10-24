@@ -229,6 +229,10 @@
   "WH.ui.containerslot": "Containers",
   "WH.ui.duration":"Duration",
   "WH.ui.isCustomAttackRoll": "Custom Attack Roll",
+  "WH.ui.resetSkillUse": "Reset Skill Use",
+  "WH.ui.actorSleep": "Sleep",
+  "WH.ui.confirmresetskillsuse": "Confirm Reset Skill Use",
+  "WH.ui.confirmresetskillsusecontent": "Are you sure you want to reset all skill uses?",
 
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
@@ -240,6 +244,7 @@
   "WH.chat.useshield":"Use shield ?",
   "WH.chat.power": "Power",
   "WH.chat.powerlevel": "Power Level",
+  "WH.chat.actorrested" : "{name} has rested recovering all HP, all mana, all counterpower uses and all skill uses. Remember to check if you have already eaten today or not, if not remember to subtract one ration",
 
   "WH.notif.skillmaxuse": "Maximum skill usage reach - Use is not allowed",
   "WH.notif.toomanyuses": "Maximum use reach - Roll is not allowed"

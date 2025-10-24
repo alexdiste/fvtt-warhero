@@ -77,13 +77,13 @@
         <div class="flexrow">
           {{#each system.attributes as |attr key|}}
           {{#if attr.isheader}}
-          <div class="flexrow">
+          <div class="flexrow actor-magic-stat-header">
             {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=attr key=key path="attributes"
             fieldClass="item-field-label-medium"}}
           </div>
           {{/if}}
           {{/each}}
-          </ul>
+          <button class="actor-sheet-button" data-action="actor-sleep">{{localize "WH.ui.actorSleep"}}</button>
         </div>
 
       </div>

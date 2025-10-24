@@ -25,7 +25,9 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       "roll-damage-2hands": WarheroCharacterSheet.#onRollDamage2Hands,
       "roll-power": WarheroCharacterSheet.#onRollPower,
       "skill-minus": WarheroCharacterSheet.#onSkillUseMinus,
-      "skill-plus": WarheroCharacterSheet.#onSkillUsePlus
+      "skill-plus": WarheroCharacterSheet.#onSkillUsePlus,
+      "reset-skill-use": WarheroCharacterSheet.#onResetSkillUse,
+      "actor-sleep": WarheroCharacterSheet.#onActorSleep
     }
   };
 
@@ -253,6 +255,15 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     const li = $(event.target).parents(".item")
     const skillId = li.data("item-id")
     this.actor.incDecSkillUse(skillId, 1)
+  }
+
+  static async #onResetSkillUse(event, target) {
+    event.preventDefault();
+    this.actor.resetAllSkillUses()
+  }
+  static async #onActorSleep(event, target) {
+    event.preventDefault();
+    this.actor.restActor()
   }
 
   /**
