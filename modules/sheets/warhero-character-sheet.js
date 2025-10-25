@@ -27,7 +27,8 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       "skill-minus": WarheroCharacterSheet.#onSkillUseMinus,
       "skill-plus": WarheroCharacterSheet.#onSkillUsePlus,
       "reset-skill-use": WarheroCharacterSheet.#onResetSkillUse,
-      "actor-sleep": WarheroCharacterSheet.#onActorSleep
+      "actor-sleep": WarheroCharacterSheet.#onActorSleep,
+      "roll-d100-this": WarheroCharacterSheet.#onRollD100This,
     }
   };
 
@@ -199,6 +200,16 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     const rollType = $(event.target).data("type");
     const statKey = $(event.target).data("key");
     this.actor.rollFromType(rollType, statKey);
+  }
+
+  static async #onRollD100This(event, target) {
+    event.preventDefault();
+
+    let d100Bonus = this.actor.system.secondary.percentbonus.value || 0
+    new Roll(`1d100 + ${d100Bonus}`).toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      flavor: `${game.i18n.localize("WH.ui.percentroll")} : 1d100 + ${d100Bonus}`
+    })
   }
 
   /**

@@ -236,6 +236,8 @@
   "WH.ui.confirmresetskillsusecontent": "Sei sicuro di voler resettare tutti gli usi delle abilità?",
   "WH.ui.bonusvalue": "Bonus o valore",
   "WH.ui.max": "Massimo",
+  "WH.ui.percentbonus": "Bonus ai tiri percentuali",
+  "WH.ui.percentroll": "Tiro D100",
 
   "WH.chat.save": "Tiro salvezza su",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",

@@ -294,6 +294,13 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           iscombat: new fields.BooleanField({ initial: true, required: false }),
           value: new fields.NumberField({ initial: 0, required: false, integer: true })
         }),
+        percentbonus: new fields.SchemaField({
+          label: new fields.StringField({ initial: "WH.ui.percentbonus", required: false }),
+          abbrev: new fields.StringField({ initial: "percentbonus", required: false }),
+          style: new fields.StringField({ initial: "edit", required: false }),
+          value: new fields.NumberField({ initial: 0, required: false, integer: true }),
+          rollD100: new fields.BooleanField({ initial: true, required: false }),
+        }),
         meleedamagebonus: new fields.SchemaField({
           label: new fields.StringField({ initial: "WH.ui.meleedamagebonus", required: false }),
           abbrev: new fields.StringField({ initial: "meleedamagebonus", required: false }),

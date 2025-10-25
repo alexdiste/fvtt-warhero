@@ -134,6 +134,8 @@
   "WH.ui.competency": "Competency",
   "WH.ui.conditions": "Conditions",
   "WH.ui.effect": "Effect",
+  "WH.ui.percentbonus": "Bonus to percentage throws",
+  "WH.ui.percentroll": "D100 Roll",
 
   "WH.ui.main": "Main",
   "WH.ui.combat": "Combat",
