@@ -38,6 +38,13 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           label: "WH.ui.class",
           hint: "WH.ui.class.hint"
         }),
+        origin: new fields.StringField({
+          initial: "",
+          required: false,
+          blank: true,
+          label: "WH.ui.origin",
+          hint: "WH.ui.origin.hint"
+        }),
         age: new fields.NumberField({
           initial: 0,
           required: false,

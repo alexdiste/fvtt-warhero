@@ -236,6 +236,7 @@
   "WH.ui.confirmresetskillsuse": "Confirm Reset Skill Use",
   "WH.ui.confirmresetskillsusecontent": "Are you sure you want to reset all skill uses?",
   "WH.ui.bonusvalue": "Bonus or value",
+  "WH.ui.max": "Max",
 
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
