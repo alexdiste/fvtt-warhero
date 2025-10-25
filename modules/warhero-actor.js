@@ -240,6 +240,13 @@ export class WarheroActor extends Actor {
         containers[slotName] = foundry.utils.duplicate(slotDef)
         containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
           && it.system.slotlocation == slotName)
+        // Manage specific shields case : merge shield with weapon2
+        if (slotName == "weapon2") {
+          containers[slotName].content = containers[slotName].content.concat(this.items.filter(it => it.type == 'shield' && it.system.slotlocation == "shield"))
+        }
+        if (slotName == "shield") {
+          containers[slotName].content = containers[slotName].content.concat(this.items.filter(it => it.type == 'shield' && (it.system.slotlocation == "weapon1" || it.system.slotlocation == "weapon2")))
+        }
         let slotUsed = 0
         for (let item of containers[slotName].content) {
           let q = (item.system.quantity) ? item.system.quantity : 1
@@ -256,7 +263,6 @@ export class WarheroActor extends Actor {
     }
     return containers
   }
-
 
   /* -------------------------------------------- */
   buildEquipmentsSlot() {
@@ -675,10 +681,11 @@ export class WarheroActor extends Actor {
 
     this.resetAllSkillUses(false);
 
-    let updates = []
-    updates.push({ "system.attributes.mana.value": manamax });
-    updates.push({ "system.attributes.hp.value": hpmax });
-    updates.push({ "system.secondary.counterspell.nbuse": 0 }); //resetta usi di contropotere
+    let updates = {
+      "system.attributes.mana.value": manamax,
+      "system.attributes.hp.value": hpmax,
+      "system.secondary.counterspell.nbuse": 0
+    };
 
     await this.update(updates);
 

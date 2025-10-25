@@ -18,18 +18,18 @@
   {{/if}}
 
   {{#if (eq style "edit")}}
-  <input type="text" class="item-field-label-short" {{#if disabled}}disabled{{/if}} name="system.{{path}}.{{key}}.value"
+  <input type="text" class="item-field-label-short" data-tooltip="{{localize "WH.ui.bonusvalue"}}" {{#if disabled}}disabled{{/if}} name="system.{{path}}.{{key}}.value"
     value="{{stat.value}}" data-dtype="Number" />
   {{#if hasmax}}
-  <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.max" value="{{stat.max}}"
+  <input type="text" class="item-field-label-short" data-tooltip="{{localize "WH.ui.max"}}" name="system.{{path}}.{{key}}.max" value="{{stat.max}}"
     data-dtype="Number" />
   {{/if}}
   {{#if hasuse}}
   <span class="flexrow item-has-use">
-    <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.nbuse" value="{{stat.nbuse}}"
+    <input type="text" class="item-field-label-short" data-tooltip="{{localize "WH.ui.currentuse"}}"  name="system.{{path}}.{{key}}.nbuse" value="{{stat.nbuse}}"
       data-dtype="Number" />
     <label class="item-field-label-2rem">/</label>
-    <input type="text" class="item-field-label-short" name="system.{{path}}.{{key}}.maxuse" value="{{stat.maxuse}}"
+    <input type="text" class="item-field-label-short" data-tooltip="{{localize "WH.ui.maxuse"}}" name="system.{{path}}.{{key}}.maxuse" value="{{stat.maxuse}}"
       data-dtype="Number" />
   </span>
   {{/if}}
@@ -55,13 +55,6 @@
     </h4>
   </span>
   <input type="text" disabled class="item-field-label-short" value="{{stat.level}}" data-dtype="Number" />
-  {{/if}}
-
-  {{#if isRest}}
-  <span class="item-field-label-short" name="{{key}}">
-    <h4 class="item-field-label-short">{{localize "WH.ui.rest"}}
-    </h4>
-  </span>
   {{/if}}
 
 </li>

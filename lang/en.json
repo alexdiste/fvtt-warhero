@@ -127,6 +127,8 @@
   "WH.ui.unlimited": "Unlimited use ?",
   "WH.ui.currentuse": "Current use",
   "WH.ui.maxuse": "Max use",
+  "WH.ui.maxuseFormula": "Max use formula",
+  "WH.ui.maxuseComputedOnActor": "Max use computed when owned by actor",
   "WH.ui.languages": "Languages",
   "WH.ui.languagesbonus": "Bonus Languages (mind/2)",
   "WH.ui.competency": "Competency",
@@ -233,6 +235,7 @@
   "WH.ui.actorSleep": "Sleep",
   "WH.ui.confirmresetskillsuse": "Confirm Reset Skill Use",
   "WH.ui.confirmresetskillsusecontent": "Are you sure you want to reset all skill uses?",
+  "WH.ui.bonusvalue": "Bonus or value",
 
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",

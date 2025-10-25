@@ -284,6 +284,16 @@ a:hover {
   /*background-color: red;*/
 }
 
+.item-field-input-1,
+.item-field-select-1 {
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+.item-field-input-2 {
+  min-width: 18rem;
+  max-width: 18rem;
+}
 
 .item-field-label-medium {
   min-width: 4.5rem;

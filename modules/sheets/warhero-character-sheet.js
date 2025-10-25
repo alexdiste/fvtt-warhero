@@ -261,6 +261,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     event.preventDefault();
     this.actor.resetAllSkillUses()
   }
+
   static async #onActorSleep(event, target) {
     event.preventDefault();
     this.actor.restActor()

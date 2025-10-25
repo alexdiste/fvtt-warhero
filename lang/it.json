@@ -126,6 +126,8 @@
   "WH.ui.unlimited": "Usi illimitati?",
   "WH.ui.currentuse": "Numero di usi",
   "WH.ui.maxuse": "Usi Massimi",
+  "WH.ui.maxuseComputedOnActor": "Usi massimi calcolati quando in possesso di un personaggio",
+  "WH.ui.maxuseFormula": "Formula usi massimi",
   "WH.ui.languages": "Lingue",
   "WH.ui.languagesbonus": "Bonus a linguaggi conosciuti (men/2)",
   "WH.ui.competency": "Competenze",
@@ -232,6 +234,7 @@
   "WH.ui.actorSleep": "Riposo",
   "WH.ui.confirmresetskillsuse": "Conferma reset uso abilità",
   "WH.ui.confirmresetskillsusecontent": "Sei sicuro di voler resettare tutti gli usi delle abilità?",
+  "WH.ui.bonusvalue": "Bonus o valore",
 
   "WH.chat.save": "Tiro salvezza su",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",
