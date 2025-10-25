@@ -5,7 +5,12 @@
       <i class="fa-solid fa-dice-d20"></i><a class="roll-this stat-margin" data-action="roll-this" data-type="{{path}}"
         data-key="{{key}}">&nbsp;{{localize stat.label}}</a>
       {{else}}
+      {{#if rollD100}}
+      <i class="fa-solid fa-dice-d10"></i><i class="fa-solid fa-dice-d10"></i><a class="roll-d100-this stat-margin" data-action="roll-d100-this" data-type="{{path}}"
+        data-key="{{key}}">&nbsp;{{localize stat.label}}</a>
+      {{else}}
       {{localize stat.label}}
+      {{/if}}
       {{/if}}
     </h4>
   </span>
