@@ -34,6 +34,13 @@ export class PowerData extends foundry.abstract.TypeDataModel {
         hint: "WH.ui.magicschool.hint"
       }),
 
+      isteleport: new fields.BooleanField({
+        initial: false,
+        required: false,
+        label: "WH.ui.isteleport",
+        hint: "WH.ui.isteleport.hint"
+      }),
+
       description: new fields.HTMLField({
         initial: "",
         required: false,

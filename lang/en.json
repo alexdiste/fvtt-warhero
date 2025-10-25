@@ -20,7 +20,8 @@
       "poison": "Poison",
       "trap": "Trap",
       "classitem": "Class item",
-      "competency": "Competency"
+      "competency": "Competency",
+      "location": "Location"
     }
   },
   "WH.conf.short": "Short",
@@ -239,6 +240,10 @@
   "WH.ui.confirmresetskillsusecontent": "Are you sure you want to reset all skill uses?",
   "WH.ui.bonusvalue": "Bonus or value",
   "WH.ui.max": "Max",
+  "WH.ui.shortdescription": "Short Description",
+  "WH.ui.location": "Location",
+  "WH.ui.selectlocation": "Select a location",
+  "WH.ui.isteleport": "Is Teleport ?",
 
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",

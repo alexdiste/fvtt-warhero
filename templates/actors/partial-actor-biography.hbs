@@ -64,6 +64,42 @@
     <hr>
     </article>
 
+    <div class="flexcol">
+      <div>
+        <ul class="stat-list alternate-list">
+          <li class="item flexrow list-item items-title-bg">
+            <span class="item-name-label-header-long actor-skill-title1">
+              <h3><label class="items-title-text">{{localize "WH.ui.location"}}</label></h3>
+            </span>
+            <span class="item-field-label-long">
+              <label class="short-label">{{localize "WH.ui.shortdescription"}}</label>
+            </span>
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-add" data-action="item-add" data-type="location"
+                title="Create Item"><i class="fas fa-plus"></i></a>
+            </div>
+          </li>
+          {{#each locations as |location key|}}
+          <li class="item flexrow list-item list-item-shadow {{location.class}}" data-item-id="{{location._id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
+                class="sheet-competence-img" src="{{location.img}}" /></a>
+
+            <span class="item-name-label-medium">{{location.name}}</span>
+
+            <span class="item-field-label-long">{{location.system.shortdescription}}</span>
+
+            <div class="item-filler">&nbsp;</div>
+            <div class="item-controls item-controls-fixed">
+              <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
+                  class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
     {{#if isGM}}
     <div>
       <ul class="stat-list alternate-list">

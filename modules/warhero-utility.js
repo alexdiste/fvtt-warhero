@@ -508,8 +508,15 @@ export class WarheroUtility {
       if (actor.spentMana(manaCost)) {
         let powerKey = "level" + rollData.powerLevel
         rollData.powerText = rollData.power.system[powerKey]
+        // If teleport power and location selected, get location name
+        if (rollData.power.system.isteleport && rollData.selectedLocation) {
+          let location = actor.items.find(it => it.id === rollData.selectedLocation)
+          if (location) {
+            rollData.locationName = location.name
+          }
+        }
         let msg = await this.createChatWithRollMode(rollData.alias, {
-          content: await renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
+          content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
         })
         msg.setFlag("world", "rolldata", rollData)
       }

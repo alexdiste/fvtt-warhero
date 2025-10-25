@@ -16,6 +16,7 @@ export { WarheroMoneySheetV2 } from "./warhero-money-sheet.js";
 export { WarheroPotionSheetV2 } from "./warhero-potion-sheet.js";
 export { WarheroPoisonSheetV2 } from "./warhero-poison-sheet.js";
 export { WarheroTrapSheetV2 } from "./warhero-trap-sheet.js";
+export { WarheroLocationSheetV2 } from "./warhero-location-sheet.js";
 
 // Warhero Character Sheet
 export { WarheroCharacterSheet } from "./warhero-character-sheet.js";

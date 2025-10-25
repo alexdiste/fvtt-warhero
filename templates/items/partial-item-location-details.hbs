@@ -1,0 +1,21 @@
+<section
+  class="tab equipment-{{tab.id}} {{tab.cssClass}}"
+  data-tab="{{tab.id}}"
+  data-group="{{tab.group}}"
+>
+  <ul>
+
+    <li class="flexrow"><label class="item-field-label-long">{{localize
+          "WH.ui.shortdescription"
+        }}</label>
+      <input
+        type="text"
+        class="item-field-label-long"
+        name="system.shortdescription"
+        value="{{system.shortdescription}}"
+        data-dtype="String"
+      />
+    </li>
+
+  </ul>
+</section>

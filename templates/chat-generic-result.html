@@ -46,6 +46,9 @@
       <li>{{localize "WH.ui.power"}} : {{power.name}}</li>
       <li>{{localize "WH.ui.magicschool"}} : {{power.system.magicschool}}</li>
       <li>{{localize "WH.ui.level"}} : {{power.system.level}}</li>
+      {{#if locationName}}
+      <li>{{localize "WH.ui.location"}} : {{locationName}}</li>
+      {{/if}}
       <li>{{{powerText}}}</li>
       {{else}}
       <li><strong>{{localize "WH.chat.result"}} : {{roll.total}} </strong></li>

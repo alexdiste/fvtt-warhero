@@ -11,6 +11,7 @@ export { ShieldData } from "./shield-data.js";
 export { SkillData } from "./skill-data.js";
 export { PowerData } from "./power-data.js";
 export { LanguageData } from "./language-data.js";
+export { LocationData } from "./location-data.js";
 export { ConditionData } from "./condition-data.js";
 export { ClassData } from "./class-data.js";
 export { RaceData } from "./race-data.js";
