@@ -125,6 +125,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       equippedArmors: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getEquippedArmors())),
       equippedShields: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getEquippedShields())),
       powers: this.actor.sortPowers(),
+      locations: this.actor.getLocations(),
       allItems: this.actor.getAllItems(),
       subActors: foundry.utils.duplicate(this.actor.getSubActors()),
       competency: this.actor.getCompetency(),

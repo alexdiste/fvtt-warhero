@@ -18,7 +18,7 @@ import { WARHERO_CONFIG } from "./warhero-config.js"
 import {
   // Item Data Models
   EquipmentData, WeaponData, ArmorData, ShieldData, SkillData, PowerData,
-  LanguageData, ConditionData, ClassData, RaceData, MoneyData, PotionData,
+  LanguageData, LocationData, ConditionData, ClassData, RaceData, MoneyData, PotionData,
   PoisonData, TrapData, ClassItemData, CompetencyData,
   // Actor Data Models
   CharacterData, PartyData
@@ -73,6 +73,7 @@ Hooks.once("init", async function () {
     skill: SkillData,
     power: PowerData,
     language: LanguageData,
+    location: LocationData,
     condition: ConditionData,
     class: ClassData,
     race: RaceData,
@@ -118,6 +119,7 @@ Hooks.once("init", async function () {
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroCompetencySheetV2, { types: ["competency"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroConditionSheetV2, { types: ["condition"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroLanguageSheetV2, { types: ["language"], makeDefault: true });
+  foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroLocationSheetV2, { types: ["location"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroMoneySheetV2, { types: ["money"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroPotionSheetV2, { types: ["potion"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroPoisonSheetV2, { types: ["poison"], makeDefault: true });

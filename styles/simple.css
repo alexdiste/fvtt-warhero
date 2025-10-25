@@ -261,6 +261,15 @@ a:hover {
   min-width: 12rem;
 }
 
+.description-title {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.warhero-location-overflow {
+  background-color: #3e0101;
+}
+
 .actor-sheet-button {
   box-shadow: inset 0px 1px 0px 0px #a6827e;
   background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);

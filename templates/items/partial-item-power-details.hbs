@@ -8,6 +8,10 @@
       <input type="text" class="item-field-label-long" name="system.level" value="{{system.level}}"
         data-dtype="Number" />
     </li>
+    <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.isteleport"}}</label>
+      <input type="checkbox" class="item-field-label-long" name="system.isteleport" {{#if system.isteleport}}checked{{/if}}
+        data-dtype="Boolean" />
+    </li>
   </ul>
 
 </section>

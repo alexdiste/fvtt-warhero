@@ -83,6 +83,19 @@
       <span class="item-field-label-vlong">{{localize "WH.chat.powerlevel"}} : </span>
       <span class="item-field-label-medium">{{power.system.level}}</span>
     </div>
+    {{#if power.system.isteleport}}
+    {{#if locations}}
+    <div class="flexrow">
+      <span class="item-field-label-vlong">{{localize "WH.ui.location"}} : </span>
+      <select class="item-field-label-long" type="text" id="selectedLocation" name="selectedLocation">
+        <option value="">{{localize "WH.ui.selectlocation"}}</option>
+        {{#each locations as |location|}}
+        <option value="{{location._id}}">{{location.name}}</option>
+        {{/each}}
+      </select>
+    </div>
+    {{/if}}
+    {{/if}}
     {{/if}}
 
     {{#if hasBM}}

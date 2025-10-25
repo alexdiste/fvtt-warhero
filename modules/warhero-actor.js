@@ -189,6 +189,19 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
+  getLocations() {
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'location') || []);
+    // Add a class option when the number of locations is more that "mind" statistics
+    for (let i = 0; i < comp.length; i++) {
+      let c = comp[i]
+      if (i >= this.system.statistics?.min?.value) {
+        c.class = "warhero-location-overflow"
+      }
+    }
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp;
+  }
+
   /* -------------------------------------------- */
   checkAndPrepareEquipment(item) {
   }
@@ -830,7 +843,7 @@ export class WarheroActor extends Actor {
   spentMana(spentValue) {
     let mana = foundry.utils.duplicate(this.system.attributes.mana)
     if (Number(spentValue) > mana.value) {
-      ui.notifications.warn("Not enough Mana points !")
+      ui.notifications.warn("Not enough Mana points  : you have " + mana.value + " points, tried to spend " + spentValue)
       return false
     }
     mana.value -= Number(spentValue)
@@ -938,6 +951,11 @@ export class WarheroActor extends Actor {
       rollData.img = power.img
       rollData.hasBM = false
       rollData.title = `${this.name} - Power`
+      // If teleport power, add locations list
+      if (power.system.isteleport) {
+        rollData.locations = this.getLocations()
+        rollData.selectedLocation = ""
+      }
       this.startRoll(rollData)
     }
   }
@@ -978,6 +996,9 @@ export class WarheroActor extends Actor {
         $("#usemWeaponMalusCheck").change(event => {
           rollData.usemWeaponMalus = event.currentTarget.checked
         })
+        $("#selectedLocation").change(event => {
+          rollData.selectedLocation = event.currentTarget.value
+        } )
       }
     })
 

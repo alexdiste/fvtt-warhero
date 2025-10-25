@@ -75,6 +75,7 @@
       "competency": { "htmlFields": ["description"] },
       "power": { "htmlFields": ["description"] },
       "language": { "htmlFields": ["description"] },
+      "location": { "htmlFields": ["description"] },
       "money": { "htmlFields": ["description"] },
       "condition": { "htmlFields": ["description"] },
       "poison": { "htmlFields": ["description"] },

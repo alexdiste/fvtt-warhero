@@ -20,7 +20,8 @@
       "poison": "Veleno",
       "trap": "Trappola",
       "classitem": "Oggetto di classe",
-      "competency": "Competenza"
+      "competency": "Competenza",
+      "location": "Luogo"
     }
   },
   "WH.conf.short": "Corte",
@@ -238,6 +239,10 @@
   "WH.ui.max": "Massimo",
   "WH.ui.percentbonus": "Bonus ai tiri percentuali",
   "WH.ui.percentroll": "Tiro D100",
+  "WH.ui.shortdescription": "Descrizione breve",
+  "WH.ui.location": "Posizione",
+  "WH.ui.selectlocation": "Seleziona una posizione",
+  "WH.ui.isteleport": "È un teletrasporto ?",
 
   "WH.chat.save": "Tiro salvezza su",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",
