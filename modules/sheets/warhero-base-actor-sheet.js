@@ -35,6 +35,9 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
       "item-edit": WarheroActorSheet.#onItemEdit,
       "item-delete": WarheroActorSheet.#onItemDelete,
       "item-add": WarheroActorSheet.#onItemAdd,
+      "effect-delete": WarheroActorSheet.#onEffectDelete,
+      "effect-toggle": WarheroActorSheet.#onEffectToggle,
+      "create-effect": WarheroActorSheet.#onCreateActiveEffect,
       "quantity-minus": WarheroActorSheet.#onQuantityMinus,
       "quantity-plus": WarheroActorSheet.#onQuantityPlus,
       toChat: WarheroActorSheet.#toChat,
@@ -226,7 +229,10 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   static async #onItemEdit(event, target) {
     const li = $(event.target).parents(".item")
     let itemId = li.data("item-id")
-    const item = this.actor.items.get(itemId);
+    let item = this.actor.items.get(itemId);
+    if (!item) {
+      item = this.actor.effects.get(itemId);
+    }
     item.sheet.render(true);
   }
 
@@ -238,11 +244,44 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
    */
   static async #onItemDelete(event, target) {
     const li = $(target).parents(".item")
-    WarheroUtility.confirmDelete(this, li)
+    WarheroUtility.confirmDelete(this, li, "Item")
+  }
+
+  static async #onEffectDelete(event, target) {
+    const li = $(target).parents(".item")
+    WarheroUtility.confirmDelete(this, li, "ActiveEffect")
+  }
+
+  static async #onEffectToggle(event, target) {
+    const li = $(target).parents(".item");
+    const effectId = li.data("item-id");
+    const effect = this.actor.effects.get(effectId);
+    if (!effect) return;
+    await effect.update({ disabled: !effect.disabled });
+  }
+
+  static async #onCreateActiveEffect(event) {
+    event.preventDefault();
+    const a = event.currentTarget;
+    const li = a.closest("li");
+    let owner = this.document;
+
+    let effect = await ActiveEffect.implementation.create(
+      {
+        name: game.i18n.format("DOCUMENT.New", { type: game.i18n.localize("DOCUMENT.ActiveEffect") }),
+        transfer: false,
+        img: "icons/svg/aura.svg",
+        origin: owner.uuid,
+        //"duration.rounds": 10,
+        disabled: false,
+        changes: [{}],
+      },
+      { parent: owner },
+    );
+    await owner.createEmbeddedDocuments("ActiveEffect", [effect.toObject()]);
   }
 
   static async #onItemAdd(event, target) {
-    console.log("Add item", event, target)
     const dataType = target.getAttribute("data-type")
     const slotKey = target.getAttribute("data-slot")
     this.actor.createEmbeddedDocuments('Item', [{ name: "NewItem", type: dataType, system: { slotlocation: slotKey } }], { renderSheet: true })

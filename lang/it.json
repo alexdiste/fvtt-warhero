@@ -243,6 +243,13 @@
   "WH.ui.location": "Posizione",
   "WH.ui.selectlocation": "Seleziona una posizione",
   "WH.ui.isteleport": "È un teletrasporto ?",
+  "WH.ui.Temporary": "Temporanea",
+  "WH.ui.Source": "Fonte",
+  "WH.ui.Duration": "Durata",
+  "WH.ui.Passive": "Passiva",
+  "WH.ui.Inactive": "Inattiva",
+  "WH.ui.effects": "Effetti",
+  "WH.ui.toggleeffect": "Attiva/Disattiva effetto",
 
   "WH.chat.save": "Tiro salvezza su",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",

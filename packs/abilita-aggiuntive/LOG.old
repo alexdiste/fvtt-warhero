@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2025/11/01-14:31:05.695 8b4c Recovering log #3540
 2025/11/01-14:31:05.702 8b4c Delete type=0 #3540
 2025/11/01-14:31:05.702 8b4c Delete type=3 #3538
@@ -12,3 +13,12 @@
 2025/11/01-15:53:00.014 114 Delete type=2 #3511
 2025/11/01-15:53:00.014 114 Delete type=2 #3545
 2025/11/01-15:53:00.027 114 Manual compaction at level-0 from '!items!zu4r7RLEQNHDR0jy' @ 434 : 1 .. '!items!zu4r7RLEQNHDR0jy' @ 0 : 0; will stop at (end)
+=======
+2025/11/05-14:07:06.800205 7f7263fff6c0 Recovering log #3957
+2025/11/05-14:07:06.855646 7f7263fff6c0 Delete type=3 #3955
+2025/11/05-14:07:06.855713 7f7263fff6c0 Delete type=0 #3957
+2025/11/05-15:54:12.014212 7f7262ffd6c0 Level-0 table #3962: started
+2025/11/05-15:54:12.014929 7f7262ffd6c0 Level-0 table #3962: 0 bytes OK
+2025/11/05-15:54:12.021057 7f7262ffd6c0 Delete type=0 #3960
+2025/11/05-15:54:12.040508 7f7262ffd6c0 Manual compaction at level-0 from '!items!0EnayTHWCsm2b2D0' @ 72057594037927935 : 1 .. '!items!yMTXQTytXFozIMtG' @ 0 : 0; will stop at (end)
+>>>>>>> Stashed changes

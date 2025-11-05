@@ -376,8 +376,8 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
 
     // Statistics
     for (let stat of Object.values(this.statistics)) {
-      stat.save = Math.max(0, stat.save);
-      stat.value = Math.max(0, stat.value);
+      //stat.save = Math.max(0, stat.save);
+      //stat.value = Math.max(0, stat.value);
     }
 
     // Attributes

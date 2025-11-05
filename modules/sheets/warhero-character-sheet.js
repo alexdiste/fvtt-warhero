@@ -62,6 +62,10 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     biography: {
       template: "systems/fvtt-warhero/templates/actors/partial-actor-biography.hbs",
       scrollable: [""]
+    },
+    effects: {
+      template: "systems/fvtt-warhero/templates/actors/partial-actor-effects.hbs",
+      scrollable: [""]
     }
   };
 
@@ -78,6 +82,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       powers: { id: "powers", group: "sheet", icon: "fa-solid fa-shapes", label: "WH.ui.powers" },
       equipment: { id: "equipment", group: "sheet", icon: "fa-solid fa-shapes", label: "WH.ui.equipment" },
       biography: { id: "biography", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.biography" },
+      effects: { id: "effects", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.effects" },
     }
     for (const v of Object.values(tabs)) {
       v.active = this.tabGroups[v.group] === v.id
@@ -111,7 +116,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       name: this.actor.name,
       editable: this.isEditable,
       cssClass: this.isEditable ? "editable" : "locked",
-      system: objectData,
+      system: this.actor.system,
       compentencyItems: this.actor.getCompetencyItems(),
       skills: this.actor.getNormalSkills(),
       raceSkills: this.actor.getRaceSkills(),
@@ -140,7 +145,8 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       owner: this.document.isOwner,
       editScore: this.options.editScore,
       isGM: game.user.isGM,
-      config: game.system.warhero.config
+      config: game.system.warhero.config,
+      effects: await WarheroUtility.prepareActiveEffectCategories(this.actor.allApplicableEffects())
     }
     formData.equipmentContainers = this.actor.buildEquipmentsSlot()
     formData.bodyContainers = this.actor.buildBodySlot()
@@ -179,6 +185,9 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
         break
       case "biography":
         context.tab = context.tabs.biography
+        break
+      case "effects":
+        context.tab = context.tabs.effects
         break
     }
     return context
