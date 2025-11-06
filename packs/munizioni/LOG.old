@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.775 8b4c Recovering log #3524
-2025/11/01-14:31:05.781 8b4c Delete type=0 #3524
-2025/11/01-14:31:05.781 8b4c Delete type=3 #3522
-2025/11/01-15:53:00.054 114 Level-0 table #3529: started
-2025/11/01-15:53:00.054 114 Level-0 table #3529: 0 bytes OK
-2025/11/01-15:53:00.058 114 Delete type=0 #3527
-2025/11/01-15:53:00.068 114 Manual compaction at level-0 from '!items!2pcQKWuQGvAgRFxY' @ 72057594037927935 : 1 .. '!items!Zq3vIOR3qvaj2gsa' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.272657 7f7268ff96c0 Recovering log #3943
-2025/11/05-14:07:07.325052 7f7268ff96c0 Delete type=3 #3941
-2025/11/05-14:07:07.325112 7f7268ff96c0 Delete type=0 #3943
-2025/11/05-15:54:12.097053 7f7262ffd6c0 Level-0 table #3948: started
-2025/11/05-15:54:12.097300 7f7262ffd6c0 Level-0 table #3948: 0 bytes OK
-2025/11/05-15:54:12.104204 7f7262ffd6c0 Delete type=0 #3946
-2025/11/05-15:54:12.104354 7f7262ffd6c0 Manual compaction at level-0 from '!items!2pcQKWuQGvAgRFxY' @ 72057594037927935 : 1 .. '!items!Zq3vIOR3qvaj2gsa' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:11.288986 7f14ba7fc6c0 Log #3951: 0 ops saved to Table #3952 OK
+2025/11/06-23:31:11.289079 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni/003951.log: OK
+2025/11/06-23:31:11.289103 7f14ba7fc6c0 Log #3532: 0 ops saved to Table #3953 OK
+2025/11/06-23:31:11.289165 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni/003532.log: OK
+2025/11/06-23:31:11.289223 7f14ba7fc6c0 Table #3393: 4 entries OK
+2025/11/06-23:31:11.298672 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni/MANIFEST-003949: OK
+2025/11/06-23:31:11.298799 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni/MANIFEST-003530: OK
+2025/11/06-23:31:11.323167 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni; recovered 1 files; 1645 bytes. Some data may have been lost. ****

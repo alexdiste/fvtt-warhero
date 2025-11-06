@@ -1,24 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:06.019 e00 Recovering log #161
-2025/11/01-14:31:06.025 e00 Delete type=0 #161
-2025/11/01-14:31:06.026 e00 Delete type=3 #159
-2025/11/01-15:53:00.172 114 Level-0 table #166: started
-2025/11/01-15:53:00.174 114 Level-0 table #166: 8461 bytes OK
-2025/11/01-15:53:00.177 114 Delete type=0 #164
-2025/11/01-15:53:00.180 114 Manual compaction at level-0 from '!macros!QX8ydXOTWW6jsyFz' @ 72057594037927935 : 1 .. '!macros!zGSXvYGGNy14YHom' @ 0 : 0; will stop at '!macros!zGSXvYGGNy14YHom' @ 16 : 1
-2025/11/01-15:53:00.180 114 Compacting 1@0 + 1@1 files
-2025/11/01-15:53:00.184 114 Generated table #167@0: 5 keys, 7824 bytes
-2025/11/01-15:53:00.184 114 Compacted 1@0 + 1@1 files => 7824 bytes
-2025/11/01-15:53:00.186 114 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/11/01-15:53:00.186 114 Delete type=2 #98
-2025/11/01-15:53:00.186 114 Delete type=2 #166
-2025/11/01-15:53:00.190 114 Manual compaction at level-0 from '!macros!zGSXvYGGNy14YHom' @ 16 : 1 .. '!macros!zGSXvYGGNy14YHom' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:08.706396 7f72697fa6c0 Recovering log #149
-2025/11/05-14:07:08.753949 7f72697fa6c0 Delete type=3 #147
-2025/11/05-14:07:08.754028 7f72697fa6c0 Delete type=0 #149
-2025/11/05-15:54:12.302207 7f7262ffd6c0 Level-0 table #154: started
-2025/11/05-15:54:12.302244 7f7262ffd6c0 Level-0 table #154: 0 bytes OK
-2025/11/05-15:54:12.309192 7f7262ffd6c0 Delete type=0 #152
-2025/11/05-15:54:12.337452 7f7262ffd6c0 Manual compaction at level-0 from '!macros!QX8ydXOTWW6jsyFz' @ 72057594037927935 : 1 .. '!macros!zGSXvYGGNy14YHom' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:14.217828 7f14b9ffb6c0 Log #157: 0 ops saved to Table #171 OK
+2025/11/06-23:31:14.217928 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro-master/000157.log: OK
+2025/11/06-23:31:14.217958 7f14b9ffb6c0 Log #170: 0 ops saved to Table #172 OK
+2025/11/06-23:31:14.218014 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro-master/000170.log: OK
+2025/11/06-23:31:14.219997 7f14b9ffb6c0 Table #167: 5 entries OK
+2025/11/06-23:31:14.220113 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro-master/MANIFEST-000155: OK
+2025/11/06-23:31:14.220157 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro-master/MANIFEST-000168: OK
+2025/11/06-23:31:14.240009 7f14b9ffb6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro-master; recovered 1 files; 7824 bytes. Some data may have been lost. ****

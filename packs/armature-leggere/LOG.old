@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.820 1cc4 Recovering log #3523
-2025/11/01-14:31:05.827 1cc4 Delete type=0 #3523
-2025/11/01-14:31:05.827 1cc4 Delete type=3 #3521
-2025/11/01-15:53:00.082 114 Level-0 table #3528: started
-2025/11/01-15:53:00.082 114 Level-0 table #3528: 0 bytes OK
-2025/11/01-15:53:00.087 114 Delete type=0 #3526
-2025/11/01-15:53:00.094 114 Manual compaction at level-0 from '!items!WCUqJrTZ3jgbhD2X' @ 72057594037927935 : 1 .. '!items!usiwQMfWdFZPO9p7' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.544359 7f72697fa6c0 Recovering log #3942
-2025/11/05-14:07:07.585941 7f72697fa6c0 Delete type=3 #3940
-2025/11/05-14:07:07.586046 7f72697fa6c0 Delete type=0 #3942
-2025/11/05-15:54:12.133031 7f7262ffd6c0 Level-0 table #3947: started
-2025/11/05-15:54:12.133126 7f7262ffd6c0 Level-0 table #3947: 0 bytes OK
-2025/11/05-15:54:12.140236 7f7262ffd6c0 Delete type=0 #3945
-2025/11/05-15:54:12.161930 7f7262ffd6c0 Manual compaction at level-0 from '!items!WCUqJrTZ3jgbhD2X' @ 72057594037927935 : 1 .. '!items!usiwQMfWdFZPO9p7' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:11.907685 7f14baffd6c0 Log #3950: 0 ops saved to Table #3951 OK
+2025/11/06-23:31:11.907799 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armature-leggere/003950.log: OK
+2025/11/06-23:31:11.907834 7f14baffd6c0 Log #3531: 0 ops saved to Table #3952 OK
+2025/11/06-23:31:11.907900 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armature-leggere/003531.log: OK
+2025/11/06-23:31:11.907980 7f14baffd6c0 Table #3392: 4 entries OK
+2025/11/06-23:31:11.908113 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armature-leggere/MANIFEST-003948: OK
+2025/11/06-23:31:11.908162 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armature-leggere/MANIFEST-003529: OK
+2025/11/06-23:31:11.927439 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armature-leggere; recovered 1 files; 1479 bytes. Some data may have been lost. ****
