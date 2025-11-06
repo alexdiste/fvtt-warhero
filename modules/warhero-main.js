@@ -57,6 +57,9 @@ Hooks.once("init", async function () {
     WarheroUtility.onSocketMesssage(data)
   });
 
+  // Ensure new effect transfer
+  CONFIG.ActiveEffect.legacyTransferral = false;
+
   /* -------------------------------------------- */
   // Define custom Entity classes
   CONFIG.Combat.documentClass = WarheroCombat

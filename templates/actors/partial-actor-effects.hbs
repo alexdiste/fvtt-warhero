@@ -1,0 +1,53 @@
+<section class="tab-content-scrollable tab sheet-body character-{{ tab.id }} {{ tab.cssClass }}" data-tab="{{ tab.id }}"
+  data-group="{{ tab.group }}">
+  {{!-- Combat Tab --}}
+  <div class="">
+
+  {{#each effects as |section sid|}}
+      <div>
+      <ul class="stat-list alternate-list">
+        <li class="item flexrow list-item items-title-bg">
+          <span class="item-name-label-header-long">
+            <h3><label class="items-title-text">{{localize section.label}}</label></h3>
+          </span>
+          <span class="item-field-label-short">
+            <label class="short-label">{{localize "WH.ui.Source"}}</label>
+          </span>
+          <span class="item-field-label-medium">
+            <label class="short-label">{{localize "WH.ui.Duration"}}</label>
+          </span>
+          <div class="item-filler">&nbsp;</div>
+          <div class="item-controls item-controls-fixed">
+            <a class="effect-control" data-action="create-effect" title="{{localize 'DOCUMENT.Create' type="Effect"}}">
+          <i class="fas fa-plus"></i> {{localize "DOCUMENT.New" type="Effect"}}
+          </a>
+        </div>
+        </li>
+
+      {{#each section.effects as |effect|}}
+      <li class="item flexrow list-item list-item-shadow" data-item-id="{{effect.id}}" data-effect-id="{{effect.id}}" data-parent-id="{{effect.parent.id}}">
+            <a class="item-edit item-name-img" data-action="item-edit" title="Edit Effect"><img
+                class="sheet-competence-img" src="{{effect.img}}" /></a>
+          <span class="item-name-label-long">{{effect.name}}</span>
+          <span class="item-field-label-short">{{effect.sourceName}}</span>
+          <span class="item-field-label-short">{{effect.duration.label}}</span>
+
+          <div class="item-filler">&nbsp;</div>
+          <div class="item-controls effect-controls flexrow">
+            <a class="effect-control" data-action="effect-toggle" title="{{localize 'WH.ui.toggleeffect'}}">
+              <i class="fas {{#if effect.disabled}}fa-check{{else}}fa-times{{/if}}"></i>
+            </a>
+            <a class="effect-control item-edit" data-action="item-edit" title="{{localize 'DOCUMENT.Update' type="Effect"}}">
+              <i class="fas fa-edit"></i>
+            </a>
+            <a class="effect-control " data-action="effect-delete" title="{{localize 'DOCUMENT.Delete' type="Effect"}}">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+      </li>
+      {{/each}}
+      </ul>
+  </div>
+  {{/each}}
+
+</section>

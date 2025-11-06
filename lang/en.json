@@ -244,6 +244,13 @@
   "WH.ui.location": "Location",
   "WH.ui.selectlocation": "Select a location",
   "WH.ui.isteleport": "Is Teleport ?",
+  "WH.ui.Temporary": "Temporary",
+  "WH.ui.Source": "Source",
+  "WH.ui.Duration": "Duration",
+  "WH.ui.Passive": "Passive",
+  "WH.ui.Inactive": "Inactive",
+  "WH.ui.effects": "Effects",
+  "WH.ui.toggleeffect": "Toggle Effect",
 
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
