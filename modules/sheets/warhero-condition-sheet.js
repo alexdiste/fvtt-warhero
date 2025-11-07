@@ -35,6 +35,9 @@ export class WarheroConditionSheetV2 extends WarheroBaseItemSheet {
     details: {
       template: `systems/fvtt-warhero/templates/items/partial-item-condition-details.hbs`,
     },
+    effects: {
+      template: "systems/fvtt-warhero/templates/items/partial-item-generic-effect.hbs",
+    },
   };
 
   /** @override */

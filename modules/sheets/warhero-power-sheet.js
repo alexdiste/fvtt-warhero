@@ -33,7 +33,7 @@ export class WarheroPowerSheetV2 extends WarheroBaseItemSheet {
     },
     details: {
       template: `systems/fvtt-warhero/templates/items/partial-item-power-details.hbs`,
-    },
+    }
   };
 
   /** @override */

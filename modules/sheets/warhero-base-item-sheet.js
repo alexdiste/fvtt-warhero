@@ -1,6 +1,8 @@
 const { HandlebarsApplicationMixin } = foundry.applications.api
 import { WarheroUtility } from "../warhero-utility.js"
 
+const _HAS_EFFECTS_TAB = ["armor", "shield", "weapon", "potion", "poison", "condition", "equipment"];
+
 export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.applications.sheets.ItemSheetV2) {
   /**
    * Different sheet modes.
@@ -36,7 +38,8 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       "show-image": WarheroBaseItemSheet.#onShowImage,
       "create-effect": WarheroBaseItemSheet.#onCreateActiveEffect,
       "effect-edit": WarheroBaseItemSheet.#onEffectEdit,
-    },
+      "effect-delete": WarheroBaseItemSheet.#onEffectDelete
+    }
   }
 
   /**
@@ -93,7 +96,7 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       description: { id: "description", group: "sheet", icon: "fa-solid fa-compass", label: "WH.ui.description" },
       details: { id: "details", group: "sheet", icon: "fa-solid fa-graduation-cap", label: "WH.ui.details" },
     }
-    if (this.document.type === "armor") {
+    if (_HAS_EFFECTS_TAB.includes(this.document.type)) {
       tabs.effects = { id: "effects", itemType: "effect", group: "sheet", icon: "fa-solid fa-heart-pulse", label: "WH.ui.effects" }
     }
 
@@ -180,6 +183,15 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       flags: {}
     };
     await owner.createEmbeddedDocuments("ActiveEffect", [effectData]);
+  }
+
+  static async #onEffectDelete(event, target) {
+    const li = $(event.target).parents(".item")
+    let effectId = li.data("item-id")
+    let effect = this.document.effects.get(effectId);
+    console.log("Deleting effect", this.document.effects, effect);
+    if (!effect) return;
+    await effect.delete();
   }
 
   static async #onEffectEdit(event, target) {
