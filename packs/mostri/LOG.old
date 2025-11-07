@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.964 8b4c Recovering log #4038
-2025/11/01-14:31:05.971 8b4c Delete type=0 #4038
-2025/11/01-14:31:05.971 8b4c Delete type=3 #4036
-2025/11/01-15:53:00.144 114 Level-0 table #4043: started
-2025/11/01-15:53:00.144 114 Level-0 table #4043: 0 bytes OK
-2025/11/01-15:53:00.146 114 Delete type=0 #4041
-2025/11/01-15:53:00.150 114 Manual compaction at level-0 from '!actors!4xOZjtYF8rHxbHRx' @ 72057594037927935 : 1 .. '!actors.items!lkvOIII97aodoWvS.2xipslqlEX66vro0' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:08.385677 7f7268ff96c0 Recovering log #4026
-2025/11/05-14:07:08.425417 7f7268ff96c0 Delete type=3 #4024
-2025/11/05-14:07:08.425480 7f7268ff96c0 Delete type=0 #4026
-2025/11/05-15:54:12.259765 7f7262ffd6c0 Level-0 table #4031: started
-2025/11/05-15:54:12.259807 7f7262ffd6c0 Level-0 table #4031: 0 bytes OK
-2025/11/05-15:54:12.266457 7f7262ffd6c0 Delete type=0 #4029
-2025/11/05-15:54:12.274402 7f7262ffd6c0 Manual compaction at level-0 from '!actors!4xOZjtYF8rHxbHRx' @ 72057594037927935 : 1 .. '!actors.items!lkvOIII97aodoWvS.2xipslqlEX66vro0' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:13.610259 7f14baffd6c0 Log #4034: 0 ops saved to Table #4047 OK
+2025/11/06-23:31:13.610350 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/mostri/004034.log: OK
+2025/11/06-23:31:13.610386 7f14baffd6c0 Log #4046: 0 ops saved to Table #4048 OK
+2025/11/06-23:31:13.610443 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/mostri/004046.log: OK
+2025/11/06-23:31:13.612309 7f14baffd6c0 Table #3907: 12 entries OK
+2025/11/06-23:31:13.612603 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/mostri/MANIFEST-004032: OK
+2025/11/06-23:31:13.612668 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/mostri/MANIFEST-004044: OK
+2025/11/06-23:31:13.630769 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/mostri; recovered 1 files; 19689 bytes. Some data may have been lost. ****

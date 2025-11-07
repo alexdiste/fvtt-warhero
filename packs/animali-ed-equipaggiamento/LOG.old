@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.713 1cc4 Recovering log #3731
-2025/11/01-14:31:05.720 1cc4 Delete type=0 #3731
-2025/11/01-14:31:05.720 1cc4 Delete type=3 #3729
-2025/11/01-15:53:00.025 114 Level-0 table #3736: started
-2025/11/01-15:53:00.025 114 Level-0 table #3736: 0 bytes OK
-2025/11/01-15:53:00.027 114 Delete type=0 #3734
-2025/11/01-15:53:00.034 114 Manual compaction at level-0 from '!items!1JARtgfJ16N3BGsa' @ 72057594037927935 : 1 .. '!items!zvBnb4UuF3Xt6pkF' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:06.916405 7f72637fe6c0 Recovering log #3950
-2025/11/05-14:07:06.965293 7f72637fe6c0 Delete type=3 #3948
-2025/11/05-14:07:06.965374 7f72637fe6c0 Delete type=0 #3950
-2025/11/05-15:54:12.061070 7f7262ffd6c0 Level-0 table #3955: started
-2025/11/05-15:54:12.061103 7f7262ffd6c0 Level-0 table #3955: 0 bytes OK
-2025/11/05-15:54:12.068060 7f7262ffd6c0 Delete type=0 #3953
-2025/11/05-15:54:12.075194 7f7262ffd6c0 Manual compaction at level-0 from '!items!1JARtgfJ16N3BGsa' @ 72057594037927935 : 1 .. '!items!zvBnb4UuF3Xt6pkF' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:10.540741 7f14b97fa6c0 Log #3958: 0 ops saved to Table #3959 OK
+2025/11/06-23:31:10.540857 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento/003958.log: OK
+2025/11/06-23:31:10.540886 7f14b97fa6c0 Log #3739: 0 ops saved to Table #3960 OK
+2025/11/06-23:31:10.540942 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento/003739.log: OK
+2025/11/06-23:31:10.543707 7f14b97fa6c0 Table #3600: 9 entries OK
+2025/11/06-23:31:10.543994 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento/MANIFEST-003956: OK
+2025/11/06-23:31:10.544061 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento/MANIFEST-003737: OK
+2025/11/06-23:31:10.560400 7f14b97fa6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento; recovered 1 files; 3113 bytes. Some data may have been lost. ****

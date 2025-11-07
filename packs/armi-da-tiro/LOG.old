@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.731 e00 Recovering log #3524
-2025/11/01-14:31:05.737 e00 Delete type=0 #3524
-2025/11/01-14:31:05.737 e00 Delete type=3 #3522
-2025/11/01-15:53:00.034 114 Level-0 table #3529: started
-2025/11/01-15:53:00.034 114 Level-0 table #3529: 0 bytes OK
-2025/11/01-15:53:00.038 114 Delete type=0 #3527
-2025/11/01-15:53:00.045 114 Manual compaction at level-0 from '!items!1wSfmRfPaoASRMQZ' @ 72057594037927935 : 1 .. '!items!Uzf6iuCJrcrWM6Pt' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.025657 7f7268ff96c0 Recovering log #3943
-2025/11/05-14:07:07.069507 7f7268ff96c0 Delete type=3 #3941
-2025/11/05-14:07:07.069602 7f7268ff96c0 Delete type=0 #3943
-2025/11/05-15:54:12.104471 7f7262ffd6c0 Level-0 table #3948: started
-2025/11/05-15:54:12.104521 7f7262ffd6c0 Level-0 table #3948: 0 bytes OK
-2025/11/05-15:54:12.111034 7f7262ffd6c0 Delete type=0 #3946
-2025/11/05-15:54:12.132891 7f7262ffd6c0 Manual compaction at level-0 from '!items!1wSfmRfPaoASRMQZ' @ 72057594037927935 : 1 .. '!items!Uzf6iuCJrcrWM6Pt' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:10.786475 7f14ba7fc6c0 Log #3951: 0 ops saved to Table #3952 OK
+2025/11/06-23:31:10.786615 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro/003951.log: OK
+2025/11/06-23:31:10.786657 7f14ba7fc6c0 Log #3532: 0 ops saved to Table #3953 OK
+2025/11/06-23:31:10.786720 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro/003532.log: OK
+2025/11/06-23:31:10.786796 7f14ba7fc6c0 Table #3393: 3 entries OK
+2025/11/06-23:31:10.786906 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro/MANIFEST-003949: OK
+2025/11/06-23:31:10.786950 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro/MANIFEST-003530: OK
+2025/11/06-23:31:10.800562 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro; recovered 1 files; 1452 bytes. Some data may have been lost. ****

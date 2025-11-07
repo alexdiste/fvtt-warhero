@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.890 e00 Recovering log #3522
-2025/11/01-14:31:05.897 e00 Delete type=0 #3522
-2025/11/01-14:31:05.897 e00 Delete type=3 #3520
-2025/11/01-15:53:00.115 114 Level-0 table #3527: started
-2025/11/01-15:53:00.115 114 Level-0 table #3527: 0 bytes OK
-2025/11/01-15:53:00.120 114 Delete type=0 #3525
-2025/11/01-15:53:00.123 114 Manual compaction at level-0 from '!items!6PQOYIziMaRi5nWt' @ 72057594037927935 : 1 .. '!items!kgGUPyB7774Ferhg' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.970618 7f7263fff6c0 Recovering log #3941
-2025/11/05-14:07:08.013705 7f7263fff6c0 Delete type=3 #3939
-2025/11/05-14:07:08.013812 7f7263fff6c0 Delete type=0 #3941
-2025/11/05-15:54:12.204076 7f7262ffd6c0 Level-0 table #3946: started
-2025/11/05-15:54:12.204117 7f7262ffd6c0 Level-0 table #3946: 0 bytes OK
-2025/11/05-15:54:12.211206 7f7262ffd6c0 Delete type=0 #3944
-2025/11/05-15:54:12.217829 7f7262ffd6c0 Manual compaction at level-0 from '!items!6PQOYIziMaRi5nWt' @ 72057594037927935 : 1 .. '!items!kgGUPyB7774Ferhg' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:12.840309 7f14b9ffb6c0 Log #3949: 0 ops saved to Table #3950 OK
+2025/11/06-23:31:12.840419 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-leggeri/003949.log: OK
+2025/11/06-23:31:12.840455 7f14b9ffb6c0 Log #3530: 0 ops saved to Table #3951 OK
+2025/11/06-23:31:12.840534 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-leggeri/003530.log: OK
+2025/11/06-23:31:12.840630 7f14b9ffb6c0 Table #3391: 3 entries OK
+2025/11/06-23:31:12.840780 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-leggeri/MANIFEST-003947: OK
+2025/11/06-23:31:12.840839 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-leggeri/MANIFEST-003528: OK
+2025/11/06-23:31:12.858250 7f14b9ffb6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-leggeri; recovered 1 files; 1322 bytes. Some data may have been lost. ****

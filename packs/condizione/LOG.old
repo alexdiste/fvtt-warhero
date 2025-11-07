@@ -1,19 +1,9 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.872 1cc4 Recovering log #3540
-2025/11/01-14:31:05.879 1cc4 Delete type=0 #3540
-2025/11/01-14:31:05.879 1cc4 Delete type=3 #3538
-2025/11/01-15:53:00.109 114 Level-0 table #3545: started
-2025/11/01-15:53:00.109 114 Level-0 table #3545: 0 bytes OK
-2025/11/01-15:53:00.111 114 Delete type=0 #3543
-2025/11/01-15:53:00.115 114 Manual compaction at level-0 from '!items!0HMcquKQ71Nxv8H6' @ 72057594037927935 : 1 .. '!items!yQhxz6aWS1XCMvDV' @ 0 : 0; will stop at (end)
-2025/11/01-15:53:00.120 114 Manual compaction at level-1 from '!items!0HMcquKQ71Nxv8H6' @ 72057594037927935 : 1 .. '!items!yQhxz6aWS1XCMvDV' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.855584 7f72697fa6c0 Recovering log #3958
-2025/11/05-14:07:07.902051 7f72697fa6c0 Delete type=3 #3956
-2025/11/05-14:07:07.902148 7f72697fa6c0 Delete type=0 #3958
-2025/11/05-15:54:12.211373 7f7262ffd6c0 Level-0 table #3963: started
-2025/11/05-15:54:12.211410 7f7262ffd6c0 Level-0 table #3963: 0 bytes OK
-2025/11/05-15:54:12.217667 7f7262ffd6c0 Delete type=0 #3961
-2025/11/05-15:54:12.217842 7f7262ffd6c0 Manual compaction at level-0 from '!items!0HMcquKQ71Nxv8H6' @ 72057594037927935 : 1 .. '!items!yQhxz6aWS1XCMvDV' @ 0 : 0; will stop at (end)
-2025/11/05-15:54:12.217868 7f7262ffd6c0 Manual compaction at level-1 from '!items!0HMcquKQ71Nxv8H6' @ 72057594037927935 : 1 .. '!items!yQhxz6aWS1XCMvDV' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:12.665363 7f14b97fa6c0 Log #3966: 0 ops saved to Table #3967 OK
+2025/11/06-23:31:12.665485 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione/003966.log: OK
+2025/11/06-23:31:12.665522 7f14b97fa6c0 Log #3548: 0 ops saved to Table #3968 OK
+2025/11/06-23:31:12.665612 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione/003548.log: OK
+2025/11/06-23:31:12.665693 7f14b97fa6c0 Table #3510: 1 entries OK
+2025/11/06-23:31:12.668761 7f14b97fa6c0 Table #3515: 89 entries OK
+2025/11/06-23:31:12.669003 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione/MANIFEST-003964: OK
+2025/11/06-23:31:12.669052 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione/MANIFEST-003546: OK
+2025/11/06-23:31:12.685131 7f14b97fa6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione; recovered 2 files; 37076 bytes. Some data may have been lost. ****

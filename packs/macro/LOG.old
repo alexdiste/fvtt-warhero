@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:06.010 1cc4 Recovering log #156
-2025/11/01-14:31:06.017 1cc4 Delete type=0 #156
-2025/11/01-14:31:06.017 1cc4 Delete type=3 #154
-2025/11/01-15:53:00.167 114 Level-0 table #161: started
-2025/11/01-15:53:00.167 114 Level-0 table #161: 0 bytes OK
-2025/11/01-15:53:00.170 114 Delete type=0 #159
-2025/11/01-15:53:00.178 114 Manual compaction at level-0 from '!folders!lDtEzIZiRFGEA5jD' @ 72057594037927935 : 1 .. '!macros!rcQilu9cjz54b112' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:08.651584 7f72637fe6c0 Recovering log #144
-2025/11/05-14:07:08.703210 7f72637fe6c0 Delete type=3 #142
-2025/11/05-14:07:08.703422 7f72637fe6c0 Delete type=0 #144
-2025/11/05-15:54:12.294854 7f7262ffd6c0 Level-0 table #149: started
-2025/11/05-15:54:12.294902 7f7262ffd6c0 Level-0 table #149: 0 bytes OK
-2025/11/05-15:54:12.301908 7f7262ffd6c0 Delete type=0 #147
-2025/11/05-15:54:12.302102 7f7262ffd6c0 Manual compaction at level-0 from '!folders!lDtEzIZiRFGEA5jD' @ 72057594037927935 : 1 .. '!macros!rcQilu9cjz54b112' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:14.124450 7f14baffd6c0 Log #152: 0 ops saved to Table #165 OK
+2025/11/06-23:31:14.124591 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro/000152.log: OK
+2025/11/06-23:31:14.124629 7f14baffd6c0 Log #164: 0 ops saved to Table #166 OK
+2025/11/06-23:31:14.124687 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro/000164.log: OK
+2025/11/06-23:31:14.126984 7f14baffd6c0 Table #93: 15 entries OK
+2025/11/06-23:31:14.127146 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro/MANIFEST-000150: OK
+2025/11/06-23:31:14.127193 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro/MANIFEST-000162: OK
+2025/11/06-23:31:14.145070 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/macro; recovered 1 files; 12759 bytes. Some data may have been lost. ****

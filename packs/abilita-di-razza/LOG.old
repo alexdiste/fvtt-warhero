@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.882 8b4c Recovering log #3531
-2025/11/01-14:31:05.888 8b4c Delete type=0 #3531
-2025/11/01-14:31:05.888 8b4c Delete type=3 #3529
-2025/11/01-15:53:00.111 114 Level-0 table #3536: started
-2025/11/01-15:53:00.111 114 Level-0 table #3536: 0 bytes OK
-2025/11/01-15:53:00.115 114 Delete type=0 #3534
-2025/11/01-15:53:00.120 114 Manual compaction at level-0 from '!items!0CcUpvcoFi8C3Kig' @ 72057594037927935 : 1 .. '!items!rge3PlTBQTcBvCpb' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.913102 7f7268ff96c0 Recovering log #3950
-2025/11/05-14:07:07.965536 7f7268ff96c0 Delete type=3 #3948
-2025/11/05-14:07:07.965614 7f7268ff96c0 Delete type=0 #3950
-2025/11/05-15:54:12.168971 7f7262ffd6c0 Level-0 table #3955: started
-2025/11/05-15:54:12.168999 7f7262ffd6c0 Level-0 table #3955: 0 bytes OK
-2025/11/05-15:54:12.176235 7f7262ffd6c0 Delete type=0 #3953
-2025/11/05-15:54:12.190399 7f7262ffd6c0 Manual compaction at level-0 from '!items!0CcUpvcoFi8C3Kig' @ 72057594037927935 : 1 .. '!items!rge3PlTBQTcBvCpb' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:12.754889 7f14b97fa6c0 Log #3958: 0 ops saved to Table #3959 OK
+2025/11/06-23:31:12.754984 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza/003958.log: OK
+2025/11/06-23:31:12.755011 7f14b97fa6c0 Log #3539: 0 ops saved to Table #3960 OK
+2025/11/06-23:31:12.755064 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza/003539.log: OK
+2025/11/06-23:31:12.758978 7f14b97fa6c0 Table #3400: 12 entries OK
+2025/11/06-23:31:12.759203 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza/MANIFEST-003956: OK
+2025/11/06-23:31:12.759249 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza/MANIFEST-003537: OK
+2025/11/06-23:31:12.774931 7f14b97fa6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza; recovered 1 files; 4559 bytes. Some data may have been lost. ****

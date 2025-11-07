@@ -260,25 +260,31 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
     await effect.update({ disabled: !effect.disabled });
   }
 
-  static async #onCreateActiveEffect(event) {
-    event.preventDefault();
-    const a = event.currentTarget;
-    const li = a.closest("li");
+  static async #onCreateActiveEffect(event, target) {
     let owner = this.document;
 
-    let effect = await ActiveEffect.implementation.create(
+    let effectType = target.getAttribute("data-effect-type");
+    let durationValue = undefined;
+    let disabled = false;
+    if (effectType == "temporary") {
+      durationValue = 10;
+    }
+    if (effectType == "inactive") {
+      disabled = true;
+    }
+
+    await ActiveEffect.implementation.create(
       {
         name: game.i18n.format("DOCUMENT.New", { type: game.i18n.localize("DOCUMENT.ActiveEffect") }),
         transfer: false,
         img: "icons/svg/aura.svg",
         origin: owner.uuid,
-        //"duration.rounds": 10,
-        disabled: false,
+        "duration.rounds": durationValue,
+        disabled: disabled,
         changes: [{}],
       },
       { parent: owner },
     );
-    await owner.createEmbeddedDocuments("ActiveEffect", [effect.toObject()]);
   }
 
   static async #onItemAdd(event, target) {

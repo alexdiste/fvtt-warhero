@@ -1,24 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.704 e00 Recovering log #3540
-2025/11/01-14:31:05.710 e00 Delete type=0 #3540
-2025/11/01-14:31:05.710 e00 Delete type=3 #3538
-2025/11/01-15:53:00.014 114 Level-0 table #3545: started
-2025/11/01-15:53:00.019 114 Level-0 table #3545: 246497 bytes OK
-2025/11/01-15:53:00.021 114 Delete type=0 #3543
-2025/11/01-15:53:00.027 114 Manual compaction at level-0 from '!items!0Di5y6T5i2f6eOZ4' @ 72057594037927935 : 1 .. '!items!zbTdoITtZbpWhMVf' @ 0 : 0; will stop at '!items!zbTdoITtZbpWhMVf' @ 4826 : 1
-2025/11/01-15:53:00.027 114 Compacting 1@0 + 1@1 files
-2025/11/01-15:53:00.030 114 Generated table #3546@0: 239 keys, 113488 bytes
-2025/11/01-15:53:00.031 114 Compacted 1@0 + 1@1 files => 113488 bytes
-2025/11/01-15:53:00.033 114 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/11/01-15:53:00.033 114 Delete type=2 #3511
-2025/11/01-15:53:00.033 114 Delete type=2 #3545
-2025/11/01-15:53:00.038 114 Manual compaction at level-0 from '!items!zbTdoITtZbpWhMVf' @ 4826 : 1 .. '!items!zbTdoITtZbpWhMVf' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:06.859183 7f7268ff96c0 Recovering log #3957
-2025/11/05-14:07:06.911649 7f7268ff96c0 Delete type=3 #3955
-2025/11/05-14:07:06.911723 7f7268ff96c0 Delete type=0 #3957
-2025/11/05-15:54:12.053718 7f7262ffd6c0 Level-0 table #3962: started
-2025/11/05-15:54:12.053756 7f7262ffd6c0 Level-0 table #3962: 0 bytes OK
-2025/11/05-15:54:12.060939 7f7262ffd6c0 Delete type=0 #3960
-2025/11/05-15:54:12.075183 7f7262ffd6c0 Manual compaction at level-0 from '!items!0Di5y6T5i2f6eOZ4' @ 72057594037927935 : 1 .. '!items!zbTdoITtZbpWhMVf' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:10.458321 7f14baffd6c0 Log #3965: 0 ops saved to Table #3966 OK
+2025/11/06-23:31:10.458411 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-classe/003965.log: OK
+2025/11/06-23:31:10.458440 7f14baffd6c0 Log #3549: 0 ops saved to Table #3967 OK
+2025/11/06-23:31:10.458488 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-classe/003549.log: OK
+2025/11/06-23:31:10.460649 7f14baffd6c0 Table #3546: 239 entries OK
+2025/11/06-23:31:10.460905 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-classe/MANIFEST-003963: OK
+2025/11/06-23:31:10.460963 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-classe/MANIFEST-003547: OK
+2025/11/06-23:31:10.477912 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-classe; recovered 1 files; 113488 bytes. Some data may have been lost. ****

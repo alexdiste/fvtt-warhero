@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.803 8b4c Recovering log #3533
-2025/11/01-14:31:05.809 8b4c Delete type=0 #3533
-2025/11/01-14:31:05.810 8b4c Delete type=3 #3531
-2025/11/01-15:53:00.075 114 Level-0 table #3538: started
-2025/11/01-15:53:00.075 114 Level-0 table #3538: 0 bytes OK
-2025/11/01-15:53:00.078 114 Delete type=0 #3536
-2025/11/01-15:53:00.082 114 Manual compaction at level-0 from '!items!54AqhZTRxx24xczj' @ 72057594037927935 : 1 .. '!items!sY6t6latJGSgL9Ua' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.442783 7f7268ff96c0 Recovering log #3952
-2025/11/05-14:07:07.479908 7f7268ff96c0 Delete type=3 #3950
-2025/11/05-14:07:07.479995 7f7268ff96c0 Delete type=0 #3952
-2025/11/05-15:54:12.118354 7f7262ffd6c0 Level-0 table #3957: started
-2025/11/05-15:54:12.118383 7f7262ffd6c0 Level-0 table #3957: 0 bytes OK
-2025/11/05-15:54:12.125265 7f7262ffd6c0 Delete type=0 #3955
-2025/11/05-15:54:12.132919 7f7262ffd6c0 Manual compaction at level-0 from '!items!54AqhZTRxx24xczj' @ 72057594037927935 : 1 .. '!items!sY6t6latJGSgL9Ua' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:11.697808 7f14b97fa6c0 Log #3960: 0 ops saved to Table #3961 OK
+2025/11/06-23:31:11.697928 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze/003960.log: OK
+2025/11/06-23:31:11.697960 7f14b97fa6c0 Log #3541: 0 ops saved to Table #3962 OK
+2025/11/06-23:31:11.698026 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze/003541.log: OK
+2025/11/06-23:31:11.705854 7f14b97fa6c0 Table #3402: 21 entries OK
+2025/11/06-23:31:11.706095 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze/MANIFEST-003958: OK
+2025/11/06-23:31:11.706158 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze/MANIFEST-003539: OK
+2025/11/06-23:31:11.729994 7f14b97fa6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze; recovered 1 files; 15330 bytes. Some data may have been lost. ****
