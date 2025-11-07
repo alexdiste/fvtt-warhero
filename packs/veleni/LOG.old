@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.938 8b4c Recovering log #3523
-2025/11/01-14:31:05.945 8b4c Delete type=0 #3523
-2025/11/01-14:31:05.945 8b4c Delete type=3 #3521
-2025/11/01-15:53:00.135 114 Level-0 table #3528: started
-2025/11/01-15:53:00.135 114 Level-0 table #3528: 0 bytes OK
-2025/11/01-15:53:00.139 114 Delete type=0 #3526
-2025/11/01-15:53:00.146 114 Manual compaction at level-0 from '!items!36dxnHkltanwC3tM' @ 72057594037927935 : 1 .. '!items!lutaCIcCr7JKlEf9' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:08.223967 7f7268ff96c0 Recovering log #3942
-2025/11/05-14:07:08.269734 7f7268ff96c0 Delete type=3 #3940
-2025/11/05-14:07:08.269816 7f7268ff96c0 Delete type=0 #3942
-2025/11/05-15:54:12.217935 7f7262ffd6c0 Level-0 table #3947: started
-2025/11/05-15:54:12.218825 7f7262ffd6c0 Level-0 table #3947: 0 bytes OK
-2025/11/05-15:54:12.225643 7f7262ffd6c0 Delete type=0 #3945
-2025/11/05-15:54:12.246497 7f7262ffd6c0 Manual compaction at level-0 from '!items!36dxnHkltanwC3tM' @ 72057594037927935 : 1 .. '!items!lutaCIcCr7JKlEf9' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:13.346191 7f14ba7fc6c0 Log #3950: 0 ops saved to Table #3951 OK
+2025/11/06-23:31:13.346295 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/veleni/003950.log: OK
+2025/11/06-23:31:13.346328 7f14ba7fc6c0 Log #3531: 0 ops saved to Table #3952 OK
+2025/11/06-23:31:13.346383 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/veleni/003531.log: OK
+2025/11/06-23:31:13.347606 7f14ba7fc6c0 Table #3392: 12 entries OK
+2025/11/06-23:31:13.347833 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/veleni/MANIFEST-003948: OK
+2025/11/06-23:31:13.347878 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/veleni/MANIFEST-003529: OK
+2025/11/06-23:31:13.363941 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/veleni; recovered 1 files; 5009 bytes. Some data may have been lost. ****

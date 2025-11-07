@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.748 8b4c Recovering log #3528
-2025/11/01-14:31:05.755 8b4c Delete type=0 #3528
-2025/11/01-14:31:05.755 8b4c Delete type=3 #3526
-2025/11/01-15:53:00.043 114 Level-0 table #3533: started
-2025/11/01-15:53:00.043 114 Level-0 table #3533: 0 bytes OK
-2025/11/01-15:53:00.045 114 Delete type=0 #3531
-2025/11/01-15:53:00.050 114 Manual compaction at level-0 from '!items!7uzeyvgx14PPbZRo' @ 72057594037927935 : 1 .. '!items!y2GnKOVvW52THtQc' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.127378 7f72697fa6c0 Recovering log #3947
-2025/11/05-14:07:07.170885 7f72697fa6c0 Delete type=3 #3945
-2025/11/05-14:07:07.170980 7f72697fa6c0 Delete type=0 #3947
-2025/11/05-15:54:12.083150 7f7262ffd6c0 Level-0 table #3952: started
-2025/11/05-15:54:12.083190 7f7262ffd6c0 Level-0 table #3952: 0 bytes OK
-2025/11/05-15:54:12.089708 7f7262ffd6c0 Delete type=0 #3950
-2025/11/05-15:54:12.104336 7f7262ffd6c0 Manual compaction at level-0 from '!items!7uzeyvgx14PPbZRo' @ 72057594037927935 : 1 .. '!items!y2GnKOVvW52THtQc' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:10.992559 7f14b9ffb6c0 Log #3955: 0 ops saved to Table #3956 OK
+2025/11/06-23:31:10.992650 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-lunghe/003955.log: OK
+2025/11/06-23:31:10.992677 7f14b9ffb6c0 Log #3536: 0 ops saved to Table #3957 OK
+2025/11/06-23:31:10.992734 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-lunghe/003536.log: OK
+2025/11/06-23:31:10.996679 7f14b9ffb6c0 Table #3397: 16 entries OK
+2025/11/06-23:31:10.996914 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-lunghe/MANIFEST-003953: OK
+2025/11/06-23:31:10.996982 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-lunghe/MANIFEST-003534: OK
+2025/11/06-23:31:11.021220 7f14b9ffb6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-lunghe; recovered 1 files; 5785 bytes. Some data may have been lost. ****

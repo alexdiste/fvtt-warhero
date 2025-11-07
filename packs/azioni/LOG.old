@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:06.001 e00 Recovering log #3527
-2025/11/01-14:31:06.007 e00 Delete type=0 #3527
-2025/11/01-14:31:06.007 e00 Delete type=3 #3525
-2025/11/01-15:53:00.162 114 Level-0 table #3532: started
-2025/11/01-15:53:00.162 114 Level-0 table #3532: 0 bytes OK
-2025/11/01-15:53:00.166 114 Delete type=0 #3530
-2025/11/01-15:53:00.170 114 Manual compaction at level-0 from '!items!ADtrdED35cN2dl0O' @ 72057594037927935 : 1 .. '!items!sKRka7F5WhvMeDoC' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:08.589521 7f7263fff6c0 Recovering log #3946
-2025/11/05-14:07:08.641429 7f7263fff6c0 Delete type=3 #3944
-2025/11/05-14:07:08.641501 7f7263fff6c0 Delete type=0 #3946
-2025/11/05-15:54:12.281055 7f7262ffd6c0 Level-0 table #3951: started
-2025/11/05-15:54:12.281089 7f7262ffd6c0 Level-0 table #3951: 0 bytes OK
-2025/11/05-15:54:12.288127 7f7262ffd6c0 Delete type=0 #3949
-2025/11/05-15:54:12.302077 7f7262ffd6c0 Manual compaction at level-0 from '!items!ADtrdED35cN2dl0O' @ 72057594037927935 : 1 .. '!items!sKRka7F5WhvMeDoC' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:14.033443 7f14baffd6c0 Log #3954: 0 ops saved to Table #3955 OK
+2025/11/06-23:31:14.033524 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/azioni/003954.log: OK
+2025/11/06-23:31:14.033571 7f14baffd6c0 Log #3535: 0 ops saved to Table #3956 OK
+2025/11/06-23:31:14.033639 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/azioni/003535.log: OK
+2025/11/06-23:31:14.040785 7f14baffd6c0 Table #3396: 17 entries OK
+2025/11/06-23:31:14.040978 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/azioni/MANIFEST-003952: OK
+2025/11/06-23:31:14.041044 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/azioni/MANIFEST-003533: OK
+2025/11/06-23:31:14.060222 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/azioni; recovered 1 files; 12111 bytes. Some data may have been lost. ****

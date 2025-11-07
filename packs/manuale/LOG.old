@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.668 e00 Recovering log #734
-2025/11/01-14:31:05.675 e00 Delete type=0 #734
-2025/11/01-14:31:05.675 e00 Delete type=3 #732
-2025/11/01-15:52:59.997 114 Level-0 table #739: started
-2025/11/01-15:52:59.997 114 Level-0 table #739: 0 bytes OK
-2025/11/01-15:53:00.000 114 Delete type=0 #737
-2025/11/01-15:53:00.006 114 Manual compaction at level-0 from '!journal!JR8yrYagSCX0mIr1' @ 72057594037927935 : 1 .. '!journal.pages!g4KBDQAp2l3hDbj3.zoH6BUJg8IGBK8G5' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:06.638377 7f7268ff96c0 Recovering log #722
-2025/11/05-14:07:06.685330 7f7268ff96c0 Delete type=3 #720
-2025/11/05-14:07:06.685412 7f7268ff96c0 Delete type=0 #722
-2025/11/05-15:54:12.005563 7f7262ffd6c0 Level-0 table #727: started
-2025/11/05-15:54:12.006373 7f7262ffd6c0 Level-0 table #727: 0 bytes OK
-2025/11/05-15:54:12.014089 7f7262ffd6c0 Delete type=0 #725
-2025/11/05-15:54:12.040490 7f7262ffd6c0 Manual compaction at level-0 from '!journal!JR8yrYagSCX0mIr1' @ 72057594037927935 : 1 .. '!journal.pages!g4KBDQAp2l3hDbj3.zoH6BUJg8IGBK8G5' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:10.032379 7f14baffd6c0 Log #730: 0 ops saved to Table #743 OK
+2025/11/06-23:31:10.032473 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/manuale/000730.log: OK
+2025/11/06-23:31:10.032501 7f14baffd6c0 Log #742: 0 ops saved to Table #744 OK
+2025/11/06-23:31:10.032594 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/manuale/000742.log: OK
+2025/11/06-23:31:10.038583 7f14baffd6c0 Table #603: 71 entries OK
+2025/11/06-23:31:10.038762 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/manuale/MANIFEST-000728: OK
+2025/11/06-23:31:10.038811 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/manuale/MANIFEST-000740: OK
+2025/11/06-23:31:10.057268 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/manuale; recovered 1 files; 68393 bytes. Some data may have been lost. ****

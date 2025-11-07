@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.686 1cc4 Recovering log #3526
-2025/11/01-14:31:05.693 1cc4 Delete type=0 #3526
-2025/11/01-14:31:05.693 1cc4 Delete type=3 #3524
-2025/11/01-15:52:59.990 114 Level-0 table #3531: started
-2025/11/01-15:52:59.990 114 Level-0 table #3531: 0 bytes OK
-2025/11/01-15:52:59.994 114 Delete type=0 #3529
-2025/11/01-15:53:00.006 114 Manual compaction at level-0 from '!items!5erdjtZAl9Xb3mAT' @ 72057594037927935 : 1 .. '!items!m141ddd9knneVQdX' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:06.748460 7f72697fa6c0 Recovering log #3945
-2025/11/05-14:07:06.793337 7f72697fa6c0 Delete type=3 #3943
-2025/11/05-14:07:06.793416 7f72697fa6c0 Delete type=0 #3945
-2025/11/05-15:54:12.028515 7f7262ffd6c0 Level-0 table #3950: started
-2025/11/05-15:54:12.028561 7f7262ffd6c0 Level-0 table #3950: 0 bytes OK
-2025/11/05-15:54:12.040346 7f7262ffd6c0 Delete type=0 #3948
-2025/11/05-15:54:12.040529 7f7262ffd6c0 Manual compaction at level-0 from '!items!5erdjtZAl9Xb3mAT' @ 72057594037927935 : 1 .. '!items!m141ddd9knneVQdX' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:10.279669 7f14baffd6c0 Log #3953: 0 ops saved to Table #3954 OK
+2025/11/06-23:31:10.279842 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/competenze/003953.log: OK
+2025/11/06-23:31:10.279897 7f14baffd6c0 Log #3534: 0 ops saved to Table #3955 OK
+2025/11/06-23:31:10.279961 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/competenze/003534.log: OK
+2025/11/06-23:31:10.284742 7f14baffd6c0 Table #3395: 12 entries OK
+2025/11/06-23:31:10.285055 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/competenze/MANIFEST-003951: OK
+2025/11/06-23:31:10.285113 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/competenze/MANIFEST-003532: OK
+2025/11/06-23:31:10.301141 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/competenze; recovered 1 files; 5426 bytes. Some data may have been lost. ****

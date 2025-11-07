@@ -1,24 +1,8 @@
-<<<<<<< Updated upstream
-2025/11/01-14:31:05.784 e00 Recovering log #3756
-2025/11/01-14:31:05.790 e00 Delete type=0 #3756
-2025/11/01-14:31:05.790 e00 Delete type=3 #3754
-2025/11/01-15:53:00.058 114 Level-0 table #3761: started
-2025/11/01-15:53:00.061 114 Level-0 table #3761: 197 bytes OK
-2025/11/01-15:53:00.063 114 Delete type=0 #3759
-2025/11/01-15:53:00.068 114 Manual compaction at level-0 from '!items!07Oce3EgWbmJdERB' @ 72057594037927935 : 1 .. '!items!zuzN3rtTP54QHmDt' @ 0 : 0; will stop at '!items!ngj13y1wAlY2ueVx' @ 9350 : 0
-2025/11/01-15:53:00.068 114 Compacting 1@0 + 1@1 files
-2025/11/01-15:53:00.072 114 Generated table #3762@0: 424 keys, 155571 bytes
-2025/11/01-15:53:00.072 114 Compacted 1@0 + 1@1 files => 155571 bytes
-2025/11/01-15:53:00.075 114 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/11/01-15:53:00.075 114 Delete type=2 #3727
-2025/11/01-15:53:00.075 114 Delete type=2 #3761
-2025/11/01-15:53:00.082 114 Manual compaction at level-0 from '!items!ngj13y1wAlY2ueVx' @ 9350 : 0 .. '!items!zuzN3rtTP54QHmDt' @ 0 : 0; will stop at (end)
-=======
-2025/11/05-14:07:07.327762 7f7263fff6c0 Recovering log #3974
-2025/11/05-14:07:07.377732 7f7263fff6c0 Delete type=3 #3972
-2025/11/05-14:07:07.377813 7f7263fff6c0 Delete type=0 #3974
-2025/11/05-15:54:12.140426 7f7262ffd6c0 Level-0 table #3979: started
-2025/11/05-15:54:12.140462 7f7262ffd6c0 Level-0 table #3979: 0 bytes OK
-2025/11/05-15:54:12.147120 7f7262ffd6c0 Delete type=0 #3977
-2025/11/05-15:54:12.161944 7f7262ffd6c0 Manual compaction at level-0 from '!items!07Oce3EgWbmJdERB' @ 72057594037927935 : 1 .. '!items!zuzN3rtTP54QHmDt' @ 0 : 0; will stop at (end)
->>>>>>> Stashed changes
+2025/11/06-23:31:11.441824 7f14ba7fc6c0 Log #3982: 0 ops saved to Table #3983 OK
+2025/11/06-23:31:11.441917 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/equipaggiamento/003982.log: OK
+2025/11/06-23:31:11.441943 7f14ba7fc6c0 Log #3765: 0 ops saved to Table #3984 OK
+2025/11/06-23:31:11.441994 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/equipaggiamento/003765.log: OK
+2025/11/06-23:31:11.448265 7f14ba7fc6c0 Table #3762: 424 entries OK
+2025/11/06-23:31:11.448565 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/equipaggiamento/MANIFEST-003980: OK
+2025/11/06-23:31:11.448618 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/equipaggiamento/MANIFEST-003763: OK
+2025/11/06-23:31:11.463575 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/equipaggiamento; recovered 1 files; 155571 bytes. Some data may have been lost. ****
