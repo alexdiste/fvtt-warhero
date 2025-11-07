@@ -34,7 +34,8 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       editImage: WarheroBaseItemSheet.#onEditImage,
       "post-item": WarheroBaseItemSheet.#onPostItem,
       "show-image": WarheroBaseItemSheet.#onShowImage,
-
+      "create-effect": WarheroBaseItemSheet.#onCreateActiveEffect,
+      "effect-edit": WarheroBaseItemSheet.#onEffectEdit,
     },
   }
 
@@ -71,6 +72,7 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       config: game.system.warhero.config,
       statistics: WarheroUtility.getActorStats(),
       enrichedDescription: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.description, { async: true }),
+      effects: this.document.effects.map(eff => eff.toObject()),
       isEditMode: this.isEditMode,
       isPlayMode: this.isPlayMode,
       isEditable: this.isEditable,
@@ -91,6 +93,10 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       description: { id: "description", group: "sheet", icon: "fa-solid fa-compass", label: "WH.ui.description" },
       details: { id: "details", group: "sheet", icon: "fa-solid fa-graduation-cap", label: "WH.ui.details" },
     }
+    if (this.document.type === "armor") {
+      tabs.effects = { id: "effects", itemType: "effect", group: "sheet", icon: "fa-solid fa-heart-pulse", label: "WH.ui.effects" }
+    }
+
     for (const v of Object.values(tabs)) {
       v.active = this.tabGroups[v.group] === v.id
       v.cssClass = v.active ? "active" : ""
@@ -108,6 +114,9 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
         break
       case "details":
         context.tab = context.tabs.details
+        break;
+      case "effects":
+        context.tab = context.tabs.effects
         break;
     }
     return context
@@ -157,6 +166,29 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       title: doc.name,
       uuid: doc.uuid
     }).render(true);
+  }
+
+  static async #onCreateActiveEffect(event, target) {
+    let owner = this.document;
+    const effectData = {
+      name: "New Effect",
+      img: "icons/svg/aura.svg",
+      origin: owner.uuid,
+      disabled: false,
+      changes: [],
+      duration: {},
+      flags: {}
+    };
+    await owner.createEmbeddedDocuments("ActiveEffect", [effectData]);
+  }
+
+  static async #onEffectEdit(event, target) {
+    const li = $(event.target).parents(".item")
+    let effectId = li.data("item-id")
+    let effect = this.document.effects.get(effectId);
+    console.log("Editing effect", this.document.effects, effect);
+    if (!effect) return;
+    effect.sheet.render(true);
   }
 
   /** @override */

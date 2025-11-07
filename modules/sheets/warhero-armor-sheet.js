@@ -34,6 +34,9 @@ export class WarheroArmorSheetV2 extends WarheroBaseItemSheet {
     details: {
       template: `systems/fvtt-warhero/templates/items/partial-item-armor-details.hbs`,
     },
+    effects: {
+      template: "systems/fvtt-warhero/templates/items/partial-item-generic-effect.hbs",
+    },
   };
 
   /** @override */

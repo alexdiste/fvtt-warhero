@@ -37,6 +37,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
       "item-add": WarheroActorSheet.#onItemAdd,
       "effect-delete": WarheroActorSheet.#onEffectDelete,
       "effect-toggle": WarheroActorSheet.#onEffectToggle,
+      "effect-edit": WarheroActorSheet.#onEffectEdit,
       "create-effect": WarheroActorSheet.#onCreateActiveEffect,
       "quantity-minus": WarheroActorSheet.#onQuantityMinus,
       "quantity-plus": WarheroActorSheet.#onQuantityPlus,
@@ -249,13 +250,36 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
 
   static async #onEffectDelete(event, target) {
     const li = $(target).parents(".item")
+    let itemId = li.data("item-id")
+    let effect = this.actor.effects.get(itemId);
+    if (!effect) {
+      ui.notifications.info(game.i18n.format("WH.ui.EffectDeletionFromItem"));
+      return;
+    }
     WarheroUtility.confirmDelete(this, li, "ActiveEffect")
+  }
+
+  static async #onEffectEdit(event, target) {
+    const li = $(event.target).parents(".item");
+    let effectId = li.data("item-id");
+    let effect = this.actor.appliedEffects.find(e => e.id === effectId);
+    if (!effect) return;
+    effect.sheet.render(true);
   }
 
   static async #onEffectToggle(event, target) {
     const li = $(target).parents(".item");
     const effectId = li.data("item-id");
-    const effect = this.actor.effects.get(effectId);
+    let effect = this.actor.appliedEffects.find(e => e.id === effectId);
+    if (!effect) {
+      effect = this.document.effects.get(effectId);
+    }
+    if (!effect) {
+      // Find if the effect exists in the actor's items (ie effects collection inside an item)
+      effect = this.actor.items.reduce((found, item) => {
+        return found || item.effects.get(effectId);
+      }, null);
+    }
     if (!effect) return;
     await effect.update({ disabled: !effect.disabled });
   }
