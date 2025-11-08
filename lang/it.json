@@ -250,6 +250,7 @@
   "WH.ui.Inactive": "Inattiva",
   "WH.ui.effects": "Effetti",
   "WH.ui.toggleeffect": "Attiva/Disattiva effetto",
+  "WH.ui.EffectDeletionFromItem": "L'effetto deve essere eliminato dal suo oggetto genitore.",
 
   "WH.chat.save": "Tiro salvezza su",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",

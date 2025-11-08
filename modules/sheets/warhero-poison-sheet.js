@@ -34,6 +34,9 @@ export class WarheroPoisonSheetV2 extends WarheroBaseItemSheet {
     details: {
       template: `systems/fvtt-warhero/templates/items/partial-item-poison-details.hbs`,
     },
+    effects: {
+      template: "systems/fvtt-warhero/templates/items/partial-item-generic-effect.hbs",
+    },
   };
 
   /** @override */

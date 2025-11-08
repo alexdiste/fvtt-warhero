@@ -251,6 +251,7 @@
   "WH.ui.Inactive": "Inactive",
   "WH.ui.effects": "Effects",
   "WH.ui.toggleeffect": "Toggle Effect",
+  "WH.ui.EffectDeletionFromItem": "Effect must be deleted from its parent item.",
 
   "WH.chat.save": "Save",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",

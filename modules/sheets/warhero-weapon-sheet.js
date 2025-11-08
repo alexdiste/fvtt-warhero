@@ -35,6 +35,9 @@ export class WarheroWeaponSheetV2 extends WarheroBaseItemSheet {
     details: {
       template: `systems/fvtt-warhero/templates/items/partial-item-weapon-details.hbs`,
     },
+    effects: {
+      template: "systems/fvtt-warhero/templates/items/partial-item-generic-effect.hbs",
+    },
   };
 
   /** @override */
