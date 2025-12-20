@@ -1,8 +1,7 @@
-2025/11/06-23:31:11.697808 7f14b97fa6c0 Log #3960: 0 ops saved to Table #3961 OK
-2025/11/06-23:31:11.697928 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze/003960.log: OK
-2025/11/06-23:31:11.697960 7f14b97fa6c0 Log #3541: 0 ops saved to Table #3962 OK
-2025/11/06-23:31:11.698026 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze/003541.log: OK
-2025/11/06-23:31:11.705854 7f14b97fa6c0 Table #3402: 21 entries OK
-2025/11/06-23:31:11.706095 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze/MANIFEST-003958: OK
-2025/11/06-23:31:11.706158 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze/MANIFEST-003539: OK
-2025/11/06-23:31:11.729994 7f14b97fa6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/razze; recovered 1 files; 15330 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.555662 7effcaffd6c0 Recovering log #4281
+2025/12/20-13:11:14.568600 7effcaffd6c0 Delete type=3 #4279
+2025/12/20-13:11:14.568626 7effcaffd6c0 Delete type=0 #4281
+2025/12/20-15:02:35.816503 7effc9ffb6c0 Level-0 table #4286: started
+2025/12/20-15:02:35.816524 7effc9ffb6c0 Level-0 table #4286: 0 bytes OK
+2025/12/20-15:02:35.825704 7effc9ffb6c0 Delete type=0 #4284
+2025/12/20-15:02:35.839916 7effc9ffb6c0 Manual compaction at level-0 from '!items!54AqhZTRxx24xczj' @ 72057594037927935 : 1 .. '!items!sY6t6latJGSgL9Ua' @ 0 : 0; will stop at (end)

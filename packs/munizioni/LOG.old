@@ -1,8 +1,7 @@
-2025/11/06-23:31:11.288986 7f14ba7fc6c0 Log #3951: 0 ops saved to Table #3952 OK
-2025/11/06-23:31:11.289079 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni/003951.log: OK
-2025/11/06-23:31:11.289103 7f14ba7fc6c0 Log #3532: 0 ops saved to Table #3953 OK
-2025/11/06-23:31:11.289165 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni/003532.log: OK
-2025/11/06-23:31:11.289223 7f14ba7fc6c0 Table #3393: 4 entries OK
-2025/11/06-23:31:11.298672 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni/MANIFEST-003949: OK
-2025/11/06-23:31:11.298799 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni/MANIFEST-003530: OK
-2025/11/06-23:31:11.323167 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/munizioni; recovered 1 files; 1645 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.520861 7effca7fc6c0 Recovering log #4272
+2025/12/20-13:11:14.531746 7effca7fc6c0 Delete type=3 #4270
+2025/12/20-13:11:14.531778 7effca7fc6c0 Delete type=0 #4272
+2025/12/20-15:02:35.789085 7effc9ffb6c0 Level-0 table #4277: started
+2025/12/20-15:02:35.789097 7effc9ffb6c0 Level-0 table #4277: 0 bytes OK
+2025/12/20-15:02:35.798274 7effc9ffb6c0 Delete type=0 #4275
+2025/12/20-15:02:35.807224 7effc9ffb6c0 Manual compaction at level-0 from '!items!2pcQKWuQGvAgRFxY' @ 72057594037927935 : 1 .. '!items!Zq3vIOR3qvaj2gsa' @ 0 : 0; will stop at (end)

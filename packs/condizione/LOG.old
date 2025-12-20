@@ -1,9 +1,7 @@
-2025/11/06-23:31:12.665363 7f14b97fa6c0 Log #3966: 0 ops saved to Table #3967 OK
-2025/11/06-23:31:12.665485 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione/003966.log: OK
-2025/11/06-23:31:12.665522 7f14b97fa6c0 Log #3548: 0 ops saved to Table #3968 OK
-2025/11/06-23:31:12.665612 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione/003548.log: OK
-2025/11/06-23:31:12.665693 7f14b97fa6c0 Table #3510: 1 entries OK
-2025/11/06-23:31:12.668761 7f14b97fa6c0 Table #3515: 89 entries OK
-2025/11/06-23:31:12.669003 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione/MANIFEST-003964: OK
-2025/11/06-23:31:12.669052 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione/MANIFEST-003546: OK
-2025/11/06-23:31:12.685131 7f14b97fa6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/condizione; recovered 2 files; 37076 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.648175 7effcbfff6c0 Recovering log #4287
+2025/12/20-13:11:14.660115 7effcbfff6c0 Delete type=3 #4285
+2025/12/20-13:11:14.660145 7effcbfff6c0 Delete type=0 #4287
+2025/12/20-15:02:35.868163 7effc9ffb6c0 Level-0 table #4292: started
+2025/12/20-15:02:35.868174 7effc9ffb6c0 Level-0 table #4292: 0 bytes OK
+2025/12/20-15:02:35.877830 7effc9ffb6c0 Delete type=0 #4290
+2025/12/20-15:02:35.905830 7effc9ffb6c0 Manual compaction at level-0 from '!items!0HMcquKQ71Nxv8H6' @ 72057594037927935 : 1 .. '!items!yQhxz6aWS1XCMvDV' @ 0 : 0; will stop at (end)

@@ -1,8 +1,7 @@
-2025/11/06-23:31:12.754889 7f14b97fa6c0 Log #3958: 0 ops saved to Table #3959 OK
-2025/11/06-23:31:12.754984 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza/003958.log: OK
-2025/11/06-23:31:12.755011 7f14b97fa6c0 Log #3539: 0 ops saved to Table #3960 OK
-2025/11/06-23:31:12.755064 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza/003539.log: OK
-2025/11/06-23:31:12.758978 7f14b97fa6c0 Table #3400: 12 entries OK
-2025/11/06-23:31:12.759203 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza/MANIFEST-003956: OK
-2025/11/06-23:31:12.759249 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza/MANIFEST-003537: OK
-2025/11/06-23:31:12.774931 7f14b97fa6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-di-razza; recovered 1 files; 4559 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.661081 7effca7fc6c0 Recovering log #4279
+2025/12/20-13:11:14.674039 7effca7fc6c0 Delete type=3 #4277
+2025/12/20-13:11:14.674071 7effca7fc6c0 Delete type=0 #4279
+2025/12/20-15:02:35.887368 7effc9ffb6c0 Level-0 table #4284: started
+2025/12/20-15:02:35.887383 7effc9ffb6c0 Level-0 table #4284: 0 bytes OK
+2025/12/20-15:02:35.896497 7effc9ffb6c0 Delete type=0 #4282
+2025/12/20-15:02:35.919868 7effc9ffb6c0 Manual compaction at level-0 from '!items!0CcUpvcoFi8C3Kig' @ 72057594037927935 : 1 .. '!items!rge3PlTBQTcBvCpb' @ 0 : 0; will stop at (end)

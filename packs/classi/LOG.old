@@ -1,8 +1,14 @@
-2025/11/06-23:31:11.074561 7f14b9ffb6c0 Log #3962: 0 ops saved to Table #3963 OK
-2025/11/06-23:31:11.074656 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/classi/003962.log: OK
-2025/11/06-23:31:11.074685 7f14b9ffb6c0 Log #3545: 0 ops saved to Table #3964 OK
-2025/11/06-23:31:11.074739 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/classi/003545.log: OK
-2025/11/06-23:31:11.077280 7f14b9ffb6c0 Table #3508: 45 entries OK
-2025/11/06-23:31:11.077562 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/classi/MANIFEST-003960: OK
-2025/11/06-23:31:11.077626 7f14b9ffb6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/classi/MANIFEST-003543: OK
-2025/11/06-23:31:11.094914 7f14b9ffb6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/classi; recovered 1 files; 28335 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.493176 7effcb7fe6c0 Recovering log #4283
+2025/12/20-13:11:14.505983 7effcb7fe6c0 Delete type=3 #4281
+2025/12/20-13:11:14.506019 7effcb7fe6c0 Delete type=0 #4283
+2025/12/20-15:02:35.755342 7effc9ffb6c0 Level-0 table #4288: started
+2025/12/20-15:02:35.759849 7effc9ffb6c0 Level-0 table #4288: 4495 bytes OK
+2025/12/20-15:02:35.767921 7effc9ffb6c0 Delete type=0 #4286
+2025/12/20-15:02:35.768007 7effc9ffb6c0 Manual compaction at level-0 from '!items!00oANw9wGRGtKMNO' @ 72057594037927935 : 1 .. '!items!zEnpxYqqVei2K3ae' @ 0 : 0; will stop at '!items!s9KXNRolNJcaAJWJ' @ 449 : 1
+2025/12/20-15:02:35.768011 7effc9ffb6c0 Compacting 1@0 + 1@1 files
+2025/12/20-15:02:35.772517 7effc9ffb6c0 Generated table #4289@0: 44 keys, 28499 bytes
+2025/12/20-15:02:35.772525 7effc9ffb6c0 Compacted 1@0 + 1@1 files => 28499 bytes
+2025/12/20-15:02:35.782245 7effc9ffb6c0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/12/20-15:02:35.782279 7effc9ffb6c0 Delete type=2 #3974
+2025/12/20-15:02:35.782346 7effc9ffb6c0 Delete type=2 #4288
+2025/12/20-15:02:35.807213 7effc9ffb6c0 Manual compaction at level-0 from '!items!s9KXNRolNJcaAJWJ' @ 449 : 1 .. '!items!zEnpxYqqVei2K3ae' @ 0 : 0; will stop at (end)

@@ -1,8 +1,7 @@
-2025/11/06-23:31:10.369813 7f14ba7fc6c0 Log #3965: 0 ops saved to Table #3966 OK
-2025/11/06-23:31:10.369953 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-aggiuntive/003965.log: OK
-2025/11/06-23:31:10.369985 7f14ba7fc6c0 Log #3549: 0 ops saved to Table #3967 OK
-2025/11/06-23:31:10.370039 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-aggiuntive/003549.log: OK
-2025/11/06-23:31:10.374977 7f14ba7fc6c0 Table #3546: 53 entries OK
-2025/11/06-23:31:10.375325 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-aggiuntive/MANIFEST-003963: OK
-2025/11/06-23:31:10.375391 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-aggiuntive/MANIFEST-003547: OK
-2025/11/06-23:31:10.393407 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/abilita-aggiuntive; recovered 1 files; 23256 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.416531 7effcb7fe6c0 Recovering log #4286
+2025/12/20-13:11:14.425529 7effcb7fe6c0 Delete type=3 #4284
+2025/12/20-13:11:14.425556 7effcb7fe6c0 Delete type=0 #4286
+2025/12/20-15:02:35.689842 7effc9ffb6c0 Level-0 table #4291: started
+2025/12/20-15:02:35.689858 7effc9ffb6c0 Level-0 table #4291: 0 bytes OK
+2025/12/20-15:02:35.699387 7effc9ffb6c0 Delete type=0 #4289
+2025/12/20-15:02:35.699476 7effc9ffb6c0 Manual compaction at level-0 from '!items!0EnayTHWCsm2b2D0' @ 72057594037927935 : 1 .. '!items!zu4r7RLEQNHDR0jy' @ 0 : 0; will stop at (end)

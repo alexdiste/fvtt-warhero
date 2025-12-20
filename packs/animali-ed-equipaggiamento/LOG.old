@@ -1,8 +1,7 @@
-2025/11/06-23:31:10.540741 7f14b97fa6c0 Log #3958: 0 ops saved to Table #3959 OK
-2025/11/06-23:31:10.540857 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento/003958.log: OK
-2025/11/06-23:31:10.540886 7f14b97fa6c0 Log #3739: 0 ops saved to Table #3960 OK
-2025/11/06-23:31:10.540942 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento/003739.log: OK
-2025/11/06-23:31:10.543707 7f14b97fa6c0 Table #3600: 9 entries OK
-2025/11/06-23:31:10.543994 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento/MANIFEST-003956: OK
-2025/11/06-23:31:10.544061 7f14b97fa6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento/MANIFEST-003737: OK
-2025/11/06-23:31:10.560400 7f14b97fa6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/animali-ed-equipaggiamento; recovered 1 files; 3113 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.434643 7effcbfff6c0 Recovering log #4279
+2025/12/20-13:11:14.448629 7effcbfff6c0 Delete type=3 #4277
+2025/12/20-13:11:14.448661 7effcbfff6c0 Delete type=0 #4279
+2025/12/20-15:02:35.715378 7effc9ffb6c0 Level-0 table #4284: started
+2025/12/20-15:02:35.715391 7effc9ffb6c0 Level-0 table #4284: 0 bytes OK
+2025/12/20-15:02:35.724236 7effc9ffb6c0 Delete type=0 #4282
+2025/12/20-15:02:35.733504 7effc9ffb6c0 Manual compaction at level-0 from '!items!1JARtgfJ16N3BGsa' @ 72057594037927935 : 1 .. '!items!zvBnb4UuF3Xt6pkF' @ 0 : 0; will stop at (end)

@@ -1,8 +1,7 @@
-2025/11/06-23:31:11.172050 7f14ba7fc6c0 Log #3954: 0 ops saved to Table #3955 OK
-2025/11/06-23:31:11.172162 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/lingue/003954.log: OK
-2025/11/06-23:31:11.172203 7f14ba7fc6c0 Log #3535: 0 ops saved to Table #3956 OK
-2025/11/06-23:31:11.172282 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/lingue/003535.log: OK
-2025/11/06-23:31:11.172826 7f14ba7fc6c0 Table #3396: 25 entries OK
-2025/11/06-23:31:11.173050 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/lingue/MANIFEST-003952: OK
-2025/11/06-23:31:11.173120 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/lingue/MANIFEST-003533: OK
-2025/11/06-23:31:11.188650 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/lingue; recovered 1 files; 7471 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.507024 7effcaffd6c0 Recovering log #4275
+2025/12/20-13:11:14.519803 7effcaffd6c0 Delete type=3 #4273
+2025/12/20-13:11:14.519835 7effcaffd6c0 Delete type=0 #4275
+2025/12/20-15:02:35.798332 7effc9ffb6c0 Level-0 table #4280: started
+2025/12/20-15:02:35.798352 7effc9ffb6c0 Level-0 table #4280: 0 bytes OK
+2025/12/20-15:02:35.807165 7effc9ffb6c0 Delete type=0 #4278
+2025/12/20-15:02:35.807228 7effc9ffb6c0 Manual compaction at level-0 from '!items!0riqDnmq93mM4erW' @ 72057594037927935 : 1 .. '!items!v0sWclRN9cy8yTgQ' @ 0 : 0; will stop at (end)

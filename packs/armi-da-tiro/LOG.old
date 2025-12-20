@@ -1,8 +1,7 @@
-2025/11/06-23:31:10.786475 7f14ba7fc6c0 Log #3951: 0 ops saved to Table #3952 OK
-2025/11/06-23:31:10.786615 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro/003951.log: OK
-2025/11/06-23:31:10.786657 7f14ba7fc6c0 Log #3532: 0 ops saved to Table #3953 OK
-2025/11/06-23:31:10.786720 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro/003532.log: OK
-2025/11/06-23:31:10.786796 7f14ba7fc6c0 Table #3393: 3 entries OK
-2025/11/06-23:31:10.786906 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro/MANIFEST-003949: OK
-2025/11/06-23:31:10.786950 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro/MANIFEST-003530: OK
-2025/11/06-23:31:10.800562 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/armi-da-tiro; recovered 1 files; 1452 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.463789 7effcb7fe6c0 Recovering log #4272
+2025/12/20-13:11:14.475818 7effcb7fe6c0 Delete type=3 #4270
+2025/12/20-13:11:14.475845 7effcb7fe6c0 Delete type=0 #4272
+2025/12/20-15:02:35.733558 7effc9ffb6c0 Level-0 table #4277: started
+2025/12/20-15:02:35.733571 7effc9ffb6c0 Level-0 table #4277: 0 bytes OK
+2025/12/20-15:02:35.742472 7effc9ffb6c0 Delete type=0 #4275
+2025/12/20-15:02:35.767981 7effc9ffb6c0 Manual compaction at level-0 from '!items!1wSfmRfPaoASRMQZ' @ 72057594037927935 : 1 .. '!items!Uzf6iuCJrcrWM6Pt' @ 0 : 0; will stop at (end)

@@ -1,8 +1,7 @@
-2025/11/06-23:31:13.898241 7f14ba7fc6c0 Log #3951: 0 ops saved to Table #3952 OK
-2025/11/06-23:31:13.898347 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/sfere-di-magia/003951.log: OK
-2025/11/06-23:31:13.898376 7f14ba7fc6c0 Log #3532: 0 ops saved to Table #3953 OK
-2025/11/06-23:31:13.898434 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/sfere-di-magia/003532.log: OK
-2025/11/06-23:31:13.906121 7f14ba7fc6c0 Table #3393: 32 entries OK
-2025/11/06-23:31:13.906315 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/sfere-di-magia/MANIFEST-003949: OK
-2025/11/06-23:31:13.906365 7f14ba7fc6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/sfere-di-magia/MANIFEST-003530: OK
-2025/11/06-23:31:13.930641 7f14ba7fc6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/sfere-di-magia; recovered 1 files; 20047 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.801344 7effcaffd6c0 Recovering log #4272
+2025/12/20-13:11:14.808829 7effcaffd6c0 Delete type=3 #4270
+2025/12/20-13:11:14.808856 7effcaffd6c0 Delete type=0 #4272
+2025/12/20-15:02:36.045076 7effc9ffb6c0 Level-0 table #4277: started
+2025/12/20-15:02:36.045086 7effc9ffb6c0 Level-0 table #4277: 0 bytes OK
+2025/12/20-15:02:36.054636 7effc9ffb6c0 Delete type=0 #4275
+2025/12/20-15:02:36.082740 7effc9ffb6c0 Manual compaction at level-0 from '!items!0l33pWTj5jsnmEfz' @ 72057594037927935 : 1 .. '!items!ukQlFEIZ7PO2s1EE' @ 0 : 0; will stop at (end)

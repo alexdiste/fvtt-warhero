@@ -1,8 +1,7 @@
-2025/11/06-23:31:13.021517 7f14baffd6c0 Log #3950: 0 ops saved to Table #3951 OK
-2025/11/06-23:31:13.021646 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-torre/003950.log: OK
-2025/11/06-23:31:13.021678 7f14baffd6c0 Log #3531: 0 ops saved to Table #3952 OK
-2025/11/06-23:31:13.021737 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-torre/003531.log: OK
-2025/11/06-23:31:13.021799 7f14baffd6c0 Table #3392: 2 entries OK
-2025/11/06-23:31:13.021903 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-torre/MANIFEST-003948: OK
-2025/11/06-23:31:13.021949 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-torre/MANIFEST-003529: OK
-2025/11/06-23:31:13.040680 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/scudi-torre; recovered 1 files; 1128 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.697442 7effca7fc6c0 Recovering log #4271
+2025/12/20-13:11:14.703298 7effca7fc6c0 Delete type=3 #4269
+2025/12/20-13:11:14.703328 7effca7fc6c0 Delete type=0 #4271
+2025/12/20-15:02:35.926864 7effc9ffb6c0 Level-0 table #4276: started
+2025/12/20-15:02:35.926877 7effc9ffb6c0 Level-0 table #4276: 0 bytes OK
+2025/12/20-15:02:35.933168 7effc9ffb6c0 Delete type=0 #4274
+2025/12/20-15:02:35.952146 7effc9ffb6c0 Manual compaction at level-0 from '!items!EhNDCegPBts40mKY' @ 72057594037927935 : 1 .. '!items!KWewDYfBQDoqeGsX' @ 0 : 0; will stop at (end)

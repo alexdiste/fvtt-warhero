@@ -1,8 +1,7 @@
-2025/11/06-23:31:11.820313 7f14baffd6c0 Log #3951: 0 ops saved to Table #3952 OK
-2025/11/06-23:31:11.820464 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/vestiti/003951.log: OK
-2025/11/06-23:31:11.820511 7f14baffd6c0 Log #3532: 0 ops saved to Table #3953 OK
-2025/11/06-23:31:11.820718 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/vestiti/003532.log: OK
-2025/11/06-23:31:11.821920 7f14baffd6c0 Table #3393: 14 entries OK
-2025/11/06-23:31:11.822224 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/vestiti/MANIFEST-003949: OK
-2025/11/06-23:31:11.822275 7f14baffd6c0 Archiving /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/vestiti/MANIFEST-003530: OK
-2025/11/06-23:31:11.840816 7f14baffd6c0 **** Repaired leveldb /home/morr/foundry/foundrydata-v13/Data/systems/fvtt-warhero/packs/vestiti; recovered 1 files; 4446 bytes. Some data may have been lost. ****
+2025/12/20-13:11:14.569350 7effcbfff6c0 Recovering log #4272
+2025/12/20-13:11:14.583056 7effcbfff6c0 Delete type=3 #4270
+2025/12/20-13:11:14.583100 7effcbfff6c0 Delete type=0 #4272
+2025/12/20-15:02:35.825750 7effc9ffb6c0 Level-0 table #4277: started
+2025/12/20-15:02:35.825760 7effc9ffb6c0 Level-0 table #4277: 0 bytes OK
+2025/12/20-15:02:35.834982 7effc9ffb6c0 Delete type=0 #4275
+2025/12/20-15:02:35.839921 7effc9ffb6c0 Manual compaction at level-0 from '!items!05dIkt9rYfFcrDD1' @ 72057594037927935 : 1 .. '!items!xZaNhdKRXMvcu5OS' @ 0 : 0; will stop at (end)
