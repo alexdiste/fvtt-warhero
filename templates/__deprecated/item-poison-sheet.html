@@ -1,0 +1,52 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
+
+    {{> systems/fvtt-warhero/templates/partial-item-nav.html}}
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+      {{> systems/fvtt-warhero/templates/partial-item-description.html}}
+
+      <div class="tab details" data-group="primary" data-tab="details">
+        <ul>
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.application"}}</label>
+            <select class="item-field-label-medium " type="text" name="system.application" value="{{system.application}}" data-dtype="String">
+              {{selectOptions config.poisonApplication selected=system.application localize=true}}
+            </select>             
+          </li>
+
+         <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.preparetime"}}</label>
+            <input type="text" class="item-field-label-medium " name="system.preparetime" value="{{system.preparetime}}" data-dtype="String"/>
+          </li>
+
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.damage"}}</label>
+            <input type="text" class="item-field-label-medium " name="system.damageroll" value="{{system.damageroll}}" data-dtype="String"/>
+          </li>
+
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.durationrounds"}}</label>
+            <input type="text" class="item-field-label-short" name="system.durationround" value="{{system.durationround}}" data-dtype="Number"/>
+          </li>
+
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.savesdc"}}</label>
+            <input type="text" class="item-field-label-short" name="system.savesdc" value="{{system.savesdc}}" data-dtype="Number"/>
+          </li>
+
+          <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.savetype"}}</label>
+            <select class="item-field-label-long " type="text" name="system.savetype" value="{{system.savetype}}" data-dtype="String">
+              {{selectOptions config.saveType selected=system.savetype localize=true}}
+            </select>             
+          </li>
+
+          {{> systems/fvtt-warhero/templates/partial-item-common-equipment.html}}
+
+        </ul>
+
+      </div>
+    </section>
+</form>

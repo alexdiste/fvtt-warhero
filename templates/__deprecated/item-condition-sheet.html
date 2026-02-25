@@ -1,0 +1,73 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-sheet-img" src="{{img}}" data-edit="img" title="{{name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name" /></h1>
+    </div>
+  </header>
+  {{> systems/fvtt-warhero/templates/partial-item-nav.html}}
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{> systems/fvtt-warhero/templates/partial-item-description.html}}
+
+
+    <div class="tab details" data-group="primary" data-tab="details">
+      <ul>  
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.conditiontype"}}</label>
+          <select class="item-field-label-medium " type="text" name="system.conditiontype" value="{{system.conditiontype}}" data-dtype="String">
+            {{selectOptions config.conditionType selected=system.conditiontype localize=true}}
+          </select>             
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.duration"}}</label>
+          <select class="item-field-label-medium " type="text" name="system.duration" value="{{system.duration}}" data-dtype="String">
+            {{selectOptions config.conditionDuration selected=system.duration localize=true}}
+          </select>             
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.begin"}}</label>
+          <input type="text" class="item-field-label-long" name="system.begin" value="{{system.begin}}" data-dtype="String"/>
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.specialduration"}}</label>
+          <select class="item-field-label-medium " type="text" name="system.specialduration" value="{{system.specialduration}}" data-dtype="String">
+            {{selectOptions config.conditionSpecialDuration selected=system.specialduration localize=true}}
+          </select>             
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.durationvalue"}}</label>
+          <input type="text" class="item-field-label-short" name="system.durationvalue" value="{{system.durationvalue}}" data-dtype="Number"/>
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.durationunit"}}</label>
+          <input type="text" class="item-field-label-long" name="system.durationunit" value="{{system.durationunit}}" data-dtype="String"/>
+        </li>
+        
+        {{#if (eq conditiontype "disease")}}
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.dcsave"}}</label>
+          <input type="text" class="item-field-label-short" name="system.dcsave" value="{{system.dcsave}}" data-dtype="Number"/>
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.incubationtime"}}</label>
+          <input type="text" class="item-field-label-long" name="system.incubationtime" value="{{system.incubationtime}}" data-dtype="String"/>
+        </li>
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.diseaseduration"}}</label>
+          <input type="text" class="item-field-label-long" name="system.diseaseduration" value="{{system.diseaseduration}}" data-dtype="String"/>
+        </li>
+
+        {{/if}}
+
+        <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.effect"}}</label>
+          <input type="text" class="item-field-label-long" name="system.shortdescription" value="{{system.shortdescription}}" data-dtype="String"/>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+</form>
