@@ -7,13 +7,14 @@ on:
       - 'v*' # Si attiva quando crei un tag che inizia con v (es. v1.0.0)
 
 permissions:
-  contents: write
+  contents: write # Necessario per permettere all'Action di caricare file nella Release
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -23,14 +24,15 @@ jobs:
       - name: Update Manifest
         run: node ./scripts/update-manifest.js ${{ github.ref_name }}
 
-      # Step opzionale: se hai file YAML da compilare
-      # - name: Build Compendiums
-      #   run: npm run build
-
       - name: Create Versioned Zip
         run: |
-          # Es: warhero-v1.0.1.zip
-          zip -r ./fvtt-warhero-${{ github.ref_name }}.zip . -x ".git/*" ".github/*" "node_modules/*" "scripts/*"
+          # Creazione dello zip escludendo file inutili e cartelle di sviluppo
+          # Nota: Foundry preferisce che i file siano nella root dello zip o in una cartella specifica
+          zip -r fvtt-warhero-${{ github.ref_name }}.zip . -x "*.git*" ".github/*" "node_modules/*" "scripts/*" ".gitignore"
+
+          # Debug: Verifica che lo zip sia stato creato correttamente prima del passaggio successivo
+          ls -lh fvtt-warhero-${{ github.ref_name }}.zip
+          ls -lh system.json
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
@@ -38,5 +40,7 @@ jobs:
           files: |
             system.json
             fvtt-warhero-${{ github.ref_name }}.zip
+          # Mantiene il corpo della release se aggiunto manualmente o usa il default
+          body: "Aggiornamento automatico versione ${{ github.ref_name }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
