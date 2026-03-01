@@ -4,7 +4,10 @@ name: Release Creation
 on:
   push:
     tags:
-      - 'v*' #si ativa quando pushi un tag
+      - 'v*' # Si attiva quando crei un tag che inizia con v (es. v1.0.0)
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -27,13 +30,13 @@ jobs:
       - name: Create Versioned Zip
         run: |
           # Es: warhero-v1.0.1.zip
-          zip -r ./warhero-${{ github.ref_name }}.zip . -x ".git/*" ".github/*" "node_modules/*" "scripts/*"
+          zip -r ./fvtt-warhero-${{ github.ref_name }}.zip . -x ".git/*" ".github/*" "node_modules/*" "scripts/*"
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             system.json
-            warhero-${{ github.ref_name }}.zip
+            fvtt-warhero-${{ github.ref_name }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
