@@ -444,24 +444,28 @@ export class WarheroActor extends Actor {
   }
 
   /* ------------------------------------------- */
+  /**
+   * Return an object whose keys match the statistic keys used on the sheet
+   * ("str","dex","min").  Each entry contains the save bonus configured
+   * on the statistic.  This keeps the logic decoupled from earlier
+   * implementations that derived saves from unrelated ability scores.
+   */
   getSaveRoll() {
+    const stats = this.system?.statistics || {};
     return {
-      reflex: {
-        "label": "Reflex Save",
-        "img": "systems/fvtt-warhero/images/icons/saves/reflex_save.webp",
-        "value": this.system.abilities.agi.value + this.system.abilities.wit.value
+      str: {
+        label: "Fortitude Save",
+        value: stats.str?.save || 0
       },
-      fortitude: {
-        "label": "Fortitude Save",
-        "img": "systems/fvtt-warhero/images/icons/saves/fortitude_save.webp",
-        "value": this.system.abilities.str.value + this.system.abilities.con.value
+      dex: {
+        label: "Reflex Save",
+        value: stats.dex?.save || 0
       },
-      willpower: {
-        "label": "Willpower Save",
-        "img": "systems/fvtt-warhero/images/icons/saves/will_save.webp",
-        "value": this.system.abilities.int.value + this.system.abilities.cha.value
+      min: {
+        label: "Willpower Save",
+        value: stats.min?.save || 0
       }
-    }
+    };
   }
 
   /* ------------------------------------------- */
@@ -559,7 +563,8 @@ export class WarheroActor extends Actor {
 
   /* -------------------------------------------- */
   getAbility(abilKey) {
-    return this.system.abilities[abilKey];
+    // return a safe object even if abilities are missing
+    return (this.system?.abilities || {})[abilKey] || { value: 0 };
   }
 
   /* -------------------------------------------- */
@@ -896,12 +901,21 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   rollSaveFromType(rollType, rollKey) {
-    let stat = foundry.utils.duplicate(this.system[rollType][rollKey])
-    let rollData = this.getCommonRollData()
-    rollData.mode = "save"
-    rollData.stat = stat
-    rollData.title = `${this.name} - Save`
-    this.startRoll(rollData)
+    // start from the saved statistic entry and then override its value
+    // with the dedicated "save" field – the game designer populates that
+    // manually on the sheet (statistics.str.save, statistics.dex.save,
+    // statistics.min.save).
+    let stat = foundry.utils.duplicate(this.system[rollType][rollKey]);
+    if (stat) {
+      stat.value = stat.save ?? 0;
+      // keep the save property in sync for display in the chat message
+      stat.save = stat.value;
+    }
+    let rollData = this.getCommonRollData();
+    rollData.mode = "save";
+    rollData.stat = stat;
+    rollData.title = `${this.name} - Save`;
+    this.startRoll(rollData);
   }
 
   /* -------------------------------------------- */
@@ -951,6 +965,7 @@ export class WarheroActor extends Actor {
       rollData.img = power.img
       rollData.hasBM = false
       rollData.title = `${this.name} - Power`
+      rollData.powerDescription = power.system.description
       // If teleport power, add locations list
       if (power.system.isteleport) {
         rollData.locations = this.getLocations()

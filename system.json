@@ -2,15 +2,15 @@
   "id": "fvtt-warhero",
   "title": "Warhero RPG",
   "description": "Warhero RPG system for FoundryVTT",
-  "version": "13.44",
+  "version": "14.48",
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
+    "verified": "14"
   },
   "manifest": "https://raw.githubusercontent.com/alexdiste/fvtt-warhero/main/system.json",
-  "download": "https://github.com/alexdiste/fvtt-warhero/raw/refs/heads/main/fvtt-warhero-13.44.zip",
+  "download": "https://github.com/alexdiste/fvtt-warhero/raw/main/fvtt-warhero-14-48.zip",
   "authors": [
-    {
+	{
       "name": "AlexDiste",
       "flags": {}
     },
@@ -61,109 +61,29 @@
   "primaryTokenAttribute": "attributes.hp",
   "secondaryTokenAttribute": "attributes.mana",
   "socket": true,
-  "documentTypes": {
+    "documentTypes": {
     "Actor": {
-      "character": {
-        "htmlFields": [
-          "description",
-          "notes",
-          "gmnotes"
-        ]
-      },
-      "party": {
-        "htmlFields": [
-          "description",
-          "notes",
-          "gmnotes"
-        ]
-      }
+      "character": { "htmlFields": ["description", "notes", "gmnotes"] },
+      "party": { "htmlFields": ["description", "notes", "gmnotes"] }
     },
     "Item": {
-      "armor": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "class": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "classitem": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "equipment": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "weapon": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "competency": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "power": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "language": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "location": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "money": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "condition": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "poison": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "potion": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "race": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "shield": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "skill": {
-        "htmlFields": [
-          "description"
-        ]
-      },
-      "trap": {
-        "htmlFields": [
-          "description"
-        ]
-      }
+      "armor": { "htmlFields": ["description"] },
+      "class": { "htmlFields": ["description"] },
+      "classitem": { "htmlFields": ["description"] },
+      "equipment": { "htmlFields": ["description"] },
+      "weapon": { "htmlFields": ["description"] },
+      "competency": { "htmlFields": ["description"] },
+      "power": { "htmlFields": ["description"] },
+      "language": { "htmlFields": ["description"] },
+      "location": { "htmlFields": ["description"] },
+      "money": { "htmlFields": ["description"] },
+      "condition": { "htmlFields": ["description"] },
+      "poison": { "htmlFields": ["description"] },
+      "potion": { "htmlFields": ["description"] },
+      "race": { "htmlFields": ["description"] },
+      "shield": { "htmlFields": ["description"] },
+      "skill": { "htmlFields": ["description"] },
+      "trap": { "htmlFields": ["description"] }
     }
   },
   "packs": [
@@ -179,7 +99,7 @@
         "ASSISTANT": "OWNER"
       }
     },
-    {
+	{
       "label": "manuale master",
       "type": "JournalEntry",
       "name": "manuale-master",
@@ -191,7 +111,7 @@
         "ASSISTANT": "OWNER"
       }
     },
-    {
+	{
       "label": "competenze",
       "type": "Item",
       "name": "competenze",
@@ -621,15 +541,15 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+	  }
     },
-    {
+	{
       "label": "Macro",
       "type": "Macro",
       "name": "macro",
       "path": "packs/macro",
       "system": "fvtt-warhero",
-      "flags": {},
+	  "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -641,7 +561,7 @@
       "name": "macro-master",
       "path": "packs/macro-master",
       "system": "fvtt-warhero",
-      "flags": {},
+	  "flags": {},
       "ownership": {
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
@@ -649,110 +569,110 @@
     }
   ],
   "packFolders": [
-    {
-      "name": "Warhero",
-      "sorting": "m",
-      "color": "#0432ec",
-      "packs": [
-        "manuale",
-        "razze",
-        "classi",
-        "lingue",
-        "competenze",
-        "azioni",
-        "evocazioni",
-        "macro"
-      ],
-      "folders": [
         {
-          "name": "Master",
-          "sorting": "m",
-          "color": "#be74d2",
-          "packs": [
-            "manuale-master",
-            "mostri",
-            "attacchi-mostri",
-            "poteri-speciali",
-            "macro-master"
-          ]
-        },
-        {
-          "name": "Abilità",
-          "sorting": "m",
-          "color": "#000000",
-          "packs": [
-            "abilita-di-razza",
-            "abilita-di-classe",
-            "abilita-aggiuntive"
-          ]
-        },
-        {
-          "name": "Armature",
-          "sorting": "m",
-          "color": "#000000",
-          "packs": [
-            "armature-leggere",
-            "armature-medie",
-            "armature-pesanti"
-          ]
-        },
-        {
-          "name": "Armi",
-          "sorting": "m",
-          "color": "#000000",
-          "packs": [
-            "armi-a-due-mani",
-            "armi-corte",
-            "armi-da-lancio",
-            "armi-da-tiro",
-            "armi-in-asta",
-            "armi-lunghe",
-            "munizioni"
-          ]
-        },
-        {
-          "name": "Condizioni e status",
-          "sorting": "m",
-          "color": "#000000",
-          "packs": [
-            "condizione",
-            "malattie"
-          ]
-        },
-        {
-          "name": "Magia",
-          "sorting": "m",
-          "color": "#000000",
-          "packs": [
-            "sfere-di-magia",
-            "poteri"
-          ]
-        },
-        {
-          "name": "Oggetti",
-          "sorting": "m",
-          "color": "#000000",
-          "packs": [
-            "equipaggiamento",
-            "equipaggiamento-per-classi",
-            "vestiti",
-            "pozioni",
-            "veleni",
-            "trappole",
-            "animali-ed-equipaggiamento"
-          ]
-        },
-        {
-          "name": "Scudi",
-          "sorting": "m",
-          "color": "#000000",
-          "packs": [
-            "scudi-leggeri",
-            "scudi-pesanti",
-            "scudi-torre"
-          ]
+            "name": "Warhero",
+            "sorting": "m",
+            "color": "#0432ec",
+            "packs": [
+				"manuale",
+				"razze",
+				"classi",
+				"lingue",
+				"competenze",
+				"azioni",
+				"evocazioni",
+                "macro"
+			],
+            "folders": [
+                {
+                    "name": "Master",
+                    "sorting": "m",
+                    "color": "#be74d2",
+                    "packs": [
+                        "manuale-master",
+						"mostri",
+						"attacchi-mostri",
+						"poteri-speciali",
+						"macro-master"
+                    ]
+                },
+				{
+                    "name": "Abilità",
+                    "sorting": "m",
+                    "color": "#000000",
+                    "packs": [
+                        "abilita-di-razza",
+						"abilita-di-classe",
+						"abilita-aggiuntive"
+                    ]
+                },
+				{
+                    "name": "Armature",
+                    "sorting": "m",
+                    "color": "#000000",
+                    "packs": [
+                        "armature-leggere",
+						"armature-medie",
+						"armature-pesanti"
+                    ]
+                },
+				{
+                    "name": "Armi",
+                    "sorting": "m",
+                    "color": "#000000",
+                    "packs": [
+                        "armi-a-due-mani",
+						"armi-corte",
+						"armi-da-lancio",
+						"armi-da-tiro",
+						"armi-in-asta",
+						"armi-lunghe",
+						"munizioni"
+                    ]
+                },
+				{
+                    "name": "Condizioni e status",
+                    "sorting": "m",
+                    "color": "#000000",
+                    "packs": [
+						"condizione",
+						"malattie"
+                    ]
+                },
+				{
+                    "name": "Magia",
+                    "sorting": "m",
+                    "color": "#000000",
+                    "packs": [
+						"sfere-di-magia",
+						"poteri"
+                    ]
+                },
+				{
+                    "name": "Oggetti",
+                    "sorting": "m",
+                    "color": "#000000",
+                    "packs": [
+						"equipaggiamento",
+						"equipaggiamento-per-classi",
+						"vestiti",
+						"pozioni",
+						"veleni",
+						"trappole",
+						"animali-ed-equipaggiamento"
+                    ]
+                },
+				{
+                    "name": "Scudi",
+                    "sorting": "m",
+                    "color": "#000000",
+                    "packs": [
+						"scudi-leggeri",
+						"scudi-pesanti",
+						"scudi-torre"
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
