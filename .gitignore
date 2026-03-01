@@ -1,5 +1,6 @@
 src/
-node_modules/
 LOCK
 *.log
 packs/_source
+scripts/
+package.json
