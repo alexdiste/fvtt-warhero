@@ -75,6 +75,7 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       config: game.system.warhero.config,
       statistics: WarheroUtility.getActorStats(),
       enrichedDescription: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.description, { async: true }),
+      enrichedGMNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.gmnotes, { async: true }),
       effects: this.document.effects.map(eff => eff.toObject()),
       isEditMode: this.isEditMode,
       isPlayMode: this.isPlayMode,
@@ -95,6 +96,7 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
     const tabs = {
       description: { id: "description", group: "sheet", icon: "fa-solid fa-compass", label: "WH.ui.description" },
       details: { id: "details", group: "sheet", icon: "fa-solid fa-graduation-cap", label: "WH.ui.details" },
+      gmnotes: { id: "gmnotes", group: "sheet", icon: "fa-solid fa-file-lines", label: "WH.ui.gmnotes" },
     }
     if (_HAS_EFFECTS_TAB.includes(this.document.type)) {
       tabs.effects = { id: "effects", itemType: "effect", group: "sheet", icon: "fa-solid fa-heart-pulse", label: "WH.ui.effects" }
@@ -117,6 +119,9 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
         break
       case "details":
         context.tab = context.tabs.details
+        break;
+      case "gmnotes":
+        context.tab = context.tabs.gmnotes
         break;
       case "effects":
         context.tab = context.tabs.effects

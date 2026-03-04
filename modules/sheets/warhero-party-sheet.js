@@ -33,6 +33,9 @@ export class WarheroPartySheet extends WarheroActorSheet {
     },
     biography: {
       template: "systems/fvtt-warhero/templates/actors/partial-party-biography.hbs",
+    },
+    gmnotes: {
+      template: "systems/fvtt-warhero/templates/actors/partial-actor-gmnotes.hbs",
     }
   };
 
@@ -45,6 +48,7 @@ export class WarheroPartySheet extends WarheroActorSheet {
     const tabs = {
       equipment: { id: "equipment", group: "sheet", icon: "fa-solid fa-shapes", label: "WH.ui.equipment" },
       biography: { id: "biography", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.biography" },
+      gmnotes: { id: "gmnotes", group: "sheet", icon: "fa-solid fa-file-lines", label: "WH.ui.gmnotes" },
     }
     for (const v of Object.values(tabs)) {
       v.active = this.tabGroups[v.group] === v.id
@@ -77,6 +81,7 @@ export class WarheroPartySheet extends WarheroActorSheet {
       equipments: foundry.utils.duplicate(this.actor.getEquipmentsOnly()),
       enrichedDescription: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.description, { async: true }),
       enrichedNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.notes, { async: true }),
+      enrichedGMNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.gmnotes, { async: true }),
       options: this.options,
       owner: this.document.isOwner,
       editScore: this.options.editScore,

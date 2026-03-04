@@ -1,0 +1,10 @@
+<section class="tab tab-content-scrollable sheet-body character-{{ tab.id }} {{ tab.cssClass }}" data-tab="{{ tab.id }}"
+  data-group="{{ tab.group }}">
+  {{!-- GM Notes Tab --}}
+  <h3>{{localize "WH.ui.gmnotes"}} : </h3>
+  <div class="editor">
+    {{formInput systemFields.biodata.fields.gmnotes enriched=enrichedGMNotes value=system.biodata.gmnotes
+    name="system.biodata.gmnotes"
+    toggled=true}}
+  </div>
+</section>

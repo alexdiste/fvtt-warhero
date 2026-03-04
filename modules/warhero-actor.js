@@ -63,10 +63,22 @@ export class WarheroActor extends Actor {
 
     if (this.type == 'character' || game.user.isGM) {
       this.computeHitPoints()
-      this.setLevel()
-      this.computeDRTotal()
-      this.computeParryBonusTotal()
-      this.computeBonusLanguages()
+      // Assegna i valori calcolati dai getter ai dati del sistema
+      if (this.system?.secondary?.xp) {
+        this.system.secondary.xp.level = this.getComputedLevel()
+      }
+      if (this.system?.secondary?.drbonustotal) {
+        this.system.secondary.drbonustotal.value = this.getComputedDRTotal()
+      }
+      if (this.system?.secondary?.parrybonustotal) {
+        this.system.secondary.parrybonustotal.value = this.getComputedParryBonusTotal()
+      }
+      if (this.system?.secondary?.nblanguage) {
+        this.system.secondary.nblanguage.value = this.getComputedBonusLanguages()
+      }
+      if (this.system?.attributes?.ini) {
+        this.system.attributes.ini.value = this.getComputedInitiativeBonus()
+      }
     }
 
     super.prepareDerivedData();
@@ -78,10 +90,7 @@ export class WarheroActor extends Actor {
     super._preUpdate(changed, options, user);
   }
 
-  /* -------------------------------------------- */
-  getEncumbranceCapacity() {
-    return 1;
-  }
+
 
   /* -------------------------------------------- */
   getMoneys() {
@@ -160,11 +169,7 @@ export class WarheroActor extends Actor {
     let classWH = this.items.find(item => item.type == 'class' && item.system.issecondary)
     return classWH
   }
-  getClasses() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == "class") || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
+
   getLocations() {
     let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'location') || []);
     // Add a class option when the number of locations is more that "mind" statistics
@@ -196,88 +201,7 @@ export class WarheroActor extends Actor {
     return nbMoney
   }
 
-  /* -------------------------------------------- */
-  buildPartySlots() {
-    let containers = {}
-    for (let slotName in game.system.warhero.config.partySlotNames) {
-      let slotDef = game.system.warhero.config.partySlotNames[slotName]
-      containers[slotName] = foundry.utils.duplicate(slotDef)
-      containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem'))
-      let slotUsed = 0
-      for (let item of containers[slotName].content) {
-        let q = (item.system.quantity) ? item.system.quantity : 1
-        containers[slotName].nbslots += (item.system.providedslot ?? 0) * q
-        if (item.type == "money") {
-          slotUsed += Math.ceil(item.system.quantity / 1000)
-        } else {
-          slotUsed += item.system.slotused * q
-        }
-      }
-      // Keep 2 digits
-      slotUsed = Math.ceil(slotUsed * 100) / 100;
-      containers[slotName].slotUsed = slotUsed;
-    }
-    return containers
-  }
 
-  /* -------------------------------------------- */
-  buildBodySlot() {
-    let containers = {}
-    for (let slotName in game.system.warhero.config.slotNames) {
-      let slotDef = game.system.warhero.config.slotNames[slotName]
-      if (!slotDef.container) {
-        containers[slotName] = foundry.utils.duplicate(slotDef)
-        containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
-          && it.system.slotlocation == slotName)
-        // Manage specific shields case : merge shield with weapon2
-        if (slotName == "weapon2") {
-          containers[slotName].content = containers[slotName].content.concat(this.items.filter(it => it.type == 'shield' && it.system.slotlocation == "shield"))
-        }
-        if (slotName == "shield") {
-          containers[slotName].content = containers[slotName].content.concat(this.items.filter(it => it.type == 'shield' && (it.system.slotlocation == "weapon1" || it.system.slotlocation == "weapon2")))
-        }
-        let slotUsed = 0
-        for (let item of containers[slotName].content) {
-          let q = (item.system.quantity) ? item.system.quantity : 1
-          containers[slotName].nbslots += (item.system.providedslot ?? 0) * q
-          if (item.type == "money") {
-            slotUsed += Math.ceil(item.system.quantity / 1000)
-          } else {
-            slotUsed += item.system.slotused * q
-          }
-        }
-        slotUsed = Math.ceil(slotUsed * 100) / 100;
-        containers[slotName].slotUsed = slotUsed
-      }
-    }
-    return containers
-  }
-
-  /* -------------------------------------------- */
-  buildEquipmentsSlot() {
-    let containers = {}
-    for (let slotName in game.system.warhero.config.slotNames) {
-      let slotDef = game.system.warhero.config.slotNames[slotName]
-      if (slotDef.container) {
-        containers[slotName] = foundry.utils.duplicate(slotDef)
-        containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
-          && it.system.slotlocation == slotName)
-        let slotUsed = 0
-        for (let item of containers[slotName].content) {
-          let q = (item.system.quantity) ? item.system.quantity : 1
-          containers[slotName].nbslots += (item.system.providedslot ?? 0) * q
-          if (item.type == "money") {
-            slotUsed += Math.ceil(item.system.quantity / 1000)
-          } else {
-            slotUsed += item.system.slotused * q
-          }
-        }
-        slotUsed = Math.ceil(slotUsed * 100) / 100;
-        containers[slotName].slotUsed = slotUsed
-      }
-    }
-    return containers
-  }
   /* -------------------------------------------- */
   getConditions() {
     let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'condition') || []);
@@ -365,146 +289,6 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp
   }
-
-  /* -------------------------------------------- */
-  getRelevantAbility(statKey) {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'skill' && item.system.ability == ability) || []);
-    return comp;
-  }
-
-
-  /* -------------------------------------------- */
-  async equipItem(itemId) {
-    let item = this.items.find(item => item.id == itemId)
-    if (item && item.system) {
-      if (item.type == "armor") {
-        let armor = this.items.find(item => item.id != itemId && item.type == "armor" && item.system.equipped)
-        if (armor) {
-          ui.notifications.warn("You already have an armor equipped!")
-          return
-        }
-      }
-      if (item.type == "shield") {
-        let shield = this.items.find(item => item.id != itemId && item.type == "shield" && item.system.equipped)
-        if (shield) {
-          ui.notifications.warn("You already have a shield equipped!")
-          return
-        }
-      }
-      let update = { _id: item.id, "system.equipped": !item.system.equipped };
-      await this.updateEmbeddedDocuments('Item', [update]); // Updates one EmbeddedEntity
-    }
-  }
-
-  /* -------------------------------------------- */
-  compareName(a, b) {
-    if (a.name < b.name) {
-      return -1;
-    }
-    if (a.name > b.name) {
-      return 1;
-    }
-    return 0;
-  }
-
-  /* ------------------------------------------- */
-  getEquipments() {
-    return this.items.filter(item => item.type == 'shield' || item.type == 'armor' || item.type == "weapon" || item.type == "equipment" || item.type == "potion" || item.type == "poison" || item.type == "trap" || item.type == "classitem");
-  }
-  getCompetencyItems() {
-    return foundry.utils.duplicate(this.items.filter(item => item.type == "competency") || [])
-  }
-  /* ------------------------------------------- */
-  getEquipmentsOnly() {
-    return foundry.utils.duplicate(this.items.filter(item => item.type == "equipment") || [])
-  }
-
-  /* ------------------------------------------- */
-  /**
-   * Return an object whose keys match the statistic keys used on the sheet
-   * ("str","dex","min").  Each entry contains the save bonus configured
-   * on the statistic.  This keeps the logic decoupled from earlier
-   * implementations that derived saves from unrelated ability scores.
-   */
-  getSaveRoll() {
-    const stats = this.system?.statistics || {};
-    return {
-      str: {
-        label: "Fortitude Save",
-        value: stats.str?.save || 0
-      },
-      dex: {
-        label: "Reflex Save",
-        value: stats.dex?.save || 0
-      },
-      min: {
-        label: "Willpower Save",
-        value: stats.min?.save || 0
-      }
-    };
-  }
-
-  /* ------------------------------------------- */
-  async buildContainerTree() {
-    let equipments = foundry.utils.duplicate(this.items.filter(item => item.type == "equipment") || [])
-    for (let equip1 of equipments) {
-      if (equip1.system.iscontainer) {
-        equip1.system.contents = []
-        equip1.system.contentsEnc = 0
-        for (let equip2 of equipments) {
-          if (equip1._id != equip2.id && equip2.system.containerid == equip1.id) {
-            equip1.system.contents.push(equip2)
-            let q = equip2.system.quantity ?? 1
-            equip1.system.contentsEnc += q * equip2.system.weight
-          }
-        }
-      }
-    }
-
-    // Compute whole enc
-    let enc = 0
-    for (let item of equipments) {
-      //item.data.idrDice = WarheroUtility.getDiceFromLevel(Number(item.data.idr))
-      if (item.system.equipped) {
-        if (item.system.iscontainer) {
-          enc += item.system.contentsEnc
-        } else if (item.system.containerid == "") {
-          let q = item.system.quantity ?? 1
-          enc += q * item.system.weight
-        }
-      }
-    }
-    for (let item of this.items) { // Process items/shields/armors
-      if ((item.type == "weapon" || item.type == "shield" || item.type == "armor") && item.system.equipped) {
-        let q = item.system.quantity ?? 1
-        enc += q * item.system.weight
-      }
-    }
-
-    // Store local values
-    this.encCurrent = enc
-    this.containersTree = equipments.filter(item => item.system.containerid == "") // Returns the root of equipements without container
-
-  }
-
-  /* -------------------------------------------- */
-  async rollArmor(rollData) {
-    let armor = this.getEquippedArmor()
-    if (armor) {
-
-    }
-    return { armor: "none" }
-  }
-
-  /* -------------------------------------------- */
-  async incDecHP(formula) {
-    let dmgRoll = await new Roll(formula + "[warhero-orange]").roll()
-    await WarheroUtility.showDiceSoNice(dmgRoll, game.settings.get("core", "rollMode"))
-    let hp = foundry.utils.duplicate(this.system.secondary.hp)
-    hp.value = Number(hp.value) + Number(dmgRoll.total)
-    this.update({ 'system.secondary.hp': hp })
-    return Number(dmgRoll.total)
-  }
   /* -------------------------------------------- */
   updateCompetency(competency, obj, labelTab) {
     for (let key in obj) {
@@ -543,44 +327,7 @@ export class WarheroActor extends Actor {
     return (this.system?.abilities || {})[abilKey] || { value: 0 };
   }
 
-  /* -------------------------------------------- */
-  async addObjectToContainer(itemId, containerId) {
-    let container = this.items.find(item => item.id == containerId && item.system.iscontainer)
-    let object = this.items.find(item => item.id == itemId)
-    if (container) {
-      if (object.system.iscontainer) {
-        ui.notifications.warn("Only 1 level of container allowed")
-        return
-      }
-      let alreadyInside = this.items.filter(item => item.system.containerid && item.system.containerid == containerId);
-      if (alreadyInside.length >= container.system.containercapacity) {
-        ui.notifications.warn("Container is already full !")
-        return
-      } else {
-        await this.updateEmbeddedDocuments("Item", [{ _id: object.id, 'system.containerid': containerId }])
-      }
-    } else if (object && object.system.containerid) { // remove from container
-      console.log("Removeing: ", object)
-      await this.updateEmbeddedDocuments("Item", [{ _id: object.id, 'system.containerid': "" }]);
-    }
-  }
 
-  /* -------------------------------------------- */
-  async preprocessItem(event, item, onDrop = false) {
-    let dropID = $(event.target).parents(".item").attr("data-item-id") // Only relevant if container drop
-    let objectID = item.id || item._id
-    this.addObjectToContainer(objectID, dropID)
-    return true
-  }
-
-  /* -------------------------------------------- */
-  async equipGear(equipmentId) {
-    let item = this.items.find(item => item.id == equipmentId);
-    if (item && item.system) {
-      let update = { _id: item.id, "system.equipped": !item.system.equipped };
-      await this.updateEmbeddedDocuments('Item', [update]); // Updates one EmbeddedEntity
-    }
-  }
   /* -------------------------------------------- */
   async getInitiativeScore(combatId, combatantId) {
     let roll = new Roll("1d20+" + this.system.attributes.ini.value)
@@ -590,83 +337,12 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  getSubActors() {
-    let subActors = [];
-    for (let id of this.system.subactors) {
-      subActors.push(foundry.utils.duplicate(game.actors.get(id)))
-    }
-    return subActors;
-  }
-  /* -------------------------------------------- */
-  async addSubActor(subActorId) {
-    let subActors = foundry.utils.duplicate(this.system.subactors);
-    subActors.push(subActorId);
-    await this.update({ 'system.subactors': subActors });
-  }
-  /* -------------------------------------------- */
-  async delSubActor(subActorId) {
-    let newArray = [];
-    for (let id of this.system.subactors) {
-      if (id != subActorId) {
-        newArray.push(id);
-      }
-    }
-    await this.update({ 'system.subactors': newArray });
-  }
-
-  /* -------------------------------------------- */
   syncRoll(rollData) {
     this.lastRollId = rollData.rollId;
     WarheroUtility.saveRollData(rollData);
   }
 
-  /* -------------------------------------------- */
-  getOneSkill(skillId) {
-    let skill = this.items.find(item => item.type == 'skill' && item.id == skillId)
-    if (skill) {
-      skill = foundry.utils.duplicate(skill);
-    }
-    return skill;
-  }
 
-  /* -------------------------------------------- */
-  async deleteAllItemsByType(itemType) {
-    let items = this.items.filter(item => item.type == itemType);
-    await this.deleteEmbeddedDocuments('Item', items);
-  }
-
-  /* -------------------------------------------- */
-  async addItemWithoutDuplicate(newItem) {
-    let item = this.items.find(item => item.type == newItem.type && item.name.toLowerCase() == newItem.name.toLowerCase())
-    if (!item) {
-      await this.createEmbeddedDocuments('Item', [newItem]);
-    }
-  }
-
-  /* -------------------------------------------- */
-  async incrementSkillExp(skillId, inc) {
-    let skill = this.items.get(skillId)
-    if (skill) {
-      await this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.exp': skill.system.exp + inc }])
-      let chatData = {
-        user: game.user.id,
-        rollMode: game.settings.get("core", "rollMode"),
-        whisper: [game.user.id].concat(ChatMessage.getWhisperRecipients('GM')),
-        content: `<div>${this.name} has gained 1 exp in the skill ${skill.name} (exp = ${skill.system.exp})</div`
-      }
-      ChatMessage.create(chatData)
-      if (skill.system.exp >= 25) {
-        await this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.exp': 0, 'system.explevel': skill.system.explevel + 1 }])
-        let chatData = {
-          user: game.user.id,
-          rollMode: game.settings.get("core", "rollMode"),
-          whisper: [game.user.id].concat(ChatMessage.getWhisperRecipients('GM')),
-          content: `<div>${this.name} has gained 1 exp SL in the skill ${skill.name} (new exp SL :  ${skill.system.explevel}) !</div`
-        }
-        ChatMessage.create(chatData)
-      }
-    }
-  }
 
   /* -------------------------------------------- */
   async restActor() {
@@ -734,91 +410,45 @@ export class WarheroActor extends Actor {
       }
     }
   }
-  /* -------------------------------------------- */
-  async incDecAmmo(objetId, incDec = 0) {
-    let objetQ = this.items.get(objetId)
-    if (objetQ) {
-      let newQ = objetQ.system.ammocurrent + incDec;
-      if (newQ >= 0 && newQ <= objetQ.system.ammomax) {
-        const updated = await this.updateEmbeddedDocuments('Item', [{ _id: objetQ.id, 'system.ammocurrent': newQ }]); // pdates one EmbeddedEntity
-      }
-    }
-  }
 
   /* -------------------------------------------- */
-  isForcedAdvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.advantage)
-  }
-  isForcedDisadvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.disadvantage)
-  }
-  isForcedRollAdvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.rolladvantage)
-  }
-  isForcedRollDisadvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.rolldisadvantage)
-  }
-  isNoAdvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.noadvantage)
-  }
-  isNoAction() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.noaction)
-  }
-  isAttackDisadvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.attackdisadvantage)
-  }
-  isDefenseDisadvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.defensedisadvantage)
-  }
-  isAttackerAdvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.targetadvantage)
-  }
-  /* -------------------------------------------- */
-  setLevel() {
+  getComputedLevel() {
     let xp = this.system?.secondary?.xp?.value
-    if (xp == undefined) return
-    let level = 1 + Math.floor(xp / 10)
-    if (level != this.system.secondary.xp.level) {
-      this.update({ 'system.secondary.xp.level': level })
-    }
+    if (xp == undefined) return 1
+    return 1 + Math.floor(xp / 10)
   }
   /* -------------------------------------------- */
-  computeDRTotal() {
+  getComputedDRTotal() {
     let armors = this.items.filter(it => it.type == "armor" && it.system.slotlocation == 'armor')
     let dr = 0
     for (let armor of armors) {
       dr += armor.system.damagereduction
     }
     let drbonustotal = dr
-    if (this.system?.secondary?.drbonustotal) {
-      drbonustotal = this.system.secondary.drbonustotal.value
-    }
     if (drbonustotal < 0) drbonustotal = 0
-    if (drbonustotal != this.system?.secondary?.drbonustotal?.value) {
-      this.update({ 'system.secondary.drbonustotal.value': drbonustotal })
-    }
+    return drbonustotal
   }
   /* -------------------------------------------- */
-  computeParryBonusTotal() {
+  getComputedParryBonusTotal() {
     let shields = this.items.filter(it => it.type == "shield" && it.system.slotlocation == 'shield')
     let parry = 0
     for (let shield of shields) {
       parry += shield.system.parrybonus
     }
-    if (this.system?.secondary?.parrybonustotal == undefined) return
-    let parrybonustotal = this.system?.secondary?.parrybonustotal?.value + parry
+    let parrybonustotal = (this.system?.secondary?.parrybonustotal?.value || 0) + parry
     if (parrybonustotal < 0) parrybonustotal = 0
-    if (parrybonustotal != this.system?.secondary?.parrybonustotal?.value) {
-      this.update({ 'system.secondary.parrybonustotal.value': parrybonustotal })
-    }
+    return parrybonustotal
   }
   /* -------------------------------------------- */
-  computeBonusLanguages() {
-    if (!this.system?.statistics?.min.value || this.system?.secondary?.nblanguage == undefined) return
-    let nblanguage = Math.floor(this.system.statistics.min.value / 2)
-    if (nblanguage != this.system?.secondary?.nblanguage?.value) {
-      this.update({ 'system.secondary.nblanguage.value': nblanguage })
-    }
+  getComputedBonusLanguages() {
+    if (!this.system?.statistics?.min.value) return 0
+    return Math.floor(this.system.statistics.min.value / 2)
+  }
+  /* -------------------------------------------- */
+  getComputedInitiativeBonus() {
+    let dexBonus = this.system?.statistics?.dex?.value || 0
+    let customBonus = this.system?.attributes?.ini?.bonus || 0
+    return dexBonus + customBonus
   }
   /* -------------------------------------------- */
   spentMana(spentValue) {

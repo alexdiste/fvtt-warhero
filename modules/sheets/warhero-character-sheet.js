@@ -66,6 +66,10 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     effects: {
       template: "systems/fvtt-warhero/templates/actors/partial-actor-effects.hbs",
       scrollable: [""]
+    },
+    gmnotes: {
+      template: "systems/fvtt-warhero/templates/actors/partial-actor-gmnotes.hbs",
+      scrollable: [""]
     }
   };
 
@@ -83,6 +87,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       equipment: { id: "equipment", group: "sheet", icon: "fa-solid fa-shapes", label: "WH.ui.equipment" },
       biography: { id: "biography", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.biography" },
       effects: { id: "effects", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.effects" },
+      gmnotes: { id: "gmnotes", group: "sheet", icon: "fa-solid fa-file-lines", label: "WH.ui.gmnotes" },
     }
     for (const v of Object.values(tabs)) {
       v.active = this.tabGroups[v.group] === v.id
@@ -132,7 +137,6 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       powers: this.actor.sortPowers(),
       locations: this.actor.getLocations(),
       allItems: this.actor.getAllItems(),
-      subActors: foundry.utils.duplicate(this.actor.getSubActors()),
       competency: this.actor.getCompetency(),
       race: foundry.utils.duplicate(race),
       mainClass: this.actor.getMainClass(),
@@ -141,6 +145,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       equipments: foundry.utils.duplicate(this.actor.getEquipmentsOnly()),
       enrichedDescription: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.description, { async: true }),
       enrichedNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.notes, { async: true }),
+      enrichedGMNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.gmnotes, { async: true }),
       options: this.options,
       owner: this.document.isOwner,
       editScore: this.options.editScore,

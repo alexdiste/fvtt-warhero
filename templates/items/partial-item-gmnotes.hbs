@@ -1,0 +1,7 @@
+<section class="tab equipment-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <label class="generic-label description-title">{{localize "WH.ui.gmnotes"}}</label>
+  <div class="editor item-text-long-line">
+    {{formInput systemFields.gmnotes enriched=enrichedGMNotes value=system.gmnotes name="system.gmnotes"
+    toggled=true}}
+  </div>
+</section>

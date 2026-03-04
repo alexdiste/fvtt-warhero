@@ -18,17 +18,6 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
    */
   static defineSchema() {
     return {
-      // Sub-actors (companions, familiars, etc.)
-      subactors: new fields.ArrayField(
-        new fields.StringField({ required: false }),
-        {
-          initial: [],
-          required: false,
-          label: "WH.ui.subactors",
-          hint: "WH.ui.subactors.hint"
-        }
-      ),
-
       // Biographical data
       biodata: new fields.SchemaField({
         class: new fields.StringField({
@@ -234,6 +223,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           iscombat: new fields.BooleanField({ initial: true, required: false }),
           roll: new fields.BooleanField({ initial: true, required: false }),
           max: new fields.NumberField({ initial: 0, required: false, integer: true }),
+          bonus: new fields.NumberField({ initial: 0, required: false, integer: true }),
           value: new fields.NumberField({ initial: 0, required: false, integer: true })
         }),
         movearth: new fields.SchemaField({

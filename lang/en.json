@@ -250,6 +250,7 @@
   "WH.ui.Passive": "Passive",
   "WH.ui.Inactive": "Inactive",
   "WH.ui.effects": "Effects",
+  "WH.ui.gmnotes": "GM Notes",
   "WH.ui.toggleeffect": "Toggle Effect",
   "WH.ui.EffectDeletionFromItem": "Effect must be deleted from its parent item.",
 

@@ -1,5 +1,8 @@
-// Item Sheets
+// Base Sheets
+export { WarheroBaseActorSheet } from "./warhero-base-actor-sheet.js";
 export { WarheroBaseItemSheet } from "./warhero-base-item-sheet.js";
+
+// Item Sheets
 export { WarheroEquipmentSheetV2 } from "./warhero-equipment-sheet.js";
 export { WarheroShieldSheetV2 } from "./warhero-shield-sheet.js";
 export { WarheroWeaponSheetV2 } from "./warhero-weapon-sheet.js";
