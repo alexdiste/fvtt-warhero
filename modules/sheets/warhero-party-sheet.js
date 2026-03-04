@@ -8,7 +8,7 @@ import WarheroActorSheet from "./warhero-base-actor-sheet.js";
 export class WarheroPartySheet extends WarheroActorSheet {
   /** @override */
   static DEFAULT_OPTIONS = {
-    classes: ["party"],
+    classes: ["fvtt-warhero", "sheet", "actor", "party"],
     tag: "form",
     position: {
       width: 720,
@@ -33,9 +33,6 @@ export class WarheroPartySheet extends WarheroActorSheet {
     },
     biography: {
       template: "systems/fvtt-warhero/templates/actors/partial-party-biography.hbs",
-    },
-    gmnotes: {
-      template: "systems/fvtt-warhero/templates/actors/partial-actor-gmnotes.hbs",
     }
   };
 
@@ -48,7 +45,6 @@ export class WarheroPartySheet extends WarheroActorSheet {
     const tabs = {
       equipment: { id: "equipment", group: "sheet", icon: "fa-solid fa-shapes", label: "WH.ui.equipment" },
       biography: { id: "biography", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.biography" },
-      gmnotes: { id: "gmnotes", group: "sheet", icon: "fa-solid fa-file-lines", label: "WH.ui.gmnotes" },
     }
     for (const v of Object.values(tabs)) {
       v.active = this.tabGroups[v.group] === v.id

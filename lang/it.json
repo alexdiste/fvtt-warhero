@@ -2,7 +2,7 @@
   "TYPES": {
     "Actor" : {
       "character": "PG",
-	  "party": "Gruppo"
+	    "party": "Gruppo"
     },
     "Item": {
       "weapon": "Arma",
@@ -21,7 +21,8 @@
       "trap": "Trappola",
       "classitem": "Oggetto di classe",
       "competency": "Competenza",
-      "location": "Luogo"
+      "location": "Luogo",
+      "lore": "Conoscenza"
     }
   },
   "WH.conf.short": "Corte",
@@ -250,10 +251,20 @@
   "WH.ui.Inactive": "Inattiva",
   "WH.ui.effects": "Effetti",
   "WH.ui.gmnotes": "Note del GM",
+  "WH.ui.rollwindow": "Finestra tiro",
+  "WH.ui.roll": "Tira",
+  "WH.ui.neweffect": "Nuovo effetto",
+  "WH.ui.cancel": "Annulla",
+  "WH.ui.yesremove": "Sì, rimuovi",
+  "WH.ui.confirmremoval": "Conferma rimozione",
+  "WH.ui.confirmremoveitem": "Sei sicuro di voler rimuovere questo {itemType}?",
   "WH.ui.toggleeffect": "Attiva/Disattiva effetto",
   "WH.ui.EffectDeletionFromItem": "L'effetto deve essere eliminato dal suo oggetto genitore.",
 
   "WH.chat.save": "Tiro salvezza su",
+  "WH.chat.messageonlygm": "Messaggio visibile solo al GM",
+  "WH.chat.blindmessageprefix": "Messaggio nascosto da {user}",
+  "WH.chat.bonusmalus": "Bonus/Malus",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",
   "WH.chat.diceresult": "Risultato del dado",
   "WH.chat.result": "Risultato",
@@ -266,6 +277,10 @@
   "WH.chat.actorrested" : "{name} ha dormito recuperando tutti i PF, tutto il mana, tutti gli usi di contropotere e tutti gli usi delle abilità. Ricordati di controllare se hai già mangiato questo giorno o no, in caso negativo ricordati di scalare una razione",
 
   "WH.notif.skillmaxuse": "Usi massimi raggiunti",
-  "WH.notif.toomanyuses": "Usi massimi raggiunti"
+  "WH.notif.toomanyuses": "Usi massimi raggiunti",
+  "WH.notif.selectactorformacro": "Seleziona il tuo personaggio per eseguire la macro",
+  "WH.notif.macroitemnotfound": "Impossibile trovare sull'attore corrente l'oggetto della macro",
+  "WH.notif.nocharacterlinked": "Attenzione: nessun personaggio collegato al tuo utente",
+  "WH.notif.notenoughmana": "Punti mana insufficienti: ne hai {current}, hai provato a spenderne {spent}"
 
 }

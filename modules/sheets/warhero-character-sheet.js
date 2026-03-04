@@ -9,7 +9,7 @@ import { WarheroUtility } from "../warhero-utility.js";
 export class WarheroCharacterSheet extends WarheroActorSheet {
   /** @override */
   static DEFAULT_OPTIONS = {
-    classes: ["character"],
+    classes: ["fvtt-warhero", "sheet", "actor", "character"],
     tag: "form",
     position: {
       width: 760,
@@ -66,10 +66,6 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     effects: {
       template: "systems/fvtt-warhero/templates/actors/partial-actor-effects.hbs",
       scrollable: [""]
-    },
-    gmnotes: {
-      template: "systems/fvtt-warhero/templates/actors/partial-actor-gmnotes.hbs",
-      scrollable: [""]
     }
   };
 
@@ -87,7 +83,6 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       equipment: { id: "equipment", group: "sheet", icon: "fa-solid fa-shapes", label: "WH.ui.equipment" },
       biography: { id: "biography", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.biography" },
       effects: { id: "effects", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.effects" },
-      gmnotes: { id: "gmnotes", group: "sheet", icon: "fa-solid fa-file-lines", label: "WH.ui.gmnotes" },
     }
     for (const v of Object.values(tabs)) {
       v.active = this.tabGroups[v.group] === v.id
@@ -105,11 +100,6 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     const context = await super._prepareContext()
     context.tabs = this.#getTabs()
     const doc = this.document
-
-    this.actor.setLevel()
-    this.actor.computeDRTotal()
-    this.actor.computeParryBonusTotal()
-    this.actor.computeBonusLanguages()
     const objectData = foundry.utils.duplicate(this.document.system)
     let race = this.actor.getRace()
 

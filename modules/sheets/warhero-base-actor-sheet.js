@@ -289,7 +289,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
         origin: owner.uuid,
         "duration.rounds": durationValue,
         disabled: disabled,
-        changes: [{}],
+        changes: [],
       },
       { parent: owner },
     );

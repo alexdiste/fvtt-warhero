@@ -8,6 +8,7 @@ import { WarheroUtility } from "./warhero-utility.js";
  * @extends {Actor}
  */
 export class WarheroActor extends Actor {
+  static _loggedSanitizedEffects = new Set()
 
   /* -------------------------------------------- */
   /**
@@ -37,10 +38,37 @@ export class WarheroActor extends Actor {
     // If the created actor is a character, add initial skills from compendium
     if (data.type == 'character') {
       const skills = await WarheroUtility.loadCompendium("fvtt-warhero.skills");
-      data.items = skills.map(i => i.toObject())
+      data.items = skills.map(i => this._sanitizeItemDataForCreate(i.toObject()))
     }
 
     return super.create(data, options);
+  }
+
+  static _sanitizeItemDataForCreate(itemData) {
+    if (!itemData || typeof itemData !== "object") return itemData
+    const clone = foundry.utils.duplicate(itemData)
+    const rawEffects = Array.isArray(clone.effects) ? clone.effects : []
+    clone.effects = rawEffects
+      .filter(effect => effect && typeof effect === "object")
+      .map(effect => {
+        const normalized = foundry.utils.duplicate(effect)
+        const rawChanges = Array.isArray(normalized.changes) ? normalized.changes : []
+        normalized.changes = rawChanges
+          .filter(change => change && typeof change === "object")
+          .map(change => {
+            const key = `${change.key ?? ""}`.trim()
+            if (!key) return null
+            return {
+              key,
+              mode: Number.isFinite(Number(change.mode)) ? Number(change.mode) : CONST.ACTIVE_EFFECT_MODES.ADD,
+              value: `${change.value ?? ""}`,
+              priority: Number.isFinite(Number(change.priority)) ? Number(change.priority) : undefined
+            }
+          })
+          .filter(change => change !== null)
+        return normalized
+      })
+    return clone
   }
 
   /* -------------------------------------------- */
@@ -48,8 +76,113 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  async prepareData() {
+  prepareData() {
     super.prepareData();
+  }
+
+  /* -------------------------------------------- */
+  _sanitizeAllEffectChanges() {
+    for (const effect of this.effects) {
+      this._sanitizeEffectChanges(effect)
+    }
+    for (const item of this.items) {
+      for (const effect of item.effects) {
+        this._sanitizeEffectChanges(effect)
+      }
+    }
+  }
+
+  /* -------------------------------------------- */
+  _sanitizeEffectChanges(effect) {
+    const rawChanges = Array.isArray(effect?.changes) ? effect.changes : []
+    const validChanges = rawChanges
+      .filter(change => change && typeof change === "object")
+      .map(change => {
+        const key = `${change.key ?? ""}`.trim()
+        if (!key || key.includes("..") || key.startsWith(".") || key.endsWith(".")) return null
+        return {
+          key,
+          mode: Number.isFinite(Number(change.mode)) ? Number(change.mode) : CONST.ACTIVE_EFFECT_MODES.ADD,
+          value: `${change.value ?? ""}`,
+          priority: Number.isFinite(Number(change.priority)) ? Number(change.priority) : undefined
+        }
+      })
+      .filter(change => change !== null)
+
+    const keys = validChanges.map(change => change.key)
+    const normalizedChanges = validChanges.filter(change => {
+      return !keys.some(otherKey => otherKey !== change.key && otherKey.startsWith(`${change.key}.`))
+    })
+
+    if (normalizedChanges.length !== rawChanges.length) {
+      const effectId = effect?.id || effect?._id || "unknown"
+      const ownerName = effect?.parent?.name || this.name || "unknown"
+      const ownerUuid = effect?.parent?.uuid || this.uuid || "unknown"
+      const logKey = `${ownerUuid}:${effectId}`
+      if (!WarheroActor._loggedSanitizedEffects.has(logKey)) {
+        WarheroActor._loggedSanitizedEffects.add(logKey)
+        console.warn(`Warhero | Sanitized ActiveEffect changes for ${ownerName} (${ownerUuid}) effect=${effect?.name || "unnamed"} (${effectId}) removed=${rawChanges.length - normalizedChanges.length}`)
+      }
+      effect.updateSource({ changes: normalizedChanges })
+    }
+  }
+
+  _buildSlotsFromConfig(slotConfig, defaultSlot = undefined) {
+    const slots = foundry.utils.duplicate(slotConfig || {})
+    for (const slot of Object.values(slots)) {
+      slot.content = []
+      slot.slotUsed = 0
+    }
+
+    for (const item of this.items) {
+      const slotlocation = item.system?.slotlocation || defaultSlot
+      if (!slotlocation || !slots[slotlocation]) continue
+      const quantity = Number(item.system?.quantity ?? 1)
+      const slotused = Number(item.system?.slotused ?? 1)
+      const used = Math.max(quantity, 0) * Math.max(slotused, 0)
+
+      slots[slotlocation].slotUsed += Number.isFinite(used) ? used : 0
+      slots[slotlocation].content.push(foundry.utils.duplicate(item))
+    }
+
+    for (const slot of Object.values(slots)) {
+      WarheroUtility.sortArrayObjectsByName(slot.content)
+    }
+
+    return slots
+  }
+
+  getEquipmentsOnly() {
+    let comp = foundry.utils.duplicate(this.items.filter(item => {
+      return typeof item.system?.slotlocation === "string" && item.system.slotlocation.trim().length > 0
+    }) || [])
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp
+  }
+
+  buildEquipmentsSlot() {
+    const slotConfig = game.system?.warhero?.config?.slotNames || {}
+    const allSlots = this._buildSlotsFromConfig(slotConfig)
+    const containers = {}
+    for (const [key, slot] of Object.entries(allSlots)) {
+      if (slot.container) containers[key] = slot
+    }
+    return containers
+  }
+
+  buildBodySlot() {
+    const slotConfig = game.system?.warhero?.config?.slotNames || {}
+    const allSlots = this._buildSlotsFromConfig(slotConfig)
+    const bodySlots = {}
+    for (const [key, slot] of Object.entries(allSlots)) {
+      if (!slot.container) bodySlots[key] = slot
+    }
+    return bodySlots
+  }
+
+  buildPartySlots() {
+    const slotConfig = game.system?.warhero?.config?.partySlotNames || {}
+    return this._buildSlotsFromConfig(slotConfig, "storage")
   }
 
   /* -------------------------------------------- */
@@ -289,6 +422,11 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp
   }
+  getCompetencyItems() {
+    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'competency') || [])
+    WarheroUtility.sortArrayObjectsByName(comp)
+    return comp
+  }
   /* -------------------------------------------- */
   updateCompetency(competency, obj, labelTab) {
     for (let key in obj) {
@@ -331,7 +469,7 @@ export class WarheroActor extends Actor {
   async getInitiativeScore(combatId, combatantId) {
     let roll = new Roll("1d20+" + this.system.attributes.ini.value)
     await roll.evaluate()
-    await WarheroUtility.showDiceSoNice(roll, game.settings.get("core", "rollMode"))
+    await WarheroUtility.playDice3DForRoll(roll, game.settings.get("core", "rollMode"))
     return roll.total
   }
 
@@ -417,15 +555,31 @@ export class WarheroActor extends Actor {
     return 1 + Math.floor(xp / 10)
   }
   /* -------------------------------------------- */
+  setLevel() {
+    const level = this.getComputedLevel()
+    if (this.system?.secondary?.xp) {
+      this.system.secondary.xp.level = level
+    }
+    return level
+  }
+  /* -------------------------------------------- */
   getComputedDRTotal() {
     let armors = this.items.filter(it => it.type == "armor" && it.system.slotlocation == 'armor')
     let dr = 0
     for (let armor of armors) {
       dr += armor.system.damagereduction
     }
-    let drbonustotal = dr
+    let drbonustotal = (this.system?.secondary?.drbonus?.value || 0) + dr
     if (drbonustotal < 0) drbonustotal = 0
     return drbonustotal
+  }
+  /* -------------------------------------------- */
+  computeDRTotal() {
+    const total = this.getComputedDRTotal()
+    if (this.system?.secondary?.drbonustotal) {
+      this.system.secondary.drbonustotal.value = total
+    }
+    return total
   }
   /* -------------------------------------------- */
   getComputedParryBonusTotal() {
@@ -434,14 +588,30 @@ export class WarheroActor extends Actor {
     for (let shield of shields) {
       parry += shield.system.parrybonus
     }
-    let parrybonustotal = (this.system?.secondary?.parrybonustotal?.value || 0) + parry
+    let parrybonustotal = (this.system?.secondary?.parrybonus?.value || 0) + parry
     if (parrybonustotal < 0) parrybonustotal = 0
     return parrybonustotal
+  }
+  /* -------------------------------------------- */
+  computeParryBonusTotal() {
+    const total = this.getComputedParryBonusTotal()
+    if (this.system?.secondary?.parrybonustotal) {
+      this.system.secondary.parrybonustotal.value = total
+    }
+    return total
   }
   /* -------------------------------------------- */
   getComputedBonusLanguages() {
     if (!this.system?.statistics?.min.value) return 0
     return Math.floor(this.system.statistics.min.value / 2)
+  }
+  /* -------------------------------------------- */
+  computeBonusLanguages() {
+    const total = this.getComputedBonusLanguages()
+    if (this.system?.secondary?.nblanguage) {
+      this.system.secondary.nblanguage.value = total
+    }
+    return total
   }
   /* -------------------------------------------- */
   getComputedInitiativeBonus() {
@@ -453,7 +623,7 @@ export class WarheroActor extends Actor {
   spentMana(spentValue) {
     let mana = foundry.utils.duplicate(this.system.attributes.mana)
     if (Number(spentValue) > mana.value) {
-      ui.notifications.warn("Not enough Mana points  : you have " + mana.value + " points, tried to spend " + spentValue)
+      ui.notifications.warn(game.i18n.format("WH.notif.notenoughmana", { current: mana.value, spent: spentValue }))
       return false
     }
     mana.value -= Number(spentValue)
@@ -518,7 +688,7 @@ export class WarheroActor extends Actor {
     let rollData = this.getCommonRollData();
     rollData.mode = "save";
     rollData.stat = stat;
-    rollData.title = `${this.name} - Save`;
+    rollData.title = `${this.name} - ${game.i18n.localize("WH.chat.save")}`;
     this.startRoll(rollData);
   }
 
@@ -553,7 +723,7 @@ export class WarheroActor extends Actor {
       rollData.weapon = weapon
       rollData.is2hands = is2hands
       rollData.img = weapon.img
-      rollData.title = `${this.name} - Damage`
+      rollData.title = `${this.name} - ${game.i18n.localize("WH.ui.damage")}`
       this.startRoll(rollData)
     }
   }
@@ -568,7 +738,7 @@ export class WarheroActor extends Actor {
       rollData.powerLevel = Number(power.system.level)
       rollData.img = power.img
       rollData.hasBM = false
-      rollData.title = `${this.name} - Power`
+      rollData.title = `${this.name} - ${game.i18n.localize("WH.chat.power")}`
       rollData.powerDescription = power.system.description
       // If teleport power, add locations list
       if (power.system.isteleport) {
@@ -586,13 +756,13 @@ export class WarheroActor extends Actor {
     const content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-warhero/templates/roll-dialog-generic.hbs", rollData)
 
     const rollContext = await foundry.applications.api.DialogV2.wait({
-      window: { title: "Roll window" },
+      window: { title: game.i18n.localize("WH.ui.rollwindow") },
       position: { width: 420, height: "auto" },
       classes: ["fvtt-warhero"],
       content,
       buttons: [
         {
-          label: "Roll !",
+          label: game.i18n.localize("WH.ui.roll"),
           callback: (event, button, dialog) => {
             const output = Array.from(button.form.elements).reduce((obj, input) => {
               if (input.name) obj[input.name] = input.value

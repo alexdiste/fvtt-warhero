@@ -1,17 +1,55 @@
-.tabs .item.active,
-a:hover {
-  text-shadow: 1px 0px 0px #ff6600;
+.fvtt-warhero {
+  --wh-accent: var(--color-warm-2, #ff6600);
+  --wh-border-subtle: var(--color-border-light-primary, #ccc);
+  --wh-overflow-bg: var(--color-level-error-bg, #3e0101);
+  --wh-button-shadow: var(--color-shadow-dark, #a6827e);
+  --wh-button-bg-start: var(--color-cool-4, #21374afc);
+  --wh-button-bg-end: var(--color-cool-5, #152833ab);
+  --wh-button-hover-start: var(--color-level-error, #800000);
+  --wh-button-hover-end: var(--color-level-error-bg, #3e0101);
+  --wh-button-fg: var(--color-text-light-highlight, #f0f0e0);
+  --wh-editor-bg: var(--color-cool-5, #152833);
+  --wh-input-bg: color-mix(in srgb, var(--color-cool-5, #152833) 92%, black 8%);
+  --wh-input-fg: var(--color-text-light-highlight, #f0f0e0);
+  --wh-input-border: color-mix(in srgb, var(--color-cool-4, #21374a) 72%, #f0f0e0 28%);
+  --wh-input-hover-border: var(--color-warm-1, #ffb366);
+  --wh-input-focus-border: var(--color-warm-2, #ff6600);
+  --wh-input-focus-ring: color-mix(in srgb, var(--wh-input-focus-border), transparent 70%);
+  --wh-control-accent: var(--color-warm-2, #ff6600);
+  --wh-range-track: color-mix(in srgb, var(--color-bg-primary, #fff), black 18%);
+  --wh-range-thumb: var(--wh-control-accent);
+  --wh-crit-success: var(--color-level-success, darkgreen);
+  --wh-crit-failure: var(--color-level-error, darkred);
+  --wh-table-header-bg: var(--color-cool-4, gray);
+  --wh-table-header-fg: var(--color-text-light-highlight, #f0f0e0);
+  --wh-table-header-alert: var(--color-level-error, darkred);
 }
 
-.rollable:hover,
-.rollable:focus {
+.fvtt-warhero .tabs .item.active,
+.fvtt-warhero a:hover {
+  text-shadow: 1px 0px 0px var(--wh-accent);
+}
+
+.fvtt-warhero .rollable:hover,
+.fvtt-warhero .rollable:focus,
+.character .rollable:hover,
+.character .rollable:focus,
+.party .rollable:hover,
+.party .rollable:focus {
   /*color: #000;
   text-shadow: 0 0 10px red;*/
   cursor: pointer;
 }
 
-.grid,
-.grid-2col {
+.fvtt-warhero .grid,
+.fvtt-warhero .grid-2col,
+.fvtt-warhero .grid2col,
+.character .grid,
+.character .grid-2col,
+.character .grid2col,
+.party .grid,
+.party .grid-2col,
+.party .grid2col {
   display: grid;
   grid-column: span 2 / span 2;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -121,8 +159,26 @@ a:hover {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--wh-border-subtle, var(--color-border-light-primary, #ccc));
   padding-bottom: 4px;
+}
+
+.warhero-chat-card {
+  background: var(--color-bg-option, var(--color-bg-primary, #f0f0e0));
+  color: var(--color-text-primary, #191813);
+  border: 1px solid var(--color-border-light-primary, #b5b3a4);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.theme-dark .warhero-chat-card {
+  background: color-mix(in srgb, var(--color-cool-5, #152833) 82%, black 18%);
+  color: var(--color-text-light-primary, #d8d8d8);
+  border-color: color-mix(in srgb, var(--color-cool-4, #21374a) 65%, white 35%);
+}
+
+.theme-dark .warhero-chat-card .warhero-chat-message-header {
+  border-bottom-color: color-mix(in srgb, var(--color-cool-4, #21374a) 60%, white 40%);
 }
 
 .item-name-label-header-long h3,
@@ -161,18 +217,18 @@ a:hover {
 }
 
 .warhero-location-overflow {
-  background-color: #3e0101;
+  background-color: var(--wh-overflow-bg);
 }
 
 .actor-sheet-button {
-  box-shadow: inset 0px 1px 0px 0px #a6827e;
-  background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
+  box-shadow: inset 0px 1px 0px 0px var(--wh-button-shadow);
+  background: linear-gradient(to bottom, var(--wh-button-bg-start) 5%, var(--wh-button-bg-end) 100%);
   /*background-color: #7d5d3b00;*/
   border-radius: 3px;
   border: 2px ridge;
   display: inline-block;
   cursor: pointer;
-  /*color: #ffffff;*/
+  color: var(--wh-button-fg);
   font-size: 0.8rem;
   padding: 2px 4px 0px 4px;
   text-decoration: none;
@@ -183,7 +239,7 @@ a:hover {
 }
 
 .actor-sheet-button:hover {
-  background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
+  background: linear-gradient(to bottom, var(--wh-button-hover-start) 5%, var(--wh-button-hover-end) 100%);
   /*background-color: red;*/
 }
 
@@ -240,7 +296,7 @@ a:hover {
 .item-name-label-header .items-title-text,
 .item-name-label-header-long .items-title-text {
   align-self: center;
-  color: black;
+  color: var(--wh-table-header-fg);
   display: flex;
   align-items: center;
   min-height: 1.4rem;
@@ -302,14 +358,107 @@ a:hover {
   font-size: 0.8rem;
 }
 
-.editor {
-  border: 2;
+.fvtt-warhero input[type="text"],
+.fvtt-warhero input[type="number"],
+.fvtt-warhero input[type="search"],
+.fvtt-warhero input[type="password"],
+.fvtt-warhero select,
+.fvtt-warhero textarea {
+  background: var(--wh-input-bg);
+  color: var(--wh-input-fg);
+  border: 1px solid var(--wh-input-border);
+  transition: border-color 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.fvtt-warhero input[type="text"]::placeholder,
+.fvtt-warhero input[type="number"]::placeholder,
+.fvtt-warhero input[type="search"]::placeholder,
+.fvtt-warhero input[type="password"]::placeholder,
+.fvtt-warhero textarea::placeholder {
+  color: color-mix(in srgb, var(--wh-input-fg), transparent 38%);
+}
+
+.fvtt-warhero input:-webkit-autofill,
+.fvtt-warhero input:-webkit-autofill:hover,
+.fvtt-warhero input:-webkit-autofill:focus,
+.fvtt-warhero textarea:-webkit-autofill,
+.fvtt-warhero select:-webkit-autofill {
+  -webkit-text-fill-color: var(--wh-input-fg);
+  -webkit-box-shadow: 0 0 0px 1000px var(--wh-input-bg) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.fvtt-warhero select option {
+  background: var(--wh-input-bg);
+  color: var(--wh-input-fg);
+}
+
+.fvtt-warhero input[type="text"]:hover,
+.fvtt-warhero input[type="number"]:hover,
+.fvtt-warhero input[type="search"]:hover,
+.fvtt-warhero input[type="password"]:hover,
+.fvtt-warhero select:hover,
+.fvtt-warhero textarea:hover {
+  border-color: var(--wh-input-hover-border);
+}
+
+.fvtt-warhero input[type="text"]:focus,
+.fvtt-warhero input[type="number"]:focus,
+.fvtt-warhero input[type="search"]:focus,
+.fvtt-warhero input[type="password"]:focus,
+.fvtt-warhero select:focus,
+.fvtt-warhero textarea:focus {
+  border-color: var(--wh-input-focus-border);
+  box-shadow: 0 0 0 2px var(--wh-input-focus-ring);
+  outline: none;
+}
+
+.fvtt-warhero input[type="checkbox"],
+.fvtt-warhero input[type="radio"] {
+  accent-color: var(--wh-control-accent);
+  inline-size: 1.1rem;
+  block-size: 1.1rem;
+  min-inline-size: 18px;
+  min-block-size: 18px;
+  vertical-align: middle;
+  margin-inline-end: 0.35rem;
+}
+
+.fvtt-warhero input[type="checkbox"]:focus,
+.fvtt-warhero input[type="radio"]:focus {
+  outline: 2px solid var(--wh-input-focus-ring);
+  outline-offset: 1px;
+}
+
+.fvtt-warhero input[type="range"] {
+  accent-color: var(--wh-control-accent);
+}
+
+.fvtt-warhero input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--wh-range-track);
+}
+
+.fvtt-warhero input[type="range"]::-webkit-slider-thumb {
+  background: var(--wh-range-thumb);
+}
+
+.fvtt-warhero input[type="range"]::-moz-range-track {
+  background: var(--wh-range-track);
+}
+
+.fvtt-warhero input[type="range"]::-moz-range-thumb {
+  background: var(--wh-range-thumb);
+  border: 1px solid var(--wh-input-border);
+}
+
+.fvtt-warhero .editor {
+  border: 2px solid var(--wh-input-border);
   height: 300px;
   padding: 0 3px;
 }
 
 .fvtt-warhero .tox .tox-editor-container {
-  background: #fff;
+  background: var(--wh-editor-bg);
 }
 
 
@@ -344,11 +493,11 @@ a:hover {
 }
 
 .crit-success {
-  color: darkgreen;
+  color: var(--wh-crit-success);
 }
 
 .crit-failure {
-  color: darkred;
+  color: var(--wh-crit-failure);
 }
 
 .plus-minus {
@@ -362,15 +511,15 @@ a:hover {
 }
 
 .plus-minus-button {
-  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  box-shadow: inset 0px 1px 0px 0px var(--wh-button-shadow);
   /*background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);*/
-  background: gray;
+  background: var(--wh-table-header-bg);
   /*background-color: #7d5d3b00;*/
   border-radius: 2px;
   border: 1px ridge;
   display: inline-block;
   cursor: pointer;
-  /*color: #ffffff;*/
+  color: var(--wh-button-fg);
   margin: 2px 2px 2px 2px;
   padding: 2px 2px 2px 2px;
   text-decoration: none;
@@ -380,7 +529,7 @@ a:hover {
 }
 
 .plus-minus-button:hover {
-  background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
+  background: linear-gradient(to bottom, var(--wh-button-hover-start) 5%, var(--wh-button-hover-end) 100%);
   /*background-color: red;*/
 }
 
@@ -397,11 +546,11 @@ a:hover {
 /*si*/
 .items-title-bg {
   margin-top: 6px;
-  background: gray;
-  color: black;
+  background: var(--wh-table-header-bg);
+  color: var(--wh-table-header-fg);
 }
 
 /*si*/
 .items-title-bg-red {
-  background: darkred;
+  background: var(--wh-table-header-alert);
 }

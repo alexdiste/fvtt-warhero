@@ -96,7 +96,9 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
     const tabs = {
       description: { id: "description", group: "sheet", icon: "fa-solid fa-compass", label: "WH.ui.description" },
       details: { id: "details", group: "sheet", icon: "fa-solid fa-graduation-cap", label: "WH.ui.details" },
-      gmnotes: { id: "gmnotes", group: "sheet", icon: "fa-solid fa-file-lines", label: "WH.ui.gmnotes" },
+    }
+    if (game.user.isGM) {
+      tabs.gmnotes = { id: "gmnotes", group: "sheet", icon: "fa-solid fa-file-lines", label: "WH.ui.gmnotes" }
     }
     if (_HAS_EFFECTS_TAB.includes(this.document.type)) {
       tabs.effects = { id: "effects", itemType: "effect", group: "sheet", icon: "fa-solid fa-heart-pulse", label: "WH.ui.effects" }
@@ -179,7 +181,7 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
   static async #onCreateActiveEffect(event, target) {
     let owner = this.document;
     const effectData = {
-      name: "New Effect",
+      name: game.i18n.localize("WH.ui.neweffect"),
       img: "icons/svg/aura.svg",
       origin: owner.uuid,
       disabled: false,

@@ -87,11 +87,13 @@
         {{editor description target="system.biodata.description" button=true owner=owner
         editable=editable}}
       </div>
+      {{#if isGM}}
       <hr>
-      <h3>{{localize "WH.ui.notes"}} : </h3>
+      <h3>{{localize "WH.ui.gmnotes"}} : </h3>
       <div class="form-group editor">
-        {{editor notes target="system.biodata.notes" button=true owner=owner editable=editable}}
+        {{editor gmnotes target="system.biodata.gmnotes" button=true owner=owner editable=editable}}
       </div>
+      {{/if}}
       <hr>
       </article>
     </div>

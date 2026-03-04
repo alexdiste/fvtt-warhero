@@ -1,12 +1,19 @@
 <div class="warhero-chat-card">
-  <h3><b>{{localize "WH.ui.defense"}}</b></h3>
-  {{#if defender}}
-  <p><b>{{localize "WH.ui.defender"}}:</b> {{defender.name}}</p>
-  {{/if}}
-  {{#if weapon}}
-  <p><b>{{localize "WH.ui.weapon"}}:</b> {{weapon.name}}</p>
-  {{/if}}
-  {{#if isRangedAttack}}
-  <p>{{localize "WH.ui.rangedattack"}}</p>
-  {{/if}}
+  <div class="warhero-chat-message-header">
+    <h4 class="chat-actor-name">{{localize "WH.ui.defense"}}</h4>
+  </div>
+
+  <div class="warhero-chat-message-body">
+    <ul>
+      {{#if defender}}
+      <li><strong>{{localize "WH.ui.defender"}}:</strong> {{defender.name}}</li>
+      {{/if}}
+      {{#if weapon}}
+      <li><strong>{{localize "WH.ui.weapon"}}:</strong> {{weapon.name}}</li>
+      {{/if}}
+      {{#if isRangedAttack}}
+      <li>{{localize "WH.ui.rangedattack"}}</li>
+      {{/if}}
+    </ul>
+  </div>
 </div>

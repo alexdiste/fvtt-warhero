@@ -21,7 +21,8 @@
       "trap": "Trap",
       "classitem": "Class item",
       "competency": "Competency",
-      "location": "Location"
+      "location": "Location",
+      "lore": "Lore"
     }
   },
   "WH.conf.short": "Short",
@@ -251,10 +252,20 @@
   "WH.ui.Inactive": "Inactive",
   "WH.ui.effects": "Effects",
   "WH.ui.gmnotes": "GM Notes",
+  "WH.ui.rollwindow": "Roll window",
+  "WH.ui.roll": "Roll",
+  "WH.ui.neweffect": "New Effect",
+  "WH.ui.cancel": "Cancel",
+  "WH.ui.yesremove": "Yes, remove it",
+  "WH.ui.confirmremoval": "Confirm removal",
+  "WH.ui.confirmremoveitem": "Are you sure you want to remove this {itemType}?",
   "WH.ui.toggleeffect": "Toggle Effect",
   "WH.ui.EffectDeletionFromItem": "Effect must be deleted from its parent item.",
 
   "WH.chat.save": "Save",
+  "WH.chat.messageonlygm": "Message only to the GM",
+  "WH.chat.blindmessageprefix": "Blind message from {user}",
+  "WH.chat.bonusmalus": "Bonus/Malus",
   "WH.chat.mweaponmalus": "Multiple weapons malus ",
   "WH.chat.diceresult": "Dice result",
   "WH.chat.result": "Result",
@@ -267,5 +278,9 @@
   "WH.chat.actorrested" : "{name} has rested recovering all HP, all mana, all counterpower uses and all skill uses. Remember to check if you have already eaten today or not, if not remember to subtract one ration",
 
   "WH.notif.skillmaxuse": "Maximum skill usage reach - Use is not allowed",
-  "WH.notif.toomanyuses": "Maximum use reach - Roll is not allowed"
+  "WH.notif.toomanyuses": "Maximum use reach - Roll is not allowed",
+  "WH.notif.selectactorformacro": "Select your actor to run the macro",
+  "WH.notif.macroitemnotfound": "Unable to find the macro item on the current actor",
+  "WH.notif.nocharacterlinked": "Warning: no character linked to your user",
+  "WH.notif.notenoughmana": "Not enough mana points: you have {current}, tried to spend {spent}"
 }

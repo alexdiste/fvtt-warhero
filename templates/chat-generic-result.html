@@ -1,11 +1,12 @@
-<div class="warhero-chat-message-header">
-  {{#if actorImg}}
-  <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
-  {{/if}}
-  <h4 class="chat-actor-name">{{alias}}</h4>
-</div>
+<div class="warhero-chat-card">
+  <div class="warhero-chat-message-header">
+    {{#if actorImg}}
+    <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
+    {{/if}}
+    <h4 class="chat-actor-name">{{alias}}</h4>
+  </div>
 
-  <div class=warhero-chat-message-body>
+  <div class="warhero-chat-message-body">
     {{#if img}}
       <img class="chat-icon" src="{{img}}" alt="{{name}}" />
     {{/if}}
@@ -22,7 +23,7 @@
       <li>{{localize "WH.ui.weapon"}} : {{weapon.name}}</li>
       {{/if}}
       {{#if hasBM}}
-      <li>Bonus/Malus : {{bonusMalus}}</li>
+      <li>{{localize "WH.chat.bonusmalus"}} : {{bonusMalus}}</li>
       {{/if}}
 
       {{#if usemWeaponMalus}}
@@ -30,7 +31,7 @@
       {{/if}}
 
       {{#if diceFormula}}
-        <li>Formula : {{diceFormula}}</li>
+        <li>{{localize "WH.chat.rollformula"}} : {{diceFormula}}</li>
         {{#if isCriticalSuccess}}
           <li><span class="crit-success">{{localize "WH.chat.diceresult"}} : {{diceResult}}</span></li>
         {{else}}
@@ -59,4 +60,4 @@
 
     </ul>
   </div>
-  </div>
+</div>

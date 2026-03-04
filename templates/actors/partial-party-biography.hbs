@@ -16,17 +16,19 @@
         toggled=true
       }}
     </div>
+    {{#if isGM}}
     <hr />
-    <h3>{{localize "WH.ui.notes"}} : </h3>
+    <h3>{{localize "WH.ui.gmnotes"}} : </h3>
     <div class="editor">
       {{formInput
-        systemFields.biodata.fields.notes
-        enriched=enrichedNotes
-        value=system.biodata.notes
-        name="system.biodata.notes"
+        systemFields.biodata.fields.gmnotes
+        enriched=enrichedGMNotes
+        value=system.biodata.gmnotes
+        name="system.biodata.gmnotes"
         toggled=true
       }}
     </div>
+    {{/if}}
   </div>
 
 </section>

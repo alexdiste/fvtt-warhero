@@ -152,36 +152,6 @@ export class WarheroUtility {
   }
 
   /* -------------------------------------------- */
-  static removeChatMessageId(messageId) {
-    if (messageId) {
-      game.messages.get(messageId)?.delete();
-    }
-  }
-
-  static findChatMessageId(current) {
-    return WarheroUtility.getChatMessageId(WarheroUtility.findChatMessage(current));
-  }
-
-  static getChatMessageId(node) {
-    return node?.attributes.getNamedItem('data-message-id')?.value;
-  }
-
-  static findChatMessage(current) {
-    return WarheroUtility.findNodeMatching(current, it => it.classList.contains('chat-message') && it.attributes.getNamedItem('data-message-id'));
-  }
-
-  static findNodeMatching(current, predicate) {
-    if (current) {
-      if (predicate(current)) {
-        return current;
-      }
-      return WarheroUtility.findNodeMatching(current.parentElement, predicate);
-    }
-    return undefined;
-  }
-
-
-  /* -------------------------------------------- */
   static getTarget() {
     if (game.user.targets) {
       for (let target of game.user.targets) {
@@ -247,30 +217,28 @@ export class WarheroUtility {
     return chatData;
   }
 
-
   /* -------------------------------------------- */
-  static async showDiceSoNice(roll, rollMode) {
-    if (game.modules.get("dice-so-nice")?.active) {
-      if (game.dice3d) {
-        let whisper = null;
-        let blind = false;
-        rollMode = rollMode ?? game.settings.get("core", "rollMode");
-        switch (rollMode) {
-          case "blindroll": //GM only
-            blind = true;
-          case "gmroll": //GM + rolling player
-            whisper = this.getUsers(user => user.isGM);
-            break;
-          case "roll": //everybody
-            whisper = this.getUsers(user => user.active);
-            break;
-          case "selfroll":
-            whisper = [game.user.id];
-            break;
-        }
-        await game.dice3d.showForRoll(roll, game.user, true, whisper, blind);
-      }
+  static async playDice3DForRoll(roll, rollMode) {
+    if (!(game.modules.get("dice-so-nice")?.active && game.dice3d)) return
+
+    let whisper = null
+    let blind = false
+    const currentRollMode = rollMode ?? game.settings.get("core", "rollMode")
+    switch (currentRollMode) {
+      case "blindroll":
+        blind = true
+      case "gmroll":
+        whisper = this.getUsers(user => user.isGM)
+        break
+      case "roll":
+        whisper = this.getUsers(user => user.active)
+        break
+      case "selfroll":
+        whisper = [game.user.id]
+        break
     }
+
+    await game.dice3d.showForRoll(roll, game.user, true, whisper, blind)
   }
 
   /* -------------------------------------------- */
@@ -281,7 +249,7 @@ export class WarheroUtility {
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
       myRoll = await new Roll(diceFormula).roll()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
+      await this.playDice3DForRoll(myRoll, game.settings.get("core", "rollMode"))
     }
     rollData.roll = myRoll
     rollData.diceFormula = diceFormula
@@ -300,7 +268,7 @@ export class WarheroUtility {
     let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await renderTemplate(`systems/fvtt-warhero/templates/chat-parry-result.html`, rollData)
     })
-    msg.setFlag("world", "rolldata", rollData)
+    await this.setSafeRollDataFlag(msg, rollData)
   }
 
   /* -------------------------------------------- */
@@ -323,7 +291,7 @@ export class WarheroUtility {
         let msg = await this.createChatWithRollMode(rollData.alias, {
           content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
         })
-        msg.setFlag("world", "rolldata", rollData)
+        await this.setSafeRollDataFlag(msg, rollData)
       }
       return
     }
@@ -335,7 +303,7 @@ export class WarheroUtility {
         formula = (rollData.is2hands) ? rollData.weapon.damageFormula2Hands : rollData.weapon.damageFormula
       }
       let myRoll = await new Roll(formula + "+" + rollData.bonusMalus, actor.system).roll()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
+      await this.playDice3DForRoll(myRoll, game.settings.get("core", "rollMode"))
       rollData.roll = myRoll
       rollData.diceFormula = myRoll.formula
       rollData.diceResult = myRoll.terms[0].results[0].result
@@ -343,7 +311,7 @@ export class WarheroUtility {
       let msg = await this.createChatWithRollMode(rollData.alias, {
         content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
       })
-      msg.setFlag("world", "rolldata", rollData)
+      await this.setSafeRollDataFlag(msg, rollData)
       return
     }
 
@@ -369,7 +337,7 @@ export class WarheroUtility {
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
       myRoll = await new Roll(diceFormula, actor.system).roll()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
+      await this.playDice3DForRoll(myRoll, game.settings.get("core", "rollMode"))
     }
     rollData.roll = myRoll
     rollData.diceFormula = diceFormula
@@ -388,8 +356,84 @@ export class WarheroUtility {
     let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
     })
-    await msg.setFlag("world", "rolldata", rollData)
+    await this.setSafeRollDataFlag(msg, rollData)
 
+  }
+
+  /* -------------------------------------------- */
+  static _safeStatForFlag(stat) {
+    if (!stat || typeof stat !== "object") return undefined
+    return {
+      label: stat.label,
+      value: stat.value,
+      save: stat.save,
+      stat: stat.stat,
+      hasuse: stat.hasuse,
+      nbuse: stat.nbuse,
+      maxuse: stat.maxuse
+    }
+  }
+
+  /* -------------------------------------------- */
+  static _safeItemForFlag(item) {
+    if (!item || typeof item !== "object") return undefined
+    return {
+      id: item.id ?? item._id,
+      name: item.name,
+      type: item.type,
+      img: item.img
+    }
+  }
+
+  /* -------------------------------------------- */
+  static buildSafeRollDataForFlag(rollData) {
+    if (!rollData || typeof rollData !== "object") return {}
+
+    const safe = {
+      rollId: rollData.rollId,
+      rollMode: rollData.rollMode,
+      mode: rollData.mode,
+      title: rollData.title,
+      alias: rollData.alias,
+      img: rollData.img,
+      actorId: rollData.actorId,
+      actorImg: rollData.actorImg,
+      statKey: rollData.statKey,
+      bonusMalus: rollData.bonusMalus,
+      powerLevel: rollData.powerLevel,
+      hasBM: rollData.hasBM,
+      usemWeaponMalus: rollData.usemWeaponMalus,
+      mWeaponMalus: rollData.mWeaponMalus,
+      is2hands: rollData.is2hands,
+      defenderTokenId: rollData.defenderTokenId,
+      selectedLocation: rollData.selectedLocation,
+      locationName: rollData.locationName,
+      diceFormula: rollData.diceFormula,
+      diceResult: rollData.diceResult,
+      isSuccess: rollData.isSuccess,
+      isCriticalSuccess: rollData.isCriticalSuccess,
+      isCriticalFailure: rollData.isCriticalFailure,
+      stat: this._safeStatForFlag(rollData.stat),
+      statBonus: this._safeStatForFlag(rollData.statBonus),
+      weapon: this._safeItemForFlag(rollData.weapon),
+      power: this._safeItemForFlag(rollData.power)
+    }
+
+    if (rollData.roll && typeof rollData.roll === "object") {
+      safe.roll = {
+        formula: rollData.roll.formula,
+        total: rollData.roll.total
+      }
+    }
+
+    return safe
+  }
+
+  /* -------------------------------------------- */
+  static async setSafeRollDataFlag(message, rollData) {
+    if (!message?.setFlag) return
+    const safeRollData = this.buildSafeRollDataForFlag(rollData)
+    await message.setFlag("world", "rolldata", safeRollData)
   }
 
   /* -------------------------------------------- */
@@ -440,22 +484,23 @@ export class WarheroUtility {
   static getWhisperRecipients(rollMode, name) {
     switch (rollMode) {
       case "blindroll": return this.getUsers(user => user.isGM);
-      case "gmroll": return this.getWhisperRecipientsAndGMs(name);
+      case "gmroll": {
+        const recipients = [
+          ...(ChatMessage.getWhisperRecipients(name) || []),
+          ...ChatMessage.getWhisperRecipients("GM")
+        ];
+        return [...new Set(recipients.map(it => it.id ?? it))];
+      }
       case "selfroll": return [game.user.id];
     }
     return undefined;
-  }
-  /* -------------------------------------------- */
-  static getWhisperRecipientsAndGMs(name) {
-    let recep1 = ChatMessage.getWhisperRecipients(name) || [];
-    return recep1.concat(ChatMessage.getWhisperRecipients('GM'));
   }
 
   /* -------------------------------------------- */
   static blindMessageToGM(chatOptions) {
     let chatGM = foundry.utils.duplicate(chatOptions);
     chatGM.whisper = this.getUsers(user => user.isGM);
-    chatGM.content = "Blinde message of " + game.user.name + "<br>" + chatOptions.content;
+    chatGM.content = game.i18n.format("WH.chat.blindmessageprefix", { user: game.user.name }) + "<br>" + chatOptions.content;
     game.socket.emit("system.fvtt-warhero", { name: "msg_gm_chat_message", data: chatGM });
   }
 
@@ -468,7 +513,7 @@ export class WarheroUtility {
           this.blindMessageToGM(chatOptions);
 
           chatOptions.whisper = [game.user.id];
-          chatOptions.content = "Message only to the GM";
+          chatOptions.content = game.i18n.localize("WH.chat.messageonlygm");
         }
         else {
           chatOptions.whisper = this.getUsers(user => user.isGM);
@@ -513,11 +558,13 @@ export class WarheroUtility {
   /* -------------------------------------------- */
   static async confirmDelete(actorSheet, li, itemType) {
     let itemId = li.data("item-id");
-    let msgTxt = `<p>Are you sure to remove this ${itemType}?</p>`;
+    const itemTypeKey = `TYPES.Item.${itemType}`
+    const localizedItemType = game.i18n.has(itemTypeKey) ? game.i18n.localize(itemTypeKey) : itemType
+    let msgTxt = `<p>${game.i18n.format("WH.ui.confirmremoveitem", { itemType: localizedItemType })}</p>`;
     let buttons = {
       delete: {
         icon: '<i class="fas fa-check"></i>',
-        label: "Yes, remove it",
+        label: game.i18n.localize("WH.ui.yesremove"),
         callback: () => {
           actorSheet.actor.deleteEmbeddedDocuments(itemType, [itemId]);
           li.slideUp(200, () => actorSheet.render(false));
@@ -525,12 +572,11 @@ export class WarheroUtility {
       },
       cancel: {
         icon: '<i class="fas fa-times"></i>',
-        label: "Cancel"
+        label: game.i18n.localize("WH.ui.cancel")
       }
     }
-    msgTxt += "</p>";
     let d = new Dialog({
-      title: "Confirm removal",
+      title: game.i18n.localize("WH.ui.confirmremoval"),
       content: msgTxt,
       buttons: buttons,
       default: "cancel"

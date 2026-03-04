@@ -47,12 +47,12 @@ export class WarheroHotbar {
     if (speaker.token) actor = game.actors.tokens[speaker.token]
     if (!actor) actor = game.actors.get(speaker.actor)
     if (!actor) {
-      return ui.notifications.warn(`Select your actor to run the macro`)
+      return ui.notifications.warn(game.i18n.localize("WH.notif.selectactorformacro"))
     }
 
     let item = actor.items.find(it => it.name === itemName && it.type == itemType)
     if (!item) {
-      return ui.notifications.warn(`Unable to find the item of the macro in the current actor`)
+      return ui.notifications.warn(game.i18n.localize("WH.notif.macroitemnotfound"))
     }
 
     // Trigger the item roll

@@ -55,13 +55,6 @@
       toggled=true}}
     </div>
     <hr>
-    <h3>{{localize "WH.ui.notes"}} : </h3>
-    <div class="editor">
-      {{formInput systemFields.biodata.fields.notes enriched=enrichedNotes value=system.biodata.notes
-      name="system.biodata.notes"
-      toggled=true}}
-    </div>
-    <hr>
     </article>
 
     <div class="flexcol">
@@ -101,6 +94,14 @@
     </div>
 
     {{#if isGM}}
+    <hr>
+    <h3>{{localize "WH.ui.gmnotes"}} : </h3>
+    <div class="editor">
+      {{formInput systemFields.biodata.fields.gmnotes enriched=enrichedGMNotes value=system.biodata.gmnotes
+      name="system.biodata.gmnotes"
+      toggled=true}}
+    </div>
+    <hr>
     <div>
       <ul class="stat-list alternate-list">
         <li class="item flexrow list-item items-title-bg">
