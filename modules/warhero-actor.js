@@ -2,14 +2,6 @@
 import { WarheroUtility } from "./warhero-utility.js";
 
 /* -------------------------------------------- */
-const coverBonusTable = { "nocover": 0, "lightcover": 2, "heavycover": 4, "entrenchedcover": 6 };
-const statThreatLevel = ["agi", "str", "phy", "com", "def", "per"]
-const __subkey2title = {
-  "melee-dmg": "Melee Damage", "melee-atk": "Melee Attack", "ranged-atk": "Ranged Attack",
-  "ranged-dmg": "Ranged Damage", "dmg-res": "Damare Resistance"
-}
-
-/* -------------------------------------------- */
 /* -------------------------------------------- */
 /**
  * Extend the base Actor entity by defining a custom roll data structure which is ideal for the Simple system.
