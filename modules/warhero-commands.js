@@ -1,7 +1,6 @@
 /* -------------------------------------------- */
 
 import { WarheroUtility } from "./warhero-utility.js";
-import { WarheroRollDialog } from "./__deprecated/warhero-roll-dialog.js";
 
 /* -------------------------------------------- */
 const __saveFirstToKey = { r: "reflex", f: "fortitude", w: "willpower" }

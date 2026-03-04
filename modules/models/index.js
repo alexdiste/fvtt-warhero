@@ -25,8 +25,3 @@ export { CompetencyData } from "./competency-data.js";
 // Actor Data Models
 export { CharacterData } from "./character-data.js";
 export { PartyData } from "./party-data.js";
-
-// Migration utilities
-export { EquipmentMigration } from "../__deprecated/equipment-migration.js";
-export { ItemMigration } from "../__deprecated/item-migration.js";
-export { ActorMigration } from "../__deprecated/actor-migration.js";
