@@ -95,23 +95,7 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
-  /* -------------------------------------------- */
-  getFeatsWithDie() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'feat' && item.system.isfeatdie) || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
-  getFeatsWithSL() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'feat' && item.system.issl) || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
-  /* -------------------------------------------- */
-  getLore() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'spell') || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
+  /* -------------------------------------------- */ 
   getEquippedWeapons() {
     let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'weapon' && item.system.equipped) || []);
     WarheroUtility.sortArrayObjectsByName(comp)
