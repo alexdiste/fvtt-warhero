@@ -293,7 +293,6 @@ export class WarheroActor extends Actor {
   updateCompetency(competency, obj, labelTab) {
     for (let key in obj) {
       if (obj[key]) {
-        //console.log("Parsing", key) //game.system.warhero.config.weaponTypes[key].label)
         competency[key] = { enabled: true, label: labelTab[key].label }
       }
     }
@@ -476,7 +475,6 @@ export class WarheroActor extends Actor {
     rollData.actorImg = this.img
     rollData.actorId = this.id
     rollData.img = this.img
-    console.log("ROLLDATA", rollData)
 
     return rollData
   }

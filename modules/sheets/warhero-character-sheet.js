@@ -164,7 +164,6 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     // merge context and formData
     Object.assign(context, formData)
 
-    console.log("WarheroCharacterSheet | Context", context)
     return context
   }
 

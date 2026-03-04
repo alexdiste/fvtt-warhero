@@ -1,0 +1,12 @@
+<div class="warhero-chat-card">
+  <h3><b>{{localize "WH.ui.defense"}}</b></h3>
+  {{#if defender}}
+  <p><b>{{localize "WH.ui.defender"}}:</b> {{defender.name}}</p>
+  {{/if}}
+  {{#if weapon}}
+  <p><b>{{localize "WH.ui.weapon"}}:</b> {{weapon.name}}</p>
+  {{/if}}
+  {{#if isRangedAttack}}
+  <p>{{localize "WH.ui.rangedattack"}}</p>
+  {{/if}}
+</div>

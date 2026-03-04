@@ -1,0 +1,12 @@
+<div class="warhero-chat-card">
+  <h3><b>{{localize "WH.ui.result"}}</b></h3>
+  {{#if alias}}
+  <p><b>{{localize "WH.ui.actor"}}:</b> {{alias}}</p>
+  {{/if}}
+  {{#if sumSuccess}}
+  <p><b>{{localize "WH.ui.success"}}:</b> {{sumSuccess}}</p>
+  {{/if}}
+  {{#if successDetails.result}}
+  <p><b>{{localize "WH.ui.effect"}}:</b> {{successDetails.result}}</p>
+  {{/if}}
+</div>

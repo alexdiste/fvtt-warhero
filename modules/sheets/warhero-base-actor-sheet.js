@@ -145,7 +145,6 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   _onDragOver(event) { }
 
   async _onDropItem(item) {
-    console.log("Dropped item", item)
     let itemData = item.toObject()
     await this.document.createEmbeddedDocuments("Item", [itemData], { renderSheet: false })
   }
@@ -167,7 +166,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   /**
    * Handle changing a Document's image.
    *
-   * @this HellbornActorSheet
+  * @this WarheroActorSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @returns {Promise}
@@ -194,22 +193,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
     const itemUuid = target.getAttribute("data-item-uuid")
     const item = fromUuidSync(itemUuid)
     if (!item) return
-    let content = ""
-    if (item.type === "perk") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-perk.hbs", item.toObject())
-    }
-    if (item.type === "malefica") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-malefica.hbs", item.toObject())
-    }
-    if (item.type === "ritual") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-ritual.hbs", item.toObject())
-    }
-    if (item.type === "species-trait") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-trait.hbs", item.toObject())
-    }
-    if (item.type === "tarot") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-tarot.hbs", item.toObject())
-    }
+    const content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-warhero/templates/post-item.html", item.toObject())
     const chatData = {
       user: game.user.id,
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
@@ -223,7 +207,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   /**
    * Edit an existing item within the Actor
    * Start with the uuid, if it's not found, fallback to the id (as Embedded item in the actor)
-   * @this CthulhuEternalCharacterSheet
+  * @this WarheroActorSheet
    * @param {PointerEvent} event The originating click event
    * @param {HTMLElement} target the capturing HTML element which defined a [data-action]
    */

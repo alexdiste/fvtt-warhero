@@ -92,7 +92,6 @@ export class WarheroPartySheet extends WarheroActorSheet {
     // merge context and formData
     Object.assign(context, formData)
 
-    console.log("WarheroPartySheet | Context", context)
     return context
   }
 

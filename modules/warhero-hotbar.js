@@ -1,7 +1,7 @@
 export class WarheroHotbar {
 
   static async addToHotbar(item, slot) {
-    let command = `game.system.fvtt-warhero.WarheroHotbar.rollMacro("${item.name}", "${item.type}");`;
+    let command = `game.system.warhero.WarheroHotbar.rollMacro("${item.name}", "${item.type}");`;
     let macro = game.macros.contents.find(m => (m.name === item.name) && (m.command === command));
     if (!macro) {
       macro = await Macro.create({

@@ -11,7 +11,6 @@ import { WarheroUtility } from "./warhero-utility.js";
 import { WarheroCombat } from "./warhero-combat.js";
 import { WarheroItem } from "./warhero-item.js";
 import { WarheroHotbar } from "./warhero-hotbar.js"
-import { WarheroCommands } from "./warhero-commands.js"
 import { WARHERO_CONFIG } from "./warhero-config.js"
 
 // Import Data Models
@@ -33,11 +32,8 @@ import * as sheets from "./sheets/index.js";
 /************************************************************************************/
 Hooks.once("init", async function () {
 
-  console.log(`Initializing Warhero RPG`);
-
   game.system.warhero = {
     WarheroHotbar,
-    WarheroCommands,
     config: WARHERO_CONFIG
   }
 

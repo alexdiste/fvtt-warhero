@@ -214,14 +214,7 @@ export class EquipmentData extends foundry.abstract.TypeDataModel {
    * @returns {Object} The migrated data
    */
   static migrateData(data) {
-    // Handle any legacy field names or data structure changes here
-    // This is called automatically when loading old data
-
-    // Example: if we had an old field name that needs to be changed
-    // if (data.oldFieldName !== undefined) {
-    //   data.equiptype = data.oldFieldName;
-    //   delete data.oldFieldName;
-    // }
+    // Reserved for Warhero-specific field migrations when schema evolves.
 
     return super.migrateData(data);
   }

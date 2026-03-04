@@ -1,6 +1,5 @@
 /* -------------------------------------------- */
 import { WarheroCombat } from "./warhero-combat.js";
-import { WarheroCommands } from "./warhero-commands.js";
 import { WARHERO_CONFIG } from "./warhero-config.js";
 
 /* -------------------------------------------- */
@@ -19,8 +18,6 @@ export class WarheroUtility {
 
     this.rollDataStore = {}
     this.defenderStore = {}
-
-    WarheroCommands.init();
 
     Handlebars.registerHelper('concat', function () {
       var outStr = '';
@@ -79,7 +76,6 @@ export class WarheroUtility {
       const element = event.element[0].querySelector(`[name='fvtt-warhero.dice-color-skill']`)
       if (!element) return
       // Replace placeholder element
-      console.log("Element Found !!!!")
     })    */
   }
 
@@ -91,19 +87,6 @@ export class WarheroUtility {
   static upperFirst(text) {
     if (typeof text !== 'string') return text
     return text.charAt(0).toUpperCase() + text.slice(1)
-  }
-
-  /*-------------------------------------------- */
-  static getSkills() {
-    return foundry.utils.duplicate(this.skills)
-  }
-  /*-------------------------------------------- */
-  static getWeaponSkills() {
-    return foundry.utils.duplicate(this.weaponSkills)
-  }
-  /*-------------------------------------------- */
-  static getShieldSkills() {
-    return foundry.utils.duplicate(this.shieldSkills)
   }
 
   /* -------------------------------------------- */
@@ -152,24 +135,12 @@ export class WarheroUtility {
     return draw.results.length > 0 ? draw.results[0] : undefined
   }
 
-
-  /* --------------------------------------------
-  static async chatListeners(html) {
-
-    html.on("click", '.view-item-from-chat', event => {
-      game.system.crucible.creator.openItemView(event)
-    })
-
-  }*/
-
-
   /* -------------------------------------------- */
   static async preloadHandlebarsTemplates() {
 
     const templatePaths = [
       'systems/fvtt-warhero/templates/editor-notes-gm.html',
       'systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs',
-      //      'systems/fvtt-warhero/templates/actors/partial-actor-status.hbs',
       'systems/fvtt-warhero/templates/actors/partial-actor-equipment.hbs',
       'systems/fvtt-warhero/templates/actors/partial-container.hbs',
       'systems/fvtt-warhero/templates/items/partial-item-description.hbs',
@@ -211,24 +182,6 @@ export class WarheroUtility {
 
 
   /* -------------------------------------------- */
-  static createDirectOptionList(min, max) {
-    let options = {};
-    for (let i = min; i <= max; i++) {
-      options[`${i}`] = `${i}`;
-    }
-    return options;
-  }
-
-  /* -------------------------------------------- */
-  static buildListOptions(min, max) {
-    let options = ""
-    for (let i = min; i <= max; i++) {
-      options += `<option value="${i}">${i}</option>`
-    }
-    return options;
-  }
-
-  /* -------------------------------------------- */
   static getTarget() {
     if (game.user.targets) {
       for (let target of game.user.targets) {
@@ -248,152 +201,19 @@ export class WarheroUtility {
   }
   /* -------------------------------------------- */
   static saveRollData(rollData) {
-    game.socket.emit("system.warhero-rpg", {
+    game.socket.emit("system.fvtt-warhero", {
       name: "msg_update_roll", data: rollData
     }); // Notify all other clients of the roll
     this.updateRollData(rollData)
   }
 
   /* -------------------------------------------- */
-  static async displayDefenseMessage(rollData) {
-    if (rollData.mode == "weapon" && rollData.defenderTokenId) {
-      let defender = game.canvas.tokens.get(rollData.defenderTokenId).actor
-      if (game.user.isGM || (game.user.character && game.user.character.id == defender.id)) {
-        rollData.defender = defender
-        rollData.defenderWeapons = defender.getEquippedWeapons()
-        rollData.isRangedAttack = rollData.weapon?.system.isranged
-        this.createChatWithRollMode(defender.name, {
-          name: defender.name,
-          alias: defender.name,
-          //user: defender.id,
-          content: await renderTemplate(`systems/fvtt-warhero/templates/chat-request-defense.html`, rollData),
-          whisper: [defender.id].concat(ChatMessage.getWhisperRecipients('GM')),
-        })
-      }
-    }
-  }
-
-  /* --------------------------------------------
-  static getSuccessResult(rollData) {
-    if (rollData.sumSuccess <= -3) {
-      if (rollData.attackRollData.weapon.system.isranged) {
-        return { result: "miss", fumble: true, hpLossType: "melee" }
-      } else {
-        return { result: "miss", fumble: true, attackerHPLoss: "2d3", hpLossType: "melee" }
-      }
-    }
-    if (rollData.sumSuccess == -2) {
-      if (rollData.attackRollData.weapon.system.isranged) {
-        return { result: "miss", dangerous_fumble: true }
-      } else {
-        return { result: "miss", dangerous_fumble: true, attackerHPLoss: "1d3", hpLossType: "melee" }
-      }
-    }
-    if (rollData.sumSuccess == -1) {
-      return { result: "miss" }
-    }
-    if (rollData.sumSuccess == 0) {
-      if (rollData.attackRollData.weapon.system.isranged) {
-        return { result: "target_space", aoe: true }
-      } else {
-        return { result: "clash", hack_vs_shields: true }
-      }
-    }
-    if (rollData.sumSuccess == 1) {
-      return { result: "hit", defenderDamage: "1", entangle: true, knockback: true }
-    }
-    if (rollData.sumSuccess == 2) {
-      return { result: "hit", defenderDamage: "2", critical_1: true, entangle: true, knockback: true, penetrating_impale: true, hack_armors: true }
-    }
-    if (rollData.sumSuccess >= 3) {
-      return { result: "hit", defenderDamage: "3", critical_2: true, entangle: true, knockback: true, penetrating_impale: true, hack_armors: true }
-    }
-  }
-  */
-
-  /* --------------------------------------------
-  static async getFumble(weapon) {
-    const pack = game.packs.get("fvtt-warhero.rolltables")
-    const index = await pack.getIndex()
-    let entry
-
-    if (weapon.isranged) {
-      entry = index.find(e => e.name === "Fumble! (ranged)")
-    }
-    if (!weapon.isranged) {
-      entry = index.find(e => e.name === "Fumble! (melee)")
-    }
-    let table = await pack.getDocument(entry._id)
-    const draw = await table.draw({ displayChat: false, rollMode: "gmroll" })
-    return draw.results.length > 0 ? draw.results[0] : undefined
-  }
-  */
-
-
-  /* --------------------------------------------
-  static async processSuccessResult(rollData) {
-    if (game.user.isGM) { // Only GM process this
-      let result = rollData.successDetails
-      let attacker = game.actors.get(rollData.actorId)
-      let defender = game.canvas.tokens.get(rollData.attackRollData.defenderTokenId).actor
-
-      if (attacker && result.attackerHPLoss) {
-        result.attackerHPLossValue = await attacker.incDecHP("-" + result.attackerHPLoss)
-      }
-      if (attacker && defender && result.defenderDamage) {
-        let dmgDice = (rollData.attackRollData.weapon.system.isranged) ? "d6" : "d8"
-        result.damageWeaponFormula = result.defenderDamage + dmgDice
-        result.defenderHPLossValue = await defender.incDecHP("-" + result.damageWeaponFormula)
-      }
-      if (result.fumble || (result.dangerous_fumble && WarheroUtility.isWeaponDangerous(rollData.attackRollData.weapon))) {
-        result.fumbleDetails = await this.getFumble(rollData.weapon)
-      }
-      if (result.critical_1 || result.critical_2) {
-        let isDeadly = WarheroUtility.isWeaponDeadly(rollData.attackRollData.weapon)
-        result.critical = await this.getCritical((result.critical_1) ? "I" : "II", rollData.attackRollData.weapon)
-        result.criticalText = result.critical.text
-      }
-      this.createChatWithRollMode(rollData.alias, {
-        content: await renderTemplate(`systems/fvtt-warhero/templates/chat-attack-defense-result.html`, rollData)
-      })
-      console.log("Results processed", rollData)
-    }
-  }
-  */
-
-  /* --------------------------------------------
-  static async processAttackDefense(rollData) {
-    if (rollData.attackRollData) {
-      //console.log("Defender token, ", rollData, rollData.defenderTokenId)
-      let defender = game.canvas.tokens.get(rollData.attackRollData.defenderTokenId).actor
-      let sumSuccess = rollData.attackRollData.nbSuccess - rollData.nbSuccess
-      if (sumSuccess > 0) {
-        let armorResult = await defender.rollArmorDie(rollData)
-        rollData.armorResult = armorResult
-        sumSuccess += rollData.armorResult.nbSuccess
-        if (sumSuccess < 0) { // Never below 0
-          sumSuccess = 0
-        }
-      }
-      rollData.sumSuccess = sumSuccess
-      rollData.successDetails = this.getSuccessResult(rollData)
-      if (game.user.isGM) {
-        this.processSuccessResult(rollData)
-      } else {
-        game.socket.emit("system.fvtt-warhero", { msg: "msg_gm_process_attack_defense", data: rollData });
-      }
-    }
-  }
-  */
-
-  /* -------------------------------------------- */
   static async onSocketMesssage(msg) {
-    console.log("SOCKET MESSAGE", msg.name)
     if (msg.name == "msg_update_roll") {
       this.updateRollData(msg.data)
     }
-    if (msg.name == "msg_gm_process_attack_defense") {
-      this.processSuccessResult(msg.data)
+    if (msg.name == "msg_gm_chat_message" && game.user.isGM) {
+      ChatMessage.create(msg.data)
     }
     if (msg.name == "msg_gm_item_drop" && game.user.isGM) {
       let actor = game.actors.get(msg.data.actorId)
@@ -453,21 +273,6 @@ export class WarheroUtility {
     }
   }
 
-  /* --------------------------------------------
-  static getDiceFromCover(cover) {
-    if (cover == "cover50") return 1
-    return 0
-  }
-  */
-  /* --------------------------------------------
-  static getDiceFromSituational(cover) {
-    if (cover == "prone") return 1
-    if (cover == "dodge") return 1
-    if (cover == "moving") return 1
-    if (cover == "engaged") return 1
-    return 0
-  }
-  */
   /* -------------------------------------------- */
   static async rollParry(rollData) {
     let actor = game.actors.get(rollData.actorId)
@@ -496,7 +301,6 @@ export class WarheroUtility {
       content: await renderTemplate(`systems/fvtt-warhero/templates/chat-parry-result.html`, rollData)
     })
     msg.setFlag("world", "rolldata", rollData)
-    console.log("Rolldata result", rollData)
   }
 
   /* -------------------------------------------- */
@@ -562,7 +366,6 @@ export class WarheroUtility {
     diceFormula += "+" + rollData.bonusMalus
 
     // Performs roll
-    console.log("Roll formula", diceFormula)
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
       myRoll = await new Roll(diceFormula, actor.system).roll()
@@ -586,7 +389,6 @@ export class WarheroUtility {
       content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
     })
     await msg.setFlag("world", "rolldata", rollData)
-    console.log("Rolldata result", rollData)
 
   }
 
@@ -654,38 +456,9 @@ export class WarheroUtility {
     let chatGM = foundry.utils.duplicate(chatOptions);
     chatGM.whisper = this.getUsers(user => user.isGM);
     chatGM.content = "Blinde message of " + game.user.name + "<br>" + chatOptions.content;
-    console.log("blindMessageToGM", chatGM);
-    game.socket.emit("system.fvtt-warhero", { msg: "msg_gm_chat_message", data: chatGM });
+    game.socket.emit("system.fvtt-warhero", { name: "msg_gm_chat_message", data: chatGM });
   }
 
-
-  /* -------------------------------------------- */
-  static async searchItem(dataItem) {
-    let item
-    if (dataItem.pack) {
-      item = await fromUuid("Compendium." + dataItem.pack + "." + dataItem.id)
-    } else {
-      item = game.items.get(dataItem.id)
-    }
-    return item
-  }
-
-  /* -------------------------------------------- */
-  static split3Columns(data) {
-
-    let array = [[], [], []];
-    if (data == undefined) return array;
-
-    let col = 0;
-    for (let key in data) {
-      let keyword = data[key];
-      keyword.key = key; // Self-reference
-      array[col].push(keyword);
-      col++;
-      if (col == 3) col = 0;
-    }
-    return array;
-  }
 
   /* -------------------------------------------- */
   static createChatMessage(name, rollMode, chatOptions) {
@@ -776,23 +549,6 @@ export class WarheroUtility {
   }
 
   /* -------------------------------------------- */
-  static addUniqueStatus(actor, statusId) {
-    let status = actor.effects.find((it) => it.statuses.has(statusId));
-    if (!status) {
-      let effect = this.prepareActiveEffect(statusId);
-      actor.createEmbeddedDocuments("ActiveEffect", [effect]);
-    }
-  }
-
-  /* -------------------------------------------- */
-  static async removeEffect(actor, statusId) {
-    let effect = actor.effects.find((it) => it.statuses.has(statusId));
-    if (effect) {
-      await actor.deleteEmbeddedDocuments("ActiveEffect", [effect.id]);
-    }
-  }
-
-  /* -------------------------------------------- */
   static async prepareActiveEffectCategories(effects) {
     // Define effect header categories
     const categories = {
@@ -823,33 +579,4 @@ export class WarheroUtility {
     return categories;
   }
 
-  /* -------------------------------------------- */
-  static async onManageActiveEffect(event, owner) {
-    event.preventDefault();
-    const a = event.currentTarget;
-    const li = a.closest("li");
-    let effect = li.dataset.effectId ? owner.effects.get(li.dataset.effectId) : null;
-    switch (a.dataset.action) {
-      case "create":
-        effect = await ActiveEffect.implementation.create(
-          {
-            name: game.i18n.format("DOCUMENT.New", { type: game.i18n.localize("DOCUMENT.ActiveEffect") }),
-            transfer: true,
-            img: "icons/svg/aura.svg",
-            origin: owner.uuid,
-            "duration.rounds": li.dataset.effectType === "temporary" ? 1 : undefined,
-            disabled: li.dataset.effectType === "inactive",
-            changes: [{}],
-          },
-          { parent: owner },
-        );
-        return effect.sheet.render(true);
-      case "edit":
-        return effect.sheet.render(true);
-      case "delete":
-        return effect.delete();
-      case "toggle":
-        return effect.update({ disabled: !effect.disabled });
-    }
-  }
 }
