@@ -25,23 +25,30 @@ export class WarheroActor extends Actor {
   static async create(data, options) {
 
     // Case of compendium global import
-    if (data instanceof Array) {
+    if (Array.isArray(data)) {
       return super.create(data, options);
     }
+
+    if (!foundry.utils.isPlainObject(data)) {
+      return super.create(data, options);
+    }
+
+    const createData = foundry.utils.duplicate(data)
+
     // If the created actor has items (only applicable to duplicated actors) bypass the new actor creation logic
-    if (data.items) {
-      let actor = super.create(data, options);
+    if (Array.isArray(createData.items) && createData.items.length > 0) {
+      let actor = super.create(createData, options);
       return actor;
     }
-    data.img = data?.img || "systems/fvtt-warhero/images/icons/cowled.svg";
+    createData.img = createData?.img || "systems/fvtt-warhero/images/icons/cowled.svg";
 
     // If the created actor is a character, add initial skills from compendium
-    if (data.type == 'character') {
+    if (createData.type == 'character') {
       const skills = await WarheroUtility.loadCompendium("fvtt-warhero.skills");
-      data.items = skills.map(i => this._sanitizeItemDataForCreate(i.toObject()))
+      createData.items = skills.map(i => this._sanitizeItemDataForCreate(i.toObject()))
     }
 
-    return super.create(data, options);
+    return super.create(createData, options);
   }
 
   static _sanitizeItemDataForCreate(itemData) {
@@ -58,6 +65,7 @@ export class WarheroActor extends Actor {
           .map(change => {
             const key = `${change.key ?? ""}`.trim()
             if (!key) return null
+            if (["system", "system.biodata", "system.statistics", "system.attributes", "system.secondary"].includes(key)) return null
             return {
               key,
               mode: Number.isFinite(Number(change.mode)) ? Number(change.mode) : CONST.ACTIVE_EFFECT_MODES.ADD,
@@ -77,6 +85,7 @@ export class WarheroActor extends Actor {
 
   /* -------------------------------------------- */
   prepareData() {
+    this._sanitizeAllEffectChanges()
     super.prepareData();
   }
 
@@ -100,6 +109,10 @@ export class WarheroActor extends Actor {
       .map(change => {
         const key = `${change.key ?? ""}`.trim()
         if (!key || key.includes("..") || key.startsWith(".") || key.endsWith(".")) return null
+
+        const targetValue = foundry.utils.getProperty(this, key)
+        if (targetValue && typeof targetValue === "object") return null
+
         return {
           key,
           mode: Number.isFinite(Number(change.mode)) ? Number(change.mode) : CONST.ACTIVE_EFFECT_MODES.ADD,
