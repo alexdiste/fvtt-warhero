@@ -84,60 +84,8 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  prepareData() {
-    this._sanitizeAllEffectChanges()
+ prepareData() {
     super.prepareData();
-  }
-
-  /* -------------------------------------------- */
-  _sanitizeAllEffectChanges() {
-    for (const effect of this.effects) {
-      this._sanitizeEffectChanges(effect)
-    }
-    for (const item of this.items) {
-      for (const effect of item.effects) {
-        this._sanitizeEffectChanges(effect)
-      }
-    }
-  }
-
-  /* -------------------------------------------- */
-  _sanitizeEffectChanges(effect) {
-    const rawChanges = Array.isArray(effect?.changes) ? effect.changes : []
-    const validChanges = rawChanges
-      .filter(change => change && typeof change === "object")
-      .map(change => {
-        const key = `${change.key ?? ""}`.trim()
-        if (!key || key.includes("..") || key.startsWith(".") || key.endsWith(".")) return null
-
-        const targetValue = foundry.utils.getProperty(this, key)
-        if (targetValue && typeof targetValue === "object") return null
-
-        return {
-          key,
-          mode: Number.isFinite(Number(change.mode)) ? Number(change.mode) : CONST.ACTIVE_EFFECT_MODES.ADD,
-          value: `${change.value ?? ""}`,
-          priority: Number.isFinite(Number(change.priority)) ? Number(change.priority) : undefined
-        }
-      })
-      .filter(change => change !== null)
-
-    const keys = validChanges.map(change => change.key)
-    const normalizedChanges = validChanges.filter(change => {
-      return !keys.some(otherKey => otherKey !== change.key && otherKey.startsWith(`${change.key}.`))
-    })
-
-    if (normalizedChanges.length !== rawChanges.length) {
-      const effectId = effect?.id || effect?._id || "unknown"
-      const ownerName = effect?.parent?.name || this.name || "unknown"
-      const ownerUuid = effect?.parent?.uuid || this.uuid || "unknown"
-      const logKey = `${ownerUuid}:${effectId}`
-      if (!WarheroActor._loggedSanitizedEffects.has(logKey)) {
-        WarheroActor._loggedSanitizedEffects.add(logKey)
-        console.warn(`Warhero | Sanitized ActiveEffect changes for ${ownerName} (${ownerUuid}) effect=${effect?.name || "unnamed"} (${effectId}) removed=${rawChanges.length - normalizedChanges.length}`)
-      }
-      effect.updateSource({ changes: normalizedChanges })
-    }
   }
 
   _buildSlotsFromConfig(slotConfig, defaultSlot = undefined) {

@@ -26,6 +26,7 @@ import {
 import * as sheets from "./sheets/index.js";
 
 const EFFECT_MIGRATION_SETTING = "effect-sanitize-migration-version-v2"
+const EFFECT_SANITIZE_DEBUG_SETTING = "effect-sanitize-debug"
 
 function sanitizeEffectChanges(changes = []) {
   const rawChanges = Array.isArray(changes) ? changes : []
@@ -47,6 +48,35 @@ function sanitizeEffectChanges(changes = []) {
   return validChanges.filter(change => {
     return !keys.some(otherKey => otherKey !== change.key && otherKey.startsWith(`${change.key}.`))
   })
+}
+
+function sanitizeEffectPayloadChanges(payload) {
+  if (!payload || typeof payload !== "object") {
+    return { changed: false, beforeCount: 0, afterCount: 0 }
+  }
+  if (!Object.prototype.hasOwnProperty.call(payload, "changes")) {
+    return { changed: false, beforeCount: 0, afterCount: 0 }
+  }
+
+  const sourceChanges = Array.isArray(payload.changes) ? payload.changes : []
+  const sanitizedChanges = sanitizeEffectChanges(sourceChanges)
+  const beforeCount = sourceChanges.length
+  const afterCount = sanitizedChanges.length
+  if (JSON.stringify(sourceChanges) === JSON.stringify(sanitizedChanges)) {
+    return { changed: false, beforeCount, afterCount }
+  }
+
+  payload.changes = sanitizedChanges
+  return { changed: true, beforeCount, afterCount }
+}
+
+function maybeLogHookSanitization(effect, stage, result) {
+  if (!result?.changed) return
+  if (!game.user?.isGM) return
+  if (!game.settings.get("fvtt-warhero", EFFECT_SANITIZE_DEBUG_SETTING)) return
+
+  const parent = effect?.parent
+  console.debug(`Warhero | ${stage} sanitized ActiveEffect for ${parent?.name || "unnamed"} (${parent?.uuid || "unknown"}) effect=${effect?.name || "unnamed"} (${effect?.id || "new"}) removed=${result.beforeCount - result.afterCount}`)
 }
 
 function collectDocumentEffectEntries(parentDocument) {
@@ -197,6 +227,15 @@ Hooks.once("init", async function () {
     default: ""
   })
 
+  game.settings.register("fvtt-warhero", EFFECT_SANITIZE_DEBUG_SETTING, {
+    name: "Debug ActiveEffect sanitization hooks",
+    hint: "When enabled, GMs get debug logs when preCreate/preUpdate ActiveEffect sanitization modifies changes.",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: false
+  })
+
   /* -------------------------------------------- */
   // preload handlebars templates
   WarheroUtility.preloadHandlebarsTemplates();
@@ -297,6 +336,16 @@ Hooks.once("init", async function () {
 
   WarheroUtility.init()
 });
+
+Hooks.on("preCreateActiveEffect", (effect, createData) => {
+  const result = sanitizeEffectPayloadChanges(createData)
+  maybeLogHookSanitization(effect, "preCreate", result)
+})
+
+Hooks.on("preUpdateActiveEffect", (effect, updateData) => {
+  const result = sanitizeEffectPayloadChanges(updateData)
+  maybeLogHookSanitization(effect, "preUpdate", result)
+})
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
