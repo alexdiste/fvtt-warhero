@@ -1,4 +1,3 @@
-import { WarheroUtility } from "../warhero-utility.js";
 import { WarheroBaseItemSheet } from "./warhero-base-item-sheet.js";
 
 /**
