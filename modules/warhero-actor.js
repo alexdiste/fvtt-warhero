@@ -834,11 +834,9 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   computeBonusLanguages() {
-    if (!this.system?.statistics?.min.value || this.system?.secondary?.nblanguage == undefined) return
-    let nblanguage = Math.floor(this.system.statistics.min.value / 2)
-    if (nblanguage != this.system?.secondary?.nblanguage?.value) {
-      this.update({ 'system.secondary.nblanguage.value': nblanguage })
-    }
+    if (!this.system?.statistics?.min?.value || this.system?.secondary?.nblanguage == undefined) return;
+    let nblanguage = Math.floor(this.system.statistics.min.value / 2);
+    this.system.secondary.nblanguage.value = nblanguage;
   }
   /* -------------------------------------------- */
   spentMana(spentValue) {
