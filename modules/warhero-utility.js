@@ -1,6 +1,6 @@
 /* -------------------------------------------- */
 import { WarheroCombat } from "./warhero-combat.js";
-import { WarheroCommands } from "./warhero-commands.js";
+// ...existing code...
 import { WARHERO_CONFIG } from "./warhero-config.js";
 
 /* -------------------------------------------- */
@@ -20,7 +20,7 @@ export class WarheroUtility {
     this.rollDataStore = {}
     this.defenderStore = {}
 
-    WarheroCommands.init();
+    // ...existing code...
 
     Handlebars.registerHelper('concat', function () {
       var outStr = '';
