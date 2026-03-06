@@ -49,12 +49,12 @@
       {{#if locationName}}
       <li>{{localize "WH.ui.location"}} : {{locationName}}</li>
       {{/if}}
-      {{#if powerDescription}}
+      {{#if (and powerDescription (not (eq powerDescription "")))}}
       <li class="power-description">{{{powerDescription}}}</li>
-      {{/if}}     
-      <li><strong>{{localize "WH.chat.result"}} : {{roll.total}} </strong></li>
       {{/if}}
-
+      {{/if}}
+      
+      <li><strong>{{localize "WH.chat.result"}} : {{roll.total}} </strong></li>
     </ul>
   </div>
   </div>
