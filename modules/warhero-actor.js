@@ -707,11 +707,19 @@ export class WarheroActor extends Actor {
   async resetAllSkillUses(askConfirmation = true) {
     // Wait for confirmation
     if (askConfirmation) {
-      let confirmed = await Dialog.confirm({
-        title: game.i18n.localize("WH.ui.confirmresetskillsusetitle"),
+      const confirmed = await foundry.applications.api.DialogV2.wait({
+        window: { title: game.i18n.localize("WH.ui.confirmresetskillsusetitle") },
         content: `<p>${game.i18n.localize("WH.ui.confirmresetskillsusecontent")}</p>`,
-        yes: () => true,
-        no: () => false
+        buttons: [
+          {
+            label: game.i18n.localize("Yes"),
+            callback: () => true
+          },
+          {
+            label: game.i18n.localize("No"),
+            callback: () => false
+          }
+        ]
       });
       if (!confirmed) return;
     }

@@ -490,29 +490,25 @@ export class WarheroUtility {
   /* -------------------------------------------- */
   static async confirmDelete(actorSheet, li, itemType) {
     let itemId = li.data("item-id");
-    let msgTxt = `<p>Are you sure to remove this ${itemType}?</p>`;
-    let buttons = {
-      delete: {
-        icon: '<i class="fas fa-check"></i>',
-        label: "Yes, remove it",
-        callback: () => {
-          actorSheet.actor.deleteEmbeddedDocuments(itemType, [itemId]);
-          li.slideUp(200, () => actorSheet.render(false));
-        }
-      },
-      cancel: {
-        icon: '<i class="fas fa-times"></i>',
-        label: "Cancel"
-      }
-    }
-    msgTxt += "</p>";
-    let d = new Dialog({
-      title: "Confirm removal",
+    let msgTxt = `<p>Are you sure to remove this ${itemType}?</p></p>`;
+    foundry.applications.api.DialogV2.show({
+      window: { title: "Confirm removal" },
       content: msgTxt,
-      buttons: buttons,
-      default: "cancel"
+      buttons: [
+        {
+          label: "Yes, remove it",
+          icon: '<i class="fas fa-check"></i>',
+          callback: () => {
+            actorSheet.actor.deleteEmbeddedDocuments(itemType, [itemId]);
+            li.slideUp(200, () => actorSheet.render(false));
+          }
+        },
+        {
+          label: "Cancel",
+          icon: '<i class="fas fa-times"></i>'
+        }
+      ]
     });
-    d.render(true);
   }
 
   /* -------------------------------------------- */
