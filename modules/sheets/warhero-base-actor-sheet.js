@@ -41,8 +41,6 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
       "create-effect": WarheroActorSheet.#onCreateActiveEffect,
       "quantity-minus": WarheroActorSheet.#onQuantityMinus,
       "quantity-plus": WarheroActorSheet.#onQuantityPlus,
-      toChat: WarheroActorSheet.#toChat,
-
     },
   }
 
@@ -190,35 +188,6 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
     return fp.browse()
   }
 
-  static async #toChat(event, target) {
-    const itemUuid = target.getAttribute("data-item-uuid")
-    const item = fromUuidSync(itemUuid)
-    if (!item) return
-    let content = ""
-    if (item.type === "perk") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-perk.hbs", item.toObject())
-    }
-    if (item.type === "malefica") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-malefica.hbs", item.toObject())
-    }
-    if (item.type === "ritual") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-ritual.hbs", item.toObject())
-    }
-    if (item.type === "species-trait") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-trait.hbs", item.toObject())
-    }
-    if (item.type === "tarot") {
-      content = await foundry.applications.handlebars.renderTemplate("systems/fvtt-hellborn/templates/chat-tarot.hbs", item.toObject())
-    }
-    const chatData = {
-      user: game.user.id,
-      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      content: content,
-      type: CONST.CHAT_MESSAGE_TYPES.OTHER,
-    }
-    ChatMessage.create(chatData, { renderSheet: false })
-
-  }
 
   /**
    * Edit an existing item within the Actor
