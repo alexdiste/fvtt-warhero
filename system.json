@@ -2,13 +2,13 @@
   "id": "fvtt-warhero",
   "title": "Warhero RPG",
   "description": "Warhero RPG system for FoundryVTT",
-  "version": "13.53",
+  "version": "13.54",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
   },
-  "manifest": "https://github.com/alexdiste/fvtt-warhero/releases/download/v13.53/system.json",
-  "download": "https://github.com/alexdiste/fvtt-warhero/releases/download/v13.53/fvtt-warhero-13.53.zip",
+  "manifest": "https://github.com/alexdiste/fvtt-warhero/releases/download/v13.54/system.json",
+  "download": "https://github.com/alexdiste/fvtt-warhero/releases/download/v13.54/fvtt-warhero-13.54.zip",
   "authors": [
 	{
       "name": "AlexDiste",
