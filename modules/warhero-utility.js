@@ -8,6 +8,13 @@ import { WARHERO_CONFIG } from "./warhero-config.js";
 /* -------------------------------------------- */
 export class WarheroUtility {
 
+  /**
+   * Placeholder for Foundry VTT ready hook
+   */
+  static async ready() {
+    // Placeholder: add ready-time logic here if needed
+    console.log("WarheroUtility.ready() called");
+  }
 
   /* -------------------------------------------- */
   static async init() {
@@ -96,7 +103,6 @@ export class WarheroUtility {
     return compendiumData.filter(filter)
   }
 
-    /* -------------------------------------------- */
 
   /* -------------------------------------------- */
   static async preloadHandlebarsTemplates() {
@@ -426,7 +432,7 @@ export class WarheroUtility {
   }
   
   /*
-  /* -------------------------------------------- 
+  /* -------------------------------------------- */
   static createChatMessage(name, rollMode, chatOptions) {
     switch (rollMode) {
       case "blindroll": // GM only
@@ -451,7 +457,7 @@ export class WarheroUtility {
     chatOptions.alias = chatOptions.alias || name;
     return ChatMessage.create(chatOptions);
   }
-  */
+  
 
   /* -------------------------------------------- */
   static getBasicRollData() {
