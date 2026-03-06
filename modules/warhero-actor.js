@@ -708,7 +708,7 @@ export class WarheroActor extends Actor {
     // Wait for confirmation
     if (askConfirmation) {
       const confirmed = await new Promise(resolve => {
-        new Dialog({
+        new foundry.applications.api.DialogV2({
           title: game.i18n.localize("WH.ui.confirmresetskillsuse"),
           content: `<p>${game.i18n.localize("WH.ui.confirmresetskillsusecontent")}</p>`,
           buttons: {
