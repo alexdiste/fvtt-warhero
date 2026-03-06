@@ -490,12 +490,12 @@ export class WarheroUtility {
   /* -------------------------------------------- */
   static async confirmDelete(actorSheet, li, itemType) {
     let itemId = li.data("item-id");
-    let msgTxt = `<p>Are you sure to remove this ${itemType}?</p></p>`;
-    foundry.applications.api.DialogV2.show({
-      window: { title: "Confirm removal" },
+    let msgTxt = `<p>Are you sure to remove this ${itemType}?</p>`;
+    new Dialog({
+      title: "Confirm removal",
       content: msgTxt,
-      buttons: [
-        {
+      buttons: {
+        yes: {
           label: "Yes, remove it",
           icon: '<i class="fas fa-check"></i>',
           callback: () => {
@@ -503,12 +503,12 @@ export class WarheroUtility {
             li.slideUp(200, () => actorSheet.render(false));
           }
         },
-        {
+        no: {
           label: "Cancel",
           icon: '<i class="fas fa-times"></i>'
         }
-      ]
-    });
+      }
+    }).render(true);
   }
 
   /* -------------------------------------------- */
