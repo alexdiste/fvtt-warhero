@@ -10,8 +10,6 @@ a:hover {
 
 .rollable:hover,
 .rollable:focus {
-  /*color: #000;
-  text-shadow: 0 0 10px red;*/
   cursor: pointer;
 }
 
@@ -126,8 +124,7 @@ a:hover {
   flex: 'flex-shrink';
 }
 
-/* Styles limited to foundryvtt sheets */
-
+/* Spefic styles for Warhero */
 .fvtt-warhero .sheet-header {
   -webkit-box-flex: 0;
   overflow: hidden;
@@ -160,12 +157,11 @@ a:hover {
   font-size: 1.2rem;
 }
 
-/* Assurez-vous que la div-align-top garde son alignement */
+
 .fvtt-warhero .div-align-top {
   vertical-align: top;
   text-align: left;
   align-self: flex-start;
-  /* Force l'alignement en haut */
 }
 
 .fvtt-warhero .tab-content-scrollable {
@@ -273,12 +269,10 @@ a:hover {
 .actor-sheet-button {
   box-shadow: inset 0px 1px 0px 0px #a6827e;
   background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
-  /*background-color: #7d5d3b00;*/
   border-radius: 3px;
   border: 2px ridge;
   display: inline-block;
   cursor: pointer;
-  /*color: #ffffff;*/
   font-size: 0.8rem;
   padding: 2px 4px 0px 4px;
   text-decoration: none;
@@ -290,7 +284,6 @@ a:hover {
 
 .actor-sheet-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
-  /*background-color: red;*/
 }
 
 .item-field-input-1,
@@ -391,7 +384,6 @@ a:hover {
 }
 
 .button-img:hover {
-  /*color: rgba(255, 255, 128, 0.7);*/
   border: 1px solid;
   cursor: pointer;
 }
@@ -461,15 +453,6 @@ a:hover {
   padding: 0 3px;
 }
 
-.fvtt-warhero .tox .tox-editor-container {
-  background: #fff;
-}
-
-
-.fvtt-warhero .tox .tox-edit-area {
-  padding: 0 8px;
-}
-
 .fvtt-warhero .resource-label {
   font-weight: bold;
   text-transform: uppercase;
@@ -479,7 +462,6 @@ a:hover {
   height: 40px;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  /*color: #000000;*/
 }
 
 .fvtt-warhero .tabs .item {
@@ -574,15 +556,16 @@ a:hover {
   text-shadow: none;
 }
 
+/*
 .river-button {
   box-shadow: inset 0px 1px 0px 0px;
   background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
-  /*background-color: #7d5d3b00;*/
+  /*background-color: #7d5d3b00;
   border-radius: 3px;
   border: 2px ridge;
   display: inline-block;
   cursor: pointer;
-  /*color: #ffffff;*/
+  /*color: #ffffff;
   font-size: 0.8rem;
   padding: 2px 4px 0px 4px;
   text-decoration: none;
@@ -590,16 +573,18 @@ a:hover {
   position: relative;
   margin: 4px;
 }
+*/
 
+/*
 .chat-card-button {
   box-shadow: inset 0px 1px 0px 0px #a6827e;
   background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
-  /*background-color: #7d5d3b00;*/
+  /*background-color: #7d5d3b00;
   border-radius: 3px;
   border: 2px ridge;
   display: inline-block;
   cursor: pointer;
-  /*color: #ffffff;*/
+  /*color: #ffffff;
   font-size: 0.8rem;
   padding: 4px 12px 0px 12px;
   text-decoration: none;
@@ -612,6 +597,7 @@ a:hover {
   position: relative;
   top: 1px;
 }
+  */
 
 .plus-minus-button {
   box-shadow: inset 0px 1px 0px 0px #a6827e;
@@ -631,11 +617,11 @@ a:hover {
   margin: 0px;
 }
 
-.river-button:hover,
-.plus-minus-button:hover,
-.chat-card-button:hover {
+/*.river-button:hover,*/
+.plus-minus-button:hover/*,*/
+/*.chat-card-button:hover */
+{
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
-  /*background-color: red;*/
 }
 
 .plus-minus-button:active,
@@ -673,19 +659,17 @@ a:hover {
 .drop-spec1,
 .drop-spec2 {
   background: linear-gradient(to bottom, #6c95b9fc 5%, #105177ab 100%);
-  /*background-color: #7d5d3b00;*/
   border-radius: 3px;
   border: 2px ridge;
 }
 
-/*si*/
+
 .items-title-bg {
   margin-top: 6px;
   background: gray;
   color: black;
 }
 
-/*si*/
-.items-title-bg-red {
+ems-title-bg-red {
   background: darkred;
 }
