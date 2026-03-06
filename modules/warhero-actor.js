@@ -61,15 +61,19 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   prepareDerivedData() {
 
+    super.prepareDerivedData();
+
     if (this.type == 'character' || game.user.isGM) {
       this.computeHitPoints()
       this.setLevel()
       this.computeDRTotal()
       this.computeParryBonusTotal()
-      this.computeBonusLanguages()
     }
 
-    super.prepareDerivedData();
+    // Chiamata DOPO che tutti i dati sono stati preparati
+    if (this.type == 'character' || game.user.isGM) {
+      this.computeBonusLanguages()
+    }
   }
 
   /* -------------------------------------------- */
