@@ -27,6 +27,6 @@ export { CharacterData } from "./character-data.js";
 export { PartyData } from "./party-data.js";
 
 // Migration utilities
-export { EquipmentMigration } from "../__deprecated/equipment-migration.js";
-export { ItemMigration } from "../__deprecated/item-migration.js";
-export { ActorMigration } from "../__deprecated/actor-migration.js";
+export { EquipmentMigration } from "../migration/equipment-migration.js";
+export { ItemMigration } from "../migration/item-migration.js";
+export { ActorMigration } from "../migration/actor-migration.js";
