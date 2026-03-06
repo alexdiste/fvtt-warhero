@@ -412,6 +412,7 @@ export class WarheroActor extends Actor {
         }
       }
       let update = { _id: item.id, "system.equipped": !item.system.equipped };
+      console.log("[DEBUG] equipItem updateEmbeddedDocuments", update);
       await this.updateEmbeddedDocuments('Item', [update]); // Updates one EmbeddedEntity
     }
   }
@@ -522,6 +523,7 @@ export class WarheroActor extends Actor {
     await WarheroUtility.showDiceSoNice(dmgRoll, game.settings.get("core", "rollMode"))
     let hp = foundry.utils.duplicate(this.system.secondary.hp)
     hp.value = Number(hp.value) + Number(dmgRoll.total)
+    console.log('[DEBUG] update system.secondary.hp', { hp });
     this.update({ 'system.secondary.hp': hp })
     return Number(dmgRoll.total)
   }
@@ -621,6 +623,7 @@ export class WarheroActor extends Actor {
   async addSubActor(subActorId) {
     let subActors = foundry.utils.duplicate(this.system.subactors);
     subActors.push(subActorId);
+    console.log('[DEBUG] update system.subactors (add)', { subActors });
     await this.update({ 'system.subactors': subActors });
   }
   /* -------------------------------------------- */
@@ -631,6 +634,7 @@ export class WarheroActor extends Actor {
         newArray.push(id);
       }
     }
+    console.log('[DEBUG] update system.subactors (del)', { newArray });
     await this.update({ 'system.subactors': newArray });
   }
 
@@ -667,7 +671,9 @@ export class WarheroActor extends Actor {
   async incrementSkillExp(skillId, inc) {
     let skill = this.items.get(skillId)
     if (skill) {
-      await this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.exp': skill.system.exp + inc }])
+      let update = { _id: skill.id, 'system.exp': skill.system.exp + inc };
+      console.log("[DEBUG] incrementSkillExp updateEmbeddedDocuments", update);
+      await this.updateEmbeddedDocuments('Item', [update])
       let chatData = {
         user: game.user.id,
         rollMode: game.settings.get("core", "rollMode"),
@@ -701,6 +707,7 @@ export class WarheroActor extends Actor {
       "system.secondary.counterspell.nbuse": 0
     };
 
+    console.log('[DEBUG] update resetAllSkillUses', { updates });
     await this.update(updates);
 
     ChatMessage.create({
@@ -750,7 +757,9 @@ export class WarheroActor extends Actor {
     if (objetQ) {
       let newQ = objetQ.system.quantity + incDec
       if (newQ >= 0) {
-        const updated = await this.updateEmbeddedDocuments('Item', [{ _id: objetQ.id, 'system.quantity': newQ }]) // pdates one EmbeddedEntity
+        let update = { _id: objetQ.id, 'system.quantity': newQ };
+        console.log("[DEBUG] incDecQuantity updateEmbeddedDocuments", update);
+        const updated = await this.updateEmbeddedDocuments('Item', [update]) // Updates one EmbeddedEntity
       }
     }
   }
@@ -760,7 +769,9 @@ export class WarheroActor extends Actor {
     if (objetQ) {
       let newQ = objetQ.system.ammocurrent + incDec;
       if (newQ >= 0 && newQ <= objetQ.system.ammomax) {
-        const updated = await this.updateEmbeddedDocuments('Item', [{ _id: objetQ.id, 'system.ammocurrent': newQ }]); // pdates one EmbeddedEntity
+        let update = { _id: objetQ.id, 'system.ammocurrent': newQ };
+        console.log("[DEBUG] incDecAmmo updateEmbeddedDocuments", update);
+        const updated = await this.updateEmbeddedDocuments('Item', [update]); // Updates one EmbeddedEntity
       }
     }
   }
@@ -795,12 +806,12 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   setLevel() {
-    let xp = this.system?.secondary?.xp?.value
-    if (xp == undefined) return
-    let level = 1 + Math.floor(xp / 10)
-    if (level != this.system.secondary.xp.level) {
-      this.update({ 'system.secondary.xp.level': level })
-    }
+    // xp.value è input utente, xp.level è calcolato (assegnazione diretta, NO update!)
+    let xp = this.system?.secondary?.xp?.value;
+    if (xp == undefined) return;
+    let level = 1 + Math.floor(xp / 10);
+    this.system.secondary.xp.level = level;
+    // NB: nessuna chiamata a this.update() qui, per evitare loop e problemi di update
   }
   /* -------------------------------------------- */
   computeDRTotal() {
@@ -815,6 +826,7 @@ export class WarheroActor extends Actor {
     }
     if (drbonustotal < 0) drbonustotal = 0
     if (drbonustotal != this.system?.secondary?.drbonustotal?.value) {
+      console.log('[DEBUG] update system.secondary.drbonustotal.value', { drbonustotal });
       this.update({ 'system.secondary.drbonustotal.value': drbonustotal })
     }
   }
@@ -829,11 +841,17 @@ export class WarheroActor extends Actor {
     let parrybonustotal = this.system?.secondary?.parrybonustotal?.value + parry
     if (parrybonustotal < 0) parrybonustotal = 0
     if (parrybonustotal != this.system?.secondary?.parrybonustotal?.value) {
+      console.log('[DEBUG] update system.secondary.parrybonustotal.value', { parrybonustotal });
       this.update({ 'system.secondary.parrybonustotal.value': parrybonustotal })
     }
   }
   /* -------------------------------------------- */
   computeBonusLanguages() {
+    // Log difensivo per debug
+    console.log("[DEBUG] computeBonusLanguages:", {
+      statistics: this.system?.statistics,
+      min: this.system?.statistics?.min
+    });
     if (!this.system?.statistics?.min?.value || this.system?.secondary?.nblanguage == undefined) return;
     let nblanguage = Math.floor(this.system.statistics.min.value / 2);
     this.system.secondary.nblanguage.value = nblanguage;
@@ -846,6 +864,7 @@ export class WarheroActor extends Actor {
       return false
     }
     mana.value -= Number(spentValue)
+    console.log('[DEBUG] update system.attributes.mana', { mana });
     this.update({ 'system.attributes.mana': mana })
     return true
   }
@@ -854,6 +873,7 @@ export class WarheroActor extends Actor {
   incrementUse(rollData) {
     let stat = foundry.utils.duplicate(this.system[rollData.mode][rollData.statKey])
     stat.nbuse++
+    console.log('[DEBUG] update incrementUse', { stat, rollData });
     this.update({ [`system.${rollData.mode}.${rollData.statKey}`]: stat })
   }
 
