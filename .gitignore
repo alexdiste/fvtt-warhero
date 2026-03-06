@@ -1,7 +1,12 @@
-LOCK
-*.log
-packs/
-scripts/
-package.json
+# Dipendenze e Log
 node_modules/
-src/
+*.log
+.DS_Store
+dist/
+
+# File di configurazione locale (opzionali da ignorare)
+.vscode/
+localscripts/
+
+# COMPENDI
+packs/
