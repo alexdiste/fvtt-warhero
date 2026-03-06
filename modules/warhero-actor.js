@@ -43,13 +43,27 @@ export class WarheroActor extends Actor {
     return super.create(data, options);
   }
 
-  /* -------------------------------------------- */
-  prepareBaseData() {
-  }
+   /* -------------------------------------------- */
+  /**
+   * Prepara i dati derivati dell'attore. Non deve mai chiamare this.update()!
+   * Tutti i campi calcolati vanno assegnati direttamente a this.system.*
+   * Funziona sia su Foundry V10+ che V14.
+   */
+  prepareDerivedData() {
+    super.prepareDerivedData();
 
-  /* -------------------------------------------- */
-  async prepareData() {
-    super.prepareData();
+    // Solo per personaggi o GM
+    if (this.type == 'character' || game.user.isGM) {
+      this.computeHitPoints();
+      this.setLevel();
+      this.computeDRTotal();
+      this.computeParryBonusTotal();
+    }
+
+    // Chiamata DOPO che tutti i dati sono stati preparati
+    if (this.type == 'character' || game.user.isGM) {
+      this.computeBonusLanguages();
+    }
   }
 
   /* -------------------------------------------- */
@@ -83,39 +97,12 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  getEncumbranceCapacity() {
-    return 1;
-  }
-
-  /* -------------------------------------------- */
   getMoneys() {
     let comp = this.items.filter(item => item.type == 'money');
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
-  getFeats() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'feat') || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
-  /* -------------------------------------------- */
-  getFeatsWithDie() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'feat' && item.system.isfeatdie) || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
-  getFeatsWithSL() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'feat' && item.system.issl) || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
-  /* -------------------------------------------- */
-  getLore() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'spell') || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
   getEquippedWeapons() {
     let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'weapon' && item.system.equipped) || []);
     WarheroUtility.sortArrayObjectsByName(comp)
