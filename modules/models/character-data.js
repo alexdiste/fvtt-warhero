@@ -345,12 +345,6 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           nbuse: new fields.NumberField({ initial: 0, required: false, integer: true }),
           maxuse: new fields.NumberField({ initial: 0, required: false, integer: true })
         }),
-        createitem: new fields.SchemaField({
-          label: new fields.StringField({ initial: "WH.ui.createitem", required: false }),
-          abbrev: new fields.StringField({ initial: "createitem", required: false }),
-          style: new fields.StringField({ initial: "edit", required: false }),
-          value: new fields.NumberField({ initial: 0, required: false, integer: true })
-        }),
         nblanguage: new fields.SchemaField({
           label: new fields.StringField({ initial: "WH.ui.languagesbonus", required: false }),
           abbrev: new fields.StringField({ initial: "nblanguage", required: false }),
