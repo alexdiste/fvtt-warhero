@@ -165,7 +165,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   /**
    * Handle changing a Document's image.
    *
-   * @this HellbornActorSheet
+   * @this WarheroActorSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @returns {Promise}
