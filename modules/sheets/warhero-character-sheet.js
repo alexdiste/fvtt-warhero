@@ -285,7 +285,26 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
 
   static async #onActorSleep(event, target) {
     event.preventDefault();
-    this.actor.restActor()
+    const confirmed = await new Promise(resolve => {
+      new foundry.applications.api.DialogV2({
+        title: game.i18n.localize("WH.ui.confirmrest"),
+        content: `<p>${game.i18n.localize("WH.ui.confirmrestcontent")}</p>`,
+        buttons: {
+          yes: {
+            label: game.i18n.localize("Yes"),
+            callback: () => resolve(true)
+          },
+          no: {
+            label: game.i18n.localize("No"),
+            callback: () => resolve(false)
+          }
+        },
+        default: "no",
+        close: () => resolve(false)
+      }).render(true);
+    });
+    if (!confirmed) return;
+    this.actor.restActor();
   }
 
   /**
