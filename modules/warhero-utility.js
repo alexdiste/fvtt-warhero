@@ -59,14 +59,10 @@ export class WarheroUtility {
       return array.join(separator);
     })
 
-    this.gameSettings()
-
   }
 
   /*-------------------------------------------- */
-  static gameSettings() {
-    
-  }
+
 
   /*--------------------- ----------------------- */
   static getActorStats() {
@@ -91,11 +87,7 @@ export class WarheroUtility {
     return foundry.utils.duplicate(this.shieldSkills)
   }
 
-  /* -------------------------------------------- */
-  static async ready() {
-  }
-
-  /* -------------------------------------------- */
+   /* -------------------------------------------- */
   static async loadCompendiumData(compendium) {
     const pack = game.packs.get(compendium)
     return await pack?.getDocuments() ?? []
@@ -108,22 +100,6 @@ export class WarheroUtility {
   }
 
     /* -------------------------------------------- */
-  static getSizeDice(sizeValue) {
-    return __size2Dice[sizeValue]
-  }
-
-  /* -------------------------------------------- */
-  static async getCritical(level, weapon) {
-    const pack = game.packs.get("fvtt-warhero.rolltables")
-
-    let tableName = "Crit " + level + " (" + this.upperFirst(weapon.system.damage) + ")"
-    const index = await pack.getIndex()
-    const entry = index.find(e => e.name === tableName)
-    let table = await pack.getDocument(entry._id)
-    const draw = await table.draw({ displayChat: false, rollMode: "gmroll" })
-    return draw.results.length > 0 ? draw.results[0] : undefined
-  }
-
 
   /* -------------------------------------------- */
   static async preloadHandlebarsTemplates() {
@@ -146,10 +122,6 @@ export class WarheroUtility {
     if (messageId) {
       game.messages.get(messageId)?.delete();
     }
-  }
-
-  static findChatMessageId(current) {
-    return WarheroUtility.getChatMessageId(WarheroUtility.findChatMessage(current));
   }
 
   static getChatMessageId(node) {
@@ -465,28 +437,11 @@ export class WarheroUtility {
     })
   }
   /* -------------------------------------------- */
-  static getUsers(filter) {
-    return game.users.filter(filter).map(user => user.id);
-  }
-  /* -------------------------------------------- */
-  static getWhisperRecipients(rollMode, name) {
-    switch (rollMode) {
-      case "blindroll": return this.getUsers(user => user.isGM);
-      case "gmroll": return this.getWhisperRecipientsAndGMs(name);
-      case "selfroll": return [game.user.id];
-    }
-    return undefined;
-  }
-  /* -------------------------------------------- */
-  static getWhisperRecipientsAndGMs(name) {
-    let recep1 = ChatMessage.getWhisperRecipients(name) || [];
-    return recep1.concat(ChatMessage.getWhisperRecipients('GM'));
-  }
 
   /* -------------------------------------------- */
   static blindMessageToGM(chatOptions) {
     let chatGM = foundry.utils.duplicate(chatOptions);
-    chatGM.whisper = this.getUsers(user => user.isGM);
+    chatGM.whisper = ChatMessage.getWhisperRecipients("GM");
     chatGM.content = "Blinde message of " + game.user.name + "<br>" + chatOptions.content;
     console.log("blindMessageToGM", chatGM);
     game.socket.emit("system.fvtt-warhero", { msg: "msg_gm_chat_message", data: chatGM });
@@ -527,16 +482,20 @@ export class WarheroUtility {
       case "blindroll": // GM only
         if (!game.user.isGM) {
           this.blindMessageToGM(chatOptions);
-
           chatOptions.whisper = [game.user.id];
           chatOptions.content = "Message only to the GM";
-        }
-        else {
-          chatOptions.whisper = this.getUsers(user => user.isGM);
+        } else {
+          chatOptions.whisper = ChatMessage.getWhisperRecipients("GM");
         }
         break;
+      case "gmroll":
+        chatOptions.whisper = ChatMessage.getWhisperRecipients("GM");
+        break;
+      case "selfroll":
+        chatOptions.whisper = [game.user.id];
+        break;
       default:
-        chatOptions.whisper = this.getWhisperRecipients(rollMode, name);
+        chatOptions.whisper = undefined;
         break;
     }
     chatOptions.alias = chatOptions.alias || name;
