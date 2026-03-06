@@ -61,9 +61,6 @@ export class WarheroUtility {
 
   }
 
-  /*-------------------------------------------- */
-
-
   /*--------------------- ----------------------- */
   static getActorStats() {
     return foundry.utils.duplicate(WARHERO_CONFIG.statList)
@@ -117,13 +114,7 @@ export class WarheroUtility {
     return foundry.applications.handlebars.loadTemplates(templatePaths);
   }
 
-  /* -------------------------------------------- */
-  static removeChatMessageId(messageId) {
-    if (messageId) {
-      game.messages.get(messageId)?.delete();
-    }
-  }
-
+  /*
   static getChatMessageId(node) {
     return node?.attributes.getNamedItem('data-message-id')?.value;
   }
@@ -141,6 +132,7 @@ export class WarheroUtility {
     }
     return undefined;
   }
+  */
 
 
   /* -------------------------------------------- */
@@ -206,7 +198,7 @@ export class WarheroUtility {
     }
   }
 
-  /* -------------------------------------------- */
+  /* -------------------------------------------- 
   static async onSocketMesssage(msg) {
     console.log("SOCKET MESSAGE", msg.name)
     if (msg.name == "msg_update_roll") {
@@ -226,8 +218,9 @@ export class WarheroUtility {
       this.addItemDropToActor(actor, item)
     }
   }
+  */
 
-  /* -------------------------------------------- */
+  /* -------------------------------------------- 
   static chatDataSetup(content, modeOverride, isRoll = false, forceWhisper) {
     let chatData = {
       user: game.user.id,
@@ -246,9 +239,8 @@ export class WarheroUtility {
 
     return chatData;
   }
+  */
 
-
-  /* -------------------------------------------- */
   static async showDiceSoNice(roll, rollMode) {
     if (game.modules.get("dice-so-nice")?.active) {
       if (game.dice3d) {
@@ -273,8 +265,6 @@ export class WarheroUtility {
     }
   }
 
-
-  /* -------------------------------------------- */
   static async rollParry(rollData) {
     let actor = game.actors.get(rollData.actorId)
     // ability/save/size => 0
@@ -305,7 +295,6 @@ export class WarheroUtility {
     console.log("Rolldata result", rollData)
   }
 
-  /* -------------------------------------------- */
   static async rollWarhero(rollData) {
 
     let actor = game.actors.get(rollData.actorId)
@@ -396,7 +385,6 @@ export class WarheroUtility {
 
   }
 
-  /* -------------------------------------------- */
   static sortArrayObjectsByName(myArray) {
     myArray.sort((a, b) => {
       let fa = a.name.toLowerCase();
@@ -436,47 +424,9 @@ export class WarheroUtility {
       return 0;
     })
   }
-  /* -------------------------------------------- */
-
-  /* -------------------------------------------- */
-  static blindMessageToGM(chatOptions) {
-    let chatGM = foundry.utils.duplicate(chatOptions);
-    chatGM.whisper = ChatMessage.getWhisperRecipients("GM");
-    chatGM.content = "Blinde message of " + game.user.name + "<br>" + chatOptions.content;
-    console.log("blindMessageToGM", chatGM);
-    game.socket.emit("system.fvtt-warhero", { msg: "msg_gm_chat_message", data: chatGM });
-  }
-
-
-  /* -------------------------------------------- */
-  static async searchItem(dataItem) {
-    let item
-    if (dataItem.pack) {
-      item = await fromUuid("Compendium." + dataItem.pack + "." + dataItem.id)
-    } else {
-      item = game.items.get(dataItem.id)
-    }
-    return item
-  }
-
-  /* -------------------------------------------- */
-  static split3Columns(data) {
-
-    let array = [[], [], []];
-    if (data == undefined) return array;
-
-    let col = 0;
-    for (let key in data) {
-      let keyword = data[key];
-      keyword.key = key; // Self-reference
-      array[col].push(keyword);
-      col++;
-      if (col == 3) col = 0;
-    }
-    return array;
-  }
-
-  /* -------------------------------------------- */
+  
+  /*
+  /* -------------------------------------------- 
   static createChatMessage(name, rollMode, chatOptions) {
     switch (rollMode) {
       case "blindroll": // GM only
@@ -501,6 +451,7 @@ export class WarheroUtility {
     chatOptions.alias = chatOptions.alias || name;
     return ChatMessage.create(chatOptions);
   }
+  */
 
   /* -------------------------------------------- */
   static getBasicRollData() {
