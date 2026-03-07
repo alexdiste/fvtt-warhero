@@ -1,35 +1,18 @@
-/* -------------------------------------------- */
-import { WarheroCombat } from "./warhero-combat.js";
-// ...existing code...
 import { WARHERO_CONFIG } from "./warhero-config.js";
-
-/* -------------------------------------------- */
 
 /* -------------------------------------------- */
 export class WarheroUtility {
 
-  /**
-   * Placeholder for Foundry VTT ready hook
-   */
   static async ready() {
-    // Placeholder: add ready-time logic here if needed
     console.log("WarheroUtility.ready() called");
   }
 
   /* -------------------------------------------- */
   static async init() {
-    //Hooks.on('renderChatLog', (log, html, data) => WarheroUtility.chatListeners(html));
-    /*Hooks.on("dropCanvasData", (canvas, data) => {
-      WarheroUtility.dropItemOnToken(canvas, data)
-    });
-  */
 
     this.rollDataStore = {}
-    this.defenderStore = {}
 
-    // ...existing code...
-
-    Handlebars.registerHelper('concat', function () {
+   Handlebars.registerHelper('concat', function () {
       var outStr = '';
       for (var arg in arguments) {
         if (typeof arguments[arg] != 'object') {
@@ -103,7 +86,6 @@ export class WarheroUtility {
     return compendiumData.filter(filter)
   }
 
-
   /* -------------------------------------------- */
   static async preloadHandlebarsTemplates() {
 
@@ -119,27 +101,6 @@ export class WarheroUtility {
     ]
     return foundry.applications.handlebars.loadTemplates(templatePaths);
   }
-
-  /*
-  static getChatMessageId(node) {
-    return node?.attributes.getNamedItem('data-message-id')?.value;
-  }
-
-  static findChatMessage(current) {
-    return WarheroUtility.findNodeMatching(current, it => it.classList.contains('chat-message') && it.attributes.getNamedItem('data-message-id'));
-  }
-
-  static findNodeMatching(current, predicate) {
-    if (current) {
-      if (predicate(current)) {
-        return current;
-      }
-      return WarheroUtility.findNodeMatching(current.parentElement, predicate);
-    }
-    return undefined;
-  }
-  */
-
 
   /* -------------------------------------------- */
   static createDirectOptionList(min, max) {
@@ -204,50 +165,7 @@ export class WarheroUtility {
     }
   }
 
-  /* -------------------------------------------- 
-  static async onSocketMesssage(msg) {
-    console.log("SOCKET MESSAGE", msg.name)
-    if (msg.name == "msg_update_roll") {
-      this.updateRollData(msg.data)
-    }
-    if (msg.name == "msg_gm_process_attack_defense") {
-      this.processSuccessResult(msg.data)
-    }
-    if (msg.name == "msg_gm_item_drop" && game.user.isGM) {
-      let actor = game.actors.get(msg.data.actorId)
-      let item
-      if (msg.data.isPack) {
-        item = await fromUuid("Compendium." + msg.data.isPack + "." + msg.data.itemId)
-      } else {
-        item = game.items.get(msg.data.itemId)
-      }
-      this.addItemDropToActor(actor, item)
-    }
-  }
-  */
-
-  /* -------------------------------------------- 
-  static chatDataSetup(content, modeOverride, isRoll = false, forceWhisper) {
-    let chatData = {
-      user: game.user.id,
-      rollMode: modeOverride || game.settings.get("core", "rollMode"),
-      content: content
-    };
-
-    if (["gmroll", "blindroll"].includes(chatData.rollMode)) chatData["whisper"] = ChatMessage.getWhisperRecipients("GM").map(u => u.id);
-    if (chatData.rollMode === "blindroll") chatData["blind"] = true;
-    else if (chatData.rollMode === "selfroll") chatData["whisper"] = [game.user];
-
-    if (forceWhisper) { // Final force !
-      chatData["speaker"] = ChatMessage.getSpeaker();
-      chatData["whisper"] = ChatMessage.getWhisperRecipients(forceWhisper);
-    }
-
-    return chatData;
-  }
-  */
-
-  static async showDiceSoNice(roll, rollMode) {
+static async showDiceSoNice(roll, rollMode) {
     if (game.modules.get("dice-so-nice")?.active) {
       if (game.dice3d) {
         let whisper = null;
@@ -273,7 +191,6 @@ export class WarheroUtility {
 
   static async rollParry(rollData) {
     let actor = game.actors.get(rollData.actorId)
-    // ability/save/size => 0
     let diceFormula = "1d12+" + rollData.stat.value
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
@@ -431,7 +348,6 @@ export class WarheroUtility {
     })
   }
   
-  /*
   /* -------------------------------------------- */
   static createChatMessage(name, rollMode, chatOptions) {
     switch (rollMode) {
