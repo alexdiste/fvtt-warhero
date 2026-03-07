@@ -716,20 +716,18 @@ export class WarheroActor extends Actor {
         new foundry.applications.api.DialogV2({
           title: title,
           content: content,
-          config: {
-            buttons: {
-              yes: {
-                label: yesLabel,
-                callback: () => resolve(true)
-              },
-              no: {
-                label: noLabel,
-                callback: () => resolve(false)
-              }
+          buttons: {
+            yes: {
+              label: yesLabel,
+              callback: () => resolve(true)
             },
-            default: "no",
-            close: () => resolve(false)
-          }
+            no: {
+              label: noLabel,
+              callback: () => resolve(false)
+            }
+          },
+          default: "no",
+          close: () => resolve(false)
         }).render(true);
       });
       if (!confirmed) return;
