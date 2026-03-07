@@ -285,32 +285,34 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
 
   static async #onActorSleep(event, target) {
     event.preventDefault();
-    const confirmed = await new Promise(resolve => {
-      // Fallback per la localizzazione
-      const yesLabel = game.i18n.localize("Yes") || "Yes";
-      const noLabel = game.i18n.localize("No") || "No";
-      const title = game.i18n.localize("WH.ui.confirmrest") || "Conferma riposo";
-      const content = `<p>${game.i18n.localize("WH.ui.confirmrestcontent") || "Vuoi confermare il riposo?"}</p>`;
-      new foundry.applications.api.DialogV2({
-        title: title,
+
+    // Localizzazione con fallback
+    const yesLabel = game.i18n.localize("Yes") || "Yes";
+    const noLabel = game.i18n.localize("No") || "No";
+    const title = game.i18n.localize("WH.ui.confirmrest");
+    const content = `<p>${game.i18n.localize("WH.ui.confirmrestcontent")}</p>`;
+
+    // Utilizzo del metodo statico corretto per v13
+    const confirmed = await foundry.applications.api.DialogV2.confirm({
+        window: { title: title },
         content: content,
-        buttons: {
-          yes: {
+        yes: {
             label: yesLabel,
-            callback: () => resolve(true)
-          },
-          no: {
-            label: noLabel,
-            callback: () => resolve(false)
-          }
+            callback: () => true
         },
-        default: "no",
-        close: () => resolve(false)
-      }).render(true);
+        no: {
+            label: noLabel,
+            callback: () => false
+        },
+        rejectClose: false,
+        modal: true
     });
+
     if (!confirmed) return;
+
+    // Esecuzione del riposo
     this.actor.restActor();
-  }
+}
 
   /**
    * Handle casting a power

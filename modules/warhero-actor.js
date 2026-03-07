@@ -704,33 +704,32 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  async resetAllSkillUses(askConfirmation = true) {
-    // Wait for confirmation
+async resetAllSkillUses(askConfirmation = true) {
+    // Gestione della conferma
     if (askConfirmation) {
-      const confirmed = await new Promise(resolve => {
-        // Fallback per la localizzazione
+        // Fallback per la localizzazione (i tuoi originali)
         const yesLabel = game.i18n.localize("Yes") || "Yes";
         const noLabel = game.i18n.localize("No") || "No";
-        const title = game.i18n.localize("WH.ui.confirmresetskillsuse") || "Conferma reset abilità";
-        const content = `<p>${game.i18n.localize("WH.ui.confirmresetskillsusecontent") || "Vuoi azzerare l'uso di tutte le abilità?"}</p>`;
-        new foundry.applications.api.DialogV2({
-          title: title,
-          content: content,
-          buttons: {
+        const title = game.i18n.localize("WH.ui.confirmresetskillsuse");
+        const content = `<p>${game.i18n.localize("WH.ui.confirmresetskillsusecontent")}</p>`;
+
+        // Utilizzo del metodo statico corretto per v13
+        const confirmed = await foundry.applications.api.DialogV2.confirm({
+            window: { title: title },
+            content: content,
             yes: {
-              label: yesLabel,
-              callback: () => resolve(true)
+                label: yesLabel,
+                callback: () => true
             },
             no: {
-              label: noLabel,
-              callback: () => resolve(false)
-            }
-          },
-          default: "no",
-          close: () => resolve(false)
-        }).render(true);
-      });
-      if (!confirmed) return;
+                label: noLabel,
+                callback: () => false
+            },
+            rejectClose: false,
+            modal: true
+        });
+
+        if (!confirmed) return;
     }
 
     let updates = []

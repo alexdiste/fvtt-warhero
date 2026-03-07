@@ -261,6 +261,8 @@
   "WH.chat.useshield":"Usare scudo?",
   "WH.chat.power": "Potere",
   "WH.chat.powerlevel": "Livello di potere",
+  "WH.ui.confirmrest":"Conferma riposo",
+  "WH.ui.confirmrestcontent":"Sei sicuro di voler riposare?",
   "WH.chat.actorrested" : "{name} ha dormito recuperando tutti i PF, tutto il mana, tutti gli usi di contropotere e tutti gli usi delle abilità. Ricordati di controllare se hai già mangiato questo giorno o no, in caso negativo ricordati di scalare una razione",
 
   "WH.notif.skillmaxuse": "Usi massimi raggiunti",

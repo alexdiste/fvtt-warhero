@@ -262,6 +262,8 @@
   "WH.chat.useshield":"Use shield ?",
   "WH.chat.power": "Power",
   "WH.chat.powerlevel": "Power Level",
+  "WH.ui.confirmrest":"Confirm Rest",
+  "WH.ui.confirmrestcontent":"Are you sure you want to rest?",
   "WH.chat.actorrested" : "{name} has rested recovering all HP, all mana, all counterpower uses and all skill uses. Remember to check if you have already eaten today or not, if not remember to subtract one ration",
 
   "WH.notif.skillmaxuse": "Maximum skill usage reach - Use is not allowed",
