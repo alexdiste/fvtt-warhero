@@ -7,8 +7,8 @@
     "minimum": "13",
     "verified": "13"
   },
-  "manifest": "https://github.com/alexdiste/fvtt-warhero/releases/download/v13.54/system.json",
-  "download": "https://github.com/alexdiste/fvtt-warhero/releases/download/v13.54/fvtt-warhero-13.54.zip",
+  "manifest": "https://github.com/alexdiste/fvtt-warhero/releases/latest/download/system.json",
+  "download": "https://github.com/alexdiste/fvtt-warhero/releases/latest/download/fvtt-warhero.zip",
   "authors": [
 	{
       "name": "AlexDiste",
