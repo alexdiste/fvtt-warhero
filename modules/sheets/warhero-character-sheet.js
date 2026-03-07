@@ -286,21 +286,28 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
   static async #onActorSleep(event, target) {
     event.preventDefault();
     const confirmed = await new Promise(resolve => {
+      // Fallback per la localizzazione
+      const yesLabel = game.i18n.localize("Yes") || "Yes";
+      const noLabel = game.i18n.localize("No") || "No";
+      const title = game.i18n.localize("WH.ui.confirmrest") || "Conferma riposo";
+      const content = `<p>${game.i18n.localize("WH.ui.confirmrestcontent") || "Vuoi confermare il riposo?"}</p>`;
       new foundry.applications.api.DialogV2({
-        title: game.i18n.localize("WH.ui.confirmrest"),
-        content: `<p>${game.i18n.localize("WH.ui.confirmrestcontent")}</p>`,
-        buttons: {
-          yes: {
-            label: game.i18n.localize("Yes"),
-            callback: () => resolve(true)
+        title: title,
+        content: content,
+        config: {
+          buttons: {
+            yes: {
+              label: yesLabel,
+              callback: () => resolve(true)
+            },
+            no: {
+              label: noLabel,
+              callback: () => resolve(false)
+            }
           },
-          no: {
-            label: game.i18n.localize("No"),
-            callback: () => resolve(false)
-          }
-        },
-        default: "no",
-        close: () => resolve(false)
+          default: "no",
+          close: () => resolve(false)
+        }
       }).render(true);
     });
     if (!confirmed) return;

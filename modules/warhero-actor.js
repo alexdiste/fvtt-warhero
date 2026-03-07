@@ -708,21 +708,28 @@ export class WarheroActor extends Actor {
     // Wait for confirmation
     if (askConfirmation) {
       const confirmed = await new Promise(resolve => {
+        // Fallback per la localizzazione
+        const yesLabel = game.i18n.localize("Yes") || "Yes";
+        const noLabel = game.i18n.localize("No") || "No";
+        const title = game.i18n.localize("WH.ui.confirmresetskillsuse") || "Conferma reset abilità";
+        const content = `<p>${game.i18n.localize("WH.ui.confirmresetskillsusecontent") || "Vuoi azzerare l'uso di tutte le abilità?"}</p>`;
         new foundry.applications.api.DialogV2({
-          title: game.i18n.localize("WH.ui.confirmresetskillsuse"),
-          content: `<p>${game.i18n.localize("WH.ui.confirmresetskillsusecontent")}</p>`,
-          buttons: {
-            yes: {
-              label: game.i18n.localize("Yes"),
-              callback: () => resolve(true)
+          title: title,
+          content: content,
+          config: {
+            buttons: {
+              yes: {
+                label: yesLabel,
+                callback: () => resolve(true)
+              },
+              no: {
+                label: noLabel,
+                callback: () => resolve(false)
+              }
             },
-            no: {
-              label: game.i18n.localize("No"),
-              callback: () => resolve(false)
-            }
-          },
-          default: "no",
-          close: () => resolve(false)
+            default: "no",
+            close: () => resolve(false)
+          }
         }).render(true);
       });
       if (!confirmed) return;
