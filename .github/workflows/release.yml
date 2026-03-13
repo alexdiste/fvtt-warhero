@@ -44,23 +44,23 @@ jobs:
 
       - name: Compile Packs
         run: |
-          # 1. Configurazione del CLI
+          # 1. Configurazione CLI
           mkdir -p $HOME/.foundryvtt-cli
           fvtt configure set dataPath $GITHUB_WORKSPACE
           
-          # 2. Ciclo Bash per compilare ogni cartella come un compendio separato
+          # 2. Ciclo di compilazione
           for dir in ./src/packs/*/ ; do
-            # Ricaviamo il nome della cartella (es. abilita-aggiuntive)
             packname=$(basename "$dir")
             echo "Compiling pack: $packname"
             
-            # Esecuzione del comando con l'aggiunta di -n
+            # Usiamo il comando pack puntando direttamente alla cartella
+            # ma forzando il formato YAML
             fvtt package pack \
               --id fvtt-warhero \
               --type System \
               --yaml \
-              --input "$dir" \
-              --out "./packs" \
+              --input "./src/packs/$packname" \
+              --out "./packs/$packname" \
               -n "$packname"
           done
 
