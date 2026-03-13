@@ -44,7 +44,7 @@ jobs:
 
       - name: Compile Packs
         # Questo comando compila i sorgenti in 'packs/' partendo da 'src/packs/'
-        run: fvtt package pack --id fvtt-warhero --yaml --input src/packs
+        run: fvtt package pack --id fvtt-warhero --type System --yaml --input src/packs
 
       - name: Update system.json with sed
         run: |
