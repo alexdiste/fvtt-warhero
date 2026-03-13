@@ -41,16 +41,11 @@ jobs:
 
       - name: Compile Packs
         run: |
-          #crea la cartella packs se non esiste
-          #mkdir -p ./packs
-
-          for dir in ./src/packs/*/ ; do
-            #ricvava il nome della cartella del compendio
+          for dir in ./src/packs/*/ ; do            
             packname=$(basename "$dir")
-
-            echo " $(pwd)/$packaname sarà scritta su  $(pwd)/packs/$packname"
-
-            #fvtt package pack -n "$packname" --in "src/packs/"$packname"/_source" --out "packs/"$packname" --id "fvtt-warhero" --type "System" --yaml
+            #crea la cartella di destinazione se non esiste
+            mkdir -p "packs/$packname"
+            fvtt package pack -n "$packname" --in "src/packs/$packname/_source" --out "packs/$packname" --id "fvtt-warhero" --type "System" --yaml
           done
 
       - name: Update system.json with sed
