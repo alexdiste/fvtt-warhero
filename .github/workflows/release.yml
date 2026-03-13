@@ -40,15 +40,12 @@ jobs:
         run: npm install -g @foundryvtt/foundryvtt-cli
 
       - name: Compile Packs
-        run: |          
-          echo "Il workspace è: $GITHUB_WORKSPACE"
-          echo "Mi trovo in: $(pwd)"
+        run: |
           for dir in ./src/packs/*/ ; do
             packname=$(basename "$dir")
-            echo "fvtt package pack -n $packname -s src/$packname -d packs/$packname\n" 
+
+            echo "fvtt package pack -n $packname --input "src/packs/$packname/_source" --out "packs/$packname" --id "fvtt-warhero" --type "System" --yaml"
           done
-
-
 
       - name: Update system.json with sed
         run: |
