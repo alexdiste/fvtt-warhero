@@ -43,8 +43,14 @@ jobs:
         run: npm install -g @foundryvtt/foundryvtt-cli
 
       - name: Compile Packs
-        # Questo comando compila i sorgenti in 'packs/' partendo da 'src/packs/'
-        run: fvtt package pack --id fvtt-warhero --type System --yaml --input ./src/packs --out ./packs
+        run: |
+          # 1. Crea una cartella fittizia per i dati e configura il CLI
+          mkdir -p $HOME/.foundryvtt-cli
+          fvtt configure set dataPath $GITHUB_WORKSPACE
+          
+          # 2. Esegui il packing dei file YAML
+          # Usiamo 'pack' indicando esplicitamente dove sono i sorgenti e dove deve finire il db
+          fvtt package pack --id fvtt-warhero --type System --yaml --input ./src/packs --out ./packs
 
       - name: Update system.json with sed
         run: |
