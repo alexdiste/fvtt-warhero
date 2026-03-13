@@ -3,8 +3,8 @@ name: Release System (Strict Stable Logic)
 on:
   push:
     tags:
-      - 'v*' # Trigger per Prerelease / Beta
-      - 's*' # Trigger per Release STABILE
+      - 'v*'
+      - 's*'
 
 jobs:
   build:
@@ -17,11 +17,8 @@ jobs:
         id: vars
         run: |
           RAW_TAG=${GITHUB_REF#refs/tags/}
-          # Estraiamo solo il numero di versione togliendo la prima lettera (v o s)
           VERSION_NUMBER=${RAW_TAG#?}
-
           echo "version_to_write=$VERSION_NUMBER" >> $GITHUB_OUTPUT
-
           if [[ "$RAW_TAG" == s* ]]; then
             echo "is_beta=false" >> $GITHUB_OUTPUT
             echo "zip_name=fvtt-warhero.zip" >> $GITHUB_OUTPUT
@@ -44,23 +41,21 @@ jobs:
 
       - name: Compile Packs
         run: |
-          # 1. Configurazione minima
           mkdir -p $HOME/.foundryvtt-cli
           fvtt configure set dataPath $GITHUB_WORKSPACE
+          mkdir -p ./packs
           
-          # 2. Ciclo di compilazione semplificato
-          # Puntiamo alla cartella 'parent' del compendio (src/packs/nome-compendio)
-          # Il CLI cercherà automaticamente i sorgenti dentro la sottocartella _source
           for dir in ./src/packs/*/ ; do
             packname=$(basename "$dir")
             echo "Compiling pack: $packname"
-            
+            # Puntiamo alla cartella genitrice, il CLI caricherà da _source
             fvtt package pack \
               --id fvtt-warhero \
               --type System \
               --yaml \
               --input "./src/packs/$packname" \
-              --out "./packs/$packname"
+              --out "./packs/$packname" \
+              -n "$packname"
           done
 
       - name: Update system.json with sed
@@ -71,7 +66,6 @@ jobs:
 
       - name: Create Clean Zip
         run: |
-          # Escludiamo src/ e src/packs/ perché vogliamo solo i file compilati in packs/
           zip -r ${{ steps.vars.outputs.zip_name }} . \
           -x ".*" "*/.*" "scripts/*" "src/**" "src/*" \
           -x "package.json" "fvtt-warhero*.zip" "docs/*" "changelog.md" \
