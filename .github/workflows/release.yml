@@ -44,24 +44,23 @@ jobs:
 
       - name: Compile Packs
         run: |
-          # 1. Configurazione CLI
+          # 1. Configurazione minima
           mkdir -p $HOME/.foundryvtt-cli
           fvtt configure set dataPath $GITHUB_WORKSPACE
           
-          # 2. Ciclo di compilazione
+          # 2. Ciclo di compilazione semplificato
+          # Puntiamo alla cartella 'parent' del compendio (src/packs/nome-compendio)
+          # Il CLI cercherà automaticamente i sorgenti dentro la sottocartella _source
           for dir in ./src/packs/*/ ; do
             packname=$(basename "$dir")
             echo "Compiling pack: $packname"
             
-            # Usiamo il comando pack puntando direttamente alla cartella
-            # ma forzando il formato YAML
             fvtt package pack \
               --id fvtt-warhero \
               --type System \
               --yaml \
               --input "./src/packs/$packname" \
-              --out "./packs/$packname" \
-              -n "$packname"
+              --out "./packs/$packname"
           done
 
       - name: Update system.json with sed
