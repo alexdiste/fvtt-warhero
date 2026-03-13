@@ -42,20 +42,23 @@ jobs:
       - name: Compile Packs
         run: |
           mkdir -p $HOME/.foundryvtt-cli
+          # Impostiamo la dataPath sulla root del workspace
           fvtt configure set dataPath $GITHUB_WORKSPACE
           mkdir -p ./packs
           
+          # Ciclo sulle cartelle dentro src/packs
           for dir in ./src/packs/*/ ; do
+            # Rimuove lo slash finale per ottenere solo il nome della cartella
             packname=$(basename "$dir")
             echo "Compiling pack: $packname"
-            # Puntiamo alla cartella genitrice, il CLI caricherà da _source
+            
+            # Modifica qui: puntiamo esplicitamente alla cartella _source
             fvtt package pack \
               --id fvtt-warhero \
               --type System \
               --yaml \
-              --input "./src/packs/$packname" \
-              --out "./packs/$packname" \
-              -n "$packname"
+              --input "./src/packs/$packname/_source" \
+              --out "./packs/$packname"
           done
 
       - name: Update system.json with sed
