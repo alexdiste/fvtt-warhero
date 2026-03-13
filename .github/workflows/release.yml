@@ -40,36 +40,15 @@ jobs:
         run: npm install -g @foundryvtt/foundryvtt-cli
 
       - name: Compile Packs
-        run: |
-          mkdir -p $HOME/.foundryvtt-cli
-          fvtt configure set dataPath $GITHUB_WORKSPACE
-          echo "data path attuale:"
-          fvtt configure get dataPath  
-          mkdir -p ./packs
-          
+        run: |          
+          echo "Il workspace è: $GITHUB_WORKSPACE"
+          echo "Mi trovo in: $(pwd)"
           for dir in ./src/packs/*/ ; do
             packname=$(basename "$dir")
-            echo "Processing pack: $packname"
-            
-            input_dir="$GITHUB_WORKSPACE/src/packs/$packname/_source"
-            output_dir="$GITHUB_WORKSPACE/packs/$packname"
-            
-            if [ ! -d "$input_dir" ]; then
-              echo "⚠️ Skipping $packname: missing _source directory"
-              continue
-            fi
-            
-            rm -rf "$output_dir"
-            mkdir -p "$output_dir"
-            
-            fvtt package pack \
-              --id fvtt-warhero \
-              --type System \
-              --yaml \
-              --input "$input_dir" \
-              --out "$output_dir" \
-              -n "$packname"
+            echo "fvtt package pack -n $packname -s src/$packname -d packs/$packname\n" 
           done
+
+
 
       - name: Update system.json with sed
         run: |
