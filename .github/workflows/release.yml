@@ -46,17 +46,26 @@ jobs:
           mkdir -p ./packs
           
           for dir in ./src/packs/*/ ; do
-            # Rimuove gli slash e ottiene il nome della cartella (es: abilita-aggiuntive)
             packname=$(basename "$dir")
-            echo "Compiling pack: $packname"
+            echo "---"
+            echo "Processing pack: $packname"
             
-            # Usiamo -n per dare il nome al file e --input per la sorgente corretta
+            input_dir="$GITHUB_WORKSPACE/src/packs/$packname/_source"
+            output_dir="$GITHUB_WORKSPACE/packs/$packname"
+            
+            if [ ! -d "$input_dir" ]; then
+              echo "⚠️ Skipping $packname: missing _source directory"
+              continue
+            fi
+            
+            mkdir -p "$output_dir"
+            
             fvtt package pack \
               --id fvtt-warhero \
               --type System \
               --yaml \
-              --input "./src/packs/$packname/_source" \
-              --out "./packs/$packname" \
+              --input "$input_dir" \
+              --out "$output_dir" \
               -n "$packname"
           done
 
