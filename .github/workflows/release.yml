@@ -44,13 +44,25 @@ jobs:
 
       - name: Compile Packs
         run: |
-          # 1. Crea una cartella fittizia per i dati e configura il CLI
+          # 1. Configurazione del CLI
           mkdir -p $HOME/.foundryvtt-cli
           fvtt configure set dataPath $GITHUB_WORKSPACE
           
-          # 2. Esegui il packing dei file YAML
-          # Usiamo 'pack' indicando esplicitamente dove sono i sorgenti e dove deve finire il db
-          fvtt package pack --id fvtt-warhero --type System --yaml --input ./src/packs --out ./packs
+          # 2. Ciclo Bash per compilare ogni cartella come un compendio separato
+          for dir in ./src/packs/*/ ; do
+            # Ricaviamo il nome della cartella (es. abilita-aggiuntive)
+            packname=$(basename "$dir")
+            echo "Compiling pack: $packname"
+            
+            # Esecuzione del comando con l'aggiunta di -n
+            fvtt package pack \
+              --id fvtt-warhero \
+              --type System \
+              --yaml \
+              --input "$dir" \
+              --out "./packs" \
+              -n "$packname"
+          done
 
       - name: Update system.json with sed
         run: |
