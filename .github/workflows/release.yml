@@ -43,11 +43,12 @@ jobs:
         run: |
           mkdir -p $HOME/.foundryvtt-cli
           fvtt configure set dataPath $GITHUB_WORKSPACE
+          echo "data path attuale:"
+          fvvtt configure get dataPath  
           mkdir -p ./packs
           
           for dir in ./src/packs/*/ ; do
             packname=$(basename "$dir")
-            echo "---"
             echo "Processing pack: $packname"
             
             input_dir="$GITHUB_WORKSPACE/src/packs/$packname/_source"
@@ -58,6 +59,7 @@ jobs:
               continue
             fi
             
+            rm -rf "$output_dir"
             mkdir -p "$output_dir"
             
             fvtt package pack \
