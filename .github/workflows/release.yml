@@ -44,7 +44,7 @@ jobs:
           for dir in ./src/packs/*/ ; do            
             packname=$(basename "$dir")
             #crea la cartella di destinazione se non esiste
-            mkdir -p "packs/$packname"
+            #mkdir -p "packs/$packname"
             fvtt package pack -n "$packname" --in "src/packs/$packname/_source" --out "packs/$packname" --id "fvtt-warhero" --type "System" --yaml
           done
 
