@@ -1,0 +1,49 @@
+name: Ampolla (piena)
+type: equipment
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: unknown
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una @Compendium[fvtt-warhero.equipaggiamento.SHIuwc7ia5WVyuvO]{Ampolla}
+    piena di un liquido. Ma cosa sar&agrave;?</p>
+
+    <p>Potrebbe essere una pozione magica, un veleno, semplice acqua o
+    chiss&agrave; che altro.</p>
+
+    <p>Generalmente le ampolle sono usate per le pozioni magiche perch&egrave;
+    per i veleni si usano le
+    @Compendium[fvtt-warhero.equipaggiamento.IqKxYXDyz9MpkF8F]{boccette o fiale}
+    ma mai dire mai...</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 2d3c1dfcac610e6920ba2e769df50eab60097987
+    sourceId: Item.j8P5gW0QJu5HXeET
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701671872675
+  modifiedTime: 1704816315077
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 2esxpvX1iXiEQfC6
+sort: 20000000
+_key: '!items!2esxpvX1iXiEQfC6'

@@ -1,0 +1,38 @@
+name: In difensiva
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: untilendcombat
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +2 a difesa
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Il personaggio &egrave; in difensiva. +2 a difesa</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 64a489fee4e6a553f10e10115a78d28980c53438
+    sourceId: Item.ZAVSAIeG8t45A64d
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437150883
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpuMly3c9eb7TlVk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 704tqdDPp2aoWfVh
+_key: '!items!704tqdDPp2aoWfVh'

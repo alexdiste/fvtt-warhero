@@ -1,0 +1,39 @@
+name: Runologo - Controllo del burattino
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Funziona esattamente come il controllo del Golem ma il bersaglio in
+    questione &egrave; un burattino,&nbsp;dopo di che il runologo pu&ograve;
+    controllare questo singolo burattino come se fosse un burattinaio con
+    l&rsquo; abilit&agrave; &ldquo;Mosse dei burattini&rdquo; Non &egrave;
+    possibile avere pi&ugrave; di un burattino sotto controllo
+    contemporaneamente</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 3c53b1ce9a869becf6915349726645af8d5b39e7
+    sourceId: Item.zUNBPUI9U2nxcxTm
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352038883
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: FWHJ5li567T9UI1d
+sort: 1500000
+_key: '!items!FWHJ5li567T9UI1d'

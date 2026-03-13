@@ -1,0 +1,41 @@
+name: Forziere o scrigno enorme
+type: equipment
+img: icons/containers/chest/chest-elm-steel-brown.webp
+system:
+  equiptype: ''
+  cost: 30
+  quantity: 1
+  equipped: false
+  slotused: 16
+  slotlocation: backpack
+  providedslot: 36
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Questo forziere occupa 16 slot nello zaino ma ne
+    pu&ograve; contere 36.&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1705385293ad53a0051f1daf43be76e4f8e66b72
+    sourceId: Item.TlPGRVf41bVrnVwq
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681054350432
+  modifiedTime: 1704871582332
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: LNi10yZQKGeU1MLw
+sort: 19050000
+_key: '!items!LNi10yZQKGeU1MLw'

@@ -1,0 +1,37 @@
+name: Fauci del Cerbero
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>un cerbero che riesca a mordere un bersaglio applica su di esso un
+    effetto magico che impedisce alla creature per i successivi 2 round di fare
+    uso di qualsiasi incantesimo della sfera viaggio.</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: abeb74e1f24451b5b1eab26fd6792ffe5af298ef
+    sourceId: Item.VweNQKJ9g2v1K3FK
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766235509720
+  modifiedTime: 1766235509720
+  lastModifiedBy: uzeu86bhmL5CiHhN
+folder: null
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+_id: VZpYzKkI4bmas6Zi
+sort: 0
+_key: '!items!VZpYzKkI4bmas6Zi'

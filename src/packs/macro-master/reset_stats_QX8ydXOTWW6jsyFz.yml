@@ -1,0 +1,24 @@
+name: reset stats
+type: script
+command: "//Macro per resettare FIS,IST e MEN per poter ripartire con il personaggiomante\nif (!token){\n\tChatMessage.create({\n\tuser : game.user._id,\n\tcontent:\"Devi selezionare un token\"\n\t});\n\treturn;\n}else{\n\tawait token.actor.update({\"system.statistics.str.value\": 0}); //resetta FISico\n\tawait token.actor.update({\"system.statistics.dex.value\": 0}); //resetta ISTinto\n\tawait token.actor.update({\"system.statistics.min.value\": 0});//resetta MENte\n\tChatMessage.create({\n\tuser : game.user._id,\n\tcontent:\"Statistiche resettate\"\n\t});\n}"
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+author: lXFgtDDsvLskIOGw
+scope: global
+folder: null
+ownership:
+  default: 0
+  lXFgtDDsvLskIOGw: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.21'
+  createdTime: 1759988609371
+  modifiedTime: 1772339778766
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: QX8ydXOTWW6jsyFz
+sort: 1000000
+_key: '!macros!QX8ydXOTWW6jsyFz'

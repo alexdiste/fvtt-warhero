@@ -1,0 +1,68 @@
+name: Chierico
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: true
+  issecondary: false
+  description: >-
+    <p>Sacerdote devoto alle arti divine.</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.BfOV4iFhgm2g7HoC]{Chierico
+    - Contropotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bDJFkMddaX9wy8BS]{Chierico
+    - Dominio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yOt67STTPbLVhXwD]{Chierico
+    - Donazione (+2 mana)}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vLmxh9L0w0AgHJTL]{Chierico
+    - Preghiera}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.IknUEJvazpHKcfrx]{Chierico
+    - Scacciare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.fpLoxxxfCQmAagfU]{Chierico
+    - Sfere conosciute}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.AEBDSgpOLfJn0FG5]{Chierico
+    - Vera fede}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 7c2392f17cf6e44d8fb3e893a2fa9ed6d2729158
+    sourceId: Item.KIbqEpVMdTJyEzDU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680859705976
+  modifiedTime: 1743436999952
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.tQQ2BphjqU2oZ300
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: F4WYMf6IDsxxqQTh
+_key: '!items!F4WYMf6IDsxxqQTh'

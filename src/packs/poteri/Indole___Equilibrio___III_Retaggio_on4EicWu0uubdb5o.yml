@@ -1,0 +1,26 @@
+name: Indole - Equilibrio - III Retaggio
+type: power
+system:
+  level: 3
+  magicschool: Indole - Equilibrio
+  description: infligge 12d6 danni a una creatura neutrale CD 16, MEN, dimezzare.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904902
+  modifiedTime: 1743439294874
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: on4EicWu0uubdb5o
+folder: null
+sort: 12900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!on4EicWu0uubdb5o'

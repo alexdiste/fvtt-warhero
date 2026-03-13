@@ -1,0 +1,41 @@
+name: Piastre pesanti
+type: armor
+img: icons/equipment/chest/breastplate-banded-steel.webp
+system:
+  armortype: heavy
+  equipped: false
+  damagereduction: 6
+  cost: 680
+  quantity: 1
+  slotused: 1
+  slotlocation: armor
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una corazza di piastre pesanti. RD: [[/r 6
+    #Riduzione danno armatura pesante]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a7bb5b38dca1fd38c99464c40c3d6b2ac1f87920
+    sourceId: Item.YEnb2oYn7vyNUoYM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680933563707
+  modifiedTime: 1698573856350
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.YEnb2oYn7vyNUoYM
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: OpG86nExKIsoRiLe
+_key: '!items!OpG86nExKIsoRiLe'

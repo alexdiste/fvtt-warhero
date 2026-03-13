@@ -1,0 +1,37 @@
+name: Rabdomante - Bacchetta da corpo a corpo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; usare una bacchetta magica come fosse un'arma
+    da corpo a corpo e con<br>essa infligge [[/r 1d8]] danni, ma non appartiene
+    a nessuna delle categorie di arma</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 52d9eab12dd4965363e50b29cea859bcfd519203
+    sourceId: Item.en8H1yEUJZk0vdrw
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.UKAxOqHCWtD5XbuU
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352946726
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: STRlMPTdQWjCQLg1
+sort: 2300000
+_key: '!items!STRlMPTdQWjCQLg1'

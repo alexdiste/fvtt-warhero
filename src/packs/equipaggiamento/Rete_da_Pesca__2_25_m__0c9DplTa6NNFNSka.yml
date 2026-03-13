@@ -1,0 +1,39 @@
+name: Rete da Pesca (2,25 m)
+type: equipment
+img: icons/tools/fishing/net-simple-brown.webp
+system:
+  equiptype: ''
+  cost: 4
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 10669d44870363ac96653130bae87ab401af7098
+    sourceId: Item.UGjIKappwsgynO8q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681648882504
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.UGjIKappwsgynO8q
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 36400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 0c9DplTa6NNFNSka
+_key: '!items!0c9DplTa6NNFNSka'

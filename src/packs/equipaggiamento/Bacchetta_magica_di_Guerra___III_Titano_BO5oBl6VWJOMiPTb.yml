@@ -1,0 +1,42 @@
+name: Bacchetta magica di Guerra - III Titano
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.wnw46cRzlPWbO5PV]{Guerra - III
+    Titano} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 8c630872049368b2f757ec54a29674ec2c63c3ed
+    sourceId: Item.lNJGH3r3oxKx41yA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613829521
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: BO5oBl6VWJOMiPTb
+sort: 6600000
+_key: '!items!BO5oBl6VWJOMiPTb'

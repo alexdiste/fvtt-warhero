@@ -1,0 +1,39 @@
+name: Serratura o lucchetto media (CD13)
+type: equipment
+img: icons/sundries/misc/lock-open-yellow.webp
+system:
+  equiptype: ''
+  cost: 40
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 5569fc044918ad3ab0f58992c264297860547cf4
+    sourceId: Item.UlAZPOOvESkcwhsY
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: NcER43qfFSbz0nV7
+sort: 16300000
+_key: '!items!NcER43qfFSbz0nV7'

@@ -1,0 +1,33 @@
+name: Vegetale - IV Aiuto della natura
+type: power
+system:
+  level: 4
+  magicschool: Vegetale
+  description: >-
+    <p>si evocano 3
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.X6AlhTKZSdwMWWJ1]{Treant }
+    che rimangono per 5 round ognuno con le seguenti statistiche: fis: 7 ist:3
+    men:3 3x frustata [[/r 2d6 #frustata]], guarigione rapida 5. si considera
+    una unica evocazione al fine dei limiti di controllo di creature evocate e
+    si calcolano le statistiche come le creature evocate, ma il tempo di lancio
+    di questo incantesimo &egrave; di una mossa incantesimo</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904985
+  modifiedTime: 1743439294932
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: vtmeYf3FxtbUlc8k
+folder: null
+sort: 14600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!vtmeYf3FxtbUlc8k'

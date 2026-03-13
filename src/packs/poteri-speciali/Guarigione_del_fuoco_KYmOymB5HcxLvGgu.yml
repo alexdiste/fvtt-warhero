@@ -1,0 +1,36 @@
+name: Guarigione del fuoco
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>un danno di tipo fuoco cura gli elementali del fuoco invece di
+    infliggergli danni</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: d9c8938b14163d2666f0b000983490a3ff35b698
+    sourceId: Item.PjRoDjRreXWRN92s
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766235718531
+  modifiedTime: 1766235718531
+  lastModifiedBy: p6zCQ626i2fSln47
+folder: null
+ownership:
+  default: 0
+  p6zCQ626i2fSln47: 3
+_id: KYmOymB5HcxLvGgu
+sort: 0
+_key: '!items!KYmOymB5HcxLvGgu'

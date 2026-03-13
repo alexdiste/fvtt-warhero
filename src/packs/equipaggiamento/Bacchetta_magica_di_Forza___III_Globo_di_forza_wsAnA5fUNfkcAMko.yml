@@ -1,0 +1,42 @@
+name: Bacchetta magica di Forza - III Globo di forza
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.fKEXWz1U2rXN10bh]{Forza - III
+    Globo di forza} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 20a7789726ccae0e89ae5fdbb1e916a86552f4ec
+    sourceId: Item.pxNnF9qHtCQ4JgSO
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613829101
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: wsAnA5fUNfkcAMko
+sort: 10600000
+_key: '!items!wsAnA5fUNfkcAMko'

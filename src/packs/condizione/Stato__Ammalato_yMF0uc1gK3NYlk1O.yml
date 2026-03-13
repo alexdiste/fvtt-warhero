@@ -1,0 +1,46 @@
+name: 'Stato: Ammalato'
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Il pg è ammalato
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Rappresenta che il personaggio ha contratto una malattia</p>
+
+    <p>@UUID[JournalEntry.xcxNQf6ypjQsFUcB.JournalEntryPage.hZ4FiVSBWJO22vvm]{Lista
+    malattie}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: c3b0f7c1e3333acc8da638c16c79f479dc2b304e
+    sourceId: Item.YUO1VqPOUjR00FUL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552687
+  modifiedTime: 1743437151735
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: yMF0uc1gK3NYlk1O
+sort: 2600000
+_key: '!items!yMF0uc1gK3NYlk1O'

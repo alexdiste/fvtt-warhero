@@ -1,0 +1,46 @@
+name: Pozione del vigore (da alchimista)
+type: potion
+img: icons/consumables/potions/bottle-corked-blue.webp
+system:
+  cost: 0
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '0'
+  preparetime: '0'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica.</p>
+
+    <p>Se bevuta entro il round in cui &egrave; stata creata, aumenta la difesa
+    di 4 punti per il prossimo scontro. La stessa pozione non cumula i suoi
+    effetti. Creare e bere la pozione &egrave; considerata una mossa di
+    azione</p>
+  price: '0'
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 60a9f915034ab6697c494156a2e24cccf50b85dd
+    sourceId: Compendium.world.temp.MKoeNWV1NGnpib6b
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637553239
+  modifiedTime: 1698851619204
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.MKoeNWV1NGnpib6b
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: McpdihAZXARl73ml
+_key: '!items!McpdihAZXARl73ml'

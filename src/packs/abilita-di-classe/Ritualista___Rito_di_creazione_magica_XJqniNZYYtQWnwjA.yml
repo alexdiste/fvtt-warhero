@@ -1,0 +1,37 @@
+name: Ritualista - Rito di creazione magica
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno&nbsp;creare un oggetto
+    magico, pagandolo la met&agrave; del prezzo che&nbsp;costerebbe, questa
+    procedura di creazione richiede 4 ore di&nbsp;concentrazione,
+    ininterrotte</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 00d86907da120e9e286620a5cb7a86d863e6ad4b
+    sourceId: Item.ZS3ujN6XRgC2e75b
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717354206029
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: XJqniNZYYtQWnwjA
+sort: 2900000
+_key: '!items!XJqniNZYYtQWnwjA'

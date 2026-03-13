@@ -1,0 +1,40 @@
+name: In recupero da resurrezione veloce
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-1 a tutte le stats'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Hai un -1 a tutte le statistiche, non rimovibili, fino al giorno
+    seguente</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 698947920bdecac35e5d7ed39a0055803aa49fa3
+    sourceId: Item.ZAVSAIeG8t45A64d
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151113
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpuMly3c9eb7TlVk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: MEjxqVSJFjRpDhLA
+_key: '!items!MEjxqVSJFjRpDhLA'

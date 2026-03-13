@@ -1,0 +1,45 @@
+name: Katana
+type: weapon
+img: icons/weapons/swords/sword-katana.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 18
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Spada lunga utilizzabile anche a due mani. Se
+    usata come arma lunga [[/r 1d8]]. Se usata a due mani [[/r 3d6 #aggiungi FIS
+    per 1.5 volte]] + FIS per 1.5</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 60c61e5e1846135489bd760721326c311043f0ec
+    sourceId: Item.gjnuY2CmSuH8lvpv
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676710510666
+  modifiedTime: 1701594258212
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.gjnuY2CmSuH8lvpv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1000000
+ownership:
+  default: 0
+  MALrSO6CHeii4HYs: 3
+_id: wgZzuYGEPXj0qHQH
+_key: '!items!wgZzuYGEPXj0qHQH'

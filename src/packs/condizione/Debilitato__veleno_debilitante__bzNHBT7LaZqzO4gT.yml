@@ -1,0 +1,38 @@
+name: Debilitato (veleno debilitante)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 5
+  durationunit: minuti
+  shortdescription: '-2 a FIS fino a che non ti rimuvono il veleno.'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>-2 a FIS fino a che non ti rimuvono il veleno.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d3a611a215f77659efaae3d2367467a047b42ed5
+    sourceId: Item.kfvnaKGZO1EBz0sC
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151469
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: bzNHBT7LaZqzO4gT
+sort: 200000
+_key: '!items!bzNHBT7LaZqzO4gT'

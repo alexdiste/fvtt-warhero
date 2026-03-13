@@ -1,0 +1,68 @@
+name: Mago
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Incantatore e studioso arcano.</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.8zxcPdqHAIRnYFcl]{Mago
+    - Concentrarsi}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.DPbvexg2hQG701J7]{Mago
+    - Conoscenze (+2 con)}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zR4K6PXg63yYoZu5]{Mago
+    - Contropotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.JdOcRTBVmDo1E8ou]{Mago
+    - Donazione (+2 mana)}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.0IXBuxDPdj06H2YZ]{Mago
+    - Scrivere pergamene}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.5bCWkC8jqpe1up5Z]{Mago
+    - Sfere conosciute}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.weTUnSPruGmwf9GD]{Mago
+    - Specializzato in una scuola}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b484f4c8108020ffdca70dcd417da7cb9004c64a
+    sourceId: Item.wtF4acsiRvwk7Oc6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1683905025084
+  modifiedTime: 1743436999933
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.wtF4acsiRvwk7Oc6
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 089eOgCP2l8UmaTD
+_key: '!items!089eOgCP2l8UmaTD'

@@ -1,0 +1,36 @@
+name: Mutaforma - Linguaggi extra
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio in fase di creazione del personaggio pu&ograve; aggiungere
+    2 linguaggi alla lista dei linguaggi conosciuti</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 48cacfc06bf1823f75eb07841849b9bfb3a8aa18
+    sourceId: Item.tOxKrO64J38H7XZB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681053280112
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.tOxKrO64J38H7XZB
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: XHAqAXheqwgZPLbM
+_key: '!items!XHAqAXheqwgZPLbM'

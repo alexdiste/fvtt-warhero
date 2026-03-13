@@ -1,0 +1,38 @@
+name: Parlare con gli animali
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: endday
+  durationvalue: 10
+  durationunit: minuti
+  shortdescription: permette di parlare con gli animali per 10 minuti
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>permette di parlare con gli animali per 10 minuti</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 108dcd9b52f7ffddeb6de4f7fc2307083a726c94
+    sourceId: Item.67uLLbDK2n6TcA0t
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698852066377
+  modifiedTime: 1743437151000
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: FRsZKELXD6XntlQW
+sort: 2900000
+_key: '!items!FRsZKELXD6XntlQW'

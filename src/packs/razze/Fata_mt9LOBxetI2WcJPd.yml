@@ -1,0 +1,69 @@
+name: Fata
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Questa creatura &egrave; un umanoide con le ali.</em></p>
+
+    <ul>
+
+    <li>Punti Ferita = Basso</li>
+
+    <li>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.iNr8K3qkwIox6lI6]{Language (elfico)},
+    @Compendium[fvtt-warhero.lingue.9mGDGpTSxltICZiS]{Language (silvano)}</li>
+
+    <li>Livello 1 = Movimento volare (6 m)
+    @Compendium[fvtt-warhero.poteri-speciali.A9AiXRz0M0MXpv6C]{Volare}</li>
+
+    <li>Livello 5,7 = +1 mana</li>
+
+    <li>Livello 1,4,8 = +1 IST o +1 MEN</li>
+
+    <li>Livello 3,6,9 = +1 TxC e +1 Danni</li>
+
+    </ul>
+  hpprogresion: low
+  languages: comune,eflico,silvano
+  attributebonus1: dex
+  attributebonus4: dex
+  attributebonus8: dex
+effects: []
+flags:
+  scene-packer:
+    hash: 9c5539bec560cc1b95fa5246551c29626e46d8f9
+    sourceId: Item.EjcNCve1cJdOtpT9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681046988407
+  modifiedTime: 1743439649085
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.LZZivLwaEth9RBXK
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: mt9LOBxetI2WcJPd
+_key: '!items!mt9LOBxetI2WcJPd'

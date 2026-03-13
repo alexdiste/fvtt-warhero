@@ -1,0 +1,38 @@
+name: In corsa
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: il pg sta correndo
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>il pg &egrave; in corsa</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9a7e1b605ca3d92d0ea1106ef16fb5b5672afbba
+    sourceId: Item.ZAVSAIeG8t45A64d
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151183
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpuMly3c9eb7TlVk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: PSg94jElQuAXOSNL
+_key: '!items!PSg94jElQuAXOSNL'

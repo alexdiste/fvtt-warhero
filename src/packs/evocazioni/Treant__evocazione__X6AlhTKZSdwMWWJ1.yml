@@ -1,0 +1,395 @@
+name: Treant (evocazione)
+type: character
+items:
+  - name: 3xFrustata
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/compagno%20animale.webp
+    system:
+      weapontype: twohanded
+      damage: 2d6
+      damage2hands: 1d6
+      rollformula: ''
+      damageformula: ''
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+    effects: []
+    flags:
+      scene-packer:
+        hash: 4dd79dd70401edca8edc740056573b5a11e11ecb
+        sourceId: Item.wdqnHGHUqtvhlUyv
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.1.1
+      coreVersion: '13.341'
+      createdTime: 1681573811492
+      modifiedTime: 1698078107097
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.attacchi-mostri.Item.mn7ehiJnNzoc9iEO
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: 4avXawdK9RCKDz97
+    sort: 0
+    _key: '!actors.items!X6AlhTKZSdwMWWJ1.4avXawdK9RCKDz97'
+  - name: Guarigione rapida 5
+    type: skill
+    img: systems/fvtt-warhero/images/icons/talenti.webp
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      maxuse: 0
+      description: >-
+        <p>La creatura riguadagna punti ferita all&rsquo;inizio di ogni turno,
+        ma&nbsp;non permette a una creatura di far ricrescere o di
+        riattaccare&nbsp;parti del corpo staccate. Guarigione rapida non
+        ripristina i&nbsp;punti ferita persi da fame, sete, o soffocamento.La
+        guarigione&nbsp;rapida smette di funzionare se il bersaglio si trova a 0
+        PF o&nbsp;meno</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 86fff7e802468b505984d006476d60e85382734d
+        sourceId: Item.PjRoDjRreXWRN92s
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.1.1
+      coreVersion: '13.341'
+      createdTime: 1681305021244
+      modifiedTime: 1698078214091
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.poteri-speciali.Item.DhU6zgmnljvRt8fe
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: el7jjjmweBVvq568
+    sort: 0
+    _key: '!actors.items!X6AlhTKZSdwMWWJ1.el7jjjmweBVvq568'
+img: systems/dnd5e/tokens/plant/Treant.webp
+system:
+  biodata:
+    class: ''
+    age: '0'
+    size: medium
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: "<p>Le creature evocate scompaiono quando muoiono o all'alba del giorno seguente e non è possibile evocare più di una creatura alla volta. E’ necessario usare una mossa per far seguire le 2 mosse alla propria evocazione. Usare più di un colpo con una singola mossa attacco si ottiene lo stessomalus come nell’uso delle due armi. Le evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12 +IST, il tempo di lancio di questi poteri è di 4 mosse consecutive. E necessario usareuna mossa per poter far eseguire 2 mosse all’evocazione.</p><p>\_</p><p>Questi tre treant chepermangono per 5 round si considerano una unica evocazione al fine dei limiti di controllo di creature evocate e si calcolano le statistiche come le creature evocate, ma il tempo di lancio di questo incantesimo è di una mossa incantesimo</p>"
+    gmnotes: ''
+    origin: ''
+    preferredhand: ''
+  subactors: []
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 7
+      value: 7
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 3
+      value: 3
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 3
+      value: 3
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 80
+      value: 80
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 3
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 15
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 3
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 3
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 5
+      value: 5
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    txch:
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 1
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Treant (evocazione)
+  displayName: 30
+  actorLink: false
+  texture:
+    src: systems/dnd5e/tokens/plant/Treant.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+    tint: '#ffffff'
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    alphaThreshold: 0.75
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 0
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+    negative: false
+    priority: 0
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags:
+    wall-height:
+      tokenHeight: 0
+    monks-tokenbar:
+      include: exclude
+    tagger: {}
+    core: {}
+    monks-enhanced-journal:
+      chatbubble: ''
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+effects: []
+flags:
+  scene-packer:
+    hash: d5773d956807d35f61652ef93fb08f28dae5bf9b
+    sourceId: Actor.3nGtoYnP5fDQeTRI
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: '13.21'
+  coreVersion: '13.350'
+  createdTime: 1680857278639
+  modifiedTime: 1760072083997
+  lastModifiedBy: lXFgtDDsvLskIOGw
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: 8o19xL2ki8Su2jvP
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: X6AlhTKZSdwMWWJ1
+sort: 1000000
+_key: '!actors!X6AlhTKZSdwMWWJ1'

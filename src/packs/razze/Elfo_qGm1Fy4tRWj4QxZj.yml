@@ -1,0 +1,72 @@
+name: Elfo
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Creature raffinate dalle vaste conoscenze molto affini alla magia,
+    con aspetti esotici e lunghe orecchie a punta</em></p>
+
+    <ul>
+
+    <li>Punti Ferita = Basso (+2 pf per livello)</li>
+
+    <li>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.iNr8K3qkwIox6lI6]{Language (elfico)}</li>
+
+    <li>Livello 1,5 = +1 utilizzi giornalieri di
+    @Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro
+    potere}</li>
+
+    <li>Livello 1,2,4,6,8 = +2% ai tiri percentuale.</li>
+
+    <li>Livello 2,5,7 = +1 mana</li>
+
+    <li>Livello 1,4,8 = +1 MEN</li>
+
+    <li>Livello 3,6,9 = +1 TxC e +1 Danni</li>
+
+    </ul>
+  hpprogresion: low
+  languages: comune, elfico
+  attributebonus1: min
+  attributebonus4: min
+  attributebonus8: min
+effects: []
+flags:
+  scene-packer:
+    hash: f910d0ce76555fefe5ec8ac5c541bd0f3b6583e2
+    sourceId: Item.heut0kEo8ZhZDeo6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681046988407
+  modifiedTime: 1743439649089
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.LZZivLwaEth9RBXK
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: qGm1Fy4tRWj4QxZj
+_key: '!items!qGm1Fy4tRWj4QxZj'

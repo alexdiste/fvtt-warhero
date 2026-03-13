@@ -1,0 +1,39 @@
+name: Pentola di ferro
+type: equipment
+img: icons/tools/cooking/can.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ba507ee41fdbc0734326e17a90cbf701e6ff8b11
+    sourceId: Item.CkWGGVYaLSQMF6d5
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ouI5nyStQPndhIjC
+sort: 17400000
+_key: '!items!ouI5nyStQPndhIjC'

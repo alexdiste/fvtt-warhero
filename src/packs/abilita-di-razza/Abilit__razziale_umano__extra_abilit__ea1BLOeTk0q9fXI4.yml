@@ -1,0 +1,36 @@
+name: 'Abilità razziale umano: extra abilità'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 5
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Dal quinto livello in quanto umano hai un abilit&agrave; aggiuntiva
+    ulteriore</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5ec3e121c1fc8bc94bd821bbf3ed9a12c77ddb7f
+    sourceId: Item.EpLG0cXx1OYSBaGm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681047908343
+  modifiedTime: 1743437123525
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.EpLG0cXx1OYSBaGm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ea1BLOeTk0q9fXI4
+_key: '!items!ea1BLOeTk0q9fXI4'

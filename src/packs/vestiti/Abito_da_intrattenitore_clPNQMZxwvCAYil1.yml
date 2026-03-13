@@ -1,0 +1,39 @@
+name: Abito da intrattenitore
+type: equipment
+img: icons/equipment/chest/vest-leather-brown-gold.webp
+system:
+  equiptype: ''
+  cost: 3
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: dress
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un abito da intrattenitore</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 3bfb709e047fbfb3a975e0cfd5f042f2e930dd86
+    sourceId: Item.Pbmdea2xzDgeTJlt
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1702047902061
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.72HqDhP2e8P7nbAx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: clPNQMZxwvCAYil1
+_key: '!items!clPNQMZxwvCAYil1'

@@ -1,0 +1,40 @@
+name: Bruto - Carica a salti
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3+MEN volte al giorno eseguire la mossa di
+    carica anche non in linea retta e ogni volta che cambia direzione tutti i
+    bersagli entro 1 metro da quel punto subiscono 1d6 danni, non pu&ograve;
+    cambiare direzione pi&ugrave; di 5 volte per carica. Ottiene inoltre un
+    bonus di +3d6 al prossimo danno e i bonus della carica diventano +6 al TxC
+    e&nbsp;-4 a DIF</p>
+effects: []
+flags:
+  scene-packer:
+    hash: cc08cfb6ceccca40288271727e90b3e99cc063c8
+    sourceId: Item.dSeWMwOeFUagsn1Y
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: VTwAXC7zca2CWsBB
+sort: 10800000
+_key: '!items!VTwAXC7zca2CWsBB'

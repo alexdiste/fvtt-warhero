@@ -1,0 +1,42 @@
+name: Bacchetta magica di Protezione - IV Solo difesa
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.0hqW3CDSxT0sb2jc]{Protezione - IV
+    Solo difesa} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: d100fedebf33accb947d5fe42ee905d4c3843457
+    sourceId: Item.NxzY8rzKhftYJAcm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613832665
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: BIr4oU2gAx57pp6Q
+sort: 4400000
+_key: '!items!BIr4oU2gAx57pp6Q'

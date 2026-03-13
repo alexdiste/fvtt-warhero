@@ -1,0 +1,42 @@
+name: Pergamena di Forza - II Armatura magica
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.YH6sayoSaQeWIwW7]{Forza - II
+    Armatura magica} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c84b405deef94af8f50aad6d4fe855a0c2bc2f72
+    sourceId: Item.pOukPUa3jvQOMdr5
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913445087
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: QzolTU1HnP0XypK9
+sort: 31000000
+_key: '!items!QzolTU1HnP0XypK9'

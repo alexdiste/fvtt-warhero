@@ -1,0 +1,68 @@
+name: Parare
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Qualora il nostro personaggio impugni uno scudo o brandisca due armi,
+    pu&ograve; parare i colpi inflitti dagli avversari. Per parare, devi
+    lanciare 1d12 [[/r 1d12 #Parata. Ricordo si pu&oacute; parare solo un
+    attacco per turno. Se ottieni 1 &eacute; sempre fallimento automatico, se
+    ottieni 12 sempre successo automatico, altrimenti pari se con questo tiro
+    fai 12 o pi&uacute;]] la CD per riuscire in una parata &egrave; 12. Puoi
+    parare gli attacchi avversari solo una volta per turno.</p>
+
+    <p>&nbsp;</p>
+
+    <p>Gli scudi danno un bonus di parata in base alla tipologia. Scudi leggeri
+    danno +1 [[/r 1d12+1 #Parare con scudo leggero. Ricordo si pu&oacute; parare
+    solo un attacco per turno. Se ottieni 1 &eacute; sempre fallimento
+    automatico, se ottieni 12 sempre successo automatico, altrimenti pari se con
+    questo tiro fai 12 o pi&uacute;]], scudi pesanti +3 [[/r 1d12+3 #Parare con
+    scudo pesante. Ricordo si pu&oacute; parare solo un attacco per turno. Se
+    ottieni 1 &eacute; sempre fallimento automatico, se ottieni 12 sempre
+    successo automatico, altrimenti pari se con questo tiro fai 12 o
+    pi&uacute;]] e scudi torre +5 [[/r 1d12+5 #Parare con scudo torre. Ricordo
+    si pu&oacute; parare solo un attacco per turno. Se ottieni 1 &eacute; sempre
+    fallimento automatico, se ottieni 12 sempre successo automatico, altrimenti
+    pari se con questo tiro fai 12 o pi&uacute;]]</p>
+
+    <p>Invece brandire le due armi permette di parare ma con 0 bonus, tiri solo
+    il 12 puro e pari se fai 12. [[/r 1d12 #Parare con due armi. Ricordo si
+    pu&oacute; parare solo un attacco per turno. Se ottieni 1 &eacute; sempre
+    fallimento automatico, se ottieni 12 sempre successo automatico, altrimenti
+    pari se con questo tiro fai 12 o pi&uacute;]]</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 5b6a8f9fd1e02cf249fea1b64838d596cd783f7e
+    sourceId: Compendium.world.temp.1mlKgYmfU7SbDVNi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637553324
+  modifiedTime: 1743437709765
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.1mlKgYmfU7SbDVNi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ZULztptNLupwqB0G
+_key: '!items!ZULztptNLupwqB0G'

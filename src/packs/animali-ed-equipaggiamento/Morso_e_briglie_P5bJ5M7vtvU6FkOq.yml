@@ -1,0 +1,36 @@
+name: Morso e briglie
+type: equipment
+img: icons/environment/creatures/horse-brown.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Morso e briglie</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676707874667
+  modifiedTime: 1702198248971
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.4Fo5v7T84anHYEQv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 600000
+ownership:
+  default: 0
+  0IgQUthe3Nk70WYW: 3
+_id: P5bJ5M7vtvU6FkOq
+_key: '!items!P5bJ5M7vtvU6FkOq'

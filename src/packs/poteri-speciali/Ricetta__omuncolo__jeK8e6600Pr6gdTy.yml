@@ -1,0 +1,36 @@
+name: Ricetta (omuncolo)
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>materiale necessario 300Mo di argilla per poterlo far costruire a un
+    tecnofabbro</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: 8be6bbb670411de2eaf5552f5a66c55de1170192
+    sourceId: Item.ttOadVbwZSJ2KFDN
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766234683988
+  modifiedTime: 1766235191518
+  lastModifiedBy: uzeu86bhmL5CiHhN
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+_id: jeK8e6600Pr6gdTy
+sort: 300000
+_key: '!items!jeK8e6600Pr6gdTy'

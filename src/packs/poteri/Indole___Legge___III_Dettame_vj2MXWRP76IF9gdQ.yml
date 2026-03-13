@@ -1,0 +1,26 @@
+name: Indole - Legge - III Dettame
+type: power
+system:
+  level: 3
+  magicschool: Indole - Legge
+  description: infligge 12d6 danni ad una creatura caotica. CD 16, MEN, dimezzare.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904909
+  modifiedTime: 1743439294929
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: vj2MXWRP76IF9gdQ
+folder: null
+sort: 14500000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!vj2MXWRP76IF9gdQ'

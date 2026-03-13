@@ -1,0 +1,56 @@
+name: 28.Tempo
+type: power
+img: systems/fvtt-warhero/images/icons/magic/tempo.webp
+system:
+  level: 0
+  magicschool: Tempo
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.qRyiUS9gGHy4Op9X]{Tempo - I
+    Tempo atmosferico}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.0s6X0VfFHJgKeYBs]{Tempo - II
+    Lentezza}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.O1yGotIS8YidAFh1]{Tempo - III
+    Velocit&agrave;}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.xSeI7UXUOy20nx4U]{Tempo - IV
+    Bloccare il tempo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.G1D0R27jxq7qkZ69]{Tempo - IV
+    Messaggio}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 8190473378b5a3828b9d3e4ae1be6f32fe3b6446
+    sourceId: Compendium.world.temp.3zNma7A7zIzl0C71
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552561
+  modifiedTime: 1698851257343
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.3zNma7A7zIzl0C71
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 3VbZtxz7d2gJRzzz
+_key: '!items!3VbZtxz7d2gJRzzz'

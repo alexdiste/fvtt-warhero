@@ -1,0 +1,46 @@
+name: Viandante planare (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Il viandante planare &egrave; un esperto dei piani e del muoversi fra
+    essi</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 0c13d58ddbfdf72366f2576a8ec3f46437a135fe
+    sourceId: Item.IWmKX5Yuk9B6vyuE
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681547662572
+  modifiedTime: 1766238310180
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.IWmKX5Yuk9B6vyuE
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: s9KXNRolNJcaAJWJ
+_key: '!items!s9KXNRolNJcaAJWJ'

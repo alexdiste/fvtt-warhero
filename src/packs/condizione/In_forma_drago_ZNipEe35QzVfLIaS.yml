@@ -1,0 +1,38 @@
+name: In forma drago
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-5 al tpc'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 033d76359bb6b880ba06ab83a11191b089422021
+    sourceId: Item.tOLfuG3SKqhztJQH
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705857333190
+  modifiedTime: 1743437151429
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ZNipEe35QzVfLIaS
+sort: 0
+_key: '!items!ZNipEe35QzVfLIaS'

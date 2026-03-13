@@ -1,0 +1,42 @@
+name: Pergamena di Evocazione - Animale - III Evoca Orso
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 900
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.dIl9bt79csKa8qSQ]{Evocazione -
+    Animale - III Evoca Orso} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 62d883beb03e9190091f88630915706db33bdab9
+    sourceId: Item.0nyVVvEleCtXIveR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444462
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 4ImUV7sdCC3NsHAX
+sort: 33100000
+_key: '!items!4ImUV7sdCC3NsHAX'

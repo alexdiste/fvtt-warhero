@@ -1,0 +1,40 @@
+name: Bilancia da mercante
+type: classitem
+img: icons/tools/hand/scale-balances-merchant-brown.webp
+system:
+  cost: 10
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Mercante
+  description: <p>Una bilancia per pesare</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: fa7f07a17c5911f28355c7e66ed8d0f56e7226b9
+    sourceId: Item.ZJUDWznJjowCoyFT
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ecFDCieRsj4GofOI
+sort: 700000
+_key: '!items!ecFDCieRsj4GofOI'

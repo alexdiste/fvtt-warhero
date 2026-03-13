@@ -1,0 +1,56 @@
+name: 18.Indole-Equilibrio
+type: power
+img: systems/fvtt-warhero/images/icons/magic/neutrale.webp
+system:
+  level: 0
+  magicschool: Indole - Equilibrio
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.T0eZtZLUZm9K2BzP]{Indole -
+    Equilibrio - I Punire l'equilibrio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.ku6axOQVWmkXgyAV]{Indole -
+    Equilibrio - II Occhio per occhio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.on4EicWu0uubdb5o]{Indole -
+    Equilibrio - III Retaggio}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.u60tRTInSsCwthRj]{Indole -
+    Equilibrio - IV Cerchio contro l' equilibrio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.4uxhEUuNFuDjlnr6]{Indole -
+    Equilibrio - IV Ristabilire equilibrio}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 24e0772f3aa2f1dfd628ee89f1e760f2964f9dfa
+    sourceId: Compendium.world.temp.FWkGo6Gn2G0BHWKS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552537
+  modifiedTime: 1698851033591
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.FWkGo6Gn2G0BHWKS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: jAcYNuXzJPBk2mEE
+_key: '!items!jAcYNuXzJPBk2mEE'

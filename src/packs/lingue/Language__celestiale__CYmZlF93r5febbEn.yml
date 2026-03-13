@@ -1,0 +1,29 @@
+name: Language (celestiale)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p data-pm-slice="1 1 []">&Eacute; la lingua delle razze celestiali</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ce69b6ef828d780d71d7093699520c1b3daa2a24
+    sourceId: Item.VutPOOpCq646Cpyx
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613681
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: CYmZlF93r5febbEn
+_key: '!items!CYmZlF93r5febbEn'

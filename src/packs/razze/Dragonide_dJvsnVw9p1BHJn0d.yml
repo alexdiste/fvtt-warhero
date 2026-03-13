@@ -1,0 +1,68 @@
+name: Dragonide
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Razza discendente dagli antichi draghi, sono umanoidi con tratti di
+    scaglie sul corpo spesso con la coda</em></p>
+
+    <ul>
+
+    <li>Punti Ferita = Alto (+6 pf per livello)</li>
+
+    <li>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.0riqDnmq93mM4erW]{Language (draconico)}</li>
+
+    <li>Livello 1,5,7 = +1 a i tiri per buttare a terra
+    @UUID[Compendium.fvtt-warhero.abilita-di-razza.Item.J92o5JzwYxpH6uEU]{Abilit&agrave;
+    razziale dragonide: +1 a buttare per terra}</li>
+
+    <li>Livello 1,4,8 = +1 FIS o +1 MEN</li>
+
+    <li>Livello 3,6,9 = +1 TxC e +1 Danni</li>
+
+    </ul>
+  hpprogresion: high
+  languages: comune, draconico
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+effects: []
+flags:
+  scene-packer:
+    hash: 2e6f2cd5916ae590bc7951e669cc35fee90610ba
+    sourceId: Item.fPRElWhRiIt25yDf
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681055991337
+  modifiedTime: 1743439649074
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.fPRElWhRiIt25yDf
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: dJvsnVw9p1BHJn0d
+_key: '!items!dJvsnVw9p1BHJn0d'

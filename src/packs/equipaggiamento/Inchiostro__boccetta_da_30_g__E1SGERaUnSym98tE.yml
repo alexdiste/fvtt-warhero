@@ -1,0 +1,39 @@
+name: Inchiostro (boccetta da 30 g)
+type: equipment
+img: icons/consumables/potions/potion-bottle-labeled-medicine-capped-red-black.webp
+system:
+  equiptype: ''
+  cost: 3
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un pennino per scrivere</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 4a0bb310574cf51a106d695fcbf95b7abe1da52c
+    sourceId: Item.jkw2aH8Uzry7ijqF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057537568
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.MSNX23EpkI3RR8Rs
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 36900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: E1SGERaUnSym98tE
+_key: '!items!E1SGERaUnSym98tE'

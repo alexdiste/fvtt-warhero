@@ -1,0 +1,30 @@
+name: Nobile - Restrizione allineamento
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuseFormula: '1'
+  description: <p>Il personaggio non può essere di allineamento Caotico.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.33'
+  createdTime: 1762007331324
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: 7CP1PS5bc8Aqqt4G
+sort: 600000
+_key: '!items!7CP1PS5bc8Aqqt4G'

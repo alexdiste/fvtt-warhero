@@ -1,0 +1,39 @@
+name: Specchio piccolo di metallo
+type: equipment
+img: icons/commodities/currency/coin-engraved-slot-one-copper.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 63cbee43195452643f215fb085fc1ee8b919c182
+    sourceId: Item.FJATIz60MZAHYIjY
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: isZeup6lBlv4KDKC
+sort: 17200000
+_key: '!items!isZeup6lBlv4KDKC'

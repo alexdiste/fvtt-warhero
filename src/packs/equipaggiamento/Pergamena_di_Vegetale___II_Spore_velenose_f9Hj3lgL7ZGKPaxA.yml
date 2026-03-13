@@ -1,0 +1,42 @@
+name: Pergamena di Vegetale - II Spore velenose
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.lgjVKvYLB62C5OyL]{Vegetale - II
+    Spore velenose} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c8defed1684aba6cfb3cadd1bd2c166c65e09f34
+    sourceId: Item.QDi7qPaBnHXURL5m
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913451035
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: f9Hj3lgL7ZGKPaxA
+sort: 21800000
+_key: '!items!f9Hj3lgL7ZGKPaxA'

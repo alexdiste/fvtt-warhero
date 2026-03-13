@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Legge - IV Cerchio contro il caos
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.dKeIgbWOvb5WyQZ8]{Indole - Legge -
+    IV Cerchio contro il caos} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e49506e291e492f08e323e98cfca8ec4562f4ec1
+    sourceId: Item.HzXFjHOmYhcwMUJb
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830732
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: fwFYHZyQtbfiEPjf
+sort: 5000000
+_key: '!items!fwFYHZyQtbfiEPjf'

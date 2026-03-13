@@ -1,0 +1,39 @@
+name: Tiara +1 ad una statistica
+type: equipment
+img: icons/equipment/head/crown-horns-brown.webp
+system:
+  equiptype: ''
+  cost: 5000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>+ 1 MEN</p>
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: 379718353d4e5326a3fd4cca3aebac6f5e7534ae
+    sourceId: Item.vTKWMIU8IBejScBn
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1699124373550
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: kxQU8JNPtxTKNxaU
+sort: 18300000
+_key: '!items!kxQU8JNPtxTKNxaU'

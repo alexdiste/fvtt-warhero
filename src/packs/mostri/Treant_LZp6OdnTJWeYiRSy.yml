@@ -1,0 +1,378 @@
+name: Treant
+type: character
+img: systems/dnd5e/tokens/plant/Treant.webp
+items:
+  - name: 2xRami
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+    system:
+      weapontype: special
+      damage: 1d6
+      damage2hands: 1d6
+      rollformula: 1d20+0
+      damageformula: 3d10+21
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+      isCustomAttackRoll: false
+    effects: []
+    flags:
+      scene-packer:
+        hash: 8a663e95faedf211d749defbf09bea82548494c8
+        sourceId: Item.wdqnHGHUqtvhlUyv
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: FRqwzQozJAbsU0PX
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!LZp6OdnTJWeYiRSy.FRqwzQozJAbsU0PX'
+  - name: Travolgere
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: true
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Una creatura con Travolgere può usare le sue 2 mosse per fare un movimento e calpestare qualsiasi avversario più piccolo di lui infliggendo danni. Gli avversari travolti possono tentare un attacco di opportunità o tentare un Tiro salvezza su IST per subire la metà dei danni. Una creatura con Travolgere può infliggere danni da travolgimento ad un bersaglio una volta per turno, non importa quante volte il suo movimento passa sopra alla creatura bersaglio</p>\n<p>\_</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 5bc706bde2058121e0181bcaba01c89c8e8ae790
+        sourceId: Item.0lvTUY7C48565Dj9
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: HlbqrD8MRdQRAKxF
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!LZp6OdnTJWeYiRSy.HlbqrD8MRdQRAKxF'
+_id: LZp6OdnTJWeYiRSy
+system:
+  subactors: []
+  biodata:
+    class: ''
+    origin: ''
+    age: 0
+    size: huge
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: ''
+    gmnotes: ''
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 21
+      value: 21
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: -2
+      value: -2
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 260
+      value: 260
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 0
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 10
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 3
+      value: 3
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: -2
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Treant
+  displayName: 0
+  actorLink: false
+  width: 3
+  height: 3
+  texture:
+    src: systems/dnd5e/tokens/plant/Treant.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+effects: []
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239337735
+  modifiedTime: 1772340564249
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+sort: 900000
+_key: '!actors!LZp6OdnTJWeYiRSy'

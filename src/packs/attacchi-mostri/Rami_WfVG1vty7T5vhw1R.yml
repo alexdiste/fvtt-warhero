@@ -1,0 +1,43 @@
+name: Rami
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: special
+  damage: 1d6
+  damage2hands: 1d6
+  rollformula: 1d20+0
+  damageformula: 3d10+21
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+  isCustomAttackRoll: false
+effects: []
+flags:
+  scene-packer:
+    hash: 8a663e95faedf211d749defbf09bea82548494c8
+    sourceId: Item.wdqnHGHUqtvhlUyv
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239250268
+  modifiedTime: 1766239250268
+  lastModifiedBy: uzeu86bhmL5CiHhN
+folder: null
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+_id: WfVG1vty7T5vhw1R
+sort: 0
+_key: '!items!WfVG1vty7T5vhw1R'

@@ -1,0 +1,306 @@
+name: Aquila (evocazione)
+type: character
+items: []
+img: systems/dnd5e/tokens/beast/Eagle.webp
+system:
+  subactors: []
+  biodata:
+    class: ''
+    age: 0
+    size: large
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: >-
+      <p>Le creature evocate scompaiono quando muoiono o all'alba del giorno
+      seguente e non è possibile evocare più di una creatura alla volta. E’
+      necessario usare una mossa per far seguire le 2 mosse alla propria
+      evocazione. Usare più di un colpo con una singola mossa attacco si ottiene
+      lo stessomalus come nell’uso delle due armi. Le evocazioni hanno punti
+      ferita pari a 10 +(10*FIS) e una difesa pari a 12 +IST, il tempo di lancio
+      di questi poteri è di 4 mosse consecutive. E necessario usareuna mossa per
+      poter far eseguire 2 mosse all’evocazione</p>
+    gmnotes: ''
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 30
+      value: 30
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 0
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 12
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 3
+      value: 3
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Dinosauro (evocazione)
+  displayName: 0
+  actorLink: false
+  width: 3
+  height: 3
+  texture:
+    src: systems/dnd5e/tokens/beast/Eagle.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 0
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+effects: []
+folder: 8o19xL2ki8Su2jvP
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1760072315917
+  modifiedTime: 1767471902893
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  lXFgtDDsvLskIOGw: 3
+_id: 61UFYIwfg6X3iuYL
+sort: 0
+_key: '!actors!61UFYIwfg6X3iuYL'

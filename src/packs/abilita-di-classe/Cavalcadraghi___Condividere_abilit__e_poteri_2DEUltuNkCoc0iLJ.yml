@@ -1,0 +1,39 @@
+name: Cavalcadraghi - Condividere abilità e poteri
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio condivide tutte le&nbsp;abilit&agrave; aggiuntive che
+    apprende con il suo drago evocato se per<br>esso sarebbe possibile ottenere
+    benefici da questa abilit&agrave; questo&nbsp;vale anche per i poteri che
+    bersagliano il personaggio bersagliano&nbsp;anche il drago, se gi&agrave;
+    non viene bersagliato</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 964786571a62c676578a56ff0a32224b276785b3
+    sourceId: Item.z7dpOX5bXHjIDBN8
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 2DEUltuNkCoc0iLJ
+sort: 9100000
+_key: '!items!2DEUltuNkCoc0iLJ'

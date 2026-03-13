@@ -1,0 +1,24 @@
+name: Teletrasporto
+type: script
+command: "if (!token){\n\n\tChatMessage.create({\n\tuser : game.user._id,\n\tcontent:\"Devi selezionare un token per poter usare questa macro\"\n\t});\n\n}else{\n\t//Controlla oggetti personaggio\n\tconst hasteletrasporto = !!token.actor.items.getName(\"Viaggio - III Teletrasporto\");  //controllare se un attore ha un determinato oggetto\n\t\n\tmana_base=3;\n\t\n\tif (hasteletrasporto){\n\t\tconst manaattualepg = token.actor.system.attributes.mana.value;\n\t\tif (manaattualepg<mana_base){\n\t\t\tChatMessage.create({\n\t\t\t\tuser : game.user._id,\n\t\t\t\tcontent: token.actor.name+\" non ha almeno tre mana rimasti per fare teletrasporto\"\n\t\t\t\t});\n\t\t\t\treturn;\n\t\t}else{\t\t\t\n\t\t\tmanamassimo=Math.min(manaattualepg-mana_base,3);\n\t\t\t//console.log(\"mana attuale pg=\"+manaattualepg+\" mana base= \"+mana_base)\n\t\t\tcontent = `Costo base per il potere: `+mana_base+`<br>Mana massimo del pg:`+manaattualepg+`<form><div class=\"form-group\"><label>Mana aggiuntivo da spendere:</label><div class=\"form-fields\"><select autofocus>`;\n\t\t\tcontent += `<option value=\"-1\">Annulla operazione</option>`;\n\t\t\tfor (i=0;i<=manamassimo;i++){\n\t\t\tcontent += `<option value=\"${i}\">${i}</option>`\n\t\t\t}\n\t\t\tcontent +=`</select></div></div></form>`;\n\t\t\tconst manaaggiuntivo = await Dialog.prompt({\n\t\t\ttitle: \"Mana da scalare\",\n\t\t\tlabel: \"OK\",\n\t\t\trejectClose: false,\n\t\t\tcontent,\n\t\t\tcallback: (html) => html[0].querySelector(\"select\").value\n\t\t\t});\n\n\t\t\tconsole.log(manaaggiuntivo);\n\t\t\tif (manaaggiuntivo==-1 || manaaggiuntivo===null){\n\t\t\t\treturn;\n\t\t\t}else{\n\t\t\t\tmanadascalare=mana_base+Number(manaaggiuntivo);\n\t\t\t\tpersone=1+Number(manaaggiuntivo);\t\t\t\t\t\n\t\t\t\tawait token.actor.update({\"system.attributes.mana.value\": manaattualepg - manadascalare}); //scala mana\n\t\t\t\tChatMessage.create({\n\t\t\t\tuser : game.user._id,\n\t\t\t\tcontent:token.actor.name+\" ha speso \"+manadascalare+\" mana e quindi può teletrasportare \"+persone+\" persona/e.Ricordo che compagno animale e/o evocazioni contano come una persona ciascuno, metre i famiglio non vengono mai considerati. Per far sì che un posto sia di sua conoscenza è necessario studiare il preciso luogo per\talmeno 1 ora. E’ possibile tenere a memoria un numero di posti pari al proprio valore di MEN\"\n\t\t\t\t})\t\t\t\n\t\t\t}\n\t\t}\t\t\n\t}else{\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent: token.actor.name+\" non ha il potere teletrasporto\"\n\t\t});\n\t\treturn;\n\t}\n}"
+img: icons/svg/portal.svg
+author: lXFgtDDsvLskIOGw
+scope: global
+folder: UkCboSKvvs6LBGd4
+ownership:
+  default: 0
+  lXFgtDDsvLskIOGw: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.21'
+  createdTime: 1759988607576
+  modifiedTime: 1767470385039
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: HHQpsOCQLochyEI4
+sort: 200000
+_key: '!macros!HHQpsOCQLochyEI4'

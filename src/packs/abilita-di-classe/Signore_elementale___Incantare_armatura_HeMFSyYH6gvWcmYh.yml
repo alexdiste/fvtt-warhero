@@ -1,0 +1,39 @@
+name: Signore elementale - Incantare armatura
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; incantare la propria armatura o quella di un
+    suo alleato per il prossimo scontro, in modo da ridurre di 20 i danni
+    provocati da il suo elemento, un numero di volte pari a 3+FIS.Non &egrave;
+    possibile incantare l'armatura pi&ugrave; di una volta , fare incantare
+    armatura &egrave; considerata una mossa potere</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 76e1778c22af473d51d20631bc160f687fe5f0cc
+    sourceId: Item.gelYMup9xDfWqt2o
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681056288111
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.B5dTLpoAa5HZjedT
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 20200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: HeMFSyYH6gvWcmYh
+_key: '!items!HeMFSyYH6gvWcmYh'

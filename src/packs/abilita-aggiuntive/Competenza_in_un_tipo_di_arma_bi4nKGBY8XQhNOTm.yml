@@ -1,0 +1,37 @@
+name: Competenza in un tipo di arma
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p data-pm-slice="1 1 []"><strong>Beneficio:</strong> Si aggiunge alla lista
+    di armi utilizzabili la tipologia di arma scelta.</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: e335b76f8f32419d9534b7735e73a9a4403d1637
+    sourceId: Item.nN1Co9dMJ9rY4eop
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774707094
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+  guOwSDi78TuzUGFU: 3
+_id: bi4nKGBY8XQhNOTm
+sort: 3200000
+_key: '!items!bi4nKGBY8XQhNOTm'

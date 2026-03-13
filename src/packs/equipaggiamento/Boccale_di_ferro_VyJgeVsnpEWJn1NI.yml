@@ -1,0 +1,39 @@
+name: Boccale di ferro
+type: equipment
+img: icons/containers/kitchenware/stein-empty.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un boccale di ferro</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 603e9b60a9cf955bc4e01f2f9153a231cfef6b56
+    sourceId: Actor.g21JaoPo9mxxFONE.Item.uZyoRRpA36wT6Yb7
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680936917951
+  modifiedTime: 1705999925636
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: VyJgeVsnpEWJn1NI
+sort: 0
+_key: '!items!VyJgeVsnpEWJn1NI'

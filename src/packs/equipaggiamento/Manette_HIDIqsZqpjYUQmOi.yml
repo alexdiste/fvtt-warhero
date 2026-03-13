@@ -1,0 +1,39 @@
+name: Manette
+type: equipment
+img: icons/sundries/survival/cuffs-shackles-steel.webp
+system:
+  equiptype: ''
+  cost: 12
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Per aprirle CD13</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7e82d6758725c29b5ff75c2d20c7bafaf90e0ea1
+    sourceId: Item.iBV170Gbes4DaoEJ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1705403019029
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: HIDIqsZqpjYUQmOi
+sort: 18500000
+_key: '!items!HIDIqsZqpjYUQmOi'

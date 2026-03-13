@@ -1,0 +1,44 @@
+name: Spirito combattivo (Samurai)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p><span style="font-family:Signika, 'Font Awesome 5 Free'">Fintanto che hai
+    meno di 20 punti ferita lo spirito del combattivo si accende e il
+    personaggio ottiene i seguenti bonus: +4TxC, +4 al Danno, +2 DIF,+2TS,
+    +3MOV</span></p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 8a5d65d27c8d76d0b72fecbecbd006092cc43aa9
+    sourceId: Compendium.world.temp.6LZfUvyvV3sllrzj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552683
+  modifiedTime: 1743437151017
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.6LZfUvyvV3sllrzj
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FpIYfGHBvjF7JL8d
+_key: '!items!FpIYfGHBvjF7JL8d'

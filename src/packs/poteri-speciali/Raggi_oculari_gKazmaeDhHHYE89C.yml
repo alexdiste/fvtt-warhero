@@ -1,0 +1,54 @@
+name: Raggi oculari
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Pu&ograve; usare in una singola mossa di movimento fino a 2 raggi
+    oculari, non pu&ograve; mai usare i raggi pi&ugrave; di una volta a
+    round.</p>
+
+    <p><strong>Raggio di Confusione</strong>. Il bersaglio deve superare un tiro
+    salvezza su MEN con CD 14, o fino alla fine dello scontro deve tirare un 50%
+    per riuscire ad eseguire le sue mosse nel turno.</p>
+
+    <p><strong>Raggio Paralizzante</strong>. Il bersaglio deve superare un tiro
+    salvezza su FIS con CD 14, o rimanere paralizzato per 3 round, non potendo
+    fare nessuna mossa.</p>
+
+    <p><strong>Raggio di Paura</strong>. Il bersaglio deve superare un tiro
+    salvezza su MEN con CD 14, altrimenti &egrave; spaventato e non si
+    avviciner&agrave; a meno di 9 metri dal bersaglio fino alla fine dello
+    scontro.</p>
+
+    <p><strong>Raggio di Ferimento</strong>. Il bersaglio deve effettuare un
+    tiro salvezza su FIS con CD 14, se lo fallisce, subisce 2d10+5 danni, mentre
+    se lo supera, subisce la met&agrave; di quei danni</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ac15918ff4bee034c1589eab341c36d0ba335295
+    sourceId: Item.cJVll8igb9VFRaxt
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681304101126
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.cJVll8igb9VFRaxt
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: gKazmaeDhHHYE89C
+_key: '!items!gKazmaeDhHHYE89C'

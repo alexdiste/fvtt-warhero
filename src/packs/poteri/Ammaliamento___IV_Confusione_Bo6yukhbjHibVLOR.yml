@@ -1,0 +1,28 @@
+name: Ammaliamento - IV Confusione
+type: power
+system:
+  level: 4
+  magicschool: Ammaliamento
+  description: >-
+    il bersaglio ha il 50% di possibilità di eseguire il suo turno, per la
+    durata di 10 turni, CD 18 men per negare
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904805
+  modifiedTime: 1743439294537
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Bo6yukhbjHibVLOR
+folder: null
+sort: 3000000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!Bo6yukhbjHibVLOR'

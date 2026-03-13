@@ -1,0 +1,40 @@
+name: Alchimista - Bomba esplosiva
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; creare 3 + FIS
+    @Compendium[fvtt-warhero.pozioni.uQqE8TKPcEItp8OD]{Bomba esplosiva (da
+    alchimista)} al giorno, che scoppiano al termine del turno in cui sono
+    create e possono essere lanciate come armi da lancio. Causano [[/r 8d6
+    #fuoco]] danni al bersaglio. Creare e lanciare la bomba &egrave; considerata
+    una mossa di attacco</p>
+effects: []
+flags:
+  scene-packer:
+    hash: f1692b27b3bb684c346675b9cb61b4926fc1e3f7
+    sourceId: Item.AeU5MrJUxlXE1Ou7
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: EwQJ6I6HDoXgwtgR
+sort: 12800000
+_key: '!items!EwQJ6I6HDoXgwtgR'

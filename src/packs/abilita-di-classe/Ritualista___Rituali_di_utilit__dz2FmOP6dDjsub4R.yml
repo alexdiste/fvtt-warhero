@@ -1,0 +1,58 @@
+name: Ritualista - Rituali di utilità
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + MEN rituali di utilit&agrave;
+    al&nbsp;giorno fra i seguenti rituali:<br>● Rituale del cibo - Crea del cibo
+    per 4 persone.<br>● Rituale della nuova vita - Il ritualista lancia 1d10 con
+    3+ riesce a riprodurre l'effetto del potere di livello III della sfera di
+    @UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ixnLA206NExE259s]{13.Guarigione}
+    (@UUID[Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4]{Guarigione -
+    III Resurrezione}).<br>● Rituale di localizzazione &ndash; Permette di
+    conoscere la direzione&nbsp;nella quale un oggetto, non specifico, che il
+    ritualista conosce, si&nbsp;trova.<br>● Rituale del sangue - Il ritualista,
+    con una goccia di sangue, ottiene&nbsp;le risposte alle seguenti
+    domande:</p>
+
+    <p>Chi sei? (Il nome con il quale la creatura &egrave; comunemente
+    conosciuta)&nbsp;</p>
+
+    <p>Cosa sei? (Genere, razza,professione/ruolo)</p>
+
+    <p>Come &egrave; stato versato il tuo sangue? (Breve&nbsp;descrizione degli
+    eventi che hanno causato le sue ferite, al meglio&nbsp;delle conoscenze
+    della vittima)&nbsp;</p>
+
+    <p>Quando &egrave; stato versato il tuo&nbsp;sangue?<br>● Rituale di rimuovi
+    maledizione &ndash; Il ritualista sceglie il bersaglio su&nbsp;cui viene
+    fatto questo rituale per strappargli le maledizioni che
+    ha&nbsp;contratto.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: fe629f2b9e555f1e480e2d1c9853103687648e86
+    sourceId: Item.XD5PwXzRA0itiIZC
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717354211750
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: dz2FmOP6dDjsub4R
+sort: 3800000
+_key: '!items!dz2FmOP6dDjsub4R'

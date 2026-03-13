@@ -1,0 +1,41 @@
+name: Bacchetta magica con potere di livello IV
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Una bacchetta magica che contiene una carica di un potere di livello
+    4</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 58be42035a025577bc524970f36d85e820be3fb8
+    sourceId: Item.b0fO83yNrRfA9PR9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1703655829669
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 4D1tihie5KElN54V
+sort: 14500000
+_key: '!items!4D1tihie5KElN54V'

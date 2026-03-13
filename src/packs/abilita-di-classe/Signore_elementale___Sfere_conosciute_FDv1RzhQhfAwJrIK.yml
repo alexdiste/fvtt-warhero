@@ -1,0 +1,39 @@
+name: Signore elementale - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio conosce solo la sfera elementale dell'elemento relativo al
+    suo elemento</p>
+
+    <p>Ricordo che sfere conosciute da anche la possibilit&agrave; di lanciare
+    poteri da pergamena</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b6f0f2ce8788e50ddcc3d97f464665c98486fa31
+    sourceId: Item.7yIh1nDchYOWkcA5
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681056288111
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.B5dTLpoAa5HZjedT
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 19900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FDv1RzhQhfAwJrIK
+_key: '!items!FDv1RzhQhfAwJrIK'

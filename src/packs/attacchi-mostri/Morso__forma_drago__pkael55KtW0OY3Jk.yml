@@ -1,0 +1,42 @@
+name: Morso (forma drago)
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: long
+  damage: 1d10
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 1e027d1f70c354bf2dadb45052632be87819d8f2
+    sourceId: Item.N5pZLtX9v9pQWLg2
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680857418842
+  modifiedTime: 1743436810437
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: pkael55KtW0OY3Jk
+sort: 0
+_key: '!items!pkael55KtW0OY3Jk'

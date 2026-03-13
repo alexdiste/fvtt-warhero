@@ -1,0 +1,34 @@
+name: Immunità alle armi
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>le armi non infliggono danni agli sciami di&nbsp;formiche</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 87814027636246182f48205590a774ea7ba8d97b
+    sourceId: Item.a3x954kiLnNkass4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1700571024891
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Kdw3QrdGypYUNwLz
+sort: 2100000
+_key: '!items!Kdw3QrdGypYUNwLz'

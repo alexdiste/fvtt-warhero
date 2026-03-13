@@ -1,0 +1,42 @@
+name: Discepolo dei draghi - Mutare forma drago
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; spendere un'azione per&nbsp;tramutarsi nel
+    drago del proprio tipo, questo gli fornisce un bonus di&nbsp;+2 a alle
+    statistiche FIS e IST, ottiene inoltre l'attacco con il morso&nbsp;1d10, due
+    artigliate da 2d6, e la codata 2d4. La trasformazione non&nbsp;gli consente
+    di lanciare poteri ma pu&ograve; volare al suo movimento.&nbsp;Usare
+    pi&ugrave; di un tipo di attacco per turno provoca gli stessi malus
+    di&nbsp;usare due armi. L'equipaggiamento si fonde con il manto del
+    drago&nbsp;fino a che mantiene la forma</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 60d350684d959fcbe779df50576fe8735fb4a534
+    sourceId: Item.z7dpOX5bXHjIDBN8
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 3LkvP2JWpN1cbSTn
+sort: 9300000
+_key: '!items!3LkvP2JWpN1cbSTn'

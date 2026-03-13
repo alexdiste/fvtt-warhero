@@ -1,0 +1,36 @@
+name: Chierico - Vera fede
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio fintanto che ha almeno un punto&nbsp;mana ottiene un bonus
+    di +3 punti in difesa</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b35358b55b85fa6212298a260a72fc1e31096ffb
+    sourceId: Item.09nFoI91gCY68rgl
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: AEBDSgpOLfJn0FG5
+sort: 12100000
+_key: '!items!AEBDSgpOLfJn0FG5'

@@ -1,0 +1,46 @@
+name: Pozione di nuotare
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '25'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 50 Mo.</p>
+
+    <p>offre un bonus di +3 alle prove di nuotare durante l'intera giornata.
+    Aggiungere condizione
+    @Compendium[fvtt-warhero.condizione.HFXf9KUdQrYidDNm]{Nuotare migliorato}
+    alla scheda</p>
+  price: '50'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 7c4c4137a578a6bfd52db33a472cd8d1b625ece8
+    sourceId: Compendium.world.temp.dNs1bXhrKSCuj4Oj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553262
+  modifiedTime: 1702106237790
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.dNs1bXhrKSCuj4Oj
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: M99NCV0bFbBZbxGu
+_key: '!items!M99NCV0bFbBZbxGu'

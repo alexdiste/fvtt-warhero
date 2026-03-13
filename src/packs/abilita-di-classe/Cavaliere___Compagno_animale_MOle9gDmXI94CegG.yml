@@ -1,0 +1,36 @@
+name: Cavaliere - Compagno animale
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; avere un compagno&nbsp;animale come descritto
+    nella relativa regola del compagno animale</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a9c450058ab2a9e47bbf75deda8b21dee38301dd
+    sourceId: Item.yt0RfBxfTABT2W1T
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: MOle9gDmXI94CegG
+sort: 11600000
+_key: '!items!MOle9gDmXI94CegG'

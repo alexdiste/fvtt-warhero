@@ -1,0 +1,31 @@
+name: Trasmutazione - III Trasformazione
+type: power
+system:
+  level: 3
+  magicschool: Trasmutazione
+  description: >-
+    chi usa l'incantesimo si trasforma in un guerriero e può usare qualsiasi
+    arma o scudo per lo scontro, ma perde la capacita di lanciare incantesimi.
+    guadagna un bonus di 4 punti a fis. può interrompere questo effetto quando
+    vuole, l'effetto termina automaticamente dopo che sia trascorso 1 ora dal
+    lancio dell'incantesimo.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904978
+  modifiedTime: 1743439294708
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Wiw3J9c1AGCZGbno
+folder: null
+sort: 8000000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!Wiw3J9c1AGCZGbno'

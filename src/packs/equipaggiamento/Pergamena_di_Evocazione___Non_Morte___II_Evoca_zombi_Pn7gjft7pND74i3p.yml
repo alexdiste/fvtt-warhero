@@ -1,0 +1,42 @@
+name: Pergamena di Evocazione - Non Morte - II Evoca zombi
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.5C07VRo8z41Kh70Y]{Evocazione - Non
+    Morte - II Evoca zombi} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 603b89abdeaaf3d998537ec8deb582130f86f5f5
+    sourceId: Item.W9EkurXq3IzYPGhj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444614
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Pn7gjft7pND74i3p
+sort: 30200000
+_key: '!items!Pn7gjft7pND74i3p'

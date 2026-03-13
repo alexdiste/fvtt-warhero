@@ -1,0 +1,1789 @@
+name: Elfo oscuro
+type: character
+img: systems/dnd5e/tokens/humanoid/Drow.webp
+items:
+  - name: Chierico
+    type: class
+    img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+    system:
+      weapons:
+        short: true
+        long: true
+        twohanded: true
+        shooting: true
+        polearm: true
+        throwing: true
+      armors:
+        light: true
+        medium: true
+        heavy: true
+      shields:
+        light: true
+        medium: true
+        tower: true
+      issecondary: false
+      description: >-
+        <p>Sacerdote devoto alle arti divine.</p>
+
+        <p>Ha le seguenti abilità di classe:</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.BfOV4iFhgm2g7HoC]{Chierico
+        - Contropotere}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bDJFkMddaX9wy8BS]{Chierico
+        - Dominio}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yOt67STTPbLVhXwD]{Chierico
+        - Donazione (+2 mana)}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vLmxh9L0w0AgHJTL]{Chierico
+        - Preghiera}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.IknUEJvazpHKcfrx]{Chierico
+        - Scacciare}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.fpLoxxxfCQmAagfU]{Chierico
+        - Sfere conosciute}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.AEBDSgpOLfJn0FG5]{Chierico
+        - Vera fede}</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 7c2392f17cf6e44d8fb3e893a2fa9ed6d2729158
+        sourceId: Item.KIbqEpVMdTJyEzDU
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 1500000
+    _id: d2oSGZtfYAtdCKLs
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.d2oSGZtfYAtdCKLs'
+  - name: Chierico - Contropotere
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio ha l’abilità aggiuntiva
+        @Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro
+        potere}</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 17633af115e42eedac515a8bb7d5812555700b18
+        sourceId: Item.lbOW2clI1QJN1ndE
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: ojl9F4M9PTNRKta6
+    sort: 14900000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.ojl9F4M9PTNRKta6'
+  - name: Chierico - Donazione (+2 mana)
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Il personaggio in fase di creazione ottiene un\_bonus di 2 punti mana per i suoi poteri</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 8c00f70159b90db3a2f4ba0ae9ce7b5b7e16570e
+        sourceId: Item.WZCIftE31r0iQ9wP
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: xyIF43Tsxy4w4inO
+    sort: 12500000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.xyIF43Tsxy4w4inO'
+  - name: Chierico - Dominio male
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio ha 5 + MEN cariche al giorno da<br />usare al posto
+        del mana per lanciare poteri della sfera del<br />proprio allineamento
+        come da schema:<br />● Legale -
+        @Compendium[fvtt-warhero.sfere-di-magia.4neEb8uAo1FgLnwx]{19.Indole-Legge}<br
+        />● Buono -
+        @Compendium[fvtt-warhero.sfere-di-magia.FV5Y61NhhWwnrBYZ]{16.Indole-Bene}<br
+        />● Neutrale -
+        @Compendium[fvtt-warhero.sfere-di-magia.jAcYNuXzJPBk2mEE]{18.Indole-Equilibrio}<br
+        />● Malvagio -
+        @Compendium[fvtt-warhero.sfere-di-magia.0l33pWTj5jsnmEfz]{20.Indole-Male}<br
+        />● Caotico -
+        @Compendium[fvtt-warhero.sfere-di-magia.FnckhzvGblZXCdOv]{17.Indole-Caos}</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 8931a1315234eb3e7ced24a427a6987b15885820
+        sourceId: Item.Uj4SC06dit3xVimL
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: aNuhYIXo36lksKU2
+    sort: 15000000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.aNuhYIXo36lksKU2'
+  - name: Chierico - Preghiera
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: false
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio può una volta al giorno pregare per recuperare un
+        numero di punti mana pari a 1 per ogni ora di preghiera, fino a un
+        massimo di 3. Non è possibile selezionare questa abilità con l’abilità
+        aggiuntiva
+        @Compendium[fvtt-warhero.abilita-aggiuntive.xFsAySx8ev5EL557]{Capacità
+        extra}</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 9e8cb5e66bd1157135ffaef8c628810eb4f19075
+        sourceId: Item.SyJxxlecmhQOpylD
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: j7pFpttkGoLP69YU
+    sort: 12400000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.j7pFpttkGoLP69YU'
+  - name: Chierico - Scacciare
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: false
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Il personaggio può tentare 3 + MEN volte al\_giorno, di scacciare un non morto. Se supera un TxC sul\_bersaglio (può usare MEN al posto IST nel tiro). Un non morto\_scacciato si dissolve e sparisce. Usare scacciare è\_considerata una mossa movimento</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 9fcbca9fedffafbf2470d9e0c4a808c32259c9d6
+        sourceId: Item.2S8cLhWHSWqS8woX
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: asY9Eaj0lJcp1Bo4
+    sort: 12200000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.asY9Eaj0lJcp1Bo4'
+  - name: Chierico - Sfere conosciute
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Sfere conosciute da anche la possibilità di lanciare pergamene</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.Q8EL4AZ7eWFwczHk]{01.Ammaliamento}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.cs6Y0TWt6wKuvQ4w]{02.Conoscenze}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ukQlFEIZ7PO2s1EE]{03. Costrizione}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.U8pd1S84rsZEjpGV]{04.Divinazione}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ER2C97wniMa4OwPY]{12.Forza}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ixnLA206NExE259s]{13.Guarigione}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.i6A7rLLMajX1GCnB]{14.Guerra}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.gujWiPPrUckarLSX]{21.Linguaggi}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.FV5Y61NhhWwnrBYZ]{16.Indole-Bene}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.FnckhzvGblZXCdOv]{17.Indole-Caos}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.jAcYNuXzJPBk2mEE]{18.Indole-Equilibrio}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.4neEb8uAo1FgLnwx]{19.Indole-Legge}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.0l33pWTj5jsnmEfz]{20.Indole-Male}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.IUyzU68wsbiigBsZ]{22.Luce}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.igaGpBPbXnTgHMjV]{23.Morte}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.Yb3i7aZ4rSWGQNsJ]{24.Negromanzia}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ooVUxPR65yjFkP6J]{25.Oscurità}</p>\n<p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.2mETVBVZGplL6I9z]{26.Protezione}</p>\n<p><em>Non può lanciare poteri di una sfera opposta all' allineamento scelto</em></p>\n<p>\_</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 2cc10da33f5cb26d6cd27dd3e98af263a94a88b2
+        sourceId: Item.PkUKPQuP7OBfIGHm
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: quK7mJgQm3KBH2hh
+    sort: 12300000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.quK7mJgQm3KBH2hh'
+  - name: Chierico - Vera fede
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Il personaggio fintanto che ha almeno un punto\_mana ottiene un bonus di +3 punti in difesa</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: b35358b55b85fa6212298a260a72fc1e31096ffb
+        sourceId: Item.09nFoI91gCY68rgl
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: P6iOkeQAxl5yf5d0
+    sort: 12100000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.P6iOkeQAxl5yf5d0'
+  - name: Ammaliamento - I Sonno
+    type: power
+    system:
+      level: '1'
+      magicschool: Ammaliamento
+      description: "<p>la creatura si addormenta e non si sveglia finché non riceve un danno normale o stordente o trascorrono otto ore. [[/r 1d20+@statistics.min.value+@statistics.min.save.value #CD13 FIS negare]]\_CD 13, FIS, negare.</p>"
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: RpZaYpwQeOGXVplI
+    folder: null
+    sort: 2500000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.RpZaYpwQeOGXVplI'
+  - name: Ammaliamento - II Charme
+    type: power
+    system:
+      level: '2'
+      magicschool: Ammaliamento
+      description: >-
+        la creatura considera l'incantatore un alleato per l'intera giornata. CD
+        15, MEN, negare.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: HKY3J5ocWDOjUNyY
+    folder: null
+    sort: 14100000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.HKY3J5ocWDOjUNyY'
+  - name: Ammaliamento - III Comando
+    type: power
+    system:
+      level: '3'
+      magicschool: Ammaliamento
+      description: >-
+        il bersaglio esegue un ordine impartito alla creatura che non sia un
+        ordine suicida CD 16, MEN, negare. una volta eseguito il comando
+        l'effetto svanisce o dopo che sia trascorso 3 giorni.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: OCBWYbvWptkIzQdO
+    folder: null
+    sort: 12100000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.OCBWYbvWptkIzQdO'
+  - name: Conoscenza - I Individuazione del magico
+    type: power
+    system:
+      level: '1'
+      magicschool: Conoscenze
+      description: >-
+        l'incantatore riesce a percepire in quell'istante se vi è intorno a lui
+        nel raggio di 10 metri presenza di aure magiche. Capisce se vi sono
+        effetti di incantesimi attivi o oggetti con proprietà magiche
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: WsKuhSmq9tp5LWAD
+    folder: null
+    sort: 4600000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.WsKuhSmq9tp5LWAD'
+  - name: Conoscenze - II Dissolvi magie
+    type: power
+    system:
+      level: '2'
+      magicschool: Conoscenze
+      description: >-
+        questo incantesimo se lanciato su un bersaglio permette di togliergli un
+        incantesimo attivo ( generalmente si parte sempre dal più forte ). se
+        lanciata su un area permette di togliere l'incantesimo dall'area, in
+        ogni caso per riuscire in questo intento è necessario superare una prova
+        su men con CD in base al livello dell'incantesimo. livello 1 CD 10
+        livello 2 CD 14 livello 3 CD 16 livello 4 CD 18
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: NJTjeJRLatg5Oxez
+    folder: null
+    sort: 10200000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.NJTjeJRLatg5Oxez'
+  - name: Conoscenze - III Identificare
+    type: power
+    system:
+      level: '3'
+      magicschool: Conoscenze
+      description: >-
+        lanciando questo incantesimo su un oggetto se ne capisce il
+        funzionamento e le proprietà magiche ad esso associate.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: 2YXasxrWkMrDvDEJ
+    folder: null
+    sort: 1700000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.2YXasxrWkMrDvDEJ'
+  - name: Costrizione - I Richiamo
+    type: power
+    system:
+      level: '1'
+      magicschool: Costrizione
+      description: >-
+        puoi selezionare un oggetto incustodito o un alleato, fino a fine
+        giornata quando vuoi se il bersaglio è entro 20 metri puoi spostarlo
+        magicamente e farlo apparire adiacente a colui che ha usato questo
+        potere, non è possibile avere più di 3 richiami attivi
+        contemporaneamente
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: ofsY1YGagFnSU1wL
+    folder: null
+    sort: 6200000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.ofsY1YGagFnSU1wL'
+  - name: Costrizione - II Ragnatela
+    type: power
+    system:
+      level: '2'
+      magicschool: Costrizione
+      description: >-
+        in un'area di 6 metri qualsiasi mossa di movimento,assaltare o
+        travolgere per poterla fare è necessario superare un tiro salvezza su
+        IST CD 13
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: AkPZsdMDMfQO24DY
+    folder: null
+    sort: 8300000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.AkPZsdMDMfQO24DY'
+  - name: Costrizione - III Patto
+    type: power
+    system:
+      level: '3'
+      magicschool: Costrizione
+      description: >-
+        Devi scegliere se negare le mosse di potere o quelle di attacco, il
+        bersaglio non sarà in grado di usare tale mossa scelta per i prossimi
+        1d4 Round, CD 16 MEN Nega
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: NN8ca0jInwZsehzC
+    folder: null
+    sort: 3100000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.NN8ca0jInwZsehzC'
+  - name: Divinazione - I Individuazione dell'allineamento
+    type: power
+    system:
+      level: '1'
+      magicschool: Divinazione
+      description: l'incantatore conosce l'allineamento del bersaglio.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: L9nRTSw1TNa1hEqE
+    folder: null
+    sort: 2100000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.L9nRTSw1TNa1hEqE'
+  - name: Divinazione - III Domanda divina
+    type: power
+    system:
+      level: '3'
+      magicschool: Divinazione
+      description: >-
+        può fare una domanda al master il quale può rispondere con un si o un
+        no.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: pAt7kq95cH9Z8qMb
+    folder: null
+    sort: 14200000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.pAt7kq95cH9Z8qMb'
+  - name: Forza - I Dardo incantato
+    type: power
+    system:
+      level: '1'
+      magicschool: Forza
+      description: il bersaglio subisce 2d4+4 danni.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: WpqdG9y4GJTDPy96
+    folder: null
+    sort: 1100000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.WpqdG9y4GJTDPy96'
+  - name: Forza - II Armatura magica
+    type: power
+    system:
+      level: '2'
+      magicschool: Forza
+      description: >-
+        il bersaglio guadagna un bonus di 4 punti a difesa per il prossimo
+        scontro
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: CuBtXq1e841qFbxz
+    folder: null
+    sort: 8200000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.CuBtXq1e841qFbxz'
+  - name: Forza - III Globo di forza
+    type: power
+    system:
+      level: '3'
+      magicschool: Forza
+      description: >-
+        tutte le creature in un area di raggio 6 metri subiscono 8d6 danni da
+        forza. CD 18, IST,negare.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: piKw1njwGPJ0Fb4p
+    folder: null
+    sort: 9300000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.piKw1njwGPJ0Fb4p'
+  - name: Guarigione - I Cura ferite
+    type: power
+    system:
+      level: '1'
+      magicschool: Guarigione
+      description: '<p>cura il bersaglio di [[/r 2d10 + 10 #potere cura ferite]]</p>'
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: VDRe2LMpqpPNkA1r
+    folder: null
+    sort: 13600000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.VDRe2LMpqpPNkA1r'
+  - name: Guarigione - II Rimuovi status
+    type: power
+    system:
+      level: '2'
+      magicschool: Guarigione
+      description: >-
+        rimuove tutti gli status negativi al bersaglio come il veleno, malattie,
+        sonno o la perdita di caratteristiche, chi usa questo incantesimo deve
+        essere a conoscenza di cosa vuole rimuovere
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: puMe0iVhfszIFvKq
+    folder: null
+    sort: 15500000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.puMe0iVhfszIFvKq'
+  - name: Guarigione - III Resurrezione
+    type: power
+    system:
+      level: '3'
+      magicschool: Guarigione
+      description: >-
+        <p>riporta in vita un cadavere di un alleato conosciuto in vita. questa
+        operazione non può essere fatta durante un combattimento. il personaggio
+        torna in vita con i pm che aveva alla morte e 10 pf, il costo di mana
+        dell'incantesimo aumenta di 1 per ogni giorno trascorso dalla morte del
+        bersaglio. Il bersaglio ha un malus di -2 in tutte le statistiche, non
+        rimovibili , fino al giorno successivo.</p>
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: 0Ag6spJcQ3gO607c
+    folder: null
+    sort: 7700000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.0Ag6spJcQ3gO607c'
+  - name: Guerra - I Precisione
+    type: power
+    system:
+      level: '1'
+      magicschool: Guerra
+      description: >-
+        il bersaglio ottiene un bonus di 3 punti al tiro per colpire nel
+        combattimento fino all afine dello scontro
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: eMpsuhr7pPIMEgQz
+    folder: null
+    sort: 7000000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.eMpsuhr7pPIMEgQz'
+  - name: Guerra - II Forza
+    type: power
+    system:
+      level: '2'
+      magicschool: Guerra
+      description: >-
+        il bersaglio ottiene un bonus di 3 punti a fis per la durata fino all
+        afine dello scontro
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: 90bNzv9aceXzUu0L
+    folder: null
+    sort: 10600000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.90bNzv9aceXzUu0L'
+  - name: Guerra - III Titano
+    type: power
+    system:
+      level: '3'
+      magicschool: Guerra
+      description: >-
+        il bersaglio ottiene un bonus di 5 punti a fis cumulabile con
+        l'incantesimo forza fino alla fine dello scontro.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: s16yTIbofUt1TZJi
+    folder: null
+    sort: 14800000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.s16yTIbofUt1TZJi'
+  - name: Linguaggi - I Parlare con i morti
+    type: power
+    system:
+      level: '1'
+      magicschool: Linguaggi
+      description: >-
+        il morto può rispondere a 5 domande fatte dall'incantatore con un si o
+        un no.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: ihuMrpiLFUewoYuL
+    folder: null
+    sort: 13300000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.ihuMrpiLFUewoYuL'
+  - name: Linguaggi - II Comprensione dei linguaggi
+    type: power
+    system:
+      level: '2'
+      magicschool: Linguaggi
+      description: il bersaglio capisce qualsiasi lingua per 1 ora.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: gCEqax7gofIM3r5Z
+    folder: null
+    sort: 900000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.gCEqax7gofIM3r5Z'
+  - name: Linguaggi - III Parlare linguaggi
+    type: power
+    system:
+      level: '3'
+      magicschool: Linguaggi
+      description: il bersaglio può parlare una qualsiasi lingua per 5 minuti.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: StpQFJQwAjBLCOwv
+    folder: null
+    sort: 100000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.StpQFJQwAjBLCOwv'
+  - name: Indole - Male - I Punire il bene
+    type: power
+    system:
+      level: '1'
+      magicschool: Indole - Male
+      description: >-
+        Se il bersaglio è di allineamento buono subisce 4d6 danni CD 14, MEN,
+        dimezzare. Altrimenti il bersaglio riduce i danni subiti da creature
+        buone di 5 punti per il prossimo scontro
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: 1vBz1L9cbWvExl1I
+    folder: null
+    sort: 5400000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.1vBz1L9cbWvExl1I'
+  - name: Indole - Male - II Di fronte al male
+    type: power
+    system:
+      level: '2'
+      magicschool: Indole - Male
+      description: >-
+        fino alla fine dello scontro un bersaglio di allineamento malvagio che
+        subisce un colpo infligge lo status di affaticato all'avversario che lo
+        ha colpito avversario che lo ha colpito CD 16 su FIS per negare, se il
+        bersaglio è già affaticato diventa esausto, se un bersaglio diventa
+        esausto il potere termina
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: dyoJb7HDJAxHGnyX
+    folder: null
+    sort: 1500000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.dyoJb7HDJAxHGnyX'
+  - name: Indole - Male - III Sofferenza
+    type: power
+    system:
+      level: '3'
+      magicschool: Indole - Male
+      description: infligge 12d6 danni a una creatura buona. CD 16, MEN, dimezzare
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: jueg9HgyufeKUtMH
+    folder: null
+    sort: 1400000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.jueg9HgyufeKUtMH'
+  - name: Luce - I Luce magica
+    type: power
+    system:
+      level: '1'
+      magicschool: Luce
+      description: crea luce intorno al bersaglio per 1 ora.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: SZ0uezQNgedHKH5h
+    folder: null
+    sort: 6800000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.SZ0uezQNgedHKH5h'
+  - name: Luce - II Luce abbagliante
+    type: power
+    system:
+      level: '2'
+      magicschool: Luce
+      description: >-
+        un'area di 6 metri viene pervasa dalla luce i bersagli nell’area
+        ottengono un -5 ai tiri per colpire, TS FIS 16 per negare . Il potere
+        neutralizza oscurità magica. L'effetto nell’area persiste per 5 minuti.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: sHya5xB36UnLXdaC
+    folder: null
+    sort: 15000000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.sHya5xB36UnLXdaC'
+  - name: Luce - III Colpo del sole
+    type: power
+    system:
+      level: '3'
+      magicschool: Luce
+      description: Il bersaglio subisce 8d6 danni CD 18, IST, negare
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags:
+      core: {}
+      scene-packer:
+        hash: b30d416e5ac8bfd20af2b2c72b6e817835c9f4a2
+        sourceId: Item.j7yq0bbZAJaxrVf5
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 7300000
+    _id: RCHYau7fuozxhVEk
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.RCHYau7fuozxhVEk'
+  - name: Morte - I Risucchio
+    type: power
+    system:
+      level: '1'
+      magicschool: Morte
+      description: >-
+        l'incantatore deve effettuare un tiro per colpire a distanza entro 20
+        metri e se ha successo , il bersaglio perde 1 punto di fis, fino ad un
+        minimo di 1, per 24 ore.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: PbqkAzss2avhc4Wl
+    folder: null
+    sort: 3600000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.PbqkAzss2avhc4Wl'
+  - name: Morte - II Prosciugare
+    type: power
+    system:
+      level: '2'
+      magicschool: Morte
+      description: >-
+        tutti i bersagli, tranne l'incantatore, entro 10 metri da lui subiscono
+        4d4 danni.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: RpfIKcRTif0Zyg65
+    folder: null
+    sort: 12400000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.RpfIKcRTif0Zyg65'
+  - name: Morte - III Dito di morte
+    type: power
+    system:
+      level: '3'
+      magicschool: Morte
+      description: >-
+        il bersaglio subisce 100 danni, CD 14 FIS per negare questo effetto e
+        subire 3d6 danni
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: hoyvg1IavPOylXjB
+    folder: null
+    sort: 6300000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.hoyvg1IavPOylXjB'
+  - name: Negromanzia - I Risucchia vita
+    type: power
+    system:
+      level: '1'
+      magicschool: Negromanzia
+      description: >-
+        il bersaglio subisce 2d4 danni e l'incantatore si cura di altrettanti
+        danni.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: NjNPX8ueGwJgMr1g
+    folder: null
+    sort: 2300000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.NjNPX8ueGwJgMr1g'
+  - name: Negromanzia - II Vita Falsa
+    type: power
+    system:
+      level: '2'
+      magicschool: Negromanzia
+      description: un bersaglio ottiene, per uno scontro 2d10 + 10 pf extra.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: rjwPBRcJrdiCMIdr
+    folder: null
+    sort: 9400000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.rjwPBRcJrdiCMIdr'
+  - name: Oscurità - I Maglio oscuro
+    type: power
+    system:
+      level: '1'
+      magicschool: Oscurità
+      description: con un tiro per colpire a distanza vengono inflitti 5d4+5 danni.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: ersyP0cR6q4xOQXY
+    folder: null
+    sort: 3700000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.ersyP0cR6q4xOQXY'
+  - name: Oscurità - II Oscurità magica
+    type: power
+    system:
+      level: '2'
+      magicschool: Oscurità
+      description: >-
+        un area di 6 metri viene oscurata e non è possibile illuminarla in alcun
+        modo. l'incantesimo neutralizza luce magica. l'effetto persiste per 5
+        minuti.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: WFuJsNkoNdLBTtFN
+    folder: null
+    sort: 13000000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.WFuJsNkoNdLBTtFN'
+  - name: Oscurità - III Manto celato
+    type: power
+    system:
+      level: '3'
+      magicschool: Oscurità
+      description: >-
+        il personaggio diventa invisibile finchè non effettua azioni ostili, o
+        trascorre 1 ora di tempo con questo incantesimo attivo.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: nJg3NbEfaNYyN6yD
+    folder: null
+    sort: 10800000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.nJg3NbEfaNYyN6yD'
+  - name: Protezione - I Scudo magico
+    type: power
+    system:
+      level: '1'
+      magicschool: Protezione
+      description: >-
+        il bersaglio ottiene un bonus di 2 punti a difesa per il prossimo
+        scontro.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: Lzl1hpEuHQQm0woT
+    folder: null
+    sort: 4800000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.Lzl1hpEuHQQm0woT'
+  - name: Protezione - II Salvezza
+    type: power
+    system:
+      level: '2'
+      magicschool: Protezione
+      description: >-
+        il bersaglio ottiene un bonus di 5 punti al risultato del primo tiro
+        salvezza che effettua
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: 2OnprNih7Cu77OnU
+    folder: null
+    sort: 15700000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.2OnprNih7Cu77OnU'
+  - name: Protezione - III Pelle di pietra
+    type: power
+    system:
+      level: '3'
+      magicschool: Protezione
+      description: >-
+        il personaggio ottiene 40 punti ferita extra che permangono fin quando
+        non subisce un numero di danni sufficiente a riportarlo ai suoi punti
+        ferita originali o meno. fino ad allora non può ricevere incantesimi che
+        restituiscano pf.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: htBgs2nJjaZyn1Ps
+    folder: null
+    sort: 7100000
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.htBgs2nJjaZyn1Ps'
+  - name: Elfo Oscuro
+    type: race
+    img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+    system:
+      weapons:
+        short: false
+        long: false
+        twohanded: false
+        shooting: false
+        polearm: false
+        throwing: false
+      armors:
+        light: false
+        medium: false
+        heavy: false
+      shields:
+        light: false
+        medium: false
+        tower: false
+      description: "<p><em>Creature simili a gli elfi ma differiscono nella pigmentazione </em><em>della pelle che è molto tendente al nero</em></p>\n<ul>\n<li>Punti Ferita = Medio (+4 pf per livello)</li>\n<li>Lingue Iniziali = @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)}, @Compendium[fvtt-warhero.lingue.iNr8K3qkwIox6lI6]{Language (elfico)}</li>\n<li>Livello 1,7 = +1 lingua conosciuta @Compendium[fvtt-warhero.lingue.lteyi47NZn7x4Umd]{Language (da scegliere)}</li>\n<li>Livello 1,2,4,6,8 = +2% ai tiri percentuale.</li>\n<li>Livello 5 = +1 mana</li>\n<li>Livello 1,4,8 = +1 MEN</li>\n<li>\_Livello 3,6,9 = +1 TxC e +1 Danni</li>\n</ul>"
+      hpprogresion: medium
+      languages: comune, elfico
+      attributebonus1: min
+      attributebonus4: min
+      attributebonus8: min
+    effects: []
+    flags:
+      scene-packer:
+        hash: 31cd772bfd7d50c1ecf4d41af706bfa7e8d8d2e6
+        sourceId: Item.BGiDlwZWEami2Zx7
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 1650000
+    _id: 7kXEnPwl21QHkNT7
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.7kXEnPwl21QHkNT7'
+  - name: Language (comune)
+    type: language
+    img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+    system:
+      shortdescription: ''
+      description: >-
+        <p data-pm-slice="1 1 []">É la lingua comune per tutte le razze
+        civilizzate tipo umani, elfi e simili</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 2e0b1696f9dceeaefe20cedd557e608cf48a6132
+        sourceId: Item.FWYg6sR7ZQOpVEeQ
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 2100000
+    _id: Dg3I5qn3pKFwq08F
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.Dg3I5qn3pKFwq08F'
+  - name: Language (elfico)
+    type: language
+    img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+    system:
+      shortdescription: ''
+      description: <p>E' la lingua parlata dagli elfi.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 04227ec8024e5bfc79dd1fd99423bb93dc7b8547
+        sourceId: Item.6XwCbtatjbOHy4KL
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 1900000
+    _id: SDf8a3lUSGXGdKSd
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.SDf8a3lUSGXGdKSd'
+  - name: Scurovisione (9 metri)
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Può vedere al buio fino a 36 metri.La Scurovisione è esclusivamente
+        in bianco e nero, ma per il resto è come la normale vista</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: dffe2adc650dc4e89ced1c94e18025721a6b9b72
+        sourceId: Item.2iL0rFvChTfN21eP
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: NQcDOmBrI20BfMrS
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!pIKNrCWOv9PoJVpE.NQcDOmBrI20BfMrS'
+system:
+  subactors: []
+  biodata:
+    class: ''
+    origin: ''
+    age: 0
+    size: medium
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: ''
+    gmnotes: ''
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 1
+      value: 1
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 2
+      value: 2
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 3
+      value: 3
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 40
+      value: 40
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 6
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 12
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 8
+      value: 8
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 1
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 1
+prototypeToken:
+  name: Elfo oscuro
+  displayName: 0
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: systems/dnd5e/tokens/humanoid/Drow.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 9
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 0
+    brightness: 0
+    saturation: -1
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+effects: []
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239337735
+  modifiedTime: 1772340564249
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: pIKNrCWOv9PoJVpE
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+sort: 2500000
+_key: '!actors!pIKNrCWOv9PoJVpE'

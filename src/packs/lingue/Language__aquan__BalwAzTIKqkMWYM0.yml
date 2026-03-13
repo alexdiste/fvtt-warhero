@@ -1,0 +1,29 @@
+name: Language (aquan)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dagli elementali d'acqua.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c94589a629cacf53df72f266d439889b65624b29
+    sourceId: Item.4JL9ihmP2x5KTcz2
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613676
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: BalwAzTIKqkMWYM0
+_key: '!items!BalwAzTIKqkMWYM0'

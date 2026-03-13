@@ -1,0 +1,42 @@
+name: Trasformista - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare poteri da
+    pergamena</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.Euq6JtTvuBucAcdc]{15.Illusione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.gujWiPPrUckarLSX]{21.Linguaggi}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.k19nOLJBQG5fu4a3]{29.Trasmutazione}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 6cbe8c61637376acd3e481ac71f7e16dc9de0058
+    sourceId: Item.d0cU9tLkLXuhAkJZ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681046470608
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.d0cU9tLkLXuhAkJZ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: UwJAIqWEJSBhTak1
+_key: '!items!UwJAIqWEJSBhTak1'

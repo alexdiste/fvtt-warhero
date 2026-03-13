@@ -1,0 +1,43 @@
+name: Torcia
+type: equipment
+img: icons/sundries/lights/torch-black.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 5
+  equipped: false
+  slotused: 0.2
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una torcia. Impilabili fino a 5 in uno stesso
+    slot</p>
+
+    <p>Una torcia arde per 1 ora e proietta luce in un raggio di 4 quadretti</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 3da74b36149d25c779e8c39f4c05c3d748eb30a7
+    sourceId: Item.q0VCaMmH2qIA2ZI4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676719012489
+  modifiedTime: 1705337365213
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.q0VCaMmH2qIA2ZI4
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 39500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: nGO18McABxAbLKdC
+_key: '!items!nGO18McABxAbLKdC'

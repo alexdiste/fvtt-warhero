@@ -1,0 +1,48 @@
+name: Esausto
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: >-
+    Non può eseguire due mosse di movimento di fila, velocità di movimento è
+    dimezzata e il valore di penalità è di -2 a FIS e IST
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Il personaggio &egrave; esausto e non pu&ograve; eseguire due mosse di
+    movimento di fila, a la sua velocit&agrave; di movimento &egrave; dimezzata
+    e subisce una penalit&agrave; di -2 a FIS e IST. Dopo aver fatto un azione
+    di Riposare questo status viene rimosso</p>
+
+    <p>&nbsp;</p>
+
+    <p>Questo &egrave; uno stato alterato</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d46deb30e0ffbc77fc62e39bd9f684f13ece6711
+    sourceId: Item.NpuMly3c9eb7TlVk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151576
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpuMly3c9eb7TlVk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 7200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: lzVVrj3gPPWy4rDC
+_key: '!items!lzVVrj3gPPWy4rDC'

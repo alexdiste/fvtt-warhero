@@ -1,0 +1,42 @@
+name: burattino grande
+type: classitem
+img: icons/commodities/treasure/doll-voodoo.webp
+system:
+  cost: 5000
+  quantity: 1
+  slotused: 12
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Burattinaio o Vuduista
+  description: >-
+    <p>un
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.YTOtXElo8gD6bC0z]{Burattino
+    grande} usabile da classi come il vuduista, il burattinaio e altri.</p>
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9e0a2c4f4ca0577244b076b06f390814ae246815
+    sourceId: Item.4L0ho3TnoAG8XeRI
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704870187840
+  modifiedTime: 1743322100503
+  lastModifiedBy: bApdcCqVSmKfSfw3
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: zMh8n6rt789y6Oz6
+sort: 400000
+_key: '!items!zMh8n6rt789y6Oz6'

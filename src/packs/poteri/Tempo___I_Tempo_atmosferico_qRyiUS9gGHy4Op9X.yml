@@ -1,0 +1,28 @@
+name: Tempo - I Tempo atmosferico
+type: power
+system:
+  level: 1
+  magicschool: Tempo
+  description: >-
+    permettere di cambiare il tempo atmosferico da pioggia, a sole, a tempesta,
+    a neve, in un raggio di 300 metri dall'incantatore, per 1 ora.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904972
+  modifiedTime: 1743439294891
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: qRyiUS9gGHy4Op9X
+folder: null
+sort: 13400000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!qRyiUS9gGHy4Op9X'

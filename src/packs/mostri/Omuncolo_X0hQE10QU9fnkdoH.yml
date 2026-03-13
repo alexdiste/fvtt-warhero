@@ -1,0 +1,411 @@
+name: Omuncolo
+type: character
+items:
+  - name: Schianto
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+    system:
+      weapontype: special
+      damage: 1d6
+      damage2hands: 1d6
+      rollformula: 1d20+2
+      damageformula: 1d8
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+      isCustomAttackRoll: false
+    effects: []
+    flags:
+      scene-packer:
+        hash: 8a663e95faedf211d749defbf09bea82548494c8
+        sourceId: Item.wdqnHGHUqtvhlUyv
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 1400000
+    _id: IVx9bgYKZkOk769k
+    ownership:
+      default: 0
+    _key: '!actors.items!X0hQE10QU9fnkdoH.IVx9bgYKZkOk769k'
+  - name: Percezione cieca (10 m)
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: true
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Consente alla creatura di notare cose che non può vedere, ma senza la precisione della Vista Cieca. La creatura di solito non\_ha bisogno di fare prove di Individuazione o Ascolto per notare<br />ed individuare le creature nel raggio d’azione della sua\_capacità di Percezione Cieca</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 1b527d9670bef99d89d257786bc9d42281c3ffc1
+        sourceId: Item.PjRoDjRreXWRN92s
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: h08QM5gZ2Upbj5RF
+    sort: 3700000
+    ownership:
+      default: 0
+    _key: '!actors.items!X0hQE10QU9fnkdoH.h08QM5gZ2Upbj5RF'
+  - name: Ricetta
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: true
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>materiale necessario 300Mo di argilla per poterlo far costruire a un
+        tecnofabbro</p>
+      maxuseFormula: '1'
+    effects: []
+    folder: null
+    flags:
+      scene-packer:
+        hash: 8be6bbb670411de2eaf5552f5a66c55de1170192
+        sourceId: Item.ttOadVbwZSJ2KFDN
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: 6SFwyMPRrUaqe1LS
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!X0hQE10QU9fnkdoH.6SFwyMPRrUaqe1LS'
+img: systems/dnd5e/tokens/construct/Homonculus.webp
+system:
+  biodata:
+    class: ''
+    age: 0
+    size: small
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: ''
+    gmnotes: ''
+    origin: ''
+  subactors: []
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 2
+      value: 2
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 10
+      value: 10
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 0
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 17
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 2
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 2
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 3
+      value: 3
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 2
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 1
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
+prototypeToken:
+  name: Omuncolo
+  displayName: 0
+  actorLink: false
+  width: 0.5
+  height: 0.5
+  texture:
+    src: systems/dnd5e/tokens/construct/Homonculus.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+effects: []
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239337735
+  modifiedTime: 1772340564249
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: X0hQE10QU9fnkdoH
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+sort: 1900000
+_key: '!actors!X0hQE10QU9fnkdoH'

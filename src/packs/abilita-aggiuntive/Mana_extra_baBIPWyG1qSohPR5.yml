@@ -1,0 +1,35 @@
+name: Mana extra
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: "<p><strong>Beneficio:</strong>\_il personaggio ottiene un bonus di +2 al suo mana giornaliero</p>"
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.iWxGK2Hk7UxHKUhu
+    hash: 0a3bac85c4d863a0e9f229c4e9d4c407d352d2aa
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774996165
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  MALrSO6CHeii4HYs: 3
+  guOwSDi78TuzUGFU: 3
+_id: baBIPWyG1qSohPR5
+sort: 1900000
+_key: '!items!baBIPWyG1qSohPR5'

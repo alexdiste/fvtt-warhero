@@ -1,0 +1,35 @@
+name: Arma incantata FUOCO
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: untilendcombat
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Aggiungi 2d6 di danno da fuoco
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: '<p>Aggiunge&nbsp; [[/r 2d6 #fuoco]] da fuoco</p>'
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1697292298500
+  modifiedTime: 1743437151130
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: McGY3NmA3KhFFeKn
+sort: 6700000
+_key: '!items!McGY3NmA3KhFFeKn'

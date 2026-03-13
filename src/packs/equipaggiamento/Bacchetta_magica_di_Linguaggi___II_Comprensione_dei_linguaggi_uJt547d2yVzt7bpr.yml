@@ -1,0 +1,42 @@
+name: Bacchetta magica di Linguaggi - II Comprensione dei linguaggi
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi - II
+    Comprensione dei linguaggi} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a18f3de89a9067d87b17d1cca602b9971335fb23
+    sourceId: Item.mVWl64nDOM2e2GrG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613831133
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: uJt547d2yVzt7bpr
+sort: 1500000
+_key: '!items!uJt547d2yVzt7bpr'

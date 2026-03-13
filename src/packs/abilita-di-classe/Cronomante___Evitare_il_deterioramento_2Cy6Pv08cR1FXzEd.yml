@@ -1,0 +1,39 @@
+name: Cronomante - Evitare il deterioramento
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 8
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + MEN volte al giorno usare una sua mossa per
+    impedire che un oggetto a cariche&nbsp;consumi la sua carica agendo
+    esattamente dopo la mossa che lo&nbsp;farebbe consumare, un cronomante
+    fornisce la possibilit&agrave; di lanciare&nbsp;1d10 e con un risultato di
+    6+ essa non si consumi o non utilizza la&nbsp;carica</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a359353edd2ac1fd3d8eb152273c1b61297dc8f5
+    sourceId: Item.BE59QcaLDn8AVxqG
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.3jqTxrRzQ6g8bIoB
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352432484
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: 2Cy6Pv08cR1FXzEd
+sort: 1200000
+_key: '!items!2Cy6Pv08cR1FXzEd'

@@ -1,0 +1,42 @@
+name: Pergamena di Ammaliamento - III Comando
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 900
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.mIMKFBYf3Wjdz2DU]{Ammaliamento -
+    III Comando} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c3a83cf5f98f1c44aa65388cfcc6971e2656c338
+    sourceId: Item.8furyrJHvqlsaL4k
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913442627
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: IGspWJAkkPGtKMfD
+sort: 35500000
+_key: '!items!IGspWJAkkPGtKMfD'

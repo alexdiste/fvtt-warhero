@@ -1,0 +1,43 @@
+name: Bruto - Lancia alleato
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3+MEN volte al giorno&nbsp;prendere un alleato
+    consenziente e scagliarlo a una distanza&nbsp;massima pari al suo valore di
+    FIS*2 in metri. L&rsquo;alleato ottiene&nbsp;una mossa di attacco bonus con
+    armi a distanza mentre viene&nbsp;lanciato o con armi da corpo a corpo se
+    atterra in un quadretto&nbsp;adiacente a un bersaglio. Se viene scagliato in
+    un quadretto&nbsp;dove c&rsquo;&egrave; un bersaglio esso subisce 6d6 danni
+    CD 18 IST per&nbsp;negare e colui che viene scagliato subisce 3d6 danni
+    non<br>riducibili da armature entrambi devono fare un tiro salvezza
+    su&nbsp;FIS CD 15 o si viene buttati a terra</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c874f5e97ed4e5890e03a2f1357d5d148f03d21a
+    sourceId: Item.42sbfrzgZz3tYyQi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: O8BqK9GV97Ztr26t
+sort: 10700000
+_key: '!items!O8BqK9GV97Ztr26t'

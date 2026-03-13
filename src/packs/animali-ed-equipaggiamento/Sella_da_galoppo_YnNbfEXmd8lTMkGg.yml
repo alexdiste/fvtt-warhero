@@ -1,0 +1,36 @@
+name: Sella da galoppo
+type: equipment
+img: icons/equipment/shoulder/pauldron-leather-molded.webp
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una sella da galoppo</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 13.0.7
+  coreVersion: '13.344'
+  createdTime: 1676707931929
+  modifiedTime: 1749220177452
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: Item.N5NZgj3CnMBfuaOn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 700000
+ownership:
+  default: 0
+  0IgQUthe3Nk70WYW: 3
+_id: YnNbfEXmd8lTMkGg
+_key: '!items!YnNbfEXmd8lTMkGg'

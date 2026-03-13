@@ -1,0 +1,44 @@
+name: Cartomante (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: <p data-pm-slice="1 1 []">Incantatore che usa le carte</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 46cb173f4a9afae172af892b55a840419d56bd54
+    sourceId: Item.0P322Nu3ss2oNAx4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1680934619738
+  modifiedTime: 1766238200500
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.m59DIaJ4nk40jFmK
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: fEIECYTjpHD5e3hV
+_key: '!items!fEIECYTjpHD5e3hV'

@@ -1,0 +1,67 @@
+name: Cavalcadraghi
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: false
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: false
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p data-pm-slice="1 1 []">Un esperto addestratore di draghi.</p>
+
+    <p data-pm-slice="1 1 []">Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ifn4FERLyCT1Laii]{Cavalcadraghi
+    - Abile a cavalcare}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.2DEUltuNkCoc0iLJ]{Cavalcadraghi
+    - Condividere abilit&agrave; e poteri}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.tbxLRV2L5xKzXMHU]{Cavalcadraghi
+    - Ordine di soffio}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.df9n68qD7HEs8smi]{Cavalcadraghi
+    - Richiamo del drago}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.uYi5705ICkPw9S7g]{Cavalcadraghi
+    - Sfere conosciute}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1326b318acb4f418b283755929a2be87e1b25840
+    sourceId: Item.mBBUOtpJAyQZFYVk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545801944
+  modifiedTime: 1743436999999
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: jru1dWn2dMpkC1Bg
+sort: 200000
+_key: '!items!jru1dWn2dMpkC1Bg'

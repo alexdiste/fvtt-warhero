@@ -1,0 +1,48 @@
+name: Pozione di velocità
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 900
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '450'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una pozione alchemica. Costo: 900 Mo</p>
+
+    <p data-pm-slice="1 1 []">permette di essere sotto l'effetto del potere
+    @Compendium[fvtt-warhero.poteri.O1yGotIS8YidAFh1]{Tempo - III
+    Velocit&agrave;} della sfera
+    @Compendium[fvtt-warhero.sfere-di-magia.3VbZtxz7d2gJRzzz]{28.Tempo}.
+    Aggiungere
+    @Compendium[fvtt-warhero.condizione.P9gS46DvdZLLfrHy]{Velocizzato} alla
+    scheda</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: c132d7a3f975c3871929f33cbc11bfb7c04e8dd1
+    sourceId: Item.aPJxCc4mA61koYqZ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681229154538
+  modifiedTime: 1703657519474
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.8Fm9d56CVtthgQld
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 0qi6hn01kgTibcJt
+_key: '!items!0qi6hn01kgTibcJt'

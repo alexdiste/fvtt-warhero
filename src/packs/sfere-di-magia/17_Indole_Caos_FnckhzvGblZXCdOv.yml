@@ -1,0 +1,56 @@
+name: 17.Indole-Caos
+type: power
+img: systems/fvtt-warhero/images/icons/magic/caos.webp
+system:
+  level: 0
+  magicschool: Indole - Caos
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.leMppxqSJDUNxpuo]{Indole - Caos
+    - I Punire la legge}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0]{Indole - Caos
+    - II Potere caotico}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG]{Indole - Caos
+    - III Catastrofe}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.guHItAsGkNVxsEyf]{Indole - Caos
+    - IV Cerchio contro la legge}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ZCVzbwTVtuxwVxC]{Indole - Caos
+    - IV Contropotere caotico}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 58049af71f1b80a7db263fc457766836e294a0a8
+    sourceId: Compendium.world.temp.wC7UxGva27boILTq
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552535
+  modifiedTime: 1698851023634
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.wC7UxGva27boILTq
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FnckhzvGblZXCdOv
+_key: '!items!FnckhzvGblZXCdOv'

@@ -1,0 +1,36 @@
+name: Runologo - Runa di creazione magica
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno creare un oggetto magico,
+    pagandolo la met&agrave; del prezzo che costerebbe, questa procedura di
+    creazione richiede 4 ore di concentrazione, ininterrotte</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e621780a93e7b493db550c62b9138ff07b9eae93
+    sourceId: Item.kmYheHWAIJJ5x31x
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352043935
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: Se53es0w07OuAMma
+sort: 2400000
+_key: '!items!Se53es0w07OuAMma'

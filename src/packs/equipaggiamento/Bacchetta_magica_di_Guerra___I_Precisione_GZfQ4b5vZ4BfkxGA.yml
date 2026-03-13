@@ -1,0 +1,42 @@
+name: Bacchetta magica di Guerra - I Precisione
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.QGh1VtNFgRRKVvNK]{Guerra - I
+    Precisione} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a5953300cb132af1cfb4a32a8b9287af972b4b01
+    sourceId: Item.DVEW0UDAe8DCHKPA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613829436
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: GZfQ4b5vZ4BfkxGA
+sort: 6400000
+_key: '!items!GZfQ4b5vZ4BfkxGA'

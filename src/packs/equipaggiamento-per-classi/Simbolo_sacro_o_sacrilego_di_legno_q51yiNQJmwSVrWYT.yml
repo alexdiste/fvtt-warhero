@@ -1,0 +1,40 @@
+name: Simbolo sacro o sacrilego di legno
+type: classitem
+img: icons/equipment/neck/amulet-engraved-wood.webp
+system:
+  cost: 1
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: unknown
+  class: ''
+  mandatoryfor: Druido
+  description: <p>Un simbolo sacro o sacrilego in legno</p>
+  price: '25'
+  magiccharge: notapplicable
+  chargevalue: null
+  providedslot: 0
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: f85bd613744b5cebde759e10a1d886e60e960c7b
+    sourceId: Item.wYylbzmNGN1YtyQi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553218
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: q51yiNQJmwSVrWYT
+sort: 1700000
+_key: '!items!q51yiNQJmwSVrWYT'

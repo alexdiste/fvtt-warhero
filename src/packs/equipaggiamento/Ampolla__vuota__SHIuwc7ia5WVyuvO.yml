@@ -1,0 +1,41 @@
+name: Ampolla (vuota)
+type: equipment
+img: icons/consumables/potions/bottle-round-empty-glass.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un ampolla vuota. Generalmente le ampolle sono
+    usate per le pozioni magiche.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 415abc09ccb3b7d4dcdf0a6acf22530a2593f8b4
+    sourceId: Item.CZ5lMIMO3vLWi68H
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681049980951
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.CZ5lMIMO3vLWi68H
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 38000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: SHIuwc7ia5WVyuvO
+_key: '!items!SHIuwc7ia5WVyuvO'

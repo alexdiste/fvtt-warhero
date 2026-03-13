@@ -1,0 +1,66 @@
+name: Negromante
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Evocatore e controllore delle creature non morte.</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.M6mg3nNUUYZyeHCp]{Negromante
+    - Contropotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.TfljYYvXkB6bK2Ze]{Negromante
+    - Donazione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zB0X9IQ5jHrCgXYw]{Negromante
+    - Intimorire}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.enNk2agVenaY9ycW]{Negromante
+    - Potere del sangue}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Zy5Cs94m3O7zocIZ]{Negromante
+    - Servitore}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.g3C23GZk2Ugv6ISE]{Negromante
+    - Sfere conosciute}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.eGb3rP9JUC7xO7di]{Negromante
+    - Vero servitore}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: bb7ff3efce80609305ecab2334d03df7ec0e5ce2
+    sourceId: Item.u3YvaEgae7KyblvR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704218697037
+  modifiedTime: 1743436999961
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: JN5ruxj1YxQjQcS8
+sort: 0
+_key: '!items!JN5ruxj1YxQjQcS8'

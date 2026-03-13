@@ -1,0 +1,67 @@
+name: Umano
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Razza predominante nel mondo dalla versatilit&agrave; che li rende
+    capaci di compiere imprese fuori dal comune</em></p>
+
+    <ul>
+
+    <li>Punti Ferita&nbsp; = Medio (+4 pf per livello)</li>
+
+    <li>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)}</li>
+
+    <li>Livello 5 = +1
+    @UUID[Compendium.fvtt-warhero.abilita-di-razza.Item.ea1BLOeTk0q9fXI4]{Abilit&agrave;
+    aggiuntiva razziale extra: umano}</li>
+
+    <li>Livello 1,4,8 = +1 FIS o +1 IST o +1 MEN</li>
+
+    <li>Livello 3,6,9 = +1 TxC e +1 Danni</li>
+
+    </ul>
+  hpprogresion: medium
+  languages: comune
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+effects: []
+flags:
+  scene-packer:
+    hash: 27017fff997a73c276c74df23f7148feacba7174
+    sourceId: Item.LZZivLwaEth9RBXK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681046988407
+  modifiedTime: 1743439649092
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.LZZivLwaEth9RBXK
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: rQTtGCyphAcLn7CT
+_key: '!items!rQTtGCyphAcLn7CT'

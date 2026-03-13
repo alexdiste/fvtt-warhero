@@ -1,0 +1,39 @@
+name: Barile (vuoto)
+type: equipment
+img: icons/containers/barrels/barrel-apple-steel-orange.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 15
+  slotlocation: backpack
+  providedslot: 30
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Un barile che occupa 15 slot ma ne fornisce 30</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 4087527f36be38f1efd7474098c7de5101d9e76a
+    sourceId: Item.8086HeeeOO9gdVuE
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: rZABOjWGWGp9jAsd
+sort: 18900000
+_key: '!items!rZABOjWGWGp9jAsd'

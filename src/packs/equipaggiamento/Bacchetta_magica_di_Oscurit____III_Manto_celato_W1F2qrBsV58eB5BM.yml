@@ -1,0 +1,42 @@
+name: Bacchetta magica di Oscurità - III Manto celato
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ]{Oscurità - III
+    Manto celato} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ef976f1d85c856f72214e44216d1f36758a99b61
+    sourceId: Item.FMw9quoQgwRM600D
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613832276
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: W1F2qrBsV58eB5BM
+sort: 3600000
+_key: '!items!W1F2qrBsV58eB5BM'

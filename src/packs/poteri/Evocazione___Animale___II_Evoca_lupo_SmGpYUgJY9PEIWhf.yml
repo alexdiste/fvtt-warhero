@@ -1,0 +1,28 @@
+name: Evocazione - Animale - II Evoca lupo
+type: power
+system:
+  level: 2
+  magicschool: Evocazione - Animale
+  description: >-
+    <p>morso 2d4, artiglio 1d6, fis 3 ist 4 men 0.
+    @Compendium[fvtt-warhero.evocazioni.FOhUgp4SbE7IuxdJ]{Lupo (evocazione)}</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1675877904845
+  modifiedTime: 1743439294689
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: SmGpYUgJY9PEIWhf
+folder: null
+sort: 7400000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!SmGpYUgJY9PEIWhf'

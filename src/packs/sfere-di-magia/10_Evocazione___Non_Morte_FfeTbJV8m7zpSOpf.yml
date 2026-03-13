@@ -1,0 +1,63 @@
+name: 10.Evocazione - Non Morte
+type: power
+img: systems/fvtt-warhero/images/icons/magic/evocazione-nonmorti.webp
+system:
+  level: 0
+  magicschool: Evocazione - Non-morte
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.x2Wn2yyZzfuS67r5]{Evocazione -
+    Non Morte - I Evoca scheletro}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.5C07VRo8z41Kh70Y]{Evocazione -
+    Non Morte - II Evoca zombi}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.fJ30QpZ9OAb5JJyB]{Evocazione -
+    Non Morte - III Evoca spettro}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.CjIg6780ZHG14ffq]{Evocazione -
+    Non Morte - IV Evoca mummia}</p>
+
+    <p>&nbsp;</p>
+
+    <p><em>Le creature evocate scompaiono quando muoiono o all'alba del giorno
+    seguente e non &egrave; possibile evocare pi&ugrave; di una creatura alla
+    volta. E&rsquo; necessario usare una mossa per far seguire le 2 mosse alla
+    propria evocazione. Usare pi&ugrave; di un colpo con una singola mossa
+    attacco si ottiene lo stessomalus come nell&rsquo;uso delle due armi. Le
+    evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12
+    +IST, il tempo di lancio di questi poteri &egrave; di 4 mosse consecutive. E
+    necessario usareuna mossa per poter far eseguire 2 mosse
+    all&rsquo;evocazione</em></p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 174938acee4af4282fe597183775f6657a428fe7
+    sourceId: Compendium.world.temp.Vp4xBvCdmJsx5OW6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552519
+  modifiedTime: 1698850963135
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.Vp4xBvCdmJsx5OW6
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FfeTbJV8m7zpSOpf
+_key: '!items!FfeTbJV8m7zpSOpf'

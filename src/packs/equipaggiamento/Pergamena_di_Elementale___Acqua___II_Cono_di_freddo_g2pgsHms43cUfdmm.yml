@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Acqua - II Cono di freddo
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.1HjRX5S3R2TuqnIN]{Elementale -
+    Acqua - II Cono di freddo} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 2e2ad1b803efa4ae0048892c921527d75999e5ef
+    sourceId: Item.npdu4phruvW5gfPb
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913443453
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: g2pgsHms43cUfdmm
+sort: 33800000
+_key: '!items!g2pgsHms43cUfdmm'

@@ -1,0 +1,40 @@
+name: Strumento musicale
+type: classitem
+img: icons/tools/instruments/flute-simple-wood.webp
+system:
+  cost: 5
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Bardo
+  description: <p>Uno strumento musicale</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: d62195bdd12c310f324042501860f1c3d15760ab
+    sourceId: Item.iit6cHI514OKo9Y3
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: D2Y54HLmPxSh4emy
+sort: 900000
+_key: '!items!D2Y54HLmPxSh4emy'

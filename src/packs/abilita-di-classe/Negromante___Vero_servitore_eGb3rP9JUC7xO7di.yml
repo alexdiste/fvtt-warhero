@@ -1,0 +1,38 @@
+name: Negromante - Vero servitore
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; usare l&rsquo;evocazione creata con
+    l&rsquo;abilit&agrave; servitore per usare i propri incantesimi. Quindi
+    l&rsquo;evocazione&nbsp;potr&agrave; usare la mossa potere, conoscer&agrave;
+    le sfere del suo padrone e&nbsp;consumer&agrave; anche il suo mana</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 4e8b4df660070be1496f9585ba845e96548ed798
+    sourceId: Item.wuhlc4QXNgIzIBKG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704217302127
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: eGb3rP9JUC7xO7di
+sort: 8100000
+_key: '!items!eGb3rP9JUC7xO7di'

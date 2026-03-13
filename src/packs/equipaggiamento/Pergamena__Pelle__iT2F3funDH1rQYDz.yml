@@ -1,0 +1,44 @@
+name: Pergamena (Pelle)
+type: equipment
+img: icons/sundries/documents/document-symbol-circle-gold-red.webp
+system:
+  equiptype: ''
+  cost: 5
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: unknown
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Un foglio di
+    @UUID[Compendium.fvtt-warhero.equipaggiamento.gJMdNM2A1LHjf0rR]{Pergamena}
+    in pelle. Non sai se contiene un potere e quindi sia una pergamena magica o
+    sia un foglio di pergamena vuoto o se ci siano scritti normali.</p>
+  price: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: 55a7b386c759ab0cedb3c9620513432e56f02195
+    sourceId: Compendium.world.temp.wAguKJPhpgb5fBsg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553180
+  modifiedTime: 1705496771344
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.wAguKJPhpgb5fBsg
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 39000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: iT2F3funDH1rQYDz
+_key: '!items!iT2F3funDH1rQYDz'

@@ -1,0 +1,29 @@
+name: Rune - III Segno esplosivo
+type: power
+system:
+  level: 3
+  magicschool: Rune
+  description: >-
+    una volta lanciato questo incantesimo, si crea un disegno nel punto scelto.
+    chiunque tocchi il segno, subisce 4d8 danni magici.e' possibile tracciarlo
+    già in contatto con un personaggio, che subisce i danni immediatamente.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904969
+  modifiedTime: 1743439294481
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 3mDBK9zIf9R4PbLo
+folder: null
+sort: 1600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!3mDBK9zIf9R4PbLo'

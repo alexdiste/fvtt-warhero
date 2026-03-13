@@ -1,0 +1,41 @@
+name: Torcia inestinguibile
+type: equipment
+img: icons/sundries/lights/torch-brown-lit.webp
+system:
+  equiptype: ''
+  cost: 100
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una torcia che non si consuma mai e non brucia se
+    si tocca. Proietta luce in un raggio di 4 quadretti</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e0d398bc50ea9772434985c0878cc667aab366d3
+    sourceId: Item.c30tL8bW0mnLZpbs
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681048202414
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.c30tL8bW0mnLZpbs
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 38400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: bNqdscZVJRYk3uN3
+_key: '!items!bNqdscZVJRYk3uN3'

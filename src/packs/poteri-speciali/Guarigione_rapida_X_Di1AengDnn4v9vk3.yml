@@ -1,0 +1,40 @@
+name: Guarigione rapida X
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>La creatura riguadagna punti ferita all&rsquo;inizio di ogni turno,
+    ma&nbsp;non permette a una creatura di far ricrescere o di
+    riattaccare&nbsp;parti del corpo staccate. Guarigione rapida non ripristina
+    i&nbsp;punti ferita persi da fame, sete, o soffocamento.La
+    guarigione&nbsp;rapida smette di funzionare se il bersaglio si trova a 0 PF
+    o&nbsp;meno</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d61e7411dedde994084547b2c87fcf77f16206bb
+    sourceId: Item.whNLPmVin2MUXAmq
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Di1AengDnn4v9vk3
+sort: 1700000
+_key: '!items!Di1AengDnn4v9vk3'

@@ -1,0 +1,34 @@
+name: Carino e coccoloso
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>Questa creatura attira i bambini, le donne e le persone di buon cuore</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d9c8938b14163d2666f0b000983490a3ff35b698
+    sourceId: Item.PjRoDjRreXWRN92s
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: lrJelhoD7lIZNw23
+sort: 2400000
+_key: '!items!lrJelhoD7lIZNw23'

@@ -1,0 +1,42 @@
+name: Movimenti del ragno
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 10
+  durationunit: round
+  shortdescription: Ti puoi arrampicarsi su qualsiasi superficie per 10 round
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Ti puoi arrampicarsi su qualsiasi superficie per 10 round. Come per
+    omonimo potere speciale
+    @Compendium[fvtt-warhero.poteri-speciali.lvQAD5RYfMmFSva3]{Movimenti del
+    ragno}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 687ac0a003ab2090c07f8ce24fe4df99f7250ff7
+    sourceId: Item.tmAV7xOcneDof3Do
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698851817348
+  modifiedTime: 1743437150910
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 8uiAOfx2xT5i6q1B
+sort: 2700000
+_key: '!items!8uiAOfx2xT5i6q1B'

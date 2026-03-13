@@ -1,0 +1,34 @@
+name: Immunità ai poteri
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>nessun potere &egrave; in grado&nbsp;di fargli danno o potenziarlo</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 828b42cbb203b0fee60fad78d72bb860a5e2d387
+    sourceId: Item.TaP5GhAByggvifGN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1700571024891
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: s17MMNWw5a7BCIuW
+sort: 1600000
+_key: '!items!s17MMNWw5a7BCIuW'

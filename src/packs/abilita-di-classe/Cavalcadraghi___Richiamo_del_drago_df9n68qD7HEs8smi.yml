@@ -1,0 +1,49 @@
+name: Cavalcadraghi - Richiamo del drago
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; 1+MEN volte al giorno evocare un drago proprio
+    come se fosse un potere di evocazione,&nbsp;ma il drago evocato pu&ograve;
+    essere uno dei seguenti:<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.vrxMyHOr7SrlYwUV]{Drago d'
+    argento (evocato)}: FIS:2 IST:4 MEN:2 , 2 artigli 2d4, morso 1d8<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.bYfQeCIQkP6iG5HI]{Drago blu
+    (evocato)}: FIS:3 IST:2 MEN:3 , 2 artigli 2d6, morso 1d10<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.6C54cb7MJqhvX5Tb]{Drago d'oro
+    (evocato)}: FIS:2 IST:2 MEN:4 , 2 artigli 2d4, morso 1d8<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.7thHGRgPzJMN8Dmr]{Drago verde
+    (evocato)}: FIS:5 IST:1 MEN:2 , 2 artigli 2d6, morso 1d10<br>Il drago
+    &egrave; sempre di una taglia pi&ugrave; grande di colui che lo evoca.
+    Il&nbsp;drago pu&ograve; volare. Usare pi&ugrave; di un tipo di attacco per
+    turno provoca&nbsp;gli stessi malus di usare due armi. Le statistiche
+    si&nbsp; alcolano come se fosse una evocazione</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 41723df50392a2ffc3c26d2c1c875be86b68b433
+    sourceId: Item.6zp8a96Fx0RLgRsj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: df9n68qD7HEs8smi
+sort: 9500000
+_key: '!items!df9n68qD7HEs8smi'

@@ -1,0 +1,71 @@
+name: Satiro
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Creature con la parte inferiore del corpo di una capra. Esse sono
+    molto spesso legate alla natura e ai suoi abitanti</em></p>
+
+    <ul>
+
+    <li>Punti Ferita = Basso</li>
+
+    <li>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.iNr8K3qkwIox6lI6]{Language (elfico)},
+    @Compendium[fvtt-warhero.lingue.9mGDGpTSxltICZiS]{Language (silvano)}</li>
+
+    <li>Livello 1,5,7 = +1 volta al giorno
+    @Compendium[fvtt-warhero.poteri.9KljFSjM3pWaoI73]{Ammaliamento - I Sonno}
+    come incantesimo</li>
+
+    <li>Livello 5,7 = +1 mana</li>
+
+    <li>Livello 1,4,8 = +1 IST</li>
+
+    <li>Livello 3,6,9 = +1 TxC e +1 Danni</li>
+
+    </ul>
+  hpprogresion: low
+  languages: comune,elfico,silvano
+  attributebonus1: dex
+  attributebonus4: dex
+  attributebonus8: dex
+effects: []
+flags:
+  scene-packer:
+    hash: 119a37e19813eff3f8ab4cb0c624537b16c3b4f1
+    sourceId: Item.YL1b0e9Kfs1sQt6S
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545638552
+  modifiedTime: 1743439649060
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.YL1b0e9Kfs1sQt6S
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: KWFi3CkeDIWMmumu
+_key: '!items!KWFi3CkeDIWMmumu'

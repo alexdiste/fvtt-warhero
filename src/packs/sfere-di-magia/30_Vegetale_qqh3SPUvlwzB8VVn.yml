@@ -1,0 +1,58 @@
+name: 30.Vegetale
+type: power
+img: systems/fvtt-warhero/images/icons/magic/vegetale.webp
+system:
+  level: 0
+  magicschool: Vegetale
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.ENRZyKNPGk9KfCzq]{Vegetale - I
+    Viticci}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.lgjVKvYLB62C5OyL]{Vegetale - II
+    Spore velenose}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.Sz183GOBEDrQcGd1]{Vegetale -
+    III Terremoto}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.vtmeYf3FxtbUlc8k]{Vegetale - IV
+    Aiuto della natura}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.gJGGSLgSqnJ8f7NZ]{Vegetale - IV
+    Rampicanti}</p>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: cd2ae9b475b2aaef0268e218c55d220a41a93cfe
+    sourceId: Compendium.world.temp.cqR5Q2dT7YmMuwUm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552567
+  modifiedTime: 1698851303051
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.cqR5Q2dT7YmMuwUm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: qqh3SPUvlwzB8VVn
+_key: '!items!qqh3SPUvlwzB8VVn'

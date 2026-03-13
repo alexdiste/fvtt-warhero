@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Terra - II Bomba al vetriolo
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.gW2OzkrdGkW38XK6]{Elementale -
+    Terra - II Bomba al vetriolo} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9124a8e06c5e46854c4853685c6c2a593c323380
+    sourceId: Item.yZdCwSEpXjmQO09x
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444163
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: QfWIPM3KONjvTgJM
+sort: 32500000
+_key: '!items!QfWIPM3KONjvTgJM'

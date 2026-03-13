@@ -1,0 +1,42 @@
+name: Bacchetta magica di Morte - IV Interdizione alla morte
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.ukjoDdLQ3EG8YG8X]{Morte - IV
+    Interdizione alla morte} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 2adf1f7d4d1aa8ad274c4295a0b58c270e604b71
+    sourceId: Item.jXhuhAkKFdnD0o2y
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613831830
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 3iJyjhOZLcNoXSAb
+sort: 2800000
+_key: '!items!3iJyjhOZLcNoXSAb'

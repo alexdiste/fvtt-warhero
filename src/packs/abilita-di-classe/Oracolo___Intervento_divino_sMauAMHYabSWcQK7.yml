@@ -1,0 +1,37 @@
+name: Oracolo - Intervento divino
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 8
+  description: >-
+    <p>Il personaggio pu&ograve; far ritirare un qualsiasi dado a un avversario
+    che sta combattendo contro un suo alleato, una volta per alleato al
+    giorno</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9e0f960085a0ae76cff793a3e6f240100fc8452c
+    sourceId: Item.qhgLI44ohMog5AKQ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1676806380081
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.WuXZEmeSH7EeyVxn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 23500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: sMauAMHYabSWcQK7
+_key: '!items!sMauAMHYabSWcQK7'

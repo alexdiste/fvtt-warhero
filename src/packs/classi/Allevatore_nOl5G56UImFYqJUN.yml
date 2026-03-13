@@ -1,0 +1,73 @@
+name: Allevatore
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: true
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Sfrutta il potere con le sue piccole creature magiche.</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.J4WwH55JaWqXrtW8]{Allevatore
+    - Abilit&agrave; extra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.prJZX6JbYP1gd01r]{Allevatore
+    - Compagno animale}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.XSViUBoAhrCrDRRc]{Allevatore
+    - Famiglio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.S00kNnWBQ57REokU]{Allevatore
+    - Famigli extra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3swVYOXda29XyysW]{Allevatore
+    - Famigli addestrati}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.SyzDBs5VJ1tWRXH1]{Allevatore
+    - Infusione animale}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bEGIomt4sr8OFrbg]{Allevatore
+    - Percezione univoca}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.uZY8NFTCYQPekfOq]{Allevatore
+    - Sfere conosciute}</p>
+
+    <p>&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 12b80dc17ede6729176523913d7555c629c5f5e4
+    sourceId: Item.0I3YcDAm0a4uqcv1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681554537413
+  modifiedTime: 1743437000020
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: nOl5G56UImFYqJUN
+sort: 50000
+_key: '!items!nOl5G56UImFYqJUN'

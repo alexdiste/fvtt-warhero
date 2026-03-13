@@ -1,0 +1,41 @@
+name: Bacchetta magica con potere di livello II
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Una bacchetta magica che contiene una carica di un potere di livello
+    2</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e172d17f429bb1a7a3c284d8826bf678fb38a05e
+    sourceId: Item.WLYm9z7LZULEwykZ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1703655829669
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: hTRfUiNbaztQp7Pc
+sort: 14600000
+_key: '!items!hTRfUiNbaztQp7Pc'

@@ -1,0 +1,26 @@
+name: Linguaggi - II Comprensione dei linguaggi
+type: power
+system:
+  level: 2
+  magicschool: Linguaggi
+  description: il bersaglio capisce qualsiasi lingua per 1 ora.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904922
+  modifiedTime: 1743439294455
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 1x6LaCg71VjIcaHg
+folder: null
+sort: 900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!1x6LaCg71VjIcaHg'

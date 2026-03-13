@@ -1,0 +1,42 @@
+name: Pergamena di Conoscenze - IV Dissolvi magie superiori
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.wQp0B9jxS1XQQ9oi]{Conoscenze - IV
+    Dissolvi magie superiori} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9bff1698f3b9498649f10f90212f073f9398c17e
+    sourceId: Item.hahz9PdfWzIFTHxa
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913442880
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: RwBZpzol2wf6453i
+sort: 36200000
+_key: '!items!RwBZpzol2wf6453i'

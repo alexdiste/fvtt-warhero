@@ -1,0 +1,38 @@
+name: Arma incantata ACIDO
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: untilendcombat
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Aggiungi 2d6 di danno da acido
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: '<p>Aggiunge&nbsp; [[/r 2d6 #acido]] da acido</p>'
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  core: {}
+  scene-packer:
+    hash: 890242d6f8015c0f7f44977b044234228c7e6791
+    sourceId: Item.RAU3BQQ1tf5TzH7Z
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1697292298500
+  modifiedTime: 1743437150740
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 0HMcquKQ71Nxv8H6
+sort: 2200000
+_key: '!items!0HMcquKQ71Nxv8H6'

@@ -1,0 +1,38 @@
+name: Abbagliato (- 5 al tpc)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-5 al tpc'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 48b5edcfdfe3fc5f09c388fff648a2e1d57a7acc
+    sourceId: Item.k40uvyLJE2bLUg7c
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705857333190
+  modifiedTime: 1743437151558
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: kOt3JN1f7eZGhsn0
+sort: 0
+_key: '!items!kOt3JN1f7eZGhsn0'

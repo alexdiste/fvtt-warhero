@@ -1,0 +1,40 @@
+name: Arnesi da scasso
+type: classitem
+img: icons/tools/hand/lockpicks-steel-grey.webp
+system:
+  cost: 30
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: Ladro
+  mandatoryfor: Ladro
+  description: <p>Degli attrezzi per scassinare le serrature</p>
+  price: '30'
+  magiccharge: notapplicable
+  chargevalue: null
+  providedslot: 0
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 91c9845a54af701ce10e4da2508520d7465fcfef
+    sourceId: Compendium.world.temp.g4tZni01Ts1RrCgr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553206
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.g4tZni01Ts1RrCgr
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: S6lmTiMGwXu5zQnB
+_key: '!items!S6lmTiMGwXu5zQnB'

@@ -1,0 +1,40 @@
+name: Scudo torre in metallo
+type: shield
+img: icons/equipment/shield/heater-steel-sword-yellow-black.webp
+system:
+  shieldtype: heavy
+  parrybonus: 5
+  equipped: false
+  cost: 75
+  quantity: 1
+  slotused: 1
+  slotlocation: shield
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Uno scudo torre. Parata:+5 [[/r 1d12+5]]</p>
+  price: '75'
+effects: []
+flags:
+  scene-packer:
+    hash: fab21e40d6a590b6e3b4e088cfb8a0b9f1c79983
+    sourceId: Compendium.world.temp.Nc6rtW6EUT8nQ3YA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637553222
+  modifiedTime: 1696015305511
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.Nc6rtW6EUT8nQ3YA
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: EhNDCegPBts40mKY
+_key: '!items!EhNDCegPBts40mKY'

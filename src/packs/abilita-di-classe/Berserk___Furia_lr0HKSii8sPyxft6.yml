@@ -1,0 +1,37 @@
+name: Berserk - Furia
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; entrare in furia un numero di round&nbsp; al
+    giorno pari a 3 + MEN, ottenendo un bonus di 8 punti a FIS.&nbsp;Entrare in
+    furia non &egrave; una mossa e dura per un intero round</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: d20b8b5fc8f6d3ced803d22e646c20d227045c94
+    sourceId: Item.atrIfgme0JzSbVTD
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1701438880006
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: lr0HKSii8sPyxft6
+sort: 13700000
+_key: '!items!lr0HKSii8sPyxft6'

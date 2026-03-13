@@ -1,0 +1,40 @@
+name: Malattia - Brividi diabolici
+type: condition
+img: systems/fvtt-warhero/images/icons/medical-thermometer.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>La diffondono alcuni demoni, ferimento.<br>CD14, 1d4 giorni, -1 FIS.
+    Richiede 3 tiri salvezza per guarire</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: dc41a1eb9f2d43881e44265eef58a61f4ae5c79c
+    sourceId: Item.vaJXX7EcjPPFpn0E
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702204460418
+  modifiedTime: 1743439247602
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 96hTAU2dZKFX13IA
+sort: 500000
+_key: '!items!96hTAU2dZKFX13IA'

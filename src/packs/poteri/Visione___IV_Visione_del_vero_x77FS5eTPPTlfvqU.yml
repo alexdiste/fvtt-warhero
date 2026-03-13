@@ -1,0 +1,29 @@
+name: Visione - IV Visione del vero
+type: power
+system:
+  level: 4
+  magicschool: Visione
+  description: >-
+    Un personaggio riesce per i successivi 5 minuti a vedere le cose per come
+    sono realmente vede sia le aree magiche che le mutazioni, riconosce tutto
+    ciò che è alterato
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904994
+  modifiedTime: 1743439294950
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: x77FS5eTPPTlfvqU
+folder: null
+sort: 15100000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!x77FS5eTPPTlfvqU'

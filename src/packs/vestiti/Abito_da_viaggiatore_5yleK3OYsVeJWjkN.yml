@@ -1,0 +1,39 @@
+name: Abito da viaggiatore
+type: equipment
+img: icons/equipment/chest/shirt-collared-brown.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: dress
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un abito da viaggiatore</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ff2eddf98451a9316b509cf50f6c23f9b663f40e
+    sourceId: Item.72HqDhP2e8P7nbAx
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1702047902061
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.72HqDhP2e8P7nbAx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 5yleK3OYsVeJWjkN
+_key: '!items!5yleK3OYsVeJWjkN'

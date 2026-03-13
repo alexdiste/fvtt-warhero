@@ -1,0 +1,42 @@
+name: Bacchetta magica di Evocazione - Non Morte - III Evoca spettro
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.fJ30QpZ9OAb5JJyB]{Evocazione - Non
+    Morte - III Evoca spettro} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: bb9e6c2edcd888a34542bc91438e2d8de2cd6a64
+    sourceId: Item.uefILwzrR025hsRz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613828743
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 7QLQ9oc9Nth6nBRI
+sort: 9800000
+_key: '!items!7QLQ9oc9Nth6nBRI'

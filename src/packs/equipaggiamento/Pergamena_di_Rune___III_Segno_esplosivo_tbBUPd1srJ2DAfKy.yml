@@ -1,0 +1,41 @@
+name: Pergamena di Rune - III Segno esplosivo
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 900
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene @UUID[Compendium.fvtt-warhero.poteri.Item.3mDBK9zIf9R4PbLo]{Rune
+    - III Segno esplosivo} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 01e9ddf1475a730178f9906cb1429cd7acf49a14
+    sourceId: Item.tuhPHSBftHISXlVd
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913449955
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: tbBUPd1srJ2DAfKy
+sort: 22200000
+_key: '!items!tbBUPd1srJ2DAfKy'

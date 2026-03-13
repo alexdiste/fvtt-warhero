@@ -1,0 +1,29 @@
+name: Language (gnomesco)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dagi gnomi.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a2872add9cb145dc156dfd31b620f827e66cd8a6
+    sourceId: Item.q2UhDUBhAHCmxLFR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613693
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: KxEBSPejpfCbKHn1
+_key: '!items!KxEBSPejpfCbKHn1'

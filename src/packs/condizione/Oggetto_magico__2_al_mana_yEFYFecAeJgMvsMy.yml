@@ -1,0 +1,38 @@
+name: Oggetto magico +2 al mana
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Hai un oggetto magico che ti da +2 mana</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e4fd41614dac93b47045dc00a4ad9778ed828a21
+    sourceId: Item.cTekOBwOgeNi4hal
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702060962597
+  modifiedTime: 1743437151720
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: yEFYFecAeJgMvsMy
+sort: 1400000
+_key: '!items!yEFYFecAeJgMvsMy'

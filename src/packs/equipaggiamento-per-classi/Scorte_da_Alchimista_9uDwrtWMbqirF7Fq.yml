@@ -1,0 +1,42 @@
+name: Scorte da Alchimista
+type: classitem
+img: icons/tools/cooking/mortar-herbs-yellow.webp
+system:
+  cost: 1
+  quantity: 1
+  slotused: 0.001
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: Alchimista
+  mandatoryfor: Alchimista
+  description: >-
+    <p>Erbe varie e misture che servono ad un alchimista per creare le sue
+    pozioni.</p><p>Fino a 1000 occupano uno slot</p>
+  price: '1'
+  magiccharge: notapplicable
+  chargevalue: null
+  providedslot: 0
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: e0c2faec13d41ce115fcf97137d9623cfdb1f98a
+    sourceId: Compendium.world.temp.rA3NgNCDag9gphmc
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553214
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.rA3NgNCDag9gphmc
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 9uDwrtWMbqirF7Fq
+_key: '!items!9uDwrtWMbqirF7Fq'

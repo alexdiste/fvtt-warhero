@@ -1,0 +1,46 @@
+name: Chierico - Dominio
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio ha 5 + MEN cariche al giorno da<br>usare al posto del mana
+    per lanciare poteri della sfera del<br>proprio allineamento come da
+    schema:<br>● Legale -
+    @Compendium[fvtt-warhero.sfere-di-magia.4neEb8uAo1FgLnwx]{19.Indole-Legge}<br>●
+    Buono -
+    @Compendium[fvtt-warhero.sfere-di-magia.FV5Y61NhhWwnrBYZ]{16.Indole-Bene}<br>●
+    Neutrale -
+    @Compendium[fvtt-warhero.sfere-di-magia.jAcYNuXzJPBk2mEE]{18.Indole-Equilibrio}<br>●
+    Malvagio -
+    @Compendium[fvtt-warhero.sfere-di-magia.0l33pWTj5jsnmEfz]{20.Indole-Male}<br>●
+    Caotico -
+    @Compendium[fvtt-warhero.sfere-di-magia.FnckhzvGblZXCdOv]{17.Indole-Caos}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 8931a1315234eb3e7ced24a427a6987b15885820
+    sourceId: Item.Uj4SC06dit3xVimL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: bDJFkMddaX9wy8BS
+sort: 15000000
+_key: '!items!bDJFkMddaX9wy8BS'

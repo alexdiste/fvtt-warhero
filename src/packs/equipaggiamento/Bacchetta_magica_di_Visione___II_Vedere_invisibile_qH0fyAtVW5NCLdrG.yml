@@ -1,0 +1,42 @@
+name: Bacchetta magica di Visione - II Vedere invisibile
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione - II
+    Vedere invisibile} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: d152abf0159f51b2e6a38dfbed6581a36855a2e4
+    sourceId: Item.KCjH3MXiCakuSpki
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613834407
+  modifiedTime: 1704614635918
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: qH0fyAtVW5NCLdrG
+sort: 0
+_key: '!items!qH0fyAtVW5NCLdrG'

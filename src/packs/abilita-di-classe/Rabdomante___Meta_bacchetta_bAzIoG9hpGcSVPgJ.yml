@@ -1,0 +1,36 @@
+name: Rabdomante - Meta bacchetta
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; applicare le sue abilit&agrave;&nbsp;aggiuntive
+    su i poteri nel momento in cui usa una bacchetta.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: f5fb9e81445fb52d5391990b61e36054094e4a86
+    sourceId: Item.A2mV3xar5AO01sZh
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.mt8C0KQLjRXeaAHY
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352949697
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: bAzIoG9hpGcSVPgJ
+sort: 3300000
+_key: '!items!bAzIoG9hpGcSVPgJ'

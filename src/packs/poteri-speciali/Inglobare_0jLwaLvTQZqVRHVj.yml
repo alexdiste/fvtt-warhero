@@ -1,0 +1,38 @@
+name: Inglobare
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>una melma grigia con la sua mossa di MOV può entrare nell’area di un
+    bersaglio esso può tentare un tiro salvezza su IST CD 16 per evitare di
+    entrare in contatto con essa, ogni round di contatto compreso quello
+    iniziale con essa provoca 10d6 danni da acido</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: 8e134bbde13b529a64127c525d979d3b23421a0b
+    sourceId: Item.KGrZgZCLUPonSht9
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766236502379
+  modifiedTime: 1766236502379
+  lastModifiedBy: p6zCQ626i2fSln47
+folder: null
+ownership:
+  default: 0
+  p6zCQ626i2fSln47: 3
+_id: 0jLwaLvTQZqVRHVj
+sort: 0
+_key: '!items!0jLwaLvTQZqVRHVj'

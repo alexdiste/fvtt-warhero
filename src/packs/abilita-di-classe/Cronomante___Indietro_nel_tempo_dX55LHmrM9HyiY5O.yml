@@ -1,0 +1,36 @@
+name: Cronomante - Indietro nel tempo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 8
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + MEN volte al giorno&nbsp;usare una sua
+    mossa per far ritarare un 1d20 appena lanciato da un&nbsp;alleato.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 07b9c2db240cd2999a5d90dd35f23807d0d11f80
+    sourceId: Item.RmBBLhPoRKQO0UJL
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.QEjbzbWdLLr6VaX8
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352433719
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: dX55LHmrM9HyiY5O
+sort: 3700000
+_key: '!items!dX55LHmrM9HyiY5O'

@@ -1,0 +1,40 @@
+name: Lussuria (veleno d' amore)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: '0'
+  shortdescription: Ti innamori della prima persona che incontri
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Sei sotto l' effetto di una lussuria. Ti innamori della prima persona di
+    sesso opposto che incotri</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 109f3df0060ca259ef4ed7bb3c2bc7c2d21b9406
+    sourceId: Item.kfvnaKGZO1EBz0sC
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151304
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Ud7WM49zTNI4HtVX
+sort: 600000
+_key: '!items!Ud7WM49zTNI4HtVX'

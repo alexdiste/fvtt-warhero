@@ -1,0 +1,49 @@
+name: Cerbottana
+type: weapon
+img: icons/weapons/staves/staff-animal-skull-horned.webp
+system:
+  weapontype: throwing
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 1
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: belt
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una cerbottana che tira proietilli&nbsp; [[/r
+    1d8]]. Usa @Compendium[fvtt-warhero.munizioni.4HbP6eXNNLxBBpj3]{Aghi} come
+    munizioni o piccoli
+    @Compendium[fvtt-warhero.munizioni.8kAg0umYGjyMVLhY]{Sassi}. I sassi sono
+    facilmente reperibili, si trovano praticamente ovunque e fanno danno
+    contudente, mentre gli aghi possono essere avvelenatie fanno danno
+    perforante.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 8e639069df10052027004e85c9add7db2c0abd9d
+    sourceId: Item.bilaLp9Chf16Mxkp
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680934134544
+  modifiedTime: 1743436736497
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: LFGgHbgH8Bf3C8T2
+sort: 0
+_key: '!items!LFGgHbgH8Bf3C8T2'

@@ -1,0 +1,44 @@
+name: Pozione di Verità
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 300
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '150'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 300 Mo</p>
+
+    <p>una volta bevuta questa pozione il soggetto risponder&agrave; in maniera
+    veritiera alla prima domanda a lui posta</p>
+  price: '300'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: d39d9d5167b2dde4845bc130fa2b77f8b6822c77
+    sourceId: Compendium.world.temp.fJokZ00WvgLmRZbH
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553297
+  modifiedTime: 1702106502315
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.fJokZ00WvgLmRZbH
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: RHqZ5e0Oj8LAmd40
+_key: '!items!RHqZ5e0Oj8LAmd40'

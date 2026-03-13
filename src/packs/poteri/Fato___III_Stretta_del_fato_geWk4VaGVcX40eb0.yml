@@ -1,0 +1,33 @@
+name: Fato - III Stretta del fato
+type: power
+system:
+  level: 3
+  magicschool: Fato
+  description: >-
+    Per il prossimo scontro puoi aggiungere o togliere 2d4 alla CD di un potere
+    a tua scelta che viene lanciato, prima di sapere l’esito del tiro salvezza,
+    dopo di che quest'effetto termina
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    hash: 8f1c7369a87e8f01bed6f5ec653f5e5eb75a3ef5
+    sourceId: Item.IuiKoCpituNxeTHD
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904854
+  modifiedTime: 1743439294770
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.poteri.Tq39Gu1z4E3YMllS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 9900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: geWk4VaGVcX40eb0
+_key: '!items!geWk4VaGVcX40eb0'

@@ -1,0 +1,42 @@
+name: Pergamena di Viaggio - I Levitazione
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 100
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.j7RjSZH85KRovJKc]{Viaggio - I
+    Levitazione} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ab00b75a5a420258af7587596a9b84f43d579561
+    sourceId: Item.0ypMNjb9iVx3cgGM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913451345
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: WHQSZq9FfC7g3VEG
+sort: 21600000
+_key: '!items!WHQSZq9FfC7g3VEG'

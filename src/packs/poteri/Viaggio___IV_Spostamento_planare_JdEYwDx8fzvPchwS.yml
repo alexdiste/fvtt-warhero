@@ -1,0 +1,28 @@
+name: Viaggio - IV Spostamento planare
+type: power
+system:
+  level: 4
+  magicschool: Viaggio
+  description: >-
+    ti permette di andare assieme ai tuoi alleati in un punto casuale di un
+    piano del quale possiedi un pezzo di ferro lavorato
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904989
+  modifiedTime: 1743439294633
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: JdEYwDx8fzvPchwS
+folder: null
+sort: 5700000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!JdEYwDx8fzvPchwS'

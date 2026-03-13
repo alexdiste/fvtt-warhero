@@ -1,0 +1,25 @@
+name: Parata con scudo medio/pesante
+type: chat
+author: guOwSDi78TuzUGFU
+img: systems/fvtt-warhero/images/icons/attached-shield.svg
+scope: global
+command: '/roll 1d12+3 #Parata con scudo torre. Con 12 o più pari'
+folder: null
+ownership:
+  default: 0
+  NMHCRBEwO1eXaL73: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1770623923625
+  modifiedTime: 1772303909256
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: kaOpTvd1uTq4RAHn
+sort: 400000
+_key: '!macros!kaOpTvd1uTq4RAHn'

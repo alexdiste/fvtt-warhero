@@ -1,0 +1,44 @@
+name: Divoratore di anime - Potere dell’anima
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 10
+  description: >-
+    <p>Il personaggio pu&ograve; prendere potere da un&nbsp;bersaglio abbattuto
+    entro 10 metri da lui e ottiene un bonus di +5PF&nbsp;massimali o +1 Difesa
+    o +1 Parata o +1 a INI, questa abilit&agrave; si pu&ograve;&nbsp;sommare
+    fino a un massimo di 10 volte al giorno e non si pu&ograve;&nbsp;prendere
+    pi&ugrave; di 5 volte lo stesso bonus. E' possibile scegliere&nbsp;questa
+    abilit&agrave; con l&rsquo;abilit&agrave; aggiuntiva &ldquo;Capacit&agrave;
+    extra&rdquo;, essa in&nbsp;questo caso aumenta il massimale di volte al
+    giorno che si pu&ograve;&nbsp;accumulare questa abilit&agrave; di 2, e si
+    aumenta di 1 il&nbsp; imasuglio del potere, differentemente da come scritto
+    nel abilit&agrave; aggiuntiva</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: aa59fd7ac2025373b84c09071af72baa1e4d7c4e
+    sourceId: Item.qw2uPOyyhJbP4aRg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1705338200790
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: yAtOev6ECa0gaQ5i
+sort: 5500000
+_key: '!items!yAtOev6ECa0gaQ5i'

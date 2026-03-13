@@ -1,0 +1,38 @@
+name: Velocità
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-5 al tpc'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 628b48c205080a71a9b82f4fee6147057fa9c8be
+    sourceId: Item.tOLfuG3SKqhztJQH
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705857333190
+  modifiedTime: 1743437150983
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: D5LwxYsCOhGIedGV
+sort: 0
+_key: '!items!D5LwxYsCOhGIedGV'

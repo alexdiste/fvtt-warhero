@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Fuoco - IV Resistenza al fuoco
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.IwckOzpQuieWvcOn]{Elementale -
+    Fuoco - IV Resistenza al fuoco} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 23628240e4f551f05e75a2cad7573938cb75dcc5
+    sourceId: Item.U4kWoJMrxg20IK3P
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444066
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 9ow15UB8zzJjSPhQ
+sort: 32200000
+_key: '!items!9ow15UB8zzJjSPhQ'

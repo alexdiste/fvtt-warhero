@@ -1,0 +1,45 @@
+name: Contro potere
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Prerequisito:</strong> Capacità di lanciare poteri</p>
+
+    <p><strong>Benefici:</strong> Una volta al giorno, se un avversario lancia
+    un potere, si può tentare di neutralizzarlo. Entrambi i personaggi devono
+    lanciare 1d20, a cui si aggiungono i rispettivi valori di MEN ed eventuali
+    bonus. Se il punteggio ottenuto dal giocatore che ha lanciato il
+    contropotere è più alto, il potere viene neutralizzato. Il giocatore che ha
+    lanciato il contropotere, inoltre, non potrà utilizzare mosse potere nel suo
+    prossimo round.Non è possibile selezionare questa abilità con l’abilità
+    aggiuntiva “Capacità extra”</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.ONEuBeR4QHpcOaWI
+    hash: 8fe5cc76831b53266df477b61ed3579181a60f66
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774767390
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  MALrSO6CHeii4HYs: 3
+  guOwSDi78TuzUGFU: 3
+_id: aS8YKqopTTNBJz4r
+sort: 3600000
+_key: '!items!aS8YKqopTTNBJz4r'

@@ -1,0 +1,57 @@
+name: Runologo - Runa minore
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; 3+FIS volte al giorno creare&nbsp;una runa
+    minore di fronte a s&eacute; e replicare gli effetti di uno dei&nbsp;quattro
+    poteri delle sfere elementali
+    (@UUID[Compendium.fvtt-warhero.sfere-di-magia.YXk5b5u0kD60yPP5]{05.Elementale
+    - Acqua},
+    @UUID[Compendium.fvtt-warhero.sfere-di-magia.f1d2GOFzYLl50XaU]{06.Elementale
+    - Aria},
+    @UUID[Compendium.fvtt-warhero.sfere-di-magia.5wWHc7VIcOm9rXRr]{07.Elementale
+    - Fuoco},
+    @UUID[Compendium.fvtt-warhero.sfere-di-magia.F0Xieqa6D3KQddli]{08.Elementale
+    - Terra})&nbsp;di II livello, attivare questa abilit&agrave; si usa una
+    mossa potere</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.1HjRX5S3R2TuqnIN]{Elementale -
+    Acqua - II Cono di freddo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.InXfXuABQDHb5zV5]{Elementale -
+    Aria - II Fulmine}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.gW2OzkrdGkW38XK6]{Elementale -
+    Terra - II Bomba al vetriolo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ychDvTMJrneQrl0]{Elementale -
+    Fuoco - II Mani brucianti}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 4143d5b54a7ece53c79ec5bd5b2949f6d4f972c4
+    sourceId: Item.JiKdscwEi5M8OW8H
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352046724
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: gbYkWQG0uvvWU59E
+sort: 4000000
+_key: '!items!gbYkWQG0uvvWU59E'

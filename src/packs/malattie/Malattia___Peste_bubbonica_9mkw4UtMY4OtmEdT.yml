@@ -1,0 +1,40 @@
+name: Malattia - Peste bubbonica
+type: condition
+img: systems/fvtt-warhero/images/icons/medical-thermometer.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Ferimento o inalazione. CD 17, 1 giorno,&nbsp;-1 FIS e -1MEN e il
+    bersaglio &egrave; affaticato</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 508506080f017cb98474f0d9ec62415d382a5245
+    sourceId: Item.vaJXX7EcjPPFpn0E
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702204460418
+  modifiedTime: 1743439247607
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 9mkw4UtMY4OtmEdT
+sort: 200000
+_key: '!items!9mkw4UtMY4OtmEdT'

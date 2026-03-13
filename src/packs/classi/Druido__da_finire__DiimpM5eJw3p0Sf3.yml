@@ -1,0 +1,44 @@
+name: Druido (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 118e7301b566a8a361d6b6371b428f6969a09a74
+    sourceId: Item.20AgxbURsBeTil06
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1683904597872
+  modifiedTime: 1766238253129
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.20AgxbURsBeTil06
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: DiimpM5eJw3p0Sf3
+_key: '!items!DiimpM5eJw3p0Sf3'

@@ -1,0 +1,30 @@
+name: Viaggio - IV Camminare nel vento
+type: power
+system:
+  level: 4
+  magicschool: Viaggio
+  description: >-
+    l'incantatore e fino a un massimo di 10 alleati possono spendere 4 mosse
+    consecutive per trasformarsi in una nuvola e 4 mosse consecutive per tornare
+    normali. nello stato di nuvola ci si muove a una velocità di 360m ma non si
+    può usare ne abilità, ne incantantesi ne è possibile attaccare
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904990
+  modifiedTime: 1743439294861
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ntMeWTWn23Z87hdD
+folder: null
+sort: 12500000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!ntMeWTWn23Z87hdD'

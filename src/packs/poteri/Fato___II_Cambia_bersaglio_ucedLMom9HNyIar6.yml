@@ -1,0 +1,30 @@
+name: Fato - II Cambia bersaglio
+type: power
+system:
+  level: 2
+  magicschool: Fato
+  description: >-
+    Puoi scegliere due alleati, compreso te stesso e fino alla fine dello
+    scontro tutti i danni subiti da uno, e viceversa, vengono dimezzati e la
+    metà per difetto vanno all'altro. Il secondo bersaglio non può ridurre mai
+    questo danno.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904854
+  modifiedTime: 1743439294909
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ucedLMom9HNyIar6
+folder: null
+sort: 13900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!ucedLMom9HNyIar6'

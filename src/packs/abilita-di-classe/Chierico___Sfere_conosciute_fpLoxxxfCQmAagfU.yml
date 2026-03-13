@@ -1,0 +1,77 @@
+name: Chierico - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare pergamene</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.Q8EL4AZ7eWFwczHk]{01.Ammaliamento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.cs6Y0TWt6wKuvQ4w]{02.Conoscenze}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ukQlFEIZ7PO2s1EE]{03.
+    Costrizione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.U8pd1S84rsZEjpGV]{04.Divinazione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ER2C97wniMa4OwPY]{12.Forza}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ixnLA206NExE259s]{13.Guarigione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.i6A7rLLMajX1GCnB]{14.Guerra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.gujWiPPrUckarLSX]{21.Linguaggi}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.FV5Y61NhhWwnrBYZ]{16.Indole-Bene}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.FnckhzvGblZXCdOv]{17.Indole-Caos}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.jAcYNuXzJPBk2mEE]{18.Indole-Equilibrio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.4neEb8uAo1FgLnwx]{19.Indole-Legge}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.0l33pWTj5jsnmEfz]{20.Indole-Male}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.IUyzU68wsbiigBsZ]{22.Luce}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.igaGpBPbXnTgHMjV]{23.Morte}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.Yb3i7aZ4rSWGQNsJ]{24.Negromanzia}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ooVUxPR65yjFkP6J]{25.Oscurit&agrave;}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.2mETVBVZGplL6I9z]{26.Protezione}</p>
+
+    <p><em>Non pu&ograve; lanciare poteri di una sfera opposta all' allineamento
+    scelto</em></p>
+
+    <p>&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 2cc10da33f5cb26d6cd27dd3e98af263a94a88b2
+    sourceId: Item.PkUKPQuP7OBfIGHm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: fpLoxxxfCQmAagfU
+sort: 12300000
+_key: '!items!fpLoxxxfCQmAagfU'

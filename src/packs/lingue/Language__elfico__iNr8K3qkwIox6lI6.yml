@@ -1,0 +1,29 @@
+name: Language (elfico)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dagli elfi.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 04227ec8024e5bfc79dd1fd99423bb93dc7b8547
+    sourceId: Item.6XwCbtatjbOHy4KL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613704
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.6XwCbtatjbOHy4KL
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: iNr8K3qkwIox6lI6
+_key: '!items!iNr8K3qkwIox6lI6'

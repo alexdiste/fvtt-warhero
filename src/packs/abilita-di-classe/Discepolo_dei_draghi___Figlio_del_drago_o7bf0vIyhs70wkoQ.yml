@@ -1,0 +1,39 @@
+name: Discepolo dei draghi - Figlio del drago
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio ha nelle sue vene il sangue di un&nbsp;drago elementale
+    che gli permette di ridurre i danni di 20 di un&nbsp;elemento a scelta tra (
+    fuoco, gelo, scossa, acido) in base al tipo di&nbsp;drago fuoco, acqua, aria
+    o terra. Qualsiasi danno prodotto dalle&nbsp;armi impugnate da questo&nbsp;
+    combattente produce il danno sotto forma dell'elemento scelto</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b7448d06a9f014da550dc868ed177459ed643e8d
+    sourceId: Item.LBlMqgc3dLJ48x60
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: o7bf0vIyhs70wkoQ
+sort: 9800000
+_key: '!items!o7bf0vIyhs70wkoQ'

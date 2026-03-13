@@ -1,0 +1,41 @@
+name: Boccetta o fiala (vuota)
+type: equipment
+img: icons/consumables/potions/vial-cork-empty.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una piccola fiala o piccola boccetta. Generalmente le fiale e/o le
+    boccette sono usate per i veleni</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c0a7aec698b31c0963e67d95d0137055231a07d0
+    sourceId: Item.NQncUziuoD6eRlXU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701672186043
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: IqKxYXDyz9MpkF8F
+sort: 19900000
+_key: '!items!IqKxYXDyz9MpkF8F'

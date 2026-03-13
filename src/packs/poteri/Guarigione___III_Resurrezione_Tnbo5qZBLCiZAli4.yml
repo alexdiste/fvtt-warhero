@@ -1,0 +1,32 @@
+name: Guarigione - III Resurrezione
+type: power
+system:
+  level: 3
+  magicschool: Guarigione
+  description: >-
+    <p>riporta in vita un cadavere di un alleato conosciuto in vita. questa
+    operazione non pu&ograve; essere fatta durante un combattimento. il
+    personaggio torna in vita con i pm che aveva alla morte e 10 pf, il costo di
+    mana dell'incantesimo aumenta di 1 per ogni giorno trascorso dalla morte del
+    bersaglio. Il bersaglio ha un malus di -2 in tutte le statistiche, non
+    rimovibili , fino al giorno successivo.</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904867
+  modifiedTime: 1743439294698
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Tnbo5qZBLCiZAli4
+folder: null
+sort: 7700000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!Tnbo5qZBLCiZAli4'

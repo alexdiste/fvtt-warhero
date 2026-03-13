@@ -1,0 +1,36 @@
+name: 'Abilità razziale mezzonano: Difesa'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>+1 a difesa quando in
+    @Compendium[fvtt-warhero.azioni.JLsRUsrvYg5U5BH1]{Difensiva}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b8944c50f8eba3f6f5fcb72cf221bb84bb72bda5
+    sourceId: Item.gDjRDE34wzG2uzNM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681196745992
+  modifiedTime: 1743437123519
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: aVJne5IcUnCcSr5b
+sort: 500000
+_key: '!items!aVJne5IcUnCcSr5b'

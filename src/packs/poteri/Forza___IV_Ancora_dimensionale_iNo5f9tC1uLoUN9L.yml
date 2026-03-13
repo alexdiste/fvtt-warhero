@@ -1,0 +1,29 @@
+name: Forza - IV Ancora dimensionale
+type: power
+system:
+  level: 4
+  magicschool: Forza
+  description: >-
+    in un raggio di 12 metri è impossibile usare qualsiasi tipo spostamento
+    magico e qualsiasi incantesimo delle sfere di evocazione, tempo e viaggio
+    per i successivi 5 minuti
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904861
+  modifiedTime: 1743439294787
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: iNo5f9tC1uLoUN9L
+folder: null
+sort: 10400000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!iNo5f9tC1uLoUN9L'

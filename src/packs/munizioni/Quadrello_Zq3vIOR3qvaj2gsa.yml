@@ -1,0 +1,41 @@
+name: Quadrello
+type: equipment
+img: icons/weapons/ammunition/arrow-broadhead-white.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 20
+  equipped: false
+  slotused: 1
+  slotlocation: quiver
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una quadrello da balestra. Fino a 20 quadrelli
+    occupano 1 solo slot faretra.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 126e8387c8098a78de006e21dcf66136606b344e
+    sourceId: Item.OZrQ8IrIGVoNUrq9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1676718246031
+  modifiedTime: 1698045976254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.YDJCpY6FwZtS75Sd
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Zq3vIOR3qvaj2gsa
+_key: '!items!Zq3vIOR3qvaj2gsa'

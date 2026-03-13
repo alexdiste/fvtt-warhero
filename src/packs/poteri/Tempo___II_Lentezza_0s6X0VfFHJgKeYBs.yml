@@ -1,0 +1,31 @@
+name: Tempo - II Lentezza
+type: power
+system:
+  level: 2
+  magicschool: Tempo
+  description: >-
+    <p>Il bersaglio perde una mossa a turno per [[/r 1d4 #durata di lentezza in
+    turni]], CD FIS 14 Nega.Se invece &egrave; presente sul
+    bersaglio&nbsp;l&rsquo;incantesimo
+    @Compendium[fvtt-warhero.poteri.O1yGotIS8YidAFh1]{Tempo - III
+    Velocit&agrave;} rimuove solamente quello</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904973
+  modifiedTime: 1743439294435
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 0s6X0VfFHJgKeYBs
+folder: null
+sort: 400000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!0s6X0VfFHJgKeYBs'

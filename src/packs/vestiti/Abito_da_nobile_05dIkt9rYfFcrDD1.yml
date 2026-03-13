@@ -1,0 +1,39 @@
+name: Abito da nobile
+type: equipment
+img: icons/equipment/chest/coat-leather-blue.webp
+system:
+  equiptype: ''
+  cost: 75
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: dress
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un abito da nobile</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 7f8d9a421d9683d87aa251a339008e77be5bf6cc
+    sourceId: Item.wNF1yHBbW3MQah22
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1702047902061
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.72HqDhP2e8P7nbAx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 05dIkt9rYfFcrDD1
+_key: '!items!05dIkt9rYfFcrDD1'

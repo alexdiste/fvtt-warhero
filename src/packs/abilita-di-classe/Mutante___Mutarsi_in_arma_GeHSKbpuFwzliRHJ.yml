@@ -1,0 +1,37 @@
+name: Mutante - Mutarsi in arma
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>Il personaggio può 1+IST volte al giorno mutarsi in un' arma a sua
+    scelta, l'arma ha un bonus al TxC pari all'IST del personaggio e un bonus al
+    danno pari al FIS. Ogni volta che chi la impugna fa un TxC, anche il
+    personaggio effettua un TxC e si prende il dado migliore come risultato del
+    tiro. Il personaggio rimane in grado di parlare e può usare una singola
+    mossa potere nel suo turno. Rimuovere la mutazione non è una mossa, all'alba
+    di ogni giorno la mutazione termina</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.32'
+  createdTime: 1761360526787
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: GeHSKbpuFwzliRHJ
+sort: 1800000
+_key: '!items!GeHSKbpuFwzliRHJ'

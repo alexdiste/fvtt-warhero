@@ -1,0 +1,42 @@
+name: Componenti per arma da fuoco
+type: classitem
+img: icons/tools/smithing/pincers.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Pistolero
+  description: >-
+    <p>Componenti per costruire, riparare o fare manutenzione ad un arma da
+    fuoco</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 0bd4a45c690dc048f60cce4eece40aa72684fffd
+    sourceId: Item.4WknFffPc3OMaNaV
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: YFER0ncxX0KMUTcP
+sort: 1100000
+_key: '!items!YFER0ncxX0KMUTcP'

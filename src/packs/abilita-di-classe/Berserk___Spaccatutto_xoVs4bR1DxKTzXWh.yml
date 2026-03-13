@@ -1,0 +1,37 @@
+name: Berserk - Spaccatutto
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio ottiene l&rsquo;abilit&agrave; aggiuntiva
+    @UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.Z23jo7kOAS6EbI3I]{Critico
+    potenziato} anche se non ne soddisfa i requisiti</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 33a20a48bbba0537c44d6c42decd97fcad2ae68e
+    sourceId: Item.xMVSUAWGlPqKuzZ9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1701438880006
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: xoVs4bR1DxKTzXWh
+sort: 12600000
+_key: '!items!xoVs4bR1DxKTzXWh'

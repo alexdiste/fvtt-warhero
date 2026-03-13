@@ -1,0 +1,38 @@
+name: Mutaforma - Mutare
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; ridistribuire i suoi punti alle statistiche a
+    suo piacimento, come azione, senza limiti massimi, ma non pu&ograve; mai
+    mandare una statistica sotto lo 0. Pu&ograve; fare questa mutazione un
+    numero di volte al giorno pari a 3</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b0328e992175984eee78c412d8f8a6325bfeaba1
+    sourceId: Item.Elu9v6EqrhJGofke
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681053280112
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.Elu9v6EqrhJGofke
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 19400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: CLJJJhEPM85Y2P9H
+_key: '!items!CLJJJhEPM85Y2P9H'

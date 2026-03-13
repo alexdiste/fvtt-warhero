@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Fuoco - IV Muro di fuoco
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.0fuQ1vuv4uUfReik]{Elementale -
+    Fuoco - IV Muro di fuoco} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 118a58f1b653f08bc0f422d337c8891d60e18dfb
+    sourceId: Item.eMYxlvh6wSWUkDHR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444018
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: hHEvgHuwZ0Q42yjH
+sort: 32100000
+_key: '!items!hHEvgHuwZ0Q42yjH'

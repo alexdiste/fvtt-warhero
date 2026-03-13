@@ -1,0 +1,20 @@
+type: Macro
+folder: null
+name: Danni
+color: null
+sorting: a
+_id: oNMEWyriQbTiY8pm
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.26'
+  createdTime: 1760987491043
+  modifiedTime: 1760987491043
+  lastModifiedBy: guOwSDi78TuzUGFU
+_key: '!folders!oNMEWyriQbTiY8pm'

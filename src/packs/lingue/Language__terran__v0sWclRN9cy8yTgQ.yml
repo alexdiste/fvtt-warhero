@@ -1,0 +1,29 @@
+name: Language (terran)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dagli elementali di terra.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 32d9b59d820d4043351a8f0fc2b96bc7c7104d9b
+    sourceId: Item.q2UhDUBhAHCmxLFR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613719
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: v0sWclRN9cy8yTgQ
+_key: '!items!v0sWclRN9cy8yTgQ'

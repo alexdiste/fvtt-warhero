@@ -1,0 +1,42 @@
+name: Morso
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 2d4
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 020dd7e4f88c89b7157d1d20efa2d615c985eb2a
+    sourceId: Item.IJnUKkomw51VEitv
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680857418842
+  modifiedTime: 1743436810425
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.0WjuzgTtYlcP20yn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: oz9VRXbYX71Y1RyR
+_key: '!items!oz9VRXbYX71Y1RyR'

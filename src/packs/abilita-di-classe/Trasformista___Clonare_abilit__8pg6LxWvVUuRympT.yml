@@ -1,0 +1,39 @@
+name: Trasformista - Clonare abilità
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio all'alba di ogni giorno deve scegliere una abilit&agrave;
+    che abbia un numero limitato di utilizzi giornalieri fra le classi scelte in
+    fase di creazione con l&rsquo;abilit&agrave; &ldquo;Mi sento
+    un&rsquo;altro&rdquo; e la aggiunge fra quelle che pu&ograve; usare per la
+    giornata come descritto in quella classe</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5ee1fa15e8eb5d72bb20bdf9b438ff8dcc6f47ff
+    sourceId: Item.vPcizVDO2SvlQ8qi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681046470608
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.vPcizVDO2SvlQ8qi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 19300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 8pg6LxWvVUuRympT
+_key: '!items!8pg6LxWvVUuRympT'

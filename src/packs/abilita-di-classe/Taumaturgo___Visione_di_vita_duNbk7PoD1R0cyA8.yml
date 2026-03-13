@@ -1,0 +1,36 @@
+name: Taumaturgo - Visione di vita
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>In fase di creazione, il personaggio ottiene un bonus di 10 punti
+    mana</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 8d2fc92af6e5a633a11c642f5d8f966eb09b22e9
+    sourceId: Item.G3sDGufxOv77SzXJ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.G3sDGufxOv77SzXJ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: duNbk7PoD1R0cyA8
+_key: '!items!duNbk7PoD1R0cyA8'

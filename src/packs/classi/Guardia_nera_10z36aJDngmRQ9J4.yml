@@ -1,0 +1,70 @@
+name: Guardia nera
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Combattente devoto alle arti divine. Ha le seguente abilit&agrave; di
+    classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.oimYTshGlQ0xwivx]{Guardia
+    nera - Grazia divina}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.scGHxFHGKMN0R2M2]{Guardia
+    nera - Imposizione delle mani}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.eoeMDjTYxZgyOpEh]{Guardia
+    nera - Individuazione del bene/legge}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.VVereowWWzPWgD8g]{Guardia
+    nera - Punire il bene o la legge}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FCxCmpfoUILN4OpI]{Guardia
+    nera - Restrizione allineamento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.nmHnV9jdIV40I3zC]{Guardia
+    nera - Servitore}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3EpjJgPa7ehQAi2z]{Guardia
+    nera - Sfere conosciute}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.fRd4YHRgPoGi57Qp]{Guardia
+    nera - Spirito nero}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: eb34112a0d04526e4c4134f1b4b334bd3a0eec5c
+    sourceId: Item.bRKu1wCFXuLs5irR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681047104832
+  modifiedTime: 1743436999936
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.bRKu1wCFXuLs5irR
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 10z36aJDngmRQ9J4
+_key: '!items!10z36aJDngmRQ9J4'

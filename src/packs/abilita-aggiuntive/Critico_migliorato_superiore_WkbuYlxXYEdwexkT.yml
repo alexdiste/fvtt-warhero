@@ -1,0 +1,37 @@
+name: Critico migliorato superiore
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Prerequisito:</strong> Critico migliorato
+    </p><p><strong>Beneficio:</strong> Il 18 di dado in un TxC è considerato
+    come un 20 ai fini delle regole dei critici.</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.shCY0X0T96PzJRh2
+    hash: 2d02a2262875c1d86d712471623d114044ba4cc7
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774871631
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: WkbuYlxXYEdwexkT
+sort: 2800000
+_key: '!items!WkbuYlxXYEdwexkT'

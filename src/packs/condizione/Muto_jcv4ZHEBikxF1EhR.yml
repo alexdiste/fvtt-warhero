@@ -1,0 +1,38 @@
+name: Muto
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-5 al tpc'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c8b4c4c238bd77e646b8317f821e4b55ef6c6b17
+    sourceId: Item.d52AcwewpAQIKRzZ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705857333190
+  modifiedTime: 1743437151538
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: jcv4ZHEBikxF1EhR
+sort: 0
+_key: '!items!jcv4ZHEBikxF1EhR'

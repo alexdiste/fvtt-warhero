@@ -1,0 +1,43 @@
+name: Allevatore - Infusione animale
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio si pu&ograve; infondere in uno dei suoi&nbsp;famigli, e
+    lui, il suo equipaggiamento e gli altri suoi famigli diventano&nbsp;un
+    tutt'uno con il famiglio prescelto. Il famiglio acquisisce
+    le&nbsp;statistiche dell'allevatore compreso difesa e punti ferita e
+    pu&ograve;&nbsp;parlare, inoltre ottiene un attacco da corpo a corpo da 3d12
+    danni e&nbsp;aumenta di taglia . Mentre &egrave; in questo stato non
+    pu&ograve; far uso dei&nbsp;poteri, ma ottiene tutti i vantaggi
+    dell&rsquo;animale, come nuotare, volare,&nbsp;scavare ecc.. Se il
+    personaggio muore in questo stato, tutti i famigli&nbsp;muoiono con lui</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: de90f4e9af42524adcc7796fcdaabbd720443f42
+    sourceId: Item.3vmQ4bM2QnVEHIRg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704471123381
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: SyzDBs5VJ1tWRXH1
+sort: 6500000
+_key: '!items!SyzDBs5VJ1tWRXH1'

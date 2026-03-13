@@ -1,0 +1,44 @@
+name: Pozione di Verità superiore
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 750
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '375'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 750 Mo.</p>
+
+    <p>una volta bevuta questa pozione il soggetto risponder&agrave; in maniera
+    veritiera alle prossime 3 domande</p>
+  price: '750'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 0825c71c110d47e4eb91196601ff462ac50e251b
+    sourceId: Compendium.world.temp.FzZpaZcoWuZgVefm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553299
+  modifiedTime: 1702106411109
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.FzZpaZcoWuZgVefm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: r3wCxo1c146EyjiN
+_key: '!items!r3wCxo1c146EyjiN'

@@ -1,0 +1,42 @@
+name: Lampada comune
+type: equipment
+img: icons/commodities/treasure/lantern-stone-grey.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una lampada proietta luce in un raggio di 3
+    quadretti. Una volta accesa, brucia per 6 ore con un&rsquo;ampolla (0,5
+    litri) d&rsquo;olio</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e44def6ae9596b2cc56a4472cbd6c06c0531ba17
+    sourceId: Item.qm6A0vd1GZLWKRu2
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676719074940
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.PAtOK0AuTBTVGGBi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 39800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: qZp6xYQKday9TxUv
+_key: '!items!qZp6xYQKday9TxUv'

@@ -1,0 +1,40 @@
+name: Rabdomante - Ricarica magica
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 7
+  description: >-
+    <p>Il personaggio ha ogni giorno 3 + MEN&nbsp;cariche da usare per
+    ricaricare le sue bacchette, pu&ograve; ricaricare&nbsp;una bacchetta
+    aumento di un utilizzo spendendo tante cariche&nbsp;pari al livello del
+    potere. Non pu&ograve; mai mettere pi&ugrave; di 10 utilizzi&nbsp;di un
+    potere per singola bacchetta e pu&ograve; ricaricare solo&nbsp;bacchette che
+    hanno almeno una carica</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a6be3701927125cc7e86d67a72c8075d46a6de95
+    sourceId: Item.aoOdUZPqxfivZBVs
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.tbnJN94RxlOAQKWx
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352951105
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: 6gj3BofZHEyWvyK9
+sort: 1400000
+_key: '!items!6gj3BofZHEyWvyK9'

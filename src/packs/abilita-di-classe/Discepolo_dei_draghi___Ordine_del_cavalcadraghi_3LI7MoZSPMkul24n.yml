@@ -1,0 +1,38 @@
+name: Discepolo dei draghi - Ordine del cavalcadraghi
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Se il personaggio &egrave; mutato in drago,&nbsp;pu&ograve; ricevere
+    l&rsquo;Ordine di soffio da un cavalcadraghi e se lo
+    desidera&nbsp;pu&ograve; eseguirlo come per le regole di tale abilit&agrave;
+    descritta in quella&nbsp;classe.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 6f83c898d36feeaef0434a4e812470ef7ebef9da
+    sourceId: Item.bGeEdwiXI0weHGbz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 3LI7MoZSPMkul24n
+sort: 9200000
+_key: '!items!3LI7MoZSPMkul24n'

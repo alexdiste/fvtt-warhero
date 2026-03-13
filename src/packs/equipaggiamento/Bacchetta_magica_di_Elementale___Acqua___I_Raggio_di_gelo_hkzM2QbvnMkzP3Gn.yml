@@ -1,0 +1,42 @@
+name: Bacchetta magica di Elementale - Acqua - I Raggio di gelo
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.Faq8SbGNkVrQ5pvp]{Elementale -
+    Acqua - I Raggio di gelo} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a7342f61459a678ff28d1858058e93d2dbbefbbc
+    sourceId: Item.2mIGt2Je6Q1jFb8w
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613827804
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: hkzM2QbvnMkzP3Gn
+sort: 11700000
+_key: '!items!hkzM2QbvnMkzP3Gn'

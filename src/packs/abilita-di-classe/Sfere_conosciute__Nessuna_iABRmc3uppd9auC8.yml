@@ -1,0 +1,36 @@
+name: 'Sfere conosciute: Nessuna'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il pg ha una conoscenza base dei poteri e pu&ograve; lanciare poteri da
+    pergamena</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 207fb948ef32971dd3ef35aae1ba6ebad77a915c
+    sourceId: Item.XnqSvr61MS5PAJ8G
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1676806380081
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.WuXZEmeSH7EeyVxn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 22300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: iABRmc3uppd9auC8
+_key: '!items!iABRmc3uppd9auC8'

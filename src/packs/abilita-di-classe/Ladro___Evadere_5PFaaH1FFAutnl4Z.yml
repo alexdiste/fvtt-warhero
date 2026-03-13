@@ -1,0 +1,36 @@
+name: Ladro - Evadere
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio ottiene sempre un bonus di +5 a tutte&nbsp;le prove
+    richieste per liberarsi da corde o manette</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 6d918e365de20cbb777277bc989714f10e2966e8
+    sourceId: Item.SyJxxlecmhQOpylD
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 5PFaaH1FFAutnl4Z
+sort: 14400000
+_key: '!items!5PFaaH1FFAutnl4Z'

@@ -1,0 +1,40 @@
+name: Capacità extra superiore
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Prerequisito:</strong> una qualsiasi abilità sulla quale si sia
+    preso l’abilità capacità extra. <br /><strong>Beneficio</strong>:Si ottiene
+    1 uso extra al giorno della capacità scelta. <br
+    /><strong>Speciale:</strong> E' possibile prendere questa abilità più volte
+    selezionando ogni volta un'abilità diversa nella quale si è preso capacità
+    extra.</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: bd2145bf8d33ccdfbbd55a63849941f624d48f0c
+    sourceId: Item.TAcQUadelpxOBdyJ
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774696476
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: nxkoWQ3N0jGWHEoi
+sort: 3800000
+_key: '!items!nxkoWQ3N0jGWHEoi'

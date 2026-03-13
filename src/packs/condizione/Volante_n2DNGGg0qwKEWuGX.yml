@@ -1,0 +1,40 @@
+name: Volante
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 1
+  durationunit: ora
+  shortdescription: puoi volare
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>permette al bersaglio di volare per un ora alla normale velocit&agrave;
+    di movimento.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 5b56fb8f3c30a3d8566f55cda26a3f1788558faa
+    sourceId: Item.Y5iV2Cz5C0tyqX8q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698853041588
+  modifiedTime: 1743437151612
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: n2DNGGg0qwKEWuGX
+sort: 3800000
+_key: '!items!n2DNGGg0qwKEWuGX'

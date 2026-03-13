@@ -1,0 +1,31 @@
+name: Viaggio - III Teletrasporto
+type: power
+system:
+  level: 3
+  magicschool: Viaggio
+  description: >-
+    <p>permette all'incantatore di andare in un qualsiasi posto di sua
+    conoscenza. Ricordo che si pu&ograve; memorizzare MENTE posti.&nbsp;
+    L'incantesimo costa un punto mana in pi&ugrave; per ogni personaggio che si
+    desidera portare con se. Se un personaggio non vuol essere trasportato, CD
+    12, IST, negare.</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904988
+  modifiedTime: 1743439294443
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 1UrtrLZ51eLjsEIx
+folder: null
+sort: 600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!1UrtrLZ51eLjsEIx'

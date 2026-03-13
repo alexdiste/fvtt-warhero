@@ -1,0 +1,41 @@
+name: Malattia - Devastazione vischiosa
+type: condition
+img: systems/fvtt-warhero/images/icons/medical-thermometer.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>La vittima si trasforma in poltiglia&nbsp;infettiva dall&rsquo;interno
+    Contatto, DC 14, 1 giorno, &ndash;2 FIS. -1FIS<br>permanente se fallisce un
+    secondo tiro salvezza su FIS</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 513613a3e1b77cf2cd5e248d9847af36021a7bff
+    sourceId: Item.vaJXX7EcjPPFpn0E
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702204460418
+  modifiedTime: 1743439247613
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: c9dtPrXehHzha8FP
+sort: 0
+_key: '!items!c9dtPrXehHzha8FP'

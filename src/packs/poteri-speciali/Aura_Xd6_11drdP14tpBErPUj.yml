@@ -1,0 +1,38 @@
+name: Aura Xd6
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Chiunque nel raggio di 10 metri deve riuscire in un salvataggio su FIS CD
+    14 o subire Xd6 danni di qualche genere in base alla creatura, ogni round
+    che vi si trova all'interno. Una creatura evocata pu&ograve; decidere chi
+    l'ha evocata se infliggere il danno o meno a chi entra nella sua aura</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1b527d9670bef99d89d257786bc9d42281c3ffc1
+    sourceId: Item.PjRoDjRreXWRN92s
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.HKoxeCXqiwLIyOX7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 11drdP14tpBErPUj
+_key: '!items!11drdP14tpBErPUj'

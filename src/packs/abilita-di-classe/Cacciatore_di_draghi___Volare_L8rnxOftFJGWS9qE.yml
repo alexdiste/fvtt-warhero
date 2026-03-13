@@ -1,0 +1,36 @@
+name: Cacciatore di draghi - Volare
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio ha la capacit&agrave; naturale di volare come
+    movimento</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 574c051a9a8ede5cc2c2c8238107b285fcb68e74
+    sourceId: Item.87s8IQlPoqSDBSXS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704462853520
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: L8rnxOftFJGWS9qE
+sort: 7500000
+_key: '!items!L8rnxOftFJGWS9qE'

@@ -1,0 +1,98 @@
+name: Razza
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p>Rappresenta la razza del personaggio. Su Warhero esistono le seguenti
+    razze:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.sY6t6latJGSgL9Ua]{Dirza}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.dJvsnVw9p1BHJn0d]{Dragonide}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.qGm1Fy4tRWj4QxZj]{Elfo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.J2HcGTUmG7OwQhrT]{Elfo
+    Oscuro}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.faQLSA2qC3u8ggCY]{Elfo
+    selvaggio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.mt9LOBxetI2WcJPd]{Fata}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.PDPAxqSbxTpFsgII]{Formian}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.hsEGdKzC1IA2chGd]{Gnomo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.H6KnOx8EOCxydqQI]{Goblin}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.63XSb4c00csd2sCG]{Halfling}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.MPYySQgf2ucJCuKf]{Mezz'Elfo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.myGmMTtsI1CVas5x]{Mezzo
+    angelo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.daPue8Hi9csPcUAa]{Mezzo
+    demone}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.7YsvMs18PK4LtdfK]{Mezzo
+    diavolo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.KnLDPzrVaZMPqVbH]{Mezzo
+    Nano}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.HYKcxPPknyEs8QX6]{Mezzorco}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.54AqhZTRxx24xczj]{Nano}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.KyfUJ50pdbtUCKF8]{Ogre}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.KWFi3CkeDIWMmumu]{Satiro}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.razze.Item.rQTtGCyphAcLn7CT]{Umano}</p>
+  hpprogresion: high
+  languages: ''
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 16f2a8a6f25fea674bfd641f86be9407283db4bb
+    sourceId: Compendium.world.temp.NYqheAbhaYePKbEe
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552785
+  modifiedTime: 1743439649072
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.NYqheAbhaYePKbEe
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: a3K6tgTr0BdD11yS
+_key: '!items!a3K6tgTr0BdD11yS'

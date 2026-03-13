@@ -1,0 +1,38 @@
+name: Berserk - Costituzione
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio ottiene un bonus di 30 punti ferita in fase di creazione.
+    Mettere la condizione
+    @Compendium[fvtt-warhero.condizione.nWYyDH7wxNsmRCQ0]{Costituzione
+    maggiorata berserk (+30 pf)} sul pg</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 05e17cfe843c74423996de7f879b23daa1c3b2f2
+    sourceId: Item.xqr1bzbRLHwaN9P4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1701438880006
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: AzQ2qZLpSM6i4NwC
+sort: 13500000
+_key: '!items!AzQ2qZLpSM6i4NwC'

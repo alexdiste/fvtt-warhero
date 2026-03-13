@@ -1,0 +1,42 @@
+name: Bacchetta magica di Evocazione - Non Morte - I Evoca scheletro
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.x2Wn2yyZzfuS67r5]{Evocazione - Non
+    Morte - I Evoca scheletro} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ea4306300f14211850184e52ca71f5b9199a0971
+    sourceId: Item.NlI1bxNs7yHNz2nA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613828667
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: S0XJxEJQ1yueTUrj
+sort: 9500000
+_key: '!items!S0XJxEJQ1yueTUrj'

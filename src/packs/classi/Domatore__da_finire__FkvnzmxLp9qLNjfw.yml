@@ -1,0 +1,46 @@
+name: Domatore (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Il domatore &egrave; un combattente che sfrutta l&rsquo;addestramento
+    degli animali che trova.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ad7c06dc78a59ad032ecff9595096f72a0d3777c
+    sourceId: Item.VSfSvSH9M1ov14pB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1680859705976
+  modifiedTime: 1766238226060
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.tQQ2BphjqU2oZ300
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FkvnzmxLp9qLNjfw
+_key: '!items!FkvnzmxLp9qLNjfw'

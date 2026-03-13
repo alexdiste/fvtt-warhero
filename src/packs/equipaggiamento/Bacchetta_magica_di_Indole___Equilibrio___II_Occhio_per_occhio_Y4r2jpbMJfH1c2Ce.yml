@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Equilibrio - II Occhio per occhio
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.ku6axOQVWmkXgyAV]{Indole -
+    Equilibrio - II Occhio per occhio} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: f2b88400552d25fa670fa889acd1c1e6bb6a3634
+    sourceId: Item.qxLz0vOHIpWvnZnS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830397
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Y4r2jpbMJfH1c2Ce
+sort: 5600000
+_key: '!items!Y4r2jpbMJfH1c2Ce'

@@ -1,0 +1,34 @@
+name: Risucchio (baanshee)
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>una baanshee quando colpisce un bersaglio toglie 2 a FIS</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: b6e3435e0ca546e794c3429604a61119c10a0433
+    sourceId: Item.XDcPuSfkCwbSsAL4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1700569018119
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: AdMVt9DjvzCyWxMF
+sort: 1200000
+_key: '!items!AdMVt9DjvzCyWxMF'

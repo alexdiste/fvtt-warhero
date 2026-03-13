@@ -1,0 +1,37 @@
+name: Sapiente - Amanuense
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio ha l&rsquo;abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.62KlaD89t4TQ7qMV]{Copiare
+    pergamene}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+    sourceId: Item.XTPKOsLhfK5kM0iF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: MkUMfsLRVd4RPBYs
+sort: 16500000
+_key: '!items!MkUMfsLRVd4RPBYs'

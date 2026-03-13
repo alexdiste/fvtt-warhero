@@ -1,0 +1,48 @@
+name: Boccetta o fiala (piena)
+type: equipment
+img: icons/consumables/potions/vial-cork-green.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: unknown
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una
+    @UUID[Compendium.fvtt-warhero.equipaggiamento.Item.IqKxYXDyz9MpkF8F]{Boccetta
+    o fiala} piena di un liquido. Ma cosa sar&agrave;?<br>Potrebbe essere un
+    veleno, semplice acqua, una pozione magica o chiss&agrave; che altro.</p>
+
+    <p>Generalmente le boccette e/o le fiale sono usare per i veleni in quanto
+    per le pozioni magiche si usano le
+    @Compendium[fvtt-warhero.equipaggiamento.SHIuwc7ia5WVyuvO]{Ampolle} ma mai
+    dire mai</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 81a74b541d0ba49e66b3ba6fceec16fdb2301910
+    sourceId: Item.dO65bFGdEbbQQrLe
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701672186043
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: j9IIrIfVYC2NZFtZ
+sort: 19600000
+_key: '!items!j9IIrIfVYC2NZFtZ'

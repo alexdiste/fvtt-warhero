@@ -1,0 +1,36 @@
+name: Signore elementale - Ignorare la riduzione
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>il personaggio pu&ograve; 3 + FIS volte al giorno ignorare la riduzione
+    elementale al suo elemento che un bersaglio possiede</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b3567fda469f75e66c547323b0e8110a19d51fc9
+    sourceId: Item.KTQzWFgeV3PceZZf
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681056288111
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.B5dTLpoAa5HZjedT
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 22100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: gupmrGAkuIwGx5iS
+_key: '!items!gupmrGAkuIwGx5iS'

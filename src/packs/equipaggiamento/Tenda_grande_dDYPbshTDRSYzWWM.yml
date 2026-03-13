@@ -1,0 +1,39 @@
+name: Tenda grande
+type: equipment
+img: icons/environment/settlement/tent.webp
+system:
+  equiptype: ''
+  cost: 35
+  quantity: 1
+  equipped: false
+  slotused: 5
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Una tenda per tre persone</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 90e0e07bfa4ef05566a48787de86518df9204d56
+    sourceId: Item.1KM9nIYaHosPOcP8
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680861189213
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tOwZQA9B2DBrKgwa
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 38600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: dDYPbshTDRSYzWWM
+_key: '!items!dDYPbshTDRSYzWWM'

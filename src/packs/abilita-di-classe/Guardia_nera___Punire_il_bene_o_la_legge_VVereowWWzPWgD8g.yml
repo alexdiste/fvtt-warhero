@@ -1,0 +1,38 @@
+name: Guardia nera - Punire il bene o la legge
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>3 + MEN volte al giorno, il personaggio pu&ograve; scegliere di sommare
+    il suo valore di MEN al danno e al<br>tiro per colpire contro una creatura
+    buona o legale fino alla fine dello scontro, usare questo potere non usa
+    mosse</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9c8f84025b30a4c41cd0fc71f3da1a9a94a99de7
+    sourceId: Item.3moh47RSX1MbLVnp
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.3moh47RSX1MbLVnp
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: VVereowWWzPWgD8g
+_key: '!items!VVereowWWzPWgD8g'

@@ -1,0 +1,32 @@
+name: Viaggio - I Levitazione
+type: power
+system:
+  level: 1
+  magicschool: Viaggio
+  description: >-
+    <p>permette di alzarsi dal terreno e andare solo in alto o in basso
+    ignorando la forza di gravit&agrave;, per 5 minuti.</p>
+
+    <p>Aggiungere
+    @Compendium[fvtt-warhero.condizione.L8s5CvdkJCHQwPK7]{Levitante} alla
+    scheda</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904986
+  modifiedTime: 1743439294803
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: j7RjSZH85KRovJKc
+folder: null
+sort: 10900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!j7RjSZH85KRovJKc'

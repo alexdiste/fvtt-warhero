@@ -1,0 +1,42 @@
+name: Affaticato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: >-
+    Non può eseguire due mosse di movimento di fila e subisce una penalità di -1
+    a FIS e IST
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Non pu&ograve; eseguire due mosse di movimento di fila e subisce una
+    penalit&agrave; di -1 a FIS e IST</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a7998859331226b6f7dd408735dda6db1a1474e1
+    sourceId: Item.WpdnRi0CNC9DoSY5
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437150970
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.WpdnRi0CNC9DoSY5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Cp0WhP79Qbzl4rtM
+_key: '!items!Cp0WhP79Qbzl4rtM'

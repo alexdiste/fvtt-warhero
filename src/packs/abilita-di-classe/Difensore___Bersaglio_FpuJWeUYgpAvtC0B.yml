@@ -1,0 +1,37 @@
+name: Difensore - Bersaglio
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Un numero di volte al giorno pari a 3 + MEN il&nbsp;personaggio
+    pu&ograve; costringere un mostro ad effettuare almeno&nbsp;un attacco contro
+    di lui. Usare bersaglio &egrave; considerata una&nbsp;mossa movimento</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 403fa838887c30383d8e933ad27430c365e22cd3
+    sourceId: Item.wuhlc4QXNgIzIBKG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704217302127
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: FpuJWeUYgpAvtC0B
+sort: 10200000
+_key: '!items!FpuJWeUYgpAvtC0B'

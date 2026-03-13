@@ -1,0 +1,38 @@
+name: Riduzione danno
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Consente ad una creatura di ignorare un ammontare predefinito di danni da
+    alcuni tipi di fonte di danno specificate nella riduzione stessa, per
+    esempio ridurre il danno di 5 se non &egrave; da una fonte di fuoco,
+    sar&agrave; scritto cos&igrave;: 5/fuoco</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e972a6bf6ec1ae81780f63443698281236555cad
+    sourceId: Item.7qj7CYIJaVpbUO2r
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.HKoxeCXqiwLIyOX7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: EUoXlMXstPV0REuz
+_key: '!items!EUoXlMXstPV0REuz'

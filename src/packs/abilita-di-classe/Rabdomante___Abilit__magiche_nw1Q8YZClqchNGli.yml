@@ -1,0 +1,36 @@
+name: Rabdomante - Abilità magiche
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; prendere l&rsquo;abilit&agrave;&nbsp;aggiuntive
+    ignorando il requisito &ldquo;Capacit&agrave; di lanciare poteri &rdquo;</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: af280a69cb1cc1ce7d852c4df28c7ed15b8b1293
+    sourceId: Item.uiZYhWJgBdli1xTB
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.LeOeB71yjgYUV8ZZ
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352945227
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: nw1Q8YZClqchNGli
+sort: 4500000
+_key: '!items!nw1Q8YZClqchNGli'

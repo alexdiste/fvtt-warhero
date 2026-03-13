@@ -1,0 +1,42 @@
+name: Frustata
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: twohanded
+  damage: 2d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 54ec24b9f1fb9290ea53d058305f94789de75cb9
+    sourceId: Item.KBgkXAootOLuef9P
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681573811492
+  modifiedTime: 1743436810317
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: D6BG59NRucJeQ1iK
+sort: 1300000
+_key: '!items!D6BG59NRucJeQ1iK'

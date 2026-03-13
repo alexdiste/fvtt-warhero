@@ -1,0 +1,39 @@
+name: Tenda media
+type: equipment
+img: icons/environment/settlement/tent.webp
+system:
+  equiptype: ''
+  cost: 15
+  quantity: 1
+  equipped: false
+  slotused: 3
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Una tenda per due persone</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 515aa3247366eacfe23cda456d65e2d7983549bc
+    sourceId: Item.09ZOjUgmv4F7rRGA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680861189213
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tOwZQA9B2DBrKgwa
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 37800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: PREdVHEv4ZwBSgt4
+_key: '!items!PREdVHEv4ZwBSgt4'

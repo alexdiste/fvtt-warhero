@@ -1,0 +1,58 @@
+name: 24.Negromanzia
+type: power
+img: systems/fvtt-warhero/images/icons/magic/negromanzia.webp
+system:
+  level: 0
+  magicschool: Negromanzia
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.7b6lal71wDDJAEd0]{Negromanzia -
+    I Risucchia vita}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.fYgXo7Pcq4HKOQqK]{Negromanzia -
+    II Vita Falsa}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.6Z73jbvTwFqsiKOw]{Negromanzia -
+    III Resurrezione veloce}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.GtDC6tnsJwJ8ddL1]{Negromanzia -
+    IV Incatenare l' anima}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.vSGeP4nrgzmoixcw]{Negromanzia -
+    IV Rigenerazione}</p>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 0f9c4e55808b32c1764cf9b5e1f63ec52237603f
+    sourceId: Compendium.world.temp.GlYpp8HtDGzN2stF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552554
+  modifiedTime: 1698851221133
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.GlYpp8HtDGzN2stF
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Yb3i7aZ4rSWGQNsJ
+_key: '!items!Yb3i7aZ4rSWGQNsJ'

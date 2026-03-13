@@ -1,0 +1,38 @@
+name: Biglia del fuoco
+type: equipment
+img: icons/magic/fire/orb-vortex.webp
+system:
+  equiptype: ''
+  cost: 450
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una biglia che se buttata a terra e pronunciata la parola magica si
+    trasforma in un fuoco da campo, con la stessa parola si ritrasforma in una
+    biglia</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.32'
+  createdTime: 1761360479931
+  modifiedTime: 1761360479931
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: 9UlmGdxcQ19Xt1LZ
+sort: 0
+_key: '!items!9UlmGdxcQ19Xt1LZ'

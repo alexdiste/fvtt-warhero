@@ -1,0 +1,44 @@
+name: 'Stato: Avvelenato'
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Il pg è avvelenato
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Rappresenta che il personaggio &egrave; stato avvelenato.&nbsp;</p>
+
+    <p>@UUID[JournalEntry.xcxNQf6ypjQsFUcB.JournalEntryPage.miZN9xsZPdGVoZtm]{Lista
+    veleni}</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 7d03c4c1c5ffd461a0685e6a62fa25d721594e51
+    sourceId: Item.BxCZozxIoVn34357
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552687
+  modifiedTime: 1743437151516
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: f4wBGpEkrpg9IKOE
+sort: 2500000
+_key: '!items!f4wBGpEkrpg9IKOE'

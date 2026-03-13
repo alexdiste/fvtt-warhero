@@ -1,0 +1,38 @@
+name: Guardia nera - Servitore
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; lanciare a suo piacimento il potere di livello
+    I della sfera di Evocazione &ndash; Non morti
+    @Compendium[fvtt-warhero.poteri.x2Wn2yyZzfuS67r5]{Evocazione - Non Morte - I
+    Evoca scheletro}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 4ef54f967f182f6aa5009f47106dbfddd2907b7d
+    sourceId: Item.CwahVI9uz4yUjcjM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.CwahVI9uz4yUjcjM
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 22900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: nmHnV9jdIV40I3zC
+_key: '!items!nmHnV9jdIV40I3zC'

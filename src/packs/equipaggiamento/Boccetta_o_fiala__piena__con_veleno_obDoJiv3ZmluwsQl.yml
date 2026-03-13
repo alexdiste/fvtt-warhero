@@ -1,0 +1,42 @@
+name: Boccetta o fiala (piena) con veleno
+type: equipment
+img: icons/consumables/potions/vial-cork-green.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'no'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una
+    @UUID[Compendium.fvtt-warhero.equipaggiamento.Item.IqKxYXDyz9MpkF8F]{Boccetta
+    o fiala} piena di veleno. Ma quale sar&agrave;? Cosa far&agrave;?</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: cc318fef241b9c3b049248104e7081f6c2ceac7b
+    sourceId: Item.uXonTdifULnNQVeY
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701672186043
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: obDoJiv3ZmluwsQl
+sort: 19700000
+_key: '!items!obDoJiv3ZmluwsQl'

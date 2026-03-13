@@ -1,0 +1,42 @@
+name: Bacchetta magica di Linguaggi - I Parlare con i morti
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi - I
+    Parlare con i morti} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: f25959cb8b137e8ce6eca6e880123da47783d48f
+    sourceId: Item.h2XngSghJ7SiDTvr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613831084
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Q5GbG2wadryoOaNR
+sort: 1400000
+_key: '!items!Q5GbG2wadryoOaNR'

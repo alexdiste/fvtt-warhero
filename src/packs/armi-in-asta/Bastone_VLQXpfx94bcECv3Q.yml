@@ -1,0 +1,44 @@
+name: Bastone
+type: weapon
+img: icons/weapons/staves/staff-simple-gold.webp
+system:
+  weapontype: polearm
+  damage: 1d6
+  damage2hands: 1d8
+  rollformula: ''
+  damageformula: ''
+  cost: 3
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un bastone. Arma in asta. Se usato ad una mano:
+    [[/r 1d6]] Se usati a due mani: [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5ecf68542db873004ede052c76a167fc92e0d845
+    sourceId: Item.3ISHu4JImf6BUXig
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1676718312904
+  modifiedTime: 1680933678220
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.3ISHu4JImf6BUXig
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: VLQXpfx94bcECv3Q
+_key: '!items!VLQXpfx94bcECv3Q'

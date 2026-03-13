@@ -1,0 +1,36 @@
+name: Taumaturgo - Esplosione curativa
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; 1+MEN volte al giorno esplodere di energia
+    positiva curando tutti i bersagli entro 10 metri da lui di 5d6</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 01d2c25dfa5018e74f3f638443e3eae962f3e69e
+    sourceId: Item.J9LVwP8BPV5Pw3y4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.J9LVwP8BPV5Pw3y4
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: eKsdgFVHHl09tJkt
+_key: '!items!eKsdgFVHHl09tJkt'

@@ -1,0 +1,39 @@
+name: Coperta
+type: equipment
+img: icons/sundries/flags/banner-worn-blue.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una coperta</p>
+effects: []
+flags:
+  scene-packer:
+    hash: bc0a408b211061f194b7a8cac40d5081ddc6c651
+    sourceId: Item.sAqXpwuMtaa11se6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676719074940
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.PAtOK0AuTBTVGGBi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 37900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: RQLNQUTna9daihAt
+_key: '!items!RQLNQUTna9daihAt'

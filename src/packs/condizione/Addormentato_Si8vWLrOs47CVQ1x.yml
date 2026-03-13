@@ -1,0 +1,46 @@
+name: Addormentato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: dormi per 8 ore o appena subisci un danno
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>la creatura si &egrave; addormenta (probabilmente per effetto del potere
+    Ammaliamento I - Sonno e non si sveglia finch&egrave; non riceve un danno
+    normale o stordente o trascorrono otto ore</p>
+
+    <p>&nbsp;</p>
+
+    <p>Addormentato. Non ti svegli finch&eacute; non riceve un danno normale o
+    stordente o trascorrono otto ore</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d1bbbdfdc437d046e92b3ecb8f44b56cce4a7174
+    sourceId: Item.ZAVSAIeG8t45A64d
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151259
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpuMly3c9eb7TlVk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 6100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Si8vWLrOs47CVQ1x
+_key: '!items!Si8vWLrOs47CVQ1x'

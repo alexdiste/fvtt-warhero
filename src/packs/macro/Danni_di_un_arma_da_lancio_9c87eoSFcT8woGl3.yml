@@ -1,0 +1,24 @@
+name: Danni di un arma da lancio
+type: chat
+command: /r 1d8+@secondary.rangeddamagebonus.value
+img: systems/fvtt-warhero/images/icons/thrown-charcoal.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: oNMEWyriQbTiY8pm
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.26'
+  createdTime: 1760987497704
+  modifiedTime: 1760987706713
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: 9c87eoSFcT8woGl3
+sort: 500000
+_key: '!macros!9c87eoSFcT8woGl3'

@@ -1,0 +1,28 @@
+name: Trasmutazione - I Alterazione
+type: power
+system:
+  level: 1
+  magicschool: Trasmutazione
+  description: >-
+    può cambiare la razza di un personaggio in una, sempre umanoide. questo non
+    ne modifica le statistiche, per 1 ora.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904976
+  modifiedTime: 1743439294594
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: FkJ49VbCvSL2ca6c
+folder: null
+sort: 4500000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!FkJ49VbCvSL2ca6c'

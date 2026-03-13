@@ -1,0 +1,566 @@
+name: Drago verde (evocazione)
+type: character
+items:
+  - name: 2xArtiglio
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/compagno%20animale.webp
+    system:
+      weapontype: short
+      damage: 2d6
+      damage2hands: 1d6
+      rollformula: ''
+      damageformula: ''
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+    effects: []
+    flags:
+      scene-packer:
+        hash: 4e624ac7adfe4bb7f4ceb74fa1204c05da7551bc
+        sourceId: Item.Yu91hdnByUCmadUa
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857418842
+      modifiedTime: 1701517092212
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.attacchi-mostri.Item.Go1z89lzCLxOtn1q
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: LNuhFXsAbGqoCrdg
+    sort: 0
+    _key: '!actors.items!7thHGRgPzJMN8Dmr.LNuhFXsAbGqoCrdg'
+  - name: Morso
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/compagno%20animale.webp
+    system:
+      weapontype: long
+      damage: 1d10
+      damage2hands: 1d6
+      rollformula: ''
+      damageformula: ''
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+    effects: []
+    flags:
+      scene-packer:
+        hash: 334aae2b11a131abac071068d2c40233eab6d255
+        sourceId: Item.IJnUKkomw51VEitv
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857418842
+      modifiedTime: 1701517097050
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.attacchi-mostri.Item.oz9VRXbYX71Y1RyR
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: gsDo4khyYyK1rMBj
+    sort: 0
+    _key: '!actors.items!7thHGRgPzJMN8Dmr.gsDo4khyYyK1rMBj'
+  - name: Volare (12 Metri)
+    type: skill
+    img: systems/fvtt-warhero/images/icons/talenti.webp
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      maxuse: 0
+      description: >-
+        <p>Una creatura con questa abilit&agrave; pu&ograve; cessare o
+        riprendere il volo come mossa di movimento. Se l&rsquo;abilit&agrave;
+        &egrave; soprannaturale, diventa inefficace in un campo anti potere
+        finch&eacute; questo rimane attivo. Pu&ograve; terminare il movimento in
+        un quadrato gi&agrave; occupato</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 734d0fdfa5e9312104cc8ffc00e1783a6d545668
+        sourceId: Item.VweNQKJ9g2v1K3FK
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1681305021244
+      modifiedTime: 1701517004782
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.poteri-speciali.Item.A9AiXRz0M0MXpv6C
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: aEoHZfeysI4DZeLM
+    sort: 0
+    _key: '!actors.items!7thHGRgPzJMN8Dmr.aEoHZfeysI4DZeLM'
+  - name: Soffio (4d6 acido)
+    type: skill
+    img: systems/fvtt-warhero/images/icons/talenti.webp
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      maxuse: 0
+      description: >-
+        <p>Una creatura espelle qualcosa dalla sua bocca. La maggior parte delle
+        creature con armi da soffio sono limitate ad un numero di utilizzi al
+        giorno o da una lunghezza minima di tempo che deve trascorrere tra un
+        uso e l' altro. Utilizzare un soffio &egrave; considerata una mossa
+        azione, ma non si pu&ograve; fare pi&ugrave; di una volta per turno.
+        Nessun tiro per colpire &egrave; necessario. Il soffio riempie l'area
+        indicata</p>
+
+        <p>&nbsp;</p>
+
+        <p>il soffio infligge [[/r 4d6 #soffio di drago di acido]] danni per
+        ogni punto MEN del drago a tutti i bersagli di fronte al drago entro 12
+        metri, CD 12+MEN per dimezzare</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: d135a72450128f16487e9f7d6ef48f669dcc9715
+        sourceId: Item.lrf7caCDda1mXJv4
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1681305021244
+      modifiedTime: 1701517133708
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.poteri-speciali.Item.2dsC9F6DHVpMVKtL
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: FMYkfehaIL9trWdo
+    sort: 0
+    _key: '!actors.items!7thHGRgPzJMN8Dmr.FMYkfehaIL9trWdo'
+  - name: Soffio (4d6 da acido)
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/compagno%20animale.webp
+    system:
+      weapontype: special
+      damage: 1d6
+      damage2hands: 1d6
+      rollformula: ''
+      damageformula: 6d6
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+    effects: []
+    flags:
+      scene-packer:
+        hash: 366443064019cb91b8249800110fbd73cbc96a84
+        sourceId: Item.Yu91hdnByUCmadUa
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857418842
+      modifiedTime: 1701517114147
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.attacchi-mostri.Item.Go1z89lzCLxOtn1q
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: F1b1U7ClbkU4o0Ah
+    sort: 0
+    _key: '!actors.items!7thHGRgPzJMN8Dmr.F1b1U7ClbkU4o0Ah'
+  - name: Condividere abilità e poteri con il suo evocatore
+    type: skill
+    img: systems/fvtt-warhero/images/icons/talenti.webp
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      maxuse: 0
+      description: >-
+        <p>Il drago evocato riceve dal suo evocatore tutte le abilit&agrave;
+        aggiuntive&nbsp; e i poteri che agiscono su di lui.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 640cb609098f37392bc12071bc8a41aa5c917349
+        sourceId: Item.z7dpOX5bXHjIDBN8
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1681047468768
+      modifiedTime: 1701518296622
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.poteri-speciali.Item.IHNkAZSNTMopSCWP
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: lolRV1A4Z0OSQc92
+    sort: 0
+    _key: '!actors.items!7thHGRgPzJMN8Dmr.lolRV1A4Z0OSQc92'
+img: systems/dnd5e/tokens/dragon/YoungGreenDragon.webp
+system:
+  biodata:
+    class: ''
+    age: '0'
+    size: large
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: >-
+      <p>Le creature evocate scompaiono quando muoiono o all'alba del giorno
+      seguente e non &egrave; possibile evocare pi&ugrave; di una creatura alla
+      volta. E&rsquo; necessario usare una mossa per far seguire le 2 mosse alla
+      propria evocazione. Usare pi&ugrave; di un colpo con una singola mossa
+      attacco si ottiene lo stessomalus come nell&rsquo;uso delle due armi. Le
+      evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12
+      +IST, il tempo di lancio di questi poteri &egrave; di 4 mosse consecutive.
+      E necessario usareuna mossa per poter far eseguire 2 mosse
+      all&rsquo;evocazione</p>
+    gmnotes: ''
+    origin: ''
+    preferredhand: ''
+  subactors: []
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 5
+      value: 5
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 1
+      value: 1
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 2
+      value: 2
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 60
+      value: 60
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 0
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 13
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 5
+      value: 5
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 4
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 12
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: -2
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Drago verde (evocazione)
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: systems/dnd5e/tokens/dragon/YoungGreenDragon.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+    tint: '#ffffff'
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    alphaThreshold: 0.75
+  width: 2
+  height: 2
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 0
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+    color: null
+    negative: false
+    priority: 0
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+    color: null
+  detectionModes: []
+  flags:
+    wall-height:
+      tokenHeight: 0
+    monks-tokenbar:
+      include: default
+    tagger: {}
+    core: {}
+  randomImg: false
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+effects: []
+folder: 8o19xL2ki8Su2jvP
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 998ad3ebb76ab7aa208d66de321b607a98157f4f
+    sourceId: Actor.IXPbzVo8IOpHE826
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1701516103677
+  modifiedTime: 1760072083997
+  lastModifiedBy: lXFgtDDsvLskIOGw
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 7thHGRgPzJMN8Dmr
+sort: 700000
+_key: '!actors!7thHGRgPzJMN8Dmr'

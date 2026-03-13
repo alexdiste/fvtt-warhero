@@ -1,0 +1,42 @@
+name: Pergamena di Divinazione - I Individuazione dell'allineamento
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 100
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.6olhY5wohzlkW96u]{Divinazione - I
+    Individuazione dell'allineamento} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 1c793892ac88e105021d1ca5067e27adad012fc7
+    sourceId: Item.UMv4vZUcKuD4gsUF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913443184
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Hf4CaIQgnrKwfzIn
+sort: 34300000
+_key: '!items!Hf4CaIQgnrKwfzIn'

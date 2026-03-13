@@ -1,0 +1,26 @@
+name: Negromanzia - I Risucchia vita
+type: power
+system:
+  level: 1
+  magicschool: Negromanzia
+  description: il bersaglio subisce 2d4 danni e l'incantatore si cura di altrettanti danni.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904938
+  modifiedTime: 1743439294509
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 7b6lal71wDDJAEd0
+folder: null
+sort: 2300000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!7b6lal71wDDJAEd0'

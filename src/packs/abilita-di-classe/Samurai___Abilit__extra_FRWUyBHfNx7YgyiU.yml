@@ -1,0 +1,36 @@
+name: Samurai - Abilità extra
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; in fase di creazione del personaggio scegliere
+    un&rsquo;abilit&agrave; aggiuntiva</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ed032e154ed07a980fc4dc194b3feaa8bee9a38a
+    sourceId: Item.4pmgSkCs8J8TDcfn
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.UmIWgIdmu0hreCkS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 20000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FRWUyBHfNx7YgyiU
+_key: '!items!FRWUyBHfNx7YgyiU'

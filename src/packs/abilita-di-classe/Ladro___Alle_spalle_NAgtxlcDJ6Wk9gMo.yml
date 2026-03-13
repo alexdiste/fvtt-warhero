@@ -1,0 +1,38 @@
+name: Ladro - Alle spalle
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio &egrave; molto esperto nel colpire alle spalle. Se
+    colpisce un bersaglio alle spalle, da invisibile o da&nbsp;nascosto o se si
+    trova a combattere insieme ad un alleato in&nbsp;corpo a corpo, infligge un
+    danno extra pari a IST x 3</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 38650e7894eec613cb3cc12db4d4ec97f123f96f
+    sourceId: Item.WZCIftE31r0iQ9wP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: NAgtxlcDJ6Wk9gMo
+sort: 14300000
+_key: '!items!NAgtxlcDJ6Wk9gMo'

@@ -1,0 +1,42 @@
+name: Pugnale (da lancio)
+type: weapon
+img: icons/weapons/daggers/dagger-jeweled-purple.webp
+system:
+  weapontype: throwing
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 2
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un pugnale da lancio [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 375b67275649e1b5263178edda9d860cbc32be19
+    sourceId: Item.tkY3GX4TvvHvnVhv
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1680934134544
+  modifiedTime: 1680934294321
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tkY3GX4TvvHvnVhv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: vSe7xivRzi9eLvVY
+_key: '!items!vSe7xivRzi9eLvVY'

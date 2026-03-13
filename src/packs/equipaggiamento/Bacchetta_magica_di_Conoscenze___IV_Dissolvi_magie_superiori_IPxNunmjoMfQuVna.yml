@@ -1,0 +1,42 @@
+name: Bacchetta magica di Conoscenze - IV Dissolvi magie superiori
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.wQp0B9jxS1XQQ9oi]{Conoscenze - IV
+    Dissolvi magie superiori} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 664485636e3a1d8c60e01ce8dc7c7ff55c832332
+    sourceId: Item.YDtlp97k1CUMz49F
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613827423
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: IPxNunmjoMfQuVna
+sort: 13200000
+_key: '!items!IPxNunmjoMfQuVna'

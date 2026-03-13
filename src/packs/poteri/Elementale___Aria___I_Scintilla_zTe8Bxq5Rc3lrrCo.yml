@@ -1,0 +1,28 @@
+name: Elementale - Aria - I Scintilla
+type: power
+system:
+  level: 1
+  magicschool: Elementale - Aria
+  description: >-
+    <p>il bersaglio subisce [[/r 4d4+4 #scossa]] danni da scossa. CD 12, IST,
+    dimezzare oppure ottiene una riduzione di 5 dai danni da acido</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  coreVersion: '13.350'
+  createdTime: 1675877904829
+  modifiedTime: 1762672935912
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: zTe8Bxq5Rc3lrrCo
+folder: null
+sort: 15600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!zTe8Bxq5Rc3lrrCo'

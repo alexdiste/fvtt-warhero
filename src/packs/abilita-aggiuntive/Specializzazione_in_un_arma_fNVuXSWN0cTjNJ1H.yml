@@ -1,0 +1,35 @@
+name: Specializzazione in un'arma
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: "<p><strong>Beneficio:</strong>\_si ottiene un +2 al TxC con l'arma scelta al momento che si seleziona questa abilità</p>\n<p><strong>Speciale:</strong>\_E' possibile prendere questa abilità più volte ma su armi diverse</p>"
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.KL1GHZNzVNtJBjJ9
+    hash: 06c9b480555195f82815a413403cb08383d95d17
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772775155261
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  MALrSO6CHeii4HYs: 3
+  guOwSDi78TuzUGFU: 3
+_id: fNVuXSWN0cTjNJ1H
+sort: 400000
+_key: '!items!fNVuXSWN0cTjNJ1H'

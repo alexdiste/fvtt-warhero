@@ -1,0 +1,44 @@
+name: livello 10
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: true
+  description: <p>Devi prima raggiungere il livello 10 per il super warhero</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 66ed605bf2e893e9d14bcd8591d453bd0f4ad048
+    sourceId: Item.s7Nz33hs64nmuDlj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681110477131
+  modifiedTime: 1743437000041
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.s7Nz33hs64nmuDlj
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: yRPKeZU2DRHSvN9Z
+_key: '!items!yRPKeZU2DRHSvN9Z'

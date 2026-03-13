@@ -1,0 +1,26 @@
+name: Visione - II Vedere invisibile
+type: power
+system:
+  level: 2
+  magicschool: Visione
+  description: il bersaglio vede le creature invisibili per 5 minuti
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904992
+  modifiedTime: 1743439294979
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: zdi9q4TiPn7KSSOZ
+folder: null
+sort: 15900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!zdi9q4TiPn7KSSOZ'

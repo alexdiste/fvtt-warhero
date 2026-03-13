@@ -1,0 +1,28 @@
+name: Vegetale - II Spore velenose
+type: power
+system:
+  level: 2
+  magicschool: Vegetale
+  description: >-
+    i bersagli entro 12 metri dall'incantatore subiscono 4d8.CD 16, IST,
+    dimezzare.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904982
+  modifiedTime: 1743439294834
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: lgjVKvYLB62C5OyL
+folder: null
+sort: 11600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!lgjVKvYLB62C5OyL'

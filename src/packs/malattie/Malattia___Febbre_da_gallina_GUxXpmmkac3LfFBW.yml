@@ -1,0 +1,40 @@
+name: Malattia - Febbre da gallina
+type: condition
+img: systems/fvtt-warhero/images/icons/medical-thermometer.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>febbre alta, disorientamento, frequenti attacchi di risate
+    incontrollabili. Inalazione, CD 16, 1 giorno, &ndash;2 MEN</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 06484829fa7c4d2d813194fb73404936d01dc69c
+    sourceId: Item.vaJXX7EcjPPFpn0E
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702204460418
+  modifiedTime: 1743439247609
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: GUxXpmmkac3LfFBW
+sort: 900000
+_key: '!items!GUxXpmmkac3LfFBW'

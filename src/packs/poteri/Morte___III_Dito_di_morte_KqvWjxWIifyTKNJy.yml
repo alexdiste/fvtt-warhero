@@ -1,0 +1,28 @@
+name: Morte - III Dito di morte
+type: power
+system:
+  level: 3
+  magicschool: Morte
+  description: >-
+    il bersaglio subisce 100 danni, CD 14 FIS per negare questo effetto e subire
+    3d6 danni
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904935
+  modifiedTime: 1743439294653
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: KqvWjxWIifyTKNJy
+folder: null
+sort: 6300000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!KqvWjxWIifyTKNJy'

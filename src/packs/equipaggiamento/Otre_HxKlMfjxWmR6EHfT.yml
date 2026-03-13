@@ -1,0 +1,41 @@
+name: Otre
+type: equipment
+img: icons/sundries/survival/wetskin-leather-purple.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: belt
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un otre in grado di contenere fino a 2l di
+    acqua</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ed8734b1a87fc32a82f37e94ea77bb8df2c67ae5
+    sourceId: Item.0j6BJoxCSuhHrvkP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718690732
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.0j6BJoxCSuhHrvkP
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 37400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: HxKlMfjxWmR6EHfT
+_key: '!items!HxKlMfjxWmR6EHfT'

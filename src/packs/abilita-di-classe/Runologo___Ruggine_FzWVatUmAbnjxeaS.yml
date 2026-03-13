@@ -1,0 +1,36 @@
+name: Runologo - Ruggine
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno distruggere un oggetto con
+    propriet&agrave; magiche, non custodito che pu&ograve; toccare, rendendolo
+    un semplice oggetto</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c441e4a86d9650de6da39c9bd8bd6303140376fa
+    sourceId: Item.qFDTriqhPCsMGC1V
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352042823
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: FzWVatUmAbnjxeaS
+sort: 1600000
+_key: '!items!FzWVatUmAbnjxeaS'

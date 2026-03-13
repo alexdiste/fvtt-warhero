@@ -1,0 +1,39 @@
+name: Ladro - Trappole
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio ha le abilit&agrave; aggiuntive
+    @UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.MMYvtEDTKA1op7re]{Scoprire
+    trappole}&nbsp; e
+    @UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.Qpxfok3UH5H6GLAn]{Disinnescare
+    trappole}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 0cb9d088c5a8666a253dd84350a92f3b1a517eb6
+    sourceId: Item.9uRrOQZZmwpX7aSr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: hLr2mCZ0Kujxd619
+sort: 14800000
+_key: '!items!hLr2mCZ0Kujxd619'

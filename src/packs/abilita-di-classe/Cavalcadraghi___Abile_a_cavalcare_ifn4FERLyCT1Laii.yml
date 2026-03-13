@@ -1,0 +1,37 @@
+name: Cavalcadraghi - Abile a cavalcare
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio ha l&rsquo;abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.6k8RLtxMWLZba3fj]{Cavalcare
+    sicuro}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: dec0d272aaaee3b01ce8980439d8679370375d42
+    sourceId: Item.fgeWl8Q84KA4SPT1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ifn4FERLyCT1Laii
+sort: 9600000
+_key: '!items!ifn4FERLyCT1Laii'

@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Acqua - I Raggio di gelo
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 100
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.Faq8SbGNkVrQ5pvp]{Elementale -
+    Acqua - I Raggio di gelo} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 3c1e4edca28d91f11df330da53f1ab3b8b051cf1
+    sourceId: Item.FXctvQ5bjz1cbbwU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913443406
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: zuzN3rtTP54QHmDt
+sort: 34500000
+_key: '!items!zuzN3rtTP54QHmDt'

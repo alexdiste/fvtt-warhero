@@ -1,0 +1,38 @@
+name: Signore elementale - Stregoneria elementale
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +10 al mana
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>+10 al mana per signore elementale</p>
+effects: []
+flags:
+  scene-packer:
+    hash: f2d53b1d22a28ec0c541c318738136f8799beb3a
+    sourceId: Item.3ihHLW254SagAtAW
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681056499952
+  modifiedTime: 1743437151282
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.f0MAQ5fxbg14GOm1
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 6200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: TQuuvBdlLQnvoPUO
+_key: '!items!TQuuvBdlLQnvoPUO'

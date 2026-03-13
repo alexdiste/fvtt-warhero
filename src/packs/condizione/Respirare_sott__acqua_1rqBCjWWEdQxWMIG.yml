@@ -1,0 +1,38 @@
+name: Respirare sott' acqua
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 8
+  durationunit: ora
+  shortdescription: puoi respirare sott' acqua
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Permette di respirare sott'acqua per 8 ore</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: d5ba55e87df09557aa4a5bb4e8c154e7c1dcac2e
+    sourceId: Item.Y5iV2Cz5C0tyqX8q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698853041588
+  modifiedTime: 1743437150798
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 1rqBCjWWEdQxWMIG
+sort: 3900000
+_key: '!items!1rqBCjWWEdQxWMIG'

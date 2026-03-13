@@ -1,0 +1,39 @@
+name: Ceralacca
+type: equipment
+img: icons/sundries/lights/candle-unlit-red.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 18bc4ca950136a7d71b3e44699e4eb1a5749d001
+    sourceId: Item.ZzcY7ezN2ajFuf3A
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: dQ9EDZlpyAfirluX
+sort: 16800000
+_key: '!items!dQ9EDZlpyAfirluX'

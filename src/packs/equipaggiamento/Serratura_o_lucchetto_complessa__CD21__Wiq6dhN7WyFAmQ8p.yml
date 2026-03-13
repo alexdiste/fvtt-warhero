@@ -1,0 +1,39 @@
+name: Serratura o lucchetto complessa (CD21)
+type: equipment
+img: icons/sundries/misc/lock-steel-blue.webp
+system:
+  equiptype: ''
+  cost: 150
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e2e4a2e4508b42375bb0e403f2f5df02991b2b90
+    sourceId: Item.tAj9BhXZmKc93Tlh
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Wiq6dhN7WyFAmQ8p
+sort: 16600000
+_key: '!items!Wiq6dhN7WyFAmQ8p'

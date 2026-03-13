@@ -1,0 +1,43 @@
+name: Negromante - Intimorire
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; tentare 3 + MEN volte al giorno,
+    di&nbsp;intimorire un non morto. Se supera un TxC sul bersaglio (pu&ograve;
+    usare&nbsp;MEN al posto IST nel tiro). Un non morto intimorito si dissolve
+    e&nbsp;sparisce. Se supera di 5 o pi&ugrave; punti il valore di difesa del
+    non morto&nbsp;esso viene invece controllato completamente dal personaggio
+    fino&nbsp;alla sua distruzione. Non &egrave; possibile controllare un numero
+    di non&nbsp;morti superiore al proprio valore di MEN (le evocazioni
+    non<br>rientrano in questo conteggio). Usare intimorire &egrave; considerata
+    una&nbsp;mossa movimento</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 55049448444533086338b429bf29b9da7a1cf05f
+    sourceId: Item.wuhlc4QXNgIzIBKG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704217302127
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: zB0X9IQ5jHrCgXYw
+sort: 8600000
+_key: '!items!zB0X9IQ5jHrCgXYw'

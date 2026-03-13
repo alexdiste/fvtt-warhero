@@ -1,0 +1,81 @@
+name: Trasformazione da golem a mutante e viceversa
+type: script
+command: >-
+  const EFFECT_NAME = "Mutazione in Golem"; 
+
+  const TEXTURE_HUMAN =
+  "assets/token/top_view/fa_tokens/Heroes/Dragonborn/Dragonborn_Paladin_Sword_Shield_05.webp"; 
+
+  const TEXTURE_GOLEM =
+  "assets/token/top_view/fa_tokens/Creatures/Construct/Iron_Golem_Large_Construct_A_03.webp";
+
+
+  const token = canvas.tokens.controlled[0];
+
+
+  if (!token) {
+      ui.notifications.warn("Seleziona un token per trasformarlo!");
+  } else {
+      const actor = token.actor;
+      
+      // Ricerca robusta: cerchiamo per nome (standard moderno)
+      const existingEffect = actor.effects.find(e => e.name === EFFECT_NAME);
+
+      if (!existingEffect) {
+          // --- LOGICA ATTIVAZIONE (DIVENTA GOLEM) ---
+          
+          const effectData = {
+              name: EFFECT_NAME,
+              img: "icons/creatures/magical/construct-gargoyle-stone-gray.webp", // 'img' è preferito a 'icon'
+              origin: actor.uuid,
+              disabled: false,
+              changes: [{
+                  key: "system.attributes.def.value",
+                  mode: CONST.ACTIVE_EFFECT_MODES.ADD,
+                  value: "3"
+              }],
+              // Opzionale: rende l'effetto visibile come iconcina sul token
+              statuses: ["golem-mutation"] 
+          };
+
+          // 1. Crea l'effetto
+          await actor.createEmbeddedDocuments("ActiveEffect", [effectData]);
+          
+          // 2. Cambia l'immagine (Sintassi V12/V13/V14 corretta)
+          await token.document.update({ "texture.src": TEXTURE_GOLEM });
+          
+          ui.notifications.info(`${actor.name}: Trasformazione in Golem completata (+3 Difesa)!`);
+      } else {
+          // --- LOGICA DISATTIVAZIONE (TORNA NORMALE) ---
+          
+          // 1. Rimuove l'effetto
+          await existingEffect.delete();
+          
+          // 2. Ripristina l'immagine originale
+          await token.document.update({ "texture.src": TEXTURE_HUMAN });
+          
+          ui.notifications.info(`${actor.name}: Effetto Golem rimosso.`);
+      }
+  }
+img: systems/fvtt-warhero/images/icons/biceps.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  HUfxIdhdvsgYTpQ3: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '14.46'
+  createdTime: 1772339525734
+  modifiedTime: 1772339525734
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: MBB0klTahmAlOkVZ
+sort: 0
+_key: '!macros!MBB0klTahmAlOkVZ'

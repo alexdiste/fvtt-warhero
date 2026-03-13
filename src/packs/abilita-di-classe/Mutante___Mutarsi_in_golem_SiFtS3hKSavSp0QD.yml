@@ -1,0 +1,35 @@
+name: Mutante - Mutarsi in golem
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>Il personaggio può MEN volte al giorno mutarsi in un golem di un
+    materiale a sua scelta, le statistiche non cambiano ma si ottiene l'immunità
+    ai poteri e una difesa pari a 15+IST. In qualsiasi momento anche se viene
+    controllato può decidere di ritornare come prima e quindi non essere più un
+    golem. All'alba di ogni giorno la mutazione termina</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.32'
+  createdTime: 1761360528000
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: SiFtS3hKSavSp0QD
+sort: 2500000
+_key: '!items!SiFtS3hKSavSp0QD'

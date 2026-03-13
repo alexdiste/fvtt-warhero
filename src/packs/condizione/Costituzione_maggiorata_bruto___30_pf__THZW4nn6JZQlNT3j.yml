@@ -1,0 +1,38 @@
+name: Costituzione maggiorata bruto (+30 pf)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +30 Pf extra
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>il personaggio ha dei pf extra</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9eb28186b34570fa5c201a1b209062633ec8387e
+    sourceId: Item.SNlmNlD9vi0dCJcB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701438936063
+  modifiedTime: 1743437151269
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: THZW4nn6JZQlNT3j
+sort: 1500000
+_key: '!items!THZW4nn6JZQlNT3j'

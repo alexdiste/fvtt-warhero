@@ -1,0 +1,40 @@
+name: Arciere arcano - Incantare arma
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; incantare la propria arma&nbsp;fino alla fine
+    dello scontro, 3 + MEN volte al giorno. L'arma&nbsp;infligge 2d6 danni extra
+    da un elemento a scelta. Non &egrave;&nbsp;possibile incantare l'arma
+    pi&ugrave; di una volta con lo stesso&nbsp;elemento a scontro, ma &egrave;
+    possibile farlo usando un elemento&nbsp;diverso. Incantare l'arma &egrave;
+    considerato una azione di&nbsp;movimento</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+    sourceId: Item.XTPKOsLhfK5kM0iF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: so8nmO3xF5Zw8bH5
+sort: 17400000
+_key: '!items!so8nmO3xF5Zw8bH5'

@@ -1,0 +1,42 @@
+name: Pergamena di Indole - Male - II Di fronte al male
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.3l8fdh3vXRvjoJr7]{Indole - Male -
+    II Di fronte al male} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9e2d8a7d0173562b270c64cc07a25dd09e3105cd
+    sourceId: Item.SxqvJS6XoH9U5qRy
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913447455
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: F4kD5t75GgKW7ufJ
+sort: 27500000
+_key: '!items!F4kD5t75GgKW7ufJ'

@@ -1,0 +1,38 @@
+name: Arma incantata FULMINE
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: untilendcombat
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Aggiungi 2d6 di danno da fulmine
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: '<p>Aggiunge&nbsp; [[/r 2d6 #fulmine]] da fulmine</p>'
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  core: {}
+  scene-packer:
+    hash: fdc9638291571c803f5bbe221a734cb5e8633de8
+    sourceId: Item.RAU3BQQ1tf5TzH7Z
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1697292298500
+  modifiedTime: 1743437151522
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: fcXX7gCFRc55ESPA
+sort: 1900000
+_key: '!items!fcXX7gCFRc55ESPA'

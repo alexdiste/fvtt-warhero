@@ -1,0 +1,38 @@
+name: Paralizzato (veleno paralisi)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 5
+  durationunit: minuti
+  shortdescription: sei paralizzato
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Sei sotto l' effetto di un veleno paralisi.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: db2750ee273c803dae9116530ef1ab86e76007f9
+    sourceId: Item.kfvnaKGZO1EBz0sC
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437150852
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 4xeuMVloJ6MfqjdK
+sort: 400000
+_key: '!items!4xeuMVloJ6MfqjdK'

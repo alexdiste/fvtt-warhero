@@ -1,0 +1,40 @@
+name: Trasformista - Abile parlantina
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: null
+  durationunit: ''
+  shortdescription: +5 alle prove di commerciare
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio ottiene un bonus di +5 a tutte le
+    prove fatte per commerciare</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 98b9cf4f333d284c91a734d3c5358ea60692a003
+    sourceId: Item.F8vk4tUgl62ntPIz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680935549648
+  modifiedTime: 1743437150958
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FSdOwIhTazaVMT3Y
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: CeH9jy4Posqxg9qE
+_key: '!items!CeH9jy4Posqxg9qE'

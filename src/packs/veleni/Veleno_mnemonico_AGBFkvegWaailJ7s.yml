@@ -1,0 +1,49 @@
+name: Veleno mnemonico
+type: poison
+img: icons/consumables/potions/vial-cork-green.webp
+system:
+  cost: 300
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  application: weapon
+  preparecost: ''
+  preparetime: '10'
+  damageroll: '0'
+  durationround: 3
+  savesdc: 14
+  savetype: ignore
+  description: >-
+    <p>Una
+    @UUID[Compendium.fvtt-warhero.equipaggiamento.Item.IqKxYXDyz9MpkF8F]{Boccetta
+    o fiala} piena di veleno.</p>
+
+    <p>[A,I,T] il bersaglio deve effettuare un tiro salvezza su FIS CD 14 per
+    negare gli effetti di perdere -2 a MEN Temporaneo.</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: be9fe4115597de77aed4e4c49d59df6a1f2ee375
+    sourceId: Item.kIzs8N5LyqGSYDeY
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702102661032
+  modifiedTime: 1702104993073
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: AGBFkvegWaailJ7s
+sort: 0
+_key: '!items!AGBFkvegWaailJ7s'

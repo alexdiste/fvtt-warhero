@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Male - IV Fine dei giochi
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.V8KL2tzLEd12xRP8]{Indole - Male -
+    IV Fine dei giochi} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9c66843ea014e12cdcead8ac6a1bcb8d1bb97134
+    sourceId: Item.eJZU0pQpCLnWQNXL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613831035
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 9I7F5lzkCO2cZmCg
+sort: 1300000
+_key: '!items!9I7F5lzkCO2cZmCg'

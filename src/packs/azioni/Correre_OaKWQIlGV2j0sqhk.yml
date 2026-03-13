@@ -1,0 +1,46 @@
+name: Correre
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>E' possibile quando non siamo in combattimento correre usando le proprie
+    mosse questo significa andare a una velocit&agrave; pari a 4 volte il
+    proprio movimento a round, dopo un numero di minuti pari a 5 + FIS se non si
+    interrompe la corsa e ci si riposa per 10 minuti si entra nello stato di
+    affaticato, e non si riesce pi&ugrave; a correre. Mettere lo status In corsa
+    al pg</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 9bdcdc4b62c20e6b79b06bf4863aa4ffd1f6cebe
+    sourceId: Compendium.world.temp.ZQFno85IWc0zP1aI
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553317
+  modifiedTime: 1743437709756
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.ZQFno85IWc0zP1aI
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: OaKWQIlGV2j0sqhk
+_key: '!items!OaKWQIlGV2j0sqhk'

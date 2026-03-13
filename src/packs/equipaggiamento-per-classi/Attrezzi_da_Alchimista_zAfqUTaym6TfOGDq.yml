@@ -1,0 +1,40 @@
+name: Attrezzi da Alchimista
+type: classitem
+img: icons/tools/laboratory/vials-blue-pink.webp
+system:
+  cost: 30
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Alchimista
+  description: <p>Attrezzi da Alchimista del valore di 30 MO</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 4120cac3c4a5b9d0e63b1485e759a0a26aaccb0e
+    sourceId: Compendium.world.temp.nGoJ8scITtj3o0BU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1705997009971
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.nGoJ8scITtj3o0BU
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: zAfqUTaym6TfOGDq
+_key: '!items!zAfqUTaym6TfOGDq'

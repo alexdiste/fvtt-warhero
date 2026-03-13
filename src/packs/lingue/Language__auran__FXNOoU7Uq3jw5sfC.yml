@@ -1,0 +1,29 @@
+name: Language (auran)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p data-pm-slice="1 1 []">&Eacute; la lingua degli elementali dell aria</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9d71566aec7b1a234335b6ab568f3041bc00cf3a
+    sourceId: Item.sbuCXx9UGBOnpxXL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613686
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FXNOoU7Uq3jw5sfC
+_key: '!items!FXNOoU7Uq3jw5sfC'

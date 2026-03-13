@@ -1,0 +1,39 @@
+name: Negromante - Potere del sangue
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno perdere&nbsp;a sua scelta
+    un qualsiasi numero di punti ferita che non lo portino a&nbsp;meno di 10 e
+    recuperare un punto mana per ogni dieci punti ferita<br>persi, questi punti
+    ferita cos&igrave; persi non potranno essere guariti fino&nbsp;al giorno
+    seguente</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 67c4e5dd3e690df93126ed6678dd5c3e4184e1b0
+    sourceId: Item.wuhlc4QXNgIzIBKG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704217302127
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: enNk2agVenaY9ycW
+sort: 8400000
+_key: '!items!enNk2agVenaY9ycW'

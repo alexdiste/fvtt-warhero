@@ -1,0 +1,42 @@
+name: Bacchetta magica di Visione - IV Visione del vero
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.x77FS5eTPPTlfvqU]{Visione - IV
+    Visione del vero} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 6ac3b77c4d35c0c4d8ca5fbd79488a8b65a4a237
+    sourceId: Item.uTnm20w0Lhc4TGEi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613834538
+  modifiedTime: 1704614639314
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 2jpi2j4UN4Ua4WvO
+sort: 0
+_key: '!items!2jpi2j4UN4Ua4WvO'

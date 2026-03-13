@@ -1,0 +1,36 @@
+name: Riflettere incantesimi
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Se supera un TS su un incantesimo lo pu&ograve; riflettere a un qualunque
+    bersaglio</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 589769181a3342bc2b0fac1395781376d8aba0be
+    sourceId: Item.BJ6wpGzIR7bXH9mP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681304101126
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.BJ6wpGzIR7bXH9mP
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: v330IVVtExcMfufv
+_key: '!items!v330IVVtExcMfufv'

@@ -1,0 +1,42 @@
+name: Stocco
+type: weapon
+img: icons/weapons/swords/sword-guard-brown.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 15
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Un arma lunga [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5888b5055b9491397f84caf1e8b5c3774a45ccf7
+    sourceId: Item.AFf1Yc1oe1GmJslf
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681648983012
+  modifiedTime: 1701594258212
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.AFf1Yc1oe1GmJslf
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: y2GnKOVvW52THtQc
+_key: '!items!y2GnKOVvW52THtQc'

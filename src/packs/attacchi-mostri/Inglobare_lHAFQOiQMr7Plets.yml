@@ -1,0 +1,43 @@
+name: Inglobare
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: special
+  damage: 1d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: 10d6
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>tiro salvezza su IST CD 16</p>
+  isCustomAttackRoll: false
+effects: []
+flags:
+  scene-packer:
+    hash: e746b43965699d41ce79ca0f9e83a6be65ac4f06
+    sourceId: Item.wdqnHGHUqtvhlUyv
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766236894599
+  modifiedTime: 1766236894599
+  lastModifiedBy: p6zCQ626i2fSln47
+folder: null
+ownership:
+  default: 0
+  p6zCQ626i2fSln47: 3
+_id: lHAFQOiQMr7Plets
+sort: 0
+_key: '!items!lHAFQOiQMr7Plets'

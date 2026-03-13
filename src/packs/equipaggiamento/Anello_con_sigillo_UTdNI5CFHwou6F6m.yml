@@ -1,0 +1,39 @@
+name: Anello con sigillo
+type: equipment
+img: icons/equipment/finger/ring-signet-tech.webp
+system:
+  equiptype: ''
+  cost: 3
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: ring
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: be684d7e09ed47de74785aea8c162d8c32ebe4c4
+    sourceId: Item.HnSV4WIJjK7NhuUj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: UTdNI5CFHwou6F6m
+sort: 18600000
+_key: '!items!UTdNI5CFHwou6F6m'

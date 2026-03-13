@@ -1,0 +1,42 @@
+name: Bacchetta magica di Elementale - Fuoco - II Mani brucianti
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.1ychDvTMJrneQrl0]{Elementale -
+    Fuoco - II Mani brucianti} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 1b97284434b287a9f7d060cec2ada42aab70b805
+    sourceId: Item.CKzBwPVoXJ3idtw0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613828180
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ZhngQNv9k91WYDg2
+sort: 8200000
+_key: '!items!ZhngQNv9k91WYDg2'

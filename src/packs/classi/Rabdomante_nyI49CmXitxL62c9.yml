@@ -1,0 +1,67 @@
+name: Rabdomante
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: true
+  issecondary: false
+  description: >-
+    <p>Esperto delle bacchette , riesce ad applicare meglio i poteri contenuti
+    nelle bacchette. Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.nw1Q8YZClqchNGli]{Rabdomante
+    - Abilit&agrave; magiche}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.STRlMPTdQWjCQLg1]{Rabdomante
+    - Bacchetta da corpo a corpo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hFwnQvCzh65QxVQ0]{Rabdomante
+    - Creare bacchetta}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bAzIoG9hpGcSVPgJ]{Rabdomante
+    - Meta bacchetta}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6gj3BofZHEyWvyK9]{Rabdomante
+    - Ricarica magica}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.pzMqB7zevnoIOtoz]{Rabdomante
+    - Scorta di bacchette}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yLZtH36I951cwfiM]{Rabdomante
+    - Uso estremo}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b736600315f91d74532ac2b1fee88b390e1ad063
+    sourceId: Item.VSfSvSH9M1ov14pB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  coreVersion: '13.341'
+  createdTime: 1680859705976
+  modifiedTime: 1743437000023
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.tQQ2BphjqU2oZ300
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: nyI49CmXitxL62c9
+_key: '!items!nyI49CmXitxL62c9'

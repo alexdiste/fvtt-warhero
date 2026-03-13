@@ -1,0 +1,44 @@
+name: Alabarda
+type: weapon
+img: icons/weapons/polearms/halberd-crescent-small-spiked.webp
+system:
+  weapontype: polearm
+  damage: 1d6
+  damage2hands: 1d8
+  rollformula: ''
+  damageformula: ''
+  cost: 18
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Arma in asta. Se usato ad una mano: [[/r 1d6]] Se
+    usati a due mani: [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: db33fda5ea8ea1054db73306027e32f3099c8654
+    sourceId: Item.pweP74Hk8dVJ0pix
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1676718312904
+  modifiedTime: 1681650492204
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.3ISHu4JImf6BUXig
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: R5fWy9T14dUJMR5X
+_key: '!items!R5fWy9T14dUJMR5X'

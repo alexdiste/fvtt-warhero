@@ -1,0 +1,37 @@
+name: 'Potere razziale: maglio oscuro'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>I mezzi demoni e mezzi diavoli a livello 1, 5e 7 prendono un utilizzo di
+    @Compendium[world.poteri.DH9Fxd3yM8mEpOBi]{Oscurit&agrave; - I Maglio
+    oscuro}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ef9c24fcf7bde39e2090a46777a32b4d14e74bc6
+    sourceId: Item.ALTiWTCLy0aPFDmN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680936127902
+  modifiedTime: 1743437123523
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.ALTiWTCLy0aPFDmN
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: cpd6sDLjSzgStYuS
+_key: '!items!cpd6sDLjSzgStYuS'

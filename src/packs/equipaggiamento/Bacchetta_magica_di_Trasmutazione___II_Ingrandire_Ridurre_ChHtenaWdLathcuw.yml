@@ -1,0 +1,42 @@
+name: Bacchetta magica di Trasmutazione - II Ingrandire/Ridurre
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione -
+    II Ingrandire/Ridurre} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9e1c222819cc883c8ee44bace850c0ffc17c9899
+    sourceId: Item.ovbAzJ2Kg8tpshyU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833384
+  modifiedTime: 1704614593485
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ChHtenaWdLathcuw
+sort: 0
+_key: '!items!ChHtenaWdLathcuw'

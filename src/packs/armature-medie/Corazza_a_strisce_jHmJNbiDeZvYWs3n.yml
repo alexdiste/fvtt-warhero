@@ -1,0 +1,41 @@
+name: Corazza a strisce
+type: armor
+img: icons/equipment/chest/breastplate-banded-steel-gold.webp
+system:
+  armortype: medium
+  equipped: false
+  damagereduction: 4
+  cost: 170
+  quantity: 1
+  slotused: 1
+  slotlocation: armor
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un giaco di maglie. RD: [[/r 4 #Riduzione danno
+    armatura media]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 50cb0354d56f0f0f735e26a552ba0ab33702e1b5
+    sourceId: Item.X85AzqGdDtJotmqm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1676718537355
+  modifiedTime: 1698851421401
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.M22t2aA6Ls0YVzUe
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: jHmJNbiDeZvYWs3n
+_key: '!items!jHmJNbiDeZvYWs3n'

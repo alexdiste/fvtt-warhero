@@ -1,0 +1,44 @@
+name: Spadone
+type: weapon
+img: icons/weapons/swords/greatsword-crossguard-engraved-green.webp
+system:
+  weapontype: twohanded
+  damage: 3d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 42
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Uno Spadone a due mani lunga. Arma a due mani [[/r
+    3d6 #aggiungi il FIS *1.5]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 7320af78a261658b96b5bfd4bb5adc4d8c02f9e1
+    sourceId: Item.bF9kgSlqMxY2x8J6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680933955221
+  modifiedTime: 1704967093138
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.bF9kgSlqMxY2x8J6
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: hQVsrtZcg20Ew22g
+_key: '!items!hQVsrtZcg20Ew22g'

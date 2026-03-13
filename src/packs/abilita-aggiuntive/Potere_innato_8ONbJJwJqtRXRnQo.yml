@@ -1,0 +1,33 @@
+name: Potere innato
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuseFormula: 1+@system.statistics.min.value
+  description: >-
+    <p><strong>Prerequisito:</strong> Non si deve possedere l'abilità Sfere
+    conosciute.</p><p><strong>Beneficio:</strong> Si può scegliere un potere di
+    livello 1 che si può lanciare 1 + MEN volte al giorno.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772775032797
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: 8ONbJJwJqtRXRnQo
+sort: 1300000
+_key: '!items!8ONbJJwJqtRXRnQo'

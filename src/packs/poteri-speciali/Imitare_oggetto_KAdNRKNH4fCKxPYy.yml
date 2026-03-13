@@ -1,0 +1,37 @@
+name: Imitare oggetto
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>quando un mimic &egrave; fermo &egrave; identico a un oggetto&nbsp;e
+    difficilissimo da identificare, &egrave; possibile con una prova
+    di&nbsp;osservare su MEN CD 25</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 8d245b400ff96c06a5c30cdd654e28079307311b
+    sourceId: Item.ttOadVbwZSJ2KFDN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  coreVersion: '13.351'
+  createdTime: 1700568716768
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: KAdNRKNH4fCKxPYy
+sort: 1800000
+_key: '!items!KAdNRKNH4fCKxPYy'

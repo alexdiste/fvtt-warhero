@@ -1,0 +1,40 @@
+name: Protezione dagli elementi minore
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: riduce i danni da un elemento di 2
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>riduce i danni di un elemento di 2 per l'intera giornata. Scrivere
+    elemento</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9b2b23ac829ca4009fefad9499be05a39de42354
+    sourceId: Item.9SnbjOh6vtUVJmV9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698854899298
+  modifiedTime: 1743437150774
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 13zFl8U9smiM0LAG
+sort: 4000000
+_key: '!items!13zFl8U9smiM0LAG'

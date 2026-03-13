@@ -1,0 +1,48 @@
+name: Pozione di Levitazione
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 80
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '40'
+  preparetime: '10'
+  durationround: 30
+  description: >-
+    <p>Una pozione alchemica. Costo: 80 Mo</p>
+
+    <p>permette di essere sotto l'effetto del potere
+    @Compendium[fvtt-warhero.poteri.j7RjSZH85KRovJKc]{Viaggio - I Levitazione}
+    della sfera di
+    @Compendium[fvtt-warhero.sfere-di-magia.IHxRgAwl2K6J760H]{31.Viaggio}.
+    Aggiungere @Compendium[fvtt-warhero.condizione.L8s5CvdkJCHQwPK7]{Levitante}
+    alla scheda</p>
+  price: '80'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 0e92bfd063d54e2847b9f32f3a85051ff144899f
+    sourceId: Compendium.world.temp.rrJ4J8UQapWl66LN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553256
+  modifiedTime: 1702106269472
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.rrJ4J8UQapWl66LN
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: SfUYe6NH7CJ2DnXb
+_key: '!items!SfUYe6NH7CJ2DnXb'

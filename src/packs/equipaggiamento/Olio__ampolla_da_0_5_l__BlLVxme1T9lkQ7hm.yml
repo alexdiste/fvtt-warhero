@@ -1,0 +1,39 @@
+name: Olio (ampolla da 0,5 l)
+type: equipment
+img: icons/consumables/potions/bottle-bulb-empty-glass.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Olio per lampade e lanterne</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ad908cab6984978480db73e4b437eb8070ddb99c
+    sourceId: Item.SqWJUXefAbnxt4Hs
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680937301536
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.SqWJUXefAbnxt4Hs
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 36800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: BlLVxme1T9lkQ7hm
+_key: '!items!BlLVxme1T9lkQ7hm'

@@ -1,0 +1,84 @@
+name: Bruto
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p data-pm-slice="1 1 []">Usa gli alleati come armi e scudi usa la forza
+    bruta</p>
+
+    <p data-pm-slice="1 1 []">Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.VTwAXC7zca2CWsBB]{Bruto
+    - Carica a salti}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.W7aeH5AooZBmqbDZ]{Bruto
+    - Carico estremo}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.EnhKbkSKCJEJKlR8]{Bruto
+    - Costituzione}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.JEgfcDSLr0M48Lb6]{Bruto
+    - Fisico mostruoso}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.O8BqK9GV97Ztr26t]{Bruto
+    - Lancia alleato}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.elv9kxS0YDR2wsi7]{Bruto
+    - Lancia alleato per scudo}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.pcNYnbdxBPEuk840]{Bruto
+    - Passo veloce}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.n7uk4XJbvRlyizXR]{Bruto
+    - Restrizione allineamento}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.H3gBj5nBV7QdF4iz]{Bruto
+    - Uso di armi}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 41b1f6244320306b31e1ff8cb26c2b875a65faac
+    sourceId: Item.mBBUOtpJAyQZFYVk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545801944
+  modifiedTime: 1743436999977
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: SnzoC7LorlnqouPx
+sort: 700000
+_key: '!items!SnzoC7LorlnqouPx'

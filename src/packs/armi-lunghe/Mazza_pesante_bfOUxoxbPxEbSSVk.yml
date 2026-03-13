@@ -1,0 +1,42 @@
+name: Mazza pesante
+type: weapon
+img: icons/weapons/maces/mace-flanged-steel-grey.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 10
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una mazza pesante. Arma lunga [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1eb308d049a05497dd8cee93733c1850a974872b
+    sourceId: Item.p9Omm7FuCWAJ1VrD
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676710510666
+  modifiedTime: 1701594258212
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.gjnuY2CmSuH8lvpv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: bfOUxoxbPxEbSSVk
+_key: '!items!bfOUxoxbPxEbSSVk'

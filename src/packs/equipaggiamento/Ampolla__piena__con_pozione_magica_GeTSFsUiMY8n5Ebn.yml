@@ -1,0 +1,41 @@
+name: Ampolla (piena) con pozione magica
+type: equipment
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'no'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una @Compendium[fvtt-warhero.equipaggiamento.SHIuwc7ia5WVyuvO]{Ampolla}
+    piena di un liquido. Sai che contiene una pozione magica, ma quale?</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: de6088b9a4f0d9aec24eebf29cfac12374f05c50
+    sourceId: Item.u1rdBpYeoI2dt80J
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701671872675
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: GeTSFsUiMY8n5Ebn
+sort: 20100000
+_key: '!items!GeTSFsUiMY8n5Ebn'

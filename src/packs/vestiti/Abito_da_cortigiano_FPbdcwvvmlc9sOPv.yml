@@ -1,0 +1,39 @@
+name: Abito da cortigiano
+type: equipment
+img: icons/equipment/chest/robe-collared-blue.webp
+system:
+  equiptype: ''
+  cost: 30
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: dress
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un abito da cortigiano</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 8c9d0083e963eb7d01b28b7ddbcb1cfe09bc771e
+    sourceId: Item.Lm5nfW974qistlbn
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1702047902061
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.72HqDhP2e8P7nbAx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FPbdcwvvmlc9sOPv
+_key: '!items!FPbdcwvvmlc9sOPv'

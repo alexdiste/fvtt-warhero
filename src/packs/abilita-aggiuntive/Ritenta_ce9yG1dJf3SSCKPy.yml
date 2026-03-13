@@ -1,0 +1,37 @@
+name: Ritenta
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 8
+  currentuse: 0
+  description: >-
+    <p><strong>Beneficio:</strong> Quando tiri i dadi per infliggere dei danni o
+    per curare dei punti ferita puoi ritirare tutti gli 1, si prende per valido
+    il secondo risultato anche se questo fosse un 1.</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.ZcPDlqh6IReFnmUY
+    hash: 80807c1b9adb1cea740d099f96d7c9b6d9bc89b8
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772775097525
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: ce9yG1dJf3SSCKPy
+sort: 1000000
+_key: '!items!ce9yG1dJf3SSCKPy'

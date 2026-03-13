@@ -1,0 +1,38 @@
+name: Paralizzato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: sei paralizzato. Non puoi fare mosse
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>un personaggio paralizzato non pu&ograve; fare alcuna mossa.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 93e836e7af7aa6c2340cde0f29dbd3106e47a9e0
+    sourceId: Item.Y5iV2Cz5C0tyqX8q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698853041588
+  modifiedTime: 1743437151323
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: VKZxIzeu5ozF3Zc7
+sort: 3600000
+_key: '!items!VKZxIzeu5ozF3Zc7'

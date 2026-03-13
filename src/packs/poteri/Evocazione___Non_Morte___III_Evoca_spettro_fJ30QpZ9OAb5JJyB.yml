@@ -1,0 +1,30 @@
+name: Evocazione - Non Morte - III Evoca spettro
+type: power
+system:
+  level: 3
+  magicschool: Evocazione - Non Morte
+  description: >-
+    <p>tocco 1d4 pi&ugrave; riduzione di 1 punto di fis per 24 ore (CD 16, FIS,
+    negare), fis 0, ist 5,men 2.
+    @Compendium[fvtt-warhero.evocazioni.TUKIjSoa8AaPoZ5n]{Spettro
+    (evocazione)}</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1675877904850
+  modifiedTime: 1743439294747
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: fJ30QpZ9OAb5JJyB
+folder: null
+sort: 9200000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!fJ30QpZ9OAb5JJyB'

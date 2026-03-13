@@ -1,0 +1,42 @@
+name: Pergamena di Indole - Legge - II Di Fronte alla legge
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.lrvqjBpUmos0t4HB]{Indole - Legge -
+    II Di Fronte alla legge} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7de3c42431debe97ed77eef3c3857b73de47d58b
+    sourceId: Item.de0u8uyYUHbaaRmq
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913447138
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: GhROK3J8ZR8SQEOi
+sort: 26800000
+_key: '!items!GhROK3J8ZR8SQEOi'

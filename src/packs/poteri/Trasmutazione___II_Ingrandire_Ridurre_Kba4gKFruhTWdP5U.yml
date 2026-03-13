@@ -1,0 +1,30 @@
+name: Trasmutazione - II Ingrandire/Ridurre
+type: power
+system:
+  level: 2
+  magicschool: Trasmutazione
+  description: >-
+    può aumentare la taglia del bersaglio alleato fornendogli cosi un bonus di 4
+    punti ai danni ed una penalità di 2 a difesa o diminuire la taglia
+    fornendogli una penalità di 4 ai danni ed un bonus di 2 alla difesa, per la
+    durata di 1 ora.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904977
+  modifiedTime: 1743439294646
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Kba4gKFruhTWdP5U
+folder: null
+sort: 6100000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!Kba4gKFruhTWdP5U'

@@ -1,0 +1,42 @@
+name: Bacchetta magica di Trasmutazione - IV Reggia meravigliosa
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.oHTmpHJrU8hzVEv7]{Trasmutazione -
+    IV Reggia meravigliosa} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: b470ca306f385ff283b8d712dccd6727929098ea
+    sourceId: Item.EODBfuEIzmIcranI
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833565
+  modifiedTime: 1704614601227
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 2jCryo4HvcPC3Lx7
+sort: 0
+_key: '!items!2jCryo4HvcPC3Lx7'

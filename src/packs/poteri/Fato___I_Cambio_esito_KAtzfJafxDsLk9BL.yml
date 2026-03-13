@@ -1,0 +1,28 @@
+name: Fato - I Cambio esito
+type: power
+system:
+  level: 1
+  magicschool: Fato
+  description: >-
+    Per il prossimo scontro puoi scegliere di ritirare una volta un qualsiasi
+    dado, si prende il secondo risultato anche se peggiore
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904852
+  modifiedTime: 1743439294640
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: KAtzfJafxDsLk9BL
+folder: null
+sort: 5900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!KAtzfJafxDsLk9BL'

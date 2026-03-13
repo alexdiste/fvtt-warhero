@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Equilibrio - IV Cerchio contro l' equilibrio
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.u60tRTInSsCwthRj]{Indole -
+    Equilibrio - IV Cerchio contro l' equilibrio} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9251066be4f87b7569d6c98dea4e567f4b9b6d95
+    sourceId: Item.1ImPXU0h8QdEKHAR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830491
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: cy0p3xRHxijkP0Le
+sort: 5900000
+_key: '!items!cy0p3xRHxijkP0Le'

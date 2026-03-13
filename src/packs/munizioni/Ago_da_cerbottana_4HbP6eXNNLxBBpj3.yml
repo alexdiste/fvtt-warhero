@@ -1,0 +1,42 @@
+name: Ago da cerbottana
+type: equipment
+img: icons/weapons/ammunition/arrows-barbed-white.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 20
+  equipped: false
+  slotused: 1
+  slotlocation: quiver
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una ago da cerbottana. Fino a 20 aghi occupano 1
+    solo slot nella faretra o in una borsa da cintura. Fanno danno perforante ed
+    &egrave; possibile avvelenarli</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c597fa1ac0d0bbe8ab4d22153bbc12e9bb10a931
+    sourceId: Item.5bu4UagILFuACofh
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1676718246031
+  modifiedTime: 1698045932726
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.YDJCpY6FwZtS75Sd
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 4HbP6eXNNLxBBpj3
+_key: '!items!4HbP6eXNNLxBBpj3'

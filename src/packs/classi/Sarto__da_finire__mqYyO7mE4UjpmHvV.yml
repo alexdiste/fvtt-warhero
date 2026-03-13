@@ -1,0 +1,44 @@
+name: Sarto (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: true
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 0d78a1a1f0c126a58f980eb5d84f89f6060c1618
+    sourceId: Item.20AgxbURsBeTil06
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1683904597872
+  modifiedTime: 1766238300935
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.20AgxbURsBeTil06
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: mqYyO7mE4UjpmHvV
+_key: '!items!mqYyO7mE4UjpmHvV'

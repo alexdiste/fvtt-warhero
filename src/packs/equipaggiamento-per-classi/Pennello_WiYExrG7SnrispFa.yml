@@ -1,0 +1,40 @@
+name: Pennello
+type: classitem
+img: icons/tools/hand/brush-paint-pink.webp
+system:
+  cost: 1
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Pittore
+  description: <p>Un pennello da pittore</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 5f94a3d249ce42285ad6480a0abfb2e9b627a9f6
+    sourceId: Item.pAR9B6HOv6Ezu0Vw
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: WiYExrG7SnrispFa
+sort: 1000000
+_key: '!items!WiYExrG7SnrispFa'

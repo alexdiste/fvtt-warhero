@@ -1,0 +1,42 @@
+name: Scagliare fiamma
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: special
+  damage: 5d6
+  damage2hands: 1d6
+  rollformula: 1d20+7
+  damageformula: 5d6
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 37777222bc95d25fc035a04b8a6edbe74a3ff9d5
+    sourceId: Item.V3BXSxiKurIFoyA0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681573811492
+  modifiedTime: 1743436810428
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: pUlukzB5RHEvjaov
+sort: 0
+_key: '!items!pUlukzB5RHEvjaov'

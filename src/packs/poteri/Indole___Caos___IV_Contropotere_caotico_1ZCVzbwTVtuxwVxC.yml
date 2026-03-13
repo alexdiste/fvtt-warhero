@@ -1,0 +1,31 @@
+name: Indole - Caos - IV Contropotere caotico
+type: power
+system:
+  level: 4
+  magicschool: Indole - Caos
+  description: >-
+    Puoi usare questo potere come se fosse un contropotere e non spendere
+    ulteriore mana, in qualsiasi momento anche nel round dell'avversario.
+    Ottieni bonus pari a +4 al tiro di contropotere, se il contropotere ha
+    successo puoi immediatamente usare un potere scelto in maniera casuale di
+    livello III o inferiore
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904897
+  modifiedTime: 1743439294447
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 1ZCVzbwTVtuxwVxC
+folder: null
+sort: 700000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!1ZCVzbwTVtuxwVxC'

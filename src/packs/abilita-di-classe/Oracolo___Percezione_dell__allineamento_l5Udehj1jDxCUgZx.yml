@@ -1,0 +1,37 @@
+name: Oracolo - Percezione dell' allineamento
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio usando una&nbsp; mossa di movimento pu&ograve; conoscere
+    l&rsquo;allineamento di un bersaglio come per il potere di I livello di
+    divinazione</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 79e760bf97ce572ac50aee28f60e720f7b985122
+    sourceId: Item.byit043ptBboPNpV
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1676806380081
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.WuXZEmeSH7EeyVxn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 22500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: l5Udehj1jDxCUgZx
+_key: '!items!l5Udehj1jDxCUgZx'

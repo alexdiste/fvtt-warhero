@@ -1,0 +1,39 @@
+name: Abito invernale
+type: equipment
+img: icons/equipment/chest/robe-layered-purple.webp
+system:
+  equiptype: ''
+  cost: 8
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: dress
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un abito invernale</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 02b8349e476ad434919af428fc2e864c5e73ca64
+    sourceId: Item.k5nbzK3f8wpfIdH8
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1702047902061
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.72HqDhP2e8P7nbAx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: nDdq62Oov40UrXBr
+_key: '!items!nDdq62Oov40UrXBr'

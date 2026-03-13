@@ -1,0 +1,38 @@
+name: Immune a critici
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: sei immune ai critici
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>sei immune ai critici</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e4b4f886536fbd71286bcee331ce0907419edd39
+    sourceId: Item.ROdN3xgvMskomG1q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1699124167351
+  modifiedTime: 1743437150867
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 5LypuVsNXiz4liwN
+sort: 1800000
+_key: '!items!5LypuVsNXiz4liwN'

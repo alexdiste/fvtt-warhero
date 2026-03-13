@@ -1,0 +1,39 @@
+name: Pelliccia
+type: equipment
+img: icons/equipment/chest/vest-cloth-tattered-orange.webp
+system:
+  equiptype: ''
+  cost: 12
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: dress
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una pelliccia</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a918003996e56dc57cac94e6b26dd405fd641e3e
+    sourceId: Item.c90qSdq8lt82KpFr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1702047902061
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.72HqDhP2e8P7nbAx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: I1mKwCguRPfE1Sgd
+_key: '!items!I1mKwCguRPfE1Sgd'

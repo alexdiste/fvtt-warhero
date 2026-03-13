@@ -1,0 +1,39 @@
+name: Mantello verde
+type: equipment
+img: icons/equipment/back/cloak-layered-green-yellow.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: cloak
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Mantello verde</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 52ef2e7cb89bb30209f8142713a3f84018dea760
+    sourceId: Item.18IX2jM2MOYg5gro
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1704101132854
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: GBk2h4Wrv0AyubjN
+sort: 0
+_key: '!items!GBk2h4Wrv0AyubjN'

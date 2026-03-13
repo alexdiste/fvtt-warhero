@@ -1,0 +1,40 @@
+name: Polvere nera per 1 proiettile da fuoco
+type: classitem
+img: icons/tools/laboratory/mortar-empty-grey.webp
+system:
+  cost: 1
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Pistolero
+  description: <p>Polvere nera sufficiente per sparare un proiettile</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 67ebbc619181d2c024c41d09a49fb8ee85c62909
+    sourceId: Item.mlhSv6yy053fkgtk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: UUw8T1uO7WOdm9FT
+sort: 800000
+_key: '!items!UUw8T1uO7WOdm9FT'

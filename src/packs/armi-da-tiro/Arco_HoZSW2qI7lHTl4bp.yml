@@ -1,0 +1,45 @@
+name: Arco
+type: weapon
+img: icons/weapons/bows/longbow-leather-green.webp
+system:
+  weapontype: shooting
+  damage: 2d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 32
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un arco. Arma da tiro. [[/r 2d6]]. Usa
+    @Compendium[fvtt-warhero.munizioni.2pcQKWuQGvAgRFxY]{Freccie} come
+    munizioni</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 12683ccf4f29d7032ab717456e17837d5a2b1713
+    sourceId: Item.RFRbWTzWRO3pgZ8k
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718176261
+  modifiedTime: 1701616543110
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.RFRbWTzWRO3pgZ8k
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: HoZSW2qI7lHTl4bp
+_key: '!items!HoZSW2qI7lHTl4bp'

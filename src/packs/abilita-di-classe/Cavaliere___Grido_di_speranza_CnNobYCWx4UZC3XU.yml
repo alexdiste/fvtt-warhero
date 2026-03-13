@@ -1,0 +1,38 @@
+name: Cavaliere - Grido di speranza
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + MEN volte al giorno usare una mossa per
+    fare un grido e dare un bonus al TxC pari alla&nbsp;sua MEN ai suoi alleati
+    per un turno. Non &egrave; possibile fare pi&ugrave; di un&nbsp;grido per
+    round</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 3ef39f0d92d7217278f7d319822c08ea821b3b2f
+    sourceId: Item.ulTTxgHSfNQD7m1u
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: CnNobYCWx4UZC3XU
+sort: 11900000
+_key: '!items!CnNobYCWx4UZC3XU'

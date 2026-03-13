@@ -1,0 +1,63 @@
+name: 09.Evocazione - Animale
+type: power
+img: systems/fvtt-warhero/images/icons/magic/evocazione-animale.webp
+system:
+  level: 0
+  magicschool: Evocazione - Animale
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.fzJGod0FE4WiReR0]{Evocazione -
+    Animale - I Evoca aquila}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.SmGpYUgJY9PEIWhf]{Evocazione -
+    Animale - II Evoca lupo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.dIl9bt79csKa8qSQ]{Evocazione -
+    Animale - III Evoca Orso}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.KBxBDMo05wN3L649]{Evocazione -
+    Animale - IV Evoca dinosauro}</p>
+
+    <p>&nbsp;</p>
+
+    <p><em>Le creature evocate scompaiono quando muoiono o all'alba del giorno
+    seguente e non &egrave; possibile evocare pi&ugrave; di una creatura alla
+    volta. E&rsquo; necessario usare una mossa per far seguire le 2 mosse alla
+    propria evocazione. Usare pi&ugrave; di un colpo con una singola mossa
+    attacco si ottiene lo stessomalus come nell&rsquo;uso delle due armi. Le
+    evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12
+    +IST, il tempo di lancio di questi poteri &egrave; di 4 mosse consecutive. E
+    necessario usareuna mossa per poter far eseguire 2 mosse
+    all&rsquo;evocazione</em></p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 3c4809993c30aeb407baaec3af0aa5c7c1dcb476
+    sourceId: Compendium.world.temp.4kerCj20QFzCUqVS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552584
+  modifiedTime: 1698850951721
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.4kerCj20QFzCUqVS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: jlrtYLGjfG1hGjTd
+_key: '!items!jlrtYLGjfG1hGjTd'

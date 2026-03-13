@@ -1,0 +1,43 @@
+name: Combattere senza armi
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>E' ovviamente consentito combattere senz'armi e ci&ograve; non comporta
+    alcuna penalit&agrave;. Il danno inflitto &egrave; pari al tuo valore di
+    FIS. E' possibile infliggere Colpi stordenti in questo modo.</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: fa1ce75953f995c90ced2880401a04e5238a0031
+    sourceId: Compendium.world.temp.8QSm04Y9lSBqdtIL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553311
+  modifiedTime: 1743437709776
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.8QSm04Y9lSBqdtIL
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: rqCsguWqap75CTAQ
+_key: '!items!rqCsguWqap75CTAQ'

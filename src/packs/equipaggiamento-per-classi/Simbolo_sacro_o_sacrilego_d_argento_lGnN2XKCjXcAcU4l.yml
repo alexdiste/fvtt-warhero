@@ -1,0 +1,40 @@
+name: Simbolo sacro o sacrilego d'argento
+type: classitem
+img: icons/equipment/neck/amulet-round-silver-teal.webp
+system:
+  cost: 25
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Chierico, Gerofante
+  description: <p>Un simbolo sacro o sacrilego in argento</p>
+  price: '25'
+  magiccharge: notapplicable
+  chargevalue: null
+  providedslot: 0
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 56afa21918e0456dbc1a434743ea6b03d42db3fc
+    sourceId: Compendium.world.temp.bzb08bjX1MQJtPCB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553218
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.bzb08bjX1MQJtPCB
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: lGnN2XKCjXcAcU4l
+_key: '!items!lGnN2XKCjXcAcU4l'

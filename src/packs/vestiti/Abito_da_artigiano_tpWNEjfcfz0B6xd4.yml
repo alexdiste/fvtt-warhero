@@ -1,0 +1,39 @@
+name: Abito da artigiano
+type: equipment
+img: icons/equipment/chest/shirt-collared-yellow.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: dress
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un abito da artigiano</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a9477c7efd798e596a9044f8be63665dfe1340f6
+    sourceId: Item.MrPHatLJcnwgl7rO
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1702047902061
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.72HqDhP2e8P7nbAx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: tpWNEjfcfz0B6xd4
+_key: '!items!tpWNEjfcfz0B6xd4'

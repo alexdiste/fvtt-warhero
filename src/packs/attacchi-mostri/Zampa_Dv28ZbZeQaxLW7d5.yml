@@ -1,0 +1,42 @@
+name: Zampa
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 1d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: ad9f50a3b372c6436d471ce682e503319f42c9ac
+    sourceId: Item.nafoO9kcbK9HVrb0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680857418842
+  modifiedTime: 1743436810339
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Dv28ZbZeQaxLW7d5
+sort: 600000
+_key: '!items!Dv28ZbZeQaxLW7d5'

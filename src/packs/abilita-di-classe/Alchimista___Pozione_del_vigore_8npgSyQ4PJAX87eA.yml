@@ -1,0 +1,40 @@
+name: Alchimista - Pozione del vigore
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; creare 3 + IST
+    @Compendium[fvtt-warhero.pozioni.McpdihAZXARl73ml]{Pozione del vigore (da
+    alchimista)}&nbsp;al giorno. Se bevuta entro il round in cui &egrave; stata
+    creata,&nbsp;aumenta la difesa di 4 punti per il prossimo scontro. La
+    stessa&nbsp;pozione non cumula i suoi effetti. Creare e bere la pozione
+    &egrave;&nbsp;considerata una mossa di azione</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e67e46510fee5cca14d39e030c3f6fface7c6976
+    sourceId: Item.v9OuuVYF1LQkRcx0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 8npgSyQ4PJAX87eA
+sort: 13200000
+_key: '!items!8npgSyQ4PJAX87eA'

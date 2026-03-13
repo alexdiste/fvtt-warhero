@@ -1,0 +1,42 @@
+name: Anello portaveleno
+type: equipment
+img: icons/equipment/finger/ring-ball-leaves-green.webp
+system:
+  equiptype: ''
+  cost: 5
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: ring
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Conta come una
+    @Compendium[fvtt-warhero.equipaggiamento.IqKxYXDyz9MpkF8F]{fiala (vuota)} e
+    quindi pu&ograve; avere un veleno al&nbsp; suo interno</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: dd9b3de7cce85769111993a4058711077b75c27f
+    sourceId: Item.F2kzJE1GkeE2Yr3B
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: OIJcbw4Fcaj7F1UD
+sort: 18800000
+_key: '!items!OIJcbw4Fcaj7F1UD'

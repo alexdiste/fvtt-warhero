@@ -1,0 +1,73 @@
+name: Morto
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: il pg è morto
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Il personaggio ha fallito il tiro
+    di&nbsp;@Compendium[fvtt-warhero.azioni.qwyfZ3H65J0dl1FQ]{Sfidare la morte}
+    ed &egrave; ora morto. Pu&ograve; essere resuscitato con due poteri:</p>
+
+    <p>@Compendium[fvtt-warhero.poteri.Tnbo5qZBLCiZAli4]{Guarigione - III
+    Resurrezione}</p>
+
+    <p>@Compendium[fvtt-warhero.poteri.6Z73jbvTwFqsiKOw]{Negromanzia - III
+    Resurrezione veloce}</p>
+
+    <p>&nbsp;</p>
+
+    <p>Se resuscitato con
+    @Compendium[fvtt-warhero.poteri.6Z73jbvTwFqsiKOw]{Negromanzia - III
+    Resurrezione veloce} mettere su di lui lo stato
+    @Compendium[fvtt-warhero.condizione.ABPd5CgYSpGqI7PD]{Resuscitato
+    negromanticamente (-1 a FIS)} e su chi lo ha resuscitato
+    @Compendium[fvtt-warhero.condizione.MEjxqVSJFjRpDhLA]{In recupero da
+    resurrezione veloce}</p>
+
+    <p>&nbsp;</p>
+
+    <p>Se resuscitato da
+    @Compendium[fvtt-warhero.poteri.Tnbo5qZBLCiZAli4]{Guarigione - III
+    Resurrezione} invece mettere
+    @Compendium[fvtt-warhero.condizione.4uAaXtxhzymkTR3z]{Resuscitato di
+    recente} al pg che ha subito il potere (se abilit&agrave; di classe, come
+    quella del Classe: Taumaturgo non dicano altrimenti)</p>
+
+    <p>&nbsp;</p>
+
+    <p>Il personaggio che &egrave; stato resuscitato pu&ograve; usare le macro
+    @Compendium[fvtt-warhero.macro.8Z3rceQoggLzjaw8]{Resuscitato con
+    resurrezione} o @Compendium[fvtt-warhero.macro.m1WuKj8USCqtdXZH]{Resuscitato
+    con resurrezione rapida} per avere degli automatismi.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 95a8ed98abc6af042c50ed6c6346e5a4da45f45d
+    sourceId: Item.5KgnfFAL5fWgyg68
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681547473131
+  modifiedTime: 1743437151676
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.5KgnfFAL5fWgyg68
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 7500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: srkpAd8TtQRWS0il
+_key: '!items!srkpAd8TtQRWS0il'

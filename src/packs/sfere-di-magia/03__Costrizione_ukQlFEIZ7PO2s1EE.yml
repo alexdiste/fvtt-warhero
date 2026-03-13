@@ -1,0 +1,54 @@
+name: 03. Costrizione
+type: power
+img: systems/fvtt-warhero/images/icons/magic/costrizione.webp
+system:
+  level: 0
+  magicschool: Costrizione
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.KhIIZD2xav1wVqem]{Costrizione -
+    I Richiamo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.Z1enNb056VVT8v5C]{Costrizione -
+    II Ragnatela}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.BzDXrpTEM55aFIqg]{Costrizione -
+    III Patto}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.Ls96wsHFWG8F7Emb]{Costrizione -
+    IV Bersaglio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.ZTzGLsI7fYvMZK44]{Costrizione -
+    IV Pietrificazione}</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 96db764bb4885a54545a20af4e065037f3752da2
+    sourceId: Compendium.world.temp.CH0UVs2HAYj3kbcS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552565
+  modifiedTime: 1698850879702
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.CH0UVs2HAYj3kbcS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ukQlFEIZ7PO2s1EE
+_key: '!items!ukQlFEIZ7PO2s1EE'

@@ -1,0 +1,36 @@
+name: Samurai - Restrizione allineamento
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio non pu&ograve; essere di allineamento Caotico o
+    Malvagio</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 3358ddab914fc729695d842a69e95811cbe79029
+    sourceId: Compendium.world.abilita.GBLYaxw52ySNZBSe
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.UmIWgIdmu0hreCkS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 23300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: rZrTz7PXkQjxsau1
+_key: '!items!rZrTz7PXkQjxsau1'

@@ -1,0 +1,38 @@
+name: Divoratore di anime - Rimasuglio del potere
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; a fine giornata scegliere&nbsp;fino a 3
+    potenziamenti che ha ottenuto in questa giornata
+    dall'abilit&agrave;&nbsp;Potere dell'anima e mantenerle anche nel giorno
+    seguente, tutti gli&nbsp;altri vengono persi al terminare del giorno</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: aa4f23d9768b1f8843adc72cda34691e537adbca
+    sourceId: Item.97Xx9EavL1hkmYiJ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1705338200790
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: dFZzEKLudkYR817z
+sort: 3500000
+_key: '!items!dFZzEKLudkYR817z'

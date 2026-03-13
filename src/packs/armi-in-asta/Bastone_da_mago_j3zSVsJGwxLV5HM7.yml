@@ -1,0 +1,45 @@
+name: Bastone da mago
+type: weapon
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  weapontype: polearm
+  damage: 1d6
+  damage2hands: 1d8
+  rollformula: ''
+  damageformula: ''
+  cost: 12
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Arma in asta. Se usato ad una mano: [[/r 1d6]] Se
+    usati a due mani: [[/r 1d8]]. Conta come focus da mago per lanciare
+    poteri.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ac9a6ba14e6e5acd14dc65444efd1f4f0e7ebde5
+    sourceId: Item.pweP74Hk8dVJ0pix
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718312904
+  modifiedTime: 1705304298867
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.3ISHu4JImf6BUXig
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: j3zSVsJGwxLV5HM7
+_key: '!items!j3zSVsJGwxLV5HM7'

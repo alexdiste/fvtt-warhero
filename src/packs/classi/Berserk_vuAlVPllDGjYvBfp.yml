@@ -1,0 +1,73 @@
+name: Berserk
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Il berserk &egrave; un combattente aggressivo in corpo a corpo che perde
+    il senno nella furia della battaglia.</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7H4I9s2CthT1JfXN]{Berserk
+    - Arrabbiato}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.AzQ2qZLpSM6i4NwC]{Berserk
+    - Costituzione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.cGbuokRQcx9k4xIn]{Berserk
+    - Danno maggiorato}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.lr0HKSii8sPyxft6]{Berserk
+    - Furia}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.POJyqTapmBXJSLtr]{Berserk
+    - Presa della scimmia}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ylR0peJ1mPp05EVT]{Berserk
+    - Restrizione dell' allineamento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.xoVs4bR1DxKTzXWh]{Berserk
+    - Spaccatutto}</p>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: b6a5f4bd282af8814c8ca5418448b209bca5ecc6
+    sourceId: Item.gnWYwMqDL9whoyg3
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701438822095
+  modifiedTime: 1743437000039
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: vuAlVPllDGjYvBfp
+sort: 600000
+_key: '!items!vuAlVPllDGjYvBfp'

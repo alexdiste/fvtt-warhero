@@ -1,0 +1,42 @@
+name: Bacchetta magica di Tempo - I Tempo atmosferico
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.qRyiUS9gGHy4Op9X]{Tempo - I Tempo
+    atmosferico} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 8bfc1e3d02a160a8c17f2ed4d7c2dd661d6710ec
+    sourceId: Item.tKGvvQWNHhPteupr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833014
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: E6EjFbQ8l9XE5DiF
+sort: 500000
+_key: '!items!E6EjFbQ8l9XE5DiF'

@@ -1,0 +1,40 @@
+name: Aiuto
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +2 al prossimo Txc
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>si ottiene un bonus di +2 al prossimo TxC [[/r 1d20+2 #Tiro per colpire
+    con aiuto]]</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 29b7ee1554fe9b85a2a15a2f9cef776bc0bd295d
+    sourceId: Item.Y5iV2Cz5C0tyqX8q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698853041588
+  modifiedTime: 1743437151647
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: pA3yVEq1VSr5krMT
+sort: 3400000
+_key: '!items!pA3yVEq1VSr5krMT'

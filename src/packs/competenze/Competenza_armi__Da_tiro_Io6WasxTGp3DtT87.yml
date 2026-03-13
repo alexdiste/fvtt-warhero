@@ -1,0 +1,32 @@
+name: 'Competenza armi: Da tiro'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi da
+    tiro. Le armi da tiro infliggono [[/r 2d6 #+ bonus ai danni a distanza]] +
+    eventuali bonus per i danni a distanza e e hanno una gittata massima di 30
+    metri</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 2a80e817de0a9d2d4de1b130be125ac716290c44
+    sourceId: Item.Bzx9NA8oFva2z0bH
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680857153518
+  modifiedTime: 1743437037157
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.KqKt3kKD5rcWoj65
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Io6WasxTGp3DtT87
+_key: '!items!Io6WasxTGp3DtT87'

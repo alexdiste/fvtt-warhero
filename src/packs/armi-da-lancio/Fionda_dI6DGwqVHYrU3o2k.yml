@@ -1,0 +1,45 @@
+name: Fionda
+type: weapon
+img: icons/weapons/slings/slingshot-wood.webp
+system:
+  weapontype: throwing
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 3
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una fionda, rappresenta un'arma da lancio [[/r
+    1d8]]. Usa @Compendium[world.munizioni.8kAg0umYGjyMVLhY]{Sassi} come
+    munizioni</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 634a2cdecfa665071743abf0b8e34e13a811f877
+    sourceId: Item.bF9kgSlqMxY2x8J6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1680933955221
+  modifiedTime: 1681650266308
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.bF9kgSlqMxY2x8J6
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: dI6DGwqVHYrU3o2k
+_key: '!items!dI6DGwqVHYrU3o2k'

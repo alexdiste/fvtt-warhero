@@ -1,0 +1,45 @@
+name: Difensiva
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Se la situazione ci appare disperata &egrave; consentito, come extrema
+    ratio, di mettersi sulla difensiva. Il personaggio non potr&agrave; compiere
+    nessun'altra azione, ma beneficer&agrave;, per l'intero round, di un bonus
+    di +2 a DIF. Mettere al pg effetto
+    @Compendium[fvtt-warhero.condizione.704tqdDPp2aoWfVh]{In difensiva}</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: df337e46b13139aad3faec5d676730b1b7b4266e
+    sourceId: Compendium.world.temp.5KyaKSJHJ6KwErI5
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553319
+  modifiedTime: 1743437709752
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.5KyaKSJHJ6KwErI5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: JLsRUsrvYg5U5BH1
+_key: '!items!JLsRUsrvYg5U5BH1'

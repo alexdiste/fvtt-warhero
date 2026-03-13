@@ -1,0 +1,49 @@
+name: Veleno morte
+type: poison
+img: icons/consumables/potions/vial-cork-green.webp
+system:
+  cost: 2000
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  application: weapon
+  preparecost: ''
+  preparetime: '10'
+  damageroll: '0'
+  durationround: 0
+  savesdc: 14
+  savetype: ignore
+  description: >-
+    <p>Una
+    @UUID[Compendium.fvtt-warhero.equipaggiamento.Item.IqKxYXDyz9MpkF8F]{Boccetta
+    o fiala} piena di veleno.</p>
+
+    <p>[A,I] il bersaglio deve effettuare un tiro salvezza su Fis,&nbsp; CD 14
+    per negare gli effetti di morire sul colpo.</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e3f08df938501a6f54c37d4f22a770658cd9c27f
+    sourceId: Item.vzSs2DUzFPnTMwSQ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702102661032
+  modifiedTime: 1702104208000
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: lgTBTFQfrgdY0xim
+sort: 100000
+_key: '!items!lgTBTFQfrgdY0xim'

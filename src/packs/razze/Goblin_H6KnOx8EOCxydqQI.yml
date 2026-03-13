@@ -1,0 +1,91 @@
+name: Goblin
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Umanoide di statura piccola con denti molto aguzzi e non molto
+    gradito nella nobilt&agrave; comune</em></p>
+
+    <ul>
+
+    <li>
+
+    <p>Punti Ferita = Basso (+ 2 pf per livello)</p>
+
+    </li>
+
+    <li>
+
+    <p>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.Mi0hZbhYxKkNBNQ0]{Language (goblin)}</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1 =
+    @Compendium[fvtt-warhero.competenze.EnsSG7diZbUJMMhv]{Competenza armi: Da
+    lancio}, @Compendium[fvtt-warhero.competenze.Io6WasxTGp3DtT87]{Competenza
+    armi: Da tiro}</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1,4,8 = +1 IST</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 3,6,9 = +1 TxC e +1 Danni</p>
+
+    </li>
+
+    </ul>
+  hpprogresion: high
+  languages: ''
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 899f74ea6c18dc153385e8b2bea702e7c8551027
+    sourceId: Compendium.world.temp.anqobs2TW1UKw5uO
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552761
+  modifiedTime: 1743439649052
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.anqobs2TW1UKw5uO
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: H6KnOx8EOCxydqQI
+_key: '!items!H6KnOx8EOCxydqQI'

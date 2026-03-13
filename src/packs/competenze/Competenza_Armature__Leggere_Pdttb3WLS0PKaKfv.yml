@@ -1,0 +1,33 @@
+name: 'Competenza Armature: Leggere'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armature
+    leggere. Le armatura legge garantiscono una riduzione danno di [[/r 2
+    #riduzione danno armatura leggera. Ricordo che almeno un danno si prende
+    sempre]]. Ricordo che per quanto le armature possono proteggere si prende
+    sempre almeno un danno</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a7317254e18249ce39fe34de3355041596c3b351
+    sourceId: Item.cbdnpKsPO1x3Lg6p
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1680857901932
+  modifiedTime: 1743437037167
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.cbdnpKsPO1x3Lg6p
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Pdttb3WLS0PKaKfv
+_key: '!items!Pdttb3WLS0PKaKfv'

@@ -1,0 +1,40 @@
+name: Pozione (non identificata)
+type: potion
+img: icons/consumables/potions/potion-flask-corked-tied-necklace-teal.webp
+system:
+  cost: 0
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'no'
+  alchemycost: '0'
+  preparetime: ''
+  durationround: 0
+  description: <p>Una pozione alchemica non identificata.</p>
+  price: '50'
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: ed5672e75f6563bc84aa33f7bb075b87a7a6cf89
+    sourceId: Item.gufzIGPlEOrkPNcm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637553269
+  modifiedTime: 1698922526893
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: YTOlgCeJCTZgzQJ8
+sort: 0
+_key: '!items!YTOlgCeJCTZgzQJ8'

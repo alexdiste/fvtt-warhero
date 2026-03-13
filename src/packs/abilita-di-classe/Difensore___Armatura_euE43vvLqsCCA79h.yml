@@ -1,0 +1,36 @@
+name: Difensore - Armatura
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>le armature indossate dal personaggio aumentano&nbsp;di 2 il valore di
+    danni ridotti</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 903e27f8991858a21ea24077f9a5e3acd746f423
+    sourceId: Item.wuhlc4QXNgIzIBKG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704217302127
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: euE43vvLqsCCA79h
+sort: 10100000
+_key: '!items!euE43vvLqsCCA79h'

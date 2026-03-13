@@ -1,0 +1,51 @@
+name: Cacciatore di draghi - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare pergamene</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.FV5Y61NhhWwnrBYZ]{16.Indole-Bene}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.FnckhzvGblZXCdOv]{17.Indole-Caos}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.jAcYNuXzJPBk2mEE]{18.Indole-Equilibrio}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.4neEb8uAo1FgLnwx]{19.Indole-Legge}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.0l33pWTj5jsnmEfz]{20.Indole-Male}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.gujWiPPrUckarLSX]{21.Linguaggi}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.k19nOLJBQG5fu4a3]{29.Trasmutazione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.BlX0zq1rmyqA9CA5]{32.Visione}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 5b9bdc00822a40b9e463ebab440611a9fdfc2989
+    sourceId: Item.87s8IQlPoqSDBSXS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704462853520
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Tc7iBwjY16rINz3R
+sort: 7800000
+_key: '!items!Tc7iBwjY16rINz3R'

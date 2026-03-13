@@ -1,0 +1,72 @@
+name: Acrobata
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: false
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p data-pm-slice="1 1 []">Da il meglio di s&eacute; nelle situazioni
+    peggiori, sfruttando l&rsquo;occasione per fare pi&ugrave; danni.</p>
+
+    <p data-pm-slice="1 1 []">Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@Compendium[fvtt-warhero.abilita-di-classe.hojyTL541QKo9KEb]{Acrobata -
+    Evitare il colpo}</p>
+
+    <p>@Compendium[fvtt-warhero.abilita-di-classe.SiT97JLceKx8gOHK]{Acrobata -
+    Lesto (+4 ini)}</p>
+
+    <p>@Compendium[fvtt-warhero.abilita-di-classe.MQMjeh5mrxzwkCy3]{Acrobata -
+    Agile (+1 IST)}</p>
+
+    <p>@Compendium[fvtt-warhero.abilita-di-classe.vkWY89dojb8ZeQpC]{Acrobata -
+    Essere scagliato}</p>
+
+    <p>@Compendium[fvtt-warhero.abilita-di-classe.qt4fHHr6HpgmbRKA]{Acrobata -
+    Contrattacco amico}</p>
+
+    <p>@Compendium[fvtt-warhero.abilita-di-classe.GEJH9NMYfnUaPXqd]{Acrobata -
+    Colpo letale}</p>
+
+    <p>@Compendium[fvtt-warhero.abilita-di-classe.vPtjp0OP0LU2RSHS]{Acrobata -
+    Contraccolpo}</p>
+
+    <p>@Compendium[fvtt-warhero.abilita-di-classe.hRR3elRIRpyMOMEM]{Acrobata -
+    Schivare}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: de016765df54bb5b50a505e4bcd270049a376e4d
+    sourceId: Item.sIw90hC0v599TgyN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545801944
+  modifiedTime: 1743436999986
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: bWlvync5TO39pe90
+sort: 2200000
+_key: '!items!bWlvync5TO39pe90'

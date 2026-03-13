@@ -1,0 +1,36 @@
+name: Ritualista - Contropotere
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio ha l&rsquo;abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro
+    potere}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 5a6ff1e8ceaa923c5a5fe77e2404581d3a5ba72c
+    sourceId: Item.DtnSj2wrtbs8VmSb
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717354204506
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: IDtRhlfNAClZwVdT
+sort: 1900000
+_key: '!items!IDtRhlfNAClZwVdT'

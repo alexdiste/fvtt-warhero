@@ -1,0 +1,36 @@
+name: Condividere abilità e poteri con il suo evocatore
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il drago evocato riceve dal suo evocatore tutte le abilit&agrave;
+    aggiuntive&nbsp; e i poteri che agiscono su di lui.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 37b37758c7800b76c387ed1907b9cae0215c964b
+    sourceId: Item.z7dpOX5bXHjIDBN8
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681047468768
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: IHNkAZSNTMopSCWP
+sort: 1300000
+_key: '!items!IHNkAZSNTMopSCWP'

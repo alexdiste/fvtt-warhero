@@ -1,0 +1,46 @@
+name: Pozione di Saltare
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '25'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 50 Mo</p>
+
+    <p><span style="font-family: Signika, sans-serif;">Offre un bonus di +3 alle
+    prove di saltare durante l'intera giornata. Mettere
+    @Compendium[fvtt-warhero.condizione.b5IBRcDzgWzq0nOm]{Saltare migliorato}
+    nella scheda</span></p>
+  price: '50'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: a0c2072e356c41656d233f20aba033e6696185f8
+    sourceId: Compendium.world.temp.jOpog42MTzuPGdUa
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553292
+  modifiedTime: 1702106221857
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.jOpog42MTzuPGdUa
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: tA4F0tjbHzzB7owQ
+_key: '!items!tA4F0tjbHzzB7owQ'

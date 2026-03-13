@@ -1,0 +1,49 @@
+name: Veleno sonno
+type: poison
+img: icons/consumables/potions/vial-cork-green.webp
+system:
+  cost: 300
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  application: ingestion
+  preparecost: ''
+  preparetime: '10'
+  damageroll: '0'
+  durationround: 0
+  savesdc: 15
+  savetype: ignore
+  description: >-
+    <p>Una
+    @UUID[Compendium.fvtt-warhero.equipaggiamento.Item.IqKxYXDyz9MpkF8F]{Boccetta
+    o fiala} piena di veleno.</p>
+
+    <p>[I,T] il bersaglio deve effettuare un tiro salvezza su Men, CD 15 per
+    negare gli effetti di cadere in un sonno profondo.</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c370030bf00e1af4f82e84a91008f52286c813bf
+    sourceId: Item.vzSs2DUzFPnTMwSQ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702102661032
+  modifiedTime: 1702104227508
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 87x8gGWNxb7X8kxo
+sort: 200000
+_key: '!items!87x8gGWNxb7X8kxo'

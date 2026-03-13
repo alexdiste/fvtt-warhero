@@ -1,0 +1,39 @@
+name: Cote per affilare
+type: equipment
+img: icons/commodities/stone/geode-raw-tan.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 1a31c89addd51cfc4f4c32f46956d4637a523ebe
+    sourceId: Item.ROwDyflsbeb6nsvd
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: JCEsHdrAbFaN7eWZ
+sort: 16000000
+_key: '!items!JCEsHdrAbFaN7eWZ'

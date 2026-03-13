@@ -1,0 +1,42 @@
+name: Pergamena di Evocazione - Non Morte - IV Evoca mummia
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.CjIg6780ZHG14ffq]{Evocazione - Non
+    Morte - IV Evoca mummia} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: f40e812bbeeb29231193779a10962c798599edc6
+    sourceId: Item.Iclh6Y8CkvL9urcu
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444717
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Fm0mmoadYXZCfpak
+sort: 30400000
+_key: '!items!Fm0mmoadYXZCfpak'

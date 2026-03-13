@@ -1,0 +1,43 @@
+name: Laboratorio da alchimista
+type: classitem
+img: icons/tools/laboratory/vials-blue-pink.webp
+system:
+  cost: 200
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Alchimista
+  description: >-
+    <p>Un laboratorio da alchimista attrezzato, comprensivo di
+    @UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.zAfqUTaym6TfOGDq]{Attrezzi
+    da Alchimista}</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 5f3c578e70f060d52ef0ba5309977cd3658b393d
+    sourceId: Item.IzimqBlmhdgakjQP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 2vU7JIwHx3llkZFw
+sort: 1600000
+_key: '!items!2vU7JIwHx3llkZFw'

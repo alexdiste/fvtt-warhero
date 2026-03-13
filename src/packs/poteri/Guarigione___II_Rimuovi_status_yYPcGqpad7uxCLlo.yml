@@ -1,0 +1,29 @@
+name: Guarigione - II Rimuovi status
+type: power
+system:
+  level: 2
+  magicschool: Guarigione
+  description: >-
+    rimuove tutti gli status negativi al bersaglio come il veleno, malattie,
+    sonno o la perdita di caratteristiche, chi usa questo incantesimo deve
+    essere a conoscenza di cosa vuole rimuovere
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904865
+  modifiedTime: 1743439294964
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: yYPcGqpad7uxCLlo
+folder: null
+sort: 15500000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!yYPcGqpad7uxCLlo'

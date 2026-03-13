@@ -1,0 +1,20 @@
+type: Actor
+folder: null
+name: Golem e burattini
+color: null
+sorting: a
+_id: ab89HuUf0Tqbgom0
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.20'
+  createdTime: 1759987867431
+  modifiedTime: 1759987867431
+  lastModifiedBy: lXFgtDDsvLskIOGw
+_key: '!folders!ab89HuUf0Tqbgom0'

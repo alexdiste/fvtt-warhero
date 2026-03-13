@@ -1,0 +1,42 @@
+name: Libro dei poteri da viaggio
+type: classitem
+img: icons/sundries/books/book-embossed-bound-brown.webp
+system:
+  cost: 10
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Mago
+  description: >-
+    <p>Un libro per scrivere poteri. E' pi&ugrave; piccolo e pesa meno del libro
+    dei poteri standard ma ha meno pagine.</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 2cdf66332f6c9a2f0b3151417c49527106b6f288
+    sourceId: Item.bKrv7fKF5cg72OEg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: DByqAwnuTL1r0rlO
+sort: 1200000
+_key: '!items!DByqAwnuTL1r0rlO'

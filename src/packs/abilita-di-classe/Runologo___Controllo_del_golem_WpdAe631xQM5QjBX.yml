@@ -1,0 +1,39 @@
+name: Runologo - Controllo del golem
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; tentare di controllare un golem, la prova ha
+    successo automatico se il<br>creatore lo permette, altrimenti il runologo
+    deve riuscire a rimanere adiacente per 6 mosse consecutive al golem che
+    vuole controllare, questo gli permette di incidere sopra una runa che ne
+    permette il controllo completo. Non &egrave; possibile avere pi&ugrave; di
+    un golem sotto controllo contemporaneamente</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 1323713534d36905259d68b9fb9a2309d24cff56
+    sourceId: Item.m4UlOxtMvVHiS0y0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352040013
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: WpdAe631xQM5QjBX
+sort: 2700000
+_key: '!items!WpdAe631xQM5QjBX'

@@ -1,0 +1,39 @@
+name: Pergamena magica I (non identificata)
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 100
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'no'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Contiene un potere di primo livello</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5cc8b6180c6df1d5b36b8164ddb8420a850e03af
+    sourceId: Item.WkQ5kjewZjzZ7AhS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057359950
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.1v2dGBahf3OMXhu5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 38100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: TnfN60R7D9tQsCpZ
+_key: '!items!TnfN60R7D9tQsCpZ'

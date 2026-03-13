@@ -1,0 +1,39 @@
+name: Cavaliere - Grido di coraggio
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + MEN volte al giorno&nbsp;usare una mossa
+    per fare un grido e donare un bonus pari al suo&nbsp;valore di MEN al
+    prossimo tiro salvezza che gli alleati devono&nbsp;eseguire fino alla fine
+    dello scontro. Non &egrave; possibile fare pi&ugrave; di un&nbsp;grido per
+    round</p>
+effects: []
+flags:
+  scene-packer:
+    hash: bd5c36c41948071a3a713124472b37eb658320e9
+    sourceId: Item.u9xZWMfd6hyGymtG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: LzG8BKk6nt12KSkt
+sort: 11300000
+_key: '!items!LzG8BKk6nt12KSkt'

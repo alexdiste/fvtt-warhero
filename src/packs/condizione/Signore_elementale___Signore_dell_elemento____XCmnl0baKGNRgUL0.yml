@@ -1,0 +1,38 @@
+name: Signore elementale - Signore dell elemento ()
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Elemento del giorno del signore elementale</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e46333a37a7dfc44d0ef548e715a8d8b247122f7
+    sourceId: Item.f0MAQ5fxbg14GOm1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681056499952
+  modifiedTime: 1743437151366
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.f0MAQ5fxbg14GOm1
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 6500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: XCmnl0baKGNRgUL0
+_key: '!items!XCmnl0baKGNRgUL0'

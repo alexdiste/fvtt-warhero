@@ -1,0 +1,39 @@
+name: Gabbia grande
+type: equipment
+img: systems/fvtt-warhero/images/icons/cage.svg
+system:
+  equiptype: ''
+  cost: 30
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    hash: d01218a25e99d3c89e5fda4a11ad5152441fc822
+    sourceId: Item.iksgDvndIoVgBmYI
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.344'
+  createdTime: 1676707874667
+  modifiedTime: 1749220149946
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: zvBnb4UuF3Xt6pkF
+sort: 300000
+_key: '!items!zvBnb4UuF3Xt6pkF'

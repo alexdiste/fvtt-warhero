@@ -1,0 +1,38 @@
+name: Doppio scudo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Prerequisito:</strong> Attacco con lo scudo<br
+    /><strong>Beneficio:</strong> sei in grado di impugnare 2 scudi e puoi
+    quindi tentare di parare un colpo 2 volte.</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+ownership:
+  default: 0
+  HUfxIdhdvsgYTpQ3: 3
+  guOwSDi78TuzUGFU: 3
+flags:
+  scene-packer:
+    hash: 759b4b747fec48d8cce472781b4587914e62d4ca
+    sourceId: Item.tATC5vErVVE1eYtj
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774933542
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: COG1ciPvTeUCttII
+sort: 2300000
+_key: '!items!COG1ciPvTeUCttII'

@@ -1,0 +1,47 @@
+name: Conoscenza
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Quando il tuo personaggio ha dei dubbi o vuole ottenere qualche
+    informazione aggiuntiva, pu&ograve; legittimamente porsi delle domande,
+    lanciando 1d20 + MEN. Gli argomenti possono essere dei pi&ugrave; disparati:
+    ad esempio, ci si pu&ograve; interrogare sulla geografia di un posto, sulle
+    proprie conoscenze magiche, ecc. Questa "prova di conoscenza",
+    fortunatamente, non viene considerata un'azione e non intacca il numero
+    delle mosse disponibili nel turno.</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 86e085b1d182cc0fe4ba10f41830e857a45d29ed
+    sourceId: Compendium.world.temp.N2ckUDLsUnnKGA7L
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553313
+  modifiedTime: 1743437709742
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.N2ckUDLsUnnKGA7L
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ADtrdED35cN2dl0O
+_key: '!items!ADtrdED35cN2dl0O'

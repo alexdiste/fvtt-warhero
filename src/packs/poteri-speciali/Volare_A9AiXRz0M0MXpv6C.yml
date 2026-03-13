@@ -1,0 +1,39 @@
+name: Volare
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Una creatura con questa abilit&agrave; pu&ograve; cessare o riprendere il
+    volo come mossa di movimento. Se l&rsquo;abilit&agrave; &egrave;
+    soprannaturale, diventa inefficace in un campo anti potere finch&eacute;
+    questo rimane attivo. Pu&ograve; terminare il movimento in un quadrato
+    gi&agrave; occupato</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9e95cc9ebf8cedc88b06eec76fffcaaf4213c8e9
+    sourceId: Item.VweNQKJ9g2v1K3FK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.HKoxeCXqiwLIyOX7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: A9AiXRz0M0MXpv6C
+_key: '!items!A9AiXRz0M0MXpv6C'

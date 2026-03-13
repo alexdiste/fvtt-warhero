@@ -1,0 +1,773 @@
+name: Scheletro (evocazione)
+type: character
+items:
+  - name: Artigli
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/combattere%20senz_armi%20(1).webp
+    system:
+      weapontype: short
+      damage: 1d4
+      damage2hands: 1d6
+      rollformula: ''
+      damageformula: ''
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 1
+      slotlocation: weapon2
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 06c4aeb8964abc03723a5bfba006243837b00dbe
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857418842
+      modifiedTime: 1681508870905
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.0WjuzgTtYlcP20yn
+      duplicateSource: null
+      exportSource: null
+    _id: elk5NwuYVtY8Dxil
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.elk5NwuYVtY8Dxil'
+  - name: 'Competenza armi: Corte'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/bone-knife_1.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        corte. Le armi corte infliggono [[/r 1d6 #+fisico+ bonus ai danni in
+        mischia]] + il valore di fisco + eventuali bonus per i danni in
+        mischia.</p>
+
+        <p>&nbsp;</p>
+
+        <p>Qua sotto trovi la macro (nel compendio) che puoi trascinare nella
+        tua barra per poi usarla:</p>
+
+        <p>&nbsp;</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 1ebf14ae38b2e986fcd6bbdf3b9f210d8ce2c2c3
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1681540968238
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    _id: dtfA2Hdr059QsooK
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.dtfA2Hdr059QsooK'
+  - name: 'Competenza armi: Da lancio'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/thrown-charcoal.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        da lancio. Le armi da lancio infliggono [[/r 1d8 #+ bonus ai danni a
+        distanza]] + eventuali bonus per i danni a distanza e hanno una gittata
+        massima di 10 metri</p>
+
+        <p>&nbsp;</p>
+
+        <p>Qua sotto trovi la macro (nel compendio) che puoi trascinare nella
+        tua barra per poi usarla:</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 40ae6a86072af2ad89ae050e9510a96203bcb97f
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1681540974535
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    _id: lBTLCNPewBRPtCPW
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.lBTLCNPewBRPtCPW'
+  - name: 'Competenza armi: Da tiro'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/bow-arrow.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        da tiro. Le armi da tiro infliggono [[/r 2d6 #+ bonus ai danni a
+        distanza]] + eventuali bonus per i danni a distanza e e hanno una
+        gittata massima di 30 metri</p>
+
+        <p>&nbsp;</p>
+
+        <p>Qua sotto trovi la macro (nel compendio) che puoi trascinare nella
+        tua barra per poi usarla:</p>
+
+        <p>&nbsp;</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: c4895f8b4d5eaeb86aae983acffbe927d39fbde3
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1681540980366
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    _id: ujX5FxVfi8j0cl8B
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.ujX5FxVfi8j0cl8B'
+  - name: 'Competenza armi: A due mani'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/two-handed-sword.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        a due mani. Le armi a due mani infliggono [[/r 3d6 #+1 volta e mezzo il
+        fisico+ bonus ai danni in mischia]] + una volta e mezzo il valore di
+        fisico (arrotondato per difetto) + eventuali bonus per i danni in
+        mischia.</p>
+
+        <p>&nbsp;</p>
+
+        <p>Qua sotto trovi la macro (nel compendio) che puoi trascinare nella
+        tua barra per poi usarla:</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 156b9d9857f241a9056bd86b1b61fc3c840a3b65
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1681540994058
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    _id: 0PqG2SJML29cxl0P
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.0PqG2SJML29cxl0P'
+  - name: 'Competenza armi: Lunghe'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/3d-hammer.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        lunghe. Le armi lunghe infliggono [[/r 1d8 #+fisico+ bonus ai danni in
+        mischia]] + il valore di fisco + eventuali bonus per i danni in
+        mischia.</p>
+
+        <p>&nbsp;</p>
+
+        <p>Qua sotto trovi la macro (nel compendio) che puoi trascinare nella
+        tua barra per poi usarla:</p>
+
+        <p>&nbsp;</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: ca2a9cfdd223288c604c882f6d8ca3241dedf29b
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1681541003902
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    _id: 0qikce2KJ46KJ0Vr
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.0qikce2KJ46KJ0Vr'
+  - name: 'Competenza armi: In asta'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/wizard-staff.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        in asta. Le armi in asta possono essere usate sia ad una mano che a due
+        mani. Se usate ad una mano infliggono [[/r 1d6 #+fisico+ bonus ai danni
+        in mischia]] +fisico + eventuali bonus per i danni in mischia.</p>
+
+        <p>Se usate invece a due mani infliggono:</p>
+
+        <p>[[/r 1d8 #+1 volta e mezzo il fisico+ bonus ai danni in mischia]] +
+        una volta e mezzo il valore di fisico (arrotondato per difetto) +
+        eventuali bonus per i danni in mischia.</p>
+
+        <p>&nbsp;</p>
+
+        <p>Qua sotto trovi la macro (nel compendio) che puoi trascinare nella
+        tua barra per poi usarla:</p>
+
+        <p>&nbsp;</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 4eb2fd15097a2956c0823d360bbbe04f9c938dd9
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1681541022197
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    _id: eSiWPU2rn39wBvB9
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.eSiWPU2rn39wBvB9'
+  - name: 'Competenza Armature: Leggere'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/arma%2Carmature%20e%20scudi.webp
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le
+        armature leggere. Le armatura legge garantiscono una riduzione danno di
+        [[/r 2 #riduzione danno armatura leggera. Ricordo che almeno un danno si
+        prende sempre]]. Ricordo che per quanto le armature possono proteggere
+        si prende sempre almeno un danno</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: f1a753309337f75df3245b28c8425746f5f28fd5
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857901932
+      modifiedTime: 1681541030093
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.cbdnpKsPO1x3Lg6p
+      duplicateSource: null
+      exportSource: null
+    _id: RgBrY8Vap34IFBQt
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.RgBrY8Vap34IFBQt'
+  - name: 'Competenza Armature: Medie'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/arma%2Carmature%20e%20scudi.webp
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le
+        armature leggere. Le armatura legge garantiscono una riduzione danno di
+        [[/r 4 #riduzione danno armatura media. Ricordo che almeno un danno si
+        prende sempre]]. Ricordo che per quanto le armature possono proteggere
+        si prende sempre almeno un danno</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 2d85bef384d305c96ccae045fc2527e651830297
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857901932
+      modifiedTime: 1681541036261
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.tOrqNVEkXM5q1w4U
+      duplicateSource: null
+      exportSource: null
+    _id: BaqlpknaActt5pub
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.BaqlpknaActt5pub'
+  - name: 'Competenza Armature: Pesanti'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/arma%2Carmature%20e%20scudi.webp
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le
+        armature leggere. Le armatura legge garantiscono una riduzione danno di
+        [[/r 6 #riduzione danno armatura pesante. Ricordo che almeno un danno si
+        prende sempre]]. Ricordo che per quanto le armature possono proteggere
+        si prende sempre almeno un danno</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 6241ed7e3c967680bb4a1914cb4d8f2ec29bb2e2
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857901932
+      modifiedTime: 1681541043271
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.MvHQinPDmMJ7PZGI
+      duplicateSource: null
+      exportSource: null
+    _id: IkkozrFWHv2Vio9X
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.IkkozrFWHv2Vio9X'
+  - name: 'Competenza Scudi: Leggeri'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/parata.webp
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con gli
+        scudi leggere. Gli scudi leggeri permettono di fare azione di parata con
+        di [[/r 1d12+1 #parata con scudo leggero + aggiungere eventuali bonus di
+        parata. Ricordo si pu&oacute; parare solo un attacco per turno. Se
+        ottieni 1 &eacute; sempre fallimento automatico, se ottieni 12 sempre
+        successo automatico, altrimenti pari se con questo tiro fai 12 o
+        pi&uacute;]]. Ricordo si pu&oacute; parare solo un attacco per turno e
+        che se si ottiene 1 sar&aacute; sempre un fallimento, con 12 di dado
+        invece si parer&aacute; sempre, altimenti bisogna superare 12.</p>
+
+        <p>&nbsp;</p>
+
+        <p>Qua sotto trovi la macro (nel compendio) che puoi trascinare nella
+        tua barra per poi usarla:</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: ef89c505f91e8acd69204f1bb40b0946604c9d31
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857901932
+      modifiedTime: 1681541051862
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.7iIqqBYuocli2fBb
+      duplicateSource: null
+      exportSource: null
+    _id: CMA5lxM5DsUoROdt
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.CMA5lxM5DsUoROdt'
+  - name: 'Competenza Scudi: Pesanti'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/parata.webp
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con gli
+        scudi leggere. Gli scudi leggeri permettono di fare azione di parata con
+        di [[/r 1d12+3 #parata con scudo leggero + aggiungere eventuali bonus di
+        parata. Ricordo si pu&oacute; parare solo un attacco per turno. Se
+        ottieni 1 &eacute; sempre fallimento automatico, se ottieni 12 sempre
+        successo automatico, altrimenti pari se con questo tiro fai 12 o
+        pi&uacute;]]. Ricordo si pu&oacute; parare solo un attacco per turno e
+        che se si ottiene 1 sar&aacute; sempre un fallimento, con 12 di dado
+        invece si parer&aacute; sempre, altimenti bisogna superare 12.</p>
+
+        <p>&nbsp;</p>
+
+        <p>Qua sotto trovi la macro (nel compendio) che puoi trascinare nella
+        tua barra per poi usarla:</p>
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 8a596f8ac18073b7dacbe673f587606979098da3
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 10.0.55
+      coreVersion: '13.341'
+      createdTime: 1680857901932
+      modifiedTime: 1681541057715
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.Z1PW3zUbzIB3Phfm
+      duplicateSource: null
+      exportSource: null
+    _id: Ypm1gX1RMxh4sZ5g
+    _key: '!actors.items!IOrGrZJ0ZV5pp3uv.Ypm1gX1RMxh4sZ5g'
+img: systems/dnd5e/tokens/undead/SkeletonClothes.webp
+system:
+  biodata:
+    class: ''
+    age: '0'
+    size: medium
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: >-
+      <p>Le creature evocate scompaiono quando muoiono o all'alba del giorno
+      seguente e non &egrave; possibile evocare pi&ugrave; di una creatura alla
+      volta. E&rsquo; necessario usare una mossa per far seguire le 2 mosse alla
+      propria evocazione. Usare pi&ugrave; di un colpo con una singola mossa
+      attacco si ottiene lo stessomalus come nell&rsquo;uso delle due armi. Le
+      evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12
+      +IST, il tempo di lancio di questi poteri &egrave; di 4 mosse consecutive.
+      E necessario usareuna mossa per poter far eseguire 2 mosse
+      all&rsquo;evocazione</p>
+    gmnotes: ''
+    origin: ''
+    preferredhand: ''
+  subactors: []
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 2
+      value: 2
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 2
+      value: 2
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 30
+      value: 30
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 2
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 14
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 3
+      value: 3
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    txch:
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: -2
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Scheletro (evocazione)
+  displayName: 30
+  actorLink: false
+  texture:
+    src: systems/dnd5e/tokens/undead/SkeletonClothes.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+    tint: '#ffffff'
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    alphaThreshold: 0.75
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 0
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+    negative: false
+    priority: 0
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  flags:
+    wall-height:
+      tokenHeight: 0
+    monks-tokenbar:
+      include: exclude
+    tagger: {}
+    core: {}
+    monks-enhanced-journal:
+      chatbubble: ''
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+effects: []
+flags:
+  scene-packer:
+    hash: 92e1dbb852d73132fb10fbafc60d4092f7e10b31
+    sourceId: Actor.roXHQvBFh6YP3QPr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  coreVersion: '13.351'
+  createdTime: 1680857278639
+  modifiedTime: 1767471858774
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: 8o19xL2ki8Su2jvP
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: IOrGrZJ0ZV5pp3uv
+sort: 800000
+_key: '!actors!IOrGrZJ0ZV5pp3uv'

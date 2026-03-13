@@ -1,0 +1,45 @@
+name: Bomba esplosiva (da alchimista)
+type: potion
+img: icons/consumables/potions/bottle-round-corked-yellow.webp
+system:
+  cost: 0
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '0'
+  preparetime: '0'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica.</p>
+
+    <p>Scoppia al termine del turno in cui &egrave; stata creata e pu&ograve;
+    essere lanciate come arma da lancio (gittata max: 10 metri). Causa [[/r 8d6
+    #fuoco]] danni al bersaglio</p>
+  price: '0'
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 0a3a86de3939eb7c77ceedcd995e75d686628a14
+    sourceId: Compendium.world.temp.9szM9nENOGV5DYym
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553236
+  modifiedTime: 1701436176313
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.9szM9nENOGV5DYym
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: uQqE8TKPcEItp8OD
+_key: '!items!uQqE8TKPcEItp8OD'

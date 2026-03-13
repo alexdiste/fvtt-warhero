@@ -1,0 +1,412 @@
+name: Cerbero
+type: character
+img: systems/dnd5e/tokens/monstrosity/DeathDog.webp
+items:
+  - name: Morso
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+    system:
+      weapontype: special
+      damage: 2d4
+      damage2hands: 1d6
+      rollformula: 1d20+6
+      damageformula: 1d10+8
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+      isCustomAttackRoll: false
+    effects: []
+    flags:
+      scene-packer:
+        hash: 020dd7e4f88c89b7157d1d20efa2d615c985eb2a
+        sourceId: Item.IJnUKkomw51VEitv
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: Ib3LXMmeXtMh9scd
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!eyyDovqLYWtYRrB0.Ib3LXMmeXtMh9scd'
+  - name: Fauci del Cerbero
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>un cerbero che riesca a mordere un bersaglio applica su di esso un
+        effetto magico che impedisce alla creature per i successivi 2 round di
+        fare uso di qualsiasi incantesimo della sfera viaggio.</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: abeb74e1f24451b5b1eab26fd6792ffe5af298ef
+        sourceId: Item.VweNQKJ9g2v1K3FK
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: CR71vRDszIdG4ivz
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!eyyDovqLYWtYRrB0.CR71vRDszIdG4ivz'
+  - name: Percezione cieca (36 m)
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Consente alla creatura di notare cose che non può vedere, ma senza la precisione della Vista Cieca. La creatura di solito non\_ha bisogno di fare prove di Individuazione o Ascolto per notare<br />ed individuare le creature nel raggio d’azione della sua\_capacità di Percezione Cieca</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 1b527d9670bef99d89d257786bc9d42281c3ffc1
+        sourceId: Item.PjRoDjRreXWRN92s
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: bzv0S1mrci2exDGp
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!eyyDovqLYWtYRrB0.bzv0S1mrci2exDGp'
+_id: eyyDovqLYWtYRrB0
+system:
+  subactors: []
+  biodata:
+    class: ''
+    origin: ''
+    age: 0
+    size: large
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: ''
+    gmnotes: ''
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 8
+      value: 8
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 5
+      value: 5
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 12
+      value: 12
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 180
+      value: 180
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 12
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 18
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 5
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 5
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 15
+      value: 15
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 5
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 6
+prototypeToken:
+  name: systems/dnd5e/tokens/monstrosity/DeathDog.webp
+  displayName: 0
+  actorLink: false
+  width: 2
+  height: 2
+  texture:
+    src: systems/dnd5e/tokens/monstrosity/DeathDog.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+effects: []
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239337735
+  modifiedTime: 1772340564249
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+sort: 2100000
+_key: '!actors!eyyDovqLYWtYRrB0'

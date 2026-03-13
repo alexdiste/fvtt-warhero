@@ -1,0 +1,28 @@
+name: Protezione - II Salvezza
+type: power
+system:
+  level: 2
+  magicschool: Protezione
+  description: >-
+    il bersaglio ottiene un bonus di 5 punti al risultato del primo tiro
+    salvezza che effettua
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904954
+  modifiedTime: 1743439294971
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: zV19MhRi8xVJBGWq
+folder: null
+sort: 15700000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!zV19MhRi8xVJBGWq'

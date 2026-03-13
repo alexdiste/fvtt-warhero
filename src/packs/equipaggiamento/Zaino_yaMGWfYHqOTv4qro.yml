@@ -1,0 +1,39 @@
+name: Zaino
+type: equipment
+img: icons/containers/bags/pack-simple-leather.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 0
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Uno zaino. Fornisce 12 slot</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5c996db59d1c6bc7c665c3756628b266ca32f330
+    sourceId: Item.0jeBCwsifC4U5Zwq
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718625949
+  modifiedTime: 1705127460364
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.8negcE5wxVkxzKTm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 40400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: yaMGWfYHqOTv4qro
+_key: '!items!yaMGWfYHqOTv4qro'

@@ -1,0 +1,41 @@
+name: Venditore planare
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: può commerciare. Sparisce se colpita
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Questa creatura extraplanare &egrave; legata ad un oggetto o ad un
+    personaggio di classe mercante e pu&ograve; commerciare. Se viene copita
+    tuttavia torna subito sul suo piano</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 5d5ff0f32bbaf7f311fd2cc87df0cc28d6db14d1
+    sourceId: Item.fB5XZdDMyORNUUaI
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701595440178
+  modifiedTime: 1743437151391
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: YF3PQDsk6VpAjg8U
+sort: 1000000
+_key: '!items!YF3PQDsk6VpAjg8U'

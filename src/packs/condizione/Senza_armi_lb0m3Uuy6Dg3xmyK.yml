@@ -1,0 +1,42 @@
+name: Senza armi
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: combattere senza armi
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>il pg &egrave; senza armi e quindi pu&ograve; combattere solo a mani nude
+    facendo FIS danni <span style="font-family: var(--font-primary); font-size:
+    var(--font-size-14);">[[/r @statistics.str.value #danni colpo senza
+    armi]]</span></p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9e827b4352dbf4f2a26a52dc633ffed3aab194b8
+    sourceId: Item.ZAVSAIeG8t45A64d
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151562
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpuMly3c9eb7TlVk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 7100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: lb0m3Uuy6Dg3xmyK
+_key: '!items!lb0m3Uuy6Dg3xmyK'

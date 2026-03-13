@@ -1,0 +1,45 @@
+name: Componenti magici
+type: classitem
+img: icons/commodities/materials/bowl-powder-grey.webp
+system:
+  cost: 1
+  quantity: 1
+  slotused: 0.001
+  slotlocation: backpack
+  isidentified: 'yes'
+  class: Alchimista
+  mandatoryfor: Tecnofabbro, Rabdomante, Ritualista
+  description: >-
+    <p>Erbe varie, pietre prezione, candele&nbsp; e in generali componenti che
+    servono ad una persona esperta di poteri, per incantare le armi o costruire
+    o ricaricare le bacchette,etc..</p>
+
+    <p>Fino a 1000 occupano uno slot</p>
+  price: '1'
+  magiccharge: notapplicable
+  chargevalue: null
+  providedslot: 0
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: fe9ac16863dd3ff8d9c5548c8502b07c03754136
+    sourceId: Item.pqob5PY57tSnVJOr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553214
+  modifiedTime: 1705127875045
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: dLqFcWtIJiO8Lkc6
+sort: 0
+_key: '!items!dLqFcWtIJiO8Lkc6'

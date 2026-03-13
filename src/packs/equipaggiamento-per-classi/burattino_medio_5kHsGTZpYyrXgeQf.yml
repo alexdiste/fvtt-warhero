@@ -1,0 +1,43 @@
+name: burattino medio
+type: classitem
+img: icons/commodities/treasure/doll-voodoo.webp
+system:
+  cost: 500
+  quantity: 1
+  slotused: 6
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Burattinaio o Vuduista
+  description: >-
+    <p>un
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.eVnvKS9FadqvPA5d]{Burattino
+    medio (burattino)} usabile da classi come il vuduista, il burattinaio e
+    altri.</p>
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 2eab3c3aad4ec99a876485967f76c2831eb038b2
+    sourceId: Item.pKBSb2pSF2PDb0xX
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704870187840
+  modifiedTime: 1743322105838
+  lastModifiedBy: bApdcCqVSmKfSfw3
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 5kHsGTZpYyrXgeQf
+sort: 600000
+_key: '!items!5kHsGTZpYyrXgeQf'

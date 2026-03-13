@@ -1,0 +1,39 @@
+name: Sapone (0.5 Kg)
+type: equipment
+img: icons/sundries/survival/soap.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a9726f8fd3265f2a618c359814105f653dbd1668
+    sourceId: Item.djMhRf3Bj41vw9r4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: TE6e4GRvIF6kfACX
+sort: 16500000
+_key: '!items!TE6e4GRvIF6kfACX'

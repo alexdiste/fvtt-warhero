@@ -1,0 +1,29 @@
+name: Rune - IV Trappola superiore
+type: power
+system:
+  level: 4
+  magicschool: Rune
+  description: >-
+    questa runa può contenere un qualsiasi incantesimo di terzo livello o
+    inferiore che si attiva al momento prescelto secondo il metodo i attivazione
+    scelto dal runologo ( es. se toccata da un elfo )
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904970
+  modifiedTime: 1743439294810
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: jfGVhTT1diGxg3LR
+folder: null
+sort: 11100000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!jfGVhTT1diGxg3LR'

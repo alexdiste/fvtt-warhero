@@ -1,0 +1,38 @@
+name: Divoratore di anime - Ridare l' anima
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; ogni giorno usare il potere
+    @UUID[Compendium.fvtt-warhero.poteri.6Z73jbvTwFqsiKOw]{Negromanzia - III
+    Resurrezione veloce}&nbsp;della sfera di Negromanzia senza far
+    perdere&nbsp;un punto permanente di FIS al bersaglio</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 90ecb7166b79023a9431de8c885d93217fa32b1b
+    sourceId: Item.OsuaEMHmQrNncdFg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1705338200790
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: bsXsKFO53juCzzfh
+sort: 3400000
+_key: '!items!bsXsKFO53juCzzfh'

@@ -1,0 +1,70 @@
+name: Guerriero
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: true
+  issecondary: false
+  description: >-
+    <p>Il guerriero &egrave; un combattente specializzato.&nbsp;</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.me4o0Q1jTI9uqixB]{Guerriero
+    - Abilit&agrave; extra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LajbXXsxJABFbhRi]{Guerriero
+    - Addestrato}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7zQ3w70pJL8jwoxi]{Guerriero
+    - Armatura}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hnxZcfvMqQrhu7i4]{Guerriero
+    - Danno maggiorato}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.lzPRlzUtE4cj1ODO]{Guerriero
+    - Movimento tattico}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Fp7kRGDphiJhdQAd]{Guerriero
+    - Specializzato in guerra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ESzN7Y6vTKlGOj1J]{Guerriero
+    - Specializzazione}</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 3773cedd75707fe7773a89fcf174c5289515842a
+    sourceId: Compendium.world.temp.bFX8dEsIB2tXxLHi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552472
+  modifiedTime: 1743436999941
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.bFX8dEsIB2tXxLHi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 5tuf2CxD64GcsKmi
+_key: '!items!5tuf2CxD64GcsKmi'

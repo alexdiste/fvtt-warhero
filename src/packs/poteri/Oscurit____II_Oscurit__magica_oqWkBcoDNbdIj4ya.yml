@@ -1,0 +1,29 @@
+name: Oscurità - II Oscurità magica
+type: power
+system:
+  level: 2
+  magicschool: Oscurità
+  description: >-
+    un area di 6 metri viene oscurata e non è possibile illuminarla in alcun
+    modo. l'incantesimo neutralizza luce magica. l'effetto persiste per 5
+    minuti.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904945
+  modifiedTime: 1743439294878
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: oqWkBcoDNbdIj4ya
+folder: null
+sort: 13000000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!oqWkBcoDNbdIj4ya'

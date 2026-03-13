@@ -1,0 +1,40 @@
+name: Trasformista - Imitare abilità
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno aggiungere una
+    abilit&agrave; di una qualsiasi classe che non abbia<br>sfere conosciute,
+    alle sue abilit&agrave; e utilizzarla come se diventasse una sua
+    abilit&agrave; di classe. Usare questo potere &egrave; una mossa potere. Non
+    &egrave; possibile selezionare questa abilit&agrave; con
+    l&rsquo;abilit&agrave; aggiuntiva &ldquo;Capacit&agrave; extra&rdquo;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5534265f22f4b59a0a8a91cd70a018761ee13c2d
+    sourceId: Item.qFzhJiGwdRg0GEd7
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681046470608
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.qFzhJiGwdRg0GEd7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 19100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 6KzRn5QpXktj9but
+_key: '!items!6KzRn5QpXktj9but'

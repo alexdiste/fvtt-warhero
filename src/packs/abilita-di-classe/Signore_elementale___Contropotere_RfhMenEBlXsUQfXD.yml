@@ -1,0 +1,37 @@
+name: Signore elementale - Contropotere
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio ha l&rsquo;abilit&agrave;
+    aggiuntiva&nbsp;@Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro
+    potere}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5030bc93afd577bc546563e7d92fe8e72971ee92
+    sourceId: Item.Sn3Lg8EZomd06xwI
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681056288111
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.B5dTLpoAa5HZjedT
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 20900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: RfhMenEBlXsUQfXD
+_key: '!items!RfhMenEBlXsUQfXD'

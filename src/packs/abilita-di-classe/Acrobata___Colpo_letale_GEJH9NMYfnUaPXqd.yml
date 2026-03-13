@@ -1,0 +1,36 @@
+name: Acrobata - Colpo letale
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>quando il personaggio esegue un attacco di&nbsp;opportunit&agrave;
+    aggiunge il suo valore di IST X 5 al danno inflitto</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+    sourceId: Item.XTPKOsLhfK5kM0iF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: GEJH9NMYfnUaPXqd
+sort: 17800000
+_key: '!items!GEJH9NMYfnUaPXqd'

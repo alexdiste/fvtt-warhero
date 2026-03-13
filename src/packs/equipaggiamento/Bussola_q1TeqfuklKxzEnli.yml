@@ -1,0 +1,39 @@
+name: Bussola
+type: equipment
+img: icons/tools/navigation/compass-brass-blue-red.webp
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: unknown
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una bussola</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 530b708de15cdcca62600f78145a6d675ab8416e
+    sourceId: Item.SqWJUXefAbnxt4Hs
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680937301536
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.SqWJUXefAbnxt4Hs
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 39700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: q1TeqfuklKxzEnli
+_key: '!items!q1TeqfuklKxzEnli'

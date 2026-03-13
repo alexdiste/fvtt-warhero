@@ -1,0 +1,47 @@
+name: Disarmare
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Se il tuo Txc ha avuto successo, puoi scegliere di non infliggere alcun
+    danno all'avversario e tentare piuttosto di disarmarlo. In tal caso,
+    entrambi i personaggi devono lanciare 1d20, a cui si aggiungono i rispettivi
+    valori di IST ed eventuali bonus. Se il punteggio ottenuto dall'attaccante
+    supera quello del difensore, quest'ultimo perde una delle armi che
+    impugnava. Per ogni 5 punti di differenza tra il tiro dell'attaccante e
+    quello del difensore, l'arma cade a 2 ulteriori metri di distanza</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: b7da5e4027cf6269182a662d7cbb9ff93db17cfa
+    sourceId: Compendium.world.temp.84madGzrA0fmF7Dt
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553320
+  modifiedTime: 1743437709763
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.84madGzrA0fmF7Dt
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Z0q9dBh2oq9dNFtz
+_key: '!items!Z0q9dBh2oq9dNFtz'

@@ -1,0 +1,29 @@
+name: Language (druidico)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dai druidi.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 497abb5d097a9d60fc026e65cbac091b07fa7874
+    sourceId: Item.qmjsZlR0gBv6frxU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613679
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.6XwCbtatjbOHy4KL
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: C2mFGpbhbUXzEDnZ
+_key: '!items!C2mFGpbhbUXzEDnZ'

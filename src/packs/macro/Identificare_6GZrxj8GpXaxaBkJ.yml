@@ -1,0 +1,96 @@
+name: Identificare
+type: script
+command: |-
+  if (!token) {
+      ChatMessage.create({
+          content: "Devi selezionare un token per poter usare questa macro"
+      });
+  } else {
+      // 1. Controllo Abilità
+      const actor = token.actor;
+      const hasIdentificare = !!actor.items.getName("Conoscenze - III Identificare");
+      const hasSapiente = !!actor.items.getName("Sapiente");
+
+      if (!hasIdentificare) {
+          return ChatMessage.create({ content: `${actor.name} non ha il potere identificare` });
+      }
+
+      // 2. Definizione costi e limiti
+      const manaBase = hasSapiente ? 0 : 3;
+      const manaAttuale = actor.system.attributes.mana.value;
+
+      if (manaAttuale < manaBase) {
+          return ChatMessage.create({ content: `${actor.name} non ha abbastanza mana (${manaBase}) per identificare.` });
+      }
+
+      // 3. Calcolo mana massimo spendibile (limite fisso a 3 o mana residuo)
+      const manaResiduoDopoBase = manaAttuale - manaBase;
+      const manaAggiuntivoMax = Math.min(manaResiduoDopoBase, 3);
+
+      // 4. Costruzione Dialogo
+      let options = `<option value="cancel">Annulla operazione</option>`;
+      for (let i = 0; i <= manaAggiuntivoMax; i++) {
+          options += `<option value="${i}">${i}</option>`;
+      }
+
+      const content = `
+          <p>Costo base: <b>${manaBase}</b> | Mana attuale: <b>${manaAttuale}</b></p>
+          <form>
+              <div class="form-group">
+                  <label>Mana aggiuntivo da spendere:</label>
+                  <div class="form-fields">
+                      <select id="mana-select" autofocus>${options}</select>
+                  </div>
+              </div>
+          </form>`;
+
+      const dialogResult = await Dialog.prompt({
+          title: "Identificare: Spesa Mana",
+          content: content,
+          label: "Conferma",
+          callback: (html) => html.find('#mana-select').val(),
+          rejectClose: false
+      });
+
+      // 5. Gestione Risultato e Aggiornamento
+      if (dialogResult === "cancel" || dialogResult === null) return;
+
+      const manaAggiuntivo = Number(dialogResult);
+      const manaTotaleDaScalare = manaBase + manaAggiuntivo;
+      const oggettiIdentificati = 1 + manaAggiuntivo;
+
+      // Esecuzione aggiornamento
+      await actor.update({ "system.attributes.mana.value": manaAttuale - manaTotaleDaScalare });
+
+      // Messaggio finale
+      ChatMessage.create({
+          content: `
+              <div class="dice-roll">
+                  <b>${actor.name}</b> usa Identificare<br>
+                  <hr>
+                  Spesa totale: ${manaTotaleDaScalare} Mana<br>
+                  Oggetti identificati: <b>${oggettiIdentificati}</b>
+              </div>`
+      });
+  }
+img: icons/svg/daze.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: UkCboSKvvs6LBGd4
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1770619770119
+  modifiedTime: 1770619771578
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 2
+  guOwSDi78TuzUGFU: 3
+_id: 6GZrxj8GpXaxaBkJ
+sort: 162500
+_key: '!macros!6GZrxj8GpXaxaBkJ'

@@ -1,0 +1,45 @@
+name: Pozione di aiuto
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 20
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '10'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 20 Mo</p>
+
+    <p>si ottiene un bonus di +2 al prossimo TxC [[/r 1d20+2 #Tiro per colpire
+    con aiuto]]. Mettere
+    @Compendium[fvtt-warhero.condizione.pA3yVEq1VSr5krMT]{Aiuto} nella
+    scheda</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 4a68874f92009bdb69adf8f1e596566f49e04de2
+    sourceId: Item.KKmBDXrldNbrv43T
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681229154538
+  modifiedTime: 1703656629147
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.8Fm9d56CVtthgQld
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: T1hgKVJ4kmKmTnzN
+_key: '!items!T1hgKVJ4kmKmTnzN'

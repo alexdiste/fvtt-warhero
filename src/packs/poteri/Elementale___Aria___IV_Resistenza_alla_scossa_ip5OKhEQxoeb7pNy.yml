@@ -1,0 +1,28 @@
+name: Elementale - Aria - IV Resistenza alla scossa
+type: power
+system:
+  level: 4
+  magicschool: Elementale - Aria
+  description: >-
+    il bersaglio riduce per il prossimo scontro tutti i danni subiti di tipo
+    scossa di 20
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904833
+  modifiedTime: 1743439294790
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ip5OKhEQxoeb7pNy
+folder: null
+sort: 10500000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!ip5OKhEQxoeb7pNy'

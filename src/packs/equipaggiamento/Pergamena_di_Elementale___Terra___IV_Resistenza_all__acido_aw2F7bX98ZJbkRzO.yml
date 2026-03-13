@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Terra - IV Resistenza all' acido
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.jSH5a5NALT6v8E6H]{Elementale -
+    Terra - IV Resistenza all' acido} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a1c0a17616e2cd37976f8a7e5d6bf327d77b9452
+    sourceId: Item.bYhlrb65BF8XbURp
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444313
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: aw2F7bX98ZJbkRzO
+sort: 32700000
+_key: '!items!aw2F7bX98ZJbkRzO'

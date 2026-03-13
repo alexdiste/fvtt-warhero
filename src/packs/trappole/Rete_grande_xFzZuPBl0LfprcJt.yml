@@ -1,0 +1,43 @@
+name: Rete grande
+type: trap
+img: icons/tools/fishing/net-gold.webp
+system:
+  cost: 0
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  dcfind: 12
+  dcdisable: 16
+  throwtohit: '3'
+  damageroll: '0'
+  description: >-
+    <p>Attacco +3 Salvataggio CD 14 IST per&nbsp;negare o rimanere impigliati
+    nella rete per 3 round [12] (16) [[/r 1d20+3 #tiro per colpire freccia]]
+    [[/r 2d6 #danni di una freccia]]&nbsp;</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 39d2f5dc36ecb44511e94ce48ee5bb23603fc1ac
+    sourceId: Item.zRgQdzby9ugSdxiN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702203411313
+  modifiedTime: 1702204326329
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: xFzZuPBl0LfprcJt
+sort: 100000
+_key: '!items!xFzZuPBl0LfprcJt'

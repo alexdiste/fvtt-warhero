@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Equilibrio - III Retaggio
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.on4EicWu0uubdb5o]{Indole -
+    Equilibrio - III Retaggio} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 926585650cb78b54c909ac84a30b53ce71b2d1ad
+    sourceId: Item.mYsqX9nDq4cU0m1c
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830443
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: pSwf0v1j2dY3Qdz1
+sort: 5700000
+_key: '!items!pSwf0v1j2dY3Qdz1'

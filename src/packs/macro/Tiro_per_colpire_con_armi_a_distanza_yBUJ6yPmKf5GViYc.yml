@@ -1,0 +1,90 @@
+name: Tiro per colpire con armi a distanza
+type: script
+command: |-
+  if (!token) {
+      ChatMessage.create({
+          content: "Devi selezionare un token per poter fare il tiro per colpire a distanza"
+      });
+  } else {
+      const txcr = token.actor.system.attributes.txcr.value;
+      const formula = `1d20 + ${txcr}`;
+      
+      let r = new Roll(formula);
+      await r.evaluate();
+      
+      const d20 = r.terms[0].total; // Prende il valore del dado senza calcoli di stringhe
+      const totale = r.total;
+      let haBersagli = false;
+
+      // Funzione interna per generare il contenuto HTML in modo dinamico
+      const generaContenuto = (nomeTarget = "", difesa = null) => {
+          let notaCritico = "";
+          let esitoTesto = "";
+          let classeColore = "";
+
+          if (d20 === 1) {
+              notaCritico = " (Fallimento critico)";
+              classeColore = "crit-failure";
+              esitoTesto = nomeTarget ? `${nomeTarget} mancato` : "";
+          } else if (d20 === 20) {
+              notaCritico = " (Successo critico)";
+              classeColore = "crit-success";
+              esitoTesto = nomeTarget ? `${nomeTarget} colpito` : "";
+          } else if (difesa !== null) {
+              const colpito = totale > difesa;
+              classeColore = colpito ? "crit-success" : "crit-failure";
+              esitoTesto = `${nomeTarget} ${colpito ? 'colpito' : 'mancato'}`;
+          }
+
+          return `
+              <div>
+                  Tiro per colpire a distanza
+                  <ul>
+                      <li>Formula: ${formula}</li>
+                      <li><span class="${d20 === 1 || d20 === 20 ? classeColore : ''}">Risultato del dado: ${d20}</span></li>
+                      <li><strong>Risultato: ${totale}</strong>${notaCritico}</li>
+                  </ul>
+                  ${esitoTesto ? `<br><span class="${classeColore}">${esitoTesto}</span>` : ""}
+              </div>`;
+      };
+
+      // Ciclo sui bersagli selezionati
+      for (let target of game.user.targets) {
+          haBersagli = true;
+          const difesaBersaglio = target.actor.system.attributes.def.value;
+          
+          ChatMessage.create({
+              user: game.user.id,
+              content: generaContenuto(target.name, difesaBersaglio)
+          });
+      }
+
+      // Se non ci sono bersagli, fa un lancio generico "a vuoto"
+      if (!haBersagli) {
+          ChatMessage.create({
+              user: game.user.id,
+              content: generaContenuto()
+          });
+      }
+  }
+img: systems/fvtt-warhero/images/icons/arrowhead.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: lDtEzIZiRFGEA5jD
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1770619798947
+  modifiedTime: 1770619803041
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 2
+  guOwSDi78TuzUGFU: 3
+_id: yBUJ6yPmKf5GViYc
+sort: 500000
+_key: '!macros!yBUJ6yPmKf5GViYc'

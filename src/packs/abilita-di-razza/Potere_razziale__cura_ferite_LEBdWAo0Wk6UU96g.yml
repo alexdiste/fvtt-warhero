@@ -1,0 +1,36 @@
+name: 'Potere razziale: cura ferite'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>I mezzi angeli&nbsp; a livello 1,5 e 7 prendono un utilizzo di
+    @Compendium[world.poteri.sqqxalQvLW3iSebG]{Guarigione - I Cura ferite}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: bb128c295b688af08f6b3bb6965266c6aaa96be7
+    sourceId: Item.gXN7X0v5Z3nMHfSj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680936127902
+  modifiedTime: 1743437123513
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.ALTiWTCLy0aPFDmN
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: LEBdWAo0Wk6UU96g
+_key: '!items!LEBdWAo0Wk6UU96g'

@@ -1,0 +1,86 @@
+name: Samurai - Stendardo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>un samurai pu&ograve; trasportare uno stendardo che pu&ograve; legare
+    dietro la schiena e infondere il suo spirito in questo, questo stendardo
+    ottiene cos&igrave; un numero di cariche spirito pari a 3 + MEN<br>al
+    giorno. Il personaggio pu&ograve; spendere queste cariche per ottenere i
+    seguenti bonus:</p>
+
+    <ul>
+
+    <li>Il personaggio e gli alleati entro 9 metri possono sommare la MEN del
+    personaggio quando effettuano un TS, fino alla fine dello scontro (1
+    Carica)</li>
+
+    <li>Il personaggio e gli alleati entro 9 metri,fino alla fine dello scontro
+    possono ritirare un TS appena fallito, si considera valido sempre il secondo
+    risultato (2 cariche)</li>
+
+    <li>&nbsp;Il personaggio e gli alleati entro 9 metri,fino alla fine dello
+    scontro ottengono +2 al TxC (2 cariche).</li>
+
+    <li>Il personaggio e gli alleati entro 9 metri,fino alla fine dello scontro
+    ottengono +2 al danno (1 carica)</li>
+
+    <li>&nbsp;Gli alleati entro 9 metri dal personaggio,fino alla fine dello
+    scontro ottengono +3 alle prove di contropotere (2 cariche)</li>
+
+    <li>Il personaggio e gli alleati entro 9 metri, fino alla fine dello scontro
+    ottengono +1 al alla difesa se usano la mossa difensiva (1 carica)</li>
+
+    <li>&nbsp;Il personaggio e gli alleati entro 9 metri, fino alla fine dello
+    scontro ottengono +2 al tiro per&nbsp; disarmare (1 carica)</li>
+
+    <li>Il personaggio e gli alleati entro 9 metri,fino alla fine dello scontro
+    ottengono +2 al tiro per buttare a terra (1 carica)</li>
+
+    <li>Il personaggio e gli alleati entro 9 metri,fino alla fine dello scontro
+    ottengono l'abilit&agrave; sfere conosciute, se non avevano gi&agrave;
+    l'abilit&agrave; e possono aggiungere alla lista delle sfere conosciute una
+    sfera a scelta del personaggio fra le seguenti: Bene, Equilibrio, Legge e
+    Protezione (3 cariche)</li>
+
+    <li>I nemici entro 9 metri dal personaggio,fino alla fine dello scontro
+    ottengono -2 al TxC (2 cariche)</li>
+
+    <li>I nemici entro 9 metri dal personaggio,fino alla fine dello scontro
+    ottengono -2 al Danno (1 carica)</li>
+
+    <li>I nemici entro 9 metri dal personaggio, fino alla fine dello scontro
+    ogni volta che curano o infliggono del danno,devono ritirare i dadi se il
+    valore del dato &egrave; la faccia massima ottenibile, si prende per valido
+    il secondo risultato (2 carica)</li>
+
+    </ul>
+effects: []
+flags:
+  scene-packer:
+    hash: bd96aeb75fdcbf7ee827d711f8cb00b33a62e1d4
+    sourceId: Item.Yl2BXkuKleprXvPu
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.UmIWgIdmu0hreCkS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 20400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: JFCGcigxjk7LzCuK
+_key: '!items!JFCGcigxjk7LzCuK'

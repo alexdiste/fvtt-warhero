@@ -1,0 +1,36 @@
+name: Allevatore - Percezione univoca
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; vedere e sentire attraverso i suoi famigli come
+    se fossero i suoi occhi e le sue<br>orecchie</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: b6ecd323af70cfd4f99c1017073212575f8bad52
+    sourceId: Item.3vmQ4bM2QnVEHIRg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704471123381
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: bEGIomt4sr8OFrbg
+sort: 6600000
+_key: '!items!bEGIomt4sr8OFrbg'

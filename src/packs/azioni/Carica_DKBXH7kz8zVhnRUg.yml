@@ -1,0 +1,45 @@
+name: Carica
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Puoi spendere tutte le mosse disponibili nel tuo turno (purch&egrave; te
+    ne siano rimaste almeno due), per effettuare una carica. Essa consiste in un
+    movimento in linea retta verso un bersaglio, seguito da un attacco in
+    mischia. Effettuare una carica conferisce un bonus di +3 al TxC e un malus
+    di - 2 alla DIF per l'intera durata del round</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: c7e47e2dac332cc520a3067fd5982c7a816dd125
+    sourceId: Compendium.world.temp.br5lYrfjnaEadJ70
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553304
+  modifiedTime: 1743437709747
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.br5lYrfjnaEadJ70
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: DKBXH7kz8zVhnRUg
+_key: '!items!DKBXH7kz8zVhnRUg'

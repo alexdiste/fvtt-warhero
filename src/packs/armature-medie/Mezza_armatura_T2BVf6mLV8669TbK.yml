@@ -1,0 +1,41 @@
+name: Mezza armatura
+type: armor
+img: icons/equipment/chest/breastplate-gorget-steel-purple.webp
+system:
+  armortype: medium
+  equipped: false
+  damagereduction: 4
+  cost: 700
+  quantity: 1
+  slotused: 1
+  slotlocation: armor
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un giaco di maglie. RD: [[/r 4 #Riduzione danno
+    armatura media]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e0643a502c1546eb32c8c29b9474e055ffbe1c30
+    sourceId: Item.kORt2B78Vj2lDy3f
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1676718537355
+  modifiedTime: 1698851436835
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.M22t2aA6Ls0YVzUe
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: T2BVf6mLV8669TbK
+_key: '!items!T2BVf6mLV8669TbK'

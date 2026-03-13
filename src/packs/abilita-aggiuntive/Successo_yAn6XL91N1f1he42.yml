@@ -1,0 +1,32 @@
+name: Successo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>Beneficio: ottieni un bonus del 5% quando devi tirare un d100 per una
+    percentuale.</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772775165024
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: yAn6XL91N1f1he42
+sort: 500000
+_key: '!items!yAn6XL91N1f1he42'

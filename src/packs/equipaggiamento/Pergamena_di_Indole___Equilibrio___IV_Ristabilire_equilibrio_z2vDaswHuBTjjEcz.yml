@@ -1,0 +1,42 @@
+name: Pergamena di Indole - Equilibrio - IV Ristabilire equilibrio
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.4uxhEUuNFuDjlnr6]{Indole -
+    Equilibrio - IV Ristabilire equilibrio} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 354f40525d1f79acafc2256bc53dd37025812717
+    sourceId: Item.ONyHBDdbUUX4Lxtx
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913446994
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: z2vDaswHuBTjjEcz
+sort: 30000000
+_key: '!items!z2vDaswHuBTjjEcz'

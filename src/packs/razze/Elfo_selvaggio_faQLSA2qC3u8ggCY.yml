@@ -1,0 +1,68 @@
+name: Elfo selvaggio
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Sono Elfi che hanno abbandonato sin da giovani le conoscenze magiche
+    per avvicinarsi alla caccia.</em></p>
+
+    <ul>
+
+    <li>Punti Ferita = Alto (+6 pf per livello)</li>
+
+    <li>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.9mGDGpTSxltICZiS]{Language (silvano)}</li>
+
+    <li>Livello 1 =
+    @Compendium[fvtt-warhero.competenze.Io6WasxTGp3DtT87]{Competenza armi: Da
+    tiro}</li>
+
+    <li>Livello 1,4,8 = +1 FIS o +1 MEN</li>
+
+    <li>Livello 3,6,9 = +1 TxC e +1 Danni</li>
+
+    </ul>
+  hpprogresion: high
+  languages: comune, silvano
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+effects: []
+flags:
+  scene-packer:
+    hash: 5bf5a26f5c5ec651d09924805282f665883fd222
+    sourceId: Item.n9Gf79HWcBj6v3kV
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681051818934
+  modifiedTime: 1743439649080
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.n9Gf79HWcBj6v3kV
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: faQLSA2qC3u8ggCY
+_key: '!items!faQLSA2qC3u8ggCY'

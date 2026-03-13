@@ -1,0 +1,42 @@
+name: Bacchetta magica di Vegetale - IV Rampicanti
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.gJGGSLgSqnJ8f7NZ]{Vegetale - IV
+    Rampicanti} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ec2ce19907d97fe20b4b04dfa99faa9837e71025
+    sourceId: Item.ZcjYK6m1Et5PBr1p
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833906
+  modifiedTime: 1704614618921
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: mg3ptpioRDdNE5Kc
+sort: 0
+_key: '!items!mg3ptpioRDdNE5Kc'

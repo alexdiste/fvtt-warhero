@@ -1,0 +1,42 @@
+name: Pergamena di Oscurità - IV Vera invisibilità
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.gVLEpQCmNRI1d9lo]{Oscurità - IV
+    Vera invisibilità} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 59a8648e806f952efdc3afc941f8e26a7c5a14d7
+    sourceId: Item.Z0GTj4jdRPbjHeg6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913449356
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ORAIuZX6EG7iRvKq
+sort: 26100000
+_key: '!items!ORAIuZX6EG7iRvKq'

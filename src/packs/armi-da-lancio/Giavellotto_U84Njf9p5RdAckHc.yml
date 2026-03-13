@@ -1,0 +1,42 @@
+name: Giavellotto
+type: weapon
+img: icons/weapons/polearms/javelin-flared.webp
+system:
+  weapontype: throwing
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 4
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un giavellotto da lancio [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 375dc2eefb0f1c4db14c06fc04f69acd5b24c125
+    sourceId: Item.fXTtHUQn70OzZarT
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1680934134544
+  modifiedTime: 1681650407475
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tkY3GX4TvvHvnVhv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: U84Njf9p5RdAckHc
+_key: '!items!U84Njf9p5RdAckHc'

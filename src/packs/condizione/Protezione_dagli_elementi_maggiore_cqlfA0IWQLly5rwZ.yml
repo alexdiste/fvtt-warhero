@@ -1,0 +1,40 @@
+name: Protezione dagli elementi maggiore
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: riduce i danni da un elemento di 5
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>riduce i danni di un elemento di 5 per l'intera giornata. Scrivere
+    elemento</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7fd9cf80a4cf31c62f34615b7ee51e8b40bc4704
+    sourceId: Item.9SnbjOh6vtUVJmV9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698854899298
+  modifiedTime: 1743437151494
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: cqlfA0IWQLly5rwZ
+sort: 4100000
+_key: '!items!cqlfA0IWQLly5rwZ'

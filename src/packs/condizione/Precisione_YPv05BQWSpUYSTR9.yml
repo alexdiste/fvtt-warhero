@@ -1,0 +1,38 @@
+name: Precisione
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +3 a colpire
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>+3 a colpire</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e86c408e78f2aa434e458ad0c5732cb83213522c
+    sourceId: Item.IyYw3LanKKgA7xZK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705857333190
+  modifiedTime: 1743437151403
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: YPv05BQWSpUYSTR9
+sort: 0
+_key: '!items!YPv05BQWSpUYSTR9'

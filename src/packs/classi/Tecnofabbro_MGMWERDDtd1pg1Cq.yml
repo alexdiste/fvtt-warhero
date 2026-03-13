@@ -1,0 +1,59 @@
+name: Tecnofabbro
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: false
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Forgiatore di oggetti magici.</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.49ttVjJOjFIVd2jO]{Tecnofabbro
+    - Forgiare golem}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.VJ43z0WpxxsJ1jhV]{Tecnofabbro
+    - Forgiatore}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.t7RPybrao6puLDGw]{Tecnofabbro
+    - Forgiatura magica}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Y4O8vMEw6IdNjJjf]{Tecnofabbro
+    - Riparare golem}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 73456d5e740433d44e8ca907493535270ab8c3f4
+    sourceId: Item.XIfstxM63gciGLaq
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704098764765
+  modifiedTime: 1743436999966
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: MGMWERDDtd1pg1Cq
+sort: 0
+_key: '!items!MGMWERDDtd1pg1Cq'

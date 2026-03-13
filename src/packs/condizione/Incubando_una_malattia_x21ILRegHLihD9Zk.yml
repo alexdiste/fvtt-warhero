@@ -1,0 +1,38 @@
+name: Incubando una malattia
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Stai incubando una malattia
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Sei nel periodo di tempo di incubazione di una malattia</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 71db749ea552cb123ea816c1d77868a5daf7a3ed
+    sourceId: Item.7AslSxkEzOE0CkHr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702205128837
+  modifiedTime: 1743437151715
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: x21ILRegHLihD9Zk
+sort: 700000
+_key: '!items!x21ILRegHLihD9Zk'

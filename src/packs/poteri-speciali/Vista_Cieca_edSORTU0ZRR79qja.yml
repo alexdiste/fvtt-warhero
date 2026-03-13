@@ -1,0 +1,38 @@
+name: Vista Cieca
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Vista Cieca &egrave; l&rsquo;abilit&agrave; di usare un senso non visivo
+    per poter operare efficientemente senza la vista, rendendo
+    l&rsquo;invisibilit&agrave; e il camuffamento irrilevante alla creatura con
+    questa abilit&agrave;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: f57c1e5db57d114fef4b0cc1870651b932ce2f4e
+    sourceId: Item.VweNQKJ9g2v1K3FK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.HKoxeCXqiwLIyOX7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: edSORTU0ZRR79qja
+_key: '!items!edSORTU0ZRR79qja'

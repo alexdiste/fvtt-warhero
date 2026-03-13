@@ -1,0 +1,56 @@
+name: 13.Guarigione
+type: power
+img: systems/fvtt-warhero/images/icons/magic/guarigione.webp
+system:
+  level: 0
+  magicschool: Guarigione
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.sqqxalQvLW3iSebG]{Guarigione -
+    I Cura ferite}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.yYPcGqpad7uxCLlo]{Guarigione -
+    II Rimuovi status}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4]{Guarigione -
+    III Resurrezione}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.zbZ8urPD9fwpHNeR]{Guarigione -
+    IV Alito di vita}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.2xzmVKeu7aXWCTRD]{Guarigione -
+    IV Cura di massa}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: b14ff5f9714472a0ac7d06f0bdf63e7aca7af6e6
+    sourceId: Compendium.world.temp.OPWcSP4Jkt2fEQhD
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552526
+  modifiedTime: 1698850986876
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.OPWcSP4Jkt2fEQhD
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ixnLA206NExE259s
+_key: '!items!ixnLA206NExE259s'

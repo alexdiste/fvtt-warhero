@@ -1,0 +1,69 @@
+name: Ladro
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: false
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p data-pm-slice="1 1 []">il ladro &egrave; un combattente esperto nel
+    colpire alle spalle con sotterfugio.</p>
+
+    <p data-pm-slice="1 1 []">Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vFGr2GMRUbw1I8Fl]{Ladro
+    - Abile nell&rsquo;uso delle due armi}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.NAgtxlcDJ6Wk9gMo]{Ladro
+    - Alle spalle}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.5PFaaH1FFAutnl4Z]{Ladro
+    - Evadere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Ot2Axsurtz2xo8Q4]{Ladro
+    - Furtivo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yiTyGgGF11Y2uNFF]{Ladro
+    - Raggirare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hRPwgzWqJyhPA40q]{Ladro
+    - Restrizione allineamento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hLr2mCZ0Kujxd619]{Ladro
+    - Trappole}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 05e29b299d13f3a9f86682c784b02098d1d2b976
+    sourceId: Item.rP3IqeDnfMBR2x5s
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545801944
+  modifiedTime: 1743437000028
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: tYXVBUbnY22kOAPq
+sort: 400000
+_key: '!items!tYXVBUbnY22kOAPq'

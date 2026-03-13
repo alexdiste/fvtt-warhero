@@ -1,0 +1,29 @@
+name: Language (draconico)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dai draconidi.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 286992fecdc2338df0fc3483db632808a62b5861
+    sourceId: Item.HUtCkdrOXNGDhCoC
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613655
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.6XwCbtatjbOHy4KL
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 0riqDnmq93mM4erW
+_key: '!items!0riqDnmq93mM4erW'

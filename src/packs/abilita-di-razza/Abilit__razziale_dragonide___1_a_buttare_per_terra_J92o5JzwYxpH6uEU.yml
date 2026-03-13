@@ -1,0 +1,37 @@
+name: 'Abilità razziale dragonide: +1 a buttare per terra'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Dare la condizione
+    @UUID[Compendium.fvtt-warhero.condizione.Item.HVGwSwrktumW1drK]{Bonus
+    razziale dragonide: +1 a buttare per terra}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c8068c6b554de495fde2bb386677f8786e3d9af5
+    sourceId: Item.oxCYln3BbCONgubk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705157429922
+  modifiedTime: 1743437123511
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: J92o5JzwYxpH6uEU
+sort: 200000
+_key: '!items!J92o5JzwYxpH6uEU'

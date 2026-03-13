@@ -1,0 +1,327 @@
+name: Aquila (famiglio)
+type: character
+items: []
+img: systems/dnd5e/tokens/beast/Eagle.webp
+system:
+  biodata:
+    class: ''
+    age: 0
+    size: small
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: >-
+      <p>Un famiglio fornisce un Bonus di +1 a una delle statistiche FIS, IST o
+      MEN in maniera permanente a scelta del giocatore, &egrave; possibile una
+      volta al giorno cambiare il proprio famiglio e cambiare anche la
+      statistica che ottiene ilbonus, proprio come si farebbe con un compagno
+      animale,l'animale in questione non deve per&ograve; fare nessun tiro su
+      MENse non &egrave; un famiglio intelligente come pu&ograve; essere un
+      piccolodraghetto, in quel caso &egrave; necessario che la creatura
+      fallisca untiro su MEN, CD 15 per diventare il famiglio. Il famiglio
+      &egrave;sempre con il padrone e per ucciderlo deve essere preso dimira
+      volontariamente, cio&egrave; non subisce gli effetti di poteri adarea. Le
+      statistiche del famiglio sono fornite dal master, al proprio famiglio ad
+      ogni turno &egrave; possibile dare uno deiseguenti comandi come mossa di
+      azione.● Muovi: si muove della sua velocit&agrave;.● Fermo: Il famiglio
+      sta fermo nel luogo indicato</p>
+
+      <p>Di norma l'animale deve essere entro 30 metri dal padroneper ricevere
+      ordini, In casi normali il famiglio deve poter stare addosso al padrone.
+      Il famiglio ha punti ferita pari a 5+(FIS*5 se positivo), e Difesa 14 +
+      IST</p>
+
+      <p>Un famiglio non viene mai contato ma si considera insieme alsuo padrone
+      per quanto riguarda il Teletrasporto della sfera di Viaggio</p>
+    gmnotes: ''
+  subactors: []
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 5
+      value: 5
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 0
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 12
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 3
+      value: 3
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Aquila (famiglio)
+  displayName: 0
+  actorLink: true
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: systems/dnd5e/tokens/beast/Eagle.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+    tint: '#ffffff'
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    alphaThreshold: 0.75
+  width: 0.5
+  height: 0.5
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+    color: null
+    negative: false
+    priority: 0
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+    color: null
+  detectionModes: []
+  flags:
+    monks-tokenbar:
+      include: default
+    tagger: {}
+    wall-height:
+      tokenHeight: 0
+    core: {}
+  randomImg: false
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+effects: []
+folder: gyxgaCAuRTwEb3No
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+  lXFgtDDsvLskIOGw: 3
+flags:
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.20'
+  createdTime: 1759987904846
+  modifiedTime: 1759988043573
+  lastModifiedBy: lXFgtDDsvLskIOGw
+_id: bwP2lDjXTeRpXkn1
+sort: 400000
+_key: '!actors!bwP2lDjXTeRpXkn1'

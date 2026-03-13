@@ -1,0 +1,40 @@
+name: Carica (+3 a Tpc)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +3 a tpc
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Effettuare una carica conferisce un bonus di +3 al TxC e un malus di - 2
+    alla DIF per l'intera durata del round</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: af217917e1f42ac8c0f3b0f2035b828d79705e9a
+    sourceId: Item.selzQ4jtxTDIhkM6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1699111530303
+  modifiedTime: 1743437151067
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Jfrg74PozOadylZB
+sort: 2400000
+_key: '!items!Jfrg74PozOadylZB'

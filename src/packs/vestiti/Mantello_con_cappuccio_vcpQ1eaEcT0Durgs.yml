@@ -1,0 +1,39 @@
+name: Mantello con cappuccio
+type: equipment
+img: icons/equipment/back/cloak-hooeded-blue.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: cloak
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Mantello con cappuccio</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e8a0c6577b7df56efea4421811a43cbe6217a4c4
+    sourceId: Item.xjL9ld3AmIW7mYBd
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1704101127575
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: vcpQ1eaEcT0Durgs
+sort: 800000
+_key: '!items!vcpQ1eaEcT0Durgs'

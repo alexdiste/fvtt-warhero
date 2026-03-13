@@ -1,0 +1,27 @@
+name: Danni di un arma a due mani con specialista nel danno
+type: chat
+command: >-
+  /r 3d6+floor(@statistics.str.value*1.5)+@secondary.meleedamagebonus.value+3
+  #danni di un arma a due mani con specializzato nel danno in un arma
+img: systems/fvtt-warhero/images/icons/pointy-sword.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: oNMEWyriQbTiY8pm
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1770619701824
+  modifiedTime: 1770619704574
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  pd710vhPxk57vCQF: 2
+  guOwSDi78TuzUGFU: 3
+_id: 8Za5NNaqbL3Nk2mo
+sort: 50000
+_key: '!macros!8Za5NNaqbL3Nk2mo'

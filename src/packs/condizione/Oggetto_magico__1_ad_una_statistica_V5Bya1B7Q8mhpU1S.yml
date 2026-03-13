@@ -1,0 +1,38 @@
+name: Oggetto magico +1 ad una statistica
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +1 ad una statistica
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Hai un oggetto magico che ti da un +1 ad una statistica</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 6eba0ccf86e5e4181367ba0840a437eb265cb1a2
+    sourceId: Item.8UD8ZJijIaKRf6FO
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702060962597
+  modifiedTime: 1743437151309
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: V5Bya1B7Q8mhpU1S
+sort: 900000
+_key: '!items!V5Bya1B7Q8mhpU1S'

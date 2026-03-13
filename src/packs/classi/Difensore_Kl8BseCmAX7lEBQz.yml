@@ -1,0 +1,68 @@
+name: Difensore
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: true
+  issecondary: false
+  description: >-
+    <p data-pm-slice="1 1 []">Il difensore &egrave; un combattente specializzato
+    nella difesa.</p>
+
+    <p data-pm-slice="1 1 []">Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.euE43vvLqsCCA79h]{Difensore
+    - Armatura}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FpuJWeUYgpAvtC0B]{Difensore
+    - Bersaglio}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.YDrgStGqWWfkyxO8]{Difensore
+    - Blocco}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.kSwWL07bNYqkZuMa]{Difensore
+    - Carapace}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.PbGUDT9HRZubx5YS]{Difensore
+    - Difesa su altri}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7ff71cad4884c764c1d007a72b7cdce3bd4a6937
+    sourceId: Item.whLEMxKDdzrs0ew7
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704098796846
+  modifiedTime: 1743436999963
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Kl8BseCmAX7lEBQz
+sort: 0
+_key: '!items!Kl8BseCmAX7lEBQz'

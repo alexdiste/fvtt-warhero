@@ -1,0 +1,41 @@
+name: Borsa conservante
+type: equipment
+img: icons/containers/bags/satchel-worn-leather-red.webp
+system:
+  equiptype: ''
+  cost: 12000
+  quantity: 1
+  equipped: false
+  slotused: 0
+  slotlocation: backpack
+  providedslot: 30
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una borsa che contiene 30 slot per oggetti invece
+    degli slot standard per una borsa</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 797b34357955794eea5c0e7868871d4d2062bcf7
+    sourceId: Item.JGuD7RUYieHm5ySh
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718625949
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: RabJ5pW6P3KwaRDk
+sort: 20600000
+_key: '!items!RabJ5pW6P3KwaRDk'

@@ -1,0 +1,43 @@
+name: Furtivo
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: null
+  durationunit: ''
+  shortdescription: Il pg è nascosto (furtivo)
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio pu&ograve;, fuori da un
+    combattimento, cercare di nascondersi lanciando 1d10 e ottenendo un
+    risultato di 4+, mentre in combattimento con un risultato di 7+. Per
+    nascondersi &egrave; necessario avere un riparo o qualcosa che nasconda la
+    propria figura. Questa mossa si considera un movimento</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c6456fa1da1f6febdfb2796950f044418745a157
+    sourceId: Item.kaCyVdL1bAJot6K3
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680935549648
+  modifiedTime: 1743437151241
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FSdOwIhTazaVMT3Y
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 6000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: SDjP4ihIpDKDlRBx
+_key: '!items!SDjP4ihIpDKDlRBx'

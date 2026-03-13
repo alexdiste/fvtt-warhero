@@ -1,0 +1,30 @@
+name: Ammaliamento - I Sonno
+type: power
+system:
+  level: 1
+  magicschool: Ammaliamento
+  description: >-
+    <p>la creatura si addormenta e non si sveglia finch&eacute; non riceve un
+    danno normale o stordente o trascorrono otto ore. [[/r
+    1d20+@statistics.min.value+@statistics.min.save.value #CD13 FIS
+    negare]]&nbsp;CD 13, FIS, negare.</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904793
+  modifiedTime: 1743439294516
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 9KljFSjM3pWaoI73
+folder: null
+sort: 2500000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!9KljFSjM3pWaoI73'

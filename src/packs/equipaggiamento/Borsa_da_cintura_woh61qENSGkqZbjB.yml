@@ -1,0 +1,41 @@
+name: Borsa da cintura
+type: equipment
+img: icons/containers/bags/pack-leather-black-brown.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: belt
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una borsa da cintura. Occupa 1 posto nella cintura
+    ma fornisce 4 slot</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 54548c029b9d2134586f2d18b9f7aee56bffc399
+    sourceId: Item.opB2w263T0dswLth
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718625949
+  modifiedTime: 1705127426452
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.8negcE5wxVkxzKTm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 40100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: woh61qENSGkqZbjB
+_key: '!items!woh61qENSGkqZbjB'

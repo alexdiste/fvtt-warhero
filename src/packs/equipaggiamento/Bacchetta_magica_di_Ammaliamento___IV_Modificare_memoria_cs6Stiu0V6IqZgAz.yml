@@ -1,0 +1,42 @@
+name: Bacchetta magica di Ammaliamento - IV Modificare memoria
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.MJQ0ZobtTdCjduDn]{Ammaliamento -
+    IV Modificare memoria} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: daf9f76d35688fc50da49c0399d583c3a614b210
+    sourceId: Item.5eY6id0Qrq0w0UCi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613827305
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: cs6Stiu0V6IqZgAz
+sort: 14100000
+_key: '!items!cs6Stiu0V6IqZgAz'

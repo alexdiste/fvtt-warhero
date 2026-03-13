@@ -1,0 +1,41 @@
+name: Forziere o scrigno piccolo
+type: equipment
+img: icons/containers/chest/chest-simple-elm-tan.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 2
+  slotlocation: backpack
+  providedslot: 6
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Questo forziere occupa 2 slot nello zaino ma ne
+    pu&ograve; contere 6.&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 28e237fea43deea52fe0174e8c2efe1d9b4197a6
+    sourceId: Item.WBDoiT3mtF1Wjr7t
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681054350432
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: sYArCytzy1Jh62Jg
+sort: 19800000
+_key: '!items!sYArCytzy1Jh62Jg'

@@ -1,0 +1,48 @@
+name: Cavalcare
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Per poter cavalcare una creatura &egrave; necessario che la cavalcatura
+    in questione sia pi&ugrave; grande di colui che intende cavalcare, Quando si
+    cavalca una creatura si usa una mossa azione per far muovere la cavalcatura
+    invece del proprio movimento. Se si prova a combattere in sella &egrave;
+    necessario, prima di fare un TxC in corpo a corpo o se ci si muove e si
+    vuole colpire da distanza, una prova di cavalcare CD IST 15 o essere
+    disarcionati e quindi cadere a terra accanto alla cavalcatura, TS IST CD 15
+    per non cadere per terra ma scendere dalla sella in piedi</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 37a076a6e9bbeb11d36d1547cd6235527d2a4839
+    sourceId: Compendium.world.temp.OLTQWx9n2MsCBEmr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553305
+  modifiedTime: 1743437709772
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.OLTQWx9n2MsCBEmr
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ouHSzXbykYi3qbWT
+_key: '!items!ouHSzXbykYi3qbWT'

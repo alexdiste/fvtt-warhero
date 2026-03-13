@@ -1,0 +1,42 @@
+name: 2xArtigli (forma drago)
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 2d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 412f33d41bd202a2d133f76233df14aea3e0c385
+    sourceId: Item.Dm5U165U9bo3ENrV
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680857418842
+  modifiedTime: 1743436810457
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: zDm6gv3vTBQiP8f2
+sort: 0
+_key: '!items!zDm6gv3vTBQiP8f2'

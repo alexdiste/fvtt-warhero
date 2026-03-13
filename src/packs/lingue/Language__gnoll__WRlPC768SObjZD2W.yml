@@ -1,0 +1,29 @@
+name: Language (gnoll)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dagli gnoll.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 113f52e92446d0b44581a29a7cf08a75895f29dc
+    sourceId: Item.q2UhDUBhAHCmxLFR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613699
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: WRlPC768SObjZD2W
+_key: '!items!WRlPC768SObjZD2W'

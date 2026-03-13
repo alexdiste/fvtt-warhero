@@ -1,0 +1,36 @@
+name: Signore elementale - Conoscenza elementale
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio in fase di creazione ottiene l&rsquo;abilit&agrave;
+    aggiuntiva Conoscenza potere di IV Livello, anche se non ha i requisiti</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 37bfc58ea6ce9759ecb0d1f246363caec16d241d
+    sourceId: Item.B5dTLpoAa5HZjedT
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681056288111
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.B5dTLpoAa5HZjedT
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 18500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 0IEtGx1Er2f382JB
+_key: '!items!0IEtGx1Er2f382JB'

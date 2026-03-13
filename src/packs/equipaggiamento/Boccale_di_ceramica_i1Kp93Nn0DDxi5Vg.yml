@@ -1,0 +1,39 @@
+name: Boccale di ceramica
+type: equipment
+img: icons/containers/kitchenware/mug-stein-grey.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un boccale di ceramica</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e490b24247badaa129fd70e1c3c1f6d065a4b335
+    sourceId: Item.s4sSXQ6kU5JIryKA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680936917951
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.s4sSXQ6kU5JIryKA
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 38900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: i1Kp93Nn0DDxi5Vg
+_key: '!items!i1Kp93Nn0DDxi5Vg'

@@ -1,0 +1,39 @@
+name: Brocca o caraffa di ceramica (1.5 l)
+type: equipment
+img: icons/containers/kitchenware/jug-terracotta-orange.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 105592944c393b566630bf2887b1455a450ae691
+    sourceId: Item.8siX8Gc9qqkXtdhe
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: wdIZDdaqlulKgDEf
+sort: 18700000
+_key: '!items!wdIZDdaqlulKgDEf'

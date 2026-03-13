@@ -1,0 +1,668 @@
+name: Golem di adamantio (golem)
+type: character
+items:
+  - name: Immunità ai poteri
+    type: skill
+    img: systems/fvtt-warhero/images/icons/talenti.webp
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      maxuse: 0
+      description: >-
+        <p>nessun potere &egrave; in grado&nbsp;di fargli danno o
+        potenziarlo</p>
+    effects: []
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    flags:
+      scene-packer:
+        hash: 90f0978491051852afcbd744d9dfa309e38b351e
+        sourceId: Item.TaP5GhAByggvifGN
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1700571024891
+      modifiedTime: 1704868072487
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Compendium.fvtt-warhero.poteri-speciali.Item.s17MMNWw5a7BCIuW
+      duplicateSource: null
+      exportSource: null
+    _id: xM1ezOPMzTcIpzmJ
+    sort: 0
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.xM1ezOPMzTcIpzmJ'
+  - name: 'Competenza armi: A due mani'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/two-handed-sword.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        a due mani. Le armi a due mani infliggono [[/r 3d6 #+1 volta e mezzo il
+        fisico+ bonus ai danni in mischia]] + una volta e mezzo il valore di
+        fisico (arrotondato per difetto) + eventuali bonus per i danni in
+        mischia.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: f91d474d5215fc90e3041be78635a23808f3b1e8
+        sourceId: Item.slQQwi8CS9hfvn3x
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1704868107808
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: Q726zuqB9ojA587N
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.Q726zuqB9ojA587N'
+  - name: 'Competenza armi: Corte'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/bone-knife_1.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        corte. Le armi corte infliggono [[/r 1d6 #+fisico+ bonus ai danni in
+        mischia]] + il valore di fisco + eventuali bonus per i danni in
+        mischia.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 33bcd47e1204ccf8db3dea76cf3dd616047dca67
+        sourceId: Item.KqKt3kKD5rcWoj65
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1704868109456
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: irBdERytlnOeqATf
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.irBdERytlnOeqATf'
+  - name: 'Competenza armi: Da lancio'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/thrown-charcoal.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        da lancio. Le armi da lancio infliggono [[/r 1d8 #+ bonus ai danni a
+        distanza]] + eventuali bonus per i danni a distanza e hanno una gittata
+        massima di 10 metri</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: a8dc3cf4a2ca367d98751f32a65d9348881d37c6
+        sourceId: Item.dUeIbUVs5X3auGE6
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1704868110916
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: E2KDUfop8AOo6jpU
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.E2KDUfop8AOo6jpU'
+  - name: 'Competenza armi: Da tiro'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/bow-arrow.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        da tiro. Le armi da tiro infliggono [[/r 2d6 #+ bonus ai danni a
+        distanza]] + eventuali bonus per i danni a distanza e e hanno una
+        gittata massima di 30 metri</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 138bf89770de14ab2248dae049c59eb2234ba3af
+        sourceId: Item.Bzx9NA8oFva2z0bH
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1704868113034
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: DAjSil28mVeQHZas
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.DAjSil28mVeQHZas'
+  - name: 'Competenza armi: In asta'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/wizard-staff.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        in asta. Le armi in asta possono essere usate sia ad una mano che a due
+        mani. Se usate ad una mano infliggono [[/r 1d6 #+fisico+ bonus ai danni
+        in mischia]] +fisico + eventuali bonus per i danni in mischia.</p>
+
+        <p>Se usate invece a due mani infliggono:</p>
+
+        <p>[[/r 1d8 #+1 volta e mezzo il fisico+ bonus ai danni in mischia]] +
+        una volta e mezzo il valore di fisico (arrotondato per difetto) +
+        eventuali bonus per i danni in mischia.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 39a4524ae7d8bfcc2499e9a9dcbccc2b90d8d10a
+        sourceId: Item.5ESqAhWxcjFMboua
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1704868114440
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: eT3oCbqWDVwuERq1
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.eT3oCbqWDVwuERq1'
+  - name: 'Competenza armi: Lunghe'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/3d-hammer.svg
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+        lunghe. Le armi lunghe infliggono [[/r 1d8 #+fisico+ bonus ai danni in
+        mischia]] + il valore di fisco + eventuali bonus per i danni in
+        mischia.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 894ff0f7caece880d7bffca4ec03122d915393bc
+        sourceId: Item.Eovo0B0eqBzQqsCX
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857153518
+      modifiedTime: 1704868115791
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.KqKt3kKD5rcWoj65
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: tHDyghkMIMfCn7Tm
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.tHDyghkMIMfCn7Tm'
+  - name: 'Competenza Scudi: Leggeri'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/parata.webp
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con gli
+        scudi leggere. Gli scudi leggeri permettono di fare azione di
+        @Compendium[fvtt-warhero.azioni.ZULztptNLupwqB0G]{Parata} con di [[/r
+        1d12+1 #parata con scudo leggero + aggiungere eventuali bonus di parata.
+        Ricordo si pu&oacute; parare solo un attacco per turno. Se ottieni 1
+        &eacute; sempre fallimento automatico, se ottieni 12 sempre successo
+        automatico, altrimenti pari se con questo tiro fai 12 o pi&uacute;]].
+        Ricordo si pu&oacute; parare solo un attacco per turno e che se si
+        ottiene 1 sar&aacute; sempre un fallimento, con 12 di dado invece si
+        parer&aacute; sempre, altimenti bisogna superare 12.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 2e64a20bac21d7dd991b92f85142a6bec1c015fb
+        sourceId: Item.7iIqqBYuocli2fBb
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857901932
+      modifiedTime: 1704868117963
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.7iIqqBYuocli2fBb
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: IX3mt5edPQhYZsXC
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.IX3mt5edPQhYZsXC'
+  - name: 'Competenza Scudi: Pesanti'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/parata.webp
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con gli
+        scudi pesanti. Gli scudi pesanti permettono di fare azione di
+        @Compendium[fvtt-warhero.azioni.ZULztptNLupwqB0G]{parata} con di [[/r
+        1d12+3 #parata con scudo pesante]] + aggiungere eventuali bonus di
+        parata. Ricordo si pu&oacute; parare solo un attacco per turno. Se
+        ottieni 1 &eacute; sempre fallimento automatico, se ottieni 12 sempre
+        successo automatico, altrimenti pari se con questo tiro fai 12 o
+        pi&uacute;]]. Ricordo si pu&oacute; parare solo un attacco per turno e
+        che se si ottiene 1 sar&aacute; sempre un fallimento, con 12 di dado
+        invece si parer&aacute; sempre, altimenti bisogna superare 12.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 46f3218c42881f2fd72b4db33b817d531038a03e
+        sourceId: Item.Z1PW3zUbzIB3Phfm
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857901932
+      modifiedTime: 1704868118882
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.Z1PW3zUbzIB3Phfm
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: iEQU4Ivbu4YVs1Uv
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.iEQU4Ivbu4YVs1Uv'
+  - name: 'Competenza Scudi: Torre'
+    type: competency
+    img: systems/fvtt-warhero/images/icons/parata.webp
+    system:
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con gli
+        scudi leggere. Gli scudi leggeri permettono di fare azione di parata con
+        di [[/r 1d12+5 #parata con scudo leggero + aggiungere eventuali bonus di
+        parata. Ricordo si pu&oacute; parare solo un attacco per turno. Se
+        ottieni 1 &eacute; sempre fallimento automatico, se ottieni 12 sempre
+        successo automatico, altrimenti pari se con questo tiro fai 12 o
+        pi&uacute;]]. Ricordo si pu&oacute; parare solo un attacco per turno e
+        che se si ottiene 1 sar&aacute; sempre un fallimento, con 12 di dado
+        invece si parer&aacute; sempre, altimenti bisogna superare 12.</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: 3ca807fbe3b4419ac120052de27312b7dcf7c2d7
+        sourceId: Item.dPj1CXCWYYWS1oka
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 11.2.1
+      coreVersion: '13.341'
+      createdTime: 1680857901932
+      modifiedTime: 1704868120016
+      lastModifiedBy: vvRutjambw1JfPoO
+      compendiumSource: Item.dPj1CXCWYYWS1oka
+      duplicateSource: null
+      exportSource: null
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+    _id: mDMFCQpE32hJl4d0
+    _key: '!actors.items!AyqzvuOmKGaRsxR8.mDMFCQpE32hJl4d0'
+img: systems/dnd5e/tokens/construct/ShieldGuardian.webp
+system:
+  biodata:
+    class: ''
+    age: '25000'
+    size: medium
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: >-
+      <p>Tutti i golem sono immuni ai poteri, nessun potere &egrave; in
+      grado&nbsp;di fargli danno o potenziarlo. I golem possono impugnare
+      armi,&nbsp;e sono competenti in tutti i tipi di arma e scudi ma non
+      nelle&nbsp;armature. Ogni Golem ha tanti punti ferita pari a 10 +
+      (FIS*10)&nbsp;e un valore di classe armatura pari a 15 + IST. Forgiare
+      un&nbsp;golem richiede 2 ore ininterrotte di lavoro, se il golem
+      viene&nbsp;distrutto o muore il materiale recuperato pu&ograve; fornire
+      parte del&nbsp;valore necessario per riforgiarlo, e il costo per
+      riforgiarlo con il&nbsp;materiale recuperato diventa il valore descritto
+      nel golem fra&nbsp;parentesi quadre. Un golem ha due mosse a disposizione
+      e&nbsp;agisce sempre nel round del suo padrone</p>
+    gmnotes: ''
+    origin: ''
+    preferredhand: ''
+  subactors: []
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 14
+      value: 14
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 4
+      value: 4
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 150
+      value: 150
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 0
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 19
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 4
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 4
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 3
+      value: 3
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 4
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Golem di adamantio (golem)
+  displayName: 30
+  actorLink: true
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: systems/dnd5e/tokens/construct/ShieldGuardian.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+    tint: '#ffffff'
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    alphaThreshold: 0.75
+  width: 1
+  height: 1
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 0
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+    color: null
+    negative: false
+    priority: 0
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+    color: null
+  detectionModes: []
+  flags:
+    wall-height:
+      tokenHeight: 0
+    monks-tokenbar:
+      include: default
+    tagger: {}
+    core: {}
+  randomImg: false
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+effects: []
+folder: ab89HuUf0Tqbgom0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 61957d953e99580a798422003d5d5a2a553887b9
+    sourceId: Actor.foPpN29Cutyc0JWQ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704868006655
+  modifiedTime: 1759987941867
+  lastModifiedBy: lXFgtDDsvLskIOGw
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: AyqzvuOmKGaRsxR8
+sort: 500000
+_key: '!actors!AyqzvuOmKGaRsxR8'

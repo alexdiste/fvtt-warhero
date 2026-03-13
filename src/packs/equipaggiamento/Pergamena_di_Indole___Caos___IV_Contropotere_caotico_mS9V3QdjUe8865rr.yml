@@ -1,0 +1,42 @@
+name: Pergamena di Indole - Caos - IV Contropotere caotico
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.1ZCVzbwTVtuxwVxC]{Indole - Caos -
+    IV Contropotere caotico} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 2ebdecef398eb5f8df60d2db2b99926b2b8782d0
+    sourceId: Item.FH9vdXBrSad7rQbz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913446687
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: mS9V3QdjUe8865rr
+sort: 29400000
+_key: '!items!mS9V3QdjUe8865rr'

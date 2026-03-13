@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Aria - II Fulmine
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.InXfXuABQDHb5zV5]{Elementale -
+    Aria - II Fulmine} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 53c2358d3998b08b5f2c906a46b4fcec2e8fc9a8
+    sourceId: Item.sNK5fYOy36YOwiYP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913443683
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: iyPLu0Jd2Uj7nRyp
+sort: 33300000
+_key: '!items!iyPLu0Jd2Uj7nRyp'

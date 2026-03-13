@@ -1,0 +1,42 @@
+name: Bacchetta magica di Viaggio - IV Camminare nel vento
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.ntMeWTWn23Z87hdD]{Viaggio - IV
+    Camminare nel vento} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c3dc03f9b362380516b58a67e330018fe8b36c67
+    sourceId: Item.GpFmehor9QqJD3AL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613834199
+  modifiedTime: 1704614628974
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: LbkTtIIWYHJdesc2
+sort: 0
+_key: '!items!LbkTtIIWYHJdesc2'

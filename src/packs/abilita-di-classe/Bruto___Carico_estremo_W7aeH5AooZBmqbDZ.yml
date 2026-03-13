@@ -1,0 +1,36 @@
+name: Bruto - Carico estremo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; trasportare su di s&eacute; fino ad altri 20
+    slot di equipaggiamento vario</p>
+effects: []
+flags:
+  scene-packer:
+    hash: f3e2a284240eac64fc33492940155518c8b23822
+    sourceId: Item.h9pLSnWRJzuwdRer
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: W7aeH5AooZBmqbDZ
+sort: 10900000
+_key: '!items!W7aeH5AooZBmqbDZ'

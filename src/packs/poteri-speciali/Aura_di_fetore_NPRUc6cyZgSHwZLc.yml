@@ -1,0 +1,36 @@
+name: Aura di fetore
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>Chiunque nel raggio di 10 metri deve riuscire in un salvataggio su FIS CD
+    14 o diventare affatticato</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: 1b527d9670bef99d89d257786bc9d42281c3ffc1
+    sourceId: Item.PjRoDjRreXWRN92s
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766236433661
+  modifiedTime: 1766236433661
+  lastModifiedBy: uzeu86bhmL5CiHhN
+folder: null
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+_id: NPRUc6cyZgSHwZLc
+sort: 0
+_key: '!items!NPRUc6cyZgSHwZLc'

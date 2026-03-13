@@ -1,0 +1,417 @@
+name: Idra a 6 teste
+type: character
+items:
+  - name: Morso (idra)
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+    system:
+      weapontype: short
+      damage: 3d6
+      damage2hands: 1d6
+      rollformula: ''
+      damageformula: ''
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+      isCustomAttackRoll: false
+    effects: []
+    flags:
+      scene-packer:
+        hash: ad87cf12cb3ab495b56b2434b578d5b9ad8d24f0
+        sourceId: Item.mJIlQat21cfC0MpG
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: Ow29CEkUW9pgbe2P
+    sort: 400000
+    ownership:
+      default: 0
+    _key: '!actors.items!SDxW4oNEJrz3f4ov.Ow29CEkUW9pgbe2P'
+  - name: Guarigione rapida 10
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: true
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 1
+      currentuse: 1
+      description: "<p>La creatura riguadagna punti ferita all’inizio di ogni turno, ma\_non permette a una creatura di far ricrescere o di riattaccare\_parti del corpo staccate. Guarigione rapida non ripristina i\_punti ferita persi da fame, sete, o soffocamento.La guarigione\_rapida smette di funzionare se il bersaglio si trova a 0 PF o\_meno</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: d61e7411dedde994084547b2c87fcf77f16206bb
+        sourceId: Item.whNLPmVin2MUXAmq
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: YD0dEBTAJYwMIdXm
+    sort: 1400000
+    ownership:
+      default: 0
+    _key: '!actors.items!SDxW4oNEJrz3f4ov.YD0dEBTAJYwMIdXm'
+  - name: Più teste
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: true
+      classskill: false
+      unlimited: false
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>se un'arma che colpisce con una lama l’idra , come una spada, c’è una probabilità del 30% che questo colpo tagli la testa all’idra, facendone così ricresce 2, per ogni testa tagliata appena ne<br />riappare 2 essa guadagna +40PF e aumenta il numero di attacchi\_morsi in base al totale di teste</p>"
+      maxuseFormula: '1'
+    effects: []
+    folder: null
+    flags:
+      scene-packer:
+        hash: 1e02f70011c9c310e216bf6350d58a65949aee03
+        sourceId: Item.7SgRgkrfbML9qRYG
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: sODBwfnBqkTaKe4g
+    sort: 2200000
+    ownership:
+      default: 0
+    _key: '!actors.items!SDxW4oNEJrz3f4ov.sODBwfnBqkTaKe4g'
+img: systems/dnd5e/tokens/monstrosity/Hydra.webp
+system:
+  biodata:
+    class: ''
+    age: 0
+    size: large
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: "<p>Le creature evocate scompaiono quando muoiono o all'alba del giorno seguente e non è possibile evocare più di una creatura alla volta. E’ necessario usare una mossa per far seguire le 2 mosse alla propria evocazione. Usare più di un colpo con una singola mossa attacco si ottiene lo stessomalus come nell’uso delle due armi. Le evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12 +IST, il tempo di lancio di questi poteri è di 4 mosse consecutive. E necessario usareuna mossa per poter far eseguire 2 mosse all’evocazione.</p><p>\_</p><p>Questi tre treant chepermangono per 5 round si considerano una unica evocazione al fine dei limiti di controllo di creature evocate e si calcolano le statistiche come le creature evocate, ma il tempo di lancio di questo incantesimo è di una mossa incantesimo</p><p><br>Di \_normale \_l'animale \_deve \_essere \_entro \_30 \_metri \_dal \_padrone per ricevere ordini. Il \_compagno \_animale \_ha \_punti \_ferita \_pari \_a \_10+(FIS*10 \_se positivo), e Difesa 12 + IST Un \_compagno \_animale \_conta \_come \_una \_persona \_al \_fine \_del @UUID[Compendium.fvtt-warhero.poteri.Item.1UrtrLZ51eLjsEIx]{Viaggio - III Teletrasporto} della sfera di @UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.IHxRgAwl2K6J760H]{31.Viaggio}</p>"
+    gmnotes: ''
+    origin: ''
+  subactors: []
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 21
+      value: 21
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 5
+      value: 5
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 3
+      value: 3
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 240
+      value: 240
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 6
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 17
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 6
+      value: 6
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 1
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
+prototypeToken:
+  name: Idra a 6 teste
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: systems/dnd5e/tokens/monstrosity/Hydra.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+    tint: '#ffffff'
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    alphaThreshold: 0.75
+  width: 2
+  height: 2
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+    color: null
+    negative: false
+    priority: 0
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+    color: null
+  detectionModes: []
+  flags:
+    wall-height:
+      tokenHeight: 0
+    monks-tokenbar:
+      include: default
+    tagger: {}
+    core: {}
+  randomImg: false
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: 105d68920378eeae26f29157e19005fff2765137
+    sourceId: Actor.RAnicNjxE2KrhciK
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239337735
+  modifiedTime: 1772340564249
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: SDxW4oNEJrz3f4ov
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+sort: 1800000
+_key: '!actors!SDxW4oNEJrz3f4ov'

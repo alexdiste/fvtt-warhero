@@ -1,0 +1,29 @@
+name: Language (gigante)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p data-pm-slice="1 1 []">&Eacute; la lingua comune dei giganti</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 4feff4907f3b3bed865a4feaaf676ac612c93c42
+    sourceId: Item.twPI9b5CUt66YZVM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613684
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FSs2nS1zekKKrgsl
+_key: '!items!FSs2nS1zekKKrgsl'

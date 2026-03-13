@@ -1,0 +1,40 @@
+name: Libro dei rituali
+type: classitem
+img: icons/sundries/books/book-turquoise-moon.webp
+system:
+  cost: 10
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Ritulista
+  description: <p>Un libro dove sono scritti i rituali</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 240862735460271f4b5a37eee7717a18865740d1
+    sourceId: Item.sKwyYO0AcLiuYgft
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: uQn2KGeabbCKQOrY
+sort: 300000
+_key: '!items!uQn2KGeabbCKQOrY'

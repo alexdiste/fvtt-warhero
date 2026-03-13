@@ -1,0 +1,39 @@
+name: Critico potenziato
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Prerequisito:</strong>
+    @UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.YxFPn1ZHgsXXiNVI]{Critico
+    migliorato}<br /><strong>Beneficio:</strong> il danno del critico viene
+    triplicato ( X3 ) invece che raddoppiato ( X2 ).</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+  guOwSDi78TuzUGFU: 3
+flags:
+  scene-packer:
+    hash: ae1860d2c15a96993b3eb0c469f15d6d0415ffe2
+    sourceId: Item.EBd4YqEERHVNM3KC
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774887273
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: TKckZcU9PJX4YJV6
+sort: 2400000
+_key: '!items!TKckZcU9PJX4YJV6'

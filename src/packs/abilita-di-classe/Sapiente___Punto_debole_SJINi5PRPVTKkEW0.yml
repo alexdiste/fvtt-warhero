@@ -1,0 +1,40 @@
+name: Sapiente - Punto debole
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + MEN volte al giorno&nbsp;suggerire come
+    colpire un bersaglio a un suo alleato, se il bersaglio&nbsp;viene colpito da
+    quell alleato il danno viene raddoppiato ( in caso di&nbsp;critico
+    moltiplicato X3, se si ha l&rsquo;abilit&agrave; aggiuntiva &ldquo;Critico
+    migliorato&rdquo;&nbsp;X4 ), dopo di che l'effetto termina
+    anticipatamente.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+    sourceId: Item.XTPKOsLhfK5kM0iF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: SJINi5PRPVTKkEW0
+sort: 15900000
+_key: '!items!SJINi5PRPVTKkEW0'

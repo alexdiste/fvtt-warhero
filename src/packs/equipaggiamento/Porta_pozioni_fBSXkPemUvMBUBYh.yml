@@ -1,0 +1,41 @@
+name: Porta pozioni
+type: equipment
+img: systems/fvtt-warhero/images/icons/belt.svg
+system:
+  equiptype: ''
+  cost: 3
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: belt
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una cintura da mettere a tracolla che permette di tenere fino a 8 pozioni
+    occupando 1 solo slot</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9e990e5a9ac574ed7fdb34ed74ec550faef3cadb
+    sourceId: Item.uzb8m9QNJhpVeEY8
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.344'
+  createdTime: 1681050729470
+  modifiedTime: 1749220296951
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: Item.uzb8m9QNJhpVeEY8
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 38700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: fBSXkPemUvMBUBYh
+_key: '!items!fBSXkPemUvMBUBYh'

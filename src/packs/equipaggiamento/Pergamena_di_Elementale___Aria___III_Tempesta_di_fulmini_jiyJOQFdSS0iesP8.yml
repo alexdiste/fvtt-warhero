@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Aria - III Tempesta di fulmini
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 900
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.cOXbmiXeQRJwlhdd]{Elementale -
+    Aria - III Tempesta di fulmini} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 8568b3cb14245acb3000d31fe5b5e5d7edf88066
+    sourceId: Item.BHKvwopCeWnnMkFm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913443729
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: jiyJOQFdSS0iesP8
+sort: 33400000
+_key: '!items!jiyJOQFdSS0iesP8'

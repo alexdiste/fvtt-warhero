@@ -1,0 +1,41 @@
+name: Giaco di maglie elfico
+type: armor
+img: icons/equipment/chest/breastplate-collared-steel-green.webp
+system:
+  armortype: medium
+  equipped: false
+  damagereduction: 4
+  cost: 160
+  quantity: 1
+  slotused: 1
+  slotlocation: armor
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un giaco di maglie di fattura elfica. Sembra molto
+    leggero. RD: [[/r 4 #Riduzione danno armatura media]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: fbf15cae355b806c8498c0afe5d06c33cf6a8b79
+    sourceId: Item.dGAVXomFeWTdXg4l
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1676718537355
+  modifiedTime: 1698573822901
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.M22t2aA6Ls0YVzUe
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: cZ9K80R61FJ1wibN
+_key: '!items!cZ9K80R61FJ1wibN'

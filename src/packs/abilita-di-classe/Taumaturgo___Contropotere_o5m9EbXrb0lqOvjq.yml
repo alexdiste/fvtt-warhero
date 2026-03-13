@@ -1,0 +1,36 @@
+name: Taumaturgo - Contropotere
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio ha l&rsquo;abilit&agrave; aggiuntiva
+    &ldquo;Contropotere&rdquo;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d8ad281ba0ac67dd75fe6629d56ec2b18bc129a6
+    sourceId: Item.LVKkqOQPeKi6TaPf
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.LVKkqOQPeKi6TaPf
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 23000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: o5m9EbXrb0lqOvjq
+_key: '!items!o5m9EbXrb0lqOvjq'

@@ -1,0 +1,42 @@
+name: Etereo
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Le creature eteree sono invisibili, impercettibili, inconsistenti e
+    inodori. La maggior parte degli attacchi magici non ha alcun effetto su di
+    loro. Una creatura eterea pu&ograve; vedere e sentire in un raggio di 30
+    metri, anche se gli oggetti materiali possono comunque bloccare la vista e
+    il suono. Le cose, per&ograve;, le appaiono grigie, indistinte e spettrali.
+    Poteri di danno della sfera di forza hanno effetto su queste creature. Le
+    creature eteree si muovono in qualsiasi direzione e non vengono bloccate
+    dagli oggetti materiali.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 87bb656ed11ddd6ce6150979430b25e5e7693341
+    sourceId: Item.Uj63sYWHUvXGXmIK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.HKoxeCXqiwLIyOX7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: GnHY5lKyOUUdKwWM
+_key: '!items!GnHY5lKyOUUdKwWM'

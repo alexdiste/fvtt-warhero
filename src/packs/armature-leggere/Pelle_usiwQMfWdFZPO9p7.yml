@@ -1,0 +1,41 @@
+name: Pelle
+type: armor
+img: icons/equipment/chest/breastplate-collared-leather-brown.webp
+system:
+  armortype: light
+  equipped: false
+  damagereduction: 2
+  cost: 25
+  quantity: 1
+  slotused: 1
+  slotlocation: armor
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un armatura leggera in cuoio. RD: [[/r 2
+    #Riduzione danno armatura leggera]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ec28944cd096d555840ca457d03e525c1cbc763d
+    sourceId: Item.zmRSzf89yekRC2yD
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680933349481
+  modifiedTime: 1698573774974
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.sgPrFzFze7jbHlkY
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: usiwQMfWdFZPO9p7
+_key: '!items!usiwQMfWdFZPO9p7'

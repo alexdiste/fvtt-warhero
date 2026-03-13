@@ -1,0 +1,61 @@
+name: Negromante - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare pergamene</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ukQlFEIZ7PO2s1EE]{03.
+    Costrizione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.FnckhzvGblZXCdOv]{17.Indole-Caos}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.FfeTbJV8m7zpSOpf]{10.Evocazione -
+    Non Morte}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ixnLA206NExE259s]{13.Guarigione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.gujWiPPrUckarLSX]{21.Linguaggi}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.0l33pWTj5jsnmEfz]{20.Indole-Male}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.igaGpBPbXnTgHMjV]{23.Morte}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.Yb3i7aZ4rSWGQNsJ]{24.Negromanzia}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ooVUxPR65yjFkP6J]{25.Oscurit&agrave;}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.2mETVBVZGplL6I9z]{26.Protezione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.BlX0zq1rmyqA9CA5]{32.Visione}</p>
+
+    <p>&nbsp;</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 16348e8ab30421f610508230cedb7bb44a7106bc
+    sourceId: Item.wuhlc4QXNgIzIBKG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704217302127
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: g3C23GZk2Ugv6ISE
+sort: 8300000
+_key: '!items!g3C23GZk2Ugv6ISE'

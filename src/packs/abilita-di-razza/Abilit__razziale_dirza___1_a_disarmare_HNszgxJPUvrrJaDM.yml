@@ -1,0 +1,37 @@
+name: 'Abilità razziale dirza: +1 a disarmare'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Dare la condizione
+    @UUID[Compendium.fvtt-warhero.condizione.Item.QCq1qwj5D3vsSz0L]{Bonus
+    razziale dirza: disarmare}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: be7ef0c84cae829c28fde08b8de5a5ea32deebc8
+    sourceId: Item.oxCYln3BbCONgubk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705157429922
+  modifiedTime: 1743437123509
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: HNszgxJPUvrrJaDM
+sort: 100000
+_key: '!items!HNszgxJPUvrrJaDM'

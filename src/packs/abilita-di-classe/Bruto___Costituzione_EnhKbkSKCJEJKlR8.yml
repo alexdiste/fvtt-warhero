@@ -1,0 +1,38 @@
+name: Bruto - Costituzione
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio ottiene un bonus di 30 punti ferita in fase di creazione.
+    Mettere la condizione
+    @UUID[Compendium.fvtt-warhero.condizione.Item.THZW4nn6JZQlNT3j]{Costituzione
+    maggiorata bruto (+30 pf)} al pg</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 40e1741a1b99ad1fed74b38fdd451f90173be024
+    sourceId: Item.zredI5wdh9IsLT6X
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: EnhKbkSKCJEJKlR8
+sort: 11000000
+_key: '!items!EnhKbkSKCJEJKlR8'

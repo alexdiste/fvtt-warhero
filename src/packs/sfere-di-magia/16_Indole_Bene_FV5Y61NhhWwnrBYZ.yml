@@ -1,0 +1,56 @@
+name: 16.Indole-Bene
+type: power
+img: systems/fvtt-warhero/images/icons/magic/bene.webp
+system:
+  level: 0
+  magicschool: Indole - Bene
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.FD2jB2MQjwqX26F4]{Indole - Bene
+    - I Punire il male}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.h1wvKCb0vzWc6VLI]{Indole - Bene
+    - II Buona speranza}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.DNkcEyBQYp78RUeK]{Indole - Bene
+    - III Castigo}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.pRLjX4jdslpxXHfR]{Indole - Bene
+    - IV Cerchio contro il male}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.iHsSDP1pZMS8LwxC]{Indole - Bene
+    - IV Immolarsi}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: b9fcbf544f145a541958cf4a6b114f692a469bf7
+    sourceId: Compendium.world.temp.HoAhptnN9sToP8OL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552533
+  modifiedTime: 1698851014192
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.HoAhptnN9sToP8OL
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: FV5Y61NhhWwnrBYZ
+_key: '!items!FV5Y61NhhWwnrBYZ'

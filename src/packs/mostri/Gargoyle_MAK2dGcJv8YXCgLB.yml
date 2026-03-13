@@ -1,0 +1,999 @@
+name: Gargoyle
+type: character
+img: systems/dnd5e/tokens/elemental/GargoyleSeated.webp
+items:
+  - name: Riduzione danno 5/magia
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: true
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Consente ad una creatura di ignorare un ammontare predefinito di
+        danni da alcuni tipi di fonte di danno specificate nella riduzione
+        stessa, per esempio ridurre il danno di 5 se non è da una fonte di
+        fuoco, sarà scritto così: 5/fuoco</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: e972a6bf6ec1ae81780f63443698281236555cad
+        sourceId: Item.7qj7CYIJaVpbUO2r
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: 1ghegW0gj55EPyY5
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.1ghegW0gj55EPyY5'
+  - name: Volare (9 metri)
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: true
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Una creatura con questa abilità può cessare o riprendere il volo come
+        mossa di movimento. Se l’abilità è soprannaturale, diventa inefficace in
+        un campo anti potere finché questo rimane attivo. Può terminare il
+        movimento in un quadrato già occupato</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 9e95cc9ebf8cedc88b06eec76fffcaaf4213c8e9
+        sourceId: Item.VweNQKJ9g2v1K3FK
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: bKKItOk59u81hkwu
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.bKKItOk59u81hkwu'
+  - name: Trasformista
+    type: class
+    img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+    system:
+      weapons:
+        short: true
+        long: true
+        twohanded: false
+        shooting: true
+        polearm: true
+        throwing: true
+      armors:
+        light: true
+        medium: false
+        heavy: false
+      shields:
+        light: true
+        medium: false
+        tower: false
+      issecondary: false
+      description: >-
+        <p data-pm-slice="1 1 []">Esperto nel camuffarsi e nel raggirare le
+        persone. Ha le seguenti abilità di classe:</p>
+
+        <p data-pm-slice="1 1
+        []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hrAZOM79i4syUa3Y]{Trasformista
+        - Abile nel imbrogliare}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.HjGiBhTHdvYTWWu8]{Trasformista
+        - Abile parlantina}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.8pg6LxWvVUuRympT]{Trasformista
+        - Clonare abilità}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.OtSejBsWIGr4v0Gt]{Trasformista
+        - Furtivo}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6KzRn5QpXktj9but]{Trasformista
+        - Imitare abilità}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.riUlzIup8eOTxKnu]{Trasformista
+        - Linguaggi extra}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.U7Knqbx3yDoelbMp]{Trasformista
+        - Mi sento un’altro}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LxllSyEykvg9ZYws]{Trasformista
+        - Mimettizarsi}</p>
+
+        <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.UwJAIqWEJSBhTak1]{Trasformista
+        - Sfere conosciute}</p>
+    effects: []
+    flags:
+      scene-packer:
+        hash: acae07a88c46c85b1ce9a7cf3cde55c7ef1f70a5
+        sourceId: Item.m59DIaJ4nk40jFmK
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 3000000
+    _id: TkaavbcHsxRmwezs
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.TkaavbcHsxRmwezs'
+  - name: Trasformista - Abile nel imbrogliare
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: <p>Il personaggio ha l’abilità aggiuntiva “Falsario”</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: bdd9dcfd596d8cc092ce91163d430d87c91dfc8d
+        sourceId: Item.NxacQjYsJBFkoTNq
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 22200000
+    _id: ZVNDyrwxaMaSBSvm
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.ZVNDyrwxaMaSBSvm'
+  - name: Trasformista - Abile parlantina
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio ottiene un bonus di +5 a tutte le prove fatte per
+        commerciare</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 5a40efefd508b6609d2b9da3d6908eebbade4adb
+        sourceId: Item.82k5Mukj5ddvoyoo
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 20300000
+    _id: V4eaBJpgTLTa6EnD
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.V4eaBJpgTLTa6EnD'
+  - name: Trasformista - Clonare abilità
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: false
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio all'alba di ogni giorno deve scegliere una abilità che
+        abbia un numero limitato di utilizzi giornalieri fra le classi scelte in
+        fase di creazione con l’abilità “Mi sento un’altro” e la aggiunge fra
+        quelle che può usare per la giornata come descritto in quella classe</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 5ee1fa15e8eb5d72bb20bdf9b438ff8dcc6f47ff
+        sourceId: Item.vPcizVDO2SvlQ8qi
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 19300000
+    _id: eQeG4LTs3z4JjIUP
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.eQeG4LTs3z4JjIUP'
+  - name: Trasformista - Furtivo
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio può, fuori da un combattimento, cercare di nascondersi
+        lanciando 1d10 e ottenendo un risultato di 4+, mentre in combattimento
+        con un risultato di 7+. Per nascondersi è necessario avere un riparo o
+        qualcosa che nasconda la propria figura. Questa mossa si considera un
+        movimento</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: ffd4e51e0173c525a79393c8f6a30f82d3ffb45e
+        sourceId: Item.1XHKISxHXJqhXK0c
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 20800000
+    _id: aKG6eQ3zgl1GuC8A
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.aKG6eQ3zgl1GuC8A'
+  - name: Trasformista - Imitare abilità
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: false
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio può una volta al giorno aggiungere una abilità di una
+        qualsiasi classe che non abbia<br />sfere conosciute, alle sue abilità e
+        utilizzarla come se diventasse una sua abilità di classe. Usare questo
+        potere è una mossa potere. Non è possibile selezionare questa abilità
+        con l’abilità aggiuntiva “Capacità extra”</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 5534265f22f4b59a0a8a91cd70a018761ee13c2d
+        sourceId: Item.qFzhJiGwdRg0GEd7
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 19100000
+    _id: 5Ap2jsg75ilHT8W5
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.5Ap2jsg75ilHT8W5'
+  - name: Trasformista - Linguaggi extra
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio in fase di creazione del personaggio può aggiungere 2
+        linguaggi alla lista dei linguaggi conosciuti.</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 6f8d2284881a9c7673ca42be2c87bd1f3573a284
+        sourceId: Item.mJzyLOWvwtEWAeqL
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 23400000
+    _id: pSEZ0B3YHmXlpyi4
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.pSEZ0B3YHmXlpyi4'
+  - name: Trasformista - Mi sento un’altro
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio in fase di creazione può scegliere fino a 3 classi per
+        la sua abilità “Clonare abilità”.</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: fd4e82f2be2dbf9cde211cb62233c02db175b388
+        sourceId: Item.hcvQpmaf9HEaqQeO
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 21000000
+    _id: DumwKxxQjbquUK0r
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.DumwKxxQjbquUK0r'
+  - name: Trasformista - Mimettizarsi
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: false
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p data-pm-slice="1 1 []">Il personaggio può 1 + FIS volte al giorno
+        cambiare aspetto fisico rimanendo della stessa razza e ottenere così un
+        bonus di +1 a una statistica a suo piacimento. Ogni volta che riusa
+        questo potere perde il bonus che aveva scelto in precedenza</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: c9b846e145d8a5aa808d03c9bae6a9192376589e
+        sourceId: Item.PrHzBccStvNQlNyT
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 20600000
+    _id: cUJDkwY62Ct4IxnX
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.cUJDkwY62Ct4IxnX'
+  - name: Trasformista - Sfere conosciute
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Sfere conosciute da anche la possibilità di lanciare poteri da
+        pergamena</p>
+
+        <p>@Compendium[fvtt-warhero.sfere-di-magia.Euq6JtTvuBucAcdc]{15.Illusione}</p>
+
+        <p>@Compendium[fvtt-warhero.sfere-di-magia.gujWiPPrUckarLSX]{21.Linguaggi}</p>
+
+        <p>@Compendium[fvtt-warhero.sfere-di-magia.k19nOLJBQG5fu4a3]{29.Trasmutazione}</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 6cbe8c61637376acd3e481ac71f7e16dc9de0058
+        sourceId: Item.d0cU9tLkLXuhAkJZ
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 21100000
+    _id: TuVClyvKQpHogxC2
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.TuVClyvKQpHogxC2'
+  - name: Illusione - I Immagine Speculare
+    type: power
+    system:
+      level: '1'
+      magicschool: Illusione
+      description: >-
+        <p>crea [[/r 1d4 #copie di immagine speculare]] copie del bersaglio che
+        appaiono intorno a lui. Ogni volta che si tenta di colpire il bersaglio
+        si verifica casualmente se viene colpito il bersaglio o una delle copie.
+        Le copie durano 6 round o fino a quando non vengono colpite</p>
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: GgrqyqCipTxi2ijT
+    folder: null
+    sort: 11200000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.GgrqyqCipTxi2ijT'
+  - name: Illusione - II Immagine illusoria
+    type: power
+    system:
+      level: '2'
+      magicschool: Illusione
+      description: >-
+        <p>crea un illusione di qualsiasi dimensione, difficile da riconoscere
+        (CD 18 MEN [[/r 1d20+@statistics.min.value #CD18 MEN per riconoscere
+        illusione]]), che può muoversi, riprodurre suoni e parlare attraverso la
+        voce dell'incantatore, l'illusione svanisce dopo 15 minuti o dopo essere
+        stata colpita.</p>
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: b7TNoSwFFal5dHLd
+    folder: null
+    sort: 11400000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.b7TNoSwFFal5dHLd'
+  - name: Illusione - III Sfocatura
+    type: power
+    system:
+      level: '3'
+      magicschool: Illusione
+      description: >-
+        il bersaglio ottiene una probabilità del 50% di essere mancato, per
+        tutto il combattimento.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: Wnw6aLRi8czvZS38
+    folder: null
+    sort: 4000000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.Wnw6aLRi8czvZS38'
+  - name: Linguaggi - I Parlare con i morti
+    type: power
+    system:
+      level: '1'
+      magicschool: Linguaggi
+      description: >-
+        il morto può rispondere a 5 domande fatte dall'incantatore con un si o
+        un no.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: S61TdQQ7QhWFUVaN
+    folder: null
+    sort: 13300000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.S61TdQQ7QhWFUVaN'
+  - name: Linguaggi - II Comprensione dei linguaggi
+    type: power
+    system:
+      level: '2'
+      magicschool: Linguaggi
+      description: il bersaglio capisce qualsiasi lingua per 1 ora.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: uIb51v379UkeECPi
+    folder: null
+    sort: 900000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.uIb51v379UkeECPi'
+  - name: Linguaggi - III Parlare linguaggi
+    type: power
+    system:
+      level: '3'
+      magicschool: Linguaggi
+      description: il bersaglio può parlare una qualsiasi lingua per 5 minuti.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: pAlmKyQmi70r0Itr
+    folder: null
+    sort: 100000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.pAlmKyQmi70r0Itr'
+  - name: Trasmutazione - I Alterazione
+    type: power
+    system:
+      level: '1'
+      magicschool: Trasmutazione
+      description: >-
+        può cambiare la razza di un personaggio in una, sempre umanoide. questo
+        non ne modifica le statistiche, per 1 ora.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: s5X0YwcI1oYD4xH0
+    folder: null
+    sort: 4500000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.s5X0YwcI1oYD4xH0'
+  - name: Trasmutazione - II Ingrandire/Ridurre
+    type: power
+    system:
+      level: '2'
+      magicschool: Trasmutazione
+      description: >-
+        può aumentare la taglia del bersaglio alleato fornendogli cosi un bonus
+        di 4 punti ai danni ed una penalità di 2 a difesa o diminuire la taglia
+        fornendogli una penalità di 4 ai danni ed un bonus di 2 alla difesa, per
+        la durata di 1 ora.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: NF0z4eCFyLaWiBmU
+    folder: null
+    sort: 6100000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.NF0z4eCFyLaWiBmU'
+  - name: Trasmutazione - III Trasformazione
+    type: power
+    system:
+      level: '3'
+      magicschool: Trasmutazione
+      description: >-
+        chi usa l'incantesimo si trasforma in un guerriero e può usare qualsiasi
+        arma o scudo per lo scontro, ma perde la capacita di lanciare
+        incantesimi. guadagna un bonus di 4 punti a fis. può interrompere questo
+        effetto quando vuole, l'effetto termina automaticamente dopo che sia
+        trascorso 1 ora dal lancio dell'incantesimo.
+      isteleport: false
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    _id: mkZBjloEHtLNYhSm
+    folder: null
+    sort: 8000000
+    ownership:
+      default: 0
+    _key: '!actors.items!MAK2dGcJv8YXCgLB.mkZBjloEHtLNYhSm'
+_id: MAK2dGcJv8YXCgLB
+system:
+  subactors: []
+  biodata:
+    class: ''
+    origin: ''
+    age: 0
+    size: medium
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: ''
+    gmnotes: ''
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 3
+      value: 3
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 2
+      value: 2
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 1
+      value: 1
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 60
+      value: 60
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 1
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 12
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 4
+      value: 4
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 9
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Gargoyle
+  displayName: 0
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: systems/dnd5e/tokens/elemental/GargoyleSeated.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+effects: []
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239337735
+  modifiedTime: 1772340564249
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+sort: 1100000
+_key: '!actors!MAK2dGcJv8YXCgLB'

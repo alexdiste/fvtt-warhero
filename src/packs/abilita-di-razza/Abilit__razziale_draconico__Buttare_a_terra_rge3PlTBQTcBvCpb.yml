@@ -1,0 +1,34 @@
+name: 'Abilità razziale draconico: Buttare a terra'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>A livello 1,5 e 7 +1 a i tiri per buttare a terra</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 6d88a46e95e92f2dfcc0a2bba0766db7f255421f
+    sourceId: Item.b1G1SfMnTLnBOXOf
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681196745992
+  modifiedTime: 1743437123527
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.b1G1SfMnTLnBOXOf
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: rge3PlTBQTcBvCpb
+_key: '!items!rge3PlTBQTcBvCpb'

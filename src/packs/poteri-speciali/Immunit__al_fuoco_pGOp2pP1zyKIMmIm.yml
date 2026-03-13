@@ -1,0 +1,34 @@
+name: Immunità al fuoco
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>non prende danni da fuoco</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 129945d841bd6b95fb5571fcb560573d6b58e293
+    sourceId: Item.x3BqTowei1Hn2Eb2
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1700571024891
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: pGOp2pP1zyKIMmIm
+sort: 1100000
+_key: '!items!pGOp2pP1zyKIMmIm'

@@ -1,0 +1,36 @@
+name: Competenza in un tipo di scudo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Beneficio:</strong> Si aggiunge alla lista di scudi utilizzabili
+    la tipologia di scudo scelto</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: e335b76f8f32419d9534b7735e73a9a4403d1637
+    sourceId: Item.nN1Co9dMJ9rY4eop
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774721437
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: CkUkPKmUZMfd4QGc
+sort: 3400000
+_key: '!items!CkUkPKmUZMfd4QGc'

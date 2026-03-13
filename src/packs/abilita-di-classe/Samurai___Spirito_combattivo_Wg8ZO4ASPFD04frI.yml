@@ -1,0 +1,37 @@
+name: Samurai - Spirito combattivo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Se i punti ferita attuali del personaggio scendono sotto i 20 lo spirito
+    del combattivo si accende e il<br>personaggio ottiene i seguenti bonus:
+    +4TxC, +4 al Danno, +2 DIF,+2TS, +3MOV</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9d1ae413267c0ee8f485afb6a28ffebf906c7608
+    sourceId: Item.4ysHyDUTVGUdbNa0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.UmIWgIdmu0hreCkS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Wg8ZO4ASPFD04frI
+_key: '!items!Wg8ZO4ASPFD04frI'

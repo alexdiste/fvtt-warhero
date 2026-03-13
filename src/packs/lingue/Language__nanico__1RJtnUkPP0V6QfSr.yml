@@ -1,0 +1,29 @@
+name: Language (nanico)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p data-pm-slice="1 1 []">&Eacute; la lingua dei nani</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 041dc003dd8d1760d92d089ecf754c2f56ca63a6
+    sourceId: Item.4JL9ihmP2x5KTcz2
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613668
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 1RJtnUkPP0V6QfSr
+_key: '!items!1RJtnUkPP0V6QfSr'

@@ -1,0 +1,90 @@
+name: Halfling
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Umanoide di statura piccola, lesto e sempre pronto all'azione si
+    identifica spesso per le orecchie a punta.</em></p>
+
+    <ul>
+
+    <li>
+
+    <p>Punti Ferita = Medio (+4 pf per livello)</p>
+
+    </li>
+
+    <li>
+
+    <p>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.razze.63XSb4c00csd2sCG]{Halfling}</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1,3,5,7,9 =
+    @Compendium[fvtt-warhero.abilita-di-razza.0CcUpvcoFi8C3Kig]{Abilit&agrave;
+    razziale halfling: +1 iniziativa}</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1,4,8 = +1 IST</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 3,6,9 = +1 TxC e +1 Danni</p>
+
+    </li>
+
+    </ul>
+  hpprogresion: high
+  languages: ''
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 956f3326280b4c07ee9caa0e1f2be2262f8dc31d
+    sourceId: Compendium.world.temp.OXQev5oi3yqn9K4W
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552763
+  modifiedTime: 1743439649047
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.OXQev5oi3yqn9K4W
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 63XSb4c00csd2sCG
+_key: '!items!63XSb4c00csd2sCG'

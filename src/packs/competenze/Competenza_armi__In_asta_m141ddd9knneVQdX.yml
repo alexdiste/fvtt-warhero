@@ -1,0 +1,38 @@
+name: 'Competenza armi: In asta'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi in
+    asta. Le armi in asta possono essere usate sia ad una mano che a due mani.
+    Se usate ad una mano infliggono [[/r 1d6 #+fisico+ bonus ai danni in
+    mischia]] +fisico + eventuali bonus per i danni in mischia.</p>
+
+    <p>Se usate invece a due mani infliggono:</p>
+
+    <p>[[/r 1d8 #+1 volta e mezzo il fisico+ bonus ai danni in mischia]] + una
+    volta e mezzo il valore di fisico (arrotondato per difetto) + eventuali
+    bonus per i danni in mischia.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9baf96db818731b933f215f8f16000e862306615
+    sourceId: Item.5ESqAhWxcjFMboua
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680857153518
+  modifiedTime: 1743437037191
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.KqKt3kKD5rcWoj65
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: m141ddd9knneVQdX
+_key: '!items!m141ddd9knneVQdX'

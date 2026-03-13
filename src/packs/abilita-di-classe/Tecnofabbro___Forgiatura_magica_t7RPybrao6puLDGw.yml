@@ -1,0 +1,46 @@
+name: Tecnofabbro - Forgiatura magica
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno aggiungere a un oggetto che
+    potrebbe creare, 1 carica di un&nbsp;potere qualsiasi a sua scelta. Questo
+    procedimento richiede&nbsp;almeno un ora di lavorazione e a seconda del
+    livello del potere&nbsp;la probabilit&agrave; di successo nella creazione
+    dell'oggetto &egrave; la&nbsp;seguente:<br>● I livello: 80%<br>● II livello:
+    50%<br>● III livello: 30%<br>● IV livello: 10%<br>Non &egrave; possibile
+    mettere pi&ugrave; di una carica in questo modo sullo&nbsp;stesso oggetto.
+    In alternativa pu&ograve; creare un'arma magica in<br>modo permanente
+    fornendogli un bonus +1, +2 o +3 al TxC o&nbsp;al Danno come se fossero
+    livelli di potere per stabilire la&nbsp;difficolt&agrave; e il tempo, in
+    caso di successo &egrave; necessario&nbsp;consumare met&agrave; del prezzo
+    da manuale per avere quel tipo di<br>oggetto</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ae43aaa45594523fe88c3e620eb25c80352c19c0
+    sourceId: Item.87s8IQlPoqSDBSXS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704462853520
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: t7RPybrao6puLDGw
+sort: 7200000
+_key: '!items!t7RPybrao6puLDGw'

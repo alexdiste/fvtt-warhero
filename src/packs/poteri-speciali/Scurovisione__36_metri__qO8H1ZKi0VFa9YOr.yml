@@ -1,0 +1,37 @@
+name: Scurovisione (36 metri)
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Pu&ograve; vedere al buio fino a 36 metri.La Scurovisione &egrave;
+    esclusivamente in bianco e nero, ma per il resto &egrave; come la normale
+    vista</p>
+effects: []
+flags:
+  scene-packer:
+    hash: dffe2adc650dc4e89ced1c94e18025721a6b9b72
+    sourceId: Item.2iL0rFvChTfN21eP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: qO8H1ZKi0VFa9YOr
+sort: 900000
+_key: '!items!qO8H1ZKi0VFa9YOr'

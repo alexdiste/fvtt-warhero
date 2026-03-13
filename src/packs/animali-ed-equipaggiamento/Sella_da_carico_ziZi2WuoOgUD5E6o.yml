@@ -1,0 +1,38 @@
+name: Sella da carico
+type: equipment
+img: icons/equipment/shoulder/pauldron-leather-molded.webp
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una sella che permette di portare fino a 10 slot
+    di materiale.</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 13.0.7
+  coreVersion: '13.344'
+  createdTime: 1676707931929
+  modifiedTime: 1749220171652
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: Item.35mVKBJ2n4DazZhj
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 800000
+ownership:
+  default: 0
+  0IgQUthe3Nk70WYW: 3
+_id: ziZi2WuoOgUD5E6o
+_key: '!items!ziZi2WuoOgUD5E6o'

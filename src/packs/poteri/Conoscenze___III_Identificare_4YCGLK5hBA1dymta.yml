@@ -1,0 +1,28 @@
+name: Conoscenze - III Identificare
+type: power
+system:
+  level: 3
+  magicschool: Conoscenze
+  description: >-
+    lanciando questo incantesimo su un oggetto se ne capisce il funzionamento e
+    le proprietà magiche ad esso associate.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904810
+  modifiedTime: 1743439294486
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 4YCGLK5hBA1dymta
+folder: null
+sort: 1700000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!4YCGLK5hBA1dymta'

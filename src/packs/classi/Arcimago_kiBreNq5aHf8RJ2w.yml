@@ -1,0 +1,68 @@
+name: Arcimago
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Incantatore e studioso arcano specializzato in alcune sfere.</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>&nbsp;@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CVcXJfM2rftXmrQF]{Arcimago
+    - Amanuense}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.s2SEQbo5nvTZ94Xf]{Arcimago
+    - Conoscenze}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vX74J4mYIVkT4UEn]{Arcimago
+    - Contropotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.iBvNxGXhPk1Q62HU]{Arcimago
+    - Donazione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6RPtARxs9EZJo1OY]{Arcimago
+    - Metapotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FZub13Swtd7esFSL]{Arcimago
+    - Polla del mago}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.qXpT6R0KX45G29YY]{Arcimago
+    - Sfere conosciute}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 93cacec2651a5f6f1034dcafbb8d43facc1997af
+    sourceId: Item.NeCbSgPNGZEaODKN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1683906015610
+  modifiedTime: 1743437000001
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: kiBreNq5aHf8RJ2w
+sort: 25000
+_key: '!items!kiBreNq5aHf8RJ2w'

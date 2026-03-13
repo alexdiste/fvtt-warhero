@@ -1,0 +1,42 @@
+name: Martello
+type: weapon
+img: icons/weapons/hammers/hammer-war-rounding.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 16
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Un arma lunga [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 7fd62955448a70bb59c38a8688eed0ffdf2ffd9f
+    sourceId: Item.fmd5Su1qE22LZig4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681648983012
+  modifiedTime: 1701594258212
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.fmd5Su1qE22LZig4
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: VInGGkj6bytTVWBi
+_key: '!items!VInGGkj6bytTVWBi'

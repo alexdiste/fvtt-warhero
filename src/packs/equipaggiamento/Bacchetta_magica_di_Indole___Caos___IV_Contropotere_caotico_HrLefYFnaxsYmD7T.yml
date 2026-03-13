@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Caos - IV Contropotere caotico
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.1ZCVzbwTVtuxwVxC]{Indole - Caos -
+    IV Contropotere caotico} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 65db3bce4013fba6c0642fc58a1426456602446e
+    sourceId: Item.ZnwDZKBGQUBu29Um
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830303
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: HrLefYFnaxsYmD7T
+sort: 5400000
+_key: '!items!HrLefYFnaxsYmD7T'

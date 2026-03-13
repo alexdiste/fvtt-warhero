@@ -1,0 +1,29 @@
+name: Language (orchesco)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dagli orchi.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 834b557c5f432ead000943103d9019b3d3602980
+    sourceId: Item.q2UhDUBhAHCmxLFR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613670
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 5yRNGxswyKMaw69B
+_key: '!items!5yRNGxswyKMaw69B'

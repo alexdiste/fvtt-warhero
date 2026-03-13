@@ -1,0 +1,56 @@
+name: 11.Fato
+type: power
+img: systems/fvtt-warhero/images/icons/magic/fato.webp
+system:
+  level: 0
+  magicschool: Fato
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.KAtzfJafxDsLk9BL]{Fato - I
+    Cambio esito}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.ucedLMom9HNyIar6]{Fato - II
+    Cambia bersaglio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.geWk4VaGVcX40eb0]{Fato - III
+    Stretta del fato}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.e5sdgdR1TBcKEpoO]{Fato - IV
+    Destino casuale}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.UidgozfLZsoPIBoK]{Fato - IV
+    Passo del fato}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 9289261557e7779491b91a7dceea28bbb0e8bf21
+    sourceId: Compendium.world.temp.2832Mm6O8SvSHW7Q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552521
+  modifiedTime: 1698850970547
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.2832Mm6O8SvSHW7Q
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ZbrlMRXgscyeEZY5
+_key: '!items!ZbrlMRXgscyeEZY5'

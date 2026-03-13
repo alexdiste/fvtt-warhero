@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Legge - II Di Fronte alla legge
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.lrvqjBpUmos0t4HB]{Indole - Legge -
+    II Di Fronte alla legge} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 5a542b83ee52b1cfab9ad8e1448828c7fd8c9f0c
+    sourceId: Item.KUvDk30f8lKJ6PbU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830640
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Rcks89UdcqKgq4iU
+sort: 4800000
+_key: '!items!Rcks89UdcqKgq4iU'

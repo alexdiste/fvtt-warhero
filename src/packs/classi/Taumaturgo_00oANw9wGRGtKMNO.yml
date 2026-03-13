@@ -1,0 +1,74 @@
+name: Taumaturgo
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Sacerdote che pratica le arti divine, in particolare quelle curative. Ha
+    le seguenti abilit&agrave; di classe:&nbsp;</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.dB5WDrE2b8K21tPk]{Taumaturgo
+    - Abile nella guarigione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CZlBFX8aX3lYvRon]{Taumaturgo
+    - Abilit&agrave; extra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.o5m9EbXrb0lqOvjq]{Taumaturgo
+    - Contropotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.eKsdgFVHHl09tJkt]{Taumaturgo
+    - Esplosione curativa}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.E3cbFHcc1Urgw1hw]{Taumaturgo
+    - Imposizione delle mani}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.rM2NoVa5O5Aw21Mx]{Taumaturgo
+    - Salto del destino}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.2lw9O0S2ERSguyqI]{Taumaturgo
+    - Sfere conosciute}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.duNbk7PoD1R0cyA8]{Taumaturgo
+    - Visione di vita}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.jjvggBvh2EzgMga2]{Taumaturgo
+    - Vita extra}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 311c7d2c3cda4590b1e7b026f841694733512c57
+    sourceId: Item.NpFkmIIFi6tnlWoC
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  coreVersion: '13.341'
+  createdTime: 1681049292229
+  modifiedTime: 1743436999921
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpFkmIIFi6tnlWoC
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 00oANw9wGRGtKMNO
+_key: '!items!00oANw9wGRGtKMNO'

@@ -1,0 +1,69 @@
+name: Runologo
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Il runologo &egrave; un esperto dei segni magici. Ha le seguenti
+    abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FWHJ5li567T9UI1d]{Runologo
+    - Controllo del burattino}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.WpdAe631xQM5QjBX]{Runologo
+    - Controllo del golem}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.nClXHHGwc2HP5KTR]{Runologo
+    - Donazione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FzWVatUmAbnjxeaS]{Runologo
+    - Ruggine}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Se53es0w07OuAMma]{Runologo
+    - Runa di creazione magica}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.XCH5itq8Wu84yFcb]{Runologo
+    - Runa maggiore}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.gbYkWQG0uvvWU59E]{Runologo
+    - Runa minore}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ude8Tm1q8dkUhRpb]{Runologo
+    - Sfere conosciute}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9cc5cf1332833cf6841cbdbaf96ab904cf0d9480
+    sourceId: Item.AUfKWYKOi1WtiJb2
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.341'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352091903
+  modifiedTime: 1743436999983
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  exportSource: null
+_id: Z9pGevjpqjqM8zE8
+sort: 0
+_key: '!items!Z9pGevjpqjqM8zE8'

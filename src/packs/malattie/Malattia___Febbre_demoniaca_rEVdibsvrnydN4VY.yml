@@ -1,0 +1,40 @@
+name: Malattia - Febbre demoniaca
+type: condition
+img: systems/fvtt-warhero/images/icons/medical-thermometer.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Ferimento. CD18, 1 giorno, &ndash;1 FIS. -1FIS se fallisce un secondo
+    tiro salvezza su Tempra</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 60a60d1247cbbd42e13fed59cc5a8aa6a8c97f58
+    sourceId: Item.vaJXX7EcjPPFpn0E
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702204460418
+  modifiedTime: 1743439247617
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: rEVdibsvrnydN4VY
+sort: 700000
+_key: '!items!rEVdibsvrnydN4VY'

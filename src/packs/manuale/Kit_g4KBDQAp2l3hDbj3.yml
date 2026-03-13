@@ -1,0 +1,3227 @@
+name: Kit
+pages:
+  - sort: 100000
+    name: Oggetti di partenza
+    type: text
+    _id: mSX5nd5qyc62uhox
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@Compendium[fvtt-warhero.equipaggiamento.yaMGWfYHqOTv4qro]{Zaino}</p><p>@Compendium[fvtt-warhero.equipaggiamento.khCz2IusaQ52cLyW]{Cintura}</p><p>@Compendium[fvtt-warhero.vestiti.5yleK3OYsVeJWjkN]{Abito
+        da
+        viaggiatore}</p><p>@Compendium[fvtt-warhero.equipaggiamento.woh61qENSGkqZbjB]{Borsa
+        da
+        cintura}</p><p>@Compendium[fvtt-warhero.equipaggiamento.woh61qENSGkqZbjB]{Borsa
+        da
+        cintura}</p><p>@Compendium[fvtt-warhero.equipaggiamento.woh61qENSGkqZbjB]{Borsa
+        da
+        cintura}</p><p>@Compendium[fvtt-warhero.equipaggiamento.G3yFDfyey4Ef4JT4]{
+        500 Monete di oro}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags:
+      core: {}
+    _stats:
+      compendiumSource: JournalEntry.1DLQq5bAhAo9twKI.JournalEntryPage.mSX5nd5qyc62uhox
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.mSX5nd5qyc62uhox'
+  - sort: 300000
+    name: Kit alchimista (105 Mo)
+    type: text
+    _id: wLE10v19LaFX6bSK
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.zAfqUTaym6TfOGDq]{Attrezzi
+        da
+        Alchimista}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.DusWum356fezq2vt]{Laboratorio
+        da alchimista portatile}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.wLE10v19LaFX6bSK'
+  - sort: 200000
+    name: Kit da scasso (30 Mo)
+    type: text
+    _id: E2Jzz3iXT4dfhMvf
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@Compendium[fvtt-warhero.equipaggiamento-per-classi.S6lmTiMGwXu5zQnB]{Arnesi
+        da scasso}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags:
+      core: {}
+    _stats:
+      compendiumSource: JournalEntry.1DLQq5bAhAo9twKI.JournalEntryPage.E2Jzz3iXT4dfhMvf
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.E2Jzz3iXT4dfhMvf'
+  - sort: 600000
+    name: 'Classe: Mago'
+    type: text
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.089eOgCP2l8UmaTD]{Mago}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.8zxcPdqHAIRnYFcl]{Mago
+        -
+        Concentrarsi}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.xFsAySx8ev5EL557]{Capacità
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.DPbvexg2hQG701J7]{Mago
+        - Conoscenze (+2
+        con)}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zR4K6PXg63yYoZu5]{Mago
+        -
+        Contropotere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.JdOcRTBVmDo1E8ou]{Mago
+        - Donazione (+2
+        mana)}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.0IXBuxDPdj06H2YZ]{Mago
+        - Scrivere
+        pergamene}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.5bCWkC8jqpe1up5Z]{Mago
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.weTUnSPruGmwf9GD]{Mago
+        - Specializzato in una scuola:
+        Trasmutazione}</p><p>@Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.9KljFSjM3pWaoI73]{Ammaliamento
+        - I
+        Sonno}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.uqJljByAKFAlnI2Z]{Ammaliamento
+        - II
+        Charme}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mIMKFBYf3Wjdz2DU]{Ammaliamento
+        - III
+        Comando}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza
+        - I Individuazione del
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.hsNBWzXXYCTtRxte]{Conoscenze
+        - II Dissolvi
+        magie}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta]{Conoscenze
+        - III
+        Identificare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KhIIZD2xav1wVqem]{Costrizione
+        - I
+        Richiamo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Z1enNb056VVT8v5C]{Costrizione
+        - II
+        Ragnatela}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.BzDXrpTEM55aFIqg]{Costrizione
+        - III
+        Patto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Faq8SbGNkVrQ5pvp]{Elementale
+        - Acqua - I Raggio di
+        gelo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1HjRX5S3R2TuqnIN]{Elementale
+        - Acqua - II Cono di
+        freddo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.omCX4zDN753iGPNr]{Elementale
+        - Acqua - III Tempesta di
+        ghiaccio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zTe8Bxq5Rc3lrrCo]{Elementale
+        - Aria - I
+        Scintilla}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.InXfXuABQDHb5zV5]{Elementale
+        - Aria - II
+        Fulmine}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.cOXbmiXeQRJwlhdd]{Elementale
+        - Aria - III Tempesta di
+        fulmini}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CLp5TRPccBPANHUe]{Elementale
+        - Fuoco - I Raggio
+        rovente}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ychDvTMJrneQrl0]{Elementale
+        - Fuoco - II Mani
+        brucianti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.bnWyUAi6Su0InjRo]{Elementale
+        - Fuoco - III Palla di
+        Fuoco}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.RNz7yZA5Hb3avPEC]{Elementale
+        - Terra - I Fiotto
+        acido}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.gW2OzkrdGkW38XK6]{Elementale
+        - Terra - II Bomba al
+        vetriolo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivnemz1L6Q3HTsjA]{Elementale
+        - Terra - III Nube
+        tossica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fzJGod0FE4WiReR0]{Evocazione
+        - Animale - I Evoca
+        aquila}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.SmGpYUgJY9PEIWhf]{Evocazione
+        - Animale - II Evoca
+        lupo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.dIl9bt79csKa8qSQ]{Evocazione
+        - Animale - III Evoca
+        Orso}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x2Wn2yyZzfuS67r5]{Evocazione
+        - Non Morte - I Evoca
+        scheletro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.5C07VRo8z41Kh70Y]{Evocazione
+        - Non Morte - II Evoca
+        zombie}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fJ30QpZ9OAb5JJyB]{Evocazione
+        - Non Morte -
+        III</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KAtzfJafxDsLk9BL]{Fato
+        - I Cambio
+        esito}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ucedLMom9HNyIar6]{Fato
+        - II Cambia
+        bersaglio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.geWk4VaGVcX40eb0]{Fato
+        - III Stretta del
+        fato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2hAooR3fELiaIv9N]{Forza
+        - I Dardo
+        incantato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.YH6sayoSaQeWIwW7]{Forza
+        - II Armatura
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fKEXWz1U2rXN10bh]{Forza
+        - III Globo di
+        forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QGh1VtNFgRRKVvNK]{Guerra
+        - I
+        Precisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ipXemqc1aOOxqoyG]{Guerra
+        - II
+        Forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.wnw46cRzlPWbO5PV]{Guerra
+        - III
+        Titano}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.kMn8UGS6YtugQVi2]{Illusione
+        - I Immagine
+        Speculare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lRyyrm32BmBH05OM]{Illusione
+        - II Immagine
+        illusoria}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.EG2xA3TWqTHG8e28]{Illusione
+        - III
+        Sfocatura}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi
+        - I Parlare con i
+        morti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi
+        - II Comprensione dei
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi
+        - III Parlare
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O6FhPQp1rV8YaJQA]{Luce
+        - I Luce
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x6dRKlegqwmp0dh9]{Luce
+        - II Luce
+        abbagliante}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.SayG2Rx5JA3e7aus]{Luce
+        - III Colpo del
+        sole}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CpkqRsUQEjUBAgms]{Morte
+        - I
+        Risucchio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.nJFSR7YDdiC5aI5F]{Morte
+        - II
+        Prosciugare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KqvWjxWIifyTKNJy]{Morte
+        - III Dito di
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.7b6lal71wDDJAEd0]{Negromanzia
+        - I Risucchia
+        vita}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fYgXo7Pcq4HKOQqK]{Negromanzia
+        - II Vita
+        Falsa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6Z73jbvTwFqsiKOw]{Negromanzia
+        - III Resurrezione
+        veloce}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DH9Fxd3yM8mEpOBi]{Oscurità
+        - I Maglio
+        oscuro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oqWkBcoDNbdIj4ya]{Oscurità
+        - II Oscurità
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ]{Oscurità
+        - III Manto
+        celato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GEUOxFWgjZ72MadL]{Protezione
+        - I Scudo
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zV19MhRi8xVJBGWq]{Protezione
+        - II
+        Salvezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QiWw4fEN7atSXqat]{Protezione
+        - III Pelle di
+        pietra}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DsPn3lqhpGAU77kL]{Rune
+        - I Segno
+        negatorio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vDxv1Amvg7xs2cM4]{Rune
+        - II Segno di
+        protezione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3mDBK9zIf9R4PbLo]{Rune
+        - III Segno
+        esplosivo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qRyiUS9gGHy4Op9X]{Tempo
+        - I Tempo
+        atmosferico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0s6X0VfFHJgKeYBs]{Tempo
+        - II
+        Lentezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O1yGotIS8YidAFh1]{Tempo
+        - III
+        Velocità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FkJ49VbCvSL2ca6c]{Trasmutazione
+        - I
+        Alterazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione
+        - II
+        Ingrandire/Ridurre}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno]{Trasmutazione
+        - III
+        Trasformazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.j7RjSZH85KRovJKc]{Viaggio
+        - I
+        Levitazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1on8iKAjWzcbJkBd]{Viaggio
+        - II
+        Volare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1UrtrLZ51eLjsEIx]{Viaggio
+        - III
+        Teletrasporto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione
+        - I
+        Scurovisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione
+        - II Vedere
+        invisibile}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione
+        - III Epurare invisibilità}</p><p></p><p></p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    _id: pRIGdNHKudLLU5ha
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.pRIGdNHKudLLU5ha'
+  - sort: 700000
+    name: 'Classe: Ladro'
+    type: text
+    _id: H4FmdnHhvUhzhTOH
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p></p><p>@UUID[Compendium.fvtt-warhero.classi.Item.tYXVBUbnY22kOAPq]{Ladro}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vFGr2GMRUbw1I8Fl]{Ladro
+        - Abile nell’uso delle due
+        armi}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.NAgtxlcDJ6Wk9gMo]{Ladro
+        - Alle
+        spalle}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.5PFaaH1FFAutnl4Z]{Ladro
+        -
+        Evadere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Ot2Axsurtz2xo8Q4]{Ladro
+        -
+        Furtivo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yiTyGgGF11Y2uNFF]{Ladro
+        -
+        Raggirare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hRPwgzWqJyhPA40q]{Ladro
+        - Restrizione
+        allineamento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hLr2mCZ0Kujxd619]{Ladro
+        - Trappole}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.H4FmdnHhvUhzhTOH'
+  - sort: 800000
+    name: 'Classe: Chierico'
+    type: text
+    _id: WP7fLJB4YMWNB7yC
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.F4WYMf6IDsxxqQTh]{Chierico}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.BfOV4iFhgm2g7HoC]{Chierico
+        -
+        Contropotere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bDJFkMddaX9wy8BS]{Chierico
+        -
+        Dominio}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yOt67STTPbLVhXwD]{Chierico
+        - Donazione (+2
+        mana)}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vLmxh9L0w0AgHJTL]{Chierico
+        -
+        Preghiera}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.IknUEJvazpHKcfrx]{Chierico
+        -
+        Scacciare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.fpLoxxxfCQmAagfU]{Chierico
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.AEBDSgpOLfJn0FG5]{Chierico
+        - Vera
+        fede}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.9KljFSjM3pWaoI73]{Ammaliamento
+        - I
+        Sonno}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.uqJljByAKFAlnI2Z]{Ammaliamento
+        - II
+        Charme}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mIMKFBYf3Wjdz2DU]{Ammaliamento
+        - III
+        Comando}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza
+        - I Individuazione del
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.hsNBWzXXYCTtRxte]{Conoscenze
+        - II Dissolvi
+        magie}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta]{Conoscenze
+        - III
+        Identificare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KhIIZD2xav1wVqem]{Costrizione
+        - I
+        Richiamo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Z1enNb056VVT8v5C]{Costrizione
+        - II
+        Ragnatela}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.BzDXrpTEM55aFIqg]{Costrizione
+        - III
+        Patto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6olhY5wohzlkW96u]{Divinazione
+        - I Individuazione
+        dell'allineamento}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6vZEQ1wjQsmCXMtR]{Divinazione
+        - II
+        Scrutare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.v1p3CqaMjGn4032X]{Divinazione
+        - III Domanda
+        divina}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2hAooR3fELiaIv9N]{Forza
+        - I Dardo
+        incantato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.YH6sayoSaQeWIwW7]{Forza
+        - II Armatura
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fKEXWz1U2rXN10bh]{Forza
+        - III Globo di
+        forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.sqqxalQvLW3iSebG]{Guarigione
+        - I Cura
+        ferite}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.yYPcGqpad7uxCLlo]{Guarigione
+        - II Rimuovi
+        status}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4]{Guarigione
+        - III
+        Resurrezione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QGh1VtNFgRRKVvNK]{Guerra
+        - I
+        Precisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ipXemqc1aOOxqoyG]{Guerra
+        - II
+        Forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.wnw46cRzlPWbO5PV]{Guerra
+        - III
+        Titano}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FD2jB2MQjwqX26F4]{Indole
+        - Bene - I Punire il
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.h1wvKCb0vzWc6VLI]{Indole
+        - Bene - II Buona
+        speranza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DNkcEyBQYp78RUeK]{Indole
+        - Bene - III
+        Castigo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.leMppxqSJDUNxpuo]{Indole
+        - Caos - I Punire la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0]{Indole
+        - Caos - II Potere
+        caotico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG]{Indole
+        - Caos - III
+        Catastrofe}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.T0eZtZLUZm9K2BzP]{Indole
+        - Equilibrio - I Punire
+        l'equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ku6axOQVWmkXgyAV]{Indole
+        - Equilibrio - II Occhio per
+        occhio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.on4EicWu0uubdb5o]{Indole
+        - Equilibrio - III
+        Retaggio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FAUFfMhdebRdKBnR]{Indole
+        - Legge - I Punire il
+        caos}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lrvqjBpUmos0t4HB]{Indole
+        - Legge - II Di Fronte alla
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vj2MXWRP76IF9gdQ]{Indole
+        - Legge - III
+        Dettame}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.I0s3vfXtaej6XOsT]{Indole
+        - Male - I Punire il
+        bene}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3l8fdh3vXRvjoJr7]{Indole
+        - Male - II Di fronte al
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2zZ7J0Rjbak48Ljr]{Indole
+        - Male - III
+        Sofferenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi
+        - I Parlare con i
+        morti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi
+        - II Comprensione dei
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi
+        - III Parlare
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O6FhPQp1rV8YaJQA]{Luce
+        - I Luce
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x6dRKlegqwmp0dh9]{Luce
+        - II Luce
+        abbagliante}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.SayG2Rx5JA3e7aus]{Luce
+        - III Colpo del
+        sole}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CpkqRsUQEjUBAgms]{Morte
+        - I
+        Risucchio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.nJFSR7YDdiC5aI5F]{Morte
+        - II
+        Prosciugare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KqvWjxWIifyTKNJy]{Morte
+        - III Dito di
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.7b6lal71wDDJAEd0]{Negromanzia
+        - I Risucchia
+        vita}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fYgXo7Pcq4HKOQqK]{Negromanzia
+        - II Vita
+        Falsa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6Z73jbvTwFqsiKOw]{Negromanzia
+        - III Resurrezione
+        veloce}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DH9Fxd3yM8mEpOBi]{Oscurità
+        - I Maglio
+        oscuro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oqWkBcoDNbdIj4ya]{Oscurità
+        - II Oscurità
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ]{Oscurità
+        - III Manto
+        celato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GEUOxFWgjZ72MadL]{Protezione
+        - I Scudo
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zV19MhRi8xVJBGWq]{Protezione
+        - II
+        Salvezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QiWw4fEN7atSXqat]{Protezione
+        - III Pelle di pietra}</p><p></p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.WP7fLJB4YMWNB7yC'
+  - sort: 900000
+    name: 'Classe: Alchimista'
+    type: text
+    _id: biBPqb78bETP4sSx
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.uVcyBMTPNFv9kTUG]{Alchimista}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.K8u5cCfn57cW8uVn]{Alchimista
+        - Alchimia
+        rapida}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.EwQJ6I6HDoXgwtgR]{Alchimista
+        - Bomba
+        esplosiva}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Ev96lW4rKC77CBBr]{Alchimista
+        - E' come se la bevo
+        io}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.k7ncypZUyoLTgij6]{Alchimista
+        - Mescere
+        pozioni}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.hHwEdyuZ30zezO2Z]{Creare
+        pozioni}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Rq9dfbO4RqLghhIs]{Alchimista
+        -
+        Mutageno}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.8npgSyQ4PJAX87eA]{Alchimista
+        - Pozione del
+        vigore}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6HPHBolFtDReWbvA]{Alchimista
+        - Pozione di cura}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.biBPqb78bETP4sSx'
+  - sort: 1000000
+    name: 'Classe: Sapiente'
+    type: text
+    _id: BE8xCr6HpZZc4pFF
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.tYjD37aimagS0qzU]{Sapiente}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MkUMfsLRVd4RPBYs]{Sapiente
+        -
+        Amanuense}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.62KlaD89t4TQ7qMV]{Copiare
+        pergamene}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bqA0aPfUfOIeHrjJ]{Sapiente
+        - Conoscenza (+5
+        con)}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.D42CCId8ELcs8im4]{Sapiente
+        - Conoscenza dei
+        poteri}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MCardmOFxJC5mB93]{Sapiente
+        - Conosco
+        tutto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta]{Conoscenze
+        - III
+        Identificare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MuYnqbpVvtOGl6Rn]{Sapiente
+        -
+        Contropotere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.SJINi5PRPVTKkEW0]{Sapiente
+        - Punto
+        debole}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.jRAQVi89sfLKRzEo]{Sapiente
+        -
+        Ricercatore}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.hHwEdyuZ30zezO2Z]{Creare
+        pozioni}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.NDXCtqifyBGE01PQ]{Sapiente
+        - Saggio (+2
+        MEN)}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.KaYLmz4jha3xUdFu]{Sapiente
+        - Vedere il
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.YEpDUF1vkWPa5npg]{Sapiente
+        - Vera
+        conoscenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza
+        - I Individuazione del magico}</p><p></p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.BE8xCr6HpZZc4pFF'
+  - sort: 1100000
+    name: 'Classe: Berserk'
+    type: text
+    _id: DG5hH8nCAaEifXuj
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.vuAlVPllDGjYvBfp]{Berserk}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7H4I9s2CthT1JfXN]{Berserk
+        -
+        Arrabbiato}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.AzQ2qZLpSM6i4NwC]{Berserk
+        -
+        Costituzione}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.cGbuokRQcx9k4xIn]{Berserk
+        - Danno
+        maggiorato}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.lr0HKSii8sPyxft6]{Berserk
+        -
+        Furia}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.POJyqTapmBXJSLtr]{Berserk
+        - Presa della
+        scimmia}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ylR0peJ1mPp05EVT]{Berserk
+        - Restrizione dell'
+        allineamento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.xoVs4bR1DxKTzXWh]{Berserk
+        -
+        Spaccatutto}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.Z23jo7kOAS6EbI3I]{Critico
+        potenziato}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.DG5hH8nCAaEifXuj'
+  - sort: 1200000
+    name: 'Classe: Cavaliere'
+    type: text
+    _id: DqM0IFJOotVWM9YP
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.HN2XmADnCCHv6FZl]{Cavaliere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zUrtvxJwpyWcfbOR]{Cavaliere
+        - Abile a
+        cavalcare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.6k8RLtxMWLZba3fj]{Cavalcare
+        sicuro}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Quhk3Q4Q7c3mJSZw]{Cavaliere
+        - Carica in
+        sella}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MOle9gDmXI94CegG]{Cavaliere
+        - Compagno
+        animale}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.OkOL8aeyubeMWta0]{Cavaliere
+        -
+        Costituzione}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zbTdoITtZbpWhMVf]{Cavaliere
+        - Grido di
+        comando}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LzG8BKk6nt12KSkt]{Cavaliere
+        - Grido di
+        coraggio}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CnNobYCWx4UZC3XU]{Cavaliere
+        - Grido di
+        speranza}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.NL2yDYU5jyVbVOcQ]{Cavaliere
+        - Restrizione allineamento}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.DqM0IFJOotVWM9YP'
+  - sort: 2400000
+    name: 'Classe: Bruto'
+    type: text
+    _id: yeV2bxp5XzHr8IgI
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.SnzoC7LorlnqouPx]{Bruto}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.VTwAXC7zca2CWsBB]{Bruto
+        - Carica a
+        salti}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.W7aeH5AooZBmqbDZ]{Bruto
+        - Carico
+        estremo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.EnhKbkSKCJEJKlR8]{Bruto
+        -
+        Costituzione}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.JEgfcDSLr0M48Lb6]{Bruto
+        - Fisico
+        mostruoso}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.O8BqK9GV97Ztr26t]{Bruto
+        - Lancia
+        alleato}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.elv9kxS0YDR2wsi7]{Bruto
+        - Lancia alleato per
+        scudo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.pcNYnbdxBPEuk840]{Bruto
+        - Passo
+        veloce}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.n7uk4XJbvRlyizXR]{Bruto
+        - Restrizione
+        allineamento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.H3gBj5nBV7QdF4iz]{Bruto
+        - Uso di armi}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.yeV2bxp5XzHr8IgI'
+  - sort: 2500000
+    name: 'Classe: Cavalcadraghi'
+    type: text
+    _id: hnDbH2iknzQEYULP
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.jru1dWn2dMpkC1Bg]{Cavalcadraghi}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ifn4FERLyCT1Laii]{Cavalcadraghi
+        - Abile a
+        cavalcare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.6k8RLtxMWLZba3fj]{Cavalcare
+        sicuro}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.2DEUltuNkCoc0iLJ]{Cavalcadraghi
+        - Condividere abilità e
+        poteri}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.tbxLRV2L5xKzXMHU]{Cavalcadraghi
+        - Ordine di
+        soffio}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.df9n68qD7HEs8smi]{Cavalcadraghi
+        - Richiamo del
+        drago}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.uYi5705ICkPw9S7g]{Cavalcadraghi
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QGh1VtNFgRRKVvNK]{Guerra
+        - I
+        Precisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ipXemqc1aOOxqoyG]{Guerra
+        - II
+        Forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.wnw46cRzlPWbO5PV]{Guerra
+        - III
+        Titano}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GEUOxFWgjZ72MadL]{Protezione
+        - I Scudo
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zV19MhRi8xVJBGWq]{Protezione
+        - II
+        Salvezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QiWw4fEN7atSXqat]{Protezione
+        - III Pelle di
+        pietra}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione
+        - I
+        Scurovisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione
+        - II Vedere
+        invisibile}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione
+        - III Epurare invisibilità}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.hnDbH2iknzQEYULP'
+  - sort: 2600000
+    name: 'Classe: Discepolo dei draghi'
+    type: text
+    _id: qu1eacZCFmlJHqQv
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.RO5Cg7YAhrKR9YPh]{Discepolo
+        dei
+        draghi}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.o7bf0vIyhs70wkoQ]{Discepolo
+        dei draghi - Figlio del
+        drago}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3LkvP2JWpN1cbSTn]{Discepolo
+        dei draghi - Mutare forma
+        drago}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3LI7MoZSPMkul24n]{Discepolo
+        dei draghi - Ordine del
+        cavalcadraghi}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.jW2axfNTFr7EkmmA]{Discepolo
+        dei draghi - Scaglia di
+        drago}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LNZ2or3BAzOYn78p]{Discepolo
+        dei draghi - Sfere conosciute}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.qu1eacZCFmlJHqQv'
+  - sort: 150000
+    name: Kit da scalatore (2 Mo)
+    type: text
+    _id: o7y7nbzgQf5tBd5G
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.ELBBwbQqomGlofKj]{Rampino}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.gwVn05zvpecmNsz1]{Corda
+        di canapa (15 metri)}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.o7y7nbzgQf5tBd5G'
+  - sort: 125000
+    name: Kit per scrivere (4 Mo)
+    type: text
+    _id: 9GCUyJccwQH75dUc
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.X9Tc3ostdKOmtuVT]{Pennino}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.E1SGERaUnSym98tE]{Inchiostro
+        (boccetta da 30 g)}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.9GCUyJccwQH75dUc'
+  - sort: 450000
+    name: Kit per poteri (15 Mo)
+    type: text
+    _id: t1Tbx41NLaxsgJyj
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.9CVqlrpn4Ty617Df]{Borsa
+        componenti
+        poteri}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.DByqAwnuTL1r0rlO]{Libro
+        dei poteri da viaggio}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.t1Tbx41NLaxsgJyj'
+  - sort: 525000
+    name: Kit del guaritore (50 Mo)
+    type: text
+    _id: M23Y8oBkofnvTaDT
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.vgdfgnprqapyZU35]{Borsa
+        del guaritore}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.M23Y8oBkofnvTaDT'
+  - sort: 562500
+    name: Kit pergamene (2 Mo)
+    type: text
+    _id: HMzL2mz6qHydaT4z
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.1pPVPDPbD1lC5Y4V]{Contenitore
+        per mappe o
+        pergamene}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.iT2F3funDH1rQYDz]{Pergamena
+        (Foglio)}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.HMzL2mz6qHydaT4z'
+  - sort: 581250
+    name: Kit pozioni (4 Mo)
+    type: text
+    _id: V4gyVijLGfJfPmAA
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.fBSXkPemUvMBUBYh]{Porta
+        pozioni}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.SHIuwc7ia5WVyuvO]{Ampolla
+        (vuota)}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.V4gyVijLGfJfPmAA'
+  - sort: 1250000
+    name: 'Classe: Guerriero'
+    type: text
+    _id: 7xoC2anrBLDXLKRi
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.5tuf2CxD64GcsKmi]{Guerriero}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.me4o0Q1jTI9uqixB]{Guerriero
+        - Abilità
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LajbXXsxJABFbhRi]{Guerriero
+        -
+        Addestrato}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7zQ3w70pJL8jwoxi]{Guerriero
+        -
+        Armatura}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hnxZcfvMqQrhu7i4]{Guerriero
+        - Danno
+        maggiorato}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.lzPRlzUtE4cj1ODO]{Guerriero
+        - Movimento
+        tattico}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Fp7kRGDphiJhdQAd]{Guerriero
+        - Specializzato in
+        guerra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ESzN7Y6vTKlGOj1J]{Guerriero
+        - Specializzazione}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.7xoC2anrBLDXLKRi'
+  - sort: 1275000
+    name: 'Classe: Taumaturgo'
+    type: text
+    _id: cUCGj3LLrUuLtz8I
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.00oANw9wGRGtKMNO]{Taumaturgo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.dB5WDrE2b8K21tPk]{Taumaturgo
+        - Abile nella
+        guarigione}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CZlBFX8aX3lYvRon]{Taumaturgo
+        - Abilità
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.o5m9EbXrb0lqOvjq]{Taumaturgo
+        -
+        Contropotere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.eKsdgFVHHl09tJkt]{Taumaturgo
+        - Esplosione
+        curativa}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.E3cbFHcc1Urgw1hw]{Taumaturgo
+        - Imposizione delle
+        mani}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.rM2NoVa5O5Aw21Mx]{Taumaturgo
+        - Salto del
+        destino}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.2lw9O0S2ERSguyqI]{Taumaturgo
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.duNbk7PoD1R0cyA8]{Taumaturgo
+        - Visione di
+        vita}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.jjvggBvh2EzgMga2]{Taumaturgo
+        - Vita
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.sqqxalQvLW3iSebG]{Guarigione
+        - I Cura
+        ferite}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.yYPcGqpad7uxCLlo]{Guarigione
+        - II Rimuovi
+        status}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4]{Guarigione
+        - III Resurrezione}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.cUCGj3LLrUuLtz8I'
+  - sort: 590625
+    name: Kit da oracolo (30 Mo)
+    type: text
+    _id: KLTt1yNSZXiMUcfj
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.ef4D48XSXaf41DIW]{Sfera
+        di cristallo}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.KLTt1yNSZXiMUcfj'
+  - sort: 595313
+    name: Kit incantatore divino (25 Mo)
+    type: text
+    _id: rWk3ilO56PyA2dyX
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.lGnN2XKCjXcAcU4l]{Simbolo
+        sacro o sacrilego d'argento}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.rWk3ilO56PyA2dyX'
+  - sort: 112500
+    name: Kit sopravvivenza (26 Mo)
+    type: text
+    _id: 6ShRYU03fjMgWtzQ
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.rVayixHCn9Ua1FmF]{Tenda
+        piccola}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.ODtjmLipzbvOHRLa]{Giaciglio}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.RQLNQUTna9daihAt]{Coperta}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.cqDevro0H1IatpSV]{Acciarino
+        e pietra
+        focaia}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.nGO18McABxAbLKdC]{Torcia}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.HxKlMfjxWmR6EHfT]{Otre}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.NcJiLo7hkSXdes8p]{Razioni
+        da Viaggio (al giorno)}</p><p></p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.6ShRYU03fjMgWtzQ'
+  - sort: 592969
+    name: Kit invernale (10 Mo)
+    type: text
+    _id: akCVTAfSV5NR9p5I
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.vestiti.Item.nDdq62Oov40UrXBr]{Abito
+        invernale}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.wtG5gZqZGg9S1OgZ]{Coperta
+        invernale}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.akCVTAfSV5NR9p5I'
+  - sort: 1600000
+    name: 'Classe: Trasformista'
+    type: text
+    _id: AOBAezHNol6yo6fq
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.nBx9ew03P6W7no46]{Trasformista}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hrAZOM79i4syUa3Y]{Trasformista
+        - Abile nel
+        imbrogliare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.HjGiBhTHdvYTWWu8]{Trasformista
+        - Abile
+        parlantina}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.8pg6LxWvVUuRympT]{Trasformista
+        - Clonare
+        abilità}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.OtSejBsWIGr4v0Gt]{Trasformista
+        -
+        Furtivo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6KzRn5QpXktj9but]{Trasformista
+        - Imitare
+        abilità}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.riUlzIup8eOTxKnu]{Trasformista
+        - Linguaggi
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.U7Knqbx3yDoelbMp]{Trasformista
+        - Mi sento
+        un’altro}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LxllSyEykvg9ZYws]{Trasformista
+        -
+        Mimettizarsi}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.UwJAIqWEJSBhTak1]{Trasformista
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.kMn8UGS6YtugQVi2]{Illusione
+        - I Immagine
+        Speculare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lRyyrm32BmBH05OM]{Illusione
+        - II Immagine
+        illusoria}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.EG2xA3TWqTHG8e28]{Illusione
+        - III
+        Sfocatura}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi
+        - I Parlare con i
+        morti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi
+        - II Comprensione dei
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi
+        - III Parlare
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FkJ49VbCvSL2ca6c]{Trasmutazione
+        - I
+        Alterazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione
+        - II
+        Ingrandire/Ridurre}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno]{Trasmutazione
+        - III Trasformazione}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.AOBAezHNol6yo6fq'
+  - sort: 1700000
+    name: 'Classe: Guardia nera'
+    type: text
+    _id: NDOShoI7JgXKzXMs
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.10z36aJDngmRQ9J4]{Guardia
+        nera}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.oimYTshGlQ0xwivx]{Guardia
+        nera - Grazia
+        divina}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.scGHxFHGKMN0R2M2]{Guardia
+        nera - Imposizione delle
+        mani}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.eoeMDjTYxZgyOpEh]{Guardia
+        nera - Individuazione del
+        bene/legge}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.VVereowWWzPWgD8g]{Guardia
+        nera - Punire il bene o la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FCxCmpfoUILN4OpI]{Guardia
+        nera - Restrizione
+        allineamento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.nmHnV9jdIV40I3zC]{Guardia
+        nera -
+        Servitore}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x2Wn2yyZzfuS67r5]{Evocazione
+        - Non Morte - I Evoca
+        scheletro}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3EpjJgPa7ehQAi2z]{Guardia
+        nera - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.fRd4YHRgPoGi57Qp]{Guardia
+        nera - Spirito
+        nero}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.leMppxqSJDUNxpuo]{Indole
+        - Caos - I Punire la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0]{Indole
+        - Caos - II Potere
+        caotico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG]{Indole
+        - Caos - III
+        Catastrofe}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.I0s3vfXtaej6XOsT]{Indole
+        - Male - I Punire il
+        bene}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3l8fdh3vXRvjoJr7]{Indole
+        - Male - II Di fronte al
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2zZ7J0Rjbak48Ljr]{Indole
+        - Male - III
+        Sofferenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CpkqRsUQEjUBAgms]{Morte
+        - I
+        Risucchio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.nJFSR7YDdiC5aI5F]{Morte
+        - II
+        Prosciugare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KqvWjxWIifyTKNJy]{Morte
+        - III Dito di morte}</p><p></p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.NDOShoI7JgXKzXMs'
+  - sort: 1800000
+    name: 'Classe: Signore elementale'
+    type: text
+    _id: LYodKXF5SpAaYPry
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.lVQyFb6nlZQzWDNS]{Signore
+        elementale}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.0IEtGx1Er2f382JB]{Signore
+        elementale - Conoscenza
+        elementale}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.RfhMenEBlXsUQfXD]{Signore
+        elementale -
+        Contropotere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.gupmrGAkuIwGx5iS]{Signore
+        elementale - Ignorare la
+        riduzione}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3JYMEbRpfOWLc2Bp]{Signore
+        elementale - Incantare
+        arma}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.HeMFSyYH6gvWcmYh]{Signore
+        elementale - Incantare
+        armatura}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.5A4QmCZnG8ubmO15]{Signore
+        elementale - Meta
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FDv1RzhQhfAwJrIK]{Signore
+        elementale - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zbCi6yD4Z1Coktpk]{Signore
+        elementale - Signore
+        dell'elemento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MsCFjK79qe8XC7a1]{Signore
+        elementale - Stregoneria elementale}</p><p></p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.LYodKXF5SpAaYPry'
+  - sort: 1900000
+    name: 'Classe: Oracolo'
+    type: text
+    _id: M6EiKBjLNH2i9h1r
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.d1vbfwQRI1NvuZ3U]{Oracolo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.nAHgbzobTsu8yPIq]{Oracolo
+        - Favore
+        divino}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.sMauAMHYabSWcQK7]{Oracolo
+        - Intervento
+        divino}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.mexLasnP65OEzT0Q]{Oracolo
+        -
+        Osservare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7EDi6Jg1wMMEmNKn]{Oracolo
+        - Percezione del
+        futuro}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.l5Udehj1jDxCUgZx]{Oracolo
+        - Percezione dell'
+        allineamento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.stZj0dwsGJeEhqog]{Oracolo
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.0p93zjYI5GT1clOm]{Oracolo
+        -
+        Visione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.9StvYUTQ7V0YhtOf]{Visione
+        - IV Visione
+        futura}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza
+        - I Individuazione del
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.hsNBWzXXYCTtRxte]{Conoscenze
+        - II Dissolvi
+        magie}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta]{Conoscenze
+        - III
+        Identificare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6olhY5wohzlkW96u]{Divinazione
+        - I Individuazione
+        dell'allineamento}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6vZEQ1wjQsmCXMtR]{Divinazione
+        - II
+        Scrutare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.v1p3CqaMjGn4032X]{Divinazione
+        - III Domanda
+        divina}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KAtzfJafxDsLk9BL]{Fato
+        - I Cambio
+        esito}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ucedLMom9HNyIar6]{Fato
+        - II Cambia
+        bersaglio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.geWk4VaGVcX40eb0]{Fato
+        - III Stretta del
+        fato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O6FhPQp1rV8YaJQA]{Luce
+        - I Luce
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x6dRKlegqwmp0dh9]{Luce
+        - II Luce
+        abbagliante}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.SayG2Rx5JA3e7aus]{Luce
+        - III Colpo del
+        sole}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione
+        - I
+        Scurovisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione
+        - II Vedere
+        invisibile}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione
+        - III Epurare invisibilità}</p><p></p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.M6EiKBjLNH2i9h1r'
+  - sort: 2000000
+    name: 'Classe: Mutaforma'
+    type: text
+    _id: bPlzhlU1wXO216uB
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.gRCQooBjUg4aGh4z]{Mutaforma}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.XHAqAXheqwgZPLbM]{Mutaforma
+        - Linguaggi
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CLJJJhEPM85Y2P9H]{Mutaforma
+        -
+        Mutare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CtjId1l9c7fojq6H]{Mutaforma
+        - Mutare
+        forma}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.JIZnct1jg0cr0dGS]{Mutaforma
+        - Mutazione elementale}</p><p></p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.bPlzhlU1wXO216uB'
+  - sort: 2100000
+    name: 'Classe: Samurai'
+    type: text
+    _id: 35RDgc9sL2Cy6wye
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.YLtmhhrcUhcdCqnL]{Samurai}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FRWUyBHfNx7YgyiU]{Samurai
+        - Abilità
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.rZrTz7PXkQjxsau1]{Samurai
+        - Restrizione
+        allineamento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Wg8ZO4ASPFD04frI]{Samurai
+        - Spirito
+        combattivo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.aXXYe2ss0xGl8K3E]{Samurai
+        - Spirito nell
+        arma}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.H7Xxk7MZPKKavm1l]{Samurai
+        - Spirito nell
+        armatura}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.JFCGcigxjk7LzCuK]{Samurai
+        - Stendardo}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.35RDgc9sL2Cy6wye'
+  - sort: 2200000
+    name: 'Classe: Acrobata'
+    type: text
+    _id: yP03qIQH7UqmuOp4
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.bWlvync5TO39pe90]{Acrobata}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MQMjeh5mrxzwkCy3]{Acrobata
+        - Agile (+1
+        IST)}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.GEJH9NMYfnUaPXqd]{Acrobata
+        - Colpo
+        letale}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vPtjp0OP0LU2RSHS]{Acrobata
+        -
+        Contraccolpo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.qt4fHHr6HpgmbRKA]{Acrobata
+        - Contrattacco
+        amico}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vkWY89dojb8ZeQpC]{Acrobata
+        - Essere
+        scagliato}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hojyTL541QKo9KEb]{Acrobata
+        - Evitare il
+        colpo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.SiT97JLceKx8gOHK]{Acrobata
+        - Lesto (+4
+        ini)}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hRR3elRIRpyMOMEM]{Acrobata
+        -
+        Schivare}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.0EnayTHWCsm2b2D0]{Eludere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.xkuaVdjN1uSRzpxE]{Eludere
+        migliorato}</p><p></p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.yP03qIQH7UqmuOp4'
+  - sort: 2300000
+    name: 'Classe: Arciere arcano'
+    type: text
+    _id: qjYLVMoEurl8Oe0u
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.hGf3uDqzGVbkZbEH]{Arciere
+        arcano}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.KGziIZaE8hJOKigM]{Arciere
+        arcano - Cecchino (+5
+        Txc)}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ZWsTgRNeAXc1w8bN]{Arciere
+        arcano - Esplosione
+        elementale}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.so8nmO3xF5Zw8bH5]{Arciere
+        arcano - Incantare
+        arma}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vLMkTF74BhkVB8Tb]{Arciere
+        arcano - Seguage dei
+        poteri}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.tRbFgcaznH6N6GWs]{Arciere
+        arcano - Tiro preciso}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.qjYLVMoEurl8Oe0u'
+  - sort: 594141
+    name: Kit da cartomante (1 Mo)
+    type: text
+    _id: 097jB9ECw1AowRso
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.EywDBcnfUb757giX]{Mazzo
+        da cartomante}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.097jB9ECw1AowRso'
+  - sort: 594727
+    name: Kit da bardo (5 Mo)
+    type: text
+    _id: fyngr1IzQfipGFHt
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.D2Y54HLmPxSh4emy]{Strumento
+        musicale}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.fyngr1IzQfipGFHt'
+  - sort: 595020
+    name: Kit da samurai (10 Mo)
+    type: text
+    _id: s7TrgqtF5BBSkf21
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.eYrqTEKcctj4Ko79]{Stendardo}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.s7TrgqtF5BBSkf21'
+  - sort: 595167
+    name: Kit incantatore divino di base (1 Mo)
+    type: text
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.q51yiNQJmwSVrWYT]{Simbolo
+        sacro o sacrilego di legno}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags:
+      core: {}
+    _stats:
+      compendiumSource: JournalEntry.1DLQq5bAhAo9twKI.JournalEntryPage.rWk3ilO56PyA2dyX
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    _id: W666ObeHNboGmhuq
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.W666ObeHNboGmhuq'
+  - sort: 598829
+    name: Kit da pistolero (51 Mo)
+    type: text
+    _id: lZobkEhWE8YkYxUK
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.UUw8T1uO7WOdm9FT]{Polvere
+        nera per 1 proiettile da
+        fuoco}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.YFER0ncxX0KMUTcP]{Componenti
+        per arma da fuoco}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.lZobkEhWE8YkYxUK'
+  - sort: 596485
+    name: Kit da cartografo (20 Mo)
+    type: text
+    _id: tfmYzLSPhmpQ3lWS
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.UgxsZs2vs6Lydlhv]{Attrezzi
+        da
+        Cartografo}</p><p>@UUID[Compendium.fvtt-warhero.equipaggiamento.Item.q1TeqfuklKxzEnli]{Bussola}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.tfmYzLSPhmpQ3lWS'
+  - sort: 599415
+    name: Kit da mercante (10 Mo)
+    type: text
+    _id: Jt2ss05CgHbKMg6s
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.ecFDCieRsj4GofOI]{Bilancia
+        da mercante}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.Jt2ss05CgHbKMg6s'
+  - sort: 599708
+    name: Kit da ritualista (10 Mo)
+    type: text
+    _id: cjbEnyQjSfOwEDHd
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.uQn2KGeabbCKQOrY]{Libro
+        dei rituali}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.cjbEnyQjSfOwEDHd'
+  - sort: 599854
+    name: Kit da cuoco (2 Mo)
+    type: text
+    _id: J7zzvuCPjlNNiEcc
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.v707q8qDUaBoPuto]{Calderone}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.J7zzvuCPjlNNiEcc'
+  - sort: 599927
+    name: Kit da fabbro (5 Mo)
+    type: text
+    _id: kGb8dNqP1oOjkYPh
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.IUDEJRZ0dcJgijws]{Incudine}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.kGb8dNqP1oOjkYPh'
+  - sort: 599964
+    name: Kit da pittore (1 Mo)
+    type: text
+    _id: zoH6BUJg8IGBK8G5
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.WiYExrG7SnrispFa]{Pennello}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.zoH6BUJg8IGBK8G5'
+  - sort: 2700000
+    name: 'Classe: Allevatore'
+    type: text
+    _id: VfqQKCarG0MxTtn3
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.nOl5G56UImFYqJUN]{Allevatore}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.J4WwH55JaWqXrtW8]{Allevatore
+        - Abilità
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.prJZX6JbYP1gd01r]{Allevatore
+        - Compagno
+        animale}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.XSViUBoAhrCrDRRc]{Allevatore
+        -
+        Famiglio}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.S00kNnWBQ57REokU]{Allevatore
+        - Famigli
+        extra}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3swVYOXda29XyysW]{Allevatore
+        - Famigli
+        addestrati}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.SyzDBs5VJ1tWRXH1]{Allevatore
+        - Infusione
+        animale}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bEGIomt4sr8OFrbg]{Allevatore
+        - Percezione
+        univoca}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.uZY8NFTCYQPekfOq]{Allevatore
+        - Sfere conosciute}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.VfqQKCarG0MxTtn3'
+  - sort: 2800000
+    name: 'Classe: Arcimago'
+    type: text
+    _id: HcjQxra9APTK2KYL
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: "<p>@UUID[Compendium.fvtt-warhero.classi.Item.kiBreNq5aHf8RJ2w]{Arcimago}\_</p><p>\_@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CVcXJfM2rftXmrQF]{Arcimago - Amanuense}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.s2SEQbo5nvTZ94Xf]{Arcimago - Conoscenze}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vX74J4mYIVkT4UEn]{Arcimago - Contropotere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.iBvNxGXhPk1Q62HU]{Arcimago - Donazione}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6RPtARxs9EZJo1OY]{Arcimago - Metapotere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FZub13Swtd7esFSL]{Arcimago - Polla del mago}</p><p>@Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro potere}</p><p>@Compendium[fvtt-warhero.abilita-aggiuntive.62KlaD89t4TQ7qMV]{Copiare pergamene}</p>"
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.HcjQxra9APTK2KYL'
+  - sort: 2850000
+    name: 'Classe: Cacciatore di draghi'
+    type: text
+    _id: KfjoXxux9HhfdYlQ
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.S9FeLcqD49Ak33O0]{Cacciatore
+        di
+        Draghi}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.5U207aYpT9NIPCos]{Cacciatore
+        di draghi -
+        Antisoffio}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.w8PnF3v4uOVY92Km]{Cacciatore
+        di draghi - Caccia alle bestie
+        magiche}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Tc7iBwjY16rINz3R]{Cacciatore
+        di draghi - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FD2jB2MQjwqX26F4]{Indole
+        - Bene - I Punire il
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.h1wvKCb0vzWc6VLI]{Indole
+        - Bene - II Buona
+        speranza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DNkcEyBQYp78RUeK]{Indole
+        - Bene - III
+        Castigo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.leMppxqSJDUNxpuo]{Indole
+        - Caos - I Punire la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0]{Indole
+        - Caos - II Potere
+        caotico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG]{Indole
+        - Caos - III
+        Catastrofe}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.T0eZtZLUZm9K2BzP]{Indole
+        - Equilibrio - I Punire
+        l'equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ku6axOQVWmkXgyAV]{Indole
+        - Equilibrio - II Occhio per
+        occhio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.on4EicWu0uubdb5o]{Indole
+        - Equilibrio - III
+        Retaggio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FAUFfMhdebRdKBnR]{Indole
+        - Legge - I Punire il
+        caos}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lrvqjBpUmos0t4HB]{Indole
+        - Legge - II Di Fronte alla
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vj2MXWRP76IF9gdQ]{Indole
+        - Legge - III
+        Dettame}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.I0s3vfXtaej6XOsT]{Indole
+        - Male - I Punire il
+        bene}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3l8fdh3vXRvjoJr7]{Indole
+        - Male - II Di fronte al
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2zZ7J0Rjbak48Ljr]{Indole
+        - Male - III
+        Sofferenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi
+        - I Parlare con i
+        morti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi
+        - II Comprensione dei
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi
+        - III Parlare
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FkJ49VbCvSL2ca6c]{Trasmutazione
+        - I
+        Alterazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione
+        - II
+        Ingrandire/Ridurre}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno]{Trasmutazione
+        - III
+        Trasformazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione
+        - I
+        Scurovisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione
+        - II Vedere
+        invisibile}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione
+        - III Epurare
+        invisibilità}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.VZNDxxj0RBza1iNt]{Cacciatore
+        di draghi -
+        Soffio}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7DXtO9dJagU7JYs2]{Cacciatore
+        di draghi - Tutto sulle bestie
+        magiche}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.L8rnxOftFJGWS9qE]{Cacciatore
+        di draghi - Volare}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.KfjoXxux9HhfdYlQ'
+  - sort: 4700685
+    name: 'Classe: Rabdomante'
+    type: text
+    _id: hesS7OWQBnaYvzlw
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.nyI49CmXitxL62c9]{Rabdomante}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.nw1Q8YZClqchNGli]{Rabdomante
+        - Abilità
+        magiche}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.STRlMPTdQWjCQLg1]{Rabdomante
+        - Bacchetta da corpo a
+        corpo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hFwnQvCzh65QxVQ0]{Rabdomante
+        - Creare
+        bacchetta}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bAzIoG9hpGcSVPgJ]{Rabdomante
+        - Meta
+        bacchetta}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6gj3BofZHEyWvyK9]{Rabdomante
+        - Ricarica
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.pzMqB7zevnoIOtoz]{Rabdomante
+        - Scorta di
+        bacchette}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yLZtH36I951cwfiM]{Rabdomante
+        - Uso estremo}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.hesS7OWQBnaYvzlw'
+  - sort: 4700734
+    name: 'Classe: Ritualista'
+    type: text
+    _id: whUybc54IHODXXPR
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.klyORPoe3Ikwbeob]{Ritualista}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.RbwpkpLaYxzQFDg2]{Ritualista
+        - Come sono i
+        riti}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.IDtRhlfNAClZwVdT]{Ritualista
+        -
+        Contropotere}</p><p>@Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.XJqniNZYYtQWnwjA]{Ritualista
+        - Rito di creazione
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.UVWmAOvDSTPlJU3j]{Ritualista
+        - Rito di potenziamento
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.0Di5y6T5i2f6eOZ4]{Ritualista
+        - Rituali di
+        combattimento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.uoCcDGEY9QkqdBNN]{Ritualista
+        - Rituali di
+        supporto}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.dz2FmOP6dDjsub4R]{Ritualista
+        - Rituali di
+        utilità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4]{Guarigione
+        - III Resurrezione}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.whUybc54IHODXXPR'
+  - sort: 2825000
+    name: 'Classe: Tecnofabbro'
+    type: text
+    _id: jS520JxrFhpr1Sd1
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.MGMWERDDtd1pg1Cq]{Tecnofabbro}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.49ttVjJOjFIVd2jO]{Tecnofabbro
+        - Forgiare
+        golem}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.VJ43z0WpxxsJ1jhV]{Tecnofabbro
+        -
+        Forgiatore}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.t7RPybrao6puLDGw]{Tecnofabbro
+        - Forgiatura
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Y4O8vMEw6IdNjJjf]{Tecnofabbro
+        - Riparare
+        golem}</p><p>@Compendium[fvtt-warhero.abilita-aggiuntive.YE3QuyAl2YNJQDmL]{Forgiare}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.jS520JxrFhpr1Sd1'
+  - sort: 599982
+    name: Tutti i Poteri
+    type: text
+    _id: nlAdhFgwW8HakrM6
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.poteri.Item.9KljFSjM3pWaoI73]{Ammaliamento
+        - I
+        Sonno}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.uqJljByAKFAlnI2Z]{Ammaliamento
+        - II
+        Charme}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mIMKFBYf3Wjdz2DU]{Ammaliamento
+        - III
+        Comando}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Bo6yukhbjHibVLOR]{Ammaliamento
+        - IV
+        Confusione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.MJQ0ZobtTdCjduDn]{Ammaliamento
+        - IV Modificare
+        memoria}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza
+        - I Individuazione del
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.hsNBWzXXYCTtRxte]{Conoscenze
+        - II Dissolvi
+        magie}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta]{Conoscenze
+        - III
+        Identificare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.wQp0B9jxS1XQQ9oi]{Conoscenze
+        - IV Dissolvi magie
+        superiori}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lx6FGweyivwXnUS4]{Conoscenze
+        - IV Identificare
+        artefatti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KhIIZD2xav1wVqem]{Costrizione
+        - I
+        Richiamo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Z1enNb056VVT8v5C]{Costrizione
+        - II
+        Ragnatela}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.BzDXrpTEM55aFIqg]{Costrizione
+        - III
+        Patto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Ls96wsHFWG8F7Emb]{Costrizione
+        - IV
+        Bersaglio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ZTzGLsI7fYvMZK44]{Costrizione
+        - IV
+        Pietrificazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6olhY5wohzlkW96u]{Divinazione
+        - I Individuazione
+        dell'allineamento}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6vZEQ1wjQsmCXMtR]{Divinazione
+        - II
+        Scrutare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.v1p3CqaMjGn4032X]{Divinazione
+        - III Domanda
+        divina}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.9UH6CVtklssk2AVo]{Divinazione
+        - IV
+        Precognizione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CQ8MWucM1IWeDNQq]{Divinazione
+        - IV
+        Telepatia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Faq8SbGNkVrQ5pvp]{Elementale
+        - Acqua - I Raggio di
+        gelo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1HjRX5S3R2TuqnIN]{Elementale
+        - Acqua - II Cono di
+        freddo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.omCX4zDN753iGPNr]{Elementale
+        - Acqua - III Tempesta di
+        ghiaccio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.7n6sxQKYPaM7pkh4]{Elementale
+        - Acqua - IV Resistenza al
+        gelo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.luMwwiXjCbV7zV2k]{Elementale
+        - Acqua - IV
+        Tsunami}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zTe8Bxq5Rc3lrrCo]{Elementale
+        - Aria - I
+        Scintilla}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.InXfXuABQDHb5zV5]{Elementale
+        - Aria - II
+        Fulmine}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.cOXbmiXeQRJwlhdd]{Elementale
+        - Aria - III Tempesta di
+        fulmini}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.L42LjIoOFanFf2gZ]{Elementale
+        - Aria - IV Folata di
+        vento}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ip5OKhEQxoeb7pNy]{Elementale
+        - Aria - IV Resistenza alla
+        scossa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CLp5TRPccBPANHUe]{Elementale
+        - Fuoco - I Raggio
+        rovente}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ychDvTMJrneQrl0]{Elementale
+        - Fuoco - II Mani
+        brucianti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.bnWyUAi6Su0InjRo]{Elementale
+        - Fuoco - III Palla di
+        Fuoco}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0fuQ1vuv4uUfReik]{Elementale
+        - Fuoco - IV Muro di
+        fuoco}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.IwckOzpQuieWvcOn]{Elementale
+        - Fuoco - IV Resistenza al
+        fuoco}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.RNz7yZA5Hb3avPEC]{Elementale
+        - Terra - I Fiotto
+        acido}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.gW2OzkrdGkW38XK6]{Elementale
+        - Terra - II Bomba al
+        vetriolo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivnemz1L6Q3HTsjA]{Elementale
+        - Terra - III Nube
+        tossica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2t6zBr9FOTemb7ef]{Elementale
+        - Terra - IV Gabbia di
+        terra}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.jSH5a5NALT6v8E6H]{Elementale
+        - Terra - IV Resistenza all'
+        acido}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fzJGod0FE4WiReR0]{Evocazione
+        - Animale - I Evoca
+        aquila}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.SmGpYUgJY9PEIWhf]{Evocazione
+        - Animale - II Evoca
+        lupo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.dIl9bt79csKa8qSQ]{Evocazione
+        - Animale - III Evoca
+        Orso}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KBxBDMo05wN3L649]{Evocazione
+        - Animale - IV Evoca
+        dinosauro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x2Wn2yyZzfuS67r5]{Evocazione
+        - Non Morte - I Evoca
+        scheletro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.5C07VRo8z41Kh70Y]{Evocazione
+        - Non Morte - II Evoca
+        zombi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fJ30QpZ9OAb5JJyB]{Evocazione
+        - Non Morte - III Evoca
+        spettro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CjIg6780ZHG14ffq]{Evocazione
+        - Non Morte - IV Evoca
+        mummia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KAtzfJafxDsLk9BL]{Fato
+        - I Cambio
+        esito}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ucedLMom9HNyIar6]{Fato
+        - II Cambia
+        bersaglio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.geWk4VaGVcX40eb0]{Fato
+        - III Stretta del
+        fato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.e5sdgdR1TBcKEpoO]{Fato
+        - IV Destino
+        casuale}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.UidgozfLZsoPIBoK]{Fato
+        - IV Passo del
+        fato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2hAooR3fELiaIv9N]{Forza
+        - I Dardo
+        incantato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.YH6sayoSaQeWIwW7]{Forza
+        - II Armatura
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fKEXWz1U2rXN10bh]{Forza
+        - III Globo di
+        forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.iNo5f9tC1uLoUN9L]{Forza
+        - IV Ancora
+        dimensionale}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.xipmns7LBQ3k3HuG]{Forza
+        - IV
+        Permanenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.sqqxalQvLW3iSebG]{Guarigione
+        - I Cura
+        ferite}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.yYPcGqpad7uxCLlo]{Guarigione
+        - II Rimuovi
+        status}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4]{Guarigione
+        - III
+        Resurrezione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zbZ8urPD9fwpHNeR]{Guarigione
+        - IV Alito di
+        vita}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2xzmVKeu7aXWCTRD]{Guarigione
+        - IV Cura di
+        massa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QGh1VtNFgRRKVvNK]{Guerra
+        - I
+        Precisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ipXemqc1aOOxqoyG]{Guerra
+        - II
+        Forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.wnw46cRzlPWbO5PV]{Guerra
+        - III
+        Titano}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2nNuZqzQSJv8p1P]{Guerra
+        - IV Potere della
+        furia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x96WvKX2sEQHJjJZ]{Guerra
+        - IV Vendetta della
+        furia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.kMn8UGS6YtugQVi2]{Illusione
+        - I Immagine
+        Speculare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lRyyrm32BmBH05OM]{Illusione
+        - II Immagine
+        illusoria}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.EG2xA3TWqTHG8e28]{Illusione
+        - III
+        Sfocatura}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CkDS9usOUkTMPGo7]{Illusione
+        - IV Mappa del
+        tesoro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.XO7MkRoN270zyu7q]{Illusione
+        - IV Muro
+        illusorio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FD2jB2MQjwqX26F4]{Indole
+        - Bene - I Punire il
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.h1wvKCb0vzWc6VLI]{Indole
+        - Bene - II Buona
+        speranza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DNkcEyBQYp78RUeK]{Indole
+        - Bene - III
+        Castigo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pRLjX4jdslpxXHfR]{Indole
+        - Bene - IV Cerchio contro il
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.iHsSDP1pZMS8LwxC]{Indole
+        - Bene - IV
+        Immolarsi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.leMppxqSJDUNxpuo]{Indole
+        - Caos - I Punire la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0]{Indole
+        - Caos - II Potere
+        caotico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG]{Indole
+        - Caos - III
+        Catastrofe}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.guHItAsGkNVxsEyf]{Indole
+        - Caos - IV Cerchio contro la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ZCVzbwTVtuxwVxC]{Indole
+        - Caos - IV Contropotere
+        caotico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.T0eZtZLUZm9K2BzP]{Indole
+        - Equilibrio - I Punire
+        l'equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ku6axOQVWmkXgyAV]{Indole
+        - Equilibrio - II Occhio per
+        occhio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.on4EicWu0uubdb5o]{Indole
+        - Equilibrio - III
+        Retaggio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.u60tRTInSsCwthRj]{Indole
+        - Equilibrio - IV Cerchio contro l'
+        equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4uxhEUuNFuDjlnr6]{Indole
+        - Equilibrio - IV Ristabilire
+        equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FAUFfMhdebRdKBnR]{Indole
+        - Legge - I Punire il
+        caos}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lrvqjBpUmos0t4HB]{Indole
+        - Legge - II Di Fronte alla
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vj2MXWRP76IF9gdQ]{Indole
+        - Legge - III
+        Dettame}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.dKeIgbWOvb5WyQZ8]{Indole
+        - Legge - IV Cerchio contro il
+        caos}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.AM3ATrHNkOsc9dXk]{Indole
+        - Legge - IV Legge
+        suprema}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.I0s3vfXtaej6XOsT]{Indole
+        - Male - I Punire il
+        bene}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3l8fdh3vXRvjoJr7]{Indole
+        - Male - II Di fronte al
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2zZ7J0Rjbak48Ljr]{Indole
+        - Male - III
+        Sofferenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mTJvyuuhZr9wORuu]{Indole
+        - Male - IV Cerchio contro il
+        bene}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.V8KL2tzLEd12xRP8]{Indole
+        - Male - IV Fine dei
+        giochi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi
+        - I Parlare con i
+        morti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi
+        - II Comprensione dei
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi
+        - III Parlare
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.HC832SufJP78O0kC]{Linguaggi
+        - IV Obbligo di
+        parola}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oClFfv4HOgXgbk6u]{Linguaggi
+        - IV Parlare con il
+        morto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O6FhPQp1rV8YaJQA]{Luce
+        - I Luce
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x6dRKlegqwmp0dh9]{Luce
+        - II Luce
+        abbagliante}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.SayG2Rx5JA3e7aus]{Luce
+        - III Colpo del
+        sole}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.rN03o7ursWpEHlNN]{Luce
+        - IV
+        Cecitá}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.HU6CGjn215elzxZy]{Luce
+        - IV Esplosione
+        solare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CpkqRsUQEjUBAgms]{Morte
+        - I
+        Risucchio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.nJFSR7YDdiC5aI5F]{Morte
+        - II
+        Prosciugare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KqvWjxWIifyTKNJy]{Morte
+        - III Dito di
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.tiDoC5PMgbOgfgIa]{Morte
+        - IV Alito di
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ukjoDdLQ3EG8YG8X]{Morte
+        - IV Interdizione alla
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.7b6lal71wDDJAEd0]{Negromanzia
+        - I Risucchia
+        vita}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fYgXo7Pcq4HKOQqK]{Negromanzia
+        - II Vita
+        Falsa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6Z73jbvTwFqsiKOw]{Negromanzia
+        - III Resurrezione
+        veloce}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GtDC6tnsJwJ8ddL1]{Negromanzia
+        - IV Incatenare l'
+        anima}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vSGeP4nrgzmoixcw]{Negromanzia
+        - IV
+        Rigenerazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DH9Fxd3yM8mEpOBi]{Oscurità
+        - I Maglio
+        oscuro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oqWkBcoDNbdIj4ya]{Oscurità
+        - II Oscurità
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ]{Oscurità
+        - III Manto
+        celato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.PzM7UtU8u6h39z5O]{Oscurità
+        - IV Mezzanotte
+        polare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.gVLEpQCmNRI1d9lo]{Oscurità
+        - IV Vera
+        invisibilità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GEUOxFWgjZ72MadL]{Protezione
+        - I Scudo
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zV19MhRi8xVJBGWq]{Protezione
+        - II
+        Salvezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QiWw4fEN7atSXqat]{Protezione
+        - III Pelle di
+        pietra}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.K9klyiLkV95kwTIe]{Protezione
+        - IV Resistenza all'
+        energia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0hqW3CDSxT0sb2jc]{Protezione
+        - IV Solo
+        difesa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DsPn3lqhpGAU77kL]{Rune
+        - I Segno
+        negatorio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vDxv1Amvg7xs2cM4]{Rune
+        - II Segno di
+        protezione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3mDBK9zIf9R4PbLo]{Rune
+        - III Segno
+        esplosivo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.APjlRqats9YPRcli]{Rune
+        - IV Marchio del
+        mago}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.jfGVhTT1diGxg3LR]{Rune
+        - IV Trappola
+        superiore}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qRyiUS9gGHy4Op9X]{Tempo
+        - I Tempo
+        atmosferico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0s6X0VfFHJgKeYBs]{Tempo
+        - II
+        Lentezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O1yGotIS8YidAFh1]{Tempo
+        - III
+        Velocità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.xSeI7UXUOy20nx4U]{Tempo
+        - IV Bloccare il
+        tempo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.G1D0R27jxq7qkZ69]{Tempo
+        - IV
+        Messaggio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FkJ49VbCvSL2ca6c]{Trasmutazione
+        - I
+        Alterazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione
+        - II
+        Ingrandire/Ridurre}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno]{Trasmutazione
+        - III
+        Trasformazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GHfTTQwR6rtkRcJO]{Trasmutazione
+        - IV
+        Colosso}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oHTmpHJrU8hzVEv7]{Trasmutazione
+        - IV Reggia
+        meravigliosa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ENRZyKNPGk9KfCzq]{Vegetale
+        - I
+        Viticci}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lgjVKvYLB62C5OyL]{Vegetale
+        - II Spore
+        velenose}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Sz183GOBEDrQcGd1]{Vegetale
+        - III
+        Terremoto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vtmeYf3FxtbUlc8k]{Vegetale
+        - IV Aiuto della
+        natura}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.gJGGSLgSqnJ8f7NZ]{Vegetale
+        - IV
+        Rampicanti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.j7RjSZH85KRovJKc]{Viaggio
+        - I
+        Levitazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1on8iKAjWzcbJkBd]{Viaggio
+        - II
+        Volare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1UrtrLZ51eLjsEIx]{Viaggio
+        - III
+        Teletrasporto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ntMeWTWn23Z87hdD]{Viaggio
+        - IV Camminare nel
+        vento}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.JdEYwDx8fzvPchwS]{Viaggio
+        - IV Spostamento
+        planare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione
+        - I
+        Scurovisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione
+        - II Vedere
+        invisibile}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione
+        - III Epurare
+        invisibilità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x77FS5eTPPTlfvqU]{Visione
+        - IV Visione del
+        vero}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.9StvYUTQ7V0YhtOf]{Visione
+        - IV Visione futura}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.nlAdhFgwW8HakrM6'
+  - sort: 106250
+    name: Kit di partenza (7 Mo)
+    type: text
+    _id: bNJPagClqGBxaQai
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@Compendium[fvtt-warhero.equipaggiamento.yaMGWfYHqOTv4qro]{Zaino}</p><p>@Compendium[fvtt-warhero.equipaggiamento.khCz2IusaQ52cLyW]{Cintura}</p><p>@Compendium[fvtt-warhero.vestiti.5yleK3OYsVeJWjkN]{Abito
+        da
+        viaggiatore}</p><p>@Compendium[fvtt-warhero.equipaggiamento.woh61qENSGkqZbjB]{Borsa
+        da
+        cintura}</p><p>@Compendium[fvtt-warhero.equipaggiamento.woh61qENSGkqZbjB]{Borsa
+        da
+        cintura}</p><p>@Compendium[fvtt-warhero.equipaggiamento.woh61qENSGkqZbjB]{Borsa
+        da cintura}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.bNJPagClqGBxaQai'
+  - sort: 2843750
+    name: 'Classe: Divoratore di anime'
+    type: text
+    _id: GST1m37OHDV0PVj2
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.OeBD94Uvp8We0LFY]{Divoratore
+        di
+        anime}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yAtOev6ECa0gaQ5i]{Divoratore
+        di anime - Potere
+        dell’anima}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ic8j7TWiK4V6KWR4]{Divoratore
+        di anime - Restrizione
+        allineamento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bsXsKFO53juCzzfh]{Divoratore
+        di anime - Ridare l'
+        anima}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.dFZzEKLudkYR817z]{Divoratore
+        di anime - Rimasuglio del
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.k0P9ybJ4Y4TFcgB0]{Divoratore
+        di anime - Rito dell'
+        anima}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.2DTNWIZgkGkXf3w6]{Divoratore
+        di anime - Sputare l' anima}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.GST1m37OHDV0PVj2'
+  - sort: 4600000
+    name: 'Classe: Difensore'
+    type: text
+    _id: RVbuzAGRfpDzzNMz
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.Kl8BseCmAX7lEBQz]{Difensore}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.euE43vvLqsCCA79h]{Difensore
+        -
+        Armatura}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FpuJWeUYgpAvtC0B]{Difensore
+        -
+        Bersaglio}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.YDrgStGqWWfkyxO8]{Difensore
+        -
+        Blocco}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.kSwWL07bNYqkZuMa]{Difensore
+        -
+        Carapace}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.PbGUDT9HRZubx5YS]{Difensore
+        - Difesa su altri}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.RVbuzAGRfpDzzNMz'
+  - sort: 4700000
+    name: 'Classe: Negromante'
+    type: text
+    _id: imH7tG6HbW9msFbm
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.JN5ruxj1YxQjQcS8]{Negromante}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.M6mg3nNUUYZyeHCp]{Negromante
+        -
+        Contropotere}</p><p>@Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.TfljYYvXkB6bK2Ze]{Negromante
+        -
+        Donazione}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zB0X9IQ5jHrCgXYw]{Negromante
+        -
+        Intimorire}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.enNk2agVenaY9ycW]{Negromante
+        - Potere del
+        sangue}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Zy5Cs94m3O7zocIZ]{Negromante
+        -
+        Servitore}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.g3C23GZk2Ugv6ISE]{Negromante
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KhIIZD2xav1wVqem]{Costrizione
+        - I
+        Richiamo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Z1enNb056VVT8v5C]{Costrizione
+        - II
+        Ragnatela}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.BzDXrpTEM55aFIqg]{Costrizione
+        - III
+        Patto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x2Wn2yyZzfuS67r5]{Evocazione
+        - Non Morte - I Evoca
+        scheletro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.5C07VRo8z41Kh70Y]{Evocazione
+        - Non Morte - II Evoca
+        zombie}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fJ30QpZ9OAb5JJyB]{Evocazione
+        - Non Morte - III Evoca
+        spettro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.leMppxqSJDUNxpuo]{Indole
+        - Caos - I Punire la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0]{Indole
+        - Caos - II Potere
+        caotico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG]{Indole
+        - Caos - III
+        Catastrofe}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.sqqxalQvLW3iSebG]{Guarigione
+        - I Cura
+        ferite}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.yYPcGqpad7uxCLlo]{Guarigione
+        - II Rimuovi
+        status}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4]{Guarigione
+        - III
+        Resurrezione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi
+        - I Parlare con i
+        morti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi
+        - II Comprensione dei
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi
+        - III Parlare
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.I0s3vfXtaej6XOsT]{Indole
+        - Male - I Punire il
+        bene}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3l8fdh3vXRvjoJr7]{Indole
+        - Male - II Di fronte al
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2zZ7J0Rjbak48Ljr]{Indole
+        - Male - III
+        Sofferenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CpkqRsUQEjUBAgms]{Morte
+        - I
+        Risucchio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.nJFSR7YDdiC5aI5F]{Morte
+        - II
+        Prosciugare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KqvWjxWIifyTKNJy]{Morte
+        - III Dito di
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.7b6lal71wDDJAEd0]{Negromanzia
+        - I Risucchia
+        vita}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fYgXo7Pcq4HKOQqK]{Negromanzia
+        - II Vita
+        Falsa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6Z73jbvTwFqsiKOw]{Negromanzia
+        - III Resurrezione
+        veloce}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DH9Fxd3yM8mEpOBi]{Oscurità
+        - I Maglio
+        oscuro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oqWkBcoDNbdIj4ya]{Oscurità
+        - II Oscurità
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ]{Oscurità
+        - III Manto
+        celato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GEUOxFWgjZ72MadL]{Protezione
+        - I Scudo
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zV19MhRi8xVJBGWq]{Protezione
+        - II
+        Salvezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QiWw4fEN7atSXqat]{Protezione
+        - III Pelle di
+        pietra}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione
+        - I
+        Scurovisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione
+        - II Vedere
+        invisibile}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione
+        - III Epurare
+        invisibilità}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.eGb3rP9JUC7xO7di]{Negromante
+        - Vero servitore}</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.imH7tG6HbW9msFbm'
+  - sort: 4700587
+    name: 'Classe: Runologo'
+    type: text
+    _id: ga4hWQhn2iiObVog
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.Z9pGevjpqjqM8zE8]{Runologo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FWHJ5li567T9UI1d]{Runologo
+        - Controllo del
+        burattino}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.WpdAe631xQM5QjBX]{Runologo
+        - Controllo del
+        golem}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.nClXHHGwc2HP5KTR]{Runologo
+        -
+        Donazione}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FzWVatUmAbnjxeaS]{Runologo
+        -
+        Ruggine}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Se53es0w07OuAMma]{Runologo
+        - Runa di creazione
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.XCH5itq8Wu84yFcb]{Runologo
+        - Runa
+        maggiore}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.gbYkWQG0uvvWU59E]{Runologo
+        - Runa
+        minore}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1HjRX5S3R2TuqnIN]{Elementale
+        - Acqua - II Cono di
+        freddo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.InXfXuABQDHb5zV5]{Elementale
+        - Aria - II
+        Fulmine}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.gW2OzkrdGkW38XK6]{Elementale
+        - Terra - II Bomba al
+        vetriolo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ychDvTMJrneQrl0]{Elementale
+        - Fuoco - II Mani
+        brucianti}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ude8Tm1q8dkUhRpb]{Runologo
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza
+        - I Individuazione del
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.hsNBWzXXYCTtRxte]{Conoscenze
+        - II Dissolvi
+        magie}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta]{Conoscenze
+        - III
+        Identificare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi
+        - I Parlare con i
+        morti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi
+        - II Comprensione dei
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi
+        - III Parlare
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DsPn3lqhpGAU77kL]{Rune
+        - I Segno
+        negatorio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vDxv1Amvg7xs2cM4]{Rune
+        - II Segno di
+        protezione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3mDBK9zIf9R4PbLo]{Rune
+        - III Segno
+        esplosivo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FkJ49VbCvSL2ca6c]{Trasmutazione
+        - I
+        Alterazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione
+        - II
+        Ingrandire/Ridurre}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno]{Trasmutazione
+        - III
+        Trasformazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qRyiUS9gGHy4Op9X]{Tempo
+        - I Tempo
+        atmosferico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0s6X0VfFHJgKeYBs]{Tempo
+        - II
+        Lentezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O1yGotIS8YidAFh1]{Tempo
+        - III Velocità}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.ga4hWQhn2iiObVog'
+  - sort: 4700391
+    name: 'Classe: Cronomante'
+    type: text
+    _id: gbA27mqlJViy3j7u
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>@UUID[Compendium.fvtt-warhero.classi.Item.v662S7u0w8zZP8TR]{Cronomante}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.18bFPP0chXphELTQ]{Cronomante
+        - Contro
+        potere}</p><p>@Compendium[fvtt-warhero.abilita-aggiuntive.veH8ovrzyVpcQmRt]{Contro
+        potere}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.2Cy6Pv08cR1FXzEd]{Cronomante
+        - Evitare il
+        deterioramento}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.dX55LHmrM9HyiY5O]{Cronomante
+        - Indietro nel
+        tempo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ZNTZArAMgr85QdS2]{Cronomante
+        - Interporsi al
+        tempo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.1Ug8kwFZYaqxRWYW]{Cronomante
+        - Nessuno mi
+        copia}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vV0lcAz7aTFaocD8]{Cronomante
+        - Percezione del
+        tempo}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ySV9t72IxiTavhJp]{Cronomante
+        - Riposo
+        veloce}</p><p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.oIZdQH04hA21oD3f]{Cronomante
+        - Sfere
+        conosciute}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qRyiUS9gGHy4Op9X]{Tempo
+        - I Tempo
+        atmosferico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0s6X0VfFHJgKeYBs]{Tempo
+        - II
+        Lentezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O1yGotIS8YidAFh1]{Tempo
+        - III
+        Velocità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.j7RjSZH85KRovJKc]{Viaggio
+        - I
+        Levitazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1on8iKAjWzcbJkBd]{Viaggio
+        - II
+        Volare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1UrtrLZ51eLjsEIx]{Viaggio
+        - III Teletrasporto}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!g4KBDQAp2l3hDbj3.gbA27mqlJViy3j7u'
+folder: null
+flags:
+  scene-packer:
+    hash: 5e8a02f5aeb25de3686a2dcc75c33b478f98b0cf
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.341'
+  systemId: fvtt-warhero
+  systemVersion: 13.0.1
+  createdTime: 1745557699750
+  modifiedTime: 1745557699750
+  lastModifiedBy: vvRutjambw1JfPoO
+  exportSource: null
+_id: g4KBDQAp2l3hDbj3
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+categories: []
+_key: '!journal!g4KBDQAp2l3hDbj3'

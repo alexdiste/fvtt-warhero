@@ -1,0 +1,38 @@
+name: Stendardo (+MEN del samurai ai Ts)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +3 ai TS
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: caca416603472d160af4d4c043b51e525d076c9c
+    sourceId: Item.rHQATktabst5SPiV
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681506477274
+  modifiedTime: 1743437151079
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.HJRAwr6OVi4pJUKm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: KkRKbLBsGfMS8Z3a
+_key: '!items!KkRKbLBsGfMS8Z3a'

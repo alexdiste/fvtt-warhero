@@ -1,0 +1,43 @@
+name: Pozione di cura (da alchimista)
+type: potion
+img: icons/consumables/potions/bottle-bulb-corked-glowing-red.webp
+system:
+  cost: 75
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '0'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una pozione alchemica.</p>
+
+    <p>Se bevuta nel round in cui viene creata, cura [[/r 5d6 #cura ferite]]
+    punti ferita&nbsp;</p>
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 704bfea7db02dc6bbc2119dc96965f2e5b17e271
+    sourceId: Item.8Fm9d56CVtthgQld
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681229154538
+  modifiedTime: 1698852025620
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.8Fm9d56CVtthgQld
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: jL8SZr7AAAZt04gE
+_key: '!items!jL8SZr7AAAZt04gE'

@@ -1,0 +1,42 @@
+name: Bacchetta magica di Visione - III Epurare invisibilità
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione - III
+    Epurare invisibilità} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 79133b64ef04d294d93f18e6cba32a1fdba9d0e3
+    sourceId: Item.jhWOTgmkHcnBKSbq
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613834471
+  modifiedTime: 1704614638135
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: zKiPY9z4oFFuHs5v
+sort: 0
+_key: '!items!zKiPY9z4oFFuHs5v'

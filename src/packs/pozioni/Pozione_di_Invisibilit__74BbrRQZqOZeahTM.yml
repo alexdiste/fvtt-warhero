@@ -1,0 +1,46 @@
+name: Pozione di Invisibilità
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 300
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '150'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 300 Mo</p>
+
+    <p>si diventa invisibili per 10 round o fino a che non si effettua una
+    azione ostile. Aggiungere
+    @UUID[Compendium.fvtt-warhero.condizione.Item.OmkLMh5Ya672Jm9g]{Invisibile}
+    alla scheda del pg</p>
+  price: '300'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: d7e52b9064d11d09e45eb1fadbcfb6935fcc4dc3
+    sourceId: Compendium.world.temp.kIJsNaNg7goIkWPY
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553253
+  modifiedTime: 1702106282134
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.kIJsNaNg7goIkWPY
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 74BbrRQZqOZeahTM
+_key: '!items!74BbrRQZqOZeahTM'

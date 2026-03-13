@@ -1,0 +1,29 @@
+name: Ammaliamento - IV Modificare memoria
+type: power
+system:
+  level: 4
+  magicschool: Ammaliamento
+  description: >-
+    chi usa questo incantesimo può vedere un ricordo di massimo 5 minuti e
+    decidere di cancellare o modificare quel ricordo a piacimento dal bersaglio,
+    CD 18 MEN per negare
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904806
+  modifiedTime: 1743439294663
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: MJQ0ZobtTdCjduDn
+folder: null
+sort: 6600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!MJQ0ZobtTdCjduDn'

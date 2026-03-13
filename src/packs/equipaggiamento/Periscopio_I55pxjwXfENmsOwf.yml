@@ -1,0 +1,39 @@
+name: Periscopio
+type: equipment
+img: icons/tools/navigation/spyglass-telescope-blue.webp
+system:
+  equiptype: ''
+  cost: 20
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9ee82ca87f75274a55570d0500b8a48350dbff1b
+    sourceId: Item.oss9fcqaYjtmzRrp
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: I55pxjwXfENmsOwf
+sort: 15800000
+_key: '!items!I55pxjwXfENmsOwf'

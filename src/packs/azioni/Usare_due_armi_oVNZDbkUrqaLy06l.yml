@@ -1,0 +1,45 @@
+name: Usare due armi
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Se il personaggio impugna contemporaneamente due armi, ogni volta che
+    attacca deve effettuare due volte il TxC. Il doppio lancio verr&agrave;
+    considerato come un'azione unica, ma al risultato di ciascun TxC
+    verr&agrave; applicata una penalit&agrave; di -2. Inoltre, brandire due armi
+    offre la possibilit&agrave; di Parare gli attacchi avversari</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 602557e1e7b0e7cc095d6911bea3afcf81063bba
+    sourceId: Compendium.world.temp.X4PYbnZx1Zwg40zJ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553335
+  modifiedTime: 1743437709769
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.X4PYbnZx1Zwg40zJ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: oVNZDbkUrqaLy06l
+_key: '!items!oVNZDbkUrqaLy06l'

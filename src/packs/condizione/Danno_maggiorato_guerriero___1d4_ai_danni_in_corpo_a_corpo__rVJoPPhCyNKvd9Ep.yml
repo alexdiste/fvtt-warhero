@@ -1,0 +1,40 @@
+name: Danno maggiorato guerriero (+1d4 ai danni in corpo a corpo)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +1d4 ai danni in mischia
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Il personaggio infligge sempre [[/r 1d4 #danno maggiorato guerriero]]
+    danni extra con armi da corpo a corpo</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 42b09c07bd2ffda2ea1a89304614ec301cba3149
+    sourceId: Item.c3ODh12FyQm3E4s2
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701592513698
+  modifiedTime: 1743437151657
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: rVJoPPhCyNKvd9Ep
+sort: 1200000
+_key: '!items!rVJoPPhCyNKvd9Ep'

@@ -1,0 +1,38 @@
+name: Danno maggiorato berserk (+1d6 ai danni)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +1d6 ai danni
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>il personaggio infligge dani extra con tutte le armi</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: b789366c128b373a996625e5632f20a837f5ab57
+    sourceId: Item.qZt8AOWT0tjvJN8f
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701438936063
+  modifiedTime: 1743437150898
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 8gyLqJTkFMlm5deZ
+sort: 1600000
+_key: '!items!8gyLqJTkFMlm5deZ'

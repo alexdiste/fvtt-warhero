@@ -1,0 +1,39 @@
+name: Gabbia enorme
+type: equipment
+img: systems/fvtt-warhero/images/icons/cage.svg
+system:
+  equiptype: ''
+  cost: 80
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    hash: bbe37899d5a6ca891aaab0b9e81adb640cab1025
+    sourceId: Item.Dvy4aUP03UOW6Z9O
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.344'
+  createdTime: 1676707874667
+  modifiedTime: 1749220142746
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 1JARtgfJ16N3BGsa
+sort: 200000
+_key: '!items!1JARtgfJ16N3BGsa'

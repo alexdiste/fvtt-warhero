@@ -1,0 +1,36 @@
+name: Taumaturgo - Abilità extra
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; in fase di creazione del personaggio scegliere
+    un&rsquo;abilit&agrave; aggiuntiva</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 6117edaa45ce1d87df468e193771e5e57d01e2e5
+    sourceId: Item.UmIWgIdmu0hreCkS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.UmIWgIdmu0hreCkS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 19500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: CZlBFX8aX3lYvRon
+_key: '!items!CZlBFX8aX3lYvRon'

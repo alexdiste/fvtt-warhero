@@ -1,0 +1,48 @@
+name: Resuscitato negromanticamente (-1 a FIS)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-1 a fis'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; stato riportato alla vita
+    usando il potere
+    @Compendium[fvtt-warhero.poteri.6Z73jbvTwFqsiKOw]{Negromanzia - III
+    Resurrezione veloce} della sfera di
+    @Compendium[fvtt-warhero.sfere-di-magia.Yb3i7aZ4rSWGQNsJ]{24.Negromanzia}
+    per tale motivo perde permanentemente 1 a FIS</p>
+
+    <p>&nbsp;</p>
+
+    <p>Questo &eacute; uno stato alterato</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d3481cb58800d5bf1daf3d7bf9344c10f7c0bad4
+    sourceId: Item.VLlJLt0PQGhGorxu
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057067620
+  modifiedTime: 1743437150936
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.VLlJLt0PQGhGorxu
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ABPd5CgYSpGqI7PD
+_key: '!items!ABPd5CgYSpGqI7PD'

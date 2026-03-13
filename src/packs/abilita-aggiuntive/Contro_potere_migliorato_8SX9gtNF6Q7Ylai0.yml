@@ -1,0 +1,38 @@
+name: Contro potere migliorato
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Prerequisito:</strong>
+    @UUID[Compendium.fvtt-warhero.abilita-aggiuntive.Item.JmoxE72M7DtzVKuR]{Contro
+    potere extra}</p><p><strong>Benefici:</strong> Si ottengono due tentativi
+    aggiuntivi giornalieri di contropotere</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.cFD6b8pEV2n4FC4U
+    hash: 32594c4fba986c071814a1c163b2a16dc058c650
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774811902
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: 8SX9gtNF6Q7Ylai0
+sort: 2700000
+_key: '!items!8SX9gtNF6Q7Ylai0'

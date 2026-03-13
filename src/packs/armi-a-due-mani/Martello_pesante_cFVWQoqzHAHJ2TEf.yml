@@ -1,0 +1,42 @@
+name: Martello pesante
+type: weapon
+img: icons/weapons/hammers/hammer-double-steel.webp
+system:
+  weapontype: twohanded
+  damage: 3d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 38
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: '<p>Arma a due mani [[/r 3d6 #aggiungi il FIS *1.5]]</p>'
+effects: []
+flags:
+  scene-packer:
+    hash: 9b6cfd93e24cc9167e47efd4b64eed05bc9f048a
+    sourceId: Item.yyAlz4MGF4C0LZSm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681648983012
+  modifiedTime: 1704967093138
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.1hZFpBcFcdaPrQvY
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: cFVWQoqzHAHJ2TEf
+_key: '!items!cFVWQoqzHAHJ2TEf'

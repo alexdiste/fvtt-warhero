@@ -1,0 +1,28 @@
+name: Illusione - III Sfocatura
+type: power
+system:
+  level: 3
+  magicschool: Illusione
+  description: >-
+    il bersaglio ottiene una probabilità del 50% di essere mancato, per tutto il
+    combattimento.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904884
+  modifiedTime: 1743439294575
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: EG2xA3TWqTHG8e28
+folder: null
+sort: 4000000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!EG2xA3TWqTHG8e28'

@@ -1,0 +1,43 @@
+name: Malattia - Infermità accecante
+type: condition
+img: systems/fvtt-warhero/images/icons/medical-thermometer.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Hai contratto la malattia infermit&agrave; accecante.</p>
+
+    <p>Si diffonde in acque contaminate.&nbsp;Ingestione. CD 16, 1d3 giorni, -1
+    FIS, se subisce pi&ugrave; di 2<br>danni a FIS deve fare un altro
+    salvataggio o rimane accecato&nbsp;permanentemente</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 0a6b1c8a72d868c38d7ac4ce34606dee86bd1f34
+    sourceId: Item.vaJXX7EcjPPFpn0E
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702204460418
+  modifiedTime: 1743439247611
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: UX3fRaMM3eea2orf
+sort: 800000
+_key: '!items!UX3fRaMM3eea2orf'

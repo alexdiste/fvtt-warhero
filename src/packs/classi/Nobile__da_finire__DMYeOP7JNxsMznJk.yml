@@ -1,0 +1,44 @@
+name: Nobile (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: <p>Persona di rango sociale pi&ugrave; elevato</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1af9f9a85bbf48204800d68adcad4fe14aa8ec49
+    sourceId: Item.1JWKbad4Ko4rs6bc
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681551449496
+  modifiedTime: 1766238289761
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.1JWKbad4Ko4rs6bc
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: DMYeOP7JNxsMznJk
+_key: '!items!DMYeOP7JNxsMznJk'

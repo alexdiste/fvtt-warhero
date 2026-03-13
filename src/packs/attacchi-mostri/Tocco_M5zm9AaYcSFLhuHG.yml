@@ -1,0 +1,42 @@
+name: Tocco
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 1d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 0b7b8d45a58aa42d45fa62ee2921013bdf6baa90
+    sourceId: Item.wdqnHGHUqtvhlUyv
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681573811492
+  modifiedTime: 1743436810362
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.3VT1PPlhlZylvwUi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: M5zm9AaYcSFLhuHG
+_key: '!items!M5zm9AaYcSFLhuHG'

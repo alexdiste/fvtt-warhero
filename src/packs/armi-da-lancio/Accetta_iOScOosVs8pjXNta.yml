@@ -1,0 +1,42 @@
+name: Accetta
+type: weapon
+img: icons/weapons/axes/axe-broad-engraved.webp
+system:
+  weapontype: throwing
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 3
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un accetta da lancio [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a0185596c930ebf77d1726b71a29096c772bcdeb
+    sourceId: Item.fXTtHUQn70OzZarT
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1680934134544
+  modifiedTime: 1681650364641
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tkY3GX4TvvHvnVhv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: iOScOosVs8pjXNta
+_key: '!items!iOScOosVs8pjXNta'

@@ -1,0 +1,42 @@
+name: Guardia nera - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare poteri da
+    pergamena</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.FnckhzvGblZXCdOv]{17.Indole-Caos}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.0l33pWTj5jsnmEfz]{20.Indole-Male}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.igaGpBPbXnTgHMjV]{23.Morte}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 323560f78df01249bd23f736eda488d430942a21
+    sourceId: Item.jPCj0OeoLT7mcJhf
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.jPCj0OeoLT7mcJhf
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 18800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 3EpjJgPa7ehQAi2z
+_key: '!items!3EpjJgPa7ehQAi2z'

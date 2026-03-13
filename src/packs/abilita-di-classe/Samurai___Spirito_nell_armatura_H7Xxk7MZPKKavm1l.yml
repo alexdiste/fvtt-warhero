@@ -1,0 +1,38 @@
+name: Samurai - Spirito nell armatura
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; legare il proprio spirito nell'armatura e
+    fornire cos&igrave; un bonus pari a MEN alla propria DIFESA con l'armatura
+    legata. Pu&ograve; decidere di sostituire tale armatura ma questa procedura
+    richiede una meditazione di 8 ore</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 84d07276faa2e5e32016068f32fe1d7537436a1f
+    sourceId: Item.nqlQTKKOTtsnhnNR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.UmIWgIdmu0hreCkS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 20100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: H7Xxk7MZPKKavm1l
+_key: '!items!H7Xxk7MZPKKavm1l'

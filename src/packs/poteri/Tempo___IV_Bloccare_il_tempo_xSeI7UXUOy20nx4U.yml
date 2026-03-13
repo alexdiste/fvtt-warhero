@@ -1,0 +1,29 @@
+name: Tempo - IV Bloccare il tempo
+type: power
+system:
+  level: 4
+  magicschool: Tempo
+  description: >-
+    con questo incantesimo l'incantatore può fare altri 3 turni consecutivi, non
+    è possibile però lanciare incantesimi contro i nemici o usare mosse di
+    attacco
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904975
+  modifiedTime: 1743439294957
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: xSeI7UXUOy20nx4U
+folder: null
+sort: 15300000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!xSeI7UXUOy20nx4U'

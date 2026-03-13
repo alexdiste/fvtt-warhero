@@ -1,0 +1,88 @@
+name: Mezzorco
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Molto simili a gli ogre esteticamente ma il loro colore di pelle
+    &egrave; pi&ugrave; simile a quello umano.</em></p>
+
+    <ul>
+
+    <li>
+
+    <p>Punti Ferita = Medio (+4 pf per livello)</p>
+
+    </li>
+
+    <li>
+
+    <p>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.5yRNGxswyKMaw69B]{Language (orchesco)}</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1,4,8 = +1 FIS</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 3,6,9 = +1 TxC</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 2,3,4,5,6,7,8,9= +1 Danni</p>
+
+    </li>
+
+    </ul>
+  hpprogresion: high
+  languages: ''
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 4e1655626d80cd2225f51e07c9fc25c53d131cf1
+    sourceId: Compendium.world.temp.lIYxDaf9FgQiBufQ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552775
+  modifiedTime: 1743439649055
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.lIYxDaf9FgQiBufQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: HYKcxPPknyEs8QX6
+_key: '!items!HYKcxPPknyEs8QX6'

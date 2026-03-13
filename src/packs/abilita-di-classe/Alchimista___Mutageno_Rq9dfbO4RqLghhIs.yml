@@ -1,0 +1,38 @@
+name: Alchimista - Mutageno
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; creare 1 volta al giorno un
+    @Compendium[fvtt-warhero.pozioni.PD6jGRjccLbjxU3A]{Mutageno (da alchimista)}
+    che se bevuto entro pochi minuti dalla creazione permette di&nbsp;scambiare
+    due valori fra FIS,IST e MEN per l'intera giornata</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 51b57dc2be0b9c53cbf2677a1a4963cbe151a8aa
+    sourceId: Item.SvuYOsAgXByVkCnV
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Rq9dfbO4RqLghhIs
+sort: 13100000
+_key: '!items!Rq9dfbO4RqLghhIs'

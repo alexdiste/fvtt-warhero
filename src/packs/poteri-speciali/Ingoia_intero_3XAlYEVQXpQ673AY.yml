@@ -1,0 +1,39 @@
+name: Ingoia intero
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Se una creatura con questo attacco speciale inizia il suo turno con un
+    avversario tenuto in bocca cio&egrave; in lotta, pu&ograve; tentare una
+    nuova prova di lottare. Se ci riesce, inghiotte la sua preda e l'avversario
+    subisce danni morso. Una creatura ingoiata muore dopo 5 round se la creatura
+    che lo ha inghiottito non viene uccisa.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 8e134bbde13b529a64127c525d979d3b23421a0b
+    sourceId: Item.KGrZgZCLUPonSht9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.HKoxeCXqiwLIyOX7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 3XAlYEVQXpQ673AY
+_key: '!items!3XAlYEVQXpQ673AY'

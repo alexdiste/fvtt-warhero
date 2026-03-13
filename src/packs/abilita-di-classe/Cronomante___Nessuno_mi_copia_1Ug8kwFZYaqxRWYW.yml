@@ -1,0 +1,38 @@
+name: Cronomante - Nessuno mi copia
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Le abilit&agrave; di questa classe non possono essere&nbsp;imitate o
+    clonate dal
+    @UUID[Compendium.fvtt-warhero.classi.nBx9ew03P6W7no46]{Trasformista} o
+    dall'instabile Multiforma</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 32ab43ab7e59d055a75878430e1f17c0bbc13e8f
+    sourceId: Item.QpYYg615bk73yrU3
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.Qs6v5z0sNCysmPNg
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352436156
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: 1Ug8kwFZYaqxRWYW
+sort: 1100000
+_key: '!items!1Ug8kwFZYaqxRWYW'

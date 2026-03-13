@@ -1,0 +1,42 @@
+name: Mazza pesante di legno
+type: weapon
+img: icons/weapons/maces/mace-spiked-banded-wood.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 8
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una mazza pesante. Arma lunga [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 70cd8d7c1bcbe7e1195b6f1cb93f817d3cd2e431
+    sourceId: Item.V4B1peonqoRpxJPw
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676710510666
+  modifiedTime: 1701594258212
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: YattpVi7UPY46Rvj
+sort: 300000
+_key: '!items!YattpVi7UPY46Rvj'

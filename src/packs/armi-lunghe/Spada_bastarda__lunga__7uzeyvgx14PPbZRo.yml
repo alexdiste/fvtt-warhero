@@ -1,0 +1,42 @@
+name: Spada bastarda (lunga)
+type: weapon
+img: icons/weapons/swords/greatsword-guard-gem-blue.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 18
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Un arma lunga [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 88f08c3ab3b88a31f029ddbf5c57a8b760fc0344
+    sourceId: Item.1hZFpBcFcdaPrQvY
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681648983012
+  modifiedTime: 1701594258212
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.1hZFpBcFcdaPrQvY
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 7uzeyvgx14PPbZRo
+_key: '!items!7uzeyvgx14PPbZRo'

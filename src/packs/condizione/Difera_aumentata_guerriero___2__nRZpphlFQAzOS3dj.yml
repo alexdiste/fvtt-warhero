@@ -1,0 +1,38 @@
+name: Difera aumentata guerriero (+2)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +2 a difesa
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>La difesa del personaggio ottiene un bonus di +2</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 0db4cc517489cf2c2659cc1591a8aebc9369902f
+    sourceId: Item.TBS3rxHsBOThxxLR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701592842310
+  modifiedTime: 1743437151627
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: nRZpphlFQAzOS3dj
+sort: 1100000
+_key: '!items!nRZpphlFQAzOS3dj'

@@ -1,0 +1,42 @@
+name: Piccolo artiglio
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 1d4
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 72ffad087473f27efed32aec8973f0a86d22992d
+    sourceId: Item.uNz03VoADaJxCRog
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680857418842
+  modifiedTime: 1743436810446
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.0WjuzgTtYlcP20yn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: wJEMOrToY9vccP9m
+_key: '!items!wJEMOrToY9vccP9m'

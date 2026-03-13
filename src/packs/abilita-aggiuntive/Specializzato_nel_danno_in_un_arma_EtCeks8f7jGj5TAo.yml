@@ -1,0 +1,40 @@
+name: Specializzato nel danno in un'arma
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Beneficio:</strong> si ottiene un +3 ai danni con l'arma scelta
+    al momento che si seleziona questa abilità</p>
+
+    <p><strong>Speciale:</strong> E' possibile prendere questa abilità più volte
+    ma su armi diverse</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.WLpD1mr3zflO4Ipl
+    hash: dfcf60fa31db490b51efeece2d7d255e0bee8283
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772775144637
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+  guOwSDi78TuzUGFU: 3
+_id: EtCeks8f7jGj5TAo
+sort: 200000
+_key: '!items!EtCeks8f7jGj5TAo'

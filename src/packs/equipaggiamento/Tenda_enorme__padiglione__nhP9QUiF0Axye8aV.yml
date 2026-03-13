@@ -1,0 +1,39 @@
+name: Tenda enorme (padiglione)
+type: equipment
+img: icons/environment/settlement/tent-flag.webp
+system:
+  equiptype: ''
+  cost: 100
+  quantity: 1
+  equipped: false
+  slotused: 48
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Un padiglione</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 2948f6e39e192ab24feab614801479abdf5c30af
+    sourceId: Item.Ptcm3g4qV2PRgy9m
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680861189213
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tOwZQA9B2DBrKgwa
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 39600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: nhP9QUiF0Axye8aV
+_key: '!items!nhP9QUiF0Axye8aV'

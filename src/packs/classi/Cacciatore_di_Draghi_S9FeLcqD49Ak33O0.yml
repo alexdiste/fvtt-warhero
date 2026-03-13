@@ -1,0 +1,63 @@
+name: Cacciatore di Draghi
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: true
+  issecondary: false
+  description: >-
+    <p>Guerriero specializzato nell&rsquo;uccisione di bestie magiche</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.5U207aYpT9NIPCos]{Cacciatore
+    di draghi - Antisoffio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.w8PnF3v4uOVY92Km]{Cacciatore
+    di draghi - Caccia alle bestie magiche}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Tc7iBwjY16rINz3R]{Cacciatore
+    di draghi - Sfere conosciute}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.VZNDxxj0RBza1iNt]{Cacciatore
+    di draghi - Soffio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7DXtO9dJagU7JYs2]{Cacciatore
+    di draghi - Tutto sulle bestie magiche}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.L8rnxOftFJGWS9qE]{Cacciatore
+    di draghi - Volare}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1f1d0ea927b23ee81c896329409a5434bcb3fb15
+    sourceId: Item.VSfSvSH9M1ov14pB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680859705976
+  modifiedTime: 1743436999975
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.tQQ2BphjqU2oZ300
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: S9FeLcqD49Ak33O0
+_key: '!items!S9FeLcqD49Ak33O0'

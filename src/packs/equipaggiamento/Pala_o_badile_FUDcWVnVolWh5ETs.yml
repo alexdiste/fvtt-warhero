@@ -1,0 +1,42 @@
+name: Pala o badile
+type: equipment
+img: icons/tools/hand/shovel-spade-steel-grey.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Attrezzo simile a una vanga con lama larga e lati tipicamente rivolti
+    verso l'alto, utilizzato per spostare carbone, terra, neve o altro
+    materiale.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 77b7498a086c54d1c84c02e54a101a5665bb8956
+    sourceId: Item.gzzE1lUFKF8iu8Q0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701592012973
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: FUDcWVnVolWh5ETs
+sort: 20200000
+_key: '!items!FUDcWVnVolWh5ETs'

@@ -1,0 +1,38 @@
+name: Mutante - Fusione
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>Il personaggio può fondere con il suo corpo gli oggetti in cui è
+    competente e ottenere quindi con la sua mutazione i bonus degli oggetti. Le
+    categorie che può fondere sono:
+    </p><ul><li><p>Arma</p></li><li><p>Scudo</p></li><li><p>Armatura
+    </p></li></ul><p>Quando si usa questa abilità l’arma si fonde nel
+    personaggio, e quando usa la mutazione del corpo per una di queste categorie
+    ottieni anche i bonus magici legati all’oggetto. Può quando lo desidera
+    sostituire l’oggetto che fonde e sostituirlo con il precedente</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.32'
+  createdTime: 1761360525470
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: ekmCwUUyVnOdpYpd
+sort: 3900000
+_key: '!items!ekmCwUUyVnOdpYpd'

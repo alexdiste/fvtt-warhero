@@ -1,0 +1,32 @@
+name: 'Competenza armi: Da lancio'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi da
+    lancio. Le armi da lancio infliggono [[/r 1d8 #+ bonus ai danni a distanza]]
+    + eventuali bonus per i danni a distanza e hanno una gittata massima di 10
+    metri</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 126a28011f93e6c11c6e94068440569853adb877
+    sourceId: Item.dUeIbUVs5X3auGE6
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680857153518
+  modifiedTime: 1743437037134
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.KqKt3kKD5rcWoj65
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: EnsSG7diZbUJMMhv
+_key: '!items!EnsSG7diZbUJMMhv'

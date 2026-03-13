@@ -1,0 +1,20 @@
+type: Actor
+folder: null
+name: Evocazioni
+color: null
+sorting: a
+_id: 8o19xL2ki8Su2jvP
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.20'
+  createdTime: 1759987845346
+  modifiedTime: 1759987845346
+  lastModifiedBy: lXFgtDDsvLskIOGw
+_key: '!folders!8o19xL2ki8Su2jvP'

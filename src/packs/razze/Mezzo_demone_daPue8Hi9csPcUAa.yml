@@ -1,0 +1,88 @@
+name: Mezzo demone
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p data-pm-slice="1 3 []"><em>Creature incrociate fra gli uomini e essere
+    demoniaci</em></p>
+
+    <ul>
+
+    <li>
+
+    <p>Punti Ferita = Medio (+4 pf per livello)</p>
+
+    </li>
+
+    <li>
+
+    <p>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.o3wHgaeNVxZsSP3z]{Language (abissale)}</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1,5,7 = +1 volta al giorno
+    @Compendium[fvtt-warhero.poteri.DH9Fxd3yM8mEpOBi]{Oscurit&agrave; - I Maglio
+    oscuro} come incantesimo</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1,4,8 = +1 FIS o +1 MEN</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 3,6,9 = +1 TxC e +1 Danni</p>
+
+    </li>
+
+    </ul>
+  hpprogresion: medium
+  languages: comune, abissale
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+effects: []
+flags:
+  scene-packer:
+    hash: 4eeada919e2237897b8298f4054010ac83f79647
+    sourceId: Item.EjF0ghLlgk2yhsEr
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680934398306
+  modifiedTime: 1743439649076
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.EjF0ghLlgk2yhsEr
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: daPue8Hi9csPcUAa
+_key: '!items!daPue8Hi9csPcUAa'

@@ -1,0 +1,40 @@
+name: 'Bonus razziale dragonide:  buttare per terra'
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +1 a buttare per terra
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>A livello 1,5 e 7 il dragonide prende +1 per i tiri di buttare per
+    terra</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 2819112d0bc95ef6d08afdde8791c3d51097d992
+    sourceId: Item.Or9V4Qkc49ZoNatB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705157384789
+  modifiedTime: 1743437151061
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: HVGwSwrktumW1drK
+sort: 0
+_key: '!items!HVGwSwrktumW1drK'

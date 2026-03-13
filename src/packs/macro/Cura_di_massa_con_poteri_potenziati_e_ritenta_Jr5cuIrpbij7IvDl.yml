@@ -1,0 +1,27 @@
+name: Cura di massa con poteri potenziati e ritenta
+type: chat
+author: guOwSDi78TuzUGFU
+img: icons/magic/life/cross-beam-green.webp
+scope: global
+command: >-
+  /r 4d10r1 + 10 + 1d6r1 #Cura ferite di massa con poteri potenziati che ritira
+  tutti gli 1 automaticamente
+folder: UkCboSKvvs6LBGd4
+ownership:
+  default: 0
+  NMHCRBEwO1eXaL73: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1770619757770
+  modifiedTime: 1770619759304
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: Jr5cuIrpbij7IvDl
+sort: 175000
+_key: '!macros!Jr5cuIrpbij7IvDl'

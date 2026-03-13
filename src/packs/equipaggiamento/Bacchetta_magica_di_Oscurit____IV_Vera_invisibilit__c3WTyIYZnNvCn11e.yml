@@ -1,0 +1,42 @@
+name: Bacchetta magica di Oscurità - IV Vera invisibilità
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.gVLEpQCmNRI1d9lo]{Oscurità - IV
+    Vera invisibilità} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 4afe556d11b63eecfba6c069f22d59ff0c666020
+    sourceId: Item.4zGLIFoWhBjvQbWs
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613832383
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: c3WTyIYZnNvCn11e
+sort: 3800000
+_key: '!items!c3WTyIYZnNvCn11e'

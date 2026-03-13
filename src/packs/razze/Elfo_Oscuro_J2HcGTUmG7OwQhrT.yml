@@ -1,0 +1,72 @@
+name: Elfo Oscuro
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Creature simili a gli elfi ma differiscono nella pigmentazione
+    </em><em>della pelle che &egrave; molto tendente al nero</em></p>
+
+    <ul>
+
+    <li>Punti Ferita = Medio (+4 pf per livello)</li>
+
+    <li>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.iNr8K3qkwIox6lI6]{Language (elfico)}</li>
+
+    <li>Livello 1,7 = +1 lingua conosciuta
+    @Compendium[fvtt-warhero.lingue.lteyi47NZn7x4Umd]{Language (da
+    scegliere)}</li>
+
+    <li>Livello 1,2,4,6,8 = +2% ai tiri percentuale.</li>
+
+    <li>Livello 5 = +1 mana</li>
+
+    <li>Livello 1,4,8 = +1 MEN</li>
+
+    <li>&nbsp;Livello 3,6,9 = +1 TxC e +1 Danni</li>
+
+    </ul>
+  hpprogresion: medium
+  languages: comune, elfico
+  attributebonus1: min
+  attributebonus4: min
+  attributebonus8: min
+effects: []
+flags:
+  scene-packer:
+    hash: 31cd772bfd7d50c1ecf4d41af706bfa7e8d8d2e6
+    sourceId: Item.BGiDlwZWEami2Zx7
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681046988407
+  modifiedTime: 1743439649057
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.LZZivLwaEth9RBXK
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1650000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: J2HcGTUmG7OwQhrT
+_key: '!items!J2HcGTUmG7OwQhrT'

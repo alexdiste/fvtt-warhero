@@ -1,0 +1,42 @@
+name: Pergamena di Indole - Male - IV Fine dei giochi
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.V8KL2tzLEd12xRP8]{Indole - Male -
+    IV Fine dei giochi} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a4ba9fe43d0ff9c9f0ffc55e6d6511f92f1d44a2
+    sourceId: Item.v2ake5SwVoc3I8FW
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913447650
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: kErEMfV1jFuKCy7c
+sort: 23600000
+_key: '!items!kErEMfV1jFuKCy7c'

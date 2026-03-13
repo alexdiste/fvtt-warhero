@@ -1,0 +1,45 @@
+name: Arco Elfico
+type: weapon
+img: icons/weapons/bows/bow-ornamental-gold-blue.webp
+system:
+  weapontype: shooting
+  damage: 2d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 48
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un arco. Arma da tiro. [[/r 2d6]]. Usa
+    @UUID[Compendium.fvtt-warhero.munizioni.Item.2pcQKWuQGvAgRFxY]{Freccie} come
+    munizioni</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d9faeb942df7c822c4b174f4bb39cdfd097c4455
+    sourceId: Item.lCckfXtq7nse7tXP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718176261
+  modifiedTime: 1705303003579
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.RFRbWTzWRO3pgZ8k
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Uzf6iuCJrcrWM6Pt
+_key: '!items!Uzf6iuCJrcrWM6Pt'

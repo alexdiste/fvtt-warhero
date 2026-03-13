@@ -1,0 +1,34 @@
+name: 'Abilità razziale halfling: +1 iniziativa'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>A livello 1,3,5,7 e 9 un halfling prende +1 all iniziativa</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: fed45119dbdec382bc2b622568893c6860aeae65
+    sourceId: Item.ZMBxdLftBIUrkPQM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704095907572
+  modifiedTime: 1743437123504
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 0CcUpvcoFi8C3Kig
+sort: 700000
+_key: '!items!0CcUpvcoFi8C3Kig'

@@ -1,0 +1,41 @@
+name: Freccia
+type: equipment
+img: icons/weapons/ammunition/arrow-broadhead-green.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 20
+  equipped: false
+  slotused: 0.05
+  slotlocation: quiver
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una freccia per archi. Fino a 20 frecce occupano 1
+    solo slot faretra.</p>
+effects: []
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7af3a1a1b9742e830265410187175a6a9ecc489f
+    sourceId: Item.YDJCpY6FwZtS75Sd
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718246031
+  modifiedTime: 1705996721808
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.YDJCpY6FwZtS75Sd
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+_id: 2pcQKWuQGvAgRFxY
+_key: '!items!2pcQKWuQGvAgRFxY'

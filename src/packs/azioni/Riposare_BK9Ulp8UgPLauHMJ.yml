@@ -1,0 +1,46 @@
+name: Riposare
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>A fine giornata i personaggi necessitano di effettuare un riposo in
+    genere di almeno 8 ore, se riescono a farlo essi recuperano pienamente i
+    punti ferita persi. e il mana speso e le abilit&agrave; del personaggio
+    disponibili si ripristinano automaticamente all'alba di ogni giorno. Oltre a
+    questo se avevamo oggetti magici identificati, dopo il primo riposo si
+    attiveranno per noi solamente riposando accanto ad essi</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 6bd59f428654a83ddf6385a670a81d495360925e
+    sourceId: Compendium.world.temp.9gMxCRGDbNzqQNA3
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553326
+  modifiedTime: 1743437709745
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.9gMxCRGDbNzqQNA3
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: BK9Ulp8UgPLauHMJ
+_key: '!items!BK9Ulp8UgPLauHMJ'

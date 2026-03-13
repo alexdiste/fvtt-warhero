@@ -1,0 +1,39 @@
+name: Poteri innati (3 volta al giorno)
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione
+    - II Ingrandire/Ridurre}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi -
+    III Parlare linguaggi}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 5e1858ec829452e31421b61378c99723a3401c28
+    sourceId: Item.gdRyv8rvUc40LdA8
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1704967481738
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: CFf0qatZpFXYkJuF
+sort: 600000
+_key: '!items!CFf0qatZpFXYkJuF'

@@ -1,0 +1,40 @@
+name: Calderone
+type: classitem
+img: icons/containers/kitchenware/vase-clay-brown.webp
+system:
+  cost: 2
+  quantity: 1
+  slotused: 10
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Cuoco
+  description: <p>Un calderone per prepare zuppe o liquidi</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: c74a127c97444232c0c194581721bd550ba8f091
+    sourceId: Item.zM1PBRfRCd7cUpnj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: v707q8qDUaBoPuto
+sort: 1800000
+_key: '!items!v707q8qDUaBoPuto'

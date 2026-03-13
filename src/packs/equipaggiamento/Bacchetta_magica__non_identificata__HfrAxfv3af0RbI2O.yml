@@ -1,0 +1,41 @@
+name: Bacchetta magica (non identificata)
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'no'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una bacchetta magica. Le bacchette normalmente contengono un numero
+    limitati di cariche di poteri.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: f09ecea915a4d35e739a790e59af1edb86a14bd8
+    sourceId: Item.QVdvgHRpwbbkecnB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1703655829669
+  modifiedTime: 1745556176591
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: HfrAxfv3af0RbI2O
+sort: 18100000
+_key: '!items!HfrAxfv3af0RbI2O'

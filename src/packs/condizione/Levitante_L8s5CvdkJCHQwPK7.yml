@@ -1,0 +1,42 @@
+name: Levitante
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 5
+  durationunit: minuti
+  shortdescription: >-
+    permette di alzarsi dal terreno e andare solo in alto o in basso ignorando
+    la forza di gravità, per 5 minuti
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>permette di alzarsi dal terreno e andare solo in alto o in basso
+    ignorando la forza di gravit&agrave;, per 5 minuti</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7c075971cb14bbab74686126bd3e28cea5ac93d2
+    sourceId: Item.1PWCwOylnwrgb8p4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698852343894
+  modifiedTime: 1743437151095
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: L8s5CvdkJCHQwPK7
+sort: 3200000
+_key: '!items!L8s5CvdkJCHQwPK7'

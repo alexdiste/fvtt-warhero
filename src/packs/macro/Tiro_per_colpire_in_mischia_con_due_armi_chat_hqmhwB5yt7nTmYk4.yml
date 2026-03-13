@@ -1,0 +1,26 @@
+name: Tiro per colpire in mischia con due armi chat
+type: chat
+command: |-
+  /r  1d20+@attributes.txcm.value+-@secondary.malusmultiweapon.value
+  /r  1d20+@attributes.txcm.value+-@secondary.malusmultiweapon.value
+img: systems/fvtt-warhero/images/icons/crossed-swords.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: lDtEzIZiRFGEA5jD
+ownership:
+  default: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1767461440826
+  modifiedTime: 1767470462291
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: hqmhwB5yt7nTmYk4
+sort: 400000
+_key: '!macros!hqmhwB5yt7nTmYk4'

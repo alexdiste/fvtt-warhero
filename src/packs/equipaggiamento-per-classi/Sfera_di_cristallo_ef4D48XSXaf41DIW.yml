@@ -1,0 +1,40 @@
+name: Sfera di cristallo
+type: classitem
+img: icons/commodities/gems/pearl-storm.webp
+system:
+  cost: 30
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: unknown
+  class: ''
+  mandatoryfor: Oracolo
+  description: <p>Una sfera di cristallo</p>
+  price: '75'
+  magiccharge: notapplicable
+  chargevalue: null
+  providedslot: 0
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 417a3679c6bcd698f1f28c40df43600467a71a73
+    sourceId: Compendium.world.temp.P7IMm9N4fYpR0bjD
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553216
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.P7IMm9N4fYpR0bjD
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ef4D48XSXaf41DIW
+_key: '!items!ef4D48XSXaf41DIW'

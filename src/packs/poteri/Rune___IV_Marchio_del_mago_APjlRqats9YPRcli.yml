@@ -1,0 +1,29 @@
+name: Rune - IV Marchio del mago
+type: power
+system:
+  level: 4
+  magicschool: Rune
+  description: >-
+    puoi incidere su te stesso o su un alleato una runa contenente un qualsiasi
+    altro incantesimo di 3 livello o inferiore che conosci, il bersaglio può
+    usare quell'incantesimo entro la fine della giornata
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904971
+  modifiedTime: 1743439294533
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: APjlRqats9YPRcli
+folder: null
+sort: 2900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!APjlRqats9YPRcli'

@@ -1,0 +1,56 @@
+name: 07.Elementale - Fuoco
+type: power
+img: systems/fvtt-warhero/images/icons/magic/elementale-fuoco.webp
+system:
+  level: 0
+  magicschool: Elementale - Fuoco
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.CLp5TRPccBPANHUe]{Elementale -
+    Fuoco - I Raggio rovente}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ychDvTMJrneQrl0]{Elementale -
+    Fuoco - II Mani brucianti}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.bnWyUAi6Su0InjRo]{Elementale -
+    Fuoco - III Palla di Fuoco}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.0fuQ1vuv4uUfReik]{Elementale -
+    Fuoco - IV Muro di fuoco}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.IwckOzpQuieWvcOn]{Elementale -
+    Fuoco - IV Resistenza al fuoco}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: e7891a9a5838169ccd293762d8430b037028766b
+    sourceId: Compendium.world.temp.y0e6buciBzWymqiv
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552580
+  modifiedTime: 1698850924838
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.y0e6buciBzWymqiv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 5wWHc7VIcOm9rXRr
+_key: '!items!5wWHc7VIcOm9rXRr'

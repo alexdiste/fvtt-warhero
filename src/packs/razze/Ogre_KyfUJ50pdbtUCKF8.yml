@@ -1,0 +1,90 @@
+name: Ogre
+type: race
+img: systems/fvtt-warhero/images/icons/dwarf-face.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: false
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  description: >-
+    <p><em>Umanoide dalla stazza grande con un colore di pelle che varia dal
+    verde al grigio, con lunghe zanne inferiori</em></p>
+
+    <ul>
+
+    <li>
+
+    <p>Punti Ferita = Alto (+ 6 pf per livello)</p>
+
+    </li>
+
+    <li>
+
+    <p>Lingue Iniziali =
+    @Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)},
+    @Compendium[fvtt-warhero.lingue.5yRNGxswyKMaw69B]{Language (orchesco)}</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1 =
+    @Compendium[fvtt-warhero.competenze.arc5LiCc70VG3EBs]{Competenza armi: A due
+    mani}</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 1,4,8 = +1 FIS</p>
+
+    </li>
+
+    <li>
+
+    <p>Livello 3,6,9 = +1 TxC e +1 Danni</p>
+
+    </li>
+
+    </ul>
+  hpprogresion: high
+  languages: ''
+  attributebonus1: str
+  attributebonus4: str
+  attributebonus8: str
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 56693c1f583f9656679904ece88900ee25fb6848
+    sourceId: Compendium.world.temp.0qRTXMUcJcr31aXv
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552779
+  modifiedTime: 1743439649064
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.0qRTXMUcJcr31aXv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: KyfUJ50pdbtUCKF8
+_key: '!items!KyfUJ50pdbtUCKF8'

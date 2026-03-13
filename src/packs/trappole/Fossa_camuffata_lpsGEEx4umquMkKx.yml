@@ -1,0 +1,42 @@
+name: Fossa camuffata
+type: trap
+img: icons/environment/traps/steel.webp
+system:
+  cost: 0
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  dcfind: 13
+  dcdisable: 12
+  throwtohit: '0'
+  damageroll: 1d6
+  description: >-
+    <p>[[/r 1d6 #danni da caduta]] ogni 3 metri di profondit&agrave; tiro
+    salvezza CD 14 IST per negare gli effetti [15] (12)</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 01f7650b4a48b0948bd0211085e48ddb322fb337
+    sourceId: Item.kZGnQhP2Wu5Z5pWi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702203411313
+  modifiedTime: 1702204326329
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: lpsGEEx4umquMkKx
+sort: 400000
+_key: '!items!lpsGEEx4umquMkKx'

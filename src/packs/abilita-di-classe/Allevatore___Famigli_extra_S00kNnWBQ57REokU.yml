@@ -1,0 +1,36 @@
+name: Allevatore - Famigli extra
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; avere contemporaneamente&nbsp;fino a 3
+    famigli</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 10dbbbeacc4700082e6b9dd5dc3047af1e6ecbc2
+    sourceId: Item.3vmQ4bM2QnVEHIRg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704471123381
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: S00kNnWBQ57REokU
+sort: 6700000
+_key: '!items!S00kNnWBQ57REokU'

@@ -1,0 +1,56 @@
+name: 29.Trasmutazione
+type: power
+img: systems/fvtt-warhero/images/icons/magic/trasformazione.webp
+system:
+  level: 0
+  magicschool: Trasmutazione
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.FkJ49VbCvSL2ca6c]{Trasmutazione
+    - I Alterazione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione
+    - II Ingrandire/Ridurre}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno]{Trasmutazione
+    - III Trasformazione}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.GHfTTQwR6rtkRcJO]{Trasmutazione
+    - IV Colosso}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.oHTmpHJrU8hzVEv7]{Trasmutazione
+    - IV Reggia meravigliosa}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: ccaf47de4ac3f333ec382672283db5a0f41a55cd
+    sourceId: Compendium.world.temp.eOEFIGph2JRJKazq
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552563
+  modifiedTime: 1698851266531
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.eOEFIGph2JRJKazq
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: k19nOLJBQG5fu4a3
+_key: '!items!k19nOLJBQG5fu4a3'

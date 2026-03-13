@@ -1,0 +1,41 @@
+name: Imbottita
+type: armor
+img: icons/equipment/chest/breastplate-layered-leather-studded-brown.webp
+system:
+  armortype: light
+  equipped: false
+  damagereduction: 2
+  cost: 19
+  quantity: 1
+  slotused: 1
+  slotlocation: armor
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Un armatura leggeraimbottita. RD: [[/r 2
+    #Riduzione danno armatura leggera]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 4da9fa863aee1525f94888796d495eb59b5a22ee
+    sourceId: Item.QcZujeAA5camHm9X
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680933349481
+  modifiedTime: 1698573770577
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.QcZujeAA5camHm9X
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: WCUqJrTZ3jgbhD2X
+_key: '!items!WCUqJrTZ3jgbhD2X'

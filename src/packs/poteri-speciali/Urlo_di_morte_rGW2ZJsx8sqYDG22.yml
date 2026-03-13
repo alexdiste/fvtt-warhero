@@ -1,0 +1,40 @@
+name: Urlo di morte
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>una banshee pu&ograve; una volta ogni 10 round fare un urlo di morte e
+    tutte le creature intorno a lei nel raggio di 30 metri subiscono un effetto
+    uguale all&rsquo;incantesimo dito di morte di livello
+    @Compendium[fvtt-warhero.poteri.KqvWjxWIifyTKNJy]{Morte - III Dito di
+    morte}, con la differenza che la CD di tale incantesimo &egrave; aumentata
+    di +2</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 629e169f6b64d7a2ef4e56855b9d7195b7492d2e
+    sourceId: Item.LDAuVsovAPJ99o4q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: rGW2ZJsx8sqYDG22
+sort: 1500000
+_key: '!items!rGW2ZJsx8sqYDG22'

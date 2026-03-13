@@ -1,0 +1,1195 @@
+name: Manuale del giocatore
+pages:
+  - sort: -100000
+    name: Informazioni
+    type: text
+    _id: XwqPwsWa1lO38HzA
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <h1>Informazioni di licenza</h1><p>Ultima versione del regolamento: <a
+        href="https://www.warhero.it/warhero-amazon.pdf">warhero-amazon.pdf</a></p><h2>Annotazioni/Diari/Journal</h2><p>Come
+        prima cosa consiglio di abilitare la visione dei diari/annotazioni nella
+        mappa. Per farlo navigate nei controlli di sinistra fino a Annotazioni
+        (o Journal se lo avete in inglese) e poi premete il simbolo della lente
+        di ingrandimento (Attiva/Disattiva visualizzazione Annotazioni). Se
+        Icona rimane di un colore piena allora é attiva e dovreste poter vedere
+        le annotazioni nella mappa</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.XwqPwsWa1lO38HzA'
+  - sort: 156250
+    name: Gestione inventario
+    type: text
+    _id: uYaZg4s5dwzuOV8y
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Per semplificare la gestione dell’inventario, i personaggi possono
+        trasportare dodici elementi in aggiunta all’armatura indossata, all’arma
+        primaria, ed eventualmente allo scudo impugnato, fino a sei oggetti di
+        piccole dimensioni possono essere facilmente appesi alla cintura o alla
+        tracolla, ma tutto il resto deve poter entrare nello zaino. Piccole
+        quantità di oggetti contano come un singolo elemento (vedi sotto). Il
+        Game Master può decidere che gli oggetti pesanti o di grandi dimensioni
+        possano contare come 2 o 3 oggetti semplici (deve prendere in
+        considerazione le dimensioni di un normale zaino). Personaggi
+        pesantemente carichi possono subire una penalità a IST secondo quanto
+        deciso dal GM. Per ricapitolare</p><p>12 slot per gli oggetti nello
+        zaino</p><p>6 slot di piccoli oggetti da appendere alla cintura o
+        tracolla</p><p>4 slot per le borse da cintura</p><p>1 slot
+        faretra</p><p>I contenitori come una borsa da cintura, porta mappe ecc…
+        occupano 1 slot ma a loro volta permettono di portare del materiale al
+        loro interno</p><h2>Oggetti impilabili</h2><p>Piccole quantità di
+        oggetti:</p><p>5
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.SHIuwc7ia5WVyuvO]{Ampolle
+        (vuota)} (se messe nello zaino, altrimenti occupano 1 slot in borsa da
+        cintura o porta pozioni)</p><p>5
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.nGO18McABxAbLKdC]{Torcie}</p><p>20
+        @UUID[Compendium.fvtt-warhero.munizioni.2pcQKWuQGvAgRFxY]{Freccie}</p><p>20
+        @UUID[Compendium.fvtt-warhero.munizioni.4HbP6eXNNLxBBpj3]{Aghi da
+        cerbottana}</p><p>20
+        @UUID[Compendium.fvtt-warhero.munizioni.8kAg0umYGjyMVLhY]{Sassi}</p><p>10
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.q4npQ8ugBDWEMGAd]{Candele}</p><p>Ogni
+        3 metri di
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.C9QzkekROkBNzchd]{Catene}</p><p>Ogni
+        15 metri di corda, sia
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.gwVn05zvpecmNsz1]{di
+        canapa} che di
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.67ZDk1iDwaWOZKtI]{Corda di
+        seta}</p><p>50 gemme</p><p>1000
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.G3yFDfyey4Ef4JT4]{Monete o
+        pezzi di oro}</p><p>1000
+        @UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.9uDwrtWMbqirF7Fq]{Scorte
+        da Alchimista}</p><p>1000
+        @UUID[Compendium.fvtt-warhero.equipaggiamento-per-classi.Item.dLqFcWtIJiO8Lkc6]{Componenti
+        magici}</p><p>contano come un singolo elemento e quindi occupano un solo
+        slot</p><h2>Inventario equipaggiabile</h2><p>Ogni personaggio può avere
+        addosso massimo uno
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.yaMGWfYHqOTv4qro]{Zaino},
+        una
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.khCz2IusaQ52cLyW]{Cintura}
+        e 3
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.woh61qENSGkqZbjB]{Borsa da
+        cintura}, le 3 borse occupano uno slot o nella cintura o nello zaino ed
+        è possibile aggiungere una
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.jaTLrfcSq2PyBXx1]{Faretra}
+        a questi slot. Non puoi portare più di un anello per
+        dito.</p><h2>Inventario di partenza</h2><p>Quando un personaggio inizia
+        la sua avventura, parte con
+        @UUID[Compendium.fvtt-warhero.vestiti.5yleK3OYsVeJWjkN]{Abito da
+        viaggiatore},
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.yaMGWfYHqOTv4qro]{Zaino},
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.khCz2IusaQ52cLyW]{Cintura},
+        3 *
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.woh61qENSGkqZbjB]{Borsa da
+        cintura} e 500
+        @UUID[Compendium.fvtt-warhero.equipaggiamento.G3yFDfyey4Ef4JT4]{Moneta
+        di
+        oro}</p><p>@UUID[Compendium.fvtt-warhero.manuale.JournalEntry.g4KBDQAp2l3hDbj3.JournalEntryPage.mSX5nd5qyc62uhox]{Oggetti
+        di partenza}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+    flags:
+      monks-enhanced-journal:
+        appendix: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: 1745992697830
+      lastModifiedBy: vvRutjambw1JfPoO
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.uYaZg4s5dwzuOV8y'
+  - sort: 300000
+    name: Lista pozioni
+    type: text
+    _id: aefYdCU8oBSFgLyr
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Le pozioni hanno poteri particolari che si attivano quando vengono
+        bevute. Chi sa fare le pozioni le riconosce automaticamente altrimenti
+        possono essere identificate dal potere
+        @Compendium[fvtt-warhero.poteri.4YCGLK5hBA1dymta]{Conoscenze - III
+        Identificare}. Se una pozione non è identificata allora questo è l'
+        oggetto
+        @UUID[Compendium.fvtt-warhero.pozioni.Item.YTOlgCeJCTZgzQJ8]{Pozione
+        (non
+        identificata)}</p><p></p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.tA4F0tjbHzzB7owQ]{Pozione
+        di Saltare} [50Mo]: offre un bonus di +3 alle prove di saltare durante
+        l'intera giornata [[/r 1d20+@statistics.str.value+3 #Saltare con +3
+        della
+        pozione]]</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.ZXIkWNjoAEkvrfTP]{Pozione
+        di Movimenti del ragno} [150Mo]: offre la possibilità di arrampicarsi in
+        qualsiasi superficie per 10
+        round.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.9T2HrgEliae6amxo]{Pozione
+        di cura ferite} [25Mo]: cura il bersaglio di [[/r 2d6 #cura ferite]]
+        punti
+        ferita.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.M99NCV0bFbBZbxGu]{Pozione
+        di nuotare} [50Mo]: offre un bonus di +3 alle prove di nuotare durante
+        l'intera giornata [[/r 1d20+@statistics.str.value+3 #Nuotare con +3
+        della
+        pozione]]</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.jPnruek3K4mYYkyW]{Pozione
+        di Parlare con gli animali} [100Mo]: permette di parlare con gli animali
+        per 10
+        minuti.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.8JUbdWhlkP3ifMPe]{Pozione
+        di scurovisione} [450Mo]: permette di vedere al buio per l'intera
+        giornata</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.Bg52zJyzyhYRaxXx]{Pozione
+        di cura ferite maggiori} [75Mo]: cura il bersaglio di [[/r 5d6 #cura
+        ferite maggiori]] punti
+        ferita.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.SfUYe6NH7CJ2DnXb]{Pozione
+        di Levitazione} [80Mo]: permette di essere sotto l'effetto del potere
+        @Compendium[fvtt-warhero.poteri.j7RjSZH85KRovJKc]{Viaggio - I
+        Levitazione} della sfera di
+        @Compendium[fvtt-warhero.sfere-di-magia.IHxRgAwl2K6J760H]{31.Viaggio}</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.T1hgKVJ4kmKmTnzN]{Pozione
+        di aiuto} [20Mo]: si ottiene un bonus di +2 al prossimo
+        TxC.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.74BbrRQZqOZeahTM]{Pozione
+        di Invisibilità}[300Mo]: si diventa invisibili per 10 round o fino a che
+        non si effettua una azione
+        ostile.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.QItjK71OU0Wh4Kya]{Pozione
+        di Comprendere linguaggi} [350Mo]: permette di comprendere qualsiasi
+        linguaggio per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.8l3gLkLgFO3vSC9l]{Pozione
+        di Linguaggi}[700Mo]: permette di parlare e comprendere qualsiasi
+        linguaggio per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.8UoyPW1gx5sq0Xdg]{Pozione
+        di rimuovi paralisi} [120Mo]: rimuove la paralisi dal
+        bersaglio.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.x5Oi5vkZPmp51Goc]{Pozione
+        di Rimuovi cecità/sordità} [120Mo]: rimuove la cecità/sordità dal
+        bersaglio.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.Acl38axBLkcFzWvK]{Pozione
+        di Rimuovi malattie} [120Mo]: rimuove la malattie dal
+        bersaglio.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.18MKsdWRVcRNuS8T]{Pozione
+        di Rimuovi veleno} [120Mo]: rimuove la veleno dal
+        bersaglio.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.hRphen4UAPq1qZdY]{Pozione
+        di Cura ferite totale} [350Mo]: cura il bersaglio di [[/r 4d10 #cura
+        ferite totali]] punti
+        ferita.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.en8Px7LjWTVHvu1O]{Pozione
+        di volare}[480Mo]: permette di essere sotto l'effetto del potere
+        @Compendium[fvtt-warhero.poteri.1on8iKAjWzcbJkBd]{Viaggio - II Volare}
+        della sfera
+        @Compendium[fvtt-warhero.sfere-di-magia.IHxRgAwl2K6J760H]{31.Viaggio}</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.githKKOvRn6cOEiV]{Pozione
+        di Respirare sott'acqua} [150Mo]: Permette di respirare sott'acqua per 8
+        ore.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.RHqZ5e0Oj8LAmd40]{Pozione
+        di Verità}[300Mo]: una volta bevuta questa pozione il soggetto
+        risponderà in maniera veritiera alla prima domanda a lui
+        posta.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.r3wCxo1c146EyjiN]{Pozione
+        di Verità superiore} [750Mo]: una volta bevuta questa pozione il
+        soggetto risponderà in maniera veritiera alle prossime 3
+        domande</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.I0T96Z7WLyygPHcx]{Pozione
+        di Protezione dagli elementi (freddo)} [50Mo]: riduce i danni di questo
+        elemento di 2 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.zIAMInIhiX8rUoMp]{Pozione
+        di Protezione dagli elementi (elettricità)} [50Mo]: riduce i danni di
+        questo elemento di 2 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.be3w6A5mWQeuukXj]{Pozione
+        di Protezione dagli elementi (fuoco)} [50Mo]: riduce i danni di questo
+        elemento di 2 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.sflVwBMff3FazHtM]{Pozione
+        di Protezione dagli elementi (acido)} [50Mo]: riduce i danni di questo
+        elemento di 2 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.S0q4zrjY1hNEa8cP]{Pozione
+        di Protezione dagli elementi (suono)} [50Mo]: riduce i danni di questo
+        elemento di 2 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.qm2SEH7HIOM7qKRN]{Pozione
+        di Protezione dagli elementi maggiore (freddo)} [120Mo]: riduce i danni
+        di questo elemento di 5 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.FqokFKoDqqkRELdJ]{Pozione
+        di Protezione dagli elementi maggiore (elettricità)} [120Mo]: riduce i
+        danni di questo elemento di 5 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.cAa2hgT0xEZvU3rL]{Pozione
+        di Protezione dagli elementi maggiore (fuoco)} [120Mo]: riduce i danni
+        di questo elemento di 5 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.QM4pAd6BXAFMpgWL]{Pozione
+        di Protezione dagli elementi maggiore (acido)} [120Mo]: riduce i danni
+        di questo elemento di 5 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.aXnI4hVSrnCKRnGo]{Pozione
+        di Protezione dagli elementi maggiore (suono)}[120Mo]: riduce i danni di
+        questo elemento di 5 per l'intera
+        giornata.</p><p>@UUID[Compendium.fvtt-warhero.pozioni.Item.0qi6hn01kgTibcJt]{Pozione
+        di velocità}[900Mo]: permette di essere sotto l'effetto del potere
+        @Compendium[fvtt-warhero.poteri.O1yGotIS8YidAFh1]{Tempo - III Velocità}
+        della sfera
+        @Compendium[fvtt-warhero.sfere-di-magia.3VbZtxz7d2gJRzzz]della sfera
+        {28.Tempo}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+    flags:
+      monks-enhanced-journal:
+        appendix: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.aefYdCU8oBSFgLyr'
+  - sort: 400000
+    name: Lista trappole
+    type: text
+    _id: 2POUuWQUok28Zm3u
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Le descrizioni delle varie trappole includono le Informazioni del
+        danno che viene causato con il relativo tiro salvezza, fra parentesi
+        quadre [ ] la classe difficoltà per individuare la trappola e fra
+        parentesi tonde ( ) la difficoltà per disinnescarla, questi sotto sono
+        solo alcuni esempi di trappole. [[/r
+        1d20+@ist]]</p><p>@Compendium[fvtt-warhero.trappole.gm6IABRodVYaZQCE]{Freccia
+        base} : Attacco [[/r 1d20+3]] [[/r 2d6 #freccia]] [14]
+        (14).</p><p>@Compendium[fvtt-warhero.trappole.lpsGEEx4umquMkKx]{Fossa
+        camuffata} : [[/r 1d6 #danni da caduta]] ogni 3 metri di profondità tiro
+        salvezza CD 14 IST per negare gli effetti [15]
+        (12).</p><p>@Compendium[fvtt-warhero.trappole.OrNP0wQcgStgCnWt]{Dardo
+        velenoso} : Attacco [[/r 1d20+3]] [[/r 1d6 #Aggiungi anche effetto del
+        veleno]]+veleno [16]
+        (16)</p><p>@Compendium[fvtt-warhero.trappole.xFzZuPBl0LfprcJt]{Rete
+        grande} : Attacco [[/r 1d20+3]] Salvataggio CD 14 IST per negare o
+        rimanere impigliati nella rete per 3 round [12]
+        (16)</p><p>@Compendium[fvtt-warhero.trappole.CWA23xoasfzvYyDI]{Blocco
+        cadente} : Attacco [[/r 1d20+3]] [[/r 6d6 #da schiacciamento]] [17]
+        (17)</p><p>@Compendium[fvtt-warhero.trappole.qVarPzqpoZr0RoQq]{Punte da
+        muro avvelenate}: Attacco [[/r 1d20+1]] [[/r 1 #Aggiungi anche effetto
+        del veleno]]+veleno [15] (18)</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+    flags:
+      monks-enhanced-journal:
+        appendix: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.2POUuWQUok28Zm3u'
+  - sort: 500000
+    name: Lista veleni
+    type: text
+    _id: miZN9xsZPdGVoZtm
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Esistono molti tipi di veleno, alcuni dei quali mortali. Un
+        avvelenamento può accadere a causa di un’arma avvelenata, di una
+        creatura o pianta naturalmente velenose , oppure consumando cibo e
+        bevande. Vedi la descrizione di ciascuno di essi per ulteriori
+        dettagli.</p><p>Ogni veleno ha un nome, un prezzo e uno o più metodi
+        nella quale ha effetto. Può essere applicato su un arma [A] e quindi
+        funziona solo se il colpo và a segno, ingerito [I] quindi se il
+        personaggio lo beve, a tocco [T] se un personaggio tocca il veleno. fra
+        parentesi tondi invece il prezzo di creazione del veleno. Chi sa fare i
+        veleni li riconosce subito altrimenti posso essere identificati con
+        @Compendium[fvtt-warhero.poteri.4YCGLK5hBA1dymta]{Conoscenze - III
+        Identificare} o con un tiro di conoscenze  [[/r
+        1d20+@attributes.knowledge.value #Tiro conoscenza per riconoscere
+        veleno]]. Se un veleno non è identificato allora questo è l' oggetto
+        @Compendium[fvtt-warhero.equipaggiamento.obDoJiv3ZmluwsQl]{Boccetta o
+        fiala (piena) con
+        veleno}</p><p></p><p>@Compendium[fvtt-warhero.veleni.TEeDbXeMjFU8Udob]{Veleno
+        danno} [ A,I ] (30), Questo veleno infligge [[/r 2d6 danni]], [[/r
+        1d20+@statistics.str.save #CD 14 per negare veleno danno]] CD 14 FIS
+        Nega.</p><p>@Compendium[fvtt-warhero.veleni.6euD8B0TqXNo2oxq]{Veleno
+        danno maggiore} [ A,I ] (80), Questo veleno infligge [[/r 5d6 danni]],
+        [[/r 1d20+@statistics.str.save #CD 15 per negare veleno danno maggiore]]
+        CD 15 FIS
+        Nega.</p><p>@Compendium[fvtt-warhero.veleni.36dxnHkltanwC3tM]{Veleno
+        danno superiore} [ A,I ] (120), Questo veleno infligge [[/r 10d6
+        danni]], [[/r 1d20+@statistics.str.save #CD 15 per negare veleno danno
+        superiore]] CD 16 FIS
+        Nega.</p><p>@Compendium[fvtt-warhero.veleni.87x8gGWNxb7X8kxo]{Veleno
+        sonno} [ I,T ] (300), il bersaglio deve effettuare un tiro salvezza su
+        Men [[/r 1d20+@statistics.min.save #CD 15 per negare veleno sonno]] CD
+        15 per negare gli effetti di cadere in un sonno
+        profondo.</p><p>@Compendium[fvtt-warhero.veleni.J9VfXdkmnGACR2XE]{Veleno
+        oblio} [ I,T ] (300), il bersaglio deve effettuare un tiro salvezza su
+        Men [[/r 1d20+@statistics.min.save #CD 15 per negare veleno oblio]] CD
+        15 per negare gli effetti di perdere la memoria dell'ultima ora
+        vissuta.</p><p>@Compendium[fvtt-warhero.veleni.lgTBTFQfrgdY0xim]{Veleno
+        morte} [ A,I ] (2000), il bersaglio deve effettuare un tiro salvezza su
+        Fis [[/r 1d20+@statistics.str.save #CD 14 per negare veleno morte]] CD
+        14 per negare gli effetti di morire sul
+        colpo.</p><p>@Compendium[fvtt-warhero.veleni.TcRhB8ndlkSOejaD]{Veleno d'
+        amore} [ I,T ] (300), il bersaglio deve effettuare un tiro salvezza su
+        Men [[/r 1d20+@statistics.min.save #CD 15 per negare veleno d'amore]] CD
+        15 per negare gli effetti di innamorarsi della prima persona di sesso
+        opposto che
+        incontra</p><p>@Compendium[fvtt-warhero.veleni.IxEQEwMzdKlx7bbP]{Veleno
+        paralisi} [ A,I,T ] (340), il bersaglio deve effettuare un tiro salvezza
+        su FIS [[/r 1d20+@statistics.str.save #CD 15 per negare veleno
+        paralisi]] CD 15 per negare gli effetti di non poter effettuare nessuna
+        mossa di movimento per i successivi 5
+        minuti.</p><p>@Compendium[fvtt-warhero.veleni.bB8yHjLXD3G7364K]{Veleno
+        stordito} [ A,I,T ] (300), il bersaglio deve effettuare un tiro salvezza
+        su FIS [[/r 1d20+@statistics.str.save #CD 14 per negare veleno
+        stordito]] CD 14 per negare gli effetti di perdere una mossa per i
+        successivi 3
+        round.</p><p>@Compendium[fvtt-warhero.veleni.kaNsZDLXFu2cTc5F]{Veleno
+        debilitante} [ A,I,T ] (300), il bersaglio deve effettuare un tiro
+        salvezza su FIS [[/r 1d20+@statistics.str.save #CD 14 per negare veleno
+        debilitante]] CD 14 per negare gli effetti di perdere -2 a FIS
+        Temporaneo.</p><p>@Compendium[fvtt-warhero.veleni.lutaCIcCr7JKlEf9]{Veleno
+        disorientante} [ A,I,T ] (300), il bersaglio deve effettuare un tiro
+        salvezza su FIS [[/r 1d20+@statistics.str.save #CD 14 per negare veleno
+        disorientnate]] CD 14 per negare gli effetti di perdere -2 a IST
+        Temporaneo.</p><p>@Compendium[fvtt-warhero.veleni.AGBFkvegWaailJ7s]{Veleno
+        mnemonico} [ A,I,T ] (300), il bersaglio deve effettuare un tiro
+        salvezza su FIS [[/r 1d20+@statistics.str.save #CD 14 per negare veleno
+        mnemonico]] CD 14 per negare gli effetti di perdere -2 a MEN
+        Temporaneo.</p><p></p><p>E’ possibile lanciare una boccetta di veleno
+        come se fosse un'arma da lancio. Se si colpisce il bersaglio si
+        applicano gli effetti se il veleno era a tocco.</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+    flags:
+      monks-enhanced-journal:
+        appendix: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.miZN9xsZPdGVoZtm'
+  - sort: 600000
+    name: Lista malattie
+    type: text
+    _id: hZ4FiVSBWJO22vvm
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Un Tiro su MEN [[/r 1d20+@statistics.min.value #Tiro mente]] positivo
+        permette di diagnosticare e curare una malattia (il Game Master può
+        decidere che tuttavia ciò non sia possibile) facendola recedere alla sua
+        forma più lieve e di minore durata. Ovviamente è necessario disporre di
+        attrezzi necessari per la guarigione. Le malattie hanno sintomi diversi
+        e si diffondono con varie modalità. Alcune malattie tipiche sono
+        riassunte di seguito. CD indica la CD del tiro salvezza su FIS
+        necessario per prevenire l’infezione. Incubazione indica il tempo prima
+        che il danno abbia inizio e Danni elenca i danni alle caratteristiche
+        che il personaggio subirà dopo l’incubazione e ogni giorno a
+        seguire.</p><p>@UUID[Compendium.fvtt-warhero.malattie.Item.UX3fRaMM3eea2orf]{Malattia
+        - Infermità accecante}: Si diffonde in acque contaminate. Ingestione.
+        [[/r 1d20+@statistics.str.save #CD16 per resistere a Infermità
+        Accecante]] CD 16, [[/r 1d3]] giorni, -1 FIS, se subisce più di 2 danni
+        a FIS deve fare un altro salvataggio o rimane accecato
+        permanentemente.</p><p>@Compendium[fvtt-warhero.malattie.GUxXpmmkac3LfFBW]{Malattia
+        - Febbre da gallina}: febbre alta, disorientamento, frequenti attacchi
+        di risate incontrollabili. Inalazione, [[/r 1d20+@statistics.str.save
+        #CD16 per resistere a Febbre da Gallina]] CD 16, 1 giorno, –2
+        MEN.</p><p>@Compendium[fvtt-warhero.malattie.rEVdibsvrnydN4VY]{Malattia
+        - Febbre demoniaca}: Ferimento. [[/r 1d20+@statistics.str.save #CD18 per
+        resistere a Febbre demoniaca]] CD18, 1 giorno, –1 FIS. -1FIS se fallisce
+        un secondo tiro salvezza su
+        Tempra.</p><p>@Compendium[fvtt-warhero.malattie.96hTAU2dZKFX13IA]{Malattia
+        - Brividi diabolici}: La diffondono alcuni demoni, ferimento. [[/r
+        1d20+@statistics.str.save #CD14 per resistere a Brividi Diabolici]]
+        CD14, 1d4 giorni, -1 FIS. Richiede 3 tiri salvezza per
+        guarire.</p><p>@Compendium[fvtt-warhero.malattie.0rcW90JwWwRgI42l]{Malattia
+        - Febbre lurida}: La diffondono ratti e otyugh. Può essere contratta
+        anche da ferimento in ambiente malsano. [[/r 1d20+@statistics.str.save
+        #CD15 per resistere a Febbre lurida]] CD15, 1d3 giorni, –1 FIS e -1
+        IST.</p><p>@Compendium[fvtt-warhero.malattie.9JSRZCY7EGCBWgMn]{Malattia
+        - Fuoco mentale}: Sembra che il cervello stia bruciando. Provoca
+        stupore. Inalazione, [[/r 1d20+@statistics.str.save #CD12 per resistere
+        a Fuoco Mentale]] CD 12, 1 giorno, –1
+        MEN.</p><p>@Compendium[fvtt-warhero.malattie.9mkw4UtMY4OtmEdT]{Malattia
+        - Peste bubbonica}: Ferimento o inalazione. [[/r
+        1d20+@statistics.str.save #CD17 per resistere a Peste Bubbonica]] CD 17,
+        1 giorno, -1 FIS e -1MEN e il bersaglio è
+        affaticato.</p><p>@Compendium[fvtt-warhero.malattie.vWLpnIvKssftkTg0]{Malattia
+        - Lebbra}: Contatto, inalazione, ferimento. [[/r
+        1d20+@statistics.str.save #CD18 per resistere a Lebbra]] CD 18 per
+        evitarne gli effetti, [[/r 2d4]] settimane, -3
+        MEN.</p><p>@Compendium[fvtt-warhero.malattie.5keHW4rPeCnEFGPy]{Malattia
+        - Malattia rossa}: La pelle si arrossa, si gonfia, ed è calda al tocco.
+        Ferimento, [[/r 1d20+@statistics.str.save #CD15 per resistere a Malattia
+        Rossa]] CD 15, 1d3 giorni, -1
+        FIS.</p><p>@Compendium[fvtt-warhero.malattie.j2dFhFh4PfnTkExh]{Malattia
+        - Tremarella}: Provoca spasmi involontari, tremori, e fitte. Contatto,
+        [[/r 1d20+@statistics.str.save #CD13 per resistere a Tremarella]] CD 13,
+        1 giorno, –1
+        IST.</p><p>@Compendium[fvtt-warhero.malattie.c9dtPrXehHzha8FP]{Malattia
+        - Devastazione vischiosa}: La vittima si trasforma in poltiglia
+        infettiva dall’interno Contatto, [[/r 1d20+@statistics.str.save #CD14
+        per resistere a Devastazione vischiosa]] CD 14, 1 giorno, –2 FIS. -1FIS
+        permanente se fallisce un secondo tiro salvezza su FIS</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+    flags:
+      monks-enhanced-journal:
+        appendix: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.hZ4FiVSBWJO22vvm'
+  - sort: 700000
+    name: Poteri, magie e sfere di magie
+    type: text
+    _id: J0CW5ZvfSlYwmNUp
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>I poteri (o magie) si dividono in sfere. I personaggi in grado di
+        farne uso conoscono alcune di queste sfere, in funzione alla classe
+        scelta. Ogni sfera è composta da un potere di livello I, uno di livello
+        II ed uno di livello III, ( e fino a due di livello IV che un
+        personaggio che padroneggia quella sfera di base non conosce). Il
+        livello corrisponde al numero di punti mana che sono spesi per il lancio
+        di quel potere. Gli effetti di poteri differenti si sommano, dove non
+        diversamente specificato, ma non è possibile cumulare l'effetto dello
+        stesso potere o di un potere con lo stesso nome, appartenente ad una
+        diversa sfera. Il raggio di effetto di un potere corrisponde a quanto il
+        personaggio è in grado di vedere, se non diversamente specificato. La
+        durata di un potere se non descritto nel potere stesso termina a fine
+        giornata. Per poter lanciare un potere è sempre necessario potersi
+        muovere e poter parlare. E' possibile evitare completamente o in parte
+        l'effetto di un potere, quando la sua descrizione lo permette. In tal
+        caso è fissata una CD per il tiro e la caratteristica di
+        riferimento.</p><h2>Lista sfere di magia</h2><p>Warhero ha attualmente
+        32 sfere di magie e queste
+        sono:</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.Q8EL4AZ7eWFwczHk]{01.Ammaliamento}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.cs6Y0TWt6wKuvQ4w]{02.Conoscenze}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ukQlFEIZ7PO2s1EE]{03.
+        Costrizione}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.U8pd1S84rsZEjpGV]{04.Divinazione}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.YXk5b5u0kD60yPP5]{05.Elementale
+        -
+        Acqua}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.f1d2GOFzYLl50XaU]{06.Elementale
+        -
+        Aria}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.5wWHc7VIcOm9rXRr]{07.Elementale
+        -
+        Fuoco}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.F0Xieqa6D3KQddli]{08.Elementale
+        -
+        Terra}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.jlrtYLGjfG1hGjTd]{09.Evocazione
+        -
+        Animale}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.FfeTbJV8m7zpSOpf]{10.Evocazione
+        - Non
+        Morte}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ZbrlMRXgscyeEZY5]{11.Fato}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ER2C97wniMa4OwPY]{12.Forza}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ixnLA206NExE259s]{13.Guarigione}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.i6A7rLLMajX1GCnB]{14.Guerra}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.Euq6JtTvuBucAcdc]{15.Illusione}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.FV5Y61NhhWwnrBYZ]{16.Indole-Bene}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.FnckhzvGblZXCdOv]{17.Indole-Caos}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.jAcYNuXzJPBk2mEE]{18.Indole-Equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.4neEb8uAo1FgLnwx]{19.Indole-Legge}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.0l33pWTj5jsnmEfz]{20.Indole-Male}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.gujWiPPrUckarLSX]{21.Linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.IUyzU68wsbiigBsZ]{22.Luce}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.igaGpBPbXnTgHMjV]{23.Morte}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.Yb3i7aZ4rSWGQNsJ]{24.Negromanzia}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.ooVUxPR65yjFkP6J]{25.Oscurità}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.2mETVBVZGplL6I9z]{26.Protezione}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.CsEX14Sm9byMWggi]{27.Rune}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.3VbZtxz7d2gJRzzz]{28.Tempo}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.k19nOLJBQG5fu4a3]{29.Trasmutazione}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.qqh3SPUvlwzB8VVn]{30.Vegetale}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.IHxRgAwl2K6J760H]{31.Viaggio}</p><p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.BlX0zq1rmyqA9CA5]{32.Visione}</p><p><br
+        />Le sfere di evocazione hanno un solo incantesimo di livello IV, mentre
+        le altre 30 sfere hanno due incantesimi di livello IV, prendibili solo
+        tramite abilità aggiuntiva Conoscenza potere di IV Livello</p><h2>Lista
+        poteri</h2><p>Warhero ha attualmente 158 poteri o magie o incantesimi.
+        30 sfere ne hanno 5 e le sfere di evocazione ne hanno 4. Ecco la
+        lista:</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.9KljFSjM3pWaoI73]{Ammaliamento
+        - I
+        Sonno}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.uqJljByAKFAlnI2Z]{Ammaliamento
+        - II
+        Charme}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mIMKFBYf3Wjdz2DU]{Ammaliamento
+        - III
+        Comando}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Bo6yukhbjHibVLOR]{Ammaliamento
+        - IV
+        Confusione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.MJQ0ZobtTdCjduDn]{Ammaliamento
+        - IV Modificare
+        memoria}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza
+        - I Individuazione del
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.hsNBWzXXYCTtRxte]{Conoscenze
+        - II Dissolvi
+        magie}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta]{Conoscenze
+        - III
+        Identificare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.wQp0B9jxS1XQQ9oi]{Conoscenze
+        - IV Dissolvi magie
+        superiori}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lx6FGweyivwXnUS4]{Conoscenze
+        - IV Identificare
+        artefatti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KhIIZD2xav1wVqem]{Costrizione
+        - I
+        Richiamo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Z1enNb056VVT8v5C]{Costrizione
+        - II
+        Ragnatela}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.BzDXrpTEM55aFIqg]{Costrizione
+        - III
+        Patto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Ls96wsHFWG8F7Emb]{Costrizione
+        - IV
+        Bersaglio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ZTzGLsI7fYvMZK44]{Costrizione
+        - IV
+        Pietrificazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6olhY5wohzlkW96u]{Divinazione
+        - I Individuazione
+        dell'allineamento}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6vZEQ1wjQsmCXMtR]{Divinazione
+        - II
+        Scrutare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.v1p3CqaMjGn4032X]{Divinazione
+        - III Domanda
+        divina}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.9UH6CVtklssk2AVo]{Divinazione
+        - IV
+        Precognizione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CQ8MWucM1IWeDNQq]{Divinazione
+        - IV
+        Telepatia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Faq8SbGNkVrQ5pvp]{Elementale
+        - Acqua - I Raggio di
+        gelo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1HjRX5S3R2TuqnIN]{Elementale
+        - Acqua - II Cono di
+        freddo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.omCX4zDN753iGPNr]{Elementale
+        - Acqua - III Tempesta di
+        ghiaccio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.7n6sxQKYPaM7pkh4]{Elementale
+        - Acqua - IV Resistenza al
+        gelo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.luMwwiXjCbV7zV2k]{Elementale
+        - Acqua - IV
+        Tsunami}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zTe8Bxq5Rc3lrrCo]{Elementale
+        - Aria - I
+        Scintilla}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.InXfXuABQDHb5zV5]{Elementale
+        - Aria - II
+        Fulmine}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.cOXbmiXeQRJwlhdd]{Elementale
+        - Aria - III Tempesta di
+        fulmini}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.L42LjIoOFanFf2gZ]{Elementale
+        - Aria - IV Folata di
+        vento}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ip5OKhEQxoeb7pNy]{Elementale
+        - Aria - IV Resistenza alla
+        scossa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CLp5TRPccBPANHUe]{Elementale
+        - Fuoco - I Raggio
+        rovente}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ychDvTMJrneQrl0]{Elementale
+        - Fuoco - II Mani
+        brucianti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.bnWyUAi6Su0InjRo]{Elementale
+        - Fuoco - III Palla di
+        Fuoco}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0fuQ1vuv4uUfReik]{Elementale
+        - Fuoco - IV Muro di
+        fuoco}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.IwckOzpQuieWvcOn]{Elementale
+        - Fuoco - IV Resistenza al
+        fuoco}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.RNz7yZA5Hb3avPEC]{Elementale
+        - Terra - I Fiotto
+        acido}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.gW2OzkrdGkW38XK6]{Elementale
+        - Terra - II Bomba al
+        vetriolo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivnemz1L6Q3HTsjA]{Elementale
+        - Terra - III Nube
+        tossica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2t6zBr9FOTemb7ef]{Elementale
+        - Terra - IV Gabbia di
+        terra}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.jSH5a5NALT6v8E6H]{Elementale
+        - Terra - IV Resistenza all'
+        acido}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fzJGod0FE4WiReR0]{Evocazione
+        - Animale - I Evoca
+        aquila}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.SmGpYUgJY9PEIWhf]{Evocazione
+        - Animale - II Evoca
+        lupo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.dIl9bt79csKa8qSQ]{Evocazione
+        - Animale - III Evoca
+        Orso}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KBxBDMo05wN3L649]{Evocazione
+        - Animale - IV Evoca
+        dinosauro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x2Wn2yyZzfuS67r5]{Evocazione
+        - Non Morte - I Evoca
+        scheletro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.5C07VRo8z41Kh70Y]{Evocazione
+        - Non Morte - II Evoca
+        zombi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fJ30QpZ9OAb5JJyB]{Evocazione
+        - Non Morte - III Evoca
+        spettro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CjIg6780ZHG14ffq]{Evocazione
+        - Non Morte - IV Evoca
+        mummia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KAtzfJafxDsLk9BL]{Fato
+        - I Cambio
+        esito}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ucedLMom9HNyIar6]{Fato
+        - II Cambia
+        bersaglio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.geWk4VaGVcX40eb0]{Fato
+        - III Stretta del
+        fato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.e5sdgdR1TBcKEpoO]{Fato
+        - IV Destino
+        casuale}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.UidgozfLZsoPIBoK]{Fato
+        - IV Passo del
+        fato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2hAooR3fELiaIv9N]{Forza
+        - I Dardo
+        incantato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.YH6sayoSaQeWIwW7]{Forza
+        - II Armatura
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fKEXWz1U2rXN10bh]{Forza
+        - III Globo di
+        forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.iNo5f9tC1uLoUN9L]{Forza
+        - IV Ancora
+        dimensionale}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.xipmns7LBQ3k3HuG]{Forza
+        - IV
+        Permanenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.sqqxalQvLW3iSebG]{Guarigione
+        - I Cura
+        ferite}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.yYPcGqpad7uxCLlo]{Guarigione
+        - II Rimuovi
+        status}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4]{Guarigione
+        - III
+        Resurrezione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zbZ8urPD9fwpHNeR]{Guarigione
+        - IV Alito di
+        vita}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2xzmVKeu7aXWCTRD]{Guarigione
+        - IV Cura di
+        massa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QGh1VtNFgRRKVvNK]{Guerra
+        - I
+        Precisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ipXemqc1aOOxqoyG]{Guerra
+        - II
+        Forza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.wnw46cRzlPWbO5PV]{Guerra
+        - III
+        Titano}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2nNuZqzQSJv8p1P]{Guerra
+        - IV Potere della
+        furia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x96WvKX2sEQHJjJZ]{Guerra
+        - IV Vendetta della
+        furia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.kMn8UGS6YtugQVi2]{Illusione
+        - I Immagine
+        Speculare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lRyyrm32BmBH05OM]{Illusione
+        - II Immagine
+        illusoria}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.EG2xA3TWqTHG8e28]{Illusione
+        - III
+        Sfocatura}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CkDS9usOUkTMPGo7]{Illusione
+        - IV Mappa del
+        tesoro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.XO7MkRoN270zyu7q]{Illusione
+        - IV Muro
+        illusorio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FD2jB2MQjwqX26F4]{Indole
+        - Bene - I Punire il
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.h1wvKCb0vzWc6VLI]{Indole
+        - Bene - II Buona
+        speranza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DNkcEyBQYp78RUeK]{Indole
+        - Bene - III
+        Castigo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pRLjX4jdslpxXHfR]{Indole
+        - Bene - IV Cerchio contro il
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.iHsSDP1pZMS8LwxC]{Indole
+        - Bene - IV
+        Immolarsi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.leMppxqSJDUNxpuo]{Indole
+        - Caos - I Punire la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0]{Indole
+        - Caos - II Potere
+        caotico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG]{Indole
+        - Caos - III
+        Catastrofe}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.guHItAsGkNVxsEyf]{Indole
+        - Caos - IV Cerchio contro la
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1ZCVzbwTVtuxwVxC]{Indole
+        - Caos - IV Contropotere
+        caotico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.T0eZtZLUZm9K2BzP]{Indole
+        - Equilibrio - I Punire
+        l'equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ku6axOQVWmkXgyAV]{Indole
+        - Equilibrio - II Occhio per
+        occhio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.on4EicWu0uubdb5o]{Indole
+        - Equilibrio - III
+        Retaggio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.u60tRTInSsCwthRj]{Indole
+        - Equilibrio - IV Cerchio contro l'
+        equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.4uxhEUuNFuDjlnr6]{Indole
+        - Equilibrio - IV Ristabilire
+        equilibrio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FAUFfMhdebRdKBnR]{Indole
+        - Legge - I Punire il
+        caos}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lrvqjBpUmos0t4HB]{Indole
+        - Legge - II Di Fronte alla
+        legge}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vj2MXWRP76IF9gdQ]{Indole
+        - Legge - III
+        Dettame}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.dKeIgbWOvb5WyQZ8]{Indole
+        - Legge - IV Cerchio contro il
+        caos}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.AM3ATrHNkOsc9dXk]{Indole
+        - Legge - IV Legge
+        suprema}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.I0s3vfXtaej6XOsT]{Indole
+        - Male - I Punire il
+        bene}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3l8fdh3vXRvjoJr7]{Indole
+        - Male - II Di fronte al
+        male}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.2zZ7J0Rjbak48Ljr]{Indole
+        - Male - III
+        Sofferenza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mTJvyuuhZr9wORuu]{Indole
+        - Male - IV Cerchio contro il
+        bene}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.V8KL2tzLEd12xRP8]{Indole
+        - Male - IV Fine dei
+        giochi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0]{Linguaggi
+        - I Parlare con i
+        morti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg]{Linguaggi
+        - II Comprensione dei
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB]{Linguaggi
+        - III Parlare
+        linguaggi}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.HC832SufJP78O0kC]{Linguaggi
+        - IV Obbligo di
+        parola}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oClFfv4HOgXgbk6u]{Linguaggi
+        - IV Parlare con il
+        morto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O6FhPQp1rV8YaJQA]{Luce
+        - I Luce
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x6dRKlegqwmp0dh9]{Luce
+        - II Luce
+        abbagliante}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.SayG2Rx5JA3e7aus]{Luce
+        - III Colpo del
+        sole}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.rN03o7ursWpEHlNN]{Luce
+        - IV
+        Cecitá}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.HU6CGjn215elzxZy]{Luce
+        - IV Esplosione
+        solare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.CpkqRsUQEjUBAgms]{Morte
+        - I
+        Risucchio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.nJFSR7YDdiC5aI5F]{Morte
+        - II
+        Prosciugare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.KqvWjxWIifyTKNJy]{Morte
+        - III Dito di
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.tiDoC5PMgbOgfgIa]{Morte
+        - IV Alito di
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ukjoDdLQ3EG8YG8X]{Morte
+        - IV Interdizione alla
+        morte}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.7b6lal71wDDJAEd0]{Negromanzia
+        - I Risucchia
+        vita}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.fYgXo7Pcq4HKOQqK]{Negromanzia
+        - II Vita
+        Falsa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.6Z73jbvTwFqsiKOw]{Negromanzia
+        - III Resurrezione
+        veloce}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GtDC6tnsJwJ8ddL1]{Negromanzia
+        - IV Incatenare l'
+        anima}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vSGeP4nrgzmoixcw]{Negromanzia
+        - IV
+        Rigenerazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DH9Fxd3yM8mEpOBi]{Oscurità
+        - I Maglio
+        oscuro}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oqWkBcoDNbdIj4ya]{Oscurità
+        - II Oscurità
+        magica}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ]{Oscurità
+        - III Manto
+        celato}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.PzM7UtU8u6h39z5O]{Oscurità
+        - IV Mezzanotte
+        polare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.gVLEpQCmNRI1d9lo]{Oscurità
+        - IV Vera
+        invisibilità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GEUOxFWgjZ72MadL]{Protezione
+        - I Scudo
+        magico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zV19MhRi8xVJBGWq]{Protezione
+        - II
+        Salvezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.QiWw4fEN7atSXqat]{Protezione
+        - III Pelle di
+        pietra}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.K9klyiLkV95kwTIe]{Protezione
+        - IV Resistenza all'
+        energia}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0hqW3CDSxT0sb2jc]{Protezione
+        - IV Solo
+        difesa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.DsPn3lqhpGAU77kL]{Rune
+        - I Segno
+        negatorio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vDxv1Amvg7xs2cM4]{Rune
+        - II Segno di
+        protezione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.3mDBK9zIf9R4PbLo]{Rune
+        - III Segno
+        esplosivo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.APjlRqats9YPRcli]{Rune
+        - IV Marchio del
+        mago}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.jfGVhTT1diGxg3LR]{Rune
+        - IV Trappola
+        superiore}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.qRyiUS9gGHy4Op9X]{Tempo
+        - I Tempo
+        atmosferico}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.0s6X0VfFHJgKeYBs]{Tempo
+        - II
+        Lentezza}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.O1yGotIS8YidAFh1]{Tempo
+        - III
+        Velocità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.xSeI7UXUOy20nx4U]{Tempo
+        - IV Bloccare il
+        tempo}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.G1D0R27jxq7qkZ69]{Tempo
+        - IV
+        Messaggio}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.FkJ49VbCvSL2ca6c]{Trasmutazione
+        - I
+        Alterazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U]{Trasmutazione
+        - II
+        Ingrandire/Ridurre}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno]{Trasmutazione
+        - III
+        Trasformazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.GHfTTQwR6rtkRcJO]{Trasmutazione
+        - IV
+        Colosso}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.oHTmpHJrU8hzVEv7]{Trasmutazione
+        - IV Reggia
+        meravigliosa}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ENRZyKNPGk9KfCzq]{Vegetale
+        - I
+        Viticci}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.lgjVKvYLB62C5OyL]{Vegetale
+        - II Spore
+        velenose}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.Sz183GOBEDrQcGd1]{Vegetale
+        - III
+        Terremoto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.vtmeYf3FxtbUlc8k]{Vegetale
+        - IV Aiuto della
+        natura}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.gJGGSLgSqnJ8f7NZ]{Vegetale
+        - IV
+        Rampicanti}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.j7RjSZH85KRovJKc]{Viaggio
+        - I
+        Levitazione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1on8iKAjWzcbJkBd]{Viaggio
+        - II
+        Volare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.1UrtrLZ51eLjsEIx]{Viaggio
+        - III
+        Teletrasporto}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.ntMeWTWn23Z87hdD]{Viaggio
+        - IV Camminare nel
+        vento}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.JdEYwDx8fzvPchwS]{Viaggio
+        - IV Spostamento
+        planare}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione
+        - I
+        Scurovisione}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione
+        - II Vedere
+        invisibile}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione
+        - III Epurare
+        invisibilità}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.x77FS5eTPPTlfvqU]{Visione
+        - IV Visione del
+        vero}</p><p>@UUID[Compendium.fvtt-warhero.poteri.Item.9StvYUTQ7V0YhtOf]{Visione
+        - IV Visione futura}</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.J0CW5ZvfSlYwmNUp'
+  - sort: 150000
+    name: Adeguamento per foundry Virtual Table top
+    type: text
+    _id: WIjcMxvLqft3IsMT
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Per adeguare warhero a Foundry virtual table top leggere le
+        indicazioni qui sotto. Queste sono da intendersi come modifiche alle
+        regole</p><h2>Gittate</h2><p>Gittate e range sono tutte dimezzate
+        quindi:</p><p>Armi da lancio – massimo 10 metri</p><p>Armi da tiro –
+        massimo 30 metri</p><p>Poteri di livello I – massimo 10
+        metri</p><p>Poteri di livello II – massimo 20 metri</p><p>Poteri di
+        livello III – massimo 30 metri</p><p>Poteri di livello IV – massimo 40
+        metri</p><h2>Illuminazione</h2><p>Su warhero non c'é la distinzione tra
+        luce brillante e soffusa. Non esistono i concetti di Dim e bright light.
+        Una zona o é illuminata o non lo é. Usare la macro WH - Luci e Ombre .
+        Comunque le fonti di luce sono:</p><ul><li><p>Torcia e Torcia
+        inestinguibile 4 quadretti di luce</p></li><li><p>Lampada comune 5
+        quadretti di luce</p></li><li><p>Lanterna schermabile se aperta 6
+        quadretti di luce oppure 1</p></li><li><p>Potere Luce magica 5 quadretti
+        di luce</p></li></ul>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+    flags:
+      monks-enhanced-journal:
+        appendix: false
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.WIjcMxvLqft3IsMT'
+  - sort: 162500
+    name: Lista prove di abilità
+    type: text
+    _id: So5lRuMyBxhgi0pu
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Le abilità usano le tre caratteristiche: Fisico, Istinto o Mente. Qua
+        sotto troverete la lista delle abilità più comuni e la statistica a cui
+        son legate. In caso volete fare un azione non prevista da questa lista
+        concordate con il master quale delle tre statistiche usare e farete un
+        tiro generico.</p><p>FISICO [[/r 1d20+@statistics.str.value #Prova di
+        fisico]]</p><p>Danno senza armi [[/r @statistics.str.value #danni colpo
+        senza armi]]</p><p>Tiro salvezza su fis [[/r 1d20+@statistics.str.save
+        #Ts
+        fis]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.qwyfZ3H65J0dl1FQ]{Sfidare
+        la morte} [[/r 1d20+@statistics.str.value #Sfidare la morte. CD13 per
+        non morire. Altri 30 danni cosi e
+        muori]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.sKRka7F5WhvMeDoC]{Immobilizzare}
+        [[/r 1d20+@statistics.str.value
+        #Immobilizzare]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.DXKtPtxF5iAmRwpe]{Spingere
+        a terra} [[/r 1d20+@statistics.str.value #Spingere a
+        terra]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.rqCsguWqap75CTAQ]{Combattere
+        senza armi} [[/r @statistics.str.value #Danni da colpo a mani
+        nude]]</p><p>Difendersi da immobilizzazione [[/r
+        1d20+max(@statistics.dex.value,@statistics.str.value) #Difendersi dall
+        immobilizzazione]]</p><p>Scalare [[/r 1d20+@statistics.str.value
+        #Scalare]]</p><p>Nuotare [[/r 1d20+@statistics.str.value
+        #Nuotare]]</p><p>Saltare [[/r 1d20+@statistics.str.value
+        #Saltare]]</p><p>ISTINTO [[/r 1d20+@statistics.dex.value #Prova di
+        istinto]]</p><p>Tiro salvezza su ist [[/r 1d20+@statistics.dex.save #Ts
+        ist]]</p><p>Tiro per colpire [[/r 1d20+@statistics.dex.value #Tiro per
+        colpire. Solo
+        istinto]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.PYkKamAouJnFSL6j]{Combattere
+        da terra} [[/r 1d20+@statistics.dex.value-5 #Tiro per colpire
+        combattendo da terra]]</p><p>Tiro per colpire in
+        @UUID[Compendium.fvtt-warhero.azioni.Item.DKBXH7kz8zVhnRUg]{Carica} [[/r
+        1d20+@statistics.dex.value+3 #Attacco in carica]]</p><p>Difendersi da
+        immobilizzazione [[/r
+        1d20+max(@statistics.dex.value,@statistics.str.value) #Difendersi dall
+        immobilizzazione]]</p><p>Slegarsi da corde/ manette [[/r
+        1d20+@statistics.dex.value #Slegarsi da corde o
+        manette]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.Z0q9dBh2oq9dNFtz]{Disarmare}
+        [[/r 1d20+@statistics.dex.value
+        #Disarmare]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.ouHSzXbykYi3qbWT]{Cavalcare}
+        [[/r 1d20+@statistics.dex.value #Combattere in sella. CD15 per rimanere
+        in sella]]</p><p>Osservare [[/r 1d20+@statistics.dex.value
+        #Osservare]]</p><p>Nascondersi [[/r 1d20+@statistics.dex.value
+        #nascondersi]]</p><p>Scassinare serrature [[/r
+        1d20+@statistics.dex.value #Scassinare serrature]]</p><p>Disattivare
+        congegni [[/r 1d20+@statistics.dex.value #Disattivare
+        congegni]]</p><p>MENTE [[/r 1d20+@statistics.min.value #Prova di
+        mente]]</p><p>Tiro salvezza su mente [[/r 1d20+@statistics.min.save #Ts
+        men]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.ADtrdED35cN2dl0O]{Conoscenza}
+        [[/r 1d20+@attributes.knowledge.value #Tiro conoscenza (prova di mente+
+        bonus
+        conoscenza]]</p><p>@UUID[Compendium.fvtt-warhero.azioni.Item.RFsL15Vm5Q71w2Bv]{Contro
+        potere} [[/r 1d20+@statistics.min.value+@secondary.counterspell.value
+        #contropotere]]</p><p>Contropotere caotico [[/r
+        1d20+@statistics.min.value+4 #Contropotere caotico]]</p><p>Volare [[/r
+        1d20+@statistics.min.value #Volare]]</p><p>Indagare [[/r
+        1d20+@statistics.min.value #Indagare]]</p><p>Percepire presenze/entità
+        [[/r 1d20+@statistics.min.value #Percezione]]</p><p>Ascoltare [[/r
+        1d20+@statistics.min.value #Ascoltare]]</p><p>Riconoscere malattie [[/r
+        1d20+@statistics.min.value #Riconoscere malattie]]</p><p>Commerciare
+        [[/r 1d20+@statistics.min.value #Commerciare]]</p><p>Dissolvi magie [[/r
+        1d20+@statistics.min.value #Dissolvi magie]]</p><p>Dissolvi magie
+        superiore [[/r 1d20+@statistics.min.value+5 #Dissolvi magie
+        superiore]]</p><p>Riconoscere un illusione [[/r
+        1d20+@statistics.min.value #CD18 MEN per riconoscere
+        illusione]]</p><p>Valutare prezzo [[/r 1d20+@statistics.min.value
+        #Valutare]]<br /><br />Non legato alle statistiche c' è poi l azione
+        @Compendium[fvtt-warhero.azioni.ZULztptNLupwqB0G]{Parare} e la
+        possibilità di fare
+        @UUID[Compendium.fvtt-warhero.azioni.Item.M0jHmeg5yZo5r2gJ]{Colpi
+        stordenti}.</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.350'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: 1762680321013
+      lastModifiedBy: guOwSDi78TuzUGFU
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.So5lRuMyBxhgi0pu'
+  - sort: 175000
+    name: Lista divinità
+    type: text
+    _id: 5Hu4pHecJlhYElQt
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Lista delle divinità con loro allineamento e
+        credo</p><p><strong>Legali</strong></p><p>Hator il dio della
+        guerra</p><p>Therid il dio della
+        forgia</p><p><strong>Buone</strong></p><p>Tandel la dea del
+        sole</p><p>Rakkimeld dio della
+        speranza</p><p><strong>Neutrali</strong></p><p>Endel le dea della
+        natura</p><p>Belessa la dea della morte</p><p>Ormyr il dio della
+        conoscenza</p><p><strong>Malvagie</strong></p><p>Rakus il dio del
+        sangue</p><p>Noen dea della
+        discordia</p><p><strong>Caotiche</strong></p><p>Lydarkin il dio della
+        distruzione</p><p>Oldum il dio del canto</p>
+      markdown: ''
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.341'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.5Hu4pHecJlhYElQt'
+  - sort: 900000
+    name: Lista linguaggi
+    type: text
+    _id: lplal4oXOA9uIsJu
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: "<p>Lista delle lingue esistenti su Warhero:</p><p>@Compendium[fvtt-warhero.lingue.o3wHgaeNVxZsSP3z]{Language (abissale)}</p><p>@Compendium[fvtt-warhero.lingue.BalwAzTIKqkMWYM0]{Language (aquan)}</p><p>@Compendium[fvtt-warhero.lingue.FXNOoU7Uq3jw5sfC]{Language (auran)}</p><p>@Compendium[fvtt-warhero.lingue.CYmZlF93r5febbEn]{Language (celestiale)}</p><p>@Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)}</p><p>@Compendium[fvtt-warhero.lingue.0riqDnmq93mM4erW]{Language (draconico)}</p><p>@Compendium[fvtt-warhero.lingue.C2mFGpbhbUXzEDnZ]{Language (druidico)}</p><p>@Compendium[fvtt-warhero.lingue.iNr8K3qkwIox6lI6]{Language (elfico)}</p><p>@Compendium[fvtt-warhero.lingue.jVbnZdr5GB6jQmD0]{Language (ettin)}</p><p>@Compendium[fvtt-warhero.lingue.FSs2nS1zekKKrgsl]{Language (gigante)}</p><p>@Compendium[fvtt-warhero.lingue.WRlPC768SObjZD2W]{Language (gnoll)}</p><p>@Compendium[fvtt-warhero.lingue.KxEBSPejpfCbKHn1]{Language (gnomesco)}</p><p>@Compendium[fvtt-warhero.lingue.Mi0hZbhYxKkNBNQ0]{Language (goblin)}</p><p>@Compendium[fvtt-warhero.lingue.KiZHZUfjU6dZgTU6]{Language (halfling)}</p><p>@Compendium[fvtt-warhero.lingue.9jCIUfGwXOhOS1YI]{Language (infernale)}</p><p>@Compendium[fvtt-warhero.lingue.ucEleplBX1bEJd6B]{Language (ignan)}</p><p>@Compendium[fvtt-warhero.lingue.1RJtnUkPP0V6QfSr]{Language (nanico)}</p><p>@Compendium[fvtt-warhero.lingue.5yRNGxswyKMaw69B]{Language (orchesco)}</p><p>@Compendium[fvtt-warhero.lingue.9mGDGpTSxltICZiS]{Language (silvano)}</p><p>@Compendium[fvtt-warhero.lingue.HfPZ18k4faXal5tR]{Language (sottocomune)}</p><p>@Compendium[fvtt-warhero.lingue.v0sWclRN9cy8yTgQ]{Language (terran)}</p><p>@Compendium[fvtt-warhero.lingue.RplecdBcC9GBnPml]{Language (treant)}</p><p>@Compendium[fvtt-warhero.lingue.n1KN2B6ez5klec9A]{Language (worg)}</p><p></p><p>Esiste poi la lista @Compendium[fvtt-warhero.lingue.clHhM57RmUpQWLpl]{Language (tutto)} che è una lingua speciale in grado di comprendere tutte le altre lingue per effetti di poteri come @Compendium[fvtt-warhero.poteri.1x6LaCg71VjIcaHg]{Linguaggi - II Comprensione dei linguaggi} o di pozioni tipo @Compendium[fvtt-warhero.pozioni.QItjK71OU0Wh4Kya]{Pozione di Comprendere linguaggi}</p><p>\_comune, abissale, aquan, auran, celestiale, draconico, druidico, elfico, ettin, gigante, gnoll, gnomesco, goblin, halfling, ignan, infernale, nanico, orchesco, silvano, sottocomune, terran, treant, worg</p>"
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.350'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: 1759989725660
+      lastModifiedBy: lXFgtDDsvLskIOGw
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.lplal4oXOA9uIsJu'
+  - sort: 1000000
+    name: Kit
+    type: text
+    _id: rCl5N8MHXqPOOVV3
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: >-
+        <p>Per vostra comodità ho pensato a dei kit già pronti con vari oggetti,
+        in modo che si sa il prezzo di quegli oggetti assieme e possa essere più
+        semplice comprare il tutto. Li trovate
+        qui:</p><p>@UUID[Compendium.fvtt-warhero.manuale.JournalEntry.g4KBDQAp2l3hDbj3]{Kit}</p><p>E'
+        considerato un Kit anche una classe perchè in foundry tutto è un oggetto
+        quindi anche le abilità di classe o abilità aggiuntive sono classi e
+        quindi è possibile crearli come fossero bundle di oggetti.</p>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    system: {}
+    ownership:
+      default: -1
+      vvRutjambw1JfPoO: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '13.350'
+      systemId: fvtt-warhero
+      systemVersion: 13.0.1
+      createdTime: null
+      modifiedTime: 1759989745362
+      lastModifiedBy: lXFgtDDsvLskIOGw
+      exportSource: null
+    category: null
+    _key: '!journal.pages!JR8yrYagSCX0mIr1.rCl5N8MHXqPOOVV3'
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.341'
+  systemId: fvtt-warhero
+  systemVersion: 13.0.1
+  createdTime: 1745557701326
+  modifiedTime: 1745557701326
+  lastModifiedBy: vvRutjambw1JfPoO
+  exportSource: null
+_id: JR8yrYagSCX0mIr1
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+categories: []
+_key: '!journal!JR8yrYagSCX0mIr1'

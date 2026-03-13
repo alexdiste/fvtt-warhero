@@ -1,0 +1,37 @@
+name: 'Competenza razziale: competenza "armi da tiro"'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>I mezz elfi prendono
+    @Compendium[fvtt-warhero.competenze.Io6WasxTGp3DtT87]{Competenza armi: Da
+    tiro}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 6864c236ee2680020d6c6c732ded38a3e99392e4
+    sourceId: Item.ZDe8HTX28I3eLs93
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680936127902
+  modifiedTime: 1743437123515
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.ALTiWTCLy0aPFDmN
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: PPXoqMkbxh7GNCc8
+_key: '!items!PPXoqMkbxh7GNCc8'

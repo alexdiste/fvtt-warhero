@@ -1,0 +1,70 @@
+name: Ritualista
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Il ritualista &egrave; un combattente specializzato nell'arte dei rituali
+    affiancandosi a una divinit&agrave;. Ha le seguenti abilit&agrave; di
+    classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.RbwpkpLaYxzQFDg2]{Ritualista
+    - Come sono i riti}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.IDtRhlfNAClZwVdT]{Ritualista
+    - Contropotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.XJqniNZYYtQWnwjA]{Ritualista
+    - Rito di creazione magica}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.UVWmAOvDSTPlJU3j]{Ritualista
+    - Rito di potenziamento magico}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.0Di5y6T5i2f6eOZ4]{Ritualista
+    - Rituali di combattimento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.uoCcDGEY9QkqdBNN]{Ritualista
+    - Rituali di supporto}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.dz2FmOP6dDjsub4R]{Ritualista
+    - Rituali di utilit&agrave;}</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 003efce8b91d609ed485843b4776acfdb7736b33
+    sourceId: Compendium.world.temp.QymzU5Jd1h611LLL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  coreVersion: '13.341'
+  createdTime: 1681637552485
+  modifiedTime: 1743437000004
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.QymzU5Jd1h611LLL
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: klyORPoe3Ikwbeob
+_key: '!items!klyORPoe3Ikwbeob'

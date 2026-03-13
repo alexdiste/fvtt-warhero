@@ -1,0 +1,28 @@
+name: Elementale - Fuoco - IV Resistenza al fuoco
+type: power
+system:
+  level: 4
+  magicschool: Elementale - Fuoco
+  description: >-
+    il bersaglio riduce per il prossimo scontro tutti i danni subiti di tipo
+    fuoco di 20
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904838
+  modifiedTime: 1743439294630
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: IwckOzpQuieWvcOn
+folder: null
+sort: 5600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!IwckOzpQuieWvcOn'

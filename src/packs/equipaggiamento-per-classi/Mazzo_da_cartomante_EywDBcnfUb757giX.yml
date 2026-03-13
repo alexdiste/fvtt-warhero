@@ -1,0 +1,40 @@
+name: Mazzo da cartomante
+type: classitem
+img: icons/sundries/gaming/rune-card.webp
+system:
+  cost: 1
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Cartomante
+  description: <p>Un mazzo di tarocchi</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 7afa82c7b62db3abe05fc29ba31466bb53cd8cf4
+    sourceId: Item.uj9ApjC6eCc7eyUZ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: EywDBcnfUb757giX
+sort: 200000
+_key: '!items!EywDBcnfUb757giX'

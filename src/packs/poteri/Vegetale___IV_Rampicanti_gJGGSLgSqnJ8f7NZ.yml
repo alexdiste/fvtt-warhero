@@ -1,0 +1,30 @@
+name: Vegetale - IV Rampicanti
+type: power
+system:
+  level: 4
+  magicschool: Vegetale
+  description: >-
+    in un raggio di 6 metri si crea dei rampicanti, muoversi all’interno
+    dell’area fa subire 4d6 danni, CD IST 16 Dimezza, se si subisce i danni si
+    deve fare una prova contrapposta con i rampicanti per non essere
+    immobilizzati, per i rampicanti si una il FIS di chi ha lanciato il potere.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904986
+  modifiedTime: 1743439294760
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: gJGGSLgSqnJ8f7NZ
+folder: null
+sort: 9600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!gJGGSLgSqnJ8f7NZ'

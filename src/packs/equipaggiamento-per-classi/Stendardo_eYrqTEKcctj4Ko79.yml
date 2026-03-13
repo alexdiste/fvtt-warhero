@@ -1,0 +1,40 @@
+name: Stendardo
+type: classitem
+img: icons/sundries/flags/banner-standard-brown.webp
+system:
+  cost: 10
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: Samurai
+  mandatoryfor: Samurai
+  description: <p>Uno stendardo</p>
+  price: '10'
+  magiccharge: notapplicable
+  chargevalue: null
+  providedslot: 0
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: b54f2e747120161f4ffb0b09f48b2ccb0b412e66
+    sourceId: Compendium.world.temp.09Xm7iEwIjchPlLD
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553221
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.09Xm7iEwIjchPlLD
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: eYrqTEKcctj4Ko79
+_key: '!items!eYrqTEKcctj4Ko79'

@@ -1,0 +1,25 @@
+name: Cura ferite con poteri potenziati
+type: chat
+author: guOwSDi78TuzUGFU
+img: icons/magic/life/cross-flared-green.webp
+scope: global
+command: '/r 2d10+10+1d6 #Cura ferite con poteri potenziati'
+folder: UkCboSKvvs6LBGd4
+ownership:
+  default: 0
+  NMHCRBEwO1eXaL73: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1767470389600
+  modifiedTime: 1767470410213
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: MWD6ERIApFvKDtLk
+sort: 150000
+_key: '!macros!MWD6ERIApFvKDtLk'

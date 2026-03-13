@@ -1,0 +1,71 @@
+name: Cavaliere
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Combattente abile sulle cavalcature.</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zUrtvxJwpyWcfbOR]{Cavaliere
+    - Abile a cavalcare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Quhk3Q4Q7c3mJSZw]{Cavaliere
+    - Carica in sella}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MOle9gDmXI94CegG]{Cavaliere
+    - Compagno animale}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.OkOL8aeyubeMWta0]{Cavaliere
+    - Costituzione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zbTdoITtZbpWhMVf]{Cavaliere
+    - Grido di comando}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LzG8BKk6nt12KSkt]{Cavaliere
+    - Grido di coraggio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CnNobYCWx4UZC3XU]{Cavaliere
+    - Grido di speranza}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.NL2yDYU5jyVbVOcQ]{Cavaliere
+    - Restrizione allineamento}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 669b77a022eef453268192675fb043dbecdea47a
+    sourceId: Item.9x7ibQq540l5wJgt
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1683906015610
+  modifiedTime: 1743436999958
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: HN2XmADnCCHv6FZl
+sort: 100000
+_key: '!items!HN2XmADnCCHv6FZl'

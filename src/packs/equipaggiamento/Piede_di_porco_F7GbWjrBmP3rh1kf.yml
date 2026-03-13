@@ -1,0 +1,39 @@
+name: Piede di porco
+type: equipment
+img: systems/fvtt-warhero/images/icons/crowbar.svg
+system:
+  equiptype: ''
+  cost: 4
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Un piede di porco</p>
+effects: []
+flags:
+  scene-packer:
+    hash: f257dc85b22b798b21ed288b46b215eb74106cba
+    sourceId: Item.s4sSXQ6kU5JIryKA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.344'
+  createdTime: 1680936917951
+  modifiedTime: 1749220278983
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: Item.s4sSXQ6kU5JIryKA
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 37200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: F7GbWjrBmP3rh1kf
+_key: '!items!F7GbWjrBmP3rh1kf'

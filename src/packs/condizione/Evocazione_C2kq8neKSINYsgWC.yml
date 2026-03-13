@@ -1,0 +1,38 @@
+name: Evocazione
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: La creatura evocata scompare alla fine del giorno
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>La creatura evocata scompare alla fine del giorno</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 716f3c13ad4b1a8ce35eecbfddcd55ac8f612228
+    sourceId: Item.WHtKAwoOGbT3hqhM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698325052079
+  modifiedTime: 1743437150943
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: C2kq8neKSINYsgWC
+sort: 4200000
+_key: '!items!C2kq8neKSINYsgWC'

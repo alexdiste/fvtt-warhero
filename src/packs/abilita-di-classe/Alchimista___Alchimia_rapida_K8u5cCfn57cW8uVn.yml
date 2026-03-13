@@ -1,0 +1,37 @@
+name: Alchimista - Alchimia rapida
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + MEN volte al giorno&nbsp;creare una pozione
+    con la sua abilit&agrave; di mescere pozioni ma usando&nbsp;una singola
+    mossa di azione</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 30989427c40d0e4cd90362d19e460eb56579b1ed
+    sourceId: Item.7E7jiv9eDPGZumdf
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: K8u5cCfn57cW8uVn
+sort: 12700000
+_key: '!items!K8u5cCfn57cW8uVn'

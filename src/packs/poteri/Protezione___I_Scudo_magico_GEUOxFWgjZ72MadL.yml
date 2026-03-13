@@ -1,0 +1,26 @@
+name: Protezione - I Scudo magico
+type: power
+system:
+  level: 1
+  magicschool: Protezione
+  description: il bersaglio ottiene un bonus di 2 punti a difesa per il prossimo scontro.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904952
+  modifiedTime: 1743439294603
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: GEUOxFWgjZ72MadL
+folder: null
+sort: 4800000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!GEUOxFWgjZ72MadL'

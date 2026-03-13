@@ -1,0 +1,42 @@
+name: Bacchetta magica di Trasmutazione - IV Colosso
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.GHfTTQwR6rtkRcJO]{Trasmutazione -
+    IV Colosso} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 8af18e28b0b8800eaea603eda58116573b64a02f
+    sourceId: Item.TmCmgJ8cnCi9HcBk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833504
+  modifiedTime: 1704614595322
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: npzdxZBVROQCj4TZ
+sort: 0
+_key: '!items!npzdxZBVROQCj4TZ'

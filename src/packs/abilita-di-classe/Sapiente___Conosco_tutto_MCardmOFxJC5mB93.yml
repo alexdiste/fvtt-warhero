@@ -1,0 +1,38 @@
+name: Sapiente - Conosco tutto
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Una volta al giorno il personaggio pu&ograve; usare il potere di III
+    livello della sfera conoscenza
+    @Compendium[fvtt-warhero.poteri.4YCGLK5hBA1dymta]{Conoscenze - III
+    Identificare}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+    sourceId: Item.XTPKOsLhfK5kM0iF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: MCardmOFxJC5mB93
+sort: 16700000
+_key: '!items!MCardmOFxJC5mB93'

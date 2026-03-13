@@ -1,0 +1,46 @@
+name: Aureomante (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p>L'aureomante usa le sue ricchezze monetarie come componenti per
+    potenziare le sue capacit&agrave;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 08fc2bbfec86c68cdcd0cac93796faa573bf345a
+    sourceId: Item.MmRhukN8tGKFsznC
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681551538772
+  modifiedTime: 1766238190942
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: EUUWfGEagZpbVK8J
+sort: 12500
+_key: '!items!EUUWfGEagZpbVK8J'

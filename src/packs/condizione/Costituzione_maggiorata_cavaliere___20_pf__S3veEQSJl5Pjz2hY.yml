@@ -1,0 +1,38 @@
+name: Costituzione maggiorata cavaliere (+20 pf)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +20 Pf extra
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>il personaggio ha dei pf extra</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: faf9915e9b6a10bff1a8ebe9d95e4b8f13f75886
+    sourceId: Item.t63K2p42S5aeuLVp
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701438936063
+  modifiedTime: 1743437151236
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: S3veEQSJl5Pjz2hY
+sort: 1700000
+_key: '!items!S3veEQSJl5Pjz2hY'

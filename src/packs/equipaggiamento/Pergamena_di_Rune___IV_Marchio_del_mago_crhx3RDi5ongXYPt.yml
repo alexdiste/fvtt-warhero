@@ -1,0 +1,41 @@
+name: Pergamena di Rune - IV Marchio del mago
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene @UUID[Compendium.fvtt-warhero.poteri.Item.APjlRqats9YPRcli]{Rune
+    - IV Marchio del mago} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 5a2550b931c56070cac84c4eda46a61a79baa067
+    sourceId: Item.26lJlWgLAWhRNvQs
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913450024
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: crhx3RDi5ongXYPt
+sort: 22300000
+_key: '!items!crhx3RDi5ongXYPt'

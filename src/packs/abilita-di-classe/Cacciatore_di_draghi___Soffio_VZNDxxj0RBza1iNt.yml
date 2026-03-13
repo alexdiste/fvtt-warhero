@@ -1,0 +1,40 @@
+name: Cacciatore di draghi - Soffio
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; 1+MEN volte al giorno soffiare come farebbe un
+    drago , il soffio infligge 2d6 danni per ogni&nbsp;punto MEN a tutti i
+    bersagli di fronte entro 12 metri, CD&nbsp;12+MEN per dimezzare e
+    l&rsquo;elemento soffiato &egrave; a scelta del&nbsp;personaggio al momento
+    che decide di usarlo. Questa mossa<br>&egrave; considerata una mossa
+    potere</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 38b4fc1b52c71b6f681bd72c8505d6441312f610
+    sourceId: Item.87s8IQlPoqSDBSXS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704462853520
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: VZNDxxj0RBza1iNt
+sort: 7900000
+_key: '!items!VZNDxxj0RBza1iNt'

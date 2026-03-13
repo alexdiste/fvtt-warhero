@@ -1,0 +1,40 @@
+name: Sordo
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: sei sordo. Non senti nulla
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>un personaggio sordo non pu&ograve; sentire nulla, quindi ha anche
+    pi&ugrave; difficolt&agrave; a riconoscere gli incantesimi</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 0de02823ae07445a24032cf99f65c295a4740f56
+    sourceId: Item.Y5iV2Cz5C0tyqX8q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698853041588
+  modifiedTime: 1743437151376
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: XpANEffiABHRigl0
+sort: 3700000
+_key: '!items!XpANEffiABHRigl0'

@@ -1,0 +1,40 @@
+name: Carica (-2 a dif)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-2 alla dif'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Effettuare una carica conferisce un bonus di +3 al TxC e un malus di - 2
+    alla DIF per l'intera durata del round</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c2ab5ea04f3bca379eabf98e0dd3a4fd9deb295c
+    sourceId: Item.dqZTBmlwtz5jxCid
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1699111530303
+  modifiedTime: 1743437151607
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: n1ZjwqYfVVDHIIkx
+sort: 2300000
+_key: '!items!n1ZjwqYfVVDHIIkx'

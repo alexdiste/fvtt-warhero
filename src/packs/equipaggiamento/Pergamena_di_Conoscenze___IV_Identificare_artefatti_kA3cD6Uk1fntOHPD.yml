@@ -1,0 +1,42 @@
+name: Pergamena di Conoscenze - IV Identificare artefatti
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.lx6FGweyivwXnUS4]{Conoscenze - IV
+    Identificare artefatti} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: f24ff59ad43f8e76c9ba31b1bb88100d9ef43774
+    sourceId: Item.lcoZt53oOe08s5Ux
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913442922
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: kA3cD6Uk1fntOHPD
+sort: 36300000
+_key: '!items!kA3cD6Uk1fntOHPD'

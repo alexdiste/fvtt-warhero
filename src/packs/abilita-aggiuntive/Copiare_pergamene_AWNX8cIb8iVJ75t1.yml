@@ -1,0 +1,34 @@
+name: Copiare pergamene
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: "<p><strong>Prerequisito:</strong>\_nessuno</p>\n<p><strong>Beneficio:</strong> il personaggio può copiare una pergamena creandone una uguale al costo del regolamento, ogni copia\_richiede 10 minuti per livello</p>\n<p>Livello 1: 100 mo<br />Livello 2: 400 mo<br />Livello 3: 900 mo<br />Livello 4: 1600 mo<br />Livello 5: 2500 mo</p>"
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.fJVCA8AG1agqO0ar
+    hash: 9f648790a6342f1a73422ab5e7a6e826e5f15c91
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774856960
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: AWNX8cIb8iVJ75t1
+sort: 3000000
+_key: '!items!AWNX8cIb8iVJ75t1'

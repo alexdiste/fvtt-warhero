@@ -1,0 +1,38 @@
+name: Azione preparata
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Azione preparata
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Hai preparato un azione</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1b786f792b5108b24caf222362b4ff8d4f265ca1
+    sourceId: Item.ZAVSAIeG8t45A64d
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151685
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpuMly3c9eb7TlVk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 7600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: uY54M3q94Vw3zBy2
+_key: '!items!uY54M3q94Vw3zBy2'

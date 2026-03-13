@@ -1,0 +1,20 @@
+type: Actor
+folder: null
+name: Trasporti
+color: null
+sorting: a
+_id: X0AVBzZOem6rEZP7
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.21'
+  createdTime: 1759989083905
+  modifiedTime: 1759989083905
+  lastModifiedBy: lXFgtDDsvLskIOGw
+_key: '!folders!X0AVBzZOem6rEZP7'

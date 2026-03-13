@@ -1,0 +1,42 @@
+name: Bacchetta magica di Conoscenza - I Individuazione del magico
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza - I
+    Individuazione del magico} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 937ef9fe04d0262ddea37d0ba13f1e92ce5a7108
+    sourceId: Item.8w7z2o5iZUmRRLgk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613827334
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: fTRYbWNowaaxXqnc
+sort: 13600000
+_key: '!items!fTRYbWNowaaxXqnc'

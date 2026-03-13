@@ -1,0 +1,36 @@
+name: Allergico alla magia
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Questa creatura &egrave; fortemente allergica alla magia e ogni magia
+    entro i 6 quadretti provoca degli effetti casuali</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d9c8938b14163d2666f0b000983490a3ff35b698
+    sourceId: Item.PjRoDjRreXWRN92s
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: NLvf0k6vX8UGNG4B
+sort: 1900000
+_key: '!items!NLvf0k6vX8UGNG4B'

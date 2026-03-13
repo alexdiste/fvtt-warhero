@@ -1,0 +1,42 @@
+name: Pergamena di Evocazione - Animale - IV Evoca dinosauro
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.KBxBDMo05wN3L649]{Evocazione -
+    Animale - IV Evoca dinosauro} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7ee48c4761b3cdde2e77c5af5575bf84db1b685d
+    sourceId: Item.gFxvsas2Z1HwrjMo
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444513
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 4zcoVERjS6pyUE8j
+sort: 33200000
+_key: '!items!4zcoVERjS6pyUE8j'

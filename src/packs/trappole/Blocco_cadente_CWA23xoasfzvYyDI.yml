@@ -1,0 +1,42 @@
+name: Blocco cadente
+type: trap
+img: icons/commodities/stone/paver-cobble-white.webp
+system:
+  cost: 0
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  dcfind: 17
+  dcdisable: 17
+  throwtohit: '3'
+  damageroll: '0'
+  description: >-
+    <p>Attacco +3 6d6 [17] (17) [[/r 1d20+3 #tiro per colpire]] [[/r 6d6 #danni
+    di un blocco che cade dall alto freccia]]&nbsp;</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 53af3942473eea795f11436e1bdc4e0192adec03
+    sourceId: Item.5O8wvAChv3929TAl
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702203411313
+  modifiedTime: 1702204326329
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: CWA23xoasfzvYyDI
+sort: 500000
+_key: '!items!CWA23xoasfzvYyDI'

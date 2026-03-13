@@ -1,0 +1,40 @@
+name: Bruto - Lancia alleato per scudo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3+MEN volte al&nbsp;giorno prendere un alleato
+    consenziente adiacente e<br>scagliarlo davanti a un alleato se esso si trova
+    a una distanza&nbsp;massima pari al valore di FIS*2 in metri.Questa mossa
+    pu&ograve;&nbsp;essere fatta esattamente nel momento in cui un
+    alleato&nbsp;subisce danno e quel danno viene preso dal nuovo
+    alleato&nbsp;che si posiziona di fronte a lui</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 2c38e5858ff96fad01f56c1b5aa37677c9f757c6
+    sourceId: Item.42sbfrzgZz3tYyQi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: elv9kxS0YDR2wsi7
+sort: 10500000
+_key: '!items!elv9kxS0YDR2wsi7'

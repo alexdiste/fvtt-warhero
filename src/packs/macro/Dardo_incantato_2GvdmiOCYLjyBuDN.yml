@@ -1,0 +1,24 @@
+name: Dardo incantato
+type: chat
+author: guOwSDi78TuzUGFU
+img: icons/magic/unholy/projectile-spear-glow-pink.webp
+scope: global
+command: '/r 2d4+4 #Daro incantato. Danni da Forza'
+folder: UkCboSKvvs6LBGd4
+ownership:
+  default: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1770619765445
+  modifiedTime: 1770619767037
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: 2GvdmiOCYLjyBuDN
+sort: 181250
+_key: '!macros!2GvdmiOCYLjyBuDN'

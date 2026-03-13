@@ -1,0 +1,39 @@
+name: Veste da chierico
+type: equipment
+img: icons/equipment/chest/shirt-simple-white.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: dress
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una veste da chierico</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 10ab4f49d3810badbb364f2f46ac98e318851aef
+    sourceId: Item.eQ7WnPTOHgq8AiOL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718460667
+  modifiedTime: 1702047902061
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.72HqDhP2e8P7nbAx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: xZaNhdKRXMvcu5OS
+_key: '!items!xZaNhdKRXMvcu5OS'

@@ -1,0 +1,41 @@
+name: Fattura di fortuna (vantaggio sul d20)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Al prossimo tiro di dado del d20, tirane 2 e prendi il migliore
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>il prossimi tiro di d20 che il bersaglio&nbsp;deve fare per il suo
+    prossimo turno lo fa con 2 dadi e prende il&nbsp;risultato maggiore. CD 15
+    su MEN per negare</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e4ed74d81d7dc801b74982abc19c8121fcf8bf19
+    sourceId: Item.Jxo9PGg4nV6wEMn4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698047940653
+  modifiedTime: 1743437151106
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: LtTj2Cgx4V51w0xx
+sort: 4300000
+_key: '!items!LtTj2Cgx4V51w0xx'

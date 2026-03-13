@@ -1,0 +1,42 @@
+name: Pozione di Protezione dagli elementi (suono)
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '25'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica</p><p>riduce i danni di questo elemento di 2 per
+    l'intera giornata</p>
+  price: '50'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: e2c46eaf672e5420f7d11db4e5ae92e8ea4d693f
+    sourceId: Compendium.world.temp.BqrJdHWIXZFJ1QEV
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553272
+  modifiedTime: 1702106466800
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.BqrJdHWIXZFJ1QEV
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: S0q4zrjY1hNEa8cP
+_key: '!items!S0q4zrjY1hNEa8cP'

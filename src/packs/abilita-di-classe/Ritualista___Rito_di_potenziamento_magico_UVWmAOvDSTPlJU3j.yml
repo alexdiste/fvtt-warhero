@@ -1,0 +1,39 @@
+name: Ritualista - Rito di potenziamento magico
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; aumentare il&nbsp;potere di un oggetto
+    gi&agrave; magico calcolandone il costo finale<br>dell'oggetto e sottraendo
+    il prezzo dell'oggetto attuale, il prezzo di&nbsp;differenza &egrave; il
+    costo in componenti magici che serve per potenziare&nbsp;questo oggetto.
+    Questo rituale pu&ograve; essere fatto al posto di quello di&nbsp;creazione
+    magica e richiede lo stesso tempo</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a7b885b03b689a28590230b6cb8b6cd0a08d7475
+    sourceId: Item.vVWEMV1izxbrp9K4
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717354207489
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: UVWmAOvDSTPlJU3j
+sort: 2600000
+_key: '!items!UVWmAOvDSTPlJU3j'

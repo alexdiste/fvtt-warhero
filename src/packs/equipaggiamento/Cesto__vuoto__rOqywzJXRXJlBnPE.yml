@@ -1,0 +1,39 @@
+name: Cesto (vuoto)
+type: equipment
+img: icons/environment/traps/cage-simple-wood.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 01af9560c80c8fea42b5a0803f36f92e275e2cb6
+    sourceId: Item.pgSz0DkETWFMHRum
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: rOqywzJXRXJlBnPE
+sort: 17600000
+_key: '!items!rOqywzJXRXJlBnPE'

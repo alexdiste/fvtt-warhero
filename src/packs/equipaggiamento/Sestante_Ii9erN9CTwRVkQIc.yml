@@ -1,0 +1,39 @@
+name: Sestante
+type: equipment
+img: icons/tools/navigation/sextant-brass-brown.webp
+system:
+  equiptype: ''
+  cost: 500
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 97a4ffc839cba547653637430ebe856f617db145
+    sourceId: Item.Oa3jgHDeqomxd5Gm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Ii9erN9CTwRVkQIc
+sort: 15900000
+_key: '!items!Ii9erN9CTwRVkQIc'

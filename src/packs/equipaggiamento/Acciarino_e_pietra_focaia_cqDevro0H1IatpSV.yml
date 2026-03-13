@@ -1,0 +1,39 @@
+name: Acciarino e pietra focaia
+type: equipment
+img: icons/containers/boxes/crate-worn-brown.webp
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: beltpouch1
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un kit comprendente acciarino e pietra focaia</p>
+effects: []
+flags:
+  scene-packer:
+    hash: f0b563d23556a5a0a10de1beea13974b84ed9122
+    sourceId: Item.wyBWegP19lIEAKAb
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718898907
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.wyBWegP19lIEAKAb
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 38500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: cqDevro0H1IatpSV
+_key: '!items!cqDevro0H1IatpSV'

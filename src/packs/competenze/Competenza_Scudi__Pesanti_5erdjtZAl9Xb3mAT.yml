@@ -1,0 +1,38 @@
+name: 'Competenza Scudi: Pesanti'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con gli scudi
+    pesanti. Gli scudi pesanti permettono di fare azione di
+    @Compendium[fvtt-warhero.azioni.ZULztptNLupwqB0G]{parata} con di [[/r 1d12+3
+    #parata con scudo pesante]] + aggiungere eventuali bonus di parata. Ricordo
+    si pu&oacute; parare solo un attacco per turno. Se ottieni 1 &eacute; sempre
+    fallimento automatico, se ottieni 12 sempre successo automatico, altrimenti
+    pari se con questo tiro fai 12 o pi&uacute;]]. Ricordo si pu&oacute; parare
+    solo un attacco per turno e che se si ottiene 1 sar&aacute; sempre un
+    fallimento, con 12 di dado invece si parer&aacute; sempre, altimenti bisogna
+    superare 12.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 052b9481307ed6e7f584041105fb0e792bc16c5f
+    sourceId: Item.Z1PW3zUbzIB3Phfm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680857901932
+  modifiedTime: 1743437037116
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.Z1PW3zUbzIB3Phfm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 5erdjtZAl9Xb3mAT
+_key: '!items!5erdjtZAl9Xb3mAT'

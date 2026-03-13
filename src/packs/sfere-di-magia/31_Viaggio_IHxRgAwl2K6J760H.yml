@@ -1,0 +1,58 @@
+name: 31.Viaggio
+type: power
+img: systems/fvtt-warhero/images/icons/magic/viaggio.webp
+system:
+  level: 0
+  magicschool: Viaggio
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.j7RjSZH85KRovJKc]{Viaggio - I
+    Levitazione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.1on8iKAjWzcbJkBd]{Viaggio - II
+    Volare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.1UrtrLZ51eLjsEIx]{Viaggio - III
+    Teletrasporto}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.ntMeWTWn23Z87hdD]{Viaggio - IV
+    Camminare nel vento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.JdEYwDx8fzvPchwS]{Viaggio - IV
+    Spostamento planare}</p>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 49b750269ebc463647c8e6da1685cf81083cddce
+    sourceId: Compendium.world.temp.JGhPUeDL497XjvWb
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552569
+  modifiedTime: 1698851309544
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.JGhPUeDL497XjvWb
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: IHxRgAwl2K6J760H
+_key: '!items!IHxRgAwl2K6J760H'

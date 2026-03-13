@@ -1,0 +1,70 @@
+name: Cronomante
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: false
+    polearm: false
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Sfrutta il tempo a suo piacimento. Ha le seguenti abilit&agrave; di
+    classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.18bFPP0chXphELTQ]{Cronomante
+    - Contro potere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.2Cy6Pv08cR1FXzEd]{Cronomante
+    - Evitare il deterioramento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.dX55LHmrM9HyiY5O]{Cronomante
+    - Indietro nel tempo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ZNTZArAMgr85QdS2]{Cronomante
+    - Interporsi al tempo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.1Ug8kwFZYaqxRWYW]{Cronomante
+    - Nessuno mi copia}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vV0lcAz7aTFaocD8]{Cronomante
+    - Percezione del tempo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ySV9t72IxiTavhJp]{Cronomante
+    - Riposo veloce}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.oIZdQH04hA21oD3f]{Cronomante
+    - Sfere conosciute}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7878b9ed8f3fdad1b13f2aefbf920574662fdb3f
+    sourceId: Item.VZi8OQ58LaofTlqI
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.classi.Item.tvNWsZs9Bju80ChU
+  duplicateSource: null
+  coreVersion: '13.341'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352479013
+  modifiedTime: 1743437000036
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  exportSource: null
+_id: v662S7u0w8zZP8TR
+sort: 0
+_key: '!items!v662S7u0w8zZP8TR'

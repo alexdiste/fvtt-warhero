@@ -1,0 +1,41 @@
+name: Faretra conservante
+type: equipment
+img: icons/containers/ammunition/arrows-quiver-blue.webp
+system:
+  equiptype: ''
+  cost: 8000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: quiver
+  providedslot: 9999
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Permettere di inserire un numero illimitato di
+    frecce o dardi</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 00387feadcb9af04eea8979acae4a3ff8843b442
+    sourceId: Item.Ptcm3g4qV2PRgy9m
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680861189213
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tOwZQA9B2DBrKgwa
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 37500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: N8N9P1PUYvsuxMiJ
+_key: '!items!N8N9P1PUYvsuxMiJ'

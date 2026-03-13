@@ -1,0 +1,50 @@
+name: Discepolo dei draghi - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare pergamene</p>
+
+    <p>Il personaggio conosce la sfera relativa&nbsp;all'elemento scelto quindi
+    una tra:</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.YXk5b5u0kD60yPP5]{05.Elementale -
+    Acqua}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.f1d2GOFzYLl50XaU]{06.Elementale -
+    Aria}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.5wWHc7VIcOm9rXRr]{07.Elementale -
+    Fuoco}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.F0Xieqa6D3KQddli]{08.Elementale -
+    Terra}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 47ebe0f8496732588dd7b9e67d5d37d310ae7963
+    sourceId: Item.mB0Wqwjz9TtfHEO1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: LNZ2or3BAzOYn78p
+sort: 9400000
+_key: '!items!LNZ2or3BAzOYn78p'

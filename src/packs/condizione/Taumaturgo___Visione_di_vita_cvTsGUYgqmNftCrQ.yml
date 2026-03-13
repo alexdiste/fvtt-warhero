@@ -1,0 +1,38 @@
+name: Taumaturgo - Visione di vita
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +10 al mana
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>Mana extra taumaturgo</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e8e927f394360f08a1b99892a370fa893535dd9e
+    sourceId: Item.t3fWcpAPNQbjq0Rx
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681056499952
+  modifiedTime: 1743437151500
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.f0MAQ5fxbg14GOm1
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 6900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: cvTsGUYgqmNftCrQ
+_key: '!items!cvTsGUYgqmNftCrQ'

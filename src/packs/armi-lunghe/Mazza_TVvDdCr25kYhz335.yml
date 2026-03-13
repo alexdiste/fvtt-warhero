@@ -1,0 +1,42 @@
+name: Mazza
+type: weapon
+img: icons/weapons/maces/mace-studded-steel.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 9
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Un arma lunga [[/r 1d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 4aae48f405930049263bc231659ddbbda61f0826
+    sourceId: Item.rUzXLVGxCC9KpuH0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681648983012
+  modifiedTime: 1704097890787
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: TVvDdCr25kYhz335
+sort: 0
+_key: '!items!TVvDdCr25kYhz335'

@@ -1,0 +1,43 @@
+name: Caramella rara
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: La prima volta che vai a terra ti riporta a 1 PF.
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Una volta al giorno il personaggio pu&ograve; fare una caramella che se
+    mangiata entro pochi minuti pu&ograve; per tutta la giornata avere il
+    seguente effetto: Quando il bersaglio che ha mangiato la caramella prende un
+    colpo che porta i suoi punti ferita al disotto di 0 essi diventano
+    immediatamente uguali a 1 e l&rsquo;effetto della caramella svanisce</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 51936d90b7940e39eaeb3d5f9f0a61187bfcf684
+    sourceId: Item.aeyInuoJhP3SkIAp
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681573151520
+  modifiedTime: 1743437151445
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.aeyInuoJhP3SkIAp
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 6800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ZT4k7cfEYDOzFWVt
+_key: '!items!ZT4k7cfEYDOzFWVt'

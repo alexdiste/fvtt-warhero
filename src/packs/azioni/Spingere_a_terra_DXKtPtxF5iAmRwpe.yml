@@ -1,0 +1,50 @@
+name: Spingere a terra
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Se il tuo Txc ha avuto successo, puoi scegliere di non infliggere danni
+    all'avversario e tentare di spingerlo a terra. Entrambi i personaggi devono
+    lanciare 1d20, a cui si aggiungono i rispettivi valori di FIS ed eventuali
+    bonus. Se il punteggio ottenuto dall'attaccante supera quello del difensore,
+    quest'ultimo cade rovinosamente a terra. Il personaggio atterrato &egrave;
+    alla merc&egrave; dei suoi avversari: per rialzarsi, deve compiere un'azione
+    di movimento ed esporsi ad un eventuale attacco di opportunit&agrave; di
+    tutti i personaggi adiacenti, ma questo attacco non pu&ograve; essere usato
+    per disarmare o spingere a terra nuovamente. E' possibile tuttavia
+    Combattere da terra</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: cc75e8dceddd5f34ea75df7652b915f4f7845cdb
+    sourceId: Compendium.world.temp.BDb2l06AMhxaJPlA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553333
+  modifiedTime: 1743437709750
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.BDb2l06AMhxaJPlA
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: DXKtPtxF5iAmRwpe
+_key: '!items!DXKtPtxF5iAmRwpe'

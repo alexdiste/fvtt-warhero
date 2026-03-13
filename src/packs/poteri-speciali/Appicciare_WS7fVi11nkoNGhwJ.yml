@@ -1,0 +1,38 @@
+name: Appicciare
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>un mimic pu&ograve; creare sulla sua superficie corporea del&nbsp;muco
+    che funziona come una colla, se si fallisce un tiro su IST CD&nbsp;18, ci si
+    considera in lotta con lui. Per potersi liberare invece di fare<br>una prova
+    di lotta si deve ripetere il Tiro Salvezza</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 8be6bbb670411de2eaf5552f5a66c55de1170192
+    sourceId: Item.ttOadVbwZSJ2KFDN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  coreVersion: '13.351'
+  createdTime: 1700568716768
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: WS7fVi11nkoNGhwJ
+sort: 2200000
+_key: '!items!WS7fVi11nkoNGhwJ'

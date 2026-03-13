@@ -1,0 +1,29 @@
+name: Elementale - Fuoco - IV Muro di fuoco
+type: power
+system:
+  level: 4
+  magicschool: Elementale - Fuoco
+  description: >-
+    si crea un muro di fuoco alto fino a 9 metri e lungo fino a 9 metri,
+    chiunque stia adiacente al muro subisce 1d6 danni da fuoco, chi ci passa
+    attraverso subisce 15d6 danni da fuco CD 18 ist per dimezzare
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904839
+  modifiedTime: 1743439294417
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 0fuQ1vuv4uUfReik
+folder: null
+sort: 200000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!0fuQ1vuv4uUfReik'

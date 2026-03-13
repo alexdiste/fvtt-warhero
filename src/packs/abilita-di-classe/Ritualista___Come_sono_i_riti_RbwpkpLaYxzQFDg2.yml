@@ -1,0 +1,37 @@
+name: Ritualista - Come sono i riti
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Ogni rituale fatto dal personaggio richiede 4&nbsp;mosse consecutive e
+    dura per il prossimo scontro o come da&nbsp;descrizione del rituale. Non
+    &egrave; possibile avere attivo pi&ugrave; di un rituale<br>con lo stesso
+    nome contemporaneamente</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 503442732361a5dd191909a8a3e9f2651282de44
+    sourceId: Item.efoaJZW2rvgOAgaO
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717354202990
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: RbwpkpLaYxzQFDg2
+sort: 2200000
+_key: '!items!RbwpkpLaYxzQFDg2'

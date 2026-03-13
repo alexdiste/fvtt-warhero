@@ -1,0 +1,29 @@
+name: Indole - Bene - IV Immolarsi
+type: power
+system:
+  level: 4
+  magicschool: Indole - Bene
+  description: >-
+    Il bersaglio di allineamento buono diventa immune a qualsiasi tipo di danno
+    per 3 round dopo di che fino alla fine dello scontro fallisce
+    automaticamente il prossimo tiro di Sfidare la morte
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904892
+  modifiedTime: 1743439294783
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: iHsSDP1pZMS8LwxC
+folder: null
+sort: 10300000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!iHsSDP1pZMS8LwxC'

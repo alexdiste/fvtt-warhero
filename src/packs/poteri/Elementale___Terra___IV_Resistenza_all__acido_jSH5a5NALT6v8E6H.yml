@@ -1,0 +1,28 @@
+name: Elementale - Terra - IV Resistenza all' acido
+type: power
+system:
+  level: 4
+  magicschool: Elementale - Terra
+  description: >-
+    il bersaglio riduce per il prossimo scontro tutti i danni subiti di tipo
+    acido di 20
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904843
+  modifiedTime: 1743439294807
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: jSH5a5NALT6v8E6H
+folder: null
+sort: 11000000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!jSH5a5NALT6v8E6H'

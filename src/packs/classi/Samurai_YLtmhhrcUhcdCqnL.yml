@@ -1,0 +1,65 @@
+name: Samurai
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: false
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: false
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Un combattente che usa il suo spirito in battaglia per aiutare se stesso
+    e gli alleati. Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FRWUyBHfNx7YgyiU]{Samurai
+    - Abilit&agrave; extra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.rZrTz7PXkQjxsau1]{Samurai
+    - Restrizione allineamento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Wg8ZO4ASPFD04frI]{Samurai
+    - Spirito combattivo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.aXXYe2ss0xGl8K3E]{Samurai
+    - Spirito nell arma}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.H7Xxk7MZPKKavm1l]{Samurai
+    - Spirito nell armatura}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.JFCGcigxjk7LzCuK]{Samurai
+    - Stendardo}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b8f8a3f7b416b2eb0c03ef12061c6263a9179cf0
+    sourceId: Item.o5b4XlWRaSKvjmgk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  coreVersion: '13.341'
+  createdTime: 1681054095373
+  modifiedTime: 1743436999980
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.o5b4XlWRaSKvjmgk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: YLtmhhrcUhcdCqnL
+_key: '!items!YLtmhhrcUhcdCqnL'

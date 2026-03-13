@@ -1,0 +1,39 @@
+name: Sciamare
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>uno sciame con la sua mossa di MOV pu&ograve;
+    entrare&nbsp;nell&rsquo;area di un bersaglio esso pu&ograve; tentare un tiro
+    salvezza su IST&nbsp;CD 16 per evitare di entrare in contatto con essa, ogni
+    round di<br>contatto compreso quello iniziale con essa provoca 10d6
+    danni.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a1c5c78db7aa0ed303e31885d98a43f892fe35e8
+    sourceId: Item.fcyAsopCZvC6niv0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1700571047840
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: VfxGr0ZWm9pkInOo
+sort: 2700000
+_key: '!items!VfxGr0ZWm9pkInOo'

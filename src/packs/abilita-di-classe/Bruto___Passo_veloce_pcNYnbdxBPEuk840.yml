@@ -1,0 +1,34 @@
+name: Bruto - Passo veloce
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: <p>&nbsp;Il personaggio ottiene un bonus di +3 metri nel suo movimento</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 8d64e2f76a30f2b62c76c208e0f1823fb1d4b47b
+    sourceId: Item.C2ir5T3V1RXdlwmE
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: pcNYnbdxBPEuk840
+sort: 10600000
+_key: '!items!pcNYnbdxBPEuk840'

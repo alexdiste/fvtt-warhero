@@ -1,0 +1,29 @@
+name: Conoscenza - I Individuazione del magico
+type: power
+system:
+  level: 1
+  magicschool: Conoscenze
+  description: >-
+    l'incantatore riesce a percepire in quell'istante se vi è intorno a lui nel
+    raggio di 10 metri presenza di aure magiche. Capisce se vi sono effetti di
+    incantesimi attivi o oggetti con proprietà magiche
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904807
+  modifiedTime: 1743439294597
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: FxvVobEr8NoXAW1R
+folder: null
+sort: 4600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!FxvVobEr8NoXAW1R'

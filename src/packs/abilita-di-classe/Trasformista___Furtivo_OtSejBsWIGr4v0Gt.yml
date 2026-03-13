@@ -1,0 +1,39 @@
+name: Trasformista - Furtivo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve;, fuori da un combattimento, cercare di
+    nascondersi lanciando 1d10 e ottenendo un risultato di 4+, mentre in
+    combattimento con un risultato di 7+. Per nascondersi &egrave; necessario
+    avere un riparo o qualcosa che nasconda la propria figura. Questa mossa si
+    considera un movimento</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ffd4e51e0173c525a79393c8f6a30f82d3ffb45e
+    sourceId: Item.1XHKISxHXJqhXK0c
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681046470608
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.1XHKISxHXJqhXK0c
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 20800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: OtSejBsWIGr4v0Gt
+_key: '!items!OtSejBsWIGr4v0Gt'

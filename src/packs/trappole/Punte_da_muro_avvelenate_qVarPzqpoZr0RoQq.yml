@@ -1,0 +1,42 @@
+name: Punte da muro avvelenate
+type: trap
+img: icons/environment/traps/spike-skull-white-brown.webp
+system:
+  cost: 0
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  dcfind: 15
+  dcdisable: 18
+  throwtohit: '3'
+  damageroll: '0'
+  description: >-
+    <p>Attacco +1 1+veleno [15] (18) [[/r 1d20+1 #tiro per colpire]] [[/r 1d1
+    #danni di punte avvelenate]]&nbsp;</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 955e6fffd746d082a92055f952fbfb3975d47a7e
+    sourceId: Item.h09XmgjNZPoI6n2B
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702203411313
+  modifiedTime: 1702204326329
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: qVarPzqpoZr0RoQq
+sort: 300000
+_key: '!items!qVarPzqpoZr0RoQq'

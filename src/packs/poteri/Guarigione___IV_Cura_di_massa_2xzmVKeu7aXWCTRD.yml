@@ -1,0 +1,26 @@
+name: Guarigione - IV Cura di massa
+type: power
+system:
+  level: 4
+  magicschool: Guarigione
+  description: l'incantatore e tutti gli alleati entro 9 metri vengono curati di 4d10 + 10
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904871
+  modifiedTime: 1743439294470
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 2xzmVKeu7aXWCTRD
+folder: null
+sort: 1300000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!2xzmVKeu7aXWCTRD'

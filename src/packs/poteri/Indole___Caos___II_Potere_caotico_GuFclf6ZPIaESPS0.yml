@@ -1,0 +1,28 @@
+name: Indole - Caos - II Potere caotico
+type: power
+system:
+  level: 2
+  magicschool: Indole - Caos
+  description: >-
+    Il bersaglio di allineamento caotico, può lanciare immediatamente un suo
+    potere di livello III scelto in maniera casuale
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904896
+  modifiedTime: 1743439294614
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: GuFclf6ZPIaESPS0
+folder: null
+sort: 5100000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!GuFclf6ZPIaESPS0'

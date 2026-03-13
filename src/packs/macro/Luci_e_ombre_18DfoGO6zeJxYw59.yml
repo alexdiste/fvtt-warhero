@@ -1,0 +1,113 @@
+name: Luci e ombre
+type: script
+author: guOwSDi78TuzUGFU
+img: icons/sundries/lights/lantern-iron-lit-yellow.webp
+scope: global
+command: |-
+  (async () => {
+      const torchAnimation = {"animation": {"type": "torch", "speed": 2, "intensity": 2, "reverse": false}};
+      const noAnimation = {"animation": {"type": "none"}};
+      const defaultSuppression = {"negative": false};
+      const darknessSuppression = {"negative": true};
+      
+      const LIGHT_EFFECT_NAME = "Effetto Luce Token";
+
+      const lightSources = {
+          "none": {
+              label: "Nessuna luce",
+              icon: null,
+              lightData: {"dim": 0, "bright": 0, "angle": 360, "luminosity": 0.5, ...noAnimation, ...defaultSuppression},
+          },
+          "torch": {
+              label: "Torcia, torcia inestinguibile",
+              icon: "icons/sundries/lights/torch-brown-lit.webp",
+              lightData: {"dim": 0, "bright": 4, "angle": 360, "luminosity": 0.5, ...torchAnimation, ...defaultSuppression},
+          },
+          "lightPower": {
+              label: "Potere luce abbagliante",
+              icon: "icons/magic/light/explosion-star-large-blue-yellow.webp",
+              lightData: {"dim": 0, "bright": 6, "angle": 360, "luminosity": 0.5, ...noAnimation, ...defaultSuppression},
+          },
+          "lamp": {
+              label: "Lampada comune o potere luce magica",
+              icon: "icons/magic/light/explosion-star-glow-yellow.webp",
+              lightData: {"dim": 0, "bright": 5, "angle": 360, "luminosity": 0.5, ...torchAnimation, ...defaultSuppression},
+          },
+          "hoodedLanternOpen": {
+              label: "Lanterna schermabile (Aperta)",
+              icon: "icons/sundries/lights/lantern-iron-lit-yellow.webp",
+              lightData: {"dim": 0, "bright": 6, "angle": 360, "luminosity": 0.5, ...torchAnimation, ...defaultSuppression},
+          },
+          "hoodedLanternClosed": {
+              label: "Lanterna schermabile (Chiusa)",
+              icon: "icons/sundries/lights/lantern-bullseye-signal-copper.webp",
+              lightData: {"dim": 0, "bright": 1, "angle": 360, "luminosity": 0.5, ...torchAnimation, ...defaultSuppression},
+          },
+          "darknessSpell": {
+              label: "Oscurità magica",
+              icon: "icons/magic/unholy/orb-glowing-purple.webp",
+              lightData: {"dim": 0, "bright": 6, "angle": 360, "luminosity": -0.5, ...noAnimation, ...darknessSuppression},
+          }
+      }
+
+      const expression = `
+          <select name="source">
+              {{selectOptions lightSources labelAttr="label"}}
+          </select>
+      `;
+      const content = Handlebars.compile(expression)({ lightSources });
+
+      const choice = await foundry.applications.api.DialogV2.input({
+          window: { title: "Scegli fonte di luce" },
+          modal: true,
+          content,
+      });
+
+      if (typeof choice?.source === "string") {
+          const source = lightSources[choice.source];
+          
+          for (let token of canvas.tokens.controlled) {
+              // 1. Pulizia vecchi effetti
+              const existingEffects = token.actor.effects.filter(e => e.name === LIGHT_EFFECT_NAME || e.label === LIGHT_EFFECT_NAME);
+              if (existingEffects.length > 0) {
+                  await token.actor.deleteEmbeddedDocuments("ActiveEffect", existingEffects.map(e => e.id));
+              }
+
+              // 2. Aggiornamento Luce Token
+              await token.document.update({ light: source.lightData });
+
+              // 3. Creazione Effetto Temporaneo (per mostrare l'icona)
+              if (source.icon) {
+                  await token.actor.createEmbeddedDocuments("ActiveEffect", [{
+                      name: LIGHT_EFFECT_NAME,
+                      icon: source.icon,
+                      origin: token.actor.uuid,
+                      transfer: false, // Impedisce che diventi un effetto passivo
+                      duration: { startTime: game.time.worldTime },
+                      statuses: ["light-source"], // Lo marca come stato del token
+                      flags: { 
+                          core: { overlay: false } // Imposta a true se vuoi l'icona gigante al centro
+                      }
+                  }]);
+              }
+          }
+      }
+  })();
+folder: null
+ownership:
+  default: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1770623942011
+  modifiedTime: 1772303909256
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: 18DfoGO6zeJxYw59
+sort: 100000
+_key: '!macros!18DfoGO6zeJxYw59'

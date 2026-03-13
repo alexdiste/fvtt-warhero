@@ -1,0 +1,60 @@
+name: Tecnofabbro - Forgiare golem
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; creare una volta al&nbsp;giorno un golem e
+    controllarne uno per volta.<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.kIzsbDcFcSkzGu9b]{Golem di
+    speranza}: Fis: 1 Ist:0 Men:0 Prezzo: 0 Mo [0]<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.hp1CojAtZDCEOb2B]{Golem di
+    vetro}: Fis: 1 Ist:1 Men:0 Prezzo: 500 Mo [50]<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.i4LDOSoCvnNWjrrn]{Golem di
+    carne}: Fis: 3 Ist:1 Men:0 Prezzo: 1500 Mo [150]<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.LiAjWLb7X8krNgQG]{Golem di
+    argilla}: Fis: 5 Ist:2 Men:0 Prezzo: 3500 Mo [350]<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.5xaMqiujWGV98dAz]{Golem di
+    pietra}: Fis: 8 Ist:1 Men:0 Prezzo: 6500 Mo [350]<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.5UpTd2zjykSljRSO]{Golem di
+    ferro}: Fis: 10 Ist:3 Men:0 Prezzo: 12500 Mo [1250]<br>●
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.AyqzvuOmKGaRsxR8]{Golem di
+    adamantio}: Fis: 14 Ist:4 Men:0 Prezzo: 25000 Mo [2500]<br>Tutti i golem
+    sono immuni ai poteri, nessun potere &egrave; in grado&nbsp;di fargli danno
+    o potenziarlo. I golem possono impugnare armi,&nbsp;e sono competenti in
+    tutti i tipi di arma e scudi ma non nelle<br>armature. Ogni Golem ha tanti
+    punti ferita pari a 10 + (FIS*10)&nbsp;e un valore di classe armatura pari a
+    15 + IST. Forgiare un&nbsp;golem richiede 2 ore ininterrotte di lavoro, se
+    il golem viene&nbsp;distrutto o muore il materiale recuperato pu&ograve;
+    fornire parte del&nbsp;valore necessario per riforgiarlo, e il costo per
+    riforgiarlo con il&nbsp;materiale recuperato diventa il valore descritto nel
+    golem fra&nbsp;parentesi quadre. Un golem ha due mosse a disposizione
+    e&nbsp;agisce sempre nel round del suo padrone</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: bdf38a769651db0882bf828f718cdaea91836969
+    sourceId: Item.87s8IQlPoqSDBSXS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704462853520
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 49ttVjJOjFIVd2jO
+sort: 7600000
+_key: '!items!49ttVjJOjFIVd2jO'

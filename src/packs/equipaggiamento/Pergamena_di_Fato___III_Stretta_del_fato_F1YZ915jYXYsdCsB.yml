@@ -1,0 +1,41 @@
+name: Pergamena di Fato - III Stretta del fato
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 900
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene @UUID[Compendium.fvtt-warhero.poteri.Item.geWk4VaGVcX40eb0]{Fato
+    - III Stretta del fato} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 3375c12da3d7bfdaa459cd25b10f4413f078b2e6
+    sourceId: Item.n23qzN6rSugM9aVw
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913444875
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: F1YZ915jYXYsdCsB
+sort: 30700000
+_key: '!items!F1YZ915jYXYsdCsB'

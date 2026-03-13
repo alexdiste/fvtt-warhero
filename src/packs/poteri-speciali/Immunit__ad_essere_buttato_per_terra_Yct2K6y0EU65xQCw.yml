@@ -1,0 +1,34 @@
+name: Immunità ad essere buttato per terra
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>Il personaggio ha l'immunit&agrave; ad essere buttato per terra.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 85ffae3d90cada6d98672a2da4d207f17083bf2a
+    sourceId: Item.2jxJpqKdkdQv9Ski
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681303961782
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.jvoZsEKDQwf5WaA7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Yct2K6y0EU65xQCw
+_key: '!items!Yct2K6y0EU65xQCw'

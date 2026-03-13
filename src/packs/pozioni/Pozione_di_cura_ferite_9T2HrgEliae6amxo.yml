@@ -1,0 +1,49 @@
+name: Pozione di cura ferite
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 25
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '12'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 25 Mo</p>
+
+    <ul>
+
+    <li data-pm-slice="1 1
+    [&quot;bullet_list&quot;,{&quot;_preserve&quot;:{}}]">cura il bersaglio di
+    [[/r 2d6 #cura ferite]] punti ferita.</li>
+
+    </ul>
+  price: '25'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: b2a2c33cb60f286a0772043627a816a22ea9062b
+    sourceId: Compendium.world.temp.X2uhB6eYfJNNKNu3
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553249
+  modifiedTime: 1702106232207
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.X2uhB6eYfJNNKNu3
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 9T2HrgEliae6amxo
+_key: '!items!9T2HrgEliae6amxo'

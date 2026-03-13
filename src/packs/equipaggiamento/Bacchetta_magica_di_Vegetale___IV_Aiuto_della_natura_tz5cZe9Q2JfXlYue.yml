@@ -1,0 +1,42 @@
+name: Bacchetta magica di Vegetale - IV Aiuto della natura
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.vtmeYf3FxtbUlc8k]{Vegetale - IV
+    Aiuto della natura} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: e13365c224eec30b56a5cf40b24a6223fb975cc1
+    sourceId: Item.kARhJFp8bXynuHAb
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833844
+  modifiedTime: 1704614616181
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: tz5cZe9Q2JfXlYue
+sort: 0
+_key: '!items!tz5cZe9Q2JfXlYue'

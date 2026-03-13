@@ -1,0 +1,29 @@
+name: Morte - I Risucchio
+type: power
+system:
+  level: 1
+  magicschool: Morte
+  description: >-
+    l'incantatore deve effettuare un tiro per colpire a distanza entro 20 metri
+    e se ha successo , il bersaglio perde 1 punto di fis, fino ad un minimo di
+    1, per 24 ore.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904932
+  modifiedTime: 1743439294561
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: CpkqRsUQEjUBAgms
+folder: null
+sort: 3600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!CpkqRsUQEjUBAgms'

@@ -1,0 +1,68 @@
+name: Alchimista
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: false
+    throwing: true
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Un esperto nel creare pozioni di ogni genere.</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.K8u5cCfn57cW8uVn]{Alchimista
+    - Alchimia rapida}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.EwQJ6I6HDoXgwtgR]{Alchimista
+    - Bomba esplosiva}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Ev96lW4rKC77CBBr]{Alchimista
+    - E' come se la bevo io}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.k7ncypZUyoLTgij6]{Alchimista
+    - Mescere pozioni}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Rq9dfbO4RqLghhIs]{Alchimista
+    - Mutageno}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.8npgSyQ4PJAX87eA]{Alchimista
+    - Pozione del vigore}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6HPHBolFtDReWbvA]{Alchimista
+    - Pozione di cura}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: de016765df54bb5b50a505e4bcd270049a376e4d
+    sourceId: Item.sIw90hC0v599TgyN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545801944
+  modifiedTime: 1743437000033
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.sIw90hC0v599TgyN
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: uVcyBMTPNFv9kTUG
+_key: '!items!uVcyBMTPNFv9kTUG'

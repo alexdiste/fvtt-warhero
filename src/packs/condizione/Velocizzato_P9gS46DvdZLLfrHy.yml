@@ -1,0 +1,42 @@
+name: Velocizzato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: untilendcombat
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Hai una terza mossa nel proprio turno fino alla fine dello scontro
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>il bersaglio pu&ograve; effettuare una terza mossa nel proprio turno fino
+    alla fine dello scontro, e rimuove eventuali incantesimi di
+    @Compendium[fvtt-warhero.poteri.0s6X0VfFHJgKeYBs]{Tempo - II Lentezza} sul
+    bersaglio</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 73d5006ffef5364805ad5d30031c0c092f10c924
+    sourceId: Item.YVVzueqOUQKEL4uJ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698855164446
+  modifiedTime: 1743437151177
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: P9gS46DvdZLLfrHy
+sort: 3300000
+_key: '!items!P9gS46DvdZLLfrHy'

@@ -1,0 +1,41 @@
+name: Faretra
+type: equipment
+img: icons/containers/ammunition/arrows-quiver-black.webp
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: quiver
+  providedslot: 20
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una faretra. Pu&oacute; contenere fino a 20
+    frecce</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 20a4af0ae5b68cea09521872178828b7c15704f2
+    sourceId: Item.tOwZQA9B2DBrKgwa
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680861189213
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tOwZQA9B2DBrKgwa
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 39200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: jaTLrfcSq2PyBXx1
+_key: '!items!jaTLrfcSq2PyBXx1'

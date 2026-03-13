@@ -1,0 +1,49 @@
+name: Scimitarra (a due mani)
+type: weapon
+img: icons/weapons/swords/scimitar-guard-wood.webp
+system:
+  weapontype: twohanded
+  damage: 3d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 42
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una scimittare che pu&ograve; essere impugnata sia
+    ad una che a due .</p>
+
+    <p data-pm-slice="1 1 []">Arma lunga&nbsp; [[/r 1d8 #aggiungi il FIS]]</p>
+
+    <p data-pm-slice="1 1 []">Arma a due mani [[/r 3d6 #aggiungi il FIS
+    *1.5]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a7772069f4bef0e9e57089fb691c87a3e8b6ce03
+    sourceId: Item.EqfmwHBRLVJkipy0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680933955221
+  modifiedTime: 1704967093138
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Z8FOd6XZ4ByNeDfF
+sort: 100000
+_key: '!items!Z8FOd6XZ4ByNeDfF'

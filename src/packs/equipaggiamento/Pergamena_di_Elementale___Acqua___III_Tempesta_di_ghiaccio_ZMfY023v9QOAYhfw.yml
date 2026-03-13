@@ -1,0 +1,42 @@
+name: Pergamena di Elementale - Acqua - III Tempesta di ghiaccio
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 900
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene
+    @UUID[Compendium.fvtt-warhero.poteri.Item.omCX4zDN753iGPNr]{Elementale -
+    Acqua - III Tempesta di ghiaccio} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 30214f862c11cb583cd13a47d2240ea3f06abcbb
+    sourceId: Item.5Jsgq4reA8CRQ8VA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913443499
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ZMfY023v9QOAYhfw
+sort: 34000000
+_key: '!items!ZMfY023v9QOAYhfw'

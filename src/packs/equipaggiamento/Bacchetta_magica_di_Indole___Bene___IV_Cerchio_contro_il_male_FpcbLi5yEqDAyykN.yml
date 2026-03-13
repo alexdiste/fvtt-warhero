@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Bene - IV Cerchio contro il male
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.pRLjX4jdslpxXHfR]{Indole - Bene -
+    IV Cerchio contro il male} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: bff7884e11f099ace3cff791fa0a4fd9e8afc2ee
+    sourceId: Item.Sfjen4oA9JGfKgJO
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830015
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: FpcbLi5yEqDAyykN
+sort: 7800000
+_key: '!items!FpcbLi5yEqDAyykN'

@@ -1,0 +1,29 @@
+name: Evocazione - Non Morte - IV Evoca mummia
+type: power
+system:
+  level: 4
+  magicschool: Evocazione - Non Morte
+  description: >-
+    <p>2x schianto 5d6 fis 7 ist 4 men 2, percezione cieca, aura 2d6.
+    @Compendium[fvtt-warhero.evocazioni.ssIAyKvNK7c5izYR]{Mummia
+    (evocazione)}</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1675877904851
+  modifiedTime: 1743439294554
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: CjIg6780ZHG14ffq
+folder: null
+sort: 3400000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!CjIg6780ZHG14ffq'

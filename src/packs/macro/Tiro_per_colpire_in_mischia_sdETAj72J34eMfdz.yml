@@ -1,0 +1,88 @@
+name: Tiro per colpire in mischia
+type: script
+command: |-
+  if (!token) {
+      ChatMessage.create({
+          content: "Devi selezionare un token per poter fare il tiro per colpire in mischia"
+      });
+  } else {
+      const txcm = token.actor.system.attributes.txcm.value;
+      const formula = `1d20 + ${txcm}`;
+      
+      let r = new Roll(formula);
+      await r.evaluate();
+      
+      const d20 = r.terms[0].total;
+      const totale = r.total;
+      let haBersagli = false;
+
+      // Funzione helper per il contenuto del messaggio
+      const generaContenuto = (nomeTarget = "", difesa = null) => {
+          let notaCritico = "";
+          let esitoTesto = "";
+          let classeColore = "";
+
+          if (d20 === 1) {
+              notaCritico = " (Fallimento critico)";
+              classeColore = "crit-failure";
+              esitoTesto = nomeTarget ? `${nomeTarget} mancato` : "";
+          } else if (d20 === 20) {
+              notaCritico = " (Successo critico)";
+              classeColore = "crit-success";
+              esitoTesto = nomeTarget ? `${nomeTarget} colpito` : "";
+          } else if (difesa !== null) {
+              const colpito = totale > difesa;
+              classeColore = colpito ? "crit-success" : "crit-failure";
+              esitoTesto = `${nomeTarget} ${colpito ? 'colpito' : 'mancato'}`;
+          }
+
+          return `
+              <div>
+                  Tiro per colpire in mischia
+                  <ul>
+                      <li>Formula: ${formula}</li>
+                      <li><span class="${d20 === 1 || d20 === 20 ? classeColore : ''}">Risultato del dado: ${d20}</span></li>
+                      <li><strong>Risultato: ${totale}</strong>${notaCritico}</li>
+                  </ul>
+                  ${esitoTesto ? `<br><span class="${classeColore}">${esitoTesto}</span>` : ""}
+              </div>`;
+      };
+
+      for (let target of game.user.targets) {
+          haBersagli = true;
+          const difesaBersaglio = target.actor.system.attributes.def.value;
+          
+          ChatMessage.create({
+              user: game.user.id,
+              content: generaContenuto(target.name, difesaBersaglio)
+          });
+      }
+
+      if (!haBersagli) {
+          ChatMessage.create({
+              user: game.user.id,
+              content: generaContenuto()
+          });
+      }
+  }
+img: systems/fvtt-warhero/images/icons/spinning-sword.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: lDtEzIZiRFGEA5jD
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1770619800173
+  modifiedTime: 1770619804945
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 2
+  guOwSDi78TuzUGFU: 3
+_id: sdETAj72J34eMfdz
+sort: 600000
+_key: '!macros!sdETAj72J34eMfdz'

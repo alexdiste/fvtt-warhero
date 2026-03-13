@@ -1,0 +1,56 @@
+name: 22.Luce
+type: power
+img: systems/fvtt-warhero/images/icons/magic/luce.webp
+system:
+  level: 0
+  magicschool: Luce
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.O6FhPQp1rV8YaJQA]{Luce - I Luce
+    magica}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.x6dRKlegqwmp0dh9]{Luce - II
+    Luce abbagliante}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.SayG2Rx5JA3e7aus]{Luce - III
+    Colpo del sole}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.rN03o7ursWpEHlNN]{Luce - IV
+    Cecit&aacute;}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.HU6CGjn215elzxZy]{Luce - IV
+    Esplosione solare}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 641ab868a94866cc6b761f107b147b94a472cad2
+    sourceId: Compendium.world.temp.HimLMluYjTy7VpFu
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552549
+  modifiedTime: 1698851204877
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.HimLMluYjTy7VpFu
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: IUyzU68wsbiigBsZ
+_key: '!items!IUyzU68wsbiigBsZ'

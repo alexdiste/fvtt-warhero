@@ -1,0 +1,40 @@
+name: Lente di ingrandimento
+type: equipment
+img: icons/tools/scribal/magnifying-glass.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: '1'
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: unknown
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+  price: '100'
+effects: []
+flags:
+  scene-packer:
+    hash: 2af6b7eec57f036f403fd8044fe6479180b9d35c
+    sourceId: Compendium.world.temp.9SV3iSpm4oRqKnqn
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553172
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.9SV3iSpm4oRqKnqn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 36700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 3bV2xfgPeHS2l2bn
+_key: '!items!3bV2xfgPeHS2l2bn'

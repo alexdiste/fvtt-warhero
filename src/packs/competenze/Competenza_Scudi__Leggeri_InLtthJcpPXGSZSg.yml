@@ -1,0 +1,38 @@
+name: 'Competenza Scudi: Leggeri'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con gli scudi
+    leggere. Gli scudi leggeri permettono di fare azione di
+    @Compendium[fvtt-warhero.azioni.ZULztptNLupwqB0G]{Parata} con di [[/r 1d12+1
+    #parata con scudo leggero + aggiungere eventuali bonus di parata. Ricordo si
+    pu&oacute; parare solo un attacco per turno. Se ottieni 1 &eacute; sempre
+    fallimento automatico, se ottieni 12 sempre successo automatico, altrimenti
+    pari se con questo tiro fai 12 o pi&uacute;]]. Ricordo si pu&oacute; parare
+    solo un attacco per turno e che se si ottiene 1 sar&aacute; sempre un
+    fallimento, con 12 di dado invece si parer&aacute; sempre, altimenti bisogna
+    superare 12.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e4695cab35f83a4aed1487de7a0d52f7999dce61
+    sourceId: Item.7iIqqBYuocli2fBb
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680857901932
+  modifiedTime: 1743437037150
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.7iIqqBYuocli2fBb
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: InLtthJcpPXGSZSg
+_key: '!items!InLtthJcpPXGSZSg'

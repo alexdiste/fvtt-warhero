@@ -1,0 +1,29 @@
+name: Elementale - Acqua - IV Tsunami
+type: power
+system:
+  level: 4
+  magicschool: Elementale - Acqua
+  description: >-
+    i bersagli di fronte all'incantatore subiscono 15d6 danni da freddo, CD 18,
+    IST, dimezzare, e devono riuscire in un tiro salvezza su fis CD 16 o cadere
+    per terra
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904827
+  modifiedTime: 1743439294841
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: luMwwiXjCbV7zV2k
+folder: null
+sort: 11800000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!luMwwiXjCbV7zV2k'

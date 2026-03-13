@@ -1,0 +1,54 @@
+name: Sfidare la morte
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Se i PF del tuo personaggio scendono sotto lo 0 (senza subire colpi
+    stordenti), sei in guai seri. Per evitare la dipartita, ad ogni turno dovrai
+    lanciare 1d20, a cui potrai sommare soltanto il tuo valore di FIS e
+    nient'altro. Per cavartela e non passare a miglior vita, dovrai ottenere ad
+    ogni round un punteggio pari o superiore a 13; solo dopo essere guarito il
+    tuo personaggio smetter&agrave; di sanguinare e le sue 20 condizioni vitali
+    si a stabilizzarsi. Nel caso in cui il risultato di un lancio sia inferiore
+    a 13 per il nostro personaggio non ci sar&agrave; pi&ugrave; nulla da fare.
+    E' importante precisare che, quando i nostri PF sono inferiori a zero, non
+    subiamo alcun danno dai colpi avversari. Tuttavia, ulteriori 30 danni in
+    questo stato provocano immediatamente la morte del personaggio.</p>
+
+    <p>Se un pg fallisec un tiro di Sfidare la morte o subisce altri 30 danni
+    allora mettere su di lui lo stato Morto</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 424f10228fa85cfe046ae0dec1ac7c2e5d5089c5
+    sourceId: Compendium.world.temp.NLNN2gcMAaMIjjwx
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553332
+  modifiedTime: 1743437709774
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.NLNN2gcMAaMIjjwx
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: qwyfZ3H65J0dl1FQ
+_key: '!items!qwyfZ3H65J0dl1FQ'

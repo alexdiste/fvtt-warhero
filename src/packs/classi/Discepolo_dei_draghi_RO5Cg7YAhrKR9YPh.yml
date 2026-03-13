@@ -1,0 +1,68 @@
+name: Discepolo dei draghi
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: >-
+    <p data-pm-slice="1 1 []">Il discepolo dei draghi &egrave; un combattente
+    specializzato con il sangue di drago che scorre nelle proprie vene.</p>
+
+    <p data-pm-slice="1 1 []">Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.o7bf0vIyhs70wkoQ]{Discepolo
+    dei draghi - Figlio del drago}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3LkvP2JWpN1cbSTn]{Discepolo
+    dei draghi - Mutare forma drago}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3LI7MoZSPMkul24n]{Discepolo
+    dei draghi - Ordine del cavalcadraghi}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.jW2axfNTFr7EkmmA]{Discepolo
+    dei draghi - Scaglia di drago}</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LNZ2or3BAzOYn78p]{Discepolo
+    dei draghi - Sfere conosciute}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 110b4b36e0990516a672c9a61a6a7a40b83f746b
+    sourceId: Item.mBBUOtpJAyQZFYVk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545801944
+  modifiedTime: 1743436999972
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: RO5Cg7YAhrKR9YPh
+sort: 0
+_key: '!items!RO5Cg7YAhrKR9YPh'

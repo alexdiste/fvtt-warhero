@@ -1,0 +1,39 @@
+name: Contenitore per mappe o pergamene
+type: equipment
+img: icons/containers/bags/case-scroll-leather-tan.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: belt
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una custodia per mappe e pergamene</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c4111c22333449fb899aa133db38c4a09fc05687
+    sourceId: Item.Nh6gUbLgyZ83tLPc
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057300740
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.Nh6gUbLgyZ83tLPc
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 36500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 1pPVPDPbD1lC5Y4V
+_key: '!items!1pPVPDPbD1lC5Y4V'

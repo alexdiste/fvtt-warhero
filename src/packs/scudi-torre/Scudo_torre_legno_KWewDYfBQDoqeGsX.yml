@@ -1,0 +1,40 @@
+name: Scudo torre legno
+type: shield
+img: icons/equipment/shield/wardoor-wooden-boss-brown.webp
+system:
+  shieldtype: heavy
+  parrybonus: 5
+  equipped: false
+  cost: 70
+  quantity: 1
+  slotused: 1
+  slotlocation: shield
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Uno scudo torre. Parata:+5 [[/r 1d12+5]]</p>
+  price: '75'
+effects: []
+flags:
+  scene-packer:
+    hash: 947d538035b79652102b69f70652cb8ddbd5b760
+    sourceId: Item.T9OqjqGtF2Rbr0cd
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637553222
+  modifiedTime: 1696015303135
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.Nc6rtW6EUT8nQ3YA
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: KWewDYfBQDoqeGsX
+_key: '!items!KWewDYfBQDoqeGsX'

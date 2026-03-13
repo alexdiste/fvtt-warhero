@@ -1,0 +1,41 @@
+name: Pergamena magica ignota (non identificata)
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'no'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una pergamena magica che contiene un potere ma non sai di quale livello o
+    quale potere sia</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b03d337284119a2433c73fdabe1f8e5988f9b209
+    sourceId: Item.VsQt1zccUZNSfQNz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057359950
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Kf9rUhi1EKjGBHbU
+sort: 19300000
+_key: '!items!Kf9rUhi1EKjGBHbU'

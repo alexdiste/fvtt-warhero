@@ -1,0 +1,42 @@
+name: Bacchetta magica di Illusione - IV Muro illusorio
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.XO7MkRoN270zyu7q]{Illusione - IV
+    Muro illusorio} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 3e78b5aca253fefbc1cfab450d6c0fbfe23b73e1
+    sourceId: Item.rW2AWAfZb4KnlQ0r
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613829825
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: sszgH6i9A1AFVZdi
+sort: 7300000
+_key: '!items!sszgH6i9A1AFVZdi'

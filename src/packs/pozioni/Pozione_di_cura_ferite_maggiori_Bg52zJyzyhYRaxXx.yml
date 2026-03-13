@@ -1,0 +1,43 @@
+name: Pozione di cura ferite maggiori
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 75
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '37'
+  preparetime: '10'
+  durationround: 0
+  description: |-
+    <p>Una pozione alchemica. Costo: 75 Mo.</p>
+    <p>&nbsp;</p>
+    <p>Cura il bersaglio di [[/r 5d6 #cura ferite maggiori]] punti ferita</p>
+  price: '75'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 83976bb3066df2c6efbabd7387bc95c3b6e34f54
+    sourceId: Compendium.world.temp.9OefLgOp4vNAmk85
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553250
+  modifiedTime: 1702106261353
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.9OefLgOp4vNAmk85
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Bg52zJyzyhYRaxXx
+_key: '!items!Bg52zJyzyhYRaxXx'

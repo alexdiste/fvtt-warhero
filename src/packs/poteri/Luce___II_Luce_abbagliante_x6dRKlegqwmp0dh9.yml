@@ -1,0 +1,29 @@
+name: Luce - II Luce abbagliante
+type: power
+system:
+  level: 2
+  magicschool: Luce
+  description: >-
+    un'area di 6 metri viene pervasa dalla luce i bersagli nell’area ottengono
+    un -5 ai tiri per colpire, TS FIS 16 per negare . Il potere neutralizza
+    oscurità magica. L'effetto nell’area persiste per 5 minuti.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904927
+  modifiedTime: 1743439294947
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: x6dRKlegqwmp0dh9
+folder: null
+sort: 15000000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!x6dRKlegqwmp0dh9'

@@ -1,0 +1,38 @@
+name: Disorientato (veleno disorientante)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-2 a IST fino a che non ti rimuvono il veleno.'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>-2 a IST fino a che non ti rimuvono il veleno.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: bf891aa1c1716d124fa682a12e7f71f3b8c9fcd2
+    sourceId: Item.kfvnaKGZO1EBz0sC
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151424
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Ysr5cAKpGZxOwlX6
+sort: 300000
+_key: '!items!Ysr5cAKpGZxOwlX6'

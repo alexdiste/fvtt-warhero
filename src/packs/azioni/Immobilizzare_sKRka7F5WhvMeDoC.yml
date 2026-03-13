@@ -1,0 +1,53 @@
+name: Immobilizzare
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Se il tuo Txc ha avuto successo, puoi scegliere di non infliggere danni
+    all'avversario e tentare invece di immobilizzarlo. Entrambi i personaggi
+    devono lanciare 1d20, a cui si aggiungono i rispettivi valori di FIS ed
+    eventuali bonus. Il personaggio in difesa pu&ograve; utilizzare IST al posto
+    di FIS, qualora pi&ugrave; vantaggioso. Se il punteggio ottenuto
+    dall'attaccante supera quello del difensore, quest'ultimo viene
+    immobilizzato. Il personaggio immobilizzato pu&ograve; tentare di
+    divincolarsi e di sfuggire alla presa del suo avversario compiendo un'azione
+    di movimento: in tal caso, il lancio di immobilizzazione deve essere
+    ripetuto. Ovviamente, non &egrave; possibile attaccare con le armi quando si
+    &egrave; immobilizzati.</p>
+
+    <p>Dare al pg immobilizzato l'effetto Immobilizzato</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 21fdf8e0c5120eba2adf906eb8e800294b91d59a
+    sourceId: Compendium.world.temp.a8iiglD01G0MGeto
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553322
+  modifiedTime: 1743437709779
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.a8iiglD01G0MGeto
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: sKRka7F5WhvMeDoC
+_key: '!items!sKRka7F5WhvMeDoC'

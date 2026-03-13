@@ -1,0 +1,48 @@
+name: Gerofante (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: false
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: true
+    tower: false
+  issecondary: false
+  description: |-
+    <p>La guida di un culto il sacerdote pi&ugrave; importante</p>
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: bd12461f1512c2b552630864eb97b63094fc906e
+    sourceId: Compendium.world.temp.472U2yxYACnpGCJ1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681637552464
+  modifiedTime: 1766238259899
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Compendium.world.temp.472U2yxYACnpGCJ1
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: lhq9SfeAof7DS3zM
+_key: '!items!lhq9SfeAof7DS3zM'

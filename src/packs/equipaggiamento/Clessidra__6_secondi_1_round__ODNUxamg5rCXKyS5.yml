@@ -1,0 +1,39 @@
+name: Clessidra (6 secondi/1 round)
+type: equipment
+img: icons/tools/navigation/hourglass-grey.webp
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 4d96c494ecf89701527fcbe1748acaa23e2e3dfe
+    sourceId: Item.OeyxsjgVKlGD83A1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ODNUxamg5rCXKyS5
+sort: 16400000
+_key: '!items!ODNUxamg5rCXKyS5'

@@ -1,0 +1,45 @@
+name: Poteri innati (1 volta al giorno)
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ]{Oscurit&agrave;
+    - III Manto celato}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.lRyyrm32BmBH05OM]{Illusione -
+    II Immagine illusoria}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.JdEYwDx8fzvPchwS]{Viaggio - IV
+    Spostamento planare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.0fuQ1vuv4uUfReik]{Elementale -
+    Fuoco - IV Muro di fuoco}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 8018ec5299a705cec935400a1ac6fbf8355be74f
+    sourceId: Item.92pHTHi2feY7mts3
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1704967481738
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: wIl9PALFWv9D81zK
+sort: 700000
+_key: '!items!wIl9PALFWv9D81zK'

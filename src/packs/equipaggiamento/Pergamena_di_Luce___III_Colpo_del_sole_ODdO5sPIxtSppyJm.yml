@@ -1,0 +1,41 @@
+name: Pergamena di Luce - III Colpo del sole
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 900
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene @UUID[Compendium.fvtt-warhero.poteri.Item.SayG2Rx5JA3e7aus]{Luce
+    - III Colpo del sole} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ae8f89de0438295dbfe04f7d96debc458ad3e068
+    sourceId: Item.OxlqgJeqLmBNq9e0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913448182
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ODdO5sPIxtSppyJm
+sort: 24400000
+_key: '!items!ODdO5sPIxtSppyJm'

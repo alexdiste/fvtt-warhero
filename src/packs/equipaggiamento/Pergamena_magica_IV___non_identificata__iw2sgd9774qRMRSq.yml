@@ -1,0 +1,39 @@
+name: Pergamena magica IV  (non identificata)
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1600
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'no'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Contiene un potere di quarto livello</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 22de8503f59f59d8671ffda830ade52dc2dfdaab
+    sourceId: Item.Rq5xSZofBJlHJI04
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057359950
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.1v2dGBahf3OMXhu5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 39100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: iw2sgd9774qRMRSq
+_key: '!items!iw2sgd9774qRMRSq'

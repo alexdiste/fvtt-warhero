@@ -1,0 +1,40 @@
+name: Ritualista - Rituali di combattimento
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + FIS rituali di&nbsp;combattimento al giorno
+    fra i seguenti rituali:<br>● Rituale di attacco &ndash; Il bersaglio ottiene
+    un +1 al TxC e ai danni&nbsp;con le armi.<br>● Rituale della padronanza
+    &ndash; Un bersaglio ottiene una competenza&nbsp;per l'intera giornata in
+    una tipologia di arma, armatura o scudo.<br>● Rituale di potenza magica
+    &ndash; Il bersaglio ottiene un +1 alla CD del&nbsp;prossimo potere che
+    lancia</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: b0ba8586623b94f48334367456bfe8c59957cb49
+    sourceId: Item.pHQ7q7PbShLp1G7r
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717354208813
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: 0Di5y6T5i2f6eOZ4
+sort: 700000
+_key: '!items!0Di5y6T5i2f6eOZ4'

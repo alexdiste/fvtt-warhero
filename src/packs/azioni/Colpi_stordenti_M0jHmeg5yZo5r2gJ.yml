@@ -1,0 +1,52 @@
+name: Colpi stordenti
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Qualora si impugnino armi contundenti (mazze, martelli, ecc.) o si
+    Combatta senza armi , si possono infliggere danni stordenti al posto di
+    quelli normali. Il malcapitato subir&agrave; dei danni normalmente ma, se il
+    suo valore di punti ferita dovesse scendere sotto 0, cadr&agrave; a terra
+    stordito. Per potersi rialzare, dovr&agrave; essere curato oppure attendere
+    un po' di tempo, dato che il ritmo naturale di guarigione &egrave; di 1
+    punto ferita al minuto per questo tipo di ferite. Chiaramente, se fossimo
+    circondati da mostri o nemici, tale attesa potrebbe rivelarsi fatale!</p>
+
+    <p>Aggiungere effetto
+    @UUID[Compendium.fvtt-warhero.condizione.Item.4nH3Obmvl4LgJA8i]{Stordito
+    (colpi stordenti)} al pg</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 7fdb6d958f91ab884e9f2f157bfedf5fb74eaea1
+    sourceId: Compendium.world.temp.yUrSByjMutIGoEDB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637553307
+  modifiedTime: 1743437709754
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.yUrSByjMutIGoEDB
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: M0jHmeg5yZo5r2gJ
+_key: '!items!M0jHmeg5yZo5r2gJ'

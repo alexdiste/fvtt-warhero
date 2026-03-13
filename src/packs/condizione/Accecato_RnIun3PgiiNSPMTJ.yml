@@ -1,0 +1,45 @@
+name: Accecato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: no vista e -5 al tpc
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Un personaggio che perde la capacit&agrave; di vedere non &egrave; in
+    grado di usare poteri con un bersaglio diverso da se stesso e ottiene un -5
+    al TxC.</p>
+
+    <p>&nbsp;</p>
+
+    <p>Questo &egrave; uno stato alterato</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 04b21b35da821a8975396e1db7fd708ff0cf9b3b
+    sourceId: Item.0BdH3F2gqsUy2eu0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151224
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.WpdnRi0CNC9DoSY5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: RnIun3PgiiNSPMTJ
+_key: '!items!RnIun3PgiiNSPMTJ'

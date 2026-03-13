@@ -1,0 +1,94 @@
+name: Arcimago - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare
+    pergamene.</p>
+
+    <p>In fase di creazione il personaggio sceglie fra 3 delle seguenti
+    sfere:</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.Q8EL4AZ7eWFwczHk]{01.Ammaliamento}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.cs6Y0TWt6wKuvQ4w]{02.Conoscenze}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ukQlFEIZ7PO2s1EE]{03.
+    Costrizione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.YXk5b5u0kD60yPP5]{05.Elementale -
+    Acqua}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.f1d2GOFzYLl50XaU]{06.Elementale -
+    Aria}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.5wWHc7VIcOm9rXRr]{07.Elementale -
+    Fuoco}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.F0Xieqa6D3KQddli]{08.Elementale -
+    Terra}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.jlrtYLGjfG1hGjTd]{09.Evocazione -
+    Animale}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.FfeTbJV8m7zpSOpf]{10.Evocazione -
+    Non Morte}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ZbrlMRXgscyeEZY5]{11.Fato}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ER2C97wniMa4OwPY]{12.Forza}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.i6A7rLLMajX1GCnB]{14.Guerra}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.Euq6JtTvuBucAcdc]{15.Illusione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.gujWiPPrUckarLSX]{21.Linguaggi}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.IUyzU68wsbiigBsZ]{22.Luce}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.igaGpBPbXnTgHMjV]{23.Morte}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.Yb3i7aZ4rSWGQNsJ]{24.Negromanzia}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ooVUxPR65yjFkP6J]{25.Oscurit&agrave;}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.2mETVBVZGplL6I9z]{26.Protezione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.CsEX14Sm9byMWggi]{27.Rune}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.3VbZtxz7d2gJRzzz]{28.Tempo}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.k19nOLJBQG5fu4a3]{29.Trasmutazione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.IHxRgAwl2K6J760H]{31.Viaggio}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.BlX0zq1rmyqA9CA5]{32.Visione}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7dcfa5e6071bd6bfee40d67b04e9b502794752b7
+    sourceId: Item.3vmQ4bM2QnVEHIRg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704471123381
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: qXpT6R0KX45G29YY
+sort: 4800000
+_key: '!items!qXpT6R0KX45G29YY'

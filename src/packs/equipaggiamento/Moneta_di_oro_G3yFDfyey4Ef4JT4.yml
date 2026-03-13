@@ -1,0 +1,30 @@
+name: Moneta di oro
+type: money
+img: icons/commodities/currency/coin-plain-portal-gold.webp
+system:
+  quantity: 1
+  slotlocation: beltpouch1
+  description: <p>Una moneta di oro</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c35d0364c4d96d25d1ffca40db331052a4fb7151
+    sourceId: Item.of1a6VLNI6xOFy3v
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680860672881
+  modifiedTime: 1705127165196
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.of1a6VLNI6xOFy3v
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 37300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: G3yFDfyey4Ef4JT4
+_key: '!items!G3yFDfyey4Ef4JT4'

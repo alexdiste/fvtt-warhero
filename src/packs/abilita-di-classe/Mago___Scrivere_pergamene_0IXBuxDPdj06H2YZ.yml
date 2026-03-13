@@ -1,0 +1,40 @@
+name: Mago - Scrivere pergamene
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>&nbsp;Il personaggio pu&ograve;, una volta al giorno, spendere
+    normalmente il suo mana come se stesse lanciando un&nbsp;potere per, invece,
+    scriverlo su una pergamena, pu&ograve; scrivere su&nbsp;pergamena anche
+    poteri di altri se sono loro a spendere il mana per&nbsp;lanciare il potere
+    il tempo per scrivere una pergamena &egrave; di 10 minuti&nbsp;per livello
+    della pergamena creata</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+    sourceId: Item.XTPKOsLhfK5kM0iF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 0IXBuxDPdj06H2YZ
+sort: 16800000
+_key: '!items!0IXBuxDPdj06H2YZ'

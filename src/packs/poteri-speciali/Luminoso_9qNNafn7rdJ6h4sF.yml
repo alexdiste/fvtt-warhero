@@ -1,0 +1,36 @@
+name: Luminoso
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>Uno spiritello emette naturalmente una luminosità pari a quella fornita
+    da una torcia a suo piacimento</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: 9e95cc9ebf8cedc88b06eec76fffcaaf4213c8e9
+    sourceId: Item.VweNQKJ9g2v1K3FK
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766235911864
+  modifiedTime: 1766235911864
+  lastModifiedBy: uzeu86bhmL5CiHhN
+folder: null
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+_id: 9qNNafn7rdJ6h4sF
+sort: 0
+_key: '!items!9qNNafn7rdJ6h4sF'

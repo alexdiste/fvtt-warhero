@@ -1,0 +1,42 @@
+name: burattino piccolo
+type: classitem
+img: icons/commodities/treasure/doll-voodoo.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Burattinaio o Vuduista
+  description: >-
+    <p>un
+    @UUID[Compendium.fvtt-warhero.evocazioni.Actor.LNnkEvOdeXnF8oJB]{Burattino
+    piccolo} usabile da classi come il vuduista, il burattinaio e altri.</p>
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ca27d4fae0c0c40ec62074c2f697d15141e69a01
+    sourceId: Item.6CAsNDnCkjA8hipz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704870187840
+  modifiedTime: 1743322111383
+  lastModifiedBy: bApdcCqVSmKfSfw3
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: jmMLyGWsEjXTCwoI
+sort: 500000
+_key: '!items!jmMLyGWsEjXTCwoI'

@@ -1,0 +1,32 @@
+name: 'Competenza armi: A due mani'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi a
+    due mani. Le armi a due mani infliggono [[/r 3d6 #+1 volta e mezzo il
+    fisico+ bonus ai danni in mischia]] + una volta e mezzo il valore di fisico
+    (arrotondato per difetto) + eventuali bonus per i danni in mischia.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: fcc6ee54be64e23c23db4dd4efd34916e7adad0d
+    sourceId: Item.slQQwi8CS9hfvn3x
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680857153518
+  modifiedTime: 1743437037174
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.KqKt3kKD5rcWoj65
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: arc5LiCc70VG3EBs
+_key: '!items!arc5LiCc70VG3EBs'

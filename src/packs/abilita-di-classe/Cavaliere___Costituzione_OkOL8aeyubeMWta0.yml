@@ -1,0 +1,38 @@
+name: Cavaliere - Costituzione
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio ottiene un bonus di 20 punti ferita in fase di creazione.
+    Mettere condizione
+    @UUID[Compendium.fvtt-warhero.condizione.Item.S3veEQSJl5Pjz2hY]{Costituzione
+    maggiorata cavaliere (+20 pf)} nella scheda pg</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e8cef2188ae5d1c08b2d21ead845700e961f8cf5
+    sourceId: Item.rhOXfco4aSPDMGPB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: OkOL8aeyubeMWta0
+sort: 11700000
+_key: '!items!OkOL8aeyubeMWta0'

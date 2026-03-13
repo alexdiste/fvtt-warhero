@@ -1,0 +1,37 @@
+name: Oracolo - Favore divino
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + FIS volte al giorno interferire con un tiro
+    di un alleato fornendogli un bonus di +3 al risultato del tiro di un
+    dado</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 96d05ffa9f52a73eb7e5793381ad4fbdb439d156
+    sourceId: Item.WuXZEmeSH7EeyVxn
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1676806380081
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.WuXZEmeSH7EeyVxn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 22700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: nAHgbzobTsu8yPIq
+_key: '!items!nAHgbzobTsu8yPIq'

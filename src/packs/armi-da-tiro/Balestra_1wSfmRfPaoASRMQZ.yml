@@ -1,0 +1,45 @@
+name: Balestra
+type: weapon
+img: icons/weapons/crossbows/crossbow-loaded-black.webp
+system:
+  weapontype: shooting
+  damage: 2d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 45
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una balestra Arma da tiro. [[/r 2d6]]. Usa
+    @UUID[Compendium.fvtt-warhero.munizioni.Item.Zq3vIOR3qvaj2gsa]{Quadrelli}&nbsp;
+    come munizioni</p>
+effects: []
+flags:
+  scene-packer:
+    hash: bbde7b2ecb82a9bf10b137f7ca059cf83dc5c030
+    sourceId: Item.b1nNvYve0rHFjF7F
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718176261
+  modifiedTime: 1705303015037
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.RFRbWTzWRO3pgZ8k
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 1wSfmRfPaoASRMQZ
+_key: '!items!1wSfmRfPaoASRMQZ'

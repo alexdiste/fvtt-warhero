@@ -1,0 +1,48 @@
+name: Pozione di Comprendere linguaggi
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 350
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '175'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 350 Mo</p>
+
+    <p>permette di comprendere qualsiasi linguaggio per l'intera giornata</p>
+
+    <p>Aggiungere
+    @Compendium[fvtt-warhero.condizione.Ooty5dM6GrdUvRRU]{Comprendere Linguaggi}
+    o aggiungere @Compendium[fvtt-warhero.lingue.clHhM57RmUpQWLpl]{Language
+    (tutto)} alla scheda e poi ricordarsi di toglierlo a fine giornata</p>
+  price: '350'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 7a9fcf30e24246c7ac7a8c6496af011f2400070c
+    sourceId: Compendium.world.temp.Q7tzOyXxcK6Tbe6D
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553244
+  modifiedTime: 1703657777628
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.Q7tzOyXxcK6Tbe6D
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: QItjK71OU0Wh4Kya
+_key: '!items!QItjK71OU0Wh4Kya'

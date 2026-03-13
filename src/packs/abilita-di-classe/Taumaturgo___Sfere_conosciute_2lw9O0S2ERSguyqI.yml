@@ -1,0 +1,38 @@
+name: Taumaturgo - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare poteri da
+    pergamena</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ixnLA206NExE259s]{13.Guarigione}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e2b49f876e3938f9fe088ff7566037f4a0ac7bfc
+    sourceId: Item.XmwBQDAaWIgydnY4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.XmwBQDAaWIgydnY4
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 18700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 2lw9O0S2ERSguyqI
+_key: '!items!2lw9O0S2ERSguyqI'

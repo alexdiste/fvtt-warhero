@@ -1,0 +1,41 @@
+name: Arcimago - Polla del mago
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno trasformare l'oro in potere
+    magico e convertire 200Mo in un&nbsp;punto mana. Non pu&ograve; mai
+    convertire pi&ugrave; di 600Mo in un unico&nbsp;utilizzo di questo potere.
+    Non &egrave; possibile selezionare questa&nbsp;abilit&agrave; con
+    l&rsquo;abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.xFsAySx8ev5EL557]{Capacit&agrave;
+    extra}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7a9a7302ec7aa3cca0e3870258fbb2a8ad628e0f
+    sourceId: Item.3vmQ4bM2QnVEHIRg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704471123381
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: FZub13Swtd7esFSL
+sort: 5800000
+_key: '!items!FZub13Swtd7esFSL'

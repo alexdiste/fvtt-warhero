@@ -1,0 +1,39 @@
+name: Gabbia piccola
+type: equipment
+img: systems/fvtt-warhero/images/icons/cage.svg
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    hash: 271234422f77ccbff9c0ff2fa51ebf6cd55647b9
+    sourceId: Item.xltYs8hGJinplb5X
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.344'
+  createdTime: 1676707874667
+  modifiedTime: 1749220162279
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: kKSbNgYJN9YoEhWL
+sort: 0
+_key: '!items!kKSbNgYJN9YoEhWL'

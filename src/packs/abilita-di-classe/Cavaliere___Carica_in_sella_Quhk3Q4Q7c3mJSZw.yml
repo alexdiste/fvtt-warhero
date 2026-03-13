@@ -1,0 +1,37 @@
+name: Cavaliere - Carica in sella
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio se cavalca una creatura pu&ograve; usare la mossa
+    @Compendium[fvtt-warhero.poteri-speciali.ciI4KX9tAuEOFHV0]{Assaltare} una
+    volta a round ottenendo un bonus di +5d6 danni.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: a92388bb4c0c30fae8f823308c73f24f7da68e62
+    sourceId: Item.GzO0rEeZZAQJUSR0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Quhk3Q4Q7c3mJSZw
+sort: 11500000
+_key: '!items!Quhk3Q4Q7c3mJSZw'

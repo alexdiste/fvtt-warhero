@@ -1,0 +1,40 @@
+name: Scudo grande di ferro
+type: shield
+img: icons/equipment/shield/heater-steel-grey.webp
+system:
+  shieldtype: medium
+  parrybonus: 3
+  equipped: false
+  cost: 40
+  quantity: 1
+  slotused: 1
+  slotlocation: shield
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Uno scudo pesante. Parata:+3 [[/r 1d12+3]]</p>
+  price: '40'
+effects: []
+flags:
+  scene-packer:
+    hash: 2b3d56aa4e8cf4d08ffb5346789272df56acdcf2
+    sourceId: Compendium.world.temp.yecaM9bbheKv9AmU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552627
+  modifiedTime: 1705402624836
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.yecaM9bbheKv9AmU
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ayuwEXMwPBSnv0Ja
+_key: '!items!ayuwEXMwPBSnv0Ja'

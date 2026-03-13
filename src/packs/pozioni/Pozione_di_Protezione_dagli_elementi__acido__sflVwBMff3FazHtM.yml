@@ -1,0 +1,42 @@
+name: Pozione di Protezione dagli elementi (acido)
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '25'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica</p><p>riduce i danni di questo elemento di 2 per
+    l'intera giornata</p>
+  price: '50'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 39c8187d079c8ceba76f01877b6cce06bcb0cc74
+    sourceId: Compendium.world.temp.yE8p6b1IWZRm9qQd
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553265
+  modifiedTime: 1702106406801
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.yE8p6b1IWZRm9qQd
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: sflVwBMff3FazHtM
+_key: '!items!sflVwBMff3FazHtM'

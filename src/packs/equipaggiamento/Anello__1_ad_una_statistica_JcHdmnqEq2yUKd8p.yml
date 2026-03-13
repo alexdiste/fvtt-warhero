@@ -1,0 +1,39 @@
+name: Anello +1 ad una statistica
+type: equipment
+img: icons/equipment/finger/ring-band-engraved-scrolls-bronze.webp
+system:
+  equiptype: ''
+  cost: 5000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: ring
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>+ 1 IST</p>
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: 0b4b7158179c147a152655efc1d1d37b0aafd69a
+    sourceId: Item.7Qjk8nr68Je7urUN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1699124373550
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: JcHdmnqEq2yUKd8p
+sort: 19000000
+_key: '!items!JcHdmnqEq2yUKd8p'

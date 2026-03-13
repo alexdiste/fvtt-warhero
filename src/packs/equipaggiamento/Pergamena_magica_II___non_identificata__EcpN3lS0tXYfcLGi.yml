@@ -1,0 +1,39 @@
+name: Pergamena magica II  (non identificata)
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 400
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'no'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Contiene un potere di secondo livello</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 4194c926c6276f0f08aa1b711f2b4e700a7e2d65
+    sourceId: Item.Qi5OTtGEHZFCdYZK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057359950
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.1v2dGBahf3OMXhu5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 37100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: EcpN3lS0tXYfcLGi
+_key: '!items!EcpN3lS0tXYfcLGi'

@@ -1,0 +1,59 @@
+name: Mutaforma - Mutazione elementale
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Mutazione elementale: Il personaggio pu&ograve; trasformarsi in un
+    elementale mantenendo le proprie caratteristiche. Il danno inflitto &egrave;
+    di base 2d6. L'equipaggiamento si fonde con l'alone dell'elemento.</p>
+
+    <ul>
+
+    <li><span style="font-family: var(--font-primary); font-size:
+    var(--font-size-14);">Aria : vola come movimento, il danno &egrave; di tipo
+    scossa, +1d6 al danno</span></li>
+
+    <li>Acqua: nessun prova di nuotare, il danno &egrave; di tipo gelo,+1d8 al
+    danno</li>
+
+    <li>Fuoco: se colpito infligge automaticamente 1d6 danni da fuoco, il danno
+    inflitto &egrave; di tipo&nbsp; fuoco,+1d8 al danno</li>
+
+    <li>Terra: aumenta di 2 la propria difesa, il danno inflitto &egrave; di
+    tipo acido, +2d6 al danno</li>
+
+    </ul>
+
+    <p><br>Ogni elementale pu&ograve; effettuare sempre 3 colpi con ogni mossa
+    di attacco, se si decide di farne pi&ugrave; di uno si ottiene lo stesso
+    malus dell'utilizzo di due armi. Pu&ograve; continuare a parlare tutte le
+    lingue che conosce</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 884601ab0e4e3b2654a97d539b3bfede83a5f276
+    sourceId: Item.1zy18Or1Do8fFvJd
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681053280112
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.1zy18Or1Do8fFvJd
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 20500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: JIZnct1jg0cr0dGS
+_key: '!items!JIZnct1jg0cr0dGS'

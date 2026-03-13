@@ -1,0 +1,39 @@
+name: Mutante - Mutazione
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>Il personaggio può 5 + MEN volte al giorno mutare una parte del suo corpo
+    per ottenere uno dei seguenti vantaggi :</p><ul><li><p>Volare 18
+    metri</p></li><li><p>Nuotare senza fare prove</p></li><li><p>Respirare
+    sott'acqua</p></li><li><p>Potere speciale "Scurovisione"</p></li><li><p>
+    Muoversi sottoterra 9 metri</p></li><li><p>Arma al posto del
+    braccio</p></li><li><p>Scudo al posto del braccio </p></li><li><p>Armatura
+    al posto del corpo. (armi armature e scudi solo quelli in cui è competente)
+    </p></li></ul><p>Rimuovere la mutazione non è una mossa, all'alba di ogni
+    giorno le mutazioni terminano</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.32'
+  createdTime: 1761360529391
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: xxPuIjMKOCQbj4V8
+sort: 5400000
+_key: '!items!xxPuIjMKOCQbj4V8'

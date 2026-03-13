@@ -1,0 +1,20 @@
+type: Macro
+folder: null
+name: Poteri
+color: null
+sorting: a
+_id: UkCboSKvvs6LBGd4
+description: ''
+sort: 0
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.41'
+  createdTime: 1767470373045
+  modifiedTime: 1767470373045
+  lastModifiedBy: guOwSDi78TuzUGFU
+_key: '!folders!UkCboSKvvs6LBGd4'

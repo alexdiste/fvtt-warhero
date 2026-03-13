@@ -1,0 +1,38 @@
+name: Nuotare migliorato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +3 alle prove di nuotare durante l'intera giornata
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>+3 alle prove di nuotare durante l'intera giornata</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: ddc259f18b1e069e7ce91e9d4f9ea32dcec12736
+    sourceId: Item.67uLLbDK2n6TcA0t
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698852066377
+  modifiedTime: 1743437151046
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: HFXf9KUdQrYidDNm
+sort: 2800000
+_key: '!items!HFXf9KUdQrYidDNm'

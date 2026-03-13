@@ -1,0 +1,42 @@
+name: Bacchetta magica di Elementale - Acqua - III Tempesta di ghiaccio
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.omCX4zDN753iGPNr]{Elementale -
+    Acqua - III Tempesta di ghiaccio} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 3f2c729e4b46194b4ef3c9cb5845a847f50a6c4c
+    sourceId: Item.5FipEyEWfWpzYitz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613827868
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Ucgl8OfE8r4kGN2r
+sort: 11900000
+_key: '!items!Ucgl8OfE8r4kGN2r'

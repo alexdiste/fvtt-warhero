@@ -1,0 +1,67 @@
+name: Oracolo
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Esperto divinatore. Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.nAHgbzobTsu8yPIq]{Oracolo
+    - Favore divino}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.sMauAMHYabSWcQK7]{Oracolo
+    - Intervento divino}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.mexLasnP65OEzT0Q]{Oracolo
+    - Osservare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7EDi6Jg1wMMEmNKn]{Oracolo
+    - Percezione del futuro}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.l5Udehj1jDxCUgZx]{Oracolo
+    - Percezione dell' allineamento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.stZj0dwsGJeEhqog]{Oracolo
+    - Sfere conosciute}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.0p93zjYI5GT1clOm]{Oracolo
+    - Visione}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: cf0a3283eb29d6405216fd748a4054db3d8831d5
+    sourceId: Item.tQQ2BphjqU2oZ300
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  coreVersion: '13.341'
+  createdTime: 1680859705976
+  modifiedTime: 1743436999988
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.tQQ2BphjqU2oZ300
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: d1vbfwQRI1NvuZ3U
+_key: '!items!d1vbfwQRI1NvuZ3U'

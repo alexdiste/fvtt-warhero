@@ -1,0 +1,42 @@
+name: Bacchetta magica di Visione - I Scurovisione
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione - I
+    Scurovisione} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 78236e48b93a2d523161e6d8c186497529c01fdb
+    sourceId: Item.znz4CixvBWysREso
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613834346
+  modifiedTime: 1704614634527
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: d8VeJG9Upu3t0NUh
+sort: 0
+_key: '!items!d8VeJG9Upu3t0NUh'

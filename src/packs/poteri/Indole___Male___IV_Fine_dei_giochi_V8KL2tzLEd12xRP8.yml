@@ -1,0 +1,28 @@
+name: Indole - Male - IV Fine dei giochi
+type: power
+system:
+  level: 4
+  magicschool: Indole - Male
+  description: >-
+    il bersaglio deve effettuare un tiro su sfidare la morte, come se i suoi
+    punti ferita fossero a 0, in caso di fallimento muore.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904917
+  modifiedTime: 1743439294704
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: V8KL2tzLEd12xRP8
+folder: null
+sort: 7900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!V8KL2tzLEd12xRP8'

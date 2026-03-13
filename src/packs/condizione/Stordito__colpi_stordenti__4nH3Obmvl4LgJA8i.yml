@@ -1,0 +1,48 @@
+name: Stordito (colpi stordenti)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Il pg &egrave; stato stordito da Colpi stordenti ed &egrave; quindi a
+    terra privo di sensi. Leggere
+    @Compendium[fvtt-warhero.azioni.M0jHmeg5yZo5r2gJ]{Colpi stordenti} per
+    maggiori dettagli</p>
+
+    <p>&nbsp;</p>
+
+    <p>Questo &egrave; uno Stato alterato</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 27507d66e82dc76e1efce4ba0e6200df13958e4e
+    sourceId: Compendium.world.temp.2qqpXpiuwI8avCr2
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552688
+  modifiedTime: 1743437150813
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.2qqpXpiuwI8avCr2
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 4nH3Obmvl4LgJA8i
+_key: '!items!4nH3Obmvl4LgJA8i'

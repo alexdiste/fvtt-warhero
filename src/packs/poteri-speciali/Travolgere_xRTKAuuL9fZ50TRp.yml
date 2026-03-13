@@ -1,0 +1,43 @@
+name: Travolgere
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Una creatura con Travolgere pu&ograve; usare le sue 2 mosse per fare un
+    movimento e calpestare qualsiasi avversario pi&ugrave; piccolo di lui
+    infliggendo danni. Gli avversari travolti possono tentare un attacco di
+    opportunit&agrave; o tentare un Tiro salvezza su IST per subire la
+    met&agrave; dei danni. Una creatura con Travolgere pu&ograve; infliggere
+    danni da travolgimento ad un bersaglio una volta per turno, non importa
+    quante volte il suo movimento passa sopra alla creatura bersaglio</p>
+
+    <p>&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 5bc706bde2058121e0181bcaba01c89c8e8ae790
+    sourceId: Item.0lvTUY7C48565Dj9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.HKoxeCXqiwLIyOX7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: xRTKAuuL9fZ50TRp
+_key: '!items!xRTKAuuL9fZ50TRp'

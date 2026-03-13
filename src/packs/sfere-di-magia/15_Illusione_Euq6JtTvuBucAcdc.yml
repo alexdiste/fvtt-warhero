@@ -1,0 +1,54 @@
+name: 15.Illusione
+type: power
+img: systems/fvtt-warhero/images/icons/magic/illusione.webp
+system:
+  level: 0
+  magicschool: Illusione
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.kMn8UGS6YtugQVi2]{Illusione - I
+    Immagine Speculare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.lRyyrm32BmBH05OM]{Illusione -
+    II Immagine illusoria}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.EG2xA3TWqTHG8e28]{Illusione -
+    III Sfocatura}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.CkDS9usOUkTMPGo7]{Illusione -
+    IV Mappa del tesoro}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.XO7MkRoN270zyu7q]{Illusione -
+    IV Muro illusorio}</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 77297185eddc32cd62e7693a02635bf257db5b4d
+    sourceId: Compendium.world.temp.z5asZhtlmqmqjDsH
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552529
+  modifiedTime: 1698851004109
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.z5asZhtlmqmqjDsH
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Euq6JtTvuBucAcdc
+_key: '!items!Euq6JtTvuBucAcdc'

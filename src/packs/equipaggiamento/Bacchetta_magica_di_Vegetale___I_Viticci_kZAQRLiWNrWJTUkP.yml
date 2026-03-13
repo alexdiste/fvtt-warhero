@@ -1,0 +1,42 @@
+name: Bacchetta magica di Vegetale - I Viticci
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.ENRZyKNPGk9KfCzq]{Vegetale - I
+    Viticci} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 3aa9fcb41b98c2892a10f574e83802c3c7fd5545
+    sourceId: Item.8l0Nd3gebAW99Xzs
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833633
+  modifiedTime: 1704614605276
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: kZAQRLiWNrWJTUkP
+sort: 0
+_key: '!items!kZAQRLiWNrWJTUkP'

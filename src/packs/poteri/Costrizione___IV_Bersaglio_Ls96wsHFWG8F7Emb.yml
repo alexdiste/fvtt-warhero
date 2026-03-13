@@ -1,0 +1,30 @@
+name: Costrizione - IV Bersaglio
+type: power
+system:
+  level: 4
+  magicschool: Costrizione
+  description: >-
+    Devi selezionare un alleato consenziente e un bersaglio. Il bersaglio scelto
+    potrà effettuare mosse ostili solo su l'alleato scelto fino alla fine dello
+    scontro o fino a quando i Punti ferita dell'alleato scendono a zero. Il
+    Bersaglio può tentare un TS su MEN CD 18 per Negare
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904816
+  modifiedTime: 1743439294659
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Ls96wsHFWG8F7Emb
+folder: null
+sort: 6500000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!Ls96wsHFWG8F7Emb'

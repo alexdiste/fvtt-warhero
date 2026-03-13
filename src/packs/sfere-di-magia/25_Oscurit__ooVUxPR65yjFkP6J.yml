@@ -1,0 +1,58 @@
+name: 25.Oscurità
+type: power
+img: systems/fvtt-warhero/images/icons/magic/oscurit%C3%A0.webp
+system:
+  level: 0
+  magicschool: Oscurità
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.DH9Fxd3yM8mEpOBi]{Oscurit&agrave;
+    - I Maglio oscuro}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.oqWkBcoDNbdIj4ya]{Oscurit&agrave;
+    - II Oscurit&agrave; magica}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ]{Oscurit&agrave;
+    - III Manto celato}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.PzM7UtU8u6h39z5O]{Oscurit&agrave;
+    - IV Mezzanotte polare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.gVLEpQCmNRI1d9lo]{Oscurit&agrave;
+    - IV Vera invisibilit&agrave;}</p>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 3abd8af176847ac457fad3f647f5b78cafd9b0ab
+    sourceId: Compendium.world.temp.4q5oupyAJEF274y3
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552555
+  modifiedTime: 1698851228439
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.4q5oupyAJEF274y3
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ooVUxPR65yjFkP6J
+_key: '!items!ooVUxPR65yjFkP6J'

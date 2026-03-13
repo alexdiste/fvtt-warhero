@@ -1,0 +1,39 @@
+name: Clessidra (1 ora)
+type: equipment
+img: icons/tools/navigation/hourglass-yellow.webp
+system:
+  equiptype: ''
+  cost: 25
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 739540fe6f4b599329e8eab7536353664b953283
+    sourceId: Item.Xa0ycITefDko5RLp
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: jKiDr9SU7M3FQssP
+sort: 17300000
+_key: '!items!jKiDr9SU7M3FQssP'

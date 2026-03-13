@@ -1,0 +1,39 @@
+name: Legna da Ardere (per giorno)
+type: equipment
+img: icons/commodities/wood/log-rough-brown.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 2
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 9d1df09602c5391f73f60a69f8f3f33c245032a1
+    sourceId: Item.p4y7Ugdh7X1Abimd
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1700321744009
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: LXpbZGpQpFNVlPyt
+sort: 20300000
+_key: '!items!LXpbZGpQpFNVlPyt'

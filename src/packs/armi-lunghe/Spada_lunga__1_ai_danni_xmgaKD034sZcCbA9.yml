@@ -1,0 +1,42 @@
+name: Spada lunga +1 ai danni
+type: weapon
+img: icons/weapons/swords/sword-guard-engraved.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 1012
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: '<p data-pm-slice="1 1 []">Spada lunga. Arma lunga [[/r 1d8+1 #magico]]</p>'
+effects: []
+flags:
+  scene-packer:
+    hash: 070b249d1402379a50c47692fb776506d11aefad
+    sourceId: Item.qrPUgnaAjE6hwmQo
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676710510666
+  modifiedTime: 1701594258212
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.gjnuY2CmSuH8lvpv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: xmgaKD034sZcCbA9
+_key: '!items!xmgaKD034sZcCbA9'

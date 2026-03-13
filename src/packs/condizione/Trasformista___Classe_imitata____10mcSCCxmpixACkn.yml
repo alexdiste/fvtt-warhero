@@ -1,0 +1,44 @@
+name: Trasformista - Classe imitata ()
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: null
+  durationunit: ''
+  shortdescription: Aggiungi abilità da questa classe
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio pu&ograve; una volta al giorno
+    aggiungere una abilit&agrave; di una qualsiasi classe che non abbia<br>sfere
+    conosciute, alle sue abilit&agrave; e utilizzarla come se diventasse una sua
+    abilit&agrave; di classe. Usare questo potere &egrave; una mossa potere. Non
+    &egrave; possibile selezionare questa abilit&agrave; con
+    l&rsquo;abilit&agrave; aggiuntiva &ldquo;Capacit&agrave; extra&rdquo;.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: df6632c46a99d349f526bd1bcb2cb5c954b5f206
+    sourceId: Item.2TmanV1HV5HrCM5C
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680935549648
+  modifiedTime: 1743437150761
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FSdOwIhTazaVMT3Y
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 10mcSCCxmpixACkn
+_key: '!items!10mcSCCxmpixACkn'

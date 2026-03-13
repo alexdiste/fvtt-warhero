@@ -1,0 +1,42 @@
+name: Ascia Grande
+type: weapon
+img: icons/weapons/axes/axe-double.webp
+system:
+  weapontype: twohanded
+  damage: 3d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 45
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: '<p>Arma a due mani [[/r 3d6 #aggiungi il FIS *1.5]]</p>'
+effects: []
+flags:
+  scene-packer:
+    hash: 0e91beffaa8ef03bbb4e221f75d782402de67653
+    sourceId: Item.1hZFpBcFcdaPrQvY
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681648983012
+  modifiedTime: 1704967093138
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.1hZFpBcFcdaPrQvY
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: zP9ZYDG483ikrny1
+_key: '!items!zP9ZYDG483ikrny1'

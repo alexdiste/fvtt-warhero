@@ -1,0 +1,163 @@
+name: Tiro per colpire
+type: script
+command: |-
+  const token = canvas.tokens.controlled[0];
+
+  if (!token) {
+      ui.notifications.warn("Per favore, seleziona un token prima di eseguire la macro!");
+  } else {
+      const dialogContent = `
+          <form>
+              <div class="form-group">
+                  <label>Tipo di Attacco:</label>
+                  <select id="attack-type">
+                      <option value="mischia">Mischia</option>
+                      <option value="mischia2armi">Mischia con due armi</option>
+                      <option value="distanza">Distanza</option>
+                  </select>
+              </div>
+              <hr>
+              <div class="form-group">
+                  <label>Tipo di tiro:</label>
+                  <select id="roll-mode">
+                      <option value="normal">Normale</option>
+                      <option value="advantage">Vantaggio</option>
+                      <option value="disadvantage">Svantaggio</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label>Soglia Critico:</label>
+                  <input type="number" id="crit-threshold" value="20">
+              </div>
+              <div class="form-group">
+                  <label>Bonus aggiuntivi (es. +2, -1):</label>
+                  <input type="text" id="bonus-input" placeholder="0">
+              </div>
+          </form>
+      `;
+
+      new Dialog({
+          title: `Tiro per Colpire: ${token.name}`,
+          content: dialogContent,
+          buttons: {
+              roll: {
+                  icon: '<i class="fas fa-dice-d20"></i>',
+                  label: "Tira",
+                  callback: async (html) => {
+                      const attackType = html.find('#attack-type').val();
+                      const mode = html.find('#roll-mode').val();
+                      const extraBonus = html.find('#bonus-input').val() || "0";
+                      const critThreshold = parseInt(html.find('#crit-threshold').val()) || 20;
+
+                      let baseTx = 0;
+                      let malusMulti = 0;
+                      let labelAttacco = "";
+                      let numAttacchi = 1;
+
+                      // Logica calcolo bonus base (Sistema Custom)
+                      if (attackType === "mischia") {
+                          baseTx = token.actor.system.attributes.txcm?.value || 0;
+                          labelAttacco = "Mischia";
+                      } else if (attackType === "mischia2armi") {
+                          baseTx = token.actor.system.attributes.txcm?.value || 0;
+                          labelAttacco = "Mischia (Due Armi)";
+                          malusMulti = token.actor.system.secondary?.malusmultiweapon?.value || 0;
+                          numAttacchi = 2;
+                      } else {
+                          baseTx = token.actor.system.attributes.txcr?.value || 0;
+                          labelAttacco = "Distanza";
+                      }
+
+                      const generaContenuto = (r, label, nomeTarget = "", difesa = null) => {
+                          // Accede al dado d20 (primo termine della formula)
+                          const d20 = r.terms[0].total; 
+                          const totale = r.total;
+                          let notaCritico = "";
+                          let esitoTesto = "";
+                          let classeColore = "";
+
+                          // Stili CSS in linea per i colori
+                          const styleSuccess = "color: #18520b; font-weight: bold;";
+                          const styleFailure = "color: #8a0606; font-weight: bold;";
+
+                          if (d20 === 1) {
+                              notaCritico = " (Fallimento critico)";
+                              classeColore = styleFailure;
+                              esitoTesto = nomeTarget ? `${nomeTarget} mancato` : "";
+                          } else if (d20 >= critThreshold) {
+                              notaCritico = " (Successo critico)";
+                              classeColore = styleSuccess;
+                              esitoTesto = nomeTarget ? `${nomeTarget} colpito` : "";
+                          } else if (difesa !== null) {
+                              const colpito = totale >= difesa;
+                              classeColore = colpito ? styleSuccess : styleFailure;
+                              esitoTesto = `${nomeTarget} ${colpito ? 'colpito' : 'mancato'}`;
+                          }
+
+                          return `
+                              <div style="margin-bottom: 5px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
+                                  <strong>${label}</strong>
+                                  <ul style="list-style: none; padding: 0;">
+                                      <li>Formula: <code>${r.formula}</code></li>
+                                      <li>Dado: <strong>${d20}</strong> (Crit: ${critThreshold}+)</li>
+                                      <li><strong>Totale: ${totale}</strong>${notaCritico}</li>
+                                  </ul>
+                                  ${esitoTesto ? `<span style="${classeColore}">${esitoTesto}</span>` : ""}
+                              </div>`;
+                      };
+
+                      // Esecuzione dei tiri
+                      for (let i = 0; i < numAttacchi; i++) {
+                          let currentLabel = numAttacchi > 1 ? `${labelAttacco} (Attacco ${i + 1})` : labelAttacco;
+                          
+                          let d20Formula = "1d20";
+                          if (mode === "advantage") d20Formula = "2d20kh1";
+                          if (mode === "disadvantage") d20Formula = "2d20kl1";
+
+                          const finalFormula = `${d20Formula} + ${baseTx}${malusMulti ? " - " + malusMulti : ""} + ${extraBonus}`;
+                          let r = new Roll(finalFormula);
+                          await r.evaluate();
+
+                          let fullContent = "";
+                          if (game.user.targets.size > 0) {
+                              for (let target of game.user.targets) {
+                                  const difesaBersaglio = target.actor.system.attributes.def?.value || 0;
+                                  fullContent += generaContenuto(r, currentLabel, target.name, difesaBersaglio);
+                              }
+                          } else {
+                              fullContent = generaContenuto(r, currentLabel);
+                          }
+
+                          await ChatMessage.create({
+                              user: game.user.id,
+                              speaker: ChatMessage.getSpeaker({token: token.document}),
+                              content: fullContent
+                          });
+                      }
+                  }
+              }
+          },
+          default: "roll"
+      }).render(true);
+  }
+img: systems/fvtt-warhero/images/icons/dice-twenty-faces-twenty.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: lDtEzIZiRFGEA5jD
+ownership:
+  default: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.44'
+  createdTime: 1772303906578
+  modifiedTime: 1772303915811
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: X0g9kogblnMKdySc
+sort: 800000
+_key: '!macros!X0g9kogblnMKdySc'

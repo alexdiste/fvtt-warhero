@@ -1,0 +1,36 @@
+name: Rabdomante - Uso estremo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>usare un potere da bacchetta per il&nbsp;personaggio &egrave; considerata
+    una mossa azione che provoca<br>attacchi di opportunit&agrave;</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 6d906fe58670a7cfe57d2e61b022634a581195d7
+    sourceId: Item.WwzxKykCdlfFgScp
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.D73toR5IfttVvjRe
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352953625
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: yLZtH36I951cwfiM
+sort: 5600000
+_key: '!items!yLZtH36I951cwfiM'

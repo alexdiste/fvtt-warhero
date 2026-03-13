@@ -1,0 +1,31 @@
+name: 'Competenza armi: Lunghe'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+    lunghe. Le armi lunghe infliggono [[/r 1d8 #+fisico+ bonus ai danni in
+    mischia]] + il valore di fisco + eventuali bonus per i danni in mischia.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1abec745ceb56741eefdbd84ad0122eda128e1d0
+    sourceId: Item.Eovo0B0eqBzQqsCX
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680857153518
+  modifiedTime: 1743437037182
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.KqKt3kKD5rcWoj65
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: hqEpvMvlPB3bhwAA
+_key: '!items!hqEpvMvlPB3bhwAA'

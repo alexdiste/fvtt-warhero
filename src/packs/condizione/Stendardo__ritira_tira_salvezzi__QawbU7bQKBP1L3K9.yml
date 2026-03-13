@@ -1,0 +1,38 @@
+name: Stendardo (ritira tira salvezzi)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +3 ai TS
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 0b8cbffe72d98fc66e2ff6063d79dec4b5328f09
+    sourceId: Item.PVNyBrGJIrTscSqA
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681506477274
+  modifiedTime: 1743437151199
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.HJRAwr6OVi4pJUKm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: QawbU7bQKBP1L3K9
+_key: '!items!QawbU7bQKBP1L3K9'

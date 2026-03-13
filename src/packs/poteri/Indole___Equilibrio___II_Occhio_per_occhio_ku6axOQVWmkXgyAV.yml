@@ -1,0 +1,30 @@
+name: Indole - Equilibrio - II Occhio per occhio
+type: power
+system:
+  level: 2
+  magicschool: Indole - Equilibrio
+  description: >-
+    Fino alla fine dello scontro,il bersaglio di allineamento neutrale, che
+    subisce un colpo riflette lo stesso identico quantitativo di punti ferita
+    persi a chi gli provoca il danno, dopo di che questo effetto rimane attivo
+    altri 3 round prima di terminare
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904901
+  modifiedTime: 1743439294824
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ku6axOQVWmkXgyAV
+folder: null
+sort: 11300000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!ku6axOQVWmkXgyAV'

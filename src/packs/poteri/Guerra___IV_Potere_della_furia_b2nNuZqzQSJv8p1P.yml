@@ -1,0 +1,29 @@
+name: Guerra - IV Potere della furia
+type: power
+system:
+  level: 4
+  magicschool: Guerra
+  description: >-
+    i danni inflitti dal bersaglio con le armi sono tutti raddoppiati prima di
+    applicare eventuali effetti di critico fino alla fine del prossimo scontro.
+    questa magia non influenza i danni aggiuntivi dovuti da elementi
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904878
+  modifiedTime: 1743439294728
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: b2nNuZqzQSJv8p1P
+folder: null
+sort: 8600000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!b2nNuZqzQSJv8p1P'

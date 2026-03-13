@@ -1,0 +1,42 @@
+name: Pergamena (Foglio)
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: unknown
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Un foglio di pergamena di carta. Non sai se contiene un potere e quindi
+    sia una pergamena magica o sia un foglio di pergamena vuoto o se ci siano
+    scritti normali.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c2423bf4a67cee27937373de35cfeb20779a64bc
+    sourceId: Item.qZs1T6Vf7PEBCw9L
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057359950
+  modifiedTime: 1705496820952
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: gJMdNM2A1LHjf0rR
+sort: 19500000
+_key: '!items!gJMdNM2A1LHjf0rR'

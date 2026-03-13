@@ -1,0 +1,40 @@
+name: Salvezza (+5 ts)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +5 al prossimo ts
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>il bersaglio ottiene un bonus di +5 punti al risultato del prossimo tiro
+    salvezza che effettua</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ba3126a38838f5a3824592edc0d7e5637329877f
+    sourceId: Item.HJRAwr6OVi4pJUKm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681506477274
+  modifiedTime: 1743437150785
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.HJRAwr6OVi4pJUKm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 1lUPPMocQxanAE3A
+_key: '!items!1lUPPMocQxanAE3A'

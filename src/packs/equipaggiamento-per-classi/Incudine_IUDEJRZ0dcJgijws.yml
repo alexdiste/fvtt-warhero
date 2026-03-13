@@ -1,0 +1,40 @@
+name: Incudine
+type: classitem
+img: icons/tools/smithing/anvil.webp
+system:
+  cost: 5
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Tecnofabbro
+  description: <p>Una incudine per costruire o riparare oggetti in metallo</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 3ee2026b0014324c1d33babcd5174efe2231b92f
+    sourceId: Item.xb3WXRzH7ONdQOaF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: IUDEJRZ0dcJgijws
+sort: 1300000
+_key: '!items!IUDEJRZ0dcJgijws'

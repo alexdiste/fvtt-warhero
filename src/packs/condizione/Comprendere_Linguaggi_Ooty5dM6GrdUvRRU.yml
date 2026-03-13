@@ -1,0 +1,41 @@
+name: Comprendere Linguaggi
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: permette di comprendere qualsiasi linguaggio per l'intera giornata
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>permette di comprendere qualsiasi linguaggio per l'intera giornata.
+    Aggiungere @Compendium[fvtt-warhero.lingue.clHhM57RmUpQWLpl]{Language
+    (tutto)} alla scheda e poi ricordarsi di toglierlo a fine giornata</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 7be759bc5ee941ee0e76dbc5516190f9c7cf0946
+    sourceId: Item.Y5iV2Cz5C0tyqX8q
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698853041588
+  modifiedTime: 1743437151166
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Ooty5dM6GrdUvRRU
+sort: 3500000
+_key: '!items!Ooty5dM6GrdUvRRU'

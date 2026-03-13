@@ -1,0 +1,34 @@
+name: Percezione cieca (36 m)
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: "<p>Consente alla creatura di notare cose che non può vedere, ma senza la precisione della Vista Cieca. La creatura di solito non\_ha bisogno di fare prove di Individuazione o Ascolto per notare<br />ed individuare le creature nel raggio d’azione della sua\_capacità di Percezione Cieca</p>"
+  maxuseFormula: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: 1b527d9670bef99d89d257786bc9d42281c3ffc1
+    sourceId: Item.PjRoDjRreXWRN92s
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766235523643
+  modifiedTime: 1766235523643
+  lastModifiedBy: uzeu86bhmL5CiHhN
+folder: null
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+_id: txgR25WcuP4OVvH9
+sort: 0
+_key: '!items!txgR25WcuP4OVvH9'

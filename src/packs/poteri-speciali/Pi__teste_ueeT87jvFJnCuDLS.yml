@@ -1,0 +1,39 @@
+name: Più teste
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>se un'arma che colpisce con una lama l&rsquo;idra , come una spada,
+    c&rsquo;&egrave; una probabilit&agrave; del 30% che questo colpo tagli la
+    testa all&rsquo;idra, facendone cos&igrave; ricresce 2, per ogni testa
+    tagliata appena ne<br>riappare 2 essa guadagna +40PF e aumenta il numero di
+    attacchi&nbsp;morsi in base al totale di teste</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 1e02f70011c9c310e216bf6350d58a65949aee03
+    sourceId: Item.7SgRgkrfbML9qRYG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1700568067429
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: ueeT87jvFJnCuDLS
+sort: 2500000
+_key: '!items!ueeT87jvFJnCuDLS'

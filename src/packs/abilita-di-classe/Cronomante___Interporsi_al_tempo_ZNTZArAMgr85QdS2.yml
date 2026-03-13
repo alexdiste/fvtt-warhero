@@ -1,0 +1,36 @@
+name: Cronomante - Interporsi al tempo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; usare le sue mosse del turno in qualsiasi
+    momento nel turno di un'altro giocatore nello&nbsp;stesso round.</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 199d0d615428cdbb973db69ace28cbbb113e05f1
+    sourceId: Item.XnQtMB923bRozUgR
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.UzlrpJYOUjWWKAXE
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352434880
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: ZNTZArAMgr85QdS2
+sort: 3000000
+_key: '!items!ZNTZArAMgr85QdS2'

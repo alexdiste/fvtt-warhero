@@ -1,0 +1,39 @@
+name: Alchimista - Pozione di cura
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; creare 3 + MEN
+    @Compendium[fvtt-warhero.pozioni.jL8SZr7AAAZt04gE]{Pozione di cura (da
+    alchimista)} al giorno. Se bevuta nel round in cui viene creata, cura [[/r
+    5d6 #pozione di cura alchemica]] punti ferita. Creare e bere la pozione
+    &egrave; considerata una mossa di&nbsp;azione</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 515fd0d206308e52080d0e043b83dbea488e47cf
+    sourceId: Item.YLGJiSyleYBbjEtc
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 6HPHBolFtDReWbvA
+sort: 13300000
+_key: '!items!6HPHBolFtDReWbvA'

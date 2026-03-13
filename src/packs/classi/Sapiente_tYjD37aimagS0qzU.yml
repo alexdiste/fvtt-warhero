@@ -1,0 +1,77 @@
+name: Sapiente
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: true
+    tower: true
+  issecondary: false
+  description: >-
+    <p>Esperto informato su tutto.&nbsp;</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MkUMfsLRVd4RPBYs]{Sapiente
+    - Amanuense}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bqA0aPfUfOIeHrjJ]{Sapiente
+    - Conoscenza (+5 con)}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.D42CCId8ELcs8im4]{Sapiente
+    - Conoscenza dei poteri}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MCardmOFxJC5mB93]{Sapiente
+    - Conosco tutto}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MuYnqbpVvtOGl6Rn]{Sapiente
+    - Contropotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.SJINi5PRPVTKkEW0]{Sapiente
+    - Punto debole}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.jRAQVi89sfLKRzEo]{Sapiente
+    - Ricercatore}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.NDXCtqifyBGE01PQ]{Sapiente
+    - Saggio (+2 MEN)}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.KaYLmz4jha3xUdFu]{Sapiente
+    - Vedere il magico}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.YEpDUF1vkWPa5npg]{Sapiente
+    - Vera conoscenza}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: de016765df54bb5b50a505e4bcd270049a376e4d
+    sourceId: Item.sIw90hC0v599TgyN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545801944
+  modifiedTime: 1743437000031
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: tYjD37aimagS0qzU
+sort: 500000
+_key: '!items!tYjD37aimagS0qzU'

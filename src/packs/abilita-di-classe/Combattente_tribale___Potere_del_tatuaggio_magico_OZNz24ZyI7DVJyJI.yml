@@ -1,0 +1,46 @@
+name: Combattente tribale - Potere del tatuaggio magico
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio ha ogni giorno un potere magico derivato dai suoi tatuaggi
+    ed ottiene ogni giorno 3+MEN cariche da usare, attivare queste cariche non è
+    una mossa e può farlo in qualsiasi momento anche nel turno di un avversario,
+    ma non può mai usare più di un potere a turno. </p><ul><li><p>Potere
+    dell’ira: Con 1 punto potere aggiunge 5 X FIS al danno che infliggi con il
+    prossimo colpo di arma. </p></li><li><p>Potere della precisione: Con 1 punto
+    potere aggiunge 3 X IST al prossimo tiro per colpire. </p></li><li><p>Potere
+    della riflessione: Con 1 punto potere il personaggio si cura di un valore
+    pari a 5 X MEN Potere della resistenza: Con 1 punto potere raddoppi le tue
+    riduzioni del danno che hai fino alla fine dello scontro. </p></li><li><p>
+    Potere della corsa: Con 1 punto potere ottiene una mossa extra di movimento,
+    fino alla fine dello scontro </p></li><li><p>Potere di attacco: Con 1 punto
+    potere ottiene una mossa extra di attacco, fino alla fine dello
+    scontro</p></li><li><p>Potere della concessione: Con 2 punti potere puoi
+    dare un tuo potere da 1 punto a un tuo alleato, si utilizza i tuoi bonus per
+    il calcolo del potere</p></li></ul>
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: '13.26'
+  createdTime: 1760985876048
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: OZNz24ZyI7DVJyJI
+sort: 2100000
+_key: '!items!OZNz24ZyI7DVJyJI'

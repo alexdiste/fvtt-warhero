@@ -1,0 +1,45 @@
+name: Pozione di Respirare sott'acqua
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 150
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '75'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 150 Mo.</p>
+
+    <p>Permette di respirare sott'acqua per 8 ore. Aggiungere
+    @Compendium[fvtt-warhero.condizione.1rqBCjWWEdQxWMIG]{Respirare sott' acqua}
+    alla scheda.</p>
+  price: '150'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 3db8a2817dfaf764ebc1f67006ab77232e801fa7
+    sourceId: Compendium.world.temp.x7K2b0FRb3aQTDS8
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553283
+  modifiedTime: 1702106355548
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.x7K2b0FRb3aQTDS8
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: githKKOvRn6cOEiV
+_key: '!items!githKKOvRn6cOEiV'

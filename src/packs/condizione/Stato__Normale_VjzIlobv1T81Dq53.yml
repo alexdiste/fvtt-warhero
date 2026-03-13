@@ -1,0 +1,42 @@
+name: 'Stato: Normale'
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Nessuna alterazione di status
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: |-
+    <p>Rappresenta che il personaggio non ha alterazioni di status</p>
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 18c0c01ea5593fe7c7fe09e3cf04e15c204103ab
+    sourceId: Compendium.world.temp.vEASPNXxrYqXRlEF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637552687
+  modifiedTime: 1743437151328
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.vEASPNXxrYqXRlEF
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 6300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: VjzIlobv1T81Dq53
+_key: '!items!VjzIlobv1T81Dq53'

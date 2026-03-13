@@ -1,0 +1,42 @@
+name: Pozione di Protezione dagli elementi (elettricità)
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '25'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica</p><p>riduce i danni di questo elemento di 2 per
+    l'intera giornata</p>
+  price: '50'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: a42e9f3b1f0f64a2b47c7631073ce1ecb234617f
+    sourceId: Compendium.world.temp.rm80XkLoK3tirM0K
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553267
+  modifiedTime: 1702106488563
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.rm80XkLoK3tirM0K
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: zIAMInIhiX8rUoMp
+_key: '!items!zIAMInIhiX8rUoMp'

@@ -1,0 +1,29 @@
+name: Language (da scegliere)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>Hai una lingua da scegliere</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 6600b2e1a1e372054eab6ca17bc3bf87ab48f7cd
+    sourceId: Item.Kg48nZuwOoBUzby3
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613711
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: lteyi47NZn7x4Umd
+sort: 1800000
+_key: '!items!lteyi47NZn7x4Umd'

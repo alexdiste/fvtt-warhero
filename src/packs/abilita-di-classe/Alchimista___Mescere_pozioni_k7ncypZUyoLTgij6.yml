@@ -1,0 +1,38 @@
+name: Alchimista - Mescere pozioni
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>il personaggio ha l&rsquo;abilit&agrave; aggiuntiva di
+    @Compendium[fvtt-warhero.abilita-aggiuntive.hHwEdyuZ30zezO2Z]{Creare
+    pozioni}&nbsp;ma spendendo la met&agrave; del prezzo indicato. Fare
+    una&nbsp;pozione richiede 10 minuti di tempo</p>
+effects: []
+flags:
+  scene-packer:
+    hash: f74c6b468814104249d3d202511a39594dde7a2c
+    sourceId: Item.W0k47PncOxvYqWTu
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: k7ncypZUyoLTgij6
+sort: 13000000
+_key: '!items!k7ncypZUyoLTgij6'

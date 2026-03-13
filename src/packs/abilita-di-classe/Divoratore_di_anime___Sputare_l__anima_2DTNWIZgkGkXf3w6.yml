@@ -1,0 +1,40 @@
+name: Divoratore di anime - Sputare l' anima
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; rinunciare a uno dei bonus ottenuti con
+    il@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yAtOev6ECa0gaQ5i]{potere
+    dell&rsquo;anima} per infliggere [[/r 5d8 #magici]] danni da energia magica
+    a un bersaglio se riesce in un tiro per colpire a distanza, pu&ograve; usare
+    MEN al posto di IST se lo desidera. Sputare l&rsquo;anima &egrave; una
+    azione di movimento</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: bf946a50732fe1ccb834f19d119cbc84ad536809
+    sourceId: Item.Me483JuW1TsCpROw
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1705338200790
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 2DTNWIZgkGkXf3w6
+sort: 1300000
+_key: '!items!2DTNWIZgkGkXf3w6'

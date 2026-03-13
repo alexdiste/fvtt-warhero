@@ -1,0 +1,45 @@
+name: Lancia da cavaliere
+type: weapon
+img: icons/weapons/polearms/spear-flared-blue.webp
+system:
+  weapontype: polearm
+  damage: 1d6
+  damage2hands: 1d8
+  rollformula: ''
+  damageformula: ''
+  cost: 30
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: |-
+    <p>Una lancia da cavaliere. Arma in asta.</p>
+    <p>Se usato ad una mano: 1d6</p>
+    <p>Se usati a due mani: 1d8</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 7af1c1745c8ef6fcff8375042ee6885c0a90cec1
+    sourceId: Item.KpIWTiVuUk9XYJGP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1676709226241
+  modifiedTime: 1680933671743
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.KpIWTiVuUk9XYJGP
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  MALrSO6CHeii4HYs: 3
+_id: I2QkxrvXDFFMxsUN
+_key: '!items!I2QkxrvXDFFMxsUN'

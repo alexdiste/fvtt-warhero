@@ -1,0 +1,36 @@
+name: Taumaturgo - Abile nella guarigione
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio non prende il malus alle statistiche se usa il potere di
+    &ldquo;Resurrezione&rdquo; della sfera guarigione</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1b668e92cbdc05c5fc3ecc6478029c7593cb7678
+    sourceId: Item.wmD1GddQM0Atxxnz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.wmD1GddQM0Atxxnz
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: dB5WDrE2b8K21tPk
+_key: '!items!dB5WDrE2b8K21tPk'

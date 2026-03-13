@@ -1,0 +1,38 @@
+name: Scurovisione
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: permette di vedere al buio per l'intera giornata
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>permette di vedere al buio per l'intera giornata</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 61b681a938f8f49aa9c7949400874304f248dbb3
+    sourceId: Item.1PWCwOylnwrgb8p4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698852343894
+  modifiedTime: 1743437151481
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: cW9PoFgDxKC4UQxk
+sort: 3100000
+_key: '!items!cW9PoFgDxKC4UQxk'

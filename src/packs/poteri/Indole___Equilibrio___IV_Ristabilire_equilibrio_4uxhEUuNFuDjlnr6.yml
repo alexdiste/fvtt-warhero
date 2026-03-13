@@ -1,0 +1,30 @@
+name: Indole - Equilibrio - IV Ristabilire equilibrio
+type: power
+system:
+  level: 4
+  magicschool: Indole - Equilibrio
+  description: >-
+    Selezioni due bersagli e i punti vita attuali e i punti mana attuali
+    diventano uguali alla loro rispettiva somma diviso due per entrambi i
+    bersagli, CD 18 IST negare entrambi i bersagli possono tentare il tiro, il
+    potere fallisce se anche solo uno dei bersagli ci riesce
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904904
+  modifiedTime: 1743439294490
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 4uxhEUuNFuDjlnr6
+folder: null
+sort: 1800000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!4uxhEUuNFuDjlnr6'

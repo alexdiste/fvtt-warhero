@@ -1,0 +1,39 @@
+name: Classe
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>La creatura ha una
+    @UUID[Compendium.world.classi.8LYvqSAf6eSo0rx6]{Classe} scelta fra quelle
+    disponibili dei giocatori.</p>
+
+    <p>&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c64c71f5fd5f275af6f198af09d8b3f1af7bfab6
+    sourceId: Item.sWZbtpdHMCphLUr1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1681305021244
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.HKoxeCXqiwLIyOX7
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: zpLb1MmstTCH8Reg
+_key: '!items!zpLb1MmstTCH8Reg'

@@ -1,0 +1,39 @@
+name: Putrefazione
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p>Una creatura colpita da un tentacolo di un fungo viola deve superare un
+    Tiro salvezza su FIS CD 13, altrimenti la carne nei pressi del punto di
+    contatto comincia velocemente a putrefarsi fino alle ossa con stupefacente
+    rapidità. Questo effetto infligge la perdita di 1 punto a FIS, questo
+    effetto è una malattia</p>
+  maxuseFormula: '1'
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: 4e9cbf5ae314863a8557fc911e3e8743f08149c1
+    sourceId: Item.gWpACpOONVaDi7Fk
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239076279
+  modifiedTime: 1766239076279
+  lastModifiedBy: p6zCQ626i2fSln47
+ownership:
+  default: 0
+  p6zCQ626i2fSln47: 3
+_id: Mcqb0OkQClGa8EmW
+sort: 0
+_key: '!items!Mcqb0OkQClGa8EmW'

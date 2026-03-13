@@ -1,0 +1,42 @@
+name: Ariete portatile
+type: equipment
+img: systems/fvtt-warhero/images/icons/swap-bag.svg
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: weapon1
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Puoi usare un ariete portatile per abbattere le porte. Cosi facendo
+    ottieni un bonus di +4 alla prova di FIS. Un altro personaggio pu&ograve;
+    aiutarti a usare l' ariete dandoti un ulteriore +6 alla prova di FIS</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 186d496fb5d7755b42ac51a484ce83fcc5dcdc15
+    sourceId: Item.vVcx0wSqlpMD6KxM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1701591358821
+  modifiedTime: 1743437234015
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: cCQ7FKNcF4UIIWYL
+sort: 20500000
+_key: '!items!cCQ7FKNcF4UIIWYL'

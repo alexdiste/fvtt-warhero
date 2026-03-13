@@ -1,0 +1,60 @@
+name: Arciere arcano
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: false
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: false
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Un esperto combattente con le armi da distanza</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.KGziIZaE8hJOKigM]{Arciere
+    arcano - Cecchino (+5 Txc)}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ZWsTgRNeAXc1w8bN]{Arciere
+    arcano - Esplosione elementale}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.so8nmO3xF5Zw8bH5]{Arciere
+    arcano - Incantare arma}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.vLMkTF74BhkVB8Tb]{Arciere
+    arcano - Seguage dei poteri}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.tRbFgcaznH6N6GWs]{Arciere
+    arcano - Tiro preciso}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: de016765df54bb5b50a505e4bcd270049a376e4d
+    sourceId: Item.sIw90hC0v599TgyN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681545801944
+  modifiedTime: 1743436999996
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: hGf3uDqzGVbkZbEH
+sort: 300000
+_key: '!items!hGf3uDqzGVbkZbEH'

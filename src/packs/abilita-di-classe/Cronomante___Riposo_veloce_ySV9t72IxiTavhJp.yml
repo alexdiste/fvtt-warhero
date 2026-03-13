@@ -1,0 +1,40 @@
+name: Cronomante - Riposo veloce
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno usare una&nbsp;sua mossa
+    per far ottenere a un suo alleato ( non se stesso ) tutti i&nbsp;vantaggi di
+    quando passa un giorno e si &egrave; riposato in maniera&nbsp;adeguata.
+    Compreso quindi la guarigione e il recupero di punti&nbsp;mana, e gli
+    utilizzi delle sue abilit&agrave;. Gli oggetti posseduti
+    non&nbsp;ripristinano le cariche giornaliere</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a2766e9dfb1a6d80c7ee43d5b9b3ea53fcff17b8
+    sourceId: Item.8u89kg5Ibj7g4DMH
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.EbWgj2b9q912fdT1
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352439017
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: ySV9t72IxiTavhJp
+sort: 5700000
+_key: '!items!ySV9t72IxiTavhJp'

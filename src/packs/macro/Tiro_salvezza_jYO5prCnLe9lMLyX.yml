@@ -1,0 +1,131 @@
+name: Tiro salvezza
+type: script
+command: |-
+  // Verifica se c'è un token selezionato
+  const token = canvas.tokens.controlled[0];
+
+  if (!token) {
+    ui.notifications.warn("Per favore, seleziona un token prima di eseguire la macro!");
+  } else {
+    const actor = token.actor;
+
+    let optionsContent = `
+      <div class="form-group">
+        <label>Scegli il Tiro Salvezza:</label>
+        <select id="save-type" style="width: 100%">
+          <option value="fis">Fisico (STR)</option>
+          <option value="ist">Istinto (DEX)</option>
+          <option value="men">Mente (MIN)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Classe Difficoltà (CD):</label>
+        <input type="number" id="dc-value" placeholder="Es. 15">
+      </div>
+      <div class="form-group">
+        <label>Modalità di tiro:</label>
+        <select id="roll-mode" style="width: 100%">
+          <option value="normal">Normale</option>
+          <option value="advantage">Vantaggio</option>
+          <option value="disadvantage">Svantaggio</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Bonus Aggiuntivo:</label>
+        <input type="number" id="bonus-add" value="0">
+      </div>    
+    `;
+
+    new Dialog({
+      title: `Tiro Salvezza: ${actor.name}`,
+      content: optionsContent,
+      buttons: {
+        roll: {
+          icon: '<i class="fas fa-dice-d20"></i>',
+          label: "Tira",
+          callback: async (html) => {
+            const selection = html.find('#save-type').val();
+            const mode = html.find('#roll-mode').val();
+            const bonusAdd = parseInt(html.find('#bonus-add').val()) || 0;
+            const dc = parseInt(html.find('#dc-value').val());
+            
+            let die = "1d20";
+            let labelMode = "";
+            
+            if (mode === "advantage") {
+              die = "2d20kh1";
+              labelMode = " (Vantaggio)";
+            } else if (mode === "disadvantage") {
+              die = "2d20kl1";
+              labelMode = " (Svantaggio)";
+            }
+
+            // Recupero bonus (Assicurati che questi percorsi siano corretti nel tuo System)
+            let statBonus = 0;
+            let label = "";
+
+            try {
+                if (selection === "fis") {
+                  statBonus = actor.system.statistics.str.save || 0;
+                  label = "Tiro salvezza su Fisico";
+                } else if (selection === "ist") {
+                  statBonus = actor.system.statistics.dex.save || 0;
+                  label = "Tiro salvezza su Istinto";
+                } else if (selection === "men") {
+                  statBonus = actor.system.statistics.min.save || 0;
+                  label = "Tiro salvezza su Mente";
+                }
+            } catch (e) {
+                ui.notifications.error("Errore: Il sistema non riconosce i dati statistici dell'attore.");
+                return;
+            }
+
+            // Costruzione formula
+            let formula = `${die} + ${statBonus} + ${bonusAdd}`;
+            let roll = await new Roll(formula).evaluate();
+            
+            // Logica CD
+            let resultMessage = "";
+            if (!isNaN(dc)) {
+              const success = roll.total >= dc;
+              resultMessage = success 
+                  ? `<br><strong style="color: #18520b;">SUCCESSO (CD ${dc})</strong>` 
+                  : `<br><strong style="color: #8a0606;">FALLIMENTO (CD ${dc})</strong>`;
+            }
+
+            // Invio in chat (V12/V13/V14 richiede async per toMessage in alcuni casi, meglio prevenire)
+            await roll.toMessage({
+              speaker: ChatMessage.getSpeaker({ token: token.document }),
+              flavor: `<strong>${label}${labelMode}</strong>${resultMessage}`
+            });
+          }
+        },
+        cancel: {
+          icon: '<i class="fas fa-times"></i>',
+          label: "Annulla"
+        }
+      },
+      default: "roll"
+    }).render(true);
+  }
+img: systems/fvtt-warhero/images/icons/dice-target.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.44'
+  createdTime: 1772303909247
+  modifiedTime: 1772303909256
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: jYO5prCnLe9lMLyX
+sort: 200000
+_key: '!macros!jYO5prCnLe9lMLyX'

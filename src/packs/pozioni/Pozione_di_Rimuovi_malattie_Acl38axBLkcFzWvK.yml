@@ -1,0 +1,45 @@
+name: Pozione di Rimuovi malattie
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 120
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '60'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 120 Mo.</p>
+
+    <p>rimuove la malattie dal bersaglio. Rimuovere
+    @Compendium[fvtt-warhero.condizione.yMF0uc1gK3NYlk1O]{Stato: Ammalato} dalla
+    scheda del personaggio</p>
+  price: '120'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 0817afe4c0beebdde451359edb8a753c7a92ac08
+    sourceId: Compendium.world.temp.ZwemlJsV6ALuJdLg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553286
+  modifiedTime: 1702106326358
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.ZwemlJsV6ALuJdLg
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Acl38axBLkcFzWvK
+_key: '!items!Acl38axBLkcFzWvK'

@@ -1,0 +1,58 @@
+name: 27.Rune
+type: power
+img: systems/fvtt-warhero/images/icons/magic/rune.webp
+system:
+  level: 0
+  magicschool: Rune
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.DsPn3lqhpGAU77kL]{Rune - I
+    Segno negatorio}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.vDxv1Amvg7xs2cM4]{Rune - II
+    Segno di protezione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.3mDBK9zIf9R4PbLo]{Rune - III
+    Segno esplosivo}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.APjlRqats9YPRcli]{Rune - IV
+    Marchio del mago}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.jfGVhTT1diGxg3LR]{Rune - IV
+    Trappola superiore}</p>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 8f65ae72d4c9f6df39ca13466fe96b63426f4d56
+    sourceId: Compendium.world.temp.FV9tz9o7QGO0x844
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552559
+  modifiedTime: 1698851244803
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.FV9tz9o7QGO0x844
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: CsEX14Sm9byMWggi
+_key: '!items!CsEX14Sm9byMWggi'

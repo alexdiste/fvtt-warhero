@@ -1,0 +1,42 @@
+name: Corazza a scaglie
+type: armor
+img: icons/equipment/chest/breastplate-scale-grey.webp
+system:
+  armortype: medium
+  equipped: false
+  damagereduction: 4
+  cost: 130
+  quantity: 1
+  slotused: 1
+  slotlocation: armor
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una corazza di scaglie di drago o comunque di
+    animali. Non &egrave; metallica. RD: [[/r 4 #Riduzione danno armatura
+    media]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e927fed90888da021bc10fb40e5af6088eb3e4e2
+    sourceId: Item.M22t2aA6Ls0YVzUe
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676718537355
+  modifiedTime: 1705246329515
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.M22t2aA6Ls0YVzUe
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: DuATZ5D404jpwgkN
+_key: '!items!DuATZ5D404jpwgkN'

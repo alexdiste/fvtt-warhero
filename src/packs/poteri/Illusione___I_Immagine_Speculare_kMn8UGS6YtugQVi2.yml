@@ -1,0 +1,30 @@
+name: Illusione - I Immagine Speculare
+type: power
+system:
+  level: 1
+  magicschool: Illusione
+  description: >-
+    <p>crea [[/r 1d4 #copie di immagine speculare]] copie del bersaglio che
+    appaiono intorno a lui. Ogni volta che si tenta di colpire il bersaglio si
+    verifica casualmente se viene colpito il bersaglio o una delle copie. Le
+    copie durano 6 round o fino a quando non vengono colpite</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904881
+  modifiedTime: 1743439294815
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: kMn8UGS6YtugQVi2
+folder: null
+sort: 11200000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!kMn8UGS6YtugQVi2'

@@ -1,0 +1,42 @@
+name: Frusta
+type: weapon
+img: icons/weapons/misc/whip-red-yellow.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 18
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Una frusta [[/r 2d8]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c4661a2fe2621182c1a899f01b11549b648fb59a
+    sourceId: Item.XAi6FzXeB5mq5DZF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676710510666
+  modifiedTime: 1704061539646
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: j6PCi9RkJlyqLpsV
+sort: 0
+_key: '!items!j6PCi9RkJlyqLpsV'

@@ -1,0 +1,37 @@
+name: Bruto - Uso di armi
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>un bruto non usa armi improvvisate con quello&nbsp;che trova, altrimenti
+    va a mani nude. il danno inflitto da un&nbsp;bruto a mani nude o con un
+    oggetto &egrave; pari [[/r 1d6 #aggiungi FIS]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1d5b40a044fc37285bbe32492a1a7111bd03c85a
+    sourceId: Item.C2ir5T3V1RXdlwmE
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: H3gBj5nBV7QdF4iz
+sort: 11200000
+_key: '!items!H3gBj5nBV7QdF4iz'

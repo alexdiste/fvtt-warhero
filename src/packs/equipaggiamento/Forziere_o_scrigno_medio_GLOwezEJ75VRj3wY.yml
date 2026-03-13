@@ -1,0 +1,41 @@
+name: Forziere o scrigno medio
+type: equipment
+img: icons/containers/chest/chest-reinforced-steel-brown.webp
+system:
+  equiptype: ''
+  cost: 5
+  quantity: 1
+  equipped: false
+  slotused: 4
+  slotlocation: backpack
+  providedslot: 12
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Questo forziere occupa 4 slot nello zaino ma ne
+    pu&ograve; contere 12.&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: da2f040a43b4aabc20ef87bbb7b9cfa22578f8c2
+    sourceId: Item.g5e1b2pqtw55CtVw
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681054350432
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: GLOwezEJ75VRj3wY
+sort: 19100000
+_key: '!items!GLOwezEJ75VRj3wY'

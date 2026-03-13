@@ -1,0 +1,37 @@
+name: Arciere arcano - Esplosione elementale
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>MEN volte al giorno il personaggio&nbsp; pu&ograve; incanalare la sua
+    energia nell'arma e spara un raggio che&nbsp;infligge 6d4 danni da tutti e
+    quattro gli elementi CD 16 IST per&nbsp;dimezzare</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+    sourceId: Item.XTPKOsLhfK5kM0iF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ZWsTgRNeAXc1w8bN
+sort: 17300000
+_key: '!items!ZWsTgRNeAXc1w8bN'

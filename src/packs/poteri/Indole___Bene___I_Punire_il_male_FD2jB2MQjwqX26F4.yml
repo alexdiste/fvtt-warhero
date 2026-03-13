@@ -1,0 +1,29 @@
+name: Indole - Bene - I Punire il male
+type: power
+system:
+  level: 1
+  magicschool: Indole - Bene
+  description: >-
+    Se il bersaglio è di allineamento malvagio subisce 4d6 danni CD 14, MEN,
+    dimezzare. Altrimenti il bersaglio riduce i danni subiti da creature
+    malvagie di 5 punti per il prossimo scontro
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904888
+  modifiedTime: 1743439294586
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: FD2jB2MQjwqX26F4
+folder: null
+sort: 4300000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!FD2jB2MQjwqX26F4'

@@ -1,0 +1,38 @@
+name: Guardia nera - Imposizione delle mani
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 30
+  description: >-
+    <p>Il personaggio pu&ograve; toccare un compagno o se stesso con entrambe le
+    mani e guarire un<br>totale di punti ferita pari a 30 + 10 x MEN, se
+    positiva, al giorno divisibili come meglio crede. Usare questo potere
+    &egrave; una mossa potere</p>
+effects: []
+flags:
+  scene-packer:
+    hash: da5ca5744b7f66a741c0e44200822a742a4a0ebf
+    sourceId: Item.TGnUzpJkTOvKtYfU
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.TGnUzpJkTOvKtYfU
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 23600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: scGHxFHGKMN0R2M2
+_key: '!items!scGHxFHGKMN0R2M2'

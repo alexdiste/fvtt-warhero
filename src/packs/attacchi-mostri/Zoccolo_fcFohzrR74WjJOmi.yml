@@ -1,0 +1,42 @@
+name: Zoccolo
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 1d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 5e6a16f99d478c66377eb13be2ab45a86c79414d
+    sourceId: Item.rj9usFRQQaubDv8c
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681573811492
+  modifiedTime: 1743436810395
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.3VT1PPlhlZylvwUi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: fcFohzrR74WjJOmi
+_key: '!items!fcFohzrR74WjJOmi'

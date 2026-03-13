@@ -1,0 +1,46 @@
+name: Mentalista (da finire)
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: false
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: false
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p data-pm-slice="1 1 []">Mago specializzato nelle abilit&agrave;
+    mentali</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 1f88178f942db84f4acc5afef0580def3631926f
+    sourceId: Item.5O6Pl9XW3Tf76rCB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1680934619738
+  modifiedTime: 1766238272403
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: Item.m59DIaJ4nk40jFmK
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: lyPv1Dd1hCAM1Rf4
+_key: '!items!lyPv1Dd1hCAM1Rf4'

@@ -1,0 +1,30 @@
+name: Luce - III Colpo del sole
+type: power
+system:
+  level: 3
+  magicschool: Luce
+  description: Il bersaglio subisce 8d6 danni CD 18, IST, negare
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    hash: b30d416e5ac8bfd20af2b2c72b6e817835c9f4a2
+    sourceId: Item.j7yq0bbZAJaxrVf5
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904928
+  modifiedTime: 1743439294686
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.poteri.qTUOLlJQ8zULEhhI
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 7300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: SayG2Rx5JA3e7aus
+_key: '!items!SayG2Rx5JA3e7aus'

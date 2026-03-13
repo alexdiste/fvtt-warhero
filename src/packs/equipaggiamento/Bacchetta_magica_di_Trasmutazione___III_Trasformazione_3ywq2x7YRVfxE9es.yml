@@ -1,0 +1,42 @@
+name: Bacchetta magica di Trasmutazione - III Trasformazione
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno]{Trasmutazione -
+    III Trasformazione} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: df91b7702977ad648475556ec87ee9e4293a6f75
+    sourceId: Item.BeV9Pv626u4OWxof
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833444
+  modifiedTime: 1704614597873
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 3ywq2x7YRVfxE9es
+sort: 0
+_key: '!items!3ywq2x7YRVfxE9es'

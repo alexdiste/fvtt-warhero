@@ -1,0 +1,56 @@
+name: 32.Visione
+type: power
+img: systems/fvtt-warhero/images/icons/magic/visione.webp
+system:
+  level: 0
+  magicschool: Visione
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK]{Visione - I
+    Scurovisione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ]{Visione - II
+    Vedere invisibile}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU]{Visione - III
+    Epurare invisibilit&agrave;}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.x77FS5eTPPTlfvqU]{Visione - IV
+    Visione del vero}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.9StvYUTQ7V0YhtOf]{Visione - IV
+    Visione futura}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 4ad6a4210411f28251d9103e392653fe52002cfb
+    sourceId: Compendium.world.temp.HFQEHhg0D0nee9UT
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552571
+  modifiedTime: 1698851318161
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.HFQEHhg0D0nee9UT
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: BlX0zq1rmyqA9CA5
+_key: '!items!BlX0zq1rmyqA9CA5'

@@ -1,0 +1,41 @@
+name: Malattia - Febbre lurida
+type: condition
+img: systems/fvtt-warhero/images/icons/medical-thermometer.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>La diffondono ratti e otyugh. Pu&ograve; essere&nbsp;contratta anche da
+    ferimento in ambiente malsano. CD15, 1d3&nbsp;giorni, &ndash;1 FIS e -1
+    IST</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 435720517f14205947fc3199f72d9672d14670cb
+    sourceId: Item.vaJXX7EcjPPFpn0E
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702204460418
+  modifiedTime: 1743439247588
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 0rcW90JwWwRgI42l
+sort: 600000
+_key: '!items!0rcW90JwWwRgI42l'

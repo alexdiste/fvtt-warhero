@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Caos - II Potere caotico
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0]{Indole - Caos -
+    II Potere caotico} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 23dfd4058a5fe7c06d948aeb8ea349e6118aa564
+    sourceId: Item.3HJtm1HH0Lq8Ysy4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830167
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: iR8eZPA33C7FmqTd
+sort: 5100000
+_key: '!items!iR8eZPA33C7FmqTd'

@@ -1,0 +1,61 @@
+name: Mutaforma
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: false
+    long: true
+    twohanded: true
+    shooting: false
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Il Mutaforma modifica le proprie abilit&agrave; in base alle esigenze. Ha
+    le seguenti abilit&agrave; di classe:&nbsp;</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.XHAqAXheqwgZPLbM]{Mutaforma
+    - Linguaggi extra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CLJJJhEPM85Y2P9H]{Mutaforma
+    - Mutare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.CtjId1l9c7fojq6H]{Mutaforma
+    - Mutare forma}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.JIZnct1jg0cr0dGS]{Mutaforma
+    - Mutazione elementale}</p>
+
+    <p>&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 4080866fb7841b1b089b6f13d132dc8c889f91cf
+    sourceId: Item.XhY6ARaVdmqfoV4z
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  coreVersion: '13.341'
+  createdTime: 1681051912742
+  modifiedTime: 1743436999993
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.XhY6ARaVdmqfoV4z
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: gRCQooBjUg4aGh4z
+_key: '!items!gRCQooBjUg4aGh4z'

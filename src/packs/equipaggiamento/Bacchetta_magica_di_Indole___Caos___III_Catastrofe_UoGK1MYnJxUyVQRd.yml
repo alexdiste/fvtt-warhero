@@ -1,0 +1,42 @@
+name: Bacchetta magica di Indole - Caos - III Catastrofe
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 3000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG]{Indole - Caos -
+    III Catastrofe} (potere di 3 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 446bd1a8873fe00b3e073695a2b1eaa6ef2a210c
+    sourceId: Item.e2UDHFNMmOxfE1lE
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613830212
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: UoGK1MYnJxUyVQRd
+sort: 5200000
+_key: '!items!UoGK1MYnJxUyVQRd'

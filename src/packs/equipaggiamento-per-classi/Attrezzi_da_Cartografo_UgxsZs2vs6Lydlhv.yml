@@ -1,0 +1,40 @@
+name: Attrezzi da Cartografo
+type: classitem
+img: icons/tools/navigation/map-chart-tan.webp
+system:
+  cost: 10
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Esperto di dungeon
+  description: <p>Attrezzi da Cartografo per un valore di 10 mo</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 638a79262197b6a9796ec7a96a4857fd1ddb802c
+    sourceId: Item.uQIJ0LfpLlLDHZtc
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: UgxsZs2vs6Lydlhv
+sort: 1500000
+_key: '!items!UgxsZs2vs6Lydlhv'

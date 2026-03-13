@@ -1,0 +1,29 @@
+name: Costrizione - III Patto
+type: power
+system:
+  level: 3
+  magicschool: Costrizione
+  description: >-
+    Devi scegliere se negare le mosse di potere o quelle di attacco, il
+    bersaglio non sarà in grado di usare tale mossa scelta per i prossimi 1d4
+    Round, CD 16 MEN Nega
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904815
+  modifiedTime: 1743439294542
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: BzDXrpTEM55aFIqg
+folder: null
+sort: 3100000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!BzDXrpTEM55aFIqg'

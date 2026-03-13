@@ -1,0 +1,74 @@
+name: Trasformista
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: true
+  armors:
+    light: true
+    medium: false
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p data-pm-slice="1 1 []">Esperto nel camuffarsi e nel raggirare le persone.
+    Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hrAZOM79i4syUa3Y]{Trasformista
+    - Abile nel imbrogliare}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.HjGiBhTHdvYTWWu8]{Trasformista
+    - Abile parlantina}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.8pg6LxWvVUuRympT]{Trasformista
+    - Clonare abilit&agrave;}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.OtSejBsWIGr4v0Gt]{Trasformista
+    - Furtivo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.6KzRn5QpXktj9but]{Trasformista
+    - Imitare abilit&agrave;}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.riUlzIup8eOTxKnu]{Trasformista
+    - Linguaggi extra}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.U7Knqbx3yDoelbMp]{Trasformista
+    - Mi sento un&rsquo;altro}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LxllSyEykvg9ZYws]{Trasformista
+    - Mimettizarsi}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.UwJAIqWEJSBhTak1]{Trasformista
+    - Sfere conosciute}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: acae07a88c46c85b1ce9a7cf3cde55c7ef1f70a5
+    sourceId: Item.m59DIaJ4nk40jFmK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  coreVersion: '13.341'
+  createdTime: 1680934619738
+  modifiedTime: 1743437000017
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.m59DIaJ4nk40jFmK
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: nBx9ew03P6W7no46
+_key: '!items!nBx9ew03P6W7no46'

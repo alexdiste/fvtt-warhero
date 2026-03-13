@@ -1,0 +1,46 @@
+name: Pozione di Movimenti del ragno
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 150
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: unknown
+  alchemycost: '75'
+  preparetime: '10'
+  durationround: 10
+  description: >-
+    <p>Una pozione alchemica. Costo: 150 Mo</p>
+
+    <p>Offre la possibilit&agrave; di arrampicarsi in qualsiasi superficie per
+    10 round. Aggiungere alla scheda
+    @Compendium[fvtt-warhero.condizione.8uiAOfx2xT5i6q1B]{Movimenti del ragno}
+    come condizione</p>
+  price: '150'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 9c2d9119534ade3ee513bd9e90e527f92ffc0a8a
+    sourceId: Compendium.world.temp.SMNRyIWdvIqst2Xy
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553260
+  modifiedTime: 1702106226711
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.SMNRyIWdvIqst2Xy
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ZXIkWNjoAEkvrfTP
+_key: '!items!ZXIkWNjoAEkvrfTP'

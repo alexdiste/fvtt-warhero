@@ -1,0 +1,42 @@
+name: Bacchetta magica di Divinazione - I Individuazione dell'allineamento
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.6olhY5wohzlkW96u]{Divinazione - I
+    Individuazione dell'allineamento} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 4ba4d7077db4ae665379a0e63cdf8b38e96e6dae
+    sourceId: Item.72G5bTEIobX1SFQ1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613827640
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: TFVUR6x4mhFXVIuZ
+sort: 11200000
+_key: '!items!TFVUR6x4mhFXVIuZ'

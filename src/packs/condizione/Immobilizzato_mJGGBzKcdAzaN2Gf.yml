@@ -1,0 +1,51 @@
+name: Immobilizzato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: puoi fare solo azioni di movimento per liberarsi
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Il personaggio ha subito un azione di Immobilizzare ed &egrave; ora
+    immobilizzato, quindi non pu&ograve; attaccare.&nbsp; E' possibile lanciare
+    poteri ma serve il talento di meta potere "poteri immobili".</p>
+
+    <p><span style="font-family: Signika, 'Font Awesome 5 Free';">Il personaggio
+    immobilizzato pu&ograve; tentare di divincolarsi e di sfuggire alla presa
+    del suo avversario compiendo un'azione di movimento. Fare tiro contrapposto.
+    Il pg in difesa mette il migliore tra FIS e IST contro il FIS dell'
+    avversario</span></p>
+
+    <p>&nbsp;</p>
+
+    <p>Questo &egrave; uno Stato alterato</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 8f021b82ad0f65f059494fb8ac9320661dd37be7
+    sourceId: Item.0BdH3F2gqsUy2eu0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151586
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.WpdnRi0CNC9DoSY5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 7300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: mJGGBzKcdAzaN2Gf
+_key: '!items!mJGGBzKcdAzaN2Gf'

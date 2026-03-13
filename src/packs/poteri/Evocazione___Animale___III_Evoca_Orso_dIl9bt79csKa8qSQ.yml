@@ -1,0 +1,28 @@
+name: Evocazione - Animale - III Evoca Orso
+type: power
+system:
+  level: 3
+  magicschool: Evocazione - Animale
+  description: >-
+    <p>artiglio 2d6, morso 1d10, fis 6 ist 1 men 0.
+    @Compendium[fvtt-warhero.evocazioni.C3ZB0n4Q1whA3CaS]{Orso (evocazione)}</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1675877904846
+  modifiedTime: 1743439294738
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: dIl9bt79csKa8qSQ
+folder: null
+sort: 8900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!dIl9bt79csKa8qSQ'

@@ -1,0 +1,428 @@
+name: Orso Crudele
+type: character
+items:
+  - name: Assaltare
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: true
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Quando una creatura con questa abilità muove e attacca usa una sola
+        mossa per farlo e non due</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: d9c8938b14163d2666f0b000983490a3ff35b698
+        sourceId: Item.PjRoDjRreXWRN92s
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: YajCOCVByiUXrMMY
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!O79k7feySGaTxgJA.YajCOCVByiUXrMMY'
+  - name: Artiglio
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+    system:
+      weapontype: special
+      damage: 1d8
+      damage2hands: 1d6
+      rollformula: 1d20+2
+      damageformula: 2d6+6
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+      isCustomAttackRoll: false
+    effects: []
+    flags:
+      scene-packer:
+        hash: 4be059257e7e6c4df52c27e08c1350be81ac6b87
+        sourceId: Item.Yu91hdnByUCmadUa
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: O27VG1gK4xtQyALB
+    sort: 500000
+    ownership:
+      default: 0
+    _key: '!actors.items!O79k7feySGaTxgJA.O27VG1gK4xtQyALB'
+  - name: Morso
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+    system:
+      weapontype: special
+      damage: 2d4
+      damage2hands: 1d6
+      rollformula: 1d20+2
+      damageformula: 1d10+6
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+      isCustomAttackRoll: false
+    effects: []
+    flags:
+      scene-packer:
+        hash: 020dd7e4f88c89b7157d1d20efa2d615c985eb2a
+        sourceId: Item.IJnUKkomw51VEitv
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    sort: 1600000
+    _id: 2CgqO6ev5tIQOpHn
+    ownership:
+      default: 0
+    _key: '!actors.items!O79k7feySGaTxgJA.2CgqO6ev5tIQOpHn'
+img: systems/dnd5e/tokens/beast/CaveBear.webp
+system:
+  biodata:
+    class: ''
+    age: 0
+    size: large
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: "<p>Le creature evocate scompaiono quando muoiono o all'alba del giorno seguente e non è possibile evocare più di una creatura alla volta. E’ necessario usare una mossa per far seguire le 2 mosse alla propria evocazione. Usare più di un colpo con una singola mossa attacco si ottiene lo stessomalus come nell’uso delle due armi. Le evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12 +IST, il tempo di lancio di questi poteri è di 4 mosse consecutive. E necessario usareuna mossa per poter far eseguire 2 mosse all’evocazione.</p><p>\_</p><p>Questi tre treant chepermangono per 5 round si considerano una unica evocazione al fine dei limiti di controllo di creature evocate e si calcolano le statistiche come le creature evocate, ma il tempo di lancio di questo incantesimo è di una mossa incantesimo</p><p><br>Di \_normale \_l'animale \_deve \_essere \_entro \_30 \_metri \_dal \_padrone per ricevere ordini. Il \_compagno \_animale \_ha \_punti \_ferita \_pari \_a \_10+(FIS*10 \_se positivo), e Difesa 12 + IST Un \_compagno \_animale \_conta \_come \_una \_persona \_al \_fine \_del @UUID[Compendium.fvtt-warhero.poteri.Item.1UrtrLZ51eLjsEIx]{Viaggio - III Teletrasporto} della sfera di @UUID[Compendium.fvtt-warhero.sfere-di-magia.Item.IHxRgAwl2K6J760H]{31.Viaggio}</p>"
+    gmnotes: ''
+    origin: ''
+  subactors: []
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 6
+      value: 6
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 2
+      value: 2
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 0
+      value: 0
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 70
+      value: 70
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 0
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 14
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 0
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 3
+      value: 3
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 0
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 6
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
+prototypeToken:
+  name: Orso Crudele
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  texture:
+    src: systems/dnd5e/tokens/beast/CaveBear.webp
+    scaleX: 1
+    scaleY: 1
+    offsetX: 0
+    offsetY: 0
+    rotation: 0
+    tint: '#ffffff'
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    alphaThreshold: 0.75
+  width: 2
+  height: 2
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+    color: null
+    negative: false
+    priority: 0
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+    color: null
+  detectionModes: []
+  flags:
+    wall-height:
+      tokenHeight: 0
+    monks-tokenbar:
+      include: default
+    tagger: {}
+    core: {}
+  randomImg: false
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: 105d68920378eeae26f29157e19005fff2765137
+    sourceId: Actor.RAnicNjxE2KrhciK
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239337735
+  modifiedTime: 1772340564249
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: O79k7feySGaTxgJA
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+sort: 1400000
+_key: '!actors!O79k7feySGaTxgJA'

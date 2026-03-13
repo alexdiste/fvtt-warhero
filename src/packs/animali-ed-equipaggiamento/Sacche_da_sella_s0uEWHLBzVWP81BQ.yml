@@ -1,0 +1,42 @@
+name: Sacche da sella
+type: equipment
+img: systems/fvtt-warhero/images/icons/hand-bag.svg
+system:
+  equiptype: ''
+  cost: 3
+  quantity: 1
+  equipped: false
+  slotused: 12
+  slotlocation: backpack
+  providedslot: 20
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Delle sacche da sella che possono ospitare fino a 20 slots (suddivise in
+    2 borse da 10 slot l' una)</p>
+  price: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: 75b622e1e5aaaf7ba4b9dd6b2b2ee1475ffcbda5
+    sourceId: Compendium.world.temp.yLPIoE2hV6ntBl9f
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.344'
+  createdTime: 1681637553195
+  modifiedTime: 1749220202987
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: s0uEWHLBzVWP81BQ
+sort: 400000
+_key: '!items!s0uEWHLBzVWP81BQ'

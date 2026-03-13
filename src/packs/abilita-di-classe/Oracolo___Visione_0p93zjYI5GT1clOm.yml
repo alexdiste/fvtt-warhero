@@ -1,0 +1,37 @@
+name: Oracolo - Visione
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno usare il potere
+    @Compendium[fvtt-warhero.poteri.9StvYUTQ7V0YhtOf]{Visione - IV Visione
+    futura}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e99d1084a325dde4d2ebae92b33750dcf5c6f231
+    sourceId: Item.JUSe10fLlBUBpzEL
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1676806380081
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.WuXZEmeSH7EeyVxn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 18600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 0p93zjYI5GT1clOm
+_key: '!items!0p93zjYI5GT1clOm'

@@ -1,0 +1,42 @@
+name: Bacchetta magica di Elementale - Acqua - IV Resistenza al gelo
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.7n6sxQKYPaM7pkh4]{Elementale -
+    Acqua - IV Resistenza al gelo} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: b84b671d6c3f9aac2d3c4c2812db8f2295b324d8
+    sourceId: Item.LZLoWdGqOVljogsj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613827901
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 9qmuXtywSrN6MXs8
+sort: 12000000
+_key: '!items!9qmuXtywSrN6MXs8'

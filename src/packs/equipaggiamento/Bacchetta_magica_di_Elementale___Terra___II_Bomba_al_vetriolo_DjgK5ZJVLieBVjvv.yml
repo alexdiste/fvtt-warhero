@@ -1,0 +1,42 @@
+name: Bacchetta magica di Elementale - Terra - II Bomba al vetriolo
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 2000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.gW2OzkrdGkW38XK6]{Elementale -
+    Terra - II Bomba al vetriolo} (potere di 2 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: f2614f9e7632cc8084f055b31416d6750cdcbb4b
+    sourceId: Item.GaLY2jqJnp6FcOsa
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613828358
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: DjgK5ZJVLieBVjvv
+sort: 8700000
+_key: '!items!DjgK5ZJVLieBVjvv'

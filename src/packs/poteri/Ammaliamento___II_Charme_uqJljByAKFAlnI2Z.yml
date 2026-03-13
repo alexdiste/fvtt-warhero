@@ -1,0 +1,28 @@
+name: Ammaliamento - II Charme
+type: power
+system:
+  level: 2
+  magicschool: Ammaliamento
+  description: >-
+    la creatura considera l'incantatore un alleato per l'intera giornata. CD 15,
+    MEN, negare.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904797
+  modifiedTime: 1743439294916
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: uqJljByAKFAlnI2Z
+folder: null
+sort: 14100000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!uqJljByAKFAlnI2Z'

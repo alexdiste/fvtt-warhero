@@ -1,0 +1,44 @@
+name: Combattere da terra
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Un personaggio atterrato (per effetto di un azione Spingere a terra)
+    pu&ograve; comunque continuare a combattere da terra, senza necessariamente
+    rialzarsi. Tuttavia, ad ogni suo TxC verr&agrave; applicata una
+    penalit&agrave; di -5</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 89ba5782faa2124a2d392de14631d023e4d43a2f
+    sourceId: Compendium.world.temp.ebYluB9Vf4O8h54X
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553308
+  modifiedTime: 1743437709759
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.ebYluB9Vf4O8h54X
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: PYkKamAouJnFSL6j
+_key: '!items!PYkKamAouJnFSL6j'

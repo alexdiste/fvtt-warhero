@@ -1,0 +1,39 @@
+name: Bottiglia di vetro (1 l)
+type: equipment
+img: icons/consumables/potions/bottle-conical-corked-labeled-shell-cyan.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: bbddd11b2ff923a5e6955ceba60640a4b7503537
+    sourceId: Item.asqT7tXc9ze4aJu4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702195762505
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: gykwFMiFDoab2QEt
+sort: 17000000
+_key: '!items!gykwFMiFDoab2QEt'

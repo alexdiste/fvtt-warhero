@@ -1,0 +1,40 @@
+name: Resuscitato di recente
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: '-2  a tutte le stats'
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Hai un malus di -2 in tutte le statistiche, non rimovibili, fino al
+    giorno successivo</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 17599a584a4162731754a2d94fc55d29b07d35a4
+    sourceId: Item.uoEt4bO13Lf8IfMK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437150834
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.NpuMly3c9eb7TlVk
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 4800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 4uAaXtxhzymkTR3z
+_key: '!items!4uAaXtxhzymkTR3z'

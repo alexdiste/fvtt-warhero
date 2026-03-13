@@ -1,0 +1,26 @@
+name: Divinazione - III Domanda divina
+type: power
+system:
+  level: 3
+  magicschool: Divinazione
+  description: può fare una domanda al master il quale può rispondere con un si o un no.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904820
+  modifiedTime: 1743439294919
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: v1p3CqaMjGn4032X
+folder: null
+sort: 14200000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!v1p3CqaMjGn4032X'

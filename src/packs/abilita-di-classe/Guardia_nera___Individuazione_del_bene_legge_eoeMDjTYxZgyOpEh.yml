@@ -1,0 +1,37 @@
+name: Guardia nera - Individuazione del bene/legge
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 30
+  description: >-
+    <p>Il personaggio riesce a sentire intorno a s&eacute; se c'&egrave; una
+    creatura di allineamento buono o legale, questo potere &egrave; sempre
+    attivo</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 6f8d692a3f90a0bbaa3ef4d99c2079c84e039470
+    sourceId: Item.xCG1bGo4KhF1sfe0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.xCG1bGo4KhF1sfe0
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: eoeMDjTYxZgyOpEh
+_key: '!items!eoeMDjTYxZgyOpEh'

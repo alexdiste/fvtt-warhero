@@ -1,0 +1,38 @@
+name: 'Bonus razziale dirza: disarmare'
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +1 a disarmare
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p>A livello 1,5 e 7 il dirza prende +1 per i tiri per disarmare</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 41ecdce15700eb4e64218006173a7971f04ba9e7
+    sourceId: Item.Y07patur1znnUv7B
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705157384789
+  modifiedTime: 1743437151140
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: NO17FdfAZncwNSWS
+sort: 0
+_key: '!items!NO17FdfAZncwNSWS'

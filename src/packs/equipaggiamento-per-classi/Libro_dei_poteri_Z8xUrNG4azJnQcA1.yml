@@ -1,0 +1,40 @@
+name: Libro dei poteri
+type: classitem
+img: icons/sundries/books/book-symbol-link-brown.webp
+system:
+  cost: 15
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Mago
+  description: <p>Un libro per scrivere poteri</p>
+  price: '30'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 94ecbfc4f0269ac349c69722b68919d357d3d014
+    sourceId: Item.JiQyjfm38B8uTpBy
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553208
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Z8xUrNG4azJnQcA1
+sort: 1400000
+_key: '!items!Z8xUrNG4azJnQcA1'

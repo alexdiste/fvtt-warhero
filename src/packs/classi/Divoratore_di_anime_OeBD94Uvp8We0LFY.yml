@@ -1,0 +1,65 @@
+name: Divoratore di anime
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: true
+    long: true
+    twohanded: true
+    shooting: false
+    polearm: false
+    throwing: false
+  armors:
+    light: true
+    medium: true
+    heavy: true
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Esperto delle arti oscure.&nbsp;</p>
+
+    <p>Ha le seguenti abilit&agrave; di classe:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.yAtOev6ECa0gaQ5i]{Divoratore
+    di anime - Potere dell&rsquo;anima}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ic8j7TWiK4V6KWR4]{Divoratore
+    di anime - Restrizione allineamento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.bsXsKFO53juCzzfh]{Divoratore
+    di anime - Ridare l' anima}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.dFZzEKLudkYR817z]{Divoratore
+    di anime - Rimasuglio del potere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.k0P9ybJ4Y4TFcgB0]{Divoratore
+    di anime - Rito dell' anima}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.2DTNWIZgkGkXf3w6]{Divoratore
+    di anime - Sputare l' anima}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 71ace1eef5af912675a97c401892ed8c83adf8a7
+    sourceId: Item.ffD17wsgUPfI9wmg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1705338168079
+  modifiedTime: 1743436999969
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: OeBD94Uvp8We0LFY
+sort: 0
+_key: '!items!OeBD94Uvp8We0LFY'

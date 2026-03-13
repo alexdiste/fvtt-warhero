@@ -1,0 +1,39 @@
+name: Signore elementale - Incantare arma
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; incantare la propria arma fino alla fine dello
+    scontro, per infligge 4d6 danni extra da il suo elemento, questa
+    abilit&agrave; la pu&ograve; usare un numero di volte pari a 3 + IST. Non
+    &egrave; possibile incantare l'arma pi&ugrave; di una volta, fare incantare
+    arma &egrave; considerata una mossa potere</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c3d9f0e96ab2bd90ba4ebdd62a499624b235a8dd
+    sourceId: Item.FBL7jSi2mEJ9sde0
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681056288111
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.B5dTLpoAa5HZjedT
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 18900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 3JYMEbRpfOWLc2Bp
+_key: '!items!3JYMEbRpfOWLc2Bp'

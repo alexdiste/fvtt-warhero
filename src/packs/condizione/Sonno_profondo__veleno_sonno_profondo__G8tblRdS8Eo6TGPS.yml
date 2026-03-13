@@ -1,0 +1,41 @@
+name: Sonno profondo (veleno sonno profondo)
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 8
+  durationunit: ore
+  shortdescription: Dormi. Fino a che non ti fanno un danno o passano 8 ore non ti svegli
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Sei un sonno profondo come se tu avessi subito il potere
+    @Compendium[fvtt-warhero.poteri.9KljFSjM3pWaoI73]{Ammaliamento - I
+    Sonno}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c5169145b1318b2da4bd8d12183afec812d9ab12
+    sourceId: Item.kfvnaKGZO1EBz0sC
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681232696412
+  modifiedTime: 1743437151028
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: G8tblRdS8Eo6TGPS
+sort: 500000
+_key: '!items!G8tblRdS8Eo6TGPS'

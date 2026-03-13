@@ -1,0 +1,90 @@
+name: Language (tutto)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: >-
+    <p>Questa lingua rappresente una lingua in grado di capire tutte le Lingue
+    esistenti su warhero.</p>
+
+    <p>Lista delle lingue esistenti su Warhero:</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.o3wHgaeNVxZsSP3z]{Language
+    (abissale)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.BalwAzTIKqkMWYM0]{Language (aquan)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.FXNOoU7Uq3jw5sfC]{Language (auran)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.CYmZlF93r5febbEn]{Language
+    (celestiale)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.ldW3XXXagELtzvNh]{Language (comune)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.0riqDnmq93mM4erW]{Language
+    (draconico)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.C2mFGpbhbUXzEDnZ]{Language
+    (druidico)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.iNr8K3qkwIox6lI6]{Language (elfico)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.jVbnZdr5GB6jQmD0]{Language (ettin)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.FSs2nS1zekKKrgsl]{Language (gigante)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.WRlPC768SObjZD2W]{Language (gnoll)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.KxEBSPejpfCbKHn1]{Language
+    (gnomesco)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.Mi0hZbhYxKkNBNQ0]{Language (goblin)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.KiZHZUfjU6dZgTU6]{Language
+    (halfling)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.9jCIUfGwXOhOS1YI]{Language
+    (infernale)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.ucEleplBX1bEJd6B]{Language (ignan)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.1RJtnUkPP0V6QfSr]{Language (nanico)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.5yRNGxswyKMaw69B]{Language
+    (orchesco)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.9mGDGpTSxltICZiS]{Language (silvano)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.HfPZ18k4faXal5tR]{Language
+    (sottocomune)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.v0sWclRN9cy8yTgQ]{Language (terran)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.RplecdBcC9GBnPml]{Language (treant)}</p>
+
+    <p>@Compendium[fvtt-warhero.lingue.n1KN2B6ez5klec9A]{Language (worg)}</p>
+
+    <p>&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ec49c3bb38dd5389dfb2e746ae663aa0da23bd86
+    sourceId: Item.4JL9ihmP2x5KTcz2
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613701
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: clHhM57RmUpQWLpl
+_key: '!items!clHhM57RmUpQWLpl'

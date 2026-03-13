@@ -1,0 +1,42 @@
+name: Borsa del guaritore
+type: classitem
+img: icons/containers/bags/case-embossed-leather-tan.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: unknown
+  class: ''
+  mandatoryfor: ''
+  description: >-
+    <p>Una borsa che include i componenti per il primo soccorso e degli
+    strumenti per applicare bende e fasciature. Necessaria </p>
+  price: '50'
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: a133e6b144328acf0dd5487e244a4032ec8849f7
+    sourceId: Compendium.world.temp.b7CLNeW1feGDPbQM
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553211
+  modifiedTime: 1704870465581
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.b7CLNeW1feGDPbQM
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: vgdfgnprqapyZU35
+_key: '!items!vgdfgnprqapyZU35'

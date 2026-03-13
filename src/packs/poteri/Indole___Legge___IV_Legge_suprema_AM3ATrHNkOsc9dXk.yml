@@ -1,0 +1,31 @@
+name: Indole - Legge - IV Legge suprema
+type: power
+system:
+  level: 4
+  magicschool: Indole - Legge
+  description: >-
+    Fino alla fine dello scontro un bersaglio di allineamento legale che subisce
+    un colpo può decidere di disarmare il proprio avversario che lo ha colpito
+    CD 16 su FIS per negare oppure di farlo sdraiare per terra CD 16 su MEN per
+    negare oppure di infliggergli 5d6 danni CD 16 su IST per negare, dopo di che
+    questo effetto rimane attivo altri 3 round prima di terminare.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904910
+  modifiedTime: 1743439294529
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: AM3ATrHNkOsc9dXk
+folder: null
+sort: 2800000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!AM3ATrHNkOsc9dXk'

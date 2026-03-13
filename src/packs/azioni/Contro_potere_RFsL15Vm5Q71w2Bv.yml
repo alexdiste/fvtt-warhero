@@ -1,0 +1,52 @@
+name: Contro potere
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>Ci si pu&ograve; riferire al contro potere come azione o abilit&agrave;
+    aggiuntiva.</p>
+
+    <p>Questo trafiletto serve a descrivere l'azione di contropotere.</p>
+
+    <p>Entrambi i personaggi devono lanciare 1d20, a cui si aggiungono i
+    rispettivi valori di MEN ed eventuali bonus. Se il punteggio ottenuto dal
+    giocatore che ha lanciato il contropotere &egrave; pi&ugrave; alto, il
+    potere viene neutralizzato. Il giocatore che ha lanciato il contropotere,
+    inoltre, non potr&agrave; utilizzare mosse potere nel suo prossimo round</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 71125538d69d14e4f03b01f90fdfd22d432116a3
+    sourceId: Compendium.world.temp.uUk6oNFAwa0dDMFX
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637553315
+  modifiedTime: 1743437709761
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.uUk6oNFAwa0dDMFX
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: RFsL15Vm5Q71w2Bv
+_key: '!items!RFsL15Vm5Q71w2Bv'

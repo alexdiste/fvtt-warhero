@@ -1,0 +1,45 @@
+name: Runologo - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare
+    pergamene.</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.cs6Y0TWt6wKuvQ4w]{02.Conoscenze}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.gujWiPPrUckarLSX]{21.Linguaggi}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.CsEX14Sm9byMWggi]{27.Rune}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.k19nOLJBQG5fu4a3]{29.Trasmutazione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.3VbZtxz7d2gJRzzz]{28.Tempo}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 2eb38eed7175538278cf03b86d3b5e28188943a2
+    sourceId: Item.tLyWgJJJFdIWKQNy
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352047777
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: ude8Tm1q8dkUhRpb
+sort: 5100000
+_key: '!items!ude8Tm1q8dkUhRpb'

@@ -1,0 +1,30 @@
+name: Tempo - III Velocità
+type: power
+system:
+  level: 3
+  magicschool: Tempo
+  description: >-
+    <p>il bersaglio pu&ograve; effettuare una terza mossa nel proprio turno fino
+    alla fine dello scontro, e rimuove eventuali incantesimi di
+    @Compendium[fvtt-warhero.poteri.0s6X0VfFHJgKeYBs]{Tempo - II Lentezza} sul
+    bersaglio</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904974
+  modifiedTime: 1743439294666
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: O1yGotIS8YidAFh1
+folder: null
+sort: 6700000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!O1yGotIS8YidAFh1'

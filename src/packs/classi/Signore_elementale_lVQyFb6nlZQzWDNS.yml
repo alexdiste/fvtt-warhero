@@ -1,0 +1,74 @@
+name: Signore elementale
+type: class
+img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+system:
+  weapons:
+    short: false
+    long: true
+    twohanded: false
+    shooting: true
+    polearm: true
+    throwing: false
+  armors:
+    light: true
+    medium: true
+    heavy: false
+  shields:
+    light: true
+    medium: false
+    tower: false
+  issecondary: false
+  description: >-
+    <p>Il pi&ugrave; potente incantatore legato a un elemento. Ha le seguenti
+    abilit&agrave; di classe:</p>
+
+    <p data-pm-slice="1 1
+    []">@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.0IEtGx1Er2f382JB]{Signore
+    elementale - Conoscenza elementale}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.RfhMenEBlXsUQfXD]{Signore
+    elementale - Contropotere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.gupmrGAkuIwGx5iS]{Signore
+    elementale - Ignorare la riduzione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.3JYMEbRpfOWLc2Bp]{Signore
+    elementale - Incantare arma}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.HeMFSyYH6gvWcmYh]{Signore
+    elementale - Incantare armatura}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.5A4QmCZnG8ubmO15]{Signore
+    elementale - Meta potere}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.FDv1RzhQhfAwJrIK]{Signore
+    elementale - Sfere conosciute}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.zbCi6yD4Z1Coktpk]{Signore
+    elementale - Signore dell'elemento}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.MsCFjK79qe8XC7a1]{Signore
+    elementale - Stregoneria elementale}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ce7b1a09d5b6b56f186dc7636bc161af4487f2c4
+    sourceId: Item.zbbsRUlSlmBcMv0L
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  coreVersion: '13.341'
+  createdTime: 1681056166080
+  modifiedTime: 1743437000007
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.zbbsRUlSlmBcMv0L
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: lVQyFb6nlZQzWDNS
+_key: '!items!lVQyFb6nlZQzWDNS'

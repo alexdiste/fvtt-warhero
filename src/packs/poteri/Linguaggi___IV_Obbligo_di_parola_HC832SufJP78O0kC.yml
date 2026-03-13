@@ -1,0 +1,29 @@
+name: Linguaggi - IV Obbligo di parola
+type: power
+system:
+  level: 4
+  magicschool: Linguaggi
+  description: >-
+    il bersaglio perde tutti i linguaggi tranne il comune e acquista il comune
+    se non lo aveva per un ora, CD 18 men per negare, per i successivi 5 turni
+    il bersaglio non è in grado di lanciare incantesimi con componenti verbali
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904924
+  modifiedTime: 1743439294617
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: HC832SufJP78O0kC
+folder: null
+sort: 5200000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!HC832SufJP78O0kC'

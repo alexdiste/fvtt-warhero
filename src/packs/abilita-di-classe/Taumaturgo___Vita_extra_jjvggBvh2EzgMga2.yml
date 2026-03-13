@@ -1,0 +1,39 @@
+name: Taumaturgo - Vita extra
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio quando usa un potere di cura l'ammontare di punti ferita
+    che supererebbe il totale dei punti vita del bersaglio diventano punti
+    ferita temporanei che durano fino alla fine dello scontro. Se abbiamo
+    gi&agrave; dei punti ferita temporanei forniti dal personaggio la cura non
+    funziona</p>
+effects: []
+flags:
+  scene-packer:
+    hash: fa752fb4ede73e2968fdafdc41f11e8d49a2ca96
+    sourceId: Item.5VwTw4xYTzMI066G
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.5VwTw4xYTzMI066G
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 22400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: jjvggBvh2EzgMga2
+_key: '!items!jjvggBvh2EzgMga2'

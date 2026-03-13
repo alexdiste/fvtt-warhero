@@ -1,0 +1,29 @@
+name: Evocazione - Animale - IV Evoca dinosauro
+type: power
+system:
+  level: 4
+  magicschool: Evocazione - Animale
+  description: >-
+    <p>2x ariglio 2d6,codata 1d8, morso 1d10, fis 7 ist 4 men 2.
+    @Compendium[fvtt-warhero.evocazioni.O6KyYkxDtJIwvAqb]{Dinosauro
+    (evocazione)}</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1675877904847
+  modifiedTime: 1743439294643
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: KBxBDMo05wN3L649
+folder: null
+sort: 6000000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!KBxBDMo05wN3L649'

@@ -1,0 +1,41 @@
+name: Laboratorio da alchimista portatile
+type: classitem
+img: systems/fvtt-warhero/images/icons/swap-bag.svg
+system:
+  cost: 75
+  quantity: 1
+  slotused: 10
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Alchimista
+  description: >-
+    <p>Un laboratorio da alchimista portatile da trasportare o mettere nello
+    zaino. Occupa 10 slot</p>
+  providedslot: 0
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 2f61070f7fb21762ff41a6273108e64be6e21676
+    sourceId: Item.hqU36U0ZWk4TIHeF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702197081612
+  modifiedTime: 1743437241835
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: DusWum356fezq2vt
+sort: 100000
+_key: '!items!DusWum356fezq2vt'

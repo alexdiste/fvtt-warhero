@@ -1,0 +1,38 @@
+name: Invisibile
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 10
+  durationunit: round
+  shortdescription: Il pg è invisibile
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: <p data-pm-slice="1 1 []">Il personaggio &egrave; invisibile</p>
+effects: []
+flags:
+  scene-packer:
+    hash: fa76006d7f43ab54bfc25c9395bfe12f082a0bcf
+    sourceId: Item.Bf3gjDu2ugHOAAgN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680935549648
+  modifiedTime: 1743437151152
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FSdOwIhTazaVMT3Y
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 5600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: OmkLMh5Ya672Jm9g
+_key: '!items!OmkLMh5Ya672Jm9g'

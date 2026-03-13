@@ -1,0 +1,34 @@
+name: Resistenza alla scossa maggiore
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: <p>Riduce di 20 tutti i danni da scossa</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 24e55894aa933bb91e688be93f794546773a6b30
+    sourceId: Item.pc9lMTMTjkTDmmXb
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.351'
+  createdTime: 1704966156996
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Ucppti1derS4ApZ8
+sort: 1000000
+_key: '!items!Ucppti1derS4ApZ8'

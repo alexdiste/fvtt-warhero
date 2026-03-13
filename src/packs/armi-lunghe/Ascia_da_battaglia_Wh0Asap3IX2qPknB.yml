@@ -1,0 +1,44 @@
+name: Ascia da battaglia
+type: weapon
+img: icons/weapons/axes/axe-battle-blackened.webp
+system:
+  weapontype: long
+  damage: 1d8
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 16
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: |-
+    <p>Ascia da battaglia. Arma lunga&nbsp;</p>
+    <p>1d8</p>
+effects: []
+flags:
+  scene-packer:
+    hash: b5d90a7b2ed07d104a22d00dacbc274ede836b0b
+    sourceId: Item.RQgfPYKV5b4VLjs5
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676710510666
+  modifiedTime: 1701594258212
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.RQgfPYKV5b4VLjs5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 500000
+ownership:
+  default: 0
+  MALrSO6CHeii4HYs: 3
+_id: Wh0Asap3IX2qPknB
+_key: '!items!Wh0Asap3IX2qPknB'

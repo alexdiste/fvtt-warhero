@@ -1,0 +1,39 @@
+name: Giaciglio
+type: equipment
+img: icons/sundries/survival/bedroll-grey.webp
+system:
+  equiptype: ''
+  cost: 2
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Un piccolo materasso arrotolabile</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 2353087ce21ff7b4aae595c3f91e209941adab44
+    sourceId: Item.XQy7dRLmxS2UP6rl
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676719074940
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.PAtOK0AuTBTVGGBi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 37700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ODtjmLipzbvOHRLa
+_key: '!items!ODtjmLipzbvOHRLa'

@@ -1,0 +1,42 @@
+name: Mutageno (da alchimista)
+type: potion
+img: icons/consumables/potions/bottle-round-corked-pink.webp
+system:
+  cost: 0
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '0'
+  preparetime: '0'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica.</p><p>Se bevuto entro pochi minuti dalla creazione
+    permette di scambiare due valori fra FIS,IST e MEN per l'intera giornata</p>
+  price: '0'
+  magiccharge: notapplicable
+  chargevalue: null
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: 7cc71afc6c1c4125fd3f3ee149c38ea36c91d1e6
+    sourceId: Compendium.world.temp.215TbDnBBsZjwUfK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637553237
+  modifiedTime: 1698851614914
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.215TbDnBBsZjwUfK
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: PD6jGRjccLbjxU3A
+_key: '!items!PD6jGRjccLbjxU3A'

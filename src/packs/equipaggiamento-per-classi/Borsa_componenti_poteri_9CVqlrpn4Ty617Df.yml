@@ -1,0 +1,40 @@
+name: Borsa componenti poteri
+type: classitem
+img: icons/containers/bags/pack-simple-leather-tan.webp
+system:
+  cost: 5
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: notapplicable
+  class: ''
+  mandatoryfor: Mago, Arcimago
+  description: <p>Una borsa che include i componenti necessari per i poteri.</p>
+  price: '5'
+  magiccharge: notapplicable
+  chargevalue: null
+  providedslot: 0
+  chargevaluemax: null
+effects: []
+flags:
+  scene-packer:
+    hash: c0874c04e6959456af0e1d83a17cbbfa9000f32a
+    sourceId: Compendium.world.temp.21qhd9e1eBr027Lz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553209
+  modifiedTime: 1705128030484
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.21qhd9e1eBr027Lz
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 9CVqlrpn4Ty617Df
+_key: '!items!9CVqlrpn4Ty617Df'

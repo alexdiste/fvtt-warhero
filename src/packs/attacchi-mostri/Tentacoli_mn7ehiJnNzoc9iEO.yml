@@ -1,0 +1,42 @@
+name: Tentacoli
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 1d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: 14e19b66b981b6ba784d7482f3c3d3ba2c7e79f1
+    sourceId: Item.wdqnHGHUqtvhlUyv
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681573811492
+  modifiedTime: 1743436810416
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.3VT1PPlhlZylvwUi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: mn7ehiJnNzoc9iEO
+_key: '!items!mn7ehiJnNzoc9iEO'

@@ -1,0 +1,56 @@
+name: 02.Conoscenze
+type: power
+img: systems/fvtt-warhero/images/icons/magic/conoscenza.webp
+system:
+  level: 0
+  magicschool: Conoscenze
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R]{Conoscenza -
+    I Individuazione del magico}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.hsNBWzXXYCTtRxte]{Conoscenze -
+    II Dissolvi magie}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta]{Conoscenze -
+    III Identificare}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.wQp0B9jxS1XQQ9oi]{Conoscenze -
+    IV Dissolvi magie superiori}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.lx6FGweyivwXnUS4]{Conoscenze -
+    IV Identificare artefatti}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: d9a2ffa95cf472a7b05f58cf5fd73714b1efdd78
+    sourceId: Compendium.world.temp.hWiPg9zzm8wEp2UF
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552542
+  modifiedTime: 1698850870068
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.hWiPg9zzm8wEp2UF
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: cs6Y0TWt6wKuvQ4w
+_key: '!items!cs6Y0TWt6wKuvQ4w'

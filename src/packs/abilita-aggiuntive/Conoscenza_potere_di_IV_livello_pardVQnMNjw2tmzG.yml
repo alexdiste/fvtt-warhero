@@ -1,0 +1,35 @@
+name: Conoscenza potere di IV livello
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 6
+  currentuse: 0
+  description: "<p><strong>Prerequisito:</strong>\_Sfere conosciute, conoscere il potere di 3 livello di una sfera, avere almeno 2 abilità aggiuntive.</p>\n<p><strong>Beneficio:</strong>\_Aggiungi alla tua lista conosciuta un potere di IV Livello a scelta tua, della sfera che si conosce il potere di III livello, lo puoi usare come tutti gli altri.</p>\n<p><strong>Speciale:</strong>E' possibile scegliere questa abilità più volte per ogni potere di livello IV esistente se si conosce la sfera.</p>"
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.gjw6c2ascScrHs6C
+    hash: 44e883daf979c37b1b5017b844072b1cbcbb27ef
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772774759092
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  MALrSO6CHeii4HYs: 3
+  guOwSDi78TuzUGFU: 3
+_id: pardVQnMNjw2tmzG
+sort: 3500000
+_key: '!items!pardVQnMNjw2tmzG'

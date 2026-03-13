@@ -1,0 +1,29 @@
+name: Evocazione - Non Morte - II Evoca zombie
+type: power
+system:
+  level: 2
+  magicschool: Evocazione - Non Morte
+  description: >-
+    <p>schianto 1d6 o danni dell'arma, fis 4, ist 0, men 0.
+    @Compendium[fvtt-warhero.evocazioni.OOqBrVvvXur5Oa0M]{Zombie
+    (evocazione)}</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1675877904849
+  modifiedTime: 1743439294494
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 5C07VRo8z41Kh70Y
+folder: null
+sort: 1900000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!5C07VRo8z41Kh70Y'

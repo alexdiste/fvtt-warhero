@@ -1,0 +1,28 @@
+name: Divinazione - IV Precognizione
+type: power
+system:
+  level: 4
+  magicschool: Divinazione
+  description: >-
+    l'incantatore e gli alleati entro 9 metri ottengono un bonus di +10
+    all'iniziativa e un +1 a dif per il prossimo scontro
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904822
+  modifiedTime: 1743439294525
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 9UH6CVtklssk2AVo
+folder: null
+sort: 2700000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!9UH6CVtklssk2AVo'

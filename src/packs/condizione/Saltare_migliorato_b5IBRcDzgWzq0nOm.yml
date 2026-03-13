@@ -1,0 +1,40 @@
+name: Saltare migliorato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: endday
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: +3 alle prove di saltare durante l'intera giornata
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p><span style="font-family: Signika, sans-serif;">Offre un bonus di +3 alle
+    prove di saltare durante l'intera giornata</span></p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 4106f469bc9434f3f3680786f2f961f06fce73ce
+    sourceId: Item.1PWCwOylnwrgb8p4
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698852343894
+  modifiedTime: 1743437151453
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: b5IBRcDzgWzq0nOm
+sort: 3000000
+_key: '!items!b5IBRcDzgWzq0nOm'

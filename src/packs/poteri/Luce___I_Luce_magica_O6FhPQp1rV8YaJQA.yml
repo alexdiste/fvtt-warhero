@@ -1,0 +1,26 @@
+name: Luce - I Luce magica
+type: power
+system:
+  level: 1
+  magicschool: Luce
+  description: crea luce intorno al bersaglio per 1 ora.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904926
+  modifiedTime: 1743439294669
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: O6FhPQp1rV8YaJQA
+folder: null
+sort: 6800000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!O6FhPQp1rV8YaJQA'

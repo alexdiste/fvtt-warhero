@@ -1,0 +1,28 @@
+name: Guerra - III Titano
+type: power
+system:
+  level: 3
+  magicschool: Guerra
+  description: >-
+    il bersaglio ottiene un bonus di 5 punti a fis cumulabile con l'incantesimo
+    forza fino alla fine dello scontro.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904876
+  modifiedTime: 1743439294940
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: wnw46cRzlPWbO5PV
+folder: null
+sort: 14800000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!wnw46cRzlPWbO5PV'

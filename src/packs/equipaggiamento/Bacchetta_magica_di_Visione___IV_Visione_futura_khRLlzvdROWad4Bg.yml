@@ -1,0 +1,42 @@
+name: Bacchetta magica di Visione - IV Visione futura
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 4000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.9StvYUTQ7V0YhtOf]{Visione - IV
+    Visione futura} (potere di 4 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a0fba5c99b035d2f92573b71db73dc466ab1763e
+    sourceId: Item.0eMzA0XdiHLbDpuD
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613834617
+  modifiedTime: 1704614641282
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: khRLlzvdROWad4Bg
+sort: 0
+_key: '!items!khRLlzvdROWad4Bg'

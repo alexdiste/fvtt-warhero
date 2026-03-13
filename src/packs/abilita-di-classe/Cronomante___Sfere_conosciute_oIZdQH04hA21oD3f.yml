@@ -1,0 +1,40 @@
+name: Cronomante - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare
+    pergamene.</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.3VbZtxz7d2gJRzzz]{28.Tempo}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.sfere-di-magia.IHxRgAwl2K6J760H]{31.Viaggio}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 591c61b957415c77f736ceff9a7ced349310dd91
+    sourceId: Item.r9XP20RX32Iy8LPK
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.4G7splsbTzJNbS3w
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352440015
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: oIZdQH04hA21oD3f
+sort: 4600000
+_key: '!items!oIZdQH04hA21oD3f'

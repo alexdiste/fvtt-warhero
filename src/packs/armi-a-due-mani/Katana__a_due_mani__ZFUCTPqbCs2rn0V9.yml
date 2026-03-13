@@ -1,0 +1,45 @@
+name: Katana (a due mani)
+type: weapon
+img: icons/weapons/swords/sword-katana.webp
+system:
+  weapontype: twohanded
+  damage: 3d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 18
+  equipped: false
+  quantity: 1
+  slotused: 1
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Katana utilizzabile anche a due mani. Se usata
+    come arma lunga [[/r 1d8]]. Se usata a due mani [[/r 3d6 #aggiungi FIS per
+    1.5 volte]] + FIS per 1.5</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c1c9f9aaaf359ea30550c702c41fdf1cc2d487a7
+    sourceId: Item.s185DpDDdyaMZmHg
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676710510666
+  modifiedTime: 1704967093138
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.gjnuY2CmSuH8lvpv
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ZFUCTPqbCs2rn0V9
+_key: '!items!ZFUCTPqbCs2rn0V9'

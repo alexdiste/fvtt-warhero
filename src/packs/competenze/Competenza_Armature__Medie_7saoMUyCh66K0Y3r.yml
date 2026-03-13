@@ -1,0 +1,33 @@
+name: 'Competenza Armature: Medie'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armature
+    leggere. Le armatura legge garantiscono una riduzione danno di [[/r 4
+    #riduzione danno armatura media. Ricordo che almeno un danno si prende
+    sempre]]. Ricordo che per quanto le armature possono proteggere si prende
+    sempre almeno un danno</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 32d628c6583be2a8ae993fbaf28918a6720c745d
+    sourceId: Item.tOrqNVEkXM5q1w4U
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1680857901932
+  modifiedTime: 1743437037129
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.tOrqNVEkXM5q1w4U
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 7saoMUyCh66K0Y3r
+_key: '!items!7saoMUyCh66K0Y3r'

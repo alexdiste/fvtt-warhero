@@ -1,0 +1,32 @@
+name: Conoscenze - II Dissolvi magie
+type: power
+system:
+  level: 2
+  magicschool: Conoscenze
+  description: >-
+    questo incantesimo se lanciato su un bersaglio permette di togliergli un
+    incantesimo attivo ( generalmente si parte sempre dal più forte ). se
+    lanciata su un area permette di togliere l'incantesimo dall'area, in ogni
+    caso per riuscire in questo intento è necessario superare una prova su men
+    con CD in base al livello dell'incantesimo. livello 1 CD 10 livello 2 CD 14
+    livello 3 CD 16 livello 4 CD 18
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904809
+  modifiedTime: 1743439294780
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: hsNBWzXXYCTtRxte
+folder: null
+sort: 10200000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!hsNBWzXXYCTtRxte'

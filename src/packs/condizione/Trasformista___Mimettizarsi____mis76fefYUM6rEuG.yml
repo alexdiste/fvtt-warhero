@@ -1,0 +1,42 @@
+name: Trasformista - Mimettizarsi ()
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: null
+  durationunit: ''
+  shortdescription: +1 ad una statistica
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio pu&ograve; 1 + FIS volte al giorno
+    cambiare aspetto fisico rimanendo della stessa razza e ottenere cos&igrave;
+    un bonus di +1 a una statistica a suo piacimento. Ogni volta che riusa
+    questo potere perde il bonus che aveva scelto in precedenza</p>
+effects: []
+flags:
+  scene-packer:
+    hash: d24c533ce552ea5801e1ef8a99148007c5cbef6d
+    sourceId: Item.FSdOwIhTazaVMT3Y
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680935549648
+  modifiedTime: 1743437151592
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FSdOwIhTazaVMT3Y
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 7400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: mis76fefYUM6rEuG
+_key: '!items!mis76fefYUM6rEuG'

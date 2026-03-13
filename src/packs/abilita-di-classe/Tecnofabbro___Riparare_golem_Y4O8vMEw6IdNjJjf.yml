@@ -1,0 +1,38 @@
+name: Tecnofabbro - Riparare golem
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3+MEN volte al giorno riparare un suo golem
+    creato curando i punti ferita del golem&nbsp;di un numero di d6 pari a
+    3+FIS. Usare questa abilit&agrave; richiede&nbsp;una mossa potere &egrave;
+    deve essere adiacente al golem che&nbsp;vuole curare</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: c1e127672c81ea563466caf94b968b7f243290ae
+    sourceId: Item.87s8IQlPoqSDBSXS
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704462853520
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Y4O8vMEw6IdNjJjf
+sort: 7100000
+_key: '!items!Y4O8vMEw6IdNjJjf'

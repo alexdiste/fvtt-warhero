@@ -1,0 +1,32 @@
+name: Non magici
+type: skill
+img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuseFormula: '1'
+  description: >-
+    <p>le viverne nonostante siano dei draghi non hanno una mente abbastanza
+    sviluppata per fare uso della magia</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766233804149
+  modifiedTime: 1766235181930
+  lastModifiedBy: uzeu86bhmL5CiHhN
+_id: SvfCZQgRw7qoCCD9
+sort: 100000
+_key: '!items!SvfCZQgRw7qoCCD9'

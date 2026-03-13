@@ -1,0 +1,45 @@
+name: Morso velenoso
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 1d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Applica
+    @UUID[Compendium.fvtt-warhero.poteri-speciali.Item.WjiYtzqPHrnH2mWR]{Veleno
+    lesionante}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9832c5e552af280aa680900194ecc2a2dc0f85fe
+    sourceId: Item.58oJacBlPQE6OR06
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680857418842
+  modifiedTime: 1743436810333
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: DUO2dDr5klimtwyZ
+sort: 100000
+_key: '!items!DUO2dDr5klimtwyZ'

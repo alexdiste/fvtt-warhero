@@ -1,0 +1,56 @@
+name: 14.Guerra
+type: power
+img: systems/fvtt-warhero/images/icons/magic/guerra.webp
+system:
+  level: 0
+  magicschool: Guerra
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.QGh1VtNFgRRKVvNK]{Guerra - I
+    Precisione}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.ipXemqc1aOOxqoyG]{Guerra - II
+    Forza}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.wnw46cRzlPWbO5PV]{Guerra - III
+    Titano}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.b2nNuZqzQSJv8p1P]{Guerra - IV
+    Potere della furia}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.x96WvKX2sEQHJjJZ]{Guerra - IV
+    Vendetta della furia}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: d894b6aa5b9fd1cc2540bc840c1b09a4cd001e42
+    sourceId: Compendium.world.temp.7kFw0PlqJWL8Yc9f
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552528
+  modifiedTime: 1698850995667
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.7kFw0PlqJWL8Yc9f
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: i6A7rLLMajX1GCnB
+_key: '!items!i6A7rLLMajX1GCnB'

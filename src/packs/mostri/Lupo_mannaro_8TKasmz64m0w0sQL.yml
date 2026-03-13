@@ -1,0 +1,609 @@
+name: Lupo mannaro
+type: character
+img: systems/dnd5e/tokens/humanoid/Werewolf.webp
+items:
+  - name: Guerriero
+    type: class
+    img: systems/fvtt-warhero/images/icons/elf-helmet.svg
+    system:
+      weapons:
+        short: true
+        long: true
+        twohanded: true
+        shooting: true
+        polearm: true
+        throwing: true
+      armors:
+        light: true
+        medium: true
+        heavy: true
+      shields:
+        light: true
+        medium: true
+        tower: true
+      issecondary: false
+      description: "<p>Il guerriero è un combattente specializzato.\_</p>\n<p>Ha le seguenti abilità di classe:</p>\n<p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.me4o0Q1jTI9uqixB]{Guerriero - Abilità extra}</p>\n<p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.LajbXXsxJABFbhRi]{Guerriero - Addestrato}</p>\n<p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.7zQ3w70pJL8jwoxi]{Guerriero - Armatura}</p>\n<p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.hnxZcfvMqQrhu7i4]{Guerriero - Danno maggiorato}</p>\n<p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.lzPRlzUtE4cj1ODO]{Guerriero - Movimento tattico}</p>\n<p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.Fp7kRGDphiJhdQAd]{Guerriero - Specializzato in guerra}</p>\n<p>@UUID[Compendium.fvtt-warhero.abilita-di-classe.Item.ESzN7Y6vTKlGOj1J]{Guerriero - Specializzazione}</p>"
+    effects: []
+    flags:
+      scene-packer:
+        hash: 3773cedd75707fe7773a89fcf174c5289515842a
+        sourceId: Compendium.world.temp.bFX8dEsIB2tXxLHi
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: VRNswzjcoIOTucZm
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.VRNswzjcoIOTucZm'
+  - name: Guerriero - Abilità extra
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Il personaggio può in fase di creazione del\_ personaggio scegliere un’abilità aggiuntiva</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+        sourceId: Item.XTPKOsLhfK5kM0iF
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: En61tBvMzaGxqqmY
+    sort: 15200000
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.En61tBvMzaGxqqmY'
+  - name: Guerriero - Addestrato
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>\_Il personaggio ottiene un malus di -1 invece di -2 se usa 2 armi.</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+        sourceId: Item.XTPKOsLhfK5kM0iF
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: DNHOLf9rPWfXr5c4
+    sort: 15700000
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.DNHOLf9rPWfXr5c4'
+  - name: Guerriero - Armatura
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Le armature indossate dal personaggio aumentano\_di +2 punti il valore di riduzione del danno</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+        sourceId: Item.XTPKOsLhfK5kM0iF
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: cwjdNcFnRGHYKQiC
+    sort: 15400000
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.cwjdNcFnRGHYKQiC'
+  - name: Guerriero - Danno maggiorato
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio infligge sempre 1d4 danni extra con armi da corpo a
+        corpo</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+        sourceId: Item.XTPKOsLhfK5kM0iF
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: b6l1gSrGyDVFJuBh
+    sort: 15300000
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.b6l1gSrGyDVFJuBh'
+  - name: Guerriero - Movimento tattico
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>Il personaggio può una volta per round fare un movimento di 1 metro. Non utilizza nessuna mossa\_per fare questo spostamento</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+        sourceId: Item.XTPKOsLhfK5kM0iF
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: uBcDz0o7so6tnF1u
+    sort: 15100000
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.uBcDz0o7so6tnF1u'
+  - name: Guerriero - Specializzato in guerra
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>La difesa del personaggio ottiene un\_bonus di +2</p>"
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+        sourceId: Item.XTPKOsLhfK5kM0iF
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: a2KkgEm8ZehnrNQX
+    sort: 14100000
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.a2KkgEm8ZehnrNQX'
+  - name: Guerriero - Specializzazione
+    type: skill
+    img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+    system:
+      raceskill: false
+      classskill: true
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Il personaggio deve scegliere un'arma nella quale otterrà sempre un
+        bonus di +5 punti al tiro per<br />colpire</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: b613de2c82802e76de6d38b77aa4e68c41d74ffd
+        sourceId: Item.XTPKOsLhfK5kM0iF
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: JQqrLzacJYqJtVFZ
+    sort: 14000000
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.JQqrLzacJYqJtVFZ'
+  - name: Artiglio
+    type: weapon
+    img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+    system:
+      weapontype: special
+      damage: 1d8
+      damage2hands: 1d6
+      rollformula: 1d20+5+7
+      damageformula: 1d8
+      cost: 0
+      equipped: false
+      quantity: 1
+      slotused: 0
+      slotlocation: weapon1
+      isidentified: notapplicable
+      magiccharge: notapplicable
+      chargevalue: 0
+      chargevaluemax: 0
+      description: ''
+      isCustomAttackRoll: false
+    effects: []
+    flags:
+      scene-packer:
+        hash: fb5561f9a87d7a7b5e348f838990ae8d1187a90d
+        sourceId: Item.Yu91hdnByUCmadUa
+      core: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: fvtt-warhero
+      systemVersion: '13.40'
+      lastModifiedBy: null
+    folder: null
+    _id: bz0Vd7X46iP0mxMf
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!8TKasmz64m0w0sQL.bz0Vd7X46iP0mxMf'
+_id: 8TKasmz64m0w0sQL
+system:
+  subactors: []
+  biodata:
+    class: ''
+    origin: ''
+    age: 0
+    size: medium
+    weight: ''
+    height: ''
+    hair: ''
+    sex: ''
+    eyes: ''
+    background: ''
+    religion: ''
+    description: ''
+    notes: ''
+    gmnotes: ''
+  statistics:
+    str:
+      label: WH.ui.Strength
+      abbrev: str
+      style: edit
+      hassave: true
+      roll: true
+      save: 3
+      value: 3
+    dex:
+      label: WH.ui.Dexterity
+      abbrev: dex
+      style: edit
+      hassave: true
+      roll: true
+      save: 2
+      value: 2
+    min:
+      label: WH.ui.Mind
+      abbrev: min
+      style: edit
+      hassave: true
+      roll: true
+      save: 1
+      value: 1
+  attributes:
+    hp:
+      label: WH.ui.HitPoints
+      abbrev: hp
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 60
+      value: 60
+    knowledge:
+      label: WH.ui.Knowledge
+      abbrev: knowledge
+      style: edit
+      hasmax: false
+      roll: true
+      max: 0
+      value: 1
+    def:
+      label: WH.ui.Defence
+      abbrev: def
+      style: edit
+      iscombat: true
+      max: 12
+      value: 12
+    txcm:
+      label: WH.ui.Throw2HitM
+      abbrev: txcm
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 2
+    txcr:
+      label: WH.ui.Throw2HitR
+      abbrev: txcr
+      istxc: true
+      style: edit
+      roll: true
+      iscombat: true
+      max: 0
+      value: 2
+    mana:
+      label: WH.ui.Mana
+      abbrev: pm
+      style: edit
+      hasmax: true
+      isheader: true
+      max: 4
+      value: 4
+    ini:
+      label: WH.ui.Initiative
+      abbrev: ini
+      style: edit
+      iscombat: true
+      roll: true
+      max: 0
+      value: 2
+    movearth:
+      label: WH.ui.Movement
+      abbrev: mov
+      style: edit
+      max: 6
+      value: 7
+    movswim:
+      label: WH.ui.MovementSwim
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    movfly:
+      label: WH.ui.MovementFly
+      abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+  secondary:
+    xp:
+      label: WH.ui.XP
+      abbrev: xp
+      islevel: true
+      style: edit
+      value: 0
+      level: 1
+    malusmultiweapon:
+      label: WH.ui.malusmultiweapon
+      abbrev: malusmultiweapon
+      iscombat: true
+      style: edit
+      value: 0
+    drbonus:
+      label: WH.ui.drbonus
+      abbrev: drbonus
+      style: edit
+      iscombat: true
+      value: 0
+    drbonustotal:
+      label: WH.ui.drbonustotal
+      abbrev: drbonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      value: 0
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
+    meleedamagebonus:
+      label: WH.ui.meleedamagebonus
+      abbrev: meleedamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    rangeddamagebonus:
+      label: WH.ui.rangeddamagebonus
+      abbrev: rangeddamagebonus
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonus:
+      label: WH.ui.parrybonus
+      abbrev: parrybonus
+      isparrybonus: true
+      iscombat: true
+      style: edit
+      value: 0
+    parrybonustotal:
+      label: WH.ui.parrybonustotal
+      abbrev: parrybonustotal
+      disabled: true
+      style: edit
+      iscombat: true
+      roll: true
+      value: 0
+    counterspell:
+      label: WH.ui.counterspell
+      stat: min
+      abbrev: counterspell
+      style: edit
+      hasmax: false
+      roll: true
+      max: 1
+      value: 0
+      hasuse: true
+      nbuse: 0
+      maxuse: 0
+    createitem:
+      label: WH.ui.createitem
+      abbrev: createitem
+      style: edit
+      value: 0
+    nblanguage:
+      label: WH.ui.languagesbonus
+      abbrev: nblanguage
+      style: edit
+      disabled: true
+      value: 0
+prototypeToken:
+  name: Lupo mannaro
+  displayName: 0
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: systems/dnd5e/tokens/humanoid/Werewolf.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: attributes.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+effects: []
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766239337735
+  modifiedTime: 1772340564249
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+sort: 400000
+_key: '!actors!8TKasmz64m0w0sQL'

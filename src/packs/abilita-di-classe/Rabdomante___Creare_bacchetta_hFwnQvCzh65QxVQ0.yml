@@ -1,0 +1,41 @@
+name: Rabdomante - Creare bacchetta
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Il personaggio pu&ograve; una volta al giorno creare una bacchetta con 1
+    carica di un potere qualsiasi a sua&nbsp;scelta. Scegliere prima di tirare
+    per capire la difficolt&agrave; di&nbsp;successo. Questo procedimento
+    richiede almeno un ora di&nbsp;lavorazione e a seconda del livello del
+    potere la probabilit&agrave; di<br>successo nella creazione dell'oggetto
+    &egrave; la seguente:<br>● I livello: 80%<br>● II livello: 50%<br>● III
+    livello: 30%<br>● IV livello: 10%</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 6093191791783e08fcdf2b0aa6d63204e29dff92
+    sourceId: Item.2sLPnDM4y4QjNACP
+  core: {}
+_stats:
+  compendiumSource: Compendium.fvtt-warhero.abilita-di-classe.Item.LInXdUDBtyCiQ1AR
+  duplicateSource: null
+  coreVersion: '13.350'
+  systemId: fvtt-warhero
+  systemVersion: 12.0.2
+  createdTime: 1717352948273
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+_id: hFwnQvCzh65QxVQ0
+sort: 4100000
+_key: '!items!hFwnQvCzh65QxVQ0'

@@ -1,0 +1,39 @@
+name: Scudo di legno
+type: shield
+img: icons/equipment/shield/buckler-wooden-boss-steel.webp
+system:
+  shieldtype: light
+  parrybonus: 1
+  equipped: false
+  cost: 14
+  quantity: 1
+  slotused: 1
+  slotlocation: shield
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Uno scudo leggero. Parata:+1 [[/r 1d12+1]]</p>
+effects: []
+flags:
+  scene-packer:
+    hash: f00f96abb7ba70556c6c7dfcb2648786814d4ea7
+    sourceId: Item.vhNLOHjqOio6oaw9
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1680936621280
+  modifiedTime: 1681651153508
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.UIo05YuFC6iAzSED
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: kgGUPyB7774Ferhg
+_key: '!items!kgGUPyB7774Ferhg'

@@ -1,0 +1,42 @@
+name: Verga o bacchetta di legno
+type: equipment
+img: icons/commodities/wood/kindling-stick-grey.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: unknown
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Una verga di legno. Potrebbe essere semplicemente un rametto oppure una
+    @UUID[Compendium.fvtt-warhero.equipaggiamento.Item.HfrAxfv3af0RbI2O]{Bacchetta
+    magica di legno}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 543bc397e994ae889cb93c45e399a1487f259d33
+    sourceId: Item.wJQBp77j6PLDwAgk
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1703655829669
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 4A8Eve8ghSTC3Iog
+sort: 18000000
+_key: '!items!4A8Eve8ghSTC3Iog'

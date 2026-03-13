@@ -1,0 +1,29 @@
+name: Tempo - IV Messaggio
+type: power
+system:
+  level: 4
+  magicschool: Tempo
+  description: >-
+    e' possibile mandare una lettera magica a un qualsiasi alleato che si
+    conosce il quale può rispondere a sua volta, indipendentemente da dove si
+    trovi
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904975
+  modifiedTime: 1743439294600
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: G1D0R27jxq7qkZ69
+folder: null
+sort: 4700000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!G1D0R27jxq7qkZ69'

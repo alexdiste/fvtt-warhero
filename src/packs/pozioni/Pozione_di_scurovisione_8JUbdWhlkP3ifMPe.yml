@@ -1,0 +1,45 @@
+name: Pozione di scurovisione
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 450
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '225'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 450 Mo.</p>
+
+    <p>permette di vedere al buio per l'intera giornata. Aggiungere
+    @Compendium[fvtt-warhero.condizione.cW9PoFgDxKC4UQxk]{Scurovisione} alla
+    scheda</p>
+  price: '450'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 45d5ba9ab2829d9b013ce74773e77091c10d0f02
+    sourceId: Compendium.world.temp.aoo29IMJsHJTm17i
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553293
+  modifiedTime: 1702106249884
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.aoo29IMJsHJTm17i
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 8JUbdWhlkP3ifMPe
+_key: '!items!8JUbdWhlkP3ifMPe'

@@ -1,0 +1,39 @@
+name: Tenda piccola
+type: equipment
+img: icons/environment/settlement/tent.webp
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 2
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Una tenda per una persona&nbsp;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 42526fb9e1abbb309f6fb07c612d4760d593e43a
+    sourceId: Item.Ptcm3g4qV2PRgy9m
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1680861189213
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.tOwZQA9B2DBrKgwa
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 39900000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: rVayixHCn9Ua1FmF
+_key: '!items!rVayixHCn9Ua1FmF'

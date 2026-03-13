@@ -1,0 +1,42 @@
+name: Bacchetta magica di Viaggio - I Levitazione
+type: equipment
+img: icons/weapons/wands/wand-gem-violet.webp
+system:
+  equiptype: ''
+  cost: 1000
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: chargelimited
+  chargevalue: 0
+  chargevaluemax: 1
+  description: >-
+    <p>Contiene cariche di
+    @UUID[Compendium.fvtt-warhero.poteri.Item.j7RjSZH85KRovJKc]{Viaggio - I
+    Levitazione} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 02bcf4daaff616973f6abb0a04278ad50e48cfd9
+    sourceId: Item.Rmk0oCc354wgN371
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1704613833968
+  modifiedTime: 1704614620712
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: jcbljeXJ8wL7hRf9
+sort: 0
+_key: '!items!jcbljeXJ8wL7hRf9'

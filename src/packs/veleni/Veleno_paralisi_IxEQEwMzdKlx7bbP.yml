@@ -1,0 +1,50 @@
+name: Veleno paralisi
+type: poison
+img: icons/consumables/potions/vial-cork-green.webp
+system:
+  cost: 340
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  application: weapon
+  preparecost: ''
+  preparetime: '10'
+  damageroll: '0'
+  durationround: 30
+  savesdc: 15
+  savetype: ignore
+  description: >-
+    <p>Una
+    @UUID[Compendium.fvtt-warhero.equipaggiamento.Item.IqKxYXDyz9MpkF8F]{Boccetta
+    o fiala} piena di veleno.</p>
+
+    <p>[A,I,T] il bersaglio deve effettuare un tiro salvezza su FIS&nbsp; CD 15
+    per negare gli effetti di non poter effettuare nessuna mossa di movimento
+    per i successivi 5 minuti.</p>
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: d51033c757421b11aa8c8e99a7dc7ab162590255
+    sourceId: Item.kIzs8N5LyqGSYDeY
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1702102661032
+  modifiedTime: 1702104358991
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: IxEQEwMzdKlx7bbP
+sort: 0
+_key: '!items!IxEQEwMzdKlx7bbP'

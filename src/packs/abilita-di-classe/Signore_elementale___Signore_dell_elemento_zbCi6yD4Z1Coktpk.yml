@@ -1,0 +1,37 @@
+name: Signore elementale - Signore dell'elemento
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 1
+  description: >-
+    <p>Una volta al giorno il personaggio deve scegliere uno dei seguenti
+    elementi SCOSSA, FUOCO, GELO, ACIDO. questo sar&agrave; il suo elemento,
+    necessario per usare le sue abilit&agrave;</p>
+effects: []
+flags:
+  scene-packer:
+    hash: e8379939e77d54e6b826fd5affb0333bdbc1ab80
+    sourceId: Item.rIcxBp3AaQF3nDLK
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681056288111
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.B5dTLpoAa5HZjedT
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 23800000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: zbCi6yD4Z1Coktpk
+_key: '!items!zbCi6yD4Z1Coktpk'

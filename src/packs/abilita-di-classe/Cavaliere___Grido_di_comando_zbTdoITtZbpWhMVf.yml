@@ -1,0 +1,38 @@
+name: Cavaliere - Grido di comando
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3 + MEN volte al giorno&nbsp;usare una mossa
+    per fare un grido donando cos&igrave; una mossa o di&nbsp;attacco o di
+    movimento a un altro suo alleato in grado di sentirlo.&nbsp;Non &egrave;
+    possibile fare pi&ugrave; di un grido per round</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 54b5ec38b2d1da62d7ab2b4449c7752e6f10312b
+    sourceId: Item.yki2RXkvuiSmpXFQ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: zbTdoITtZbpWhMVf
+sort: 11800000
+_key: '!items!zbTdoITtZbpWhMVf'

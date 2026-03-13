@@ -1,0 +1,30 @@
+name: Costrizione - I Richiamo
+type: power
+system:
+  level: 1
+  magicschool: Costrizione
+  description: >-
+    puoi selezionare un oggetto incustodito o un alleato, fino a fine giornata
+    quando vuoi se il bersaglio è entro 20 metri puoi spostarlo magicamente e
+    farlo apparire adiacente a colui che ha usato questo potere, non è possibile
+    avere più di 3 richiami attivi contemporaneamente
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904813
+  modifiedTime: 1743439294650
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: KhIIZD2xav1wVqem
+folder: null
+sort: 6200000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!KhIIZD2xav1wVqem'

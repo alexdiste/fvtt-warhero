@@ -1,0 +1,56 @@
+name: 19.Indole-Legge
+type: power
+img: systems/fvtt-warhero/images/icons/magic/legge.webp
+system:
+  level: 0
+  magicschool: Indole - Legge
+  description: >-
+    <p>Questa sfera di magia comprende i seguenti poteri (magie):</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.FAUFfMhdebRdKBnR]{Indole -
+    Legge - I Punire il caos}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.lrvqjBpUmos0t4HB]{Indole -
+    Legge - II Di Fronte alla legge}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.vj2MXWRP76IF9gdQ]{Indole -
+    Legge - III Dettame}</p>
+
+    <p>&nbsp;</p>
+
+    <p>E prendendo abilit&agrave; aggiuntiva
+    @Compendium[fvtt-warhero.abilita-aggiuntive.uWN3cMFrYr5tFLcY]{Conoscenza
+    potere di IV livello} anche:</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.dKeIgbWOvb5WyQZ8]{Indole -
+    Legge - IV Cerchio contro il caos}</p>
+
+    <p>@UUID[Compendium.fvtt-warhero.poteri.Item.AM3ATrHNkOsc9dXk]{Indole -
+    Legge - IV Legge suprema}</p>
+
+    <p>&nbsp;</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 10d712a90ca25517cbcaadbf4e0e176a4dc1f019
+    sourceId: Compendium.world.temp.dAT5rjYPoZGTUmrJ
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1681637552541
+  modifiedTime: 1698851177669
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.dAT5rjYPoZGTUmrJ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 4neEb8uAo1FgLnwx
+_key: '!items!4neEb8uAo1FgLnwx'

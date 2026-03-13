@@ -1,0 +1,36 @@
+name: Divoratore di anime - Rito dell' anima
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; effettuare MEN volte al giorno il&nbsp;rituale
+    Rituale del sangue del ritualista</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: f950abd60d6e3e4be074fc4d6ff3c12ca4eee07c
+    sourceId: Item.o3Dned6T2wSuM9fH
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1705338200790
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: k0P9ybJ4Y4TFcgB0
+sort: 4300000
+_key: '!items!k0P9ybJ4Y4TFcgB0'

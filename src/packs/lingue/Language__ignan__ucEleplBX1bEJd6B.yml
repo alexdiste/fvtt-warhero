@@ -1,0 +1,29 @@
+name: Language (ignan)
+type: language
+img: systems/fvtt-warhero/images/icons/spiked-halo.svg
+system:
+  shortdescription: ''
+  description: <p>E' la lingua parlata dagli elementali del fuoco.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: ce408d78b9f02abeaf79a63ae7cefd875974889a
+    sourceId: Item.q2UhDUBhAHCmxLFR
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676717911495
+  modifiedTime: 1743437613717
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.FWYg6sR7ZQOpVEeQ
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 2400000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: ucEleplBX1bEJd6B
+_key: '!items!ucEleplBX1bEJd6B'

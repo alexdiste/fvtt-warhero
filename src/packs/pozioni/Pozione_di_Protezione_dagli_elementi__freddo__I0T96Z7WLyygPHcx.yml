@@ -1,0 +1,42 @@
+name: Pozione di Protezione dagli elementi (freddo)
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 50
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '25'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica</p><p>riduce i danni di questo elemento di 2 per
+    l'intera giornata</p>
+  price: '50'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: 9b40f41f599ff2210f6cdfdfccd3f7776adfff7b
+    sourceId: Compendium.world.temp.gsorHHhw62Wc7Wjn
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553269
+  modifiedTime: 1702106416762
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.gsorHHhw62Wc7Wjn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: I0T96Z7WLyygPHcx
+_key: '!items!I0T96Z7WLyygPHcx'

@@ -1,0 +1,37 @@
+name: Alchimista - E' come se la bevo io
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio ogni volta che fa bere con&nbsp;una sua mossa una pozione
+    ad un alleato adiacente, ottiene anche&nbsp;lui stesso gli effetti della
+    pozione se vuole</p>
+effects: []
+flags:
+  scene-packer:
+    hash: c1147288026634c0dafc9bff35f1c76682ca84cc
+    sourceId: Item.JeFlr2cHSglDL7BW
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Ev96lW4rKC77CBBr
+sort: 12900000
+_key: '!items!Ev96lW4rKC77CBBr'

@@ -1,0 +1,44 @@
+name: Lanterna schermabile
+type: equipment
+img: icons/sundries/lights/lantern-iron-yellow.webp
+system:
+  equiptype: ''
+  cost: 7
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p data-pm-slice="1 1 []">Una lanterna schermabile proietta luce in un
+    raggio di 6 quadretti . Una volta accesa, arde per 6 ore consumando 1
+    ampolla (0,5 litri}di olio. Con un'azione di movimento , un personaggio
+    pu&ograve; abbassare il cappuccio della lanterna, riducendo la luce
+    proiettata a luce fioca in un raggio di 1 quadretto</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 0ff34ea4f5d044953a87de412913da2c21914ec2
+    sourceId: Item.qauuXEzocAcJws9R
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681052416611
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.qauuXEzocAcJws9R
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 36600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: 27SKYMHdTR7gleNd
+_key: '!items!27SKYMHdTR7gleNd'

@@ -1,0 +1,34 @@
+name: Tiro salvezza migliorato
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: "<p><strong>Beneficio:</strong> Ogni volta che si deve effettuare un tiro salvezza\_sulla statistica ( FIS, IST, MEN ) scelta al momento della selezione di questa abilità, si ottiene un bonus di +3<br /><strong>Speciale</strong>: E’ possibile prendere questa abilità una volta per ogni statistica</p>"
+  maxuseFormula: '1'
+effects: []
+folder: null
+flags:
+  scene-packer:
+    hash: 201acba9bb5d5a870ca9cd01f9fd3149c97f0da3
+    sourceId: Item.uk4hefw8SPXuCVgj
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772775189342
+  modifiedTime: 1772775189342
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: mMWYy90jYrMaaxE6
+sort: 0
+_key: '!items!mMWYy90jYrMaaxE6'

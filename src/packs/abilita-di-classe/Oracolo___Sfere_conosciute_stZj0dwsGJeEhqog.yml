@@ -1,0 +1,46 @@
+name: Oracolo - Sfere conosciute
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Sfere conosciute da anche la possibilit&agrave; di lanciare poteri da
+    pergamena</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.cs6Y0TWt6wKuvQ4w]{02.Conoscenze}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.U8pd1S84rsZEjpGV]{04.Divinazione}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.ZbrlMRXgscyeEZY5]{11.Fato}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.IUyzU68wsbiigBsZ]{22.Luce}</p>
+
+    <p>@Compendium[fvtt-warhero.sfere-di-magia.BlX0zq1rmyqA9CA5]{32.Visione}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: db33a6efba1f5d62bd8c1ffba7b86b97ca1f31fe
+    sourceId: Item.rP1MmFFpTQi9WCiz
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1676806380081
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.WuXZEmeSH7EeyVxn
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 23700000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: stZj0dwsGJeEhqog
+_key: '!items!stZj0dwsGJeEhqog'

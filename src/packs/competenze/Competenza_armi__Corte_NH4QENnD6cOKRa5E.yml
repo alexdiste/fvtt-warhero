@@ -1,0 +1,31 @@
+name: 'Competenza armi: Corte'
+type: competency
+img: systems/fvtt-warhero/images/icons/battle-gear.svg
+system:
+  description: >-
+    <p data-pm-slice="1 1 []">Il personaggio &eacute; competente con le armi
+    corte. Le armi corte infliggono [[/r 1d6 #+fisico+ bonus ai danni in
+    mischia]] + il valore di fisco + eventuali bonus per i danni in mischia.</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 966ebd1535f9dbda4f1d29e73ba4ade763de6ba9
+    sourceId: Item.KqKt3kKD5rcWoj65
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1680857153518
+  modifiedTime: 1743437037162
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.KqKt3kKD5rcWoj65
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: NH4QENnD6cOKRa5E
+_key: '!items!NH4QENnD6cOKRa5E'

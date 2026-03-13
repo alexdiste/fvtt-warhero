@@ -1,0 +1,37 @@
+name: Taumaturgo - Salto del destino
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: false
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; 3+FIS volte al giorno spostare in maniera
+    magica un proprio alleato entro 20 metri da lui ,e posizionarlo adiacente a
+    se stesso</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 15f9e72772885c842bd530f5041eb4e27e7e8650
+    sourceId: Item.MMLdHE0n4865Vvgc
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.MMLdHE0n4865Vvgc
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 23200000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: rM2NoVa5O5Aw21Mx
+_key: '!items!rM2NoVa5O5Aw21Mx'

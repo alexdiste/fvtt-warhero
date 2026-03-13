@@ -1,0 +1,24 @@
+name: Creazione personaggio livello 1 (stats)
+type: script
+command: "//Macro per la generazione di PG/PNG. Parte 1. Statistiche\nif (!token){\n\tChatMessage.create({\n\tuser : game.user._id,\n\tcontent:\"Devi selezionare un token\"\n\t});\n\treturn;\n\n}else{\n\tconst fisico= token.actor.system.statistics.str.value;\n\tconst istinto= token.actor.system.statistics.dex.value;\n\tconst mente= token.actor.system.statistics.min.value;\n\t\n\tif (fisico!=0 || istinto!=0 || mente!=0){\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"Attenzione. le stats non sono a zero. Il personaggiomante si può usare solo per nuovi pg/png\"\n\t\t});\n\t\treturn;\n\t}else{\t\t\n\t\t/*Scelta statistiche*/\n\t\tcontent = `<form><div class=\"form-group\"><label>Statistiche (FIS-IST-MEN):</label><div class=\"form-fields\"><select autofocus><option value=\"0-1-4\">0-1-4</option>\n\t\t<option value=\"0-2-3\">0-2-3</option>\n\t\t<option value=\"0-3-2\">0-3-2</option>\n\t\t<option value=\"0-4-1\">0-4-1</option>\n\t\t<option value=\"1-0-4\">1-0-4</option>\n\t\t<option value=\"1-1-3\">1-1-3</option>\n\t\t<option value=\"1-2-2\">1-2-2</option>\n\t\t<option value=\"1-3-1\">1-3-1</option>\n\t\t<option value=\"1-4-0\">1-4-0</option>\n\t\t<option value=\"2-0-3\">2-0-3</option>\n\t\t<option value=\"2-1-2\">2-1-2</option>\n\t\t<option value=\"2-2-1\">2-2-1</option>\n\t\t<option value=\"2-3-0\">2-3-0</option>\n\t\t<option value=\"3-0-2\">3-0-2</option>\n\t\t<option value=\"3-1-1\">3-1-1</option>\n\t\t<option value=\"3-2-0\">3-2-0</option>\n\t\t<option value=\"4-0-1\">4-0-1</option>\n\t\t<option value=\"4-1-0\">4-1-0</option></select></div></div></form>`;\n\t\t\n\t\tconst statistiche= await Dialog.prompt({\n\t\ttitle: \"Statistiche\",\n\t\tlabel: \"OK\",\n\t\trejectClose: false,\n\t\tcontent,\n\t\tcallback: (html) => html[0].querySelector(\"select\").value\n\t\t});\n\t\t\n\t\tvar parti = statistiche.split(\"-\");\n\t\t//console.log(parti);\n\t\tvar fis = parti[0];\n\t\tvar ist = parti[1];\n\t\tvar men = parti[2];\n\t\t//Aggiorna stats\n\t\tawait token.actor.update({\"system.statistics.str.value\": fis});\n\t\tawait token.actor.update({\"system.statistics.str.save\": fis});\n\t\t//Calcola PF\n\t\tpf=30+fis*10;\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"PF:\" + pf\n\t\t});\n\t\tawait token.actor.update({\"system.attributes.hp.max\": pf });\n\t\tawait token.actor.update({\"system.attributes.hp.value\": pf });\n\t\n\t\tawait token.actor.update({\"system.statistics.dex.value\": ist});\n\t\tawait token.actor.update({\"system.statistics.dex.save\": ist});\n\t\t//Calcola difesa, iniziativa e tiro per colpire\n\t\tdif=12+Number(ist);\t\t\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"Difesa:\" + dif + \", Bonus ai txc (sia mischia che distanza) e iniziativa totale:\" + ist\n\t\t});\n\t\tawait token.actor.update({\"system.attributes.def.max\": dif});\t\t\n\t\tawait token.actor.update({\"system.attributes.def.value\": dif});\n\t\tawait token.actor.update({\"system.attributes.ini.value\": ist});\n\t\tawait token.actor.update({\"system.attributes.txcm.value\": ist});\n\t\tawait token.actor.update({\"system.attributes.txcr.value\": ist});\n\t\t\n\t\tawait token.actor.update({\"system.statistics.min.value\": men});\n\t\tawait token.actor.update({\"system.statistics.min.save\": men});\n\t\tawait token.actor.update({\"system.attributes.knowledge.value\": men});\n\t\t//Calcola linguaggi bonus e mana\n\t\tmana=3+Number(men);\n\t\tawait token.actor.update({\"system.attributes.mana.max\": mana});\n\t\tawait token.actor.update({\"system.attributes.mana.value\": mana});\n\t\tlinguaggi_bonus=Math.floor(men/2);\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"Hai \"+mana+\" mana e \"+ linguaggi_bonus + \" linguaggi da scegliere\"\n\t\t});\n\t}\n}"
+img: systems/fvtt-warhero/images/icons/achievement.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.26'
+  createdTime: 1760985760995
+  modifiedTime: 1772303909256
+  lastModifiedBy: guOwSDi78TuzUGFU
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: qNiGkyUwXyxO2Vl6
+sort: 600000
+_key: '!macros!qNiGkyUwXyxO2Vl6'

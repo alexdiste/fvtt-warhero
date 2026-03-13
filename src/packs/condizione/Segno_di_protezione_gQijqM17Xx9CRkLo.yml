@@ -1,0 +1,41 @@
+name: Segno di protezione
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: temporary
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: Ignori il primo danno subito
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>l bersaglio per il prossimo scontro pu&ograve; ignorare il primo danno
+    che riceve e il segno di protezione<br>scompare, indipendentemente dal
+    quantitativo del danno</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 9c5de557941a8a20e5fdb9bad91eacb58d8f4671
+    sourceId: Item.HJRAwr6OVi4pJUKm
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681506477274
+  modifiedTime: 1743437151532
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.HJRAwr6OVi4pJUKm
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 7000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: gQijqM17Xx9CRkLo
+_key: '!items!gQijqM17Xx9CRkLo'

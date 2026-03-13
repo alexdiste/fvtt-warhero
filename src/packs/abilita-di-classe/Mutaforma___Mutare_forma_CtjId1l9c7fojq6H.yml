@@ -1,0 +1,54 @@
+name: Mutaforma - Mutare forma
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; cambiare forma a suo<br>piacimento come azione,
+    e pu&ograve; assumere una delle seguenti<br>forme:</p>
+
+    <ul>
+
+    <li>Lupo : +1 FIS, +2 IST morso 2d4, artiglio 1d8.</li>
+
+    <li>Foca : nessuna prova di nuotare, scurovisione, coda 1d8.</li>
+
+    <li>Aquila: volare, assaltare, becco 2d4.</li>
+
+    <li>Orso : +2 FIS,+1 IST, artiglio 2d6, morso 1d10.</li>
+
+    </ul>
+
+    <p><br>la trasformazione fa acquistare al mutaforma i bonus alle statistiche
+    e gli attacchi della nuova forma ma non gli consente di lanciare poteri.
+    Usare entrambi i tipi di attacchi provoca gli stessi malus di usare due
+    armi. L'equipaggiamento si fonde con il manto dell'animale. Pu&ograve;
+    continuare a parlare tutte le lingue che conosce</p>
+effects: []
+flags:
+  scene-packer:
+    hash: fb3d05ec248afa7b2ad8b8c903ef508cfcac1cd6
+    sourceId: Item.3hLSHi7mo0zQkI7X
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681053280112
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.3hLSHi7mo0zQkI7X
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 19600000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: CtjId1l9c7fojq6H
+_key: '!items!CtjId1l9c7fojq6H'

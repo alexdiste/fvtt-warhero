@@ -1,0 +1,36 @@
+name: Nutrimento (al giorno)
+type: equipment
+img: icons/consumables/grains/sack-rice-open-brown.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p data-pm-slice="1 1 []">Nutrimento per animali per un giorno</p>
+effects: []
+flags:
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1676707931929
+  modifiedTime: 1702198248971
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.yFM7bYJ4U5R5cZeX
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 500000
+ownership:
+  default: 0
+  0IgQUthe3Nk70WYW: 3
+_id: ORscJtfppQrdFCXc
+_key: '!items!ORscJtfppQrdFCXc'

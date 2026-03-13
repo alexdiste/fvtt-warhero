@@ -1,0 +1,40 @@
+name: Ladro - Furtivo
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve;, fuori da un combattimento, cercare di
+    nascondersi lanciando 1d10 e ottenendo un&nbsp;risultato di 4+, mentre in
+    combattimento con un risultato di 7+.&nbsp;Per nascondersi &egrave;
+    necessario avere un riparo o qualcosa che&nbsp;nasconda la propria figura.
+    Questa mossa si considera un&nbsp;movimento
+    @Compendium[fvtt-warhero.macro.cQ0flFxkojKn8EZQ]{Furtivo}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: edc29689f22996f13339dcb377a1ea83bea3b4e8
+    sourceId: Item.2S8cLhWHSWqS8woX
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: Ot2Axsurtz2xo8Q4
+sort: 14500000
+_key: '!items!Ot2Axsurtz2xo8Q4'

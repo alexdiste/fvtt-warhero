@@ -1,0 +1,36 @@
+name: Chierico - Donazione (+2 mana)
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio in fase di creazione ottiene un&nbsp;bonus di 2 punti mana
+    per i suoi poteri</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 8c00f70159b90db3a2f4ba0ae9ce7b5b7e16570e
+    sourceId: Item.WZCIftE31r0iQ9wP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681047468768
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: yOt67STTPbLVhXwD
+sort: 12500000
+_key: '!items!yOt67STTPbLVhXwD'

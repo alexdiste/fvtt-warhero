@@ -1,0 +1,43 @@
+name: Ritardare l'azione
+type: condition
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  shortdescription: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+  description: >-
+    <p>&egrave; possibile posticipare la propria azione. In tal caso, la tua INI
+    assume un valore compreso fra quello del personaggio che ti ha preceduto e
+    quello del giocatore successivo</p>
+  quantity: '1'
+  price: '0'
+effects: []
+flags:
+  scene-packer:
+    hash: 90ef88af187dc0188ff444c9cb07c1966744d0e9
+    sourceId: Compendium.world.temp.L66fQruRusiTWbNB
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 10.0.55
+  coreVersion: '13.341'
+  createdTime: 1681637553328
+  modifiedTime: 1743437709768
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Compendium.world.temp.L66fQruRusiTWbNB
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 0
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: o4M35mSbrBd8tefg
+_key: '!items!o4M35mSbrBd8tefg'

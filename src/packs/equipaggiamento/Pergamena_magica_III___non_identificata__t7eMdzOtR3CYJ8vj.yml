@@ -1,0 +1,39 @@
+name: Pergamena magica III  (non identificata)
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 900
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'no'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Contiene un potere di terzo livello</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 4b899722099f97b7c0dbd9c2b257ba64c610bb66
+    sourceId: Item.m1Ej87VVPGahnRT1
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681057359950
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Item.1v2dGBahf3OMXhu5
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 40000000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: t7eMdzOtR3CYJ8vj
+_key: '!items!t7eMdzOtR3CYJ8vj'

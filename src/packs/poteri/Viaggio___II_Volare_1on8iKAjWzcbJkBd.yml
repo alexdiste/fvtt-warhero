@@ -1,0 +1,30 @@
+name: Viaggio - II Volare
+type: power
+system:
+  level: 2
+  magicschool: Viaggio
+  description: >-
+    <p>permette al bersaglio di volare per un ora alla normale velocit&agrave;
+    di movimento. Aggiungere
+    @Compendium[fvtt-warhero.condizione.n2DNGGg0qwKEWuGX]{Volante} alla
+    scheda</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904987
+  modifiedTime: 1743439294450
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: 1on8iKAjWzcbJkBd
+folder: null
+sort: 800000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!1on8iKAjWzcbJkBd'

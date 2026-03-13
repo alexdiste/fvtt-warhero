@@ -1,0 +1,43 @@
+name: Soffio
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: special
+  damage: 2d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: 10d6
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: '<p>[[/r 10d6 #acido]] da acido CD 16 IST per dimezzare</p>'
+  isCustomAttackRoll: false
+effects: []
+flags:
+  scene-packer:
+    hash: 412f33d41bd202a2d133f76233df14aea3e0c385
+    sourceId: Item.Dm5U165U9bo3ENrV
+  core: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  createdTime: 1766234019103
+  modifiedTime: 1766234019103
+  lastModifiedBy: uzeu86bhmL5CiHhN
+folder: null
+ownership:
+  default: 0
+  uzeu86bhmL5CiHhN: 3
+_id: zZsYwV9duSCSCSXA
+sort: 0
+_key: '!items!zZsYwV9duSCSCSXA'

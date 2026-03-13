@@ -1,0 +1,37 @@
+name: 'Abilità razziale elfo scuro: Linguaggi extra'
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: true
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 5
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>A livello 1 e 7 un elfo oscuro prende un linguagio extra
+    &nbsp;@UUID[Compendium.fvtt-warhero.lingue.lteyi47NZn7x4Umd]{Language (da
+    scegliere)}</p>
+effects: []
+flags:
+  scene-packer:
+    hash: 20cacfe03afa13ac2d47891113c1f5c3a65a679e
+    sourceId: Item.Fo7p2b6JHkNEhJ2S
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681047908343
+  modifiedTime: 1743437123517
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: aNwyNZxWAuFhhy7k
+sort: 400000
+_key: '!items!aNwyNZxWAuFhhy7k'

@@ -1,0 +1,42 @@
+name: Pungiglione
+type: weapon
+img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
+system:
+  weapontype: short
+  damage: 1d6
+  damage2hands: 1d6
+  rollformula: ''
+  damageformula: ''
+  cost: 0
+  equipped: false
+  quantity: 1
+  slotused: 0
+  slotlocation: weapon1
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  scene-packer:
+    hash: a4dc7724ebc39bf8b9971980ce0227b1ed02725a
+    sourceId: Item.3VT1PPlhlZylvwUi
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681573811492
+  modifiedTime: 1743436810391
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: Item.3VT1PPlhlZylvwUi
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 1100000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: a6wdfj4i3Io7Vqwx
+_key: '!items!a6wdfj4i3Io7Vqwx'

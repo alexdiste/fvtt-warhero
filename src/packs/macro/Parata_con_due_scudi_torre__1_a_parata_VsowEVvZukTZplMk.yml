@@ -1,0 +1,27 @@
+name: Parata con due scudi torre +1 a parata
+type: chat
+author: guOwSDi78TuzUGFU
+img: systems/fvtt-warhero/images/icons/attached-shield.svg
+scope: global
+command: >-
+  /roll {1d12+6,1d12+6} #Parata con due scudi torre +1 a parata Con 12 o più
+  pari
+folder: null
+ownership:
+  default: 0
+  HUfxIdhdvsgYTpQ3: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '14.46'
+  createdTime: 1772339520333
+  modifiedTime: 1772339520333
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: VsowEVvZukTZplMk
+sort: 0
+_key: '!macros!VsowEVvZukTZplMk'

@@ -1,0 +1,37 @@
+name: Negromante - Servitore
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio pu&ograve; lanciare a suo piacimento il potere
+    @Compendium[fvtt-warhero.poteri.x2Wn2yyZzfuS67r5]{Evocazione - Non Morte - I
+    Evoca scheletro}</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 6d999a7498ed0dbb9ea4c5042aabf5755c4959c6
+    sourceId: Item.wuhlc4QXNgIzIBKG
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1704217302127
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Zy5Cs94m3O7zocIZ
+sort: 8500000
+_key: '!items!Zy5Cs94m3O7zocIZ'

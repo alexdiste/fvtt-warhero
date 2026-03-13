@@ -1,0 +1,24 @@
+name: Dormire
+type: script
+command: "if (!token){\n\n\tChatMessage.create({\n\tuser : game.user._id,\n\tcontent:\"Devi selezionare un token per poter dormire\"\n\t});\n\t\n}else{\n\tconst manamax= token.actor.system.attributes.mana.max;\n\tconst hpmax= token.actor.system.attributes.hp.max;\n\tlet nskill = 0;\n\n\tactor.items.forEach(it => { if (it.type == 'skill') {\n\t\tif(!it.system.unlimited){\n\t\t\t//update item currentuse bring to 0\n\t\t\tactor.items.get(it.id).update({\"system.currentuse\": 0});\n\t\t}\n\t}\n\t})\n\n\tawait token.actor.update({\"system.attributes.mana.value\": manamax });\n\tawait token.actor.update({\"system.attributes.hp.value\": hpmax });\n\tawait token.actor.update({\"system.secondary.counterspell.nbuse\": 0}); //resetta usi di contropotere\n\n\tChatMessage.create({\n\tuser : game.user._id,\n\tcontent:token.actor.name+\" ha dormito recuperando tutti i PF, tutto il mana, tutti gli usi di contropotere e tutti gli usi delle abilità. Ricordati di controllare se hai già mangiato questo giorno o no, in caso negativo ricordati di scalare una razione\"\n\t});\n}"
+img: systems/fvtt-warhero/images/icons/night-sleep.svg
+author: lXFgtDDsvLskIOGw
+scope: global
+folder: null
+ownership:
+  default: 2
+  lXFgtDDsvLskIOGw: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.21'
+  createdTime: 1759988596189
+  modifiedTime: 1772303909256
+  lastModifiedBy: guOwSDi78TuzUGFU
+_id: nV10m8zd8GpIh57w
+sort: 700000
+_key: '!macros!nV10m8zd8GpIh57w'

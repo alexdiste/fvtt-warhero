@@ -1,0 +1,40 @@
+name: Carta (Foglio)
+type: equipment
+img: icons/sundries/documents/document-bound-white.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Un foglio di carta</p>
+  price: '2'
+effects: []
+flags:
+  scene-packer:
+    hash: 43f4aecad9d21663b1f85db730a146a70569b43d
+    sourceId: Compendium.world.temp.MBVp0mcnTWOcjWca
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553137
+  modifiedTime: 1704615998481
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.MBVp0mcnTWOcjWca
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 40300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: yO2dEs0T4EIb4x5W
+_key: '!items!yO2dEs0T4EIb4x5W'

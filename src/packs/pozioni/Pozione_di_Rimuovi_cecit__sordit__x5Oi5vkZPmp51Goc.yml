@@ -1,0 +1,46 @@
+name: Pozione di Rimuovi cecità/sordità
+type: potion
+img: icons/consumables/potions/bottle-round-corked-blue.webp
+system:
+  cost: 120
+  quantity: 1
+  slotused: 1
+  slotlocation: backpack
+  isidentified: 'yes'
+  alchemycost: '60'
+  preparetime: '10'
+  durationround: 0
+  description: >-
+    <p>Una pozione alchemica. Costo: 120 Mo</p>
+
+    <p>rimuovere le condizioni
+    @Compendium[fvtt-warhero.condizione.RnIun3PgiiNSPMTJ]{Accecato} e
+    @Compendium[fvtt-warhero.condizione.XpANEffiABHRigl0]{Sordo} dal
+    bersaglio</p>
+  price: '120'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+effects: []
+flags:
+  scene-packer:
+    hash: e23e8b7276f8902fbed7ec01afc3e8f2c533a01c
+    sourceId: Compendium.world.temp.W5oQNkTH4Vd1VeiN
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553284
+  modifiedTime: 1702106320011
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.W5oQNkTH4Vd1VeiN
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 3500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: x5Oi5vkZPmp51Goc
+_key: '!items!x5Oi5vkZPmp51Goc'

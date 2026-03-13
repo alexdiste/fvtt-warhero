@@ -1,0 +1,29 @@
+name: Rune - II Segno di protezione
+type: power
+system:
+  level: 2
+  magicschool: Rune
+  description: >-
+    il bersaglio può ignorare i danni inflitti dal primo colpo ricevuto in
+    seguito all'incantesimo. il segno scompare all'alba del giorno successivo se
+    non viene scaricato prima.
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.1.1
+  coreVersion: '13.341'
+  createdTime: 1675877904968
+  modifiedTime: 1743439294922
+  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: vDxv1Amvg7xs2cM4
+folder: null
+sort: 14300000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!vDxv1Amvg7xs2cM4'

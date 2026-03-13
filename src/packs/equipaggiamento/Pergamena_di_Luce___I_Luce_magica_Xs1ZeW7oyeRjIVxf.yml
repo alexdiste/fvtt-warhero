@@ -1,0 +1,41 @@
+name: Pergamena di Luce - I Luce magica
+type: equipment
+img: icons/sundries/scrolls/scroll-bound-orange-tan.webp
+system:
+  equiptype: ''
+  cost: 100
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: 'yes'
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: >-
+    <p>Contiene @UUID[Compendium.fvtt-warhero.poteri.Item.O6FhPQp1rV8YaJQA]{Luce
+    - I Luce magica} (potere di 1 livello)</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: 8911b078420809380a8b518f4b128223cf4d5c4f
+    sourceId: Item.KW2RGvS8cjC95L71
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1698913448040
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: Xs1ZeW7oyeRjIVxf
+sort: 24200000
+_key: '!items!Xs1ZeW7oyeRjIVxf'

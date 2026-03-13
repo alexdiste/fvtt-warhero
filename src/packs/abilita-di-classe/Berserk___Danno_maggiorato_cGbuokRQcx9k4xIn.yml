@@ -1,0 +1,37 @@
+name: Berserk - Danno maggiorato
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 3
+  description: >-
+    <p>Il personaggio aggiunge 1d6 al danno. Mettere la condizione
+    @UUID[Compendium.fvtt-warhero.condizione.Item.8gyLqJTkFMlm5deZ]{Danno
+    maggiorato berserk (+1d6 ai danni)} sul pg</p>
+effects: []
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+flags:
+  scene-packer:
+    hash: a5523ec498d630ae2ecc188a6e5a4d60e92d5736
+    sourceId: Item.ngopU9UozKadQWNj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1701438880006
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: cGbuokRQcx9k4xIn
+sort: 13600000
+_key: '!items!cGbuokRQcx9k4xIn'

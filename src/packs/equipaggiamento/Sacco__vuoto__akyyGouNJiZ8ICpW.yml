@@ -1,0 +1,40 @@
+name: Sacco (vuoto)
+type: equipment
+img: icons/containers/bags/sack-cloth-heavy-brown.webp
+system:
+  equiptype: ''
+  cost: 0
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: unknown
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: <p>Una sacco che pu� ospitare fino a 25 kg di patate/ grano o mangime</p>
+  price: '1'
+effects: []
+flags:
+  scene-packer:
+    hash: 75b622e1e5aaaf7ba4b9dd6b2b2ee1475ffcbda5
+    sourceId: Compendium.world.temp.yLPIoE2hV6ntBl9f
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.341'
+  createdTime: 1681637553195
+  modifiedTime: 1704614592254
+  lastModifiedBy: vvRutjambw1JfPoO
+  compendiumSource: Compendium.world.temp.yLPIoE2hV6ntBl9f
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 38300000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: akyyGouNJiZ8ICpW
+_key: '!items!akyyGouNJiZ8ICpW'

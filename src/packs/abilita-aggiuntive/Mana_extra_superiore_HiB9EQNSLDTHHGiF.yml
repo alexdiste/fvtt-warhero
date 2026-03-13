@@ -1,0 +1,37 @@
+name: Mana extra superiore
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: false
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  description: >-
+    <p><strong>Prerequisito: </strong>Mana extra migliorato<br
+    /><strong>Beneficio: </strong>il personaggio ottiene un bonus ulteriore di
+    +4 al suo mana giornaliero</p>
+  maxuseFormula: '1'
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    sourceId: Item.XjPYlTVfwkaGrcCx
+    hash: 8c6088d0548d7c9066e7a199cec4b8dbe1d31d72
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: fvtt-warhero
+  systemVersion: '13.52'
+  createdTime: 1772775008569
+  modifiedTime: 1772775180057
+  lastModifiedBy: guOwSDi78TuzUGFU
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+_id: HiB9EQNSLDTHHGiF
+sort: 1700000
+_key: '!items!HiB9EQNSLDTHHGiF'

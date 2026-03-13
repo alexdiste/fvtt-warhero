@@ -1,0 +1,28 @@
+name: Elementale - Fuoco - I Raggio rovente
+type: power
+system:
+  level: 1
+  magicschool: Elementale - Fuoco
+  description: >-
+    <p>il bersaglio subisce [[/r 4d4+4 #fuoco]] danni da fuoco. CD 12, IST,
+    dimezzare oppure ottiene una riduzione di 5 dai danni da gelo</p>
+img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+effects: []
+flags: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: '13.40'
+  coreVersion: '13.350'
+  createdTime: 1675877904835
+  modifiedTime: 1762672878693
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_id: CLp5TRPccBPANHUe
+folder: null
+sort: 3200000
+ownership:
+  default: 0
+  rDR9x9ZA2osHkrld: 3
+_key: '!items!CLp5TRPccBPANHUe'

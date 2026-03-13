@@ -1,0 +1,38 @@
+name: Samurai - Spirito nell arma
+type: skill
+img: systems/fvtt-warhero/images/icons/deadly-strike.svg
+system:
+  raceskill: false
+  classskill: true
+  unlimited: true
+  acquiredatlevel: 0
+  currentuse: 0
+  maxuse: 0
+  description: >-
+    <p>Il personaggio pu&ograve; legare il proprio spirito nell'arma e fornire
+    cos&igrave; un bonus pari a MEN al TxC e al Danno con l'arma legata.
+    Pu&ograve; decidere di sostituire tale arma ma questa procedura richiede una
+    meditazione di 8 ore</p>
+effects: []
+flags:
+  scene-packer:
+    hash: eac5230fb795ee130871571da6625e8cd4aa9de0
+    sourceId: Item.xP3tanwKg3lTJgMP
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.350'
+  createdTime: 1681049404203
+  modifiedTime: 1762007338087
+  lastModifiedBy: guOwSDi78TuzUGFU
+  compendiumSource: Item.UmIWgIdmu0hreCkS
+  duplicateSource: null
+  exportSource: null
+folder: null
+sort: 21500000
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: aXXYe2ss0xGl8K3E
+_key: '!items!aXXYe2ss0xGl8K3E'

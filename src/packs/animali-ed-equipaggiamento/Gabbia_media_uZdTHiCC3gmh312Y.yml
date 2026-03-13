@@ -1,0 +1,39 @@
+name: Gabbia media
+type: equipment
+img: systems/fvtt-warhero/images/icons/cage.svg
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+flags:
+  core: {}
+  scene-packer:
+    hash: becb5c9952ce81d25bcf17d92a8c2281b536c9df
+    sourceId: Item.J5z8GAyjLM6yUWYI
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 11.2.1
+  coreVersion: '13.344'
+  createdTime: 1676707874667
+  modifiedTime: 1749220155766
+  lastModifiedBy: DWSAilUm78tyflgW
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+ownership:
+  default: 0
+  vvRutjambw1JfPoO: 3
+_id: uZdTHiCC3gmh312Y
+sort: 100000
+_key: '!items!uZdTHiCC3gmh312Y'
