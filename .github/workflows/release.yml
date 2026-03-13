@@ -23,33 +23,40 @@ jobs:
           echo "version_to_write=$VERSION_NUMBER" >> $GITHUB_OUTPUT
 
           if [[ "$RAW_TAG" == s* ]]; then
-            # --- LOGICA STABILE (Solo se il tag inizia con 's') ---
             echo "is_beta=false" >> $GITHUB_OUTPUT
             echo "zip_name=fvtt-warhero.zip" >> $GITHUB_OUTPUT
             echo "manifest_url=https://github.com/alexdiste/fvtt-warhero/releases/latest/download/system.json" >> $GITHUB_OUTPUT
             echo "download_url=https://github.com/alexdiste/fvtt-warhero/releases/latest/download/fvtt-warhero.zip" >> $GITHUB_OUTPUT
-            echo "TIPO: STABILE"
           else
-            # --- LOGICA PRERELEASE (Per tag 'v' o qualsiasi altro) ---
             echo "is_beta=true" >> $GITHUB_OUTPUT
             echo "zip_name=fvtt-warhero-$VERSION_NUMBER.zip" >> $GITHUB_OUTPUT
             echo "manifest_url=https://github.com/alexdiste/fvtt-warhero/releases/download/$RAW_TAG/system.json" >> $GITHUB_OUTPUT
             echo "download_url=https://github.com/alexdiste/fvtt-warhero/releases/download/$RAW_TAG/fvtt-warhero-$VERSION_NUMBER.zip" >> $GITHUB_OUTPUT
-            echo "TIPO: PRERELEASE"
           fi
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Foundry VTT CLI
+        run: npm install -g @foundryvtt/foundryvtt-cli
+
+      - name: Compile Packs
+        # Questo comando compila i sorgenti in 'packs/' partendo da 'src/packs/'
+        run: fvtt package compile --id fvtt-warhero
 
       - name: Update system.json with sed
         run: |
-          # Aggiorna versione, manifest e download nel file system.json
           sed -i 's/"version":\s*".*"/"version": "${{ steps.vars.outputs.version_to_write }}"/' system.json
           sed -i 's|"manifest":\s*".*"|"manifest": "${{ steps.vars.outputs.manifest_url }}"|' system.json
           sed -i 's|"download":\s*".*"|"download": "${{ steps.vars.outputs.download_url }}"|' system.json
 
       - name: Create Clean Zip
         run: |
-          # Esclude file sorgente, documentazione e file di sistema/nascosti
+          # Escludiamo src/ e src/packs/ perché vogliamo solo i file compilati in packs/
           zip -r ${{ steps.vars.outputs.zip_name }} . \
-          -x ".*" "*/.*" "scripts/*" "src/*" "packs/_source/*" \
+          -x ".*" "*/.*" "scripts/*" "src/**" "src/*" \
           -x "package.json" "fvtt-warhero*.zip" "docs/*" "changelog.md" \
           -x ".github/*" ".git/*"
 
