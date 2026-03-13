@@ -44,7 +44,7 @@ jobs:
           mkdir -p $HOME/.foundryvtt-cli
           fvtt configure set dataPath $GITHUB_WORKSPACE
           echo "data path attuale:"
-          fvvtt configure get dataPath  
+          fvtt configure get dataPath  
           mkdir -p ./packs
           
           for dir in ./src/packs/*/ ; do
