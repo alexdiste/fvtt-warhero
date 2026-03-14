@@ -43,30 +43,6 @@ export class RaceData extends foundry.abstract.TypeDataModel {
         hint: "WH.ui.languages.hint"
       }),
 
-      attributebonus1: new fields.StringField({
-        initial: "",
-        required: false,
-        blank: true,
-        label: "WH.ui.attributebonus1",
-        hint: "WH.ui.attributebonus1.hint"
-      }),
-
-      attributebonus4: new fields.StringField({
-        initial: "",
-        required: false,
-        blank: true,
-        label: "WH.ui.attributebonus4",
-        hint: "WH.ui.attributebonus4.hint"
-      }),
-
-      attributebonus8: new fields.StringField({
-        initial: "",
-        required: false,
-        blank: true,
-        label: "WH.ui.attributebonus8",
-        hint: "WH.ui.attributebonus8.hint"
-      }),
-
       // Common class/race template properties
       weapons: new fields.SchemaField({
         short: new fields.BooleanField({
@@ -166,9 +142,6 @@ export class RaceData extends foundry.abstract.TypeDataModel {
 
     // Race-specific properties
     this.hasLanguages = this.languages && this.languages.trim() !== "";
-    this.hasLevel1Bonus = this.attributebonus1 && this.attributebonus1.trim() !== "";
-    this.hasLevel4Bonus = this.attributebonus4 && this.attributebonus4.trim() !== "";
-    this.hasLevel8Bonus = this.attributebonus8 && this.attributebonus8.trim() !== "";
 
     // Parse language list
     this.languagesList = this.hasLanguages ?
@@ -249,9 +222,6 @@ export class RaceData extends foundry.abstract.TypeDataModel {
    * Get attribute bonus for a specific level
    */
   getAttributeBonusForLevel(level) {
-    if (level >= 8 && this.attributebonus8) return this.attributebonus8;
-    if (level >= 4 && this.attributebonus4) return this.attributebonus4;
-    if (level >= 1 && this.attributebonus1) return this.attributebonus1;
     return "";
   }
 }
