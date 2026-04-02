@@ -12,7 +12,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     classes: ["character"],
     tag: "form",
     position: {
-      width: 760,
+      width: 780,
       height: 780,
     },
     window: {

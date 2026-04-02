@@ -11,8 +11,8 @@ export class WarheroPartySheet extends WarheroActorSheet {
     classes: ["party"],
     tag: "form",
     position: {
-      width: 720,
-      height: 720,
+      width: 780,
+      height: 780,
     },
     window: {
     },
