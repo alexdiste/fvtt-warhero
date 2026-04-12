@@ -33,7 +33,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857418842
       modifiedTime: 1681508870905
       lastModifiedBy: vvRutjambw1JfPoO
@@ -71,7 +71,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1681540968238
       lastModifiedBy: vvRutjambw1JfPoO
@@ -107,7 +107,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1681540974535
       lastModifiedBy: vvRutjambw1JfPoO
@@ -145,7 +145,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1681540980366
       lastModifiedBy: vvRutjambw1JfPoO
@@ -182,7 +182,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1681540994058
       lastModifiedBy: vvRutjambw1JfPoO
@@ -220,7 +220,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1681541003902
       lastModifiedBy: vvRutjambw1JfPoO
@@ -264,7 +264,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1681541022197
       lastModifiedBy: vvRutjambw1JfPoO
@@ -296,7 +296,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857901932
       modifiedTime: 1681541030093
       lastModifiedBy: vvRutjambw1JfPoO
@@ -328,7 +328,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857901932
       modifiedTime: 1681541036261
       lastModifiedBy: vvRutjambw1JfPoO
@@ -360,7 +360,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857901932
       modifiedTime: 1681541043271
       lastModifiedBy: vvRutjambw1JfPoO
@@ -401,7 +401,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857901932
       modifiedTime: 1681541051862
       lastModifiedBy: vvRutjambw1JfPoO
@@ -442,7 +442,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 10.0.55
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857901932
       modifiedTime: 1681541057715
       lastModifiedBy: vvRutjambw1JfPoO
@@ -667,9 +667,6 @@ prototypeToken:
     src: systems/dnd5e/tokens/undead/SkeletonClothes.webp
     scaleX: 1
     scaleY: 1
-    offsetX: 0
-    offsetY: 0
-    rotation: 0
     tint: '#ffffff'
     anchorX: 0.5
     anchorY: 0.5
@@ -718,7 +715,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   flags:
     wall-height:
       tokenHeight: 0
@@ -748,6 +745,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 1
 effects: []
 flags:
   scene-packer:
@@ -757,7 +755,7 @@ flags:
 _stats:
   systemId: fvtt-warhero
   systemVersion: '13.41'
-  coreVersion: '13.351'
+  coreVersion: '14.360'
   createdTime: 1680857278639
   modifiedTime: 1767471858774
   lastModifiedBy: guOwSDi78TuzUGFU

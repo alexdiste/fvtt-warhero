@@ -206,9 +206,6 @@ prototypeToken:
     src: systems/dnd5e/tokens/giant/Troll.webp
     scaleX: 1
     scaleY: 1
-    offsetX: 0
-    offsetY: 0
-    rotation: 0
     tint: '#ffffff'
     anchorX: 0.5
     anchorY: 0.5
@@ -257,7 +254,7 @@ prototypeToken:
     saturation: 0
     contrast: 0
     color: null
-  detectionModes: []
+  detectionModes: {}
   flags:
     wall-height:
       tokenHeight: 0
@@ -283,6 +280,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 2
 effects: []
 folder: null
 flags:
@@ -294,7 +292,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.360'
   systemId: fvtt-warhero
   systemVersion: '13.40'
   createdTime: 1759988007247

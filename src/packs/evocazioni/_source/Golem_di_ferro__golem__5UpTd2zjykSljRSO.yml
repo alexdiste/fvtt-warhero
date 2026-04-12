@@ -27,7 +27,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1700571024891
       modifiedTime: 1704868072487
       lastModifiedBy: vvRutjambw1JfPoO
@@ -56,7 +56,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1704868107808
       lastModifiedBy: vvRutjambw1JfPoO
@@ -88,7 +88,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1704868109456
       lastModifiedBy: vvRutjambw1JfPoO
@@ -120,7 +120,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1704868110916
       lastModifiedBy: vvRutjambw1JfPoO
@@ -152,7 +152,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1704868113034
       lastModifiedBy: vvRutjambw1JfPoO
@@ -190,7 +190,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1704868114440
       lastModifiedBy: vvRutjambw1JfPoO
@@ -222,7 +222,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857153518
       modifiedTime: 1704868115791
       lastModifiedBy: vvRutjambw1JfPoO
@@ -260,7 +260,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857901932
       modifiedTime: 1704868117963
       lastModifiedBy: vvRutjambw1JfPoO
@@ -298,7 +298,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857901932
       modifiedTime: 1704868118882
       lastModifiedBy: vvRutjambw1JfPoO
@@ -335,7 +335,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857901932
       modifiedTime: 1704868120016
       lastModifiedBy: vvRutjambw1JfPoO
@@ -566,9 +566,6 @@ prototypeToken:
     src: systems/dnd5e/tokens/construct/IronGolem.webp
     scaleX: 1
     scaleY: 1
-    offsetX: 0
-    offsetY: 0
-    rotation: 0
     tint: '#ffffff'
     anchorX: 0.5
     anchorY: 0.5
@@ -617,7 +614,7 @@ prototypeToken:
     saturation: 0
     contrast: 0
     color: null
-  detectionModes: []
+  detectionModes: {}
   flags:
     wall-height:
       tokenHeight: 0
@@ -643,6 +640,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 1
 effects: []
 folder: ab89HuUf0Tqbgom0
 ownership:
@@ -656,7 +654,7 @@ flags:
 _stats:
   systemId: fvtt-warhero
   systemVersion: 11.2.1
-  coreVersion: '13.350'
+  coreVersion: '14.360'
   createdTime: 1704868006655
   modifiedTime: 1759987951035
   lastModifiedBy: lXFgtDDsvLskIOGw

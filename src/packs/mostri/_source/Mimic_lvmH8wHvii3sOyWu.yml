@@ -23,10 +23,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: fNViMjAymwJwTsD3
     sort: 1900000
     ownership:
@@ -54,10 +56,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: 3dMrEyjGMrlAnPZp
     sort: 1500000
     ownership:
@@ -93,10 +97,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     sort: 1400000
     _id: IVx9bgYKZkOk769k
@@ -315,12 +321,9 @@ prototypeToken:
     src: systems/dnd5e/tokens/monstrosity/Mimic.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -364,7 +367,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -388,6 +391,7 @@ prototypeToken:
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 1
 effects: []
 folder: null
 flags: {}
@@ -395,7 +399,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.360'
   systemId: fvtt-warhero
   systemVersion: '13.40'
   createdTime: 1766239337735

@@ -29,7 +29,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.1.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1681573811492
       modifiedTime: 1698078107097
       lastModifiedBy: vvRutjambw1JfPoO
@@ -69,7 +69,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.1.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1681305021244
       modifiedTime: 1698078214091
       lastModifiedBy: vvRutjambw1JfPoO
@@ -289,9 +289,6 @@ prototypeToken:
     src: systems/dnd5e/tokens/plant/Treant.webp
     scaleX: 1
     scaleY: 1
-    offsetX: 0
-    offsetY: 0
-    rotation: 0
     tint: '#ffffff'
     anchorX: 0.5
     anchorY: 0.5
@@ -340,7 +337,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   flags:
     wall-height:
       tokenHeight: 0
@@ -370,6 +367,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 1
 effects: []
 flags:
   scene-packer:
@@ -379,7 +377,7 @@ flags:
 _stats:
   systemId: fvtt-warhero
   systemVersion: '13.21'
-  coreVersion: '13.350'
+  coreVersion: '14.360'
   createdTime: 1680857278639
   modifiedTime: 1760072083997
   lastModifiedBy: lXFgtDDsvLskIOGw

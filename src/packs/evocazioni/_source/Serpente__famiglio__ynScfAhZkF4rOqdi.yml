@@ -22,10 +22,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.350'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.20'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     sort: 1500000
     ownership:
@@ -56,10 +58,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.350'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.20'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     sort: 400000
     ownership:
@@ -88,10 +92,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.350'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.20'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     sort: 600000
     ownership:
@@ -325,9 +331,6 @@ prototypeToken:
     src: systems/dnd5e/tokens/beast/PoisonousSnake.webp
     scaleX: 1
     scaleY: 1
-    offsetX: 0
-    offsetY: 0
-    rotation: 0
     tint: '#ffffff'
     anchorX: 0.5
     anchorY: 0.5
@@ -376,7 +379,7 @@ prototypeToken:
     saturation: 0
     contrast: 0
     color: null
-  detectionModes: []
+  detectionModes: {}
   flags:
     monks-tokenbar:
       include: default
@@ -399,6 +402,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 0.5
 effects: []
 folder: gyxgaCAuRTwEb3No
 ownership:
@@ -411,7 +415,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.350'
+  coreVersion: '14.360'
   systemId: fvtt-warhero
   systemVersion: '13.20'
   createdTime: 1759987915505

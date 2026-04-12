@@ -31,10 +31,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     sort: 900000
     _id: TbcCqD68AOUxQNh6
@@ -65,10 +67,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     _id: fGm70VeCvyMdH1Oy
     sort: 200000
     ownership:
@@ -100,10 +104,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     _id: uQLpASf7D6pjSTgF
     sort: 0
@@ -322,12 +328,9 @@ prototypeToken:
     src: systems/dnd5e/tokens/construct/ClayGolem.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -371,7 +374,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -395,6 +398,7 @@ prototypeToken:
   randomImg: false
   appendNumber: false
   prependAdjective: false
+  depth: 1
 effects: []
 folder: null
 flags: {}
@@ -402,7 +406,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.360'
   systemId: fvtt-warhero
   systemVersion: '13.40'
   createdTime: 1766239337735

@@ -31,10 +31,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     sort: 1400000
     _id: 4tNCYuVuLwe1tOzt
@@ -65,10 +67,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     _id: mkodDWMtZV9abpz2
     sort: 0
@@ -98,10 +102,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     _id: 1LCmfvkAg6F3BPh7
     sort: 0
@@ -131,10 +137,12 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.351'
+      coreVersion: '14.360'
       systemId: fvtt-warhero
       systemVersion: '13.40'
       lastModifiedBy: null
+      createdTime: null
+      modifiedTime: null
     folder: null
     _id: cWOkkO2yUcrdS5C9
     sort: 0
@@ -353,9 +361,6 @@ prototypeToken:
     src: systems/dnd5e/tokens/elemental/FireElemental.webp
     scaleX: 1
     scaleY: 1
-    offsetX: 0
-    offsetY: 0
-    rotation: 0
     tint: '#ffffff'
     anchorX: 0.5
     anchorY: 0.5
@@ -404,7 +409,7 @@ prototypeToken:
     saturation: 0
     contrast: 0
     color: null
-  detectionModes: []
+  detectionModes: {}
   flags:
     wall-height:
       tokenHeight: 0
@@ -430,6 +435,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 2
 effects: []
 folder: null
 flags:
@@ -441,7 +447,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.360'
   systemId: fvtt-warhero
   systemVersion: '13.40'
   createdTime: 1766239337735

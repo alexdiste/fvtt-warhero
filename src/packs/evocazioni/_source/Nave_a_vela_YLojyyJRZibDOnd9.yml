@@ -205,9 +205,6 @@ prototypeToken:
     src: modules/baileywiki-maps-premium/tokens/vehicles/galleon-sailing-token.webp
     scaleX: 3
     scaleY: 3
-    offsetX: 0
-    offsetY: 0
-    rotation: 0
     tint: '#ffffff'
     fit: height
     anchorX: 0.5
@@ -256,7 +253,7 @@ prototypeToken:
     saturation: 0
     contrast: 0
     color: null
-  detectionModes: []
+  detectionModes: {}
   flags:
     wall-height:
       tokenHeight: 0
@@ -282,6 +279,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 6
 effects: []
 folder: X0AVBzZOem6rEZP7
 flags:
@@ -293,7 +291,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.350'
+  coreVersion: '14.360'
   systemId: fvtt-warhero
   systemVersion: '13.21'
   createdTime: 1759989121697

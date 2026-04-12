@@ -29,7 +29,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857418842
       modifiedTime: 1701516949715
       lastModifiedBy: vvRutjambw1JfPoO
@@ -71,7 +71,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857418842
       modifiedTime: 1701516954763
       lastModifiedBy: vvRutjambw1JfPoO
@@ -110,7 +110,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1681305021244
       modifiedTime: 1701517004782
       lastModifiedBy: vvRutjambw1JfPoO
@@ -157,7 +157,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1681305021244
       modifiedTime: 1701516995968
       lastModifiedBy: vvRutjambw1JfPoO
@@ -199,7 +199,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1680857418842
       modifiedTime: 1701516978543
       lastModifiedBy: vvRutjambw1JfPoO
@@ -235,7 +235,7 @@ items:
     _stats:
       systemId: fvtt-warhero
       systemVersion: 11.2.1
-      coreVersion: '13.341'
+      coreVersion: '14.360'
       createdTime: 1681047468768
       modifiedTime: 1701518321318
       lastModifiedBy: vvRutjambw1JfPoO
@@ -464,9 +464,6 @@ prototypeToken:
     src: systems/dnd5e/tokens/dragon/YoungGoldDragon.webp
     scaleX: 1
     scaleY: 1
-    offsetX: 0
-    offsetY: 0
-    rotation: 0
     tint: '#ffffff'
     anchorX: 0.5
     anchorY: 0.5
@@ -515,7 +512,7 @@ prototypeToken:
     saturation: 0
     contrast: 0
     color: null
-  detectionModes: []
+  detectionModes: {}
   flags:
     wall-height:
       tokenHeight: 0
@@ -541,6 +538,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 2
 effects: []
 folder: 8o19xL2ki8Su2jvP
 ownership:
@@ -554,7 +552,7 @@ flags:
 _stats:
   systemId: fvtt-warhero
   systemVersion: 11.2.1
-  coreVersion: '13.350'
+  coreVersion: '14.360'
   createdTime: 1701516103677
   modifiedTime: 1760072083997
   lastModifiedBy: lXFgtDDsvLskIOGw
