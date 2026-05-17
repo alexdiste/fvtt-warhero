@@ -1,0 +1,214 @@
+name: Crea pergamene e bacchette
+type: script
+command: |-
+  // Spell/Power pricing
+      const SCROLL_PRICES = {
+        "1": 100,
+        "2": 400,
+        "3": 900,
+        "4": 1600
+      };
+      
+      // Wands are items with charges - price per charge
+      const WAND_PRICES = {
+        "1": 1000,
+        "2": 2000,
+        "3": 3000,
+        "4": 4000
+      };
+
+      /**
+       * Update spell display in dialog
+       */
+      function updateSpellDisplay(html, spell) {
+        const display = html.find("#spell-display");
+        const dropText = html.find("#drop-text");
+        
+        dropText.text(`✓ Spell selected`);
+        
+        const spellLevel = spell.system?.level || "?";
+        const spellSchool = spell.system?.magicschool || "?";
+        
+        display.html(`
+          <div style="padding: 10px; background-color: #f0f0f0; border-radius: 4px;">
+            <strong>${spell.name}</strong><br>
+            <small>Level: ${spellLevel} | School: ${spellSchool}</small>
+          </div>
+        `);
+      }
+
+      /**
+       * Setup drag-drop handlers
+       */
+      function setupDragDrop(html, onSpellSelected) {
+        const dropZone = html.find("#drop-zone");
+
+        dropZone.on("dragover", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropZone.css("background-color", "#e8f4f8");
+        });
+
+        dropZone.on("dragleave", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropZone.css("background-color", "#f5f5f5");
+        });
+
+        dropZone.on("drop", async (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          dropZone.css("background-color", "#f5f5f5");
+
+          try {
+            const data = JSON.parse(e.originalEvent.dataTransfer.getData("text/plain"));
+            
+            if (data.type === "Item" && data.uuid) {
+              const item = await fromUuid(data.uuid);
+              if (item && item.type === "power") {
+                onSpellSelected(item);
+              } else {
+                ui.notifications.warn("Please drag a Power item.");
+              }
+            }
+          } catch (err) {
+            console.warn("Drop error:", err);
+            ui.notifications.error("Error processing drop. Please try again.");
+          }
+        });
+      }
+
+      /**
+       * Create the Scroll or Wand item
+       */
+      async function createMagicItem(spell, itemType = "scroll") {
+        if (!game.user.isGM && game.user.role < 3) {
+          ui.notifications.error("You do not have permission to create items.");
+          return;
+        }
+
+        const spellLevel = spell.system?.level || "1";
+        const prices = itemType === "scroll" ? SCROLL_PRICES : WAND_PRICES;
+        const cost = prices[spellLevel] || 100;
+
+        const itemName = itemType === "scroll" 
+          ? `Scroll - ${spell.name}`
+          : `Wand - ${spell.name}`;
+
+        const spellLink = `@UUID[${spell.uuid}]{${spell.name}}`;
+        const description = `<p><strong>Spell:</strong> ${spellLink}</p>
+          ${spell.system?.description ? `<hr><p>${spell.system.description}</p>` : ""}`;
+
+        const itemData = {
+          type: "equipment",
+          name: itemName,
+          data: {
+            equiptype: itemType === "scroll" ? "scroll" : "wand",
+            cost: cost,
+            quantity: 1,
+            magiccharge: itemType === "scroll" ? "notapplicable" : "charges",
+            chargevalue: itemType === "scroll" ? 0 : 1,
+            chargevaluemax: itemType === "scroll" ? 0 : 1,
+            isidentified: "identified",
+            description: description,
+            relatedSpell: spell.uuid,
+            relatedSpellLevel: spellLevel,
+            relatedSpellSchool: spell.system?.magicschool || "unknown"
+          }
+        };
+
+        try {
+          const createdItem = await Item.create(itemData);
+          
+          ui.notifications.info(`Created ${createdItem.name} for ${cost} MO`);
+          createdItem.sheet.render(true);
+        } catch (err) {
+          console.error("Error creating magic item:", err);
+          ui.notifications.error("Error creating magic item.");
+        }
+      }
+
+      // Main execution
+      let selectedSpell = null;
+
+      const dialogContent = `
+        <div class="magic-item-maker-dialog">
+          <p><strong>Drag a spell from the compendium to create a Scroll or Wand</strong></p>
+          <div id="drop-zone" class="drop-zone" style="
+            border: 2px dashed #999;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            background-color: #f5f5f5;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            cursor: pointer;
+          ">
+            <span id="drop-text">Drag a spell here</span>
+          </div>
+          <div id="spell-display" style="margin-top: 20px; min-height: 40px;"></div>
+        </div>
+      `;
+
+      const dialog = new Dialog({
+        title: "Create Scroll or Wand",
+        content: dialogContent,
+        buttons: {
+          scroll: {
+            icon: '<i class="fas fa-scroll"></i>',
+            label: "Scroll",
+            callback: () => {
+              if (selectedSpell) {
+                createMagicItem(selectedSpell, "scroll");
+              }
+            }
+          },
+          wand: {
+            icon: '<i class="fas fa-wand-magic-sparkles"></i>',
+            label: "Wand",
+            callback: () => {
+              if (selectedSpell) {
+                createMagicItem(selectedSpell, "wand");
+              }
+            }
+          },
+          cancel: {
+            icon: '<i class="fas fa-times"></i>',
+            label: "Cancel",
+            callback: () => {}
+          }
+        },
+        default: "scroll",
+        render: (html) => {
+          setupDragDrop(html, (spell) => {
+            selectedSpell = spell;
+            updateSpellDisplay(html, spell);
+          });
+        }
+      }, { width: 400, classes: ["magic-item-maker"] });
+
+      dialog.render(true);
+img: systems/fvtt-warhero/images/icons/crafting.svg
+_id: einZZiFGr7pehL60
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.361'
+  systemId: fvtt-warhero
+  systemVersion: 14.80.5
+  createdTime: 1779022199135
+  modifiedTime: 1779022199135
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!macros!einZZiFGr7pehL60'

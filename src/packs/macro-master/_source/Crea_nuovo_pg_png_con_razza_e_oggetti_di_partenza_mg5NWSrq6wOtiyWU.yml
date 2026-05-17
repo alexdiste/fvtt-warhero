@@ -1,0 +1,270 @@
+name: Crea nuovo pg/png con razza e oggetti di partenza
+type: script
+_id: mg5NWSrq6wOtiyWU
+author: guOwSDi78TuzUGFU
+img: systems/fvtt-warhero/images/icons/cowled.svg
+scope: global
+command: >-
+  // --- CONFIGURAZIONE KIT ---
+
+  const compendiumId = "fvtt-warhero.manuale";
+
+  const journalId = "g4KBDQAp2l3hDbj3";
+
+  const kitPageName = "Oggetti di partenza";
+
+
+  // 1. DEFINIZIONE RAZZE
+
+  const RAZZE_DB = {
+    "dirza": { nome: "Dirza", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Sottocomune", "Liv. 1: Comp. 'Armi Lunghe'"] },
+    "dragonide": { nome: "Dragonide", pf: 6, stats: ["fis", "men"], note: ["Lingue: Comune, Draconico"] },
+    "elfo": { nome: "Elfo", pf: 2, stats: ["men"], note: ["Lingue: Comune, Elfico"] },
+    "elfo_oscuro": { nome: "Elfo Oscuro", pf: 4, stats: ["men"], note: ["Lingue: Comune, Elfico"] },
+    "elfo_selvaggio": { nome: "Elfo Selvaggio", pf: 6, stats: ["fis", "men"], note: ["Lingue: Comune, Elfico", "Liv. 1: Comp. 'Armi da tiro'"] },
+    "fata": { nome: "Fata", pf: 2, stats: ["ist", "men"], note: ["Lingue: Comune, Elfico, Silvano", "Liv. 1: Volare (6m)"] },
+    "formian": { nome: "Formian", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Sottocomune"] },
+    "gnomo": { nome: "Gnomo", pf: 4, stats: ["fis", "men"], note: ["Lingue: Comune, Gnomesco"] },
+    "goblin": { nome: "Goblin", pf: 2, stats: ["ist"], note: ["Lingue: Comune, Goblin", "Liv. 1: Comp. 'Armi da lancio e tiro'"] },
+    "halfling": { nome: "Halfling", pf: 4, stats: ["ist"], note: ["Lingue: Comune, Halfling"] },
+    "nano": { nome: "Nano", pf: 6, stats: ["fis"], note: ["Lingue: Comune, Nanico", "Liv. 1: +1 Difesa permanente"] },
+    "ogre": { nome: "Ogre", pf: 6, stats: ["fis"], note: ["Lingue: Comune, Orchesco", "Liv. 1: Comp. 'Armi a due mani'"] },
+    "mezzangelo": { nome: "Mezz'angelo", pf: 4, stats: ["men"], note: ["Lingue: Comune, Celestiale"] },
+    "mezzelfo": { nome: "Mezz'elfo", pf: 4, stats: ["ist", "men"], note: ["Lingue: Comune, Elfico", "Liv. 1: Comp. 'Armi da tiro'"] },
+    "mezzorco": { nome: "Mezzorco", pf: 4, stats: ["fis"], note: ["Lingue: Comune, Orchesco"] },
+    "mezzodiavolo": { nome: "Mezzo Diavolo", pf: 4, stats: ["ist", "men"], note: ["Lingue: Comune, Infernale/Abissale"] },
+    "mezzonano": { nome: "Mezzo Nano", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Nanico"] },
+    "satiro": { nome: "Satiro", pf: 2, stats: ["ist"], note: ["Lingue: Comune, Elfico, Silvano"] },
+    "umano": { nome: "Umano", pf: 4, stats: ["fis", "ist", "men"], note: ["Lingue: Comune"] }
+  };
+
+
+  // 2. INPUT UTENTE
+
+  const nomePG = await Dialog.prompt({
+      title: "Nuovo Personaggio",
+      content: `<form><div class="form-group"><label>Nome Eroe:</label><input type="text" name="name" placeholder="Esempio: Alaric" autofocus></div></form>`,
+      callback: (h) => h[0].querySelector("input").value || "Nuovo Eroe"
+  });
+
+
+  const raceOpt = Object.keys(RAZZE_DB).map(k => `<option
+  value="${k}">${RAZZE_DB[k].nome}</option>`).join('');
+
+  const razza_k = await Dialog.prompt({
+      title: "Razza",
+      content: `<form><div class="form-group"><label>Razza:</label><select>${raceOpt}</select></div></form>`,
+      callback: (h) => h[0].querySelector("select").value
+  });
+
+  const r_dati = RAZZE_DB[razza_k];
+
+
+  const lvOpt = Array.from({length: 10}, (_, i) => `<option
+  value="${i+1}">Livello ${i+1}</option>`).join('');
+
+  const lv = await Dialog.prompt({ title: "Livello", content: `<form><div
+  class="form-group"><label>Livello:</label><select>${lvOpt}</select></div></form>`,
+  callback: (h) => parseInt(h[0].querySelector("select").value) });
+
+
+  const stOpt =
+  ["0-1-4","0-2-3","0-3-2","0-4-1","1-0-4","1-1-3","1-2-2","1-3-1","1-4-0","2-0-3","2-1-2","2-2-1","2-3-0","3-0-2","3-1-1","3-2-0","4-0-1","4-1-0"].map(s=>`<option
+  value="${s}">${s}</option>`).join('');
+
+  const statsB = await Dialog.prompt({ title: "Statistiche", content:
+  `<form><div class="form-group"><label>Distribuzione
+  (F-I-M):</label><select>${stOpt}</select></div></form>`, callback: (h) =>
+  h[0].querySelector("select").value });
+
+  let [fis, ist, men] = statsB.split("-").map(n => parseInt(n));
+
+
+  // 3. AUMENTI
+
+  async function upStat(l) {
+    const o = r_dati.stats;
+    if (o.length === 1) { if(o[0]==="fis")fis++; if(o[0]==="ist")ist++; if(o[0]==="men")men++; return; }
+    let html = o.map(x => `<option value="${x}">${x.toUpperCase()}</option>`).join('');
+    let s = await Dialog.prompt({ title: `Aumento Liv. ${l}`, content: `<p>Scegli l'aumento di razza:</p><form><div class="form-group"><label>Stat:</label><select>${html}</select></div></form>`, callback: (h) => h[0].querySelector("select").value });
+    if(s==="fis")fis++; if(s==="ist")ist++; if(s==="men")men++;
+  }
+
+  await upStat(1);
+
+  if (lv >= 4) await upStat(4);
+
+  if (lv >= 8) await upStat(8);
+
+
+  // 4. CALCOLI
+
+  const liv_int = lv > 1 ? Math.min(lv, 9) - 1 : 0;
+
+  const hp_tot = 30 + (fis * 10) + (liv_int * r_dati.pf);
+
+  const def_bonus_razza = (razza_k === "nano" ? 1 : 0);
+
+  const def_tot = 12 + ist + def_bonus_razza;
+
+  const bTxc_m = (lv >= 3 ? 1 : 0) + (lv >= 6 ? 1 : 0) + (lv >= 9 ? 1 : 0);
+
+  const txc_f = ist + bTxc_m;
+
+  const bDanni = (razza_k === "mezzorco") ? liv_int : bTxc_m;
+
+  const abilita_tot = liv_int + (razza_k === "umano" && lv >= 5 ? 1 : 0);
+
+  const xp_tot = Math.max(0, ((lv - 1) * lv) / 2 * 10);
+
+  const n_lingue = Math.floor(men / 2);
+
+
+  // 5. DOMANDA KIT
+
+  const vuoleKit = await Dialog.confirm({
+    title: "Kit Iniziale",
+    content: `<p>Vuoi assegnare il kit <b>"${kitPageName}"</b> e 500 monete?</p>`,
+    yes: () => true, no: () => false, defaultYes: true
+  });
+
+
+  // 6. CREAZIONE ACTOR
+
+  const newActor = await Actor.create({
+    name: nomePG,
+    type: "character",
+    img: "systems/fvtt-warhero/images/icons/cowled.svg",
+    system: {
+      statistics: {
+          str: { value: fis, save: fis },
+          dex: { value: ist, save: ist },
+          min: { value: men, save: men }
+      },
+      attributes: {
+        hp: { max: hp_tot, value: hp_tot },
+        def: { max: def_tot, value: def_tot },
+        ini: { value: ist },
+        txcm: { value: txc_f }, txcr: { value: txc_f },
+        knowledge: { value: men }
+      },
+      secondary: {
+        xp: { level: lv, value: xp_tot },
+        meleedamagebonus: { value: bDanni },
+        rangeddamagebonus: { value: bDanni },
+        malusmultiweapon: 2,
+        nblanguage: n_lingue
+      }
+    },
+    prototypeToken: { actorLink: true, name: nomePG, texture: { src: "systems/fvtt-warhero/images/icons/cowled.svg" } }
+  });
+
+
+  // 7. LOGICA KIT OTTIMIZZATA (Regex + fromUuid)
+
+  if (vuoleKit) {
+      const pack = game.packs.get(compendiumId);
+      const journal = pack ? await pack.getDocument(journalId) : null;
+      const page = journal?.pages.getName(kitPageName);
+
+      if (page) {
+          const testo = page.text?.content || "";
+          const regexLink = /(?:UUID\[Compendium\.|Compendium\[)([^\]]+)\]/g;
+          let itemsToCreate = [];
+          let match;
+
+          while ((match = regexLink.exec(testo)) !== null) {
+              // match[1] contiene il percorso tipo "fvtt-warhero.item.ID"
+              const doc = await fromUuid(`Compendium.${match[1]}`);
+              if (doc) itemsToCreate.push(doc.toObject());
+          }
+
+          if (itemsToCreate.length > 0) {
+              await newActor.createEmbeddedDocuments("Item", itemsToCreate);
+              const monete = newActor.items.getName("Moneta di oro");
+              if (monete) await monete.update({ "system.quantity": 500 });
+          }
+      }
+  }
+
+
+  // 8. RIEPILOGO DETTAGLIATO
+
+  let resoconto = `
+
+  <div style="font-family: sans-serif; border: 1px solid #999; padding: 10px;
+  background: #fdfdfd; color: #111;">
+    <h3 style="border-bottom: 2px solid #444; margin: 0 0 10px 0;">Personaggio Generato: ${nomePG}</h3>
+
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-bottom: 10px;">
+      <tr style="background: #444; color: white;">
+        <th style="padding: 4px; border: 1px solid #333; text-align: left;">Caratteristica</th>
+        <th style="padding: 4px; border: 1px solid #333; text-align: center;">Valore</th>
+        <th style="padding: 4px; border: 1px solid #333; text-align: center;">Save</th>
+      </tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;">Fisico (STR)</td><td align="center">${fis}</td><td align="center">${fis}</td></tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;">Istinto (DEX)</td><td align="center">${ist}</td><td align="center">${ist}</td></tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;">Mente (MIN)</td><td align="center">${men}</td><td align="center">${men}</td></tr>
+    </table>
+
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+      <tr style="background: #666; color: white;">
+        <th style="padding: 4px; border: 1px solid #333; text-align: left;">Parametro</th>
+        <th style="padding: 4px; border: 1px solid #333; text-align: left;">Formula</th>
+        <th style="padding: 4px; border: 1px solid #333; text-align: center;">Totale</th>
+      </tr>
+      <tr>
+        <td style="padding: 4px; border: 1px solid #ccc;"><b>Punti Vita</b></td>
+        <td style="padding: 4px; border: 1px solid #ccc;">30+(FIS*10)+(${liv_int}*${r_dati.pf})</td>
+        <td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>${hp_tot}</b></td>
+      </tr>
+      <tr>
+        <td style="padding: 4px; border: 1px solid #ccc;"><b>Difesa</b></td>
+        <td style="padding: 4px; border: 1px solid #ccc;">12+IST+Razza</td>
+        <td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>${def_tot}</b></td>
+      </tr>
+      <tr>
+        <td style="padding: 4px; border: 1px solid #ccc;"><b>Bonus TxC</b></td>
+        <td style="padding: 4px; border: 1px solid #ccc;">IST + Milestone (${bTxc_m})</td>
+        <td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>+${txc_f}</b></td>
+      </tr>
+      <tr>
+        <td style="padding: 4px; border: 1px solid #ccc;"><b>Danni Extra</b></td>
+        <td style="padding: 4px; border: 1px solid #ccc;">${razza_k === "mezzorco" ? "Bonus Livello" : "Bonus Milestone"}</td>
+        <td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>+${bDanni}</b></td>
+      </tr>
+    </table>
+
+    <p style="margin-top: 10px; margin-bottom: 5px;"><b>Note di Configurazione:</b></p>
+    <ul style="margin: 0; padding-left: 18px; font-size: 0.85em;">
+      <li>Abilità totali da scegliere: <b>${abilita_tot}</b></li>
+      <li>Linguaggi extra da scegliere: <b>${n_lingue}</b></li>
+      ${r_dati.note.map(n => `<li>${n}</li>`).join('')}
+    </ul>
+  </div>`;
+
+
+  ChatMessage.create({
+      user: game.user.id,
+      content: resoconto,
+      whisper: ChatMessage.getWhisperRecipients("GM")
+  });
+
+  ui.notifications.info(`Eroe ${nomePG} creato con successo!`);
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.361'
+  systemId: fvtt-warhero
+  systemVersion: 14.80.5
+  createdTime: 1778993039507
+  modifiedTime: 1779000101338
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 100000
+_key: '!macros!mg5NWSrq6wOtiyWU'

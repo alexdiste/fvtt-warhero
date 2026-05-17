@@ -1,6 +1,174 @@
 name: Creazione personaggio livello 1 (stats)
 type: script
-command: "//Macro per la generazione di PG/PNG. Parte 1. Statistiche\nif (!token){\n\tChatMessage.create({\n\tuser : game.user._id,\n\tcontent:\"Devi selezionare un token\"\n\t});\n\treturn;\n\n}else{\n\tconst fisico= token.actor.system.statistics.str.value;\n\tconst istinto= token.actor.system.statistics.dex.value;\n\tconst mente= token.actor.system.statistics.min.value;\n\t\n\tif (fisico!=0 || istinto!=0 || mente!=0){\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"Attenzione. le stats non sono a zero. Il personaggiomante si può usare solo per nuovi pg/png\"\n\t\t});\n\t\treturn;\n\t}else{\t\t\n\t\t/*Scelta statistiche*/\n\t\tcontent = `<form><div class=\"form-group\"><label>Statistiche (FIS-IST-MEN):</label><div class=\"form-fields\"><select autofocus><option value=\"0-1-4\">0-1-4</option>\n\t\t<option value=\"0-2-3\">0-2-3</option>\n\t\t<option value=\"0-3-2\">0-3-2</option>\n\t\t<option value=\"0-4-1\">0-4-1</option>\n\t\t<option value=\"1-0-4\">1-0-4</option>\n\t\t<option value=\"1-1-3\">1-1-3</option>\n\t\t<option value=\"1-2-2\">1-2-2</option>\n\t\t<option value=\"1-3-1\">1-3-1</option>\n\t\t<option value=\"1-4-0\">1-4-0</option>\n\t\t<option value=\"2-0-3\">2-0-3</option>\n\t\t<option value=\"2-1-2\">2-1-2</option>\n\t\t<option value=\"2-2-1\">2-2-1</option>\n\t\t<option value=\"2-3-0\">2-3-0</option>\n\t\t<option value=\"3-0-2\">3-0-2</option>\n\t\t<option value=\"3-1-1\">3-1-1</option>\n\t\t<option value=\"3-2-0\">3-2-0</option>\n\t\t<option value=\"4-0-1\">4-0-1</option>\n\t\t<option value=\"4-1-0\">4-1-0</option></select></div></div></form>`;\n\t\t\n\t\tconst statistiche= await Dialog.prompt({\n\t\ttitle: \"Statistiche\",\n\t\tlabel: \"OK\",\n\t\trejectClose: false,\n\t\tcontent,\n\t\tcallback: (html) => html[0].querySelector(\"select\").value\n\t\t});\n\t\t\n\t\tvar parti = statistiche.split(\"-\");\n\t\t//console.log(parti);\n\t\tvar fis = parti[0];\n\t\tvar ist = parti[1];\n\t\tvar men = parti[2];\n\t\t//Aggiorna stats\n\t\tawait token.actor.update({\"system.statistics.str.value\": fis});\n\t\tawait token.actor.update({\"system.statistics.str.save\": fis});\n\t\t//Calcola PF\n\t\tpf=30+fis*10;\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"PF:\" + pf\n\t\t});\n\t\tawait token.actor.update({\"system.attributes.hp.max\": pf });\n\t\tawait token.actor.update({\"system.attributes.hp.value\": pf });\n\t\n\t\tawait token.actor.update({\"system.statistics.dex.value\": ist});\n\t\tawait token.actor.update({\"system.statistics.dex.save\": ist});\n\t\t//Calcola difesa, iniziativa e tiro per colpire\n\t\tdif=12+Number(ist);\t\t\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"Difesa:\" + dif + \", Bonus ai txc (sia mischia che distanza) e iniziativa totale:\" + ist\n\t\t});\n\t\tawait token.actor.update({\"system.attributes.def.max\": dif});\t\t\n\t\tawait token.actor.update({\"system.attributes.def.value\": dif});\n\t\tawait token.actor.update({\"system.attributes.ini.value\": ist});\n\t\tawait token.actor.update({\"system.attributes.txcm.value\": ist});\n\t\tawait token.actor.update({\"system.attributes.txcr.value\": ist});\n\t\t\n\t\tawait token.actor.update({\"system.statistics.min.value\": men});\n\t\tawait token.actor.update({\"system.statistics.min.save\": men});\n\t\tawait token.actor.update({\"system.attributes.knowledge.value\": men});\n\t\t//Calcola linguaggi bonus e mana\n\t\tmana=3+Number(men);\n\t\tawait token.actor.update({\"system.attributes.mana.max\": mana});\n\t\tawait token.actor.update({\"system.attributes.mana.value\": mana});\n\t\tlinguaggi_bonus=Math.floor(men/2);\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"Hai \"+mana+\" mana e \"+ linguaggi_bonus + \" linguaggi da scegliere\"\n\t\t});\n\t}\n}"
+command: >-
+  // --- CONFIGURAZIONE KIT ---
+
+  const compendiumId = "fvtt-warhero.manuale";
+
+  const journalId = "g4KBDQAp2l3hDbj3";
+
+  const kitPageName = "Oggetti di partenza";
+
+
+  // 1. DEFINIZIONE RAZZE
+
+  const RAZZE_DB = {
+    "dirza": { nome: "Dirza", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Sottocomune", "Liv. 1: Comp. 'Armi Lunghe'"] },
+    "dragonide": { nome: "Dragonide", pf: 6, stats: ["fis", "men"], note: ["Lingue: Comune, Draconico"] },
+    "elfo": { nome: "Elfo", pf: 2, stats: ["men"], note: ["Lingue: Comune, Elfico"] },
+    "elfo_oscuro": { nome: "Elfo Oscuro", pf: 4, stats: ["men"], note: ["Lingue: Comune, Elfico"] },
+    "elfo_selvaggio": { nome: "Elfo Selvaggio", pf: 6, stats: ["fis", "men"], note: ["Lingue: Comune, Elfico", "Liv. 1: Comp. 'Armi da tiro'"] },
+    "fata": { nome: "Fata", pf: 2, stats: ["ist", "men"], note: ["Lingue: Comune, Elfico, Silvano", "Liv. 1: Volare (6m)"] },
+    "formian": { nome: "Formian", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Sottocomune"] },
+    "gnomo": { nome: "Gnomo", pf: 4, stats: ["fis", "men"], note: ["Lingue: Comune, Gnomesco"] },
+    "goblin": { nome: "Goblin", pf: 2, stats: ["ist"], note: ["Lingue: Comune, Goblin", "Liv. 1: Comp. 'Armi da lancio e tiro'"] },
+    "halfling": { nome: "Halfling", pf: 4, stats: ["ist"], note: ["Lingue: Comune, Halfling"] },
+    "nano": { nome: "Nano", pf: 6, stats: ["fis"], note: ["Lingue: Comune, Nanico", "Liv. 1: +1 Difesa permanente"] },
+    "ogre": { nome: "Ogre", pf: 6, stats: ["fis"], note: ["Lingue: Comune, Orchesco", "Liv. 1: Comp. 'Armi a due mani'"] },
+    "mezzangelo": { nome: "Mezz'angelo", pf: 4, stats: ["men"], note: ["Lingue: Comune, Celestiale"] },
+    "mezzelfo": { nome: "Mezz'elfo", pf: 4, stats: ["ist", "men"], note: ["Lingue: Comune, Elfico", "Liv. 1: Comp. 'Armi da tiro'"] },
+    "mezzorco": { nome: "Mezzorco", pf: 4, stats: ["fis"], note: ["Lingue: Comune, Orchesco"] },
+    "mezzodiavolo": { nome: "Mezzo Diavolo", pf: 4, stats: ["ist", "men"], note: ["Lingue: Comune, Infernale/Abissale"] },
+    "mezzonano": { nome: "Mezzo Nano", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Nanico"] },
+    "satiro": { nome: "Satiro", pf: 2, stats: ["ist"], note: ["Lingue: Comune, Elfico, Silvano"] },
+    "umano": { nome: "Umano", pf: 4, stats: ["fis", "ist", "men"], note: ["Lingue: Comune"] }
+  };
+
+
+  // 2. ✅ CONTROLLO SELEZIONE E LINK (BLOCCO PG)
+
+  const token = canvas.tokens.controlled[0];
+
+
+  if (!token || !token.actor) {
+      ui.notifications.error("Devi selezionare il tuo Token prima di avviare la macro!");
+      return;
+  }
+
+
+  if (!token.document.actorLink) {
+      new Dialog({
+          title: "Inizializzazione Fallita",
+          content: `<p style="color: #830000; font-weight: bold;">Questo token non è collegato alla tua scheda personaggio.</p>
+                    <p>Chiedi al tuo Master di <b>linkarlo</b> prima di procedere!</p>`,
+          buttons: { ok: { label: "Ho capito" } }
+      }).render(true);
+      return; // Blocca l'esecuzione
+  }
+
+
+  const targetActor = token.actor;
+
+
+  // 3. INPUT UTENTE
+
+  const raceOpt = Object.keys(RAZZE_DB).map(k => `<option
+  value="${k}">${RAZZE_DB[k].nome}</option>`).join('');
+
+  const stOpt =
+  ["0-1-4","0-2-3","0-3-2","0-4-1","1-0-4","1-1-3","1-2-2","1-3-1","1-4-0","2-0-3","2-1-2","2-2-1","2-3-0","3-0-2","3-1-1","3-2-0","4-0-1","4-1-0"].map(s=>`<option
+  value="${s}">${s}</option>`).join('');
+
+
+  const setupData = await Dialog.prompt({
+      title: `Inizializzazione Eroe: ${targetActor.name}`,
+      content: `
+      <form>
+          <div class="form-group"><label>Nome Eroe:</label><input type="text" name="name" value="${targetActor.name}"></div>
+          <div class="form-group"><label>Razza:</label><select name="race">${raceOpt}</select></div>
+          <div class="form-group"><label>Distribuzione (F-I-M):</label><select name="stats">${stOpt}</select></div>
+      </form>`,
+      callback: (html) => {
+          return {
+              name: html.find('[name="name"]').val(),
+              race: html.find('[name="race"]').val(),
+              stats: html.find('[name="stats"]').val()
+          }
+      }
+  });
+
+
+  let [fis, ist, men] = setupData.stats.split("-").map(n => parseInt(n));
+
+  const r_dati = RAZZE_DB[setupData.race];
+
+
+  // 4. AUMENTO LIVELLO 1
+
+  const o = r_dati.stats;
+
+  if (o.length === 1) {
+      if(o[0]==="fis") fis++; if(o[0]==="ist") ist++; if(o[0]==="men") men++;
+  } else {
+      let html = o.map(x => `<option value="${x}">${x.toUpperCase()}</option>`).join('');
+      let s = await Dialog.prompt({
+          title: "Aumento di Razza",
+          content: `<p>La razza ${r_dati.nome} permette un aumento a scelta:</p><form><select>${html}</select></form>`,
+          callback: (h) => h.find('select').val()
+      });
+      if(s==="fis") fis++; if(s==="ist") ist++; if(s==="men") men++;
+  }
+
+
+  // 5. AGGIORNAMENTO ACTOR (Livello 1 fisso)
+
+  const hp_tot = 30 + (fis * 10);
+
+  const def_tot = 12 + ist + (setupData.race === "nano" ? 1 : 0);
+
+
+  await targetActor.update({
+    "name": setupData.name,
+    "system": {
+      "statistics": {
+          "str": { value: fis, save: fis },
+          "dex": { value: ist, save: ist },
+          "min": { value: men, save: men }
+      },
+      "attributes": {
+        "hp": { max: hp_tot, value: hp_tot },
+        "def": { max: def_tot, value: def_tot },
+        "ini": { value: ist },
+        "txcm": { value: ist }, "txcr": { value: ist },
+        "knowledge": { value: men }
+      },
+      "secondary": {
+        "xp": { level: 1, value: 0 },
+        "meleedamagebonus": { value: 0 },
+        "rangeddamagebonus": { value: 0 },
+        "malusmultiweapon": { value: 2 }
+      }
+    }
+  });
+
+
+  // 6. KIT AUTOMATICO
+
+  const vuoleKit = await Dialog.confirm({ title: "Equipaggiamento", content:
+  "Vuoi caricare il kit di partenza e le monete?" });
+
+  if (vuoleKit) {
+      const pack = game.packs.get(compendiumId);
+      const journal = pack ? await pack.getDocument(journalId) : null;
+      const page = journal?.pages.getName(kitPageName);
+      if (page) {
+          const regexLink = /(?:UUID\[Compendium\.|Compendium\[)([^\]]+)\]/g;
+          let itemsToCreate = [];
+          let match;
+          while ((match = regexLink.exec(page.text.content)) !== null) {
+              const doc = await fromUuid(`Compendium.${match[1]}`);
+              if (doc) itemsToCreate.push(doc.toObject());
+          }
+          if (itemsToCreate.length > 0) {
+              await targetActor.createEmbeddedDocuments("Item", itemsToCreate);
+              const monete = targetActor.items.getName("Moneta di oro");
+              if (monete) await monete.update({ "system.quantity": 500 });
+          }
+      }
+  }
+
+
+  ui.notifications.info(`${setupData.name} è stato configurato correttamente!`);
 img: systems/fvtt-warhero/images/icons/achievement.svg
 author: guOwSDi78TuzUGFU
 scope: global
@@ -14,7 +182,7 @@ _stats:
   systemId: fvtt-warhero
   systemVersion: '13.26'
   createdTime: 1760985760995
-  modifiedTime: 1778935092833
+  modifiedTime: 1778994723708
   lastModifiedBy: guOwSDi78TuzUGFU
 ownership:
   default: 0

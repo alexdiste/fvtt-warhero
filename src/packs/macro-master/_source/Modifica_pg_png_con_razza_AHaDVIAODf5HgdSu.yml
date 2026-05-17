@@ -1,0 +1,230 @@
+name: Modifica pg/png con razza
+type: script
+command: >-
+  // 1. DEFINIZIONE RAZZE
+
+  const RAZZE_DB = {
+    "dirza": { nome: "Dirza", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Sottocomune", "Liv. 1: Comp. 'Armi Lunghe'"] },
+    "dragonide": { nome: "Dragonide", pf: 6, stats: ["fis", "men"], note: ["Lingue: Comune, Draconico"] },
+    "elfo_oscuro": { nome: "Elfo Oscuro", pf: 4, stats: ["men"], note: ["Lingue: Comune, Elfico"] },
+    "elfo_selvaggio": { nome: "Elfo Selvaggio", pf: 6, stats: ["fis", "men"], note: ["Lingue: Comune, Elfico", "Liv. 1: Comp. 'Armi da tiro'"] },
+    "elfo": { nome: "Elfo", pf: 2, stats: ["men"], note: ["Lingue: Comune, Elfico"] },
+    "fata": { nome: "Fata", pf: 2, stats: ["ist", "men"], note: ["Lingue: Comune, Elfico, Silvano", "Liv. 1: Volare (6m)"] },
+    "formian": { nome: "Formian", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Sottocomune"] },
+    "gnomo": { nome: "Gnomo", pf: 4, stats: ["fis", "men"], note: ["Lingue: Comune, Gnomesco"] },
+    "goblin": { nome: "Goblin", pf: 2, stats: ["ist"], note: ["Lingue: Comune, Goblin", "Liv. 1: Comp. 'Armi da lancio e tiro'"] },
+    "halfling": { nome: "Halfling", pf: 4, stats: ["ist"], note: ["Lingue: Comune, Halfling"] },
+    "nano": { nome: "Nano", pf: 6, stats: ["fis"], note: ["Lingue: Comune, Nanico", "Liv. 1: +1 Difesa permanente"] },
+    "ogre": { nome: "Ogre", pf: 6, stats: ["fis"], note: ["Lingue: Comune, Orchesco", "Liv. 1: Comp. 'Armi a due mani'"] },
+    "mezzangelo": { nome: "Mezz'angelo", pf: 4, stats: ["men"], note: ["Lingue: Comune, Celestiale"] },
+    "mezzelfo": { nome: "Mezz'elfo", pf: 4, stats: ["ist", "men"], note: ["Lingue: Comune, Elfico", "Liv. 1: Comp. 'Armi da tiro'"] },
+    "mezzorco": { nome: "Mezzorco", pf: 4, stats: ["fis"], note: ["Lingue: Comune, Orchesco"] },
+    "mezzodiavolo": { nome: "Mezzo Diavolo", pf: 4, stats: ["ist", "men"], note: ["Lingue: Comune, Infernale/Abissale"] },
+    "mezzonano": { nome: "Mezzo Nano", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Nanico"] },
+    "satiro": { nome: "Satiro", pf: 2, stats: ["ist"], note: ["Lingue: Comune, Elfico, Silvano"] },
+    "umano": { nome: "Umano", pf: 4, stats: ["fis", "ist", "men"], note: ["Lingue: Comune"] }
+  };
+
+
+  // 2. CONTROLLO TOKEN
+
+  const token = canvas.tokens.controlled[0];
+
+  if (!token) return ui.notifications.warn("Seleziona un token!");
+
+  let targetActor = token.actor;
+
+
+  // 3. RECUPERO RAZZA (LOGICA MIGLIORATA PER SOTTO-RAZZE)
+
+  const raceItem = targetActor.items.find(i => i.type === "race" || i.type ===
+  "Razza");
+
+  let razza_k = "";
+
+
+  if (raceItem) {
+      const nomeScheda = raceItem.name.toLowerCase().trim();
+      // Ordiniamo le chiavi per lunghezza del nome decrescente per evitare falsi positivi
+      // (es: cerca "Elfo Selvaggio" prima di "Elfo")
+      const chiaviOrdinate = Object.keys(RAZZE_DB).sort((a, b) => RAZZE_DB[b].nome.length - RAZZE_DB[a].nome.length);
+      razza_k = chiaviOrdinate.find(key => nomeScheda.includes(RAZZE_DB[key].nome.toLowerCase()));
+  }
+
+
+  if (!razza_k) {
+      const raceOpt = Object.keys(RAZZE_DB).map(k => `<option value="${k}">${RAZZE_DB[k].nome}</option>`).join('');
+      razza_k = await Dialog.prompt({
+          title: "Seleziona Razza",
+          content: `<form><div class="form-group"><label>Razza:</label><select>${raceOpt}</select></div></form>`,
+          callback: (h) => h[0].querySelector("select").value
+      });
+  }
+
+  const r_dati = RAZZE_DB[razza_k];
+
+
+  // 4. INPUT LIVELLO E STATS
+
+  const xpAttuali = targetActor.system.secondary?.xp?.value || 0;
+
+  const livelloSuggerito = 1 + Math.floor(xpAttuali / 10);
+
+
+  const lv = await Dialog.prompt({ 
+      title: "Aggiornamento", 
+      content: `<form><div class="form-group"><label>Livello attuale (1-10):</label><input type="number" value="${livelloSuggerito}" min="1" max="10"></div></form>`, 
+      callback: (h) => parseInt(h[0].querySelector("input").value) 
+  });
+
+
+  const stOpt =
+  ["0-1-4","0-2-3","0-3-2","0-4-1","1-0-4","1-1-3","1-2-2","1-3-1","1-4-0","2-0-3","2-1-2","2-2-1","2-3-0","3-0-2","3-1-1","3-2-0","4-0-1","4-1-0"].map(s=>`<option
+  value="${s}">${s}</option>`).join('');
+
+  const statsB = await Dialog.prompt({ 
+      title: "Stats Base", 
+      content: `<form><div class="form-group"><label>F-I-M:</label><select>${stOpt}</select></div></form>`, 
+      callback: (h) => h[0].querySelector("select").value 
+  });
+
+  let [fis, ist, men] = statsB.split("-").map(n => parseInt(n));
+
+
+  // 5. AUMENTI
+
+  async function upStat(l) {
+    const o = r_dati.stats;
+    if (o.length === 1) { 
+        if(o[0]==="fis") fis++; if(o[0]==="ist") ist++; if(o[0]==="men") men++; 
+        return; 
+    }
+    let html = o.map(x => `<option value="${x}">${x.toUpperCase()}</option>`).join('');
+    let s = await Dialog.prompt({ 
+        title: `Aumento Liv. ${l}`, 
+        content: `<p>Scegli aumento per ${r_dati.nome}:</p><form><select>${html}</select></form>`, 
+        callback: (h) => h[0].querySelector("select").value 
+    });
+    if(s==="fis") fis++; if(s==="ist") ist++; if(s==="men") men++;
+  }
+
+
+  await upStat(1);
+
+  if (lv >= 4) await upStat(4);
+
+  if (lv >= 8) await upStat(8);
+
+
+  // 6. CALCOLI
+
+  const liv_int = lv - 1; 
+
+  const hp_tot = 30 + (fis * 10) + (liv_int * r_dati.pf);
+
+  const mana_tot = 3 + men;
+
+  const def_tot = 12 + ist + (razza_k === "nano" ? 1 : 0);
+
+  const bTxc_m = Math.floor(lv / 3);
+
+  const txc_f = ist + bTxc_m;
+
+  const bDanni = (razza_k === "mezzorco") ? liv_int : bTxc_m;
+
+  const abilita_tot = liv_int + (razza_k === "umano" && lv >= 5 ? 1 : 0);
+
+  const n_lingue = Math.floor(men / 2);
+
+  const xp_val = liv_int * 10;
+
+
+  // 7. AGGIORNAMENTO SCHEDA
+
+  await targetActor.update({
+      "system": {
+          "statistics": {
+              "str": { value: fis, save: fis }, "dex": { value: ist, save: ist }, "min": { value: men, save: men }
+          },
+          "attributes": {
+              "hp": { max: hp_tot, value: hp_tot },
+              "mana": { max: mana_tot, value: mana_tot },
+              "def": { max: def_tot, value: def_tot },
+              "ini": { value: ist },
+              "txcm": { value: txc_f }, "txcr": { value: txc_f },
+              "knowledge": { value: men }
+          },
+          "secondary": {
+              "xp": { level: lv, value: xp_val },
+              "meleedamagebonus": { value: bDanni },
+              "rangeddamagebonus": { value: bDanni },
+              "nblanguage": { value: n_lingue }
+          }
+      }
+  });
+
+
+  // 8. RIEPILOGO
+
+  let resoconto = `
+
+  <div style="font-family: sans-serif; border: 1px solid #999; padding: 10px;
+  background: #fdfdfd; color: #111;">
+    <h3 style="border-bottom: 2px solid #444; margin: 0 0 10px 0;">Ricalcolo: ${targetActor.name}</h3>
+    <p style="margin: 0;"><b>Razza:</b> ${r_dati.nome}</p>
+    <p style="margin: 0 0 10px 0;"><b>Livello Attuale:</b> ${lv}</p>
+    
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em; margin-bottom: 10px;">
+      <tr style="background: #444; color: white;">
+        <th style="padding: 4px; border: 1px solid #333;">Caratteristica</th>
+        <th style="padding: 4px; border: 1px solid #333; text-align: center;">Valore</th>
+      </tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;">Fisico (STR)</td><td align="center">${fis}</td></tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;">Istinto (DEX)</td><td align="center">${ist}</td></tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;">Mente (MIN)</td><td align="center">${men}</td></tr>
+    </table>
+
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+      <tr style="background: #666; color: white;">
+        <th style="padding: 4px; border: 1px solid #333; text-align: left;">Parametro</th>
+        <th style="padding: 4px; border: 1px solid #333; text-align: center;">Totale</th>
+      </tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;"><b>Punti Vita</b></td><td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>${hp_tot}</b></td></tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;"><b>Punti Mana</b></td><td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>${mana_tot}</b></td></tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;"><b>Difesa</b></td><td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>${def_tot}</b></td></tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;"><b>Bonus TxC</b></td><td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>+${txc_f}</b></td></tr>
+      <tr><td style="padding: 4px; border: 1px solid #ccc;"><b>Danni Extra</b></td><td style="padding: 4px; border: 1px solid #ccc; text-align: center;"><b>+${bDanni}</b></td></tr>
+    </table>
+
+    <p style="margin-top: 10px; margin-bottom: 5px;"><b>Note di Configurazione:</b></p>
+    <ul style="margin: 0; padding-left: 18px; font-size: 0.85em;">
+      <li>Abilità totali: <b>${abilita_tot}</b></li>
+      <li>Linguaggi extra: <b>${n_lingue}</b></li>
+      ${r_dati.note.map(n => `<li>${n}</li>`).join('')}
+    </ul>
+  </div>`;
+
+
+  ChatMessage.create({ user: game.user.id, content: resoconto, whisper:
+  ChatMessage.getWhisperRecipients("GM") });
+img: systems/fvtt-warhero/images/icons/brain.svg
+_id: AHaDVIAODf5HgdSu
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.361'
+  systemId: fvtt-warhero
+  systemVersion: 14.80.5
+  createdTime: 1779000101325
+  modifiedTime: 1779000101339
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 200000
+_key: '!macros!AHaDVIAODf5HgdSu'

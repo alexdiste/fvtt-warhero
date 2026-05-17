@@ -1,0 +1,311 @@
+name: Genera o modifica mostri
+type: script
+command: >-
+  /* --- CONFIGURAZIONE RANGE (Invariata) --- */
+
+  const ranges = {
+      stats: {
+          "moltoDebole": { label: "Molto debole", min: -5, max: -1 },
+          "debole": { label: "Debole", min: 0, max: 2 },
+          "normale": { label: "Normale", min: 3, max: 5 },
+          "forte": { label: "Forte", min: 6, max: 10 },
+          "moltoForte": { label: "Molto Forte", min: 11, max: 16 },
+          "estremamenteForte": { label: "Estremamente Forte", min: 17, max: 20 },
+          "leggendario": { label: "Leggendario", min: 21, max: 25 }
+      },
+      pf: {
+          "moltoDebole": { label: "Molto Debole", min: 1, max: 39 },
+          "debole": { label: "Debole", min: 40, max: 50 },
+          "normale": { label: "Normale", min: 51, max: 80 },
+          "forte": { label: "Forte", min: 81, max: 140 },
+          "moltoForte": { label: "Molto Forte", min: 141, max: 300 },
+          "estremamenteForte": { label: "Estremamente Forte", min: 301, max: 800 },
+          "leggendario": { label: "Leggendario", min: 801, max: 1000 }
+      },
+      dif: {
+          "moltoFacile": { label: "Molto Facile", min: 0, max: 11 },
+          "facile": { label: "Facile", min: 12, max: 14 },
+          "normale": { label: "Normale", min: 15, max: 16 },
+          "difficile": { label: "Difficile", min: 17, max: 18 },
+          "moltoDifficile": { label: "Molto Difficile", min: 19, max: 21 },
+          "estremamenteDifficile": { label: "Estremamente Difficile", min: 22, max: 24 },
+          "leggendario": { label: "Leggendario", min: 25, max: 30 }
+      },
+      tpc: {
+          "debole": { label: "Debole", min: -5, max: 0 },
+          "normale": { label: "Normale", min: 1, max: 5 },
+          "forte": { label: "Forte", min: 6, max: 10 },
+          "moltoForte": { label: "Molto Forte", min: 11, max: 14 },
+          "leggendario": { label: "Leggendario", min: 15, max: 20 }
+      },
+      att: {
+          "normale": { label: "Normale", min: 1, max: 1 },
+          "forte": { label: "Forte", min: 2, max: 3 },
+          "moltoForte": { label: "Molto Forte", min: 4, max: 5 },
+          "leggendario": { label: "Leggendario", min: 6, max: 10 }
+      }
+  };
+
+
+  const sizes = {
+      "tiny":       { label: "Minuscola",    dim: 0.5, scale: 1.0 },
+      "small":      { label: "Piccola",      dim: 1,   scale: 0.8 },
+      "medium":     { label: "Media",        dim: 1,   scale: 1.0 },
+      "large":      { label: "Grande",       dim: 2,   scale: 1.0 },
+      "huge":       { label: "Enorme",       dim: 3,   scale: 1.0 },
+      "gargantuan": { label: "Gargantuesca", dim: 4,   scale: 1.0 }
+  };
+
+
+  const rand = (r) => Math.floor(Math.random() * (r.max - r.min + 1)) + r.min;
+
+
+  /* --- INTERFACCIA HTML --- */
+
+  function genOpts(type, sel) {
+      return Object.keys(ranges[type]).map(k => {
+          const item = ranges[type][k];
+          return `<option value="${k}" ${k === sel ? 'selected' : ''}>${item.label} (${item.min} - ${item.max})</option>`;
+      }).join("");
+  }
+
+
+  let content = `
+
+  <style>
+      .warhero-gen .form-group { display: flex; align-items: center; margin-bottom: 8px; }
+      .warhero-gen label { flex: 0 0 130px; font-weight: bold; font-size: 0.9em; }
+      .warhero-gen select, .warhero-gen input[type="number"] { flex: 1; }
+      .warhero-gen fieldset { border: 1px solid #4b4a44; border-radius: 8px; padding: 12px; background: rgba(0,0,0,0.05); margin-bottom: 10px; }
+      .warhero-gen legend { padding: 0 10px; font-variant: small-caps; font-weight: bold; }
+      .warhero-gen .hidden { display: none !important; }
+  </style>
+
+  <form class="warhero-gen">
+      <fieldset>
+          <legend>Dati Generali</legend>
+          <div class="form-group">
+              <label>TAGLIA</label>
+              <select id="size">
+                  ${Object.entries(sizes).map(([k, v]) => `<option value="${k}" ${k==='medium'?'selected':''}>${v.label}</option>`).join("")}
+              </select>
+          </div>
+          <div class="form-group">
+              <label>SCUROVISIONE?</label>
+              <input type="checkbox" id="hasDarkvision" onclick="this.closest('form').querySelector('#dvRangeGroup').classList.toggle('hidden', !this.checked)">
+          </div>
+          <div class="form-group hidden" id="dvRangeGroup">
+              <label>Gittata (m)</label>
+              <input type="number" id="darkvisionRange" value="6" step="1">
+          </div>
+      </fieldset>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <fieldset>
+              <legend>Statistiche Base</legend>
+              <div class="form-group"><label>FISICO</label><select id="qFis">${genOpts("stats", "normale")}</select></div>
+              <div class="form-group"><label>ISTINTO</label><select id="qIst">${genOpts("stats", "normale")}</select></div>
+              <div class="form-group"><label>MENTE</label><select id="qMen">${genOpts("stats", "normale")}</select></div>
+          </fieldset>
+          <fieldset>
+              <legend>Parametri Scontro</legend>
+              <div class="form-group"><label>P. Ferita</label><select id="qPf">${genOpts("pf", "normale")}</select></div>
+              <div class="form-group"><label>Difesa</label><select id="qDif">${genOpts("dif", "normale")}</select></div>
+              <div class="form-group"><label>Tiro Colp.</label><select id="qTpc">${genOpts("tpc", "normale")}</select></div>
+              <div class="form-group"><label>N. Attacchi</label><select id="qAtt">${genOpts("att", "normale")}</select></div>
+          </fieldset>
+      </div>
+  </form>`;
+
+
+  // Verifica iniziale dello stato della selezione per definire il titolo
+  corretto
+
+  const hasSelectedTokens = canvas.tokens.controlled.length > 0;
+
+  const dialogTitle = hasSelectedTokens ? "Modificatore Mostri WarHero" :
+  "Generatore Mostri WarHero";
+
+
+  new Dialog({
+      title: dialogTitle,
+      content: content,
+      buttons: {
+          go: {
+              icon: '<i class="fas fa-check"></i>',
+              label: hasSelectedTokens ? "Aggiorna Selezionati" : "Crea Nuovo Mostro",
+              callback: async (html) => {
+                  // --- CONTROLLO ATTORE ---
+                  if (hasSelectedTokens) {
+                      const hasUnlinked = canvas.tokens.controlled.some(t => !t.actor);
+                      if (hasUnlinked) {
+                          const proceed = await Dialog.confirm({
+                              title: "Attenzione: Token Orfani",
+                              content: "<p>Uno o più token selezionati non sono legati ad alcun Attore nella rubrica. I loro parametri numerici (PF, statistiche, ecc.) non verranno salvati, ma verrà modificata solo la loro estetica. Vuoi procedere comunque?</p>",
+                              yes: () => true,
+                              no: () => false,
+                              defaultYes: false
+                          });
+                          if (!proceed) return;
+                      }
+                  }
+
+                  const sizeKey = html.find('#size').val();
+                  const sizeObj = sizes[sizeKey];
+                  const hasDV = html.find('#hasDarkvision')[0].checked;
+                  const dvRange = parseFloat(html.find('#darkvisionRange').val()) || 0;
+                  
+                  const choices = {
+                      fis: ranges.stats[html.find('#qFis').val()],
+                      ist: ranges.stats[html.find('#qIst').val()],
+                      men: ranges.stats[html.find('#qMen').val()],
+                      pf:  ranges.pf[html.find('#qPf').val()],
+                      dif: ranges.dif[html.find('#qDif').val()],
+                      tpc: ranges.tpc[html.find('#qTpc').val()],
+                      att: ranges.att[html.find('#qAtt').val()]
+                  };
+
+                  const res = {
+                      fis: rand(choices.fis), ist: rand(choices.ist), men: rand(choices.men),
+                      pf:  rand(choices.pf),  dif: rand(choices.dif), tpc: rand(choices.tpc),
+                      att: rand(choices.att)
+                  };
+
+                  const manaVal = 3 + res.men;
+
+                  // --- GESTIONE DEI DUE PAYLOAD DIFFERENTI ---
+                  let dataPayload;
+
+                  if (hasSelectedTokens) {
+                      // MODO MODIFICA: Notazione a punti per preservare la Razza
+                      dataPayload = {
+                          "system.biodata.size": sizeKey,
+                          "system.statistics.str.value": res.fis, "system.statistics.str.save": res.fis,
+                          "system.statistics.dex.value": res.ist, "system.statistics.dex.save": res.ist,
+                          "system.statistics.min.value": res.men, "system.statistics.min.save": res.men,
+                          "system.attributes.knowledge.value": res.men,
+                          "system.attributes.def.value": res.dif,
+                          "system.attributes.hp.max": res.pf, "system.attributes.hp.value": res.pf,
+                          "system.attributes.mana.max": manaVal, "system.attributes.mana.value": manaVal,
+                          "system.attributes.txcm.value": res.tpc,
+                          "system.attributes.txcr.value": res.tpc,
+                          "system.attributes.ini.value": res.ist,
+                          "prototypeToken.width": sizeObj.dim, "prototypeToken.height": sizeObj.dim,
+                          "prototypeToken.texture.scaleX": sizeObj.scale, "prototypeToken.texture.scaleY": sizeObj.scale,
+                          "prototypeToken.disposition": -1,
+                          "prototypeToken.sight.enabled": true, 
+                          "prototypeToken.sight.visionMode": hasDV ? "darkvision" : "basic", 
+                          "prototypeToken.sight.range": hasDV ? dvRange : 0 
+                      };
+                  } else {
+                      // MODO CREAZIONE: Struttura ad albero da zero per il nuovo attore
+                      dataPayload = {
+                          system: {
+                              biodata: { size: sizeKey },
+                              statistics: {
+                                  str: { value: res.fis, save: res.fis },
+                                  dex: { value: res.ist, save: res.ist },
+                                  min: { value: res.men, save: res.men }
+                              },
+                              attributes: {
+                                  knowledge: { value: res.men },
+                                  def: { value: res.dif },
+                                  hp: { max: res.pf, value: res.pf },
+                                  mana: { max: manaVal, value: manaVal },
+                                  txcm: { value: res.tpc },
+                                  txcr: { value: res.tpc },
+                                  ini: { value: res.ist }
+                              }
+                          },
+                          prototypeToken: {
+                              width: sizeObj.dim, height: sizeObj.dim,
+                              texture: { scaleX: sizeObj.scale, scaleY: sizeObj.scale },
+                              disposition: -1,
+                              sight: { 
+                                  enabled: true, 
+                                  visionMode: hasDV ? "darkvision" : "basic", 
+                                  range: hasDV ? dvRange : 0 
+                              }
+                          }
+                      };
+                  }
+
+                  let actorName = "Nuovo Mostro Generato";
+                  if (hasSelectedTokens) {
+                      for (let t of canvas.tokens.controlled) {
+                          if (t.actor) {
+                              await t.actor.update(dataPayload);
+                              actorName = t.actor.name;
+                          } else {
+                              actorName = t.document.name || "Token senza Attore";
+                          }
+                          
+                          // Aggiornamento Token sulla scena
+                          await t.document.update({
+                              width: sizeObj.dim, height: sizeObj.dim,
+                              "texture.scaleX": sizeObj.scale, "texture.scaleY": sizeObj.scale,
+                              "sight.enabled": true, 
+                              "sight.visionMode": hasDV ? "darkvision" : "basic", 
+                              "sight.range": hasDV ? dvRange : 0
+                          });
+                      }
+                  } else {
+                      const actor = await Actor.create({ 
+                          name: actorName, 
+                          type: "character", 
+                          img: "icons/svg/mystery-man.svg", 
+                          ...dataPayload 
+                      });
+                      if (actor) actor.sheet.render(true);
+                  }
+
+                  const row = (label, choice) => `<tr><td><b>${label}:</b></td><td>${choice.label} <small>(${choice.min}/${choice.max})</small></td></tr>`;
+
+                  let chatMsg = `
+                  <div class="warhero-chat-card">
+                      <h3 style="border-bottom: 1px solid #4b4a44; padding-bottom: 3px;">Configurazione: ${actorName}</h3>
+                      <p><b>Taglia:</b> ${sizeObj.label} | <b>Visione:</b> ${hasDV ? `Scurovisione (${dvRange}m)` : 'Standard'}</p>
+                      <table style="width: 100%; font-size: 0.85em;">
+                          ${row("Fisico", choices.fis)}
+                          ${row("Istinto", choices.ist)}
+                          ${row("Mente", choices.men)}
+                          <tr style="background:rgba(0,0,0,0.1)">${row("P. Ferita", choices.pf)}</tr>
+                          ${row("Difesa", choices.dif)}
+                          <tr style="background:rgba(0,0,0,0.1)">${row("Tiro Colp.", choices.tpc)}</tr>
+                          ${row("N. Attacchi", choices.att)}
+                      </table>
+                  </div>`;
+
+                  await ChatMessage.create({
+                      user: game.user.id,
+                      content: chatMsg,
+                      whisper: [game.user.id],
+                      speaker: { alias: "Generatore WarHero" }
+                  });
+
+                  ui.notifications.info("Processo completato correttamente.");
+              }
+          }
+      }
+  }, { width: 680, height: 480 }).render(true);
+img: systems/fvtt-warhero/images/icons/dinosaur-rex.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.361'
+  systemId: fvtt-warhero
+  systemVersion: 14.80.5
+  createdTime: 1779000105171
+  modifiedTime: 1779000105171
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+_id: o8Y48v67I078P47o
+sort: 0
+_key: '!macros!o8Y48v67I078P47o'

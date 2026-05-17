@@ -1,0 +1,46 @@
+name: sblocca compendi
+type: script
+author: guOwSDi78TuzUGFU
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+scope: global
+command: |-
+  // Recupera tutti i compendi presenti nel gioco
+  const packs = game.packs;
+
+  // Contatore per tenere traccia di quanti compendi vengono sbloccati
+  let unlockedCount = 0;
+
+  for (let pack of packs) {
+    // Controlla se il compendio è attualmente bloccato e se non è un compendio di "sistema" nativo non modificabile
+    if (pack.locked) {
+      // Rilascia il blocco configurando la proprietà 'locked' a false
+      await pack.configure({ locked: false });
+      unlockedCount++;
+      console.log(`Sbloccato il compendio: ${pack.collection}`);
+    }
+  }
+
+  // Mostra una notifica a schermo con il risultato
+  if (unlockedCount > 0) {
+    ui.notifications.info(`Operazione completata! Sono stati sbloccati ${unlockedCount} compendi.`);
+  } else {
+    ui.notifications.info("Tutti i compendi erano già sbloccati.");
+  }
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.361'
+  systemId: fvtt-warhero
+  systemVersion: 14.80.5
+  createdTime: 1778992933240
+  modifiedTime: 1779000101339
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+_id: ZaAOFa44VFbUFzcX
+sort: 600000
+_key: '!macros!ZaAOFa44VFbUFzcX'

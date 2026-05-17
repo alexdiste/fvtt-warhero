@@ -1,6 +1,116 @@
 name: dai oggetti da journal
 type: script
-command: "const journalName = \"Kit\";\nconst journal = game.journal.getName(journalName);\nlet startingObjects=\"Oggetti di partenza\";\n\n// ✅ Controllo esistenza journal\nif (!journal) {\n  ui.notifications.error(`Journal \"${journalName}\" non trovato.`);\n  return;\n}\n\n// ✅ Controllo token selezionato\nconst token = canvas.tokens.controlled[0];\nif (!token) {\n  ui.notifications.warn(\"Seleziona un token prima di eseguire la macro.\");\n  return;\n}\nconst actor = token.actor;\n\n// ✅ Costruzione menu con nomi delle pagine\nconst pages = journal.pages.map(p => p.name);\nlet content = `<form><div class=\"form-group\"><label>Kit di oggetti da assegnare:</label><div class=\"form-fields\"><select autofocus>`;\n//content += `<option value=\"\">Annulla operazione</option>`;\nfor (let name of pages) {\n  content += `<option value=\"${name}\">${name}</option>`;\n}\ncontent += `</select></div></div></form>`;\n\n// ✅ Dialogo con selezione pagina\nnew Dialog({\n  title: \"Seleziona Kit\",\n  content,\n  buttons: {\n    ok: {\n      label: \"Applica\",\n      callback: async (html) => {\n        const selectedName = html[0].querySelector(\"select\").value;\n        if (!selectedName) {\n          ui.notifications.info(\"Operazione annullata.\");\n          return;\n        }\n\n        const selectedPage = journal.pages.getName(selectedName);\n        if (!selectedPage) {\n          ui.notifications.error(`Pagina \"${selectedName}\" non trovata.`);\n          return;\n        }\n\n\t\tlet content = selectedPage.text.content;\n\t\t//console.log(\"contenuto testuale della pagina \"+kit+\" del compendio \"+journalName+\":\\n\" +content);\n\t\t//trasformazioni content copiate da macro equipaggiamento_iniziale\n\t\tcontent=content.replaceAll(/&nbsp;/g, '');\n\t\tcontent=content.replaceAll(\"<p>\", \"\\n\");\n\t\tcontent=content.replaceAll(\"</p>\", \"\");\n\t\tcontent=content.replaceAll(\"@\", \"\\n\");\n\t\t//console.log(content);\n\t\tmyArray=trasformainarray(content);\n\t\t//console.log(\"Elementi nell array: \"+countNumberOfLines(content)+\"\\nArray: \" + myArray);\n\n\t\tfor (j=0;j<myArray.length;j++){\n\t\t//console.log(\"==Kit=\"+kit+\"\\nitem=\"+it.name+\"\\nid=\"+id);\n\t\tflag=0; //tutto ok\n\t\t//console.log(\"sono nel ciclo interno. j è=\"+j+\" valore=\"+myArray[j]);\n\t\tconst stringa1 = myArray[j];\n\t\t//console.log(\"stringa1=\"+stringa1);\n\t\tpos=stringa1.search(\"UUID\");\n\t\tpos2=stringa1.search(\"Compendium\\\\[\");\n\t\t//console.log(\"pos= \"+pos+\" pos2= \"+pos2);\n\n\t\tif (pos>=0){\n\t\t//console.log(\"caso 1. UUID\");\n\t\tcontentcorretto=stringa1.replace(\"UUID[Compendium.\",\"\")\n\t\t}else if (pos2>=0){\n\t\t//console.log(\"caso 2. Quick insert\");\n\t\tcontentcorretto=stringa1.replace(\"Compendium[\",\"\")\n\t\t}else{\n\t\t//console.log(\"caso 3. vuoto o content normale\");\n\t\tflag=-1; //non procedere\n\t\t}\n\n\t\tif (flag==0){\n\t\tposfine=findPositionOfCharacter(contentcorretto,\"]\")\n\t\tcontentcorrettoridotto=contentcorretto.slice(0,posfine);\n\t\t//console.log(contentcorrettoridotto);\n\t\t//split per \".\"\n\t\tmyArray2=contentcorrettoridotto.split(\".\");\n\t\tnomecompendio=myArray2[0]+\".\"+myArray2[1];\n\t\tif (pos>=0){\n\t\tiditem=myArray2[3];\n\t\t}else{\n\t\tiditem=myArray2[2];\n\t\t}\n\t\t//console.log (\"compendio= \"+nomecompendio+\"\\nitem= \"+iditem)\n\t\tmyPacks=await game.packs.get(nomecompendio);\n\t\t//console.log(myPacks);\n\n\t\tconst item= await myPacks.getDocument(iditem);\n\t\t//console.log(item);\n\n\t\tconst itemData = game.items.fromCompendium(item);\n\t\t//console.log(itemData);\n\t\tawait Item.implementation.create(itemData, {parent: actor});\n\t\t}\n\t\t}\n\t\tif(selectedName==startingObjects){\n\t\t//if (confirm(\"Stai dando gli oggetti iniziali, vuoi anche che le monete iniziali siamo impostate a 500?\")){\n\t\t//console.log(\"----------Oggetti iniziali-------\");\n\t\t//Trova oggetto monete di oro e cambia la quantità a 500\n\t\tconst monete= actor.items.getName(\"Moneta di oro\");\n\t\tif (typeof monete !== \"undefined\" || monete !== null){\n\t\t//console.log(\"imposto le monete a 500\");\n\t\tawait monete.update({\"system.quantity\":500}); //aggiorna la quantità di monete a 500\n\t\t}\n\t\t//}    \n\t\t}\n\t\tChatMessage.create({\n\t\tuser : game.user._id,\n\t\tcontent:\"Gli oggetti della  pagina \\\"\"+selectedName+\" \\\"del journal \\\"\"+journalName+\"\\\" sono stati dati al pg \"+token.actor.name\n\t\t})    \n      }\n    },\n    cancel: {\n      label: \"Annulla\"\n    }\n  },\n  default: \"ok\"\n}).render(true);\n\nfunction countNumberOfLines(str) {\n  return str.split(/\\r\\n|\\r|\\n/).length;\n}\n\nfunction trasformainarray(str){\n  return str.split(/\\n/);\n}\n\nfunction findPositionOfCharacter(str, char) {\n  return str.indexOf(char);\n}"
+command: |-
+  // --- CONFIGURAZIONE ---
+  const compendiumId = "fvtt-warhero.manuale";
+  const journalId = "g4KBDQAp2l3hDbj3";
+  const journalName = "Kit";
+  const startingObjects = "Oggetti di partenza";
+
+  // 1. ✅ Controllo token selezionato
+  const token = canvas.tokens.controlled[0];
+  if (!token) {
+    ui.notifications.warn("Seleziona un token prima di eseguire la macro.");
+    return;
+  }
+
+  // 2. ⚠️ Controllo Actor Link (Novità)
+  if (!token.document.actorLink) {
+    const procedi = await Dialog.confirm({
+      title: "Attenzione: Token non linkato",
+      content: `<p style="color: #830000;"><b>Avviso:</b> Il token selezionato (<i>${token.name}</i>) non è collegato permanentemente all'Actor nel database.</p>
+                <p>Gli oggetti aggiunti esisteranno solo per questo token sulla mappa. Vuoi procedere comunque?</p>`,
+      yes: () => true,
+      no: () => false,
+      defaultYes: false
+    });
+    if (!procedi) return;
+  }
+
+  const actor = token.actor;
+
+  // 3. ✅ Recupero del Journal dal Compendio
+  const pack = game.packs.get(compendiumId);
+  const journal = pack ? await pack.getDocument(journalId) : null;
+
+  if (!journal) {
+    ui.notifications.error(`Journal "${journalName}" (ID: ${journalId}) non trovato nel compendio.`);
+    return;
+  }
+
+  // 4. ✅ Costruzione menu selezione pagine
+  const pages = journal.pages.map(p => p.name);
+  let contentMenu = `
+  <form>
+    <div class="form-group">
+      <label>Scegli il Kit da assegnare:</label>
+      <div class="form-fields">
+        <select autofocus>
+          ${pages.map(name => `<option value="${name}">${name}</option>`).join('')}
+        </select>
+      </div>
+    </div>
+  </form>`;
+
+  // 5. ✅ Dialogo di selezione
+  new Dialog({
+    title: "Assegnazione Kit Equipaggiamento",
+    content: contentMenu,
+    buttons: {
+      ok: {
+        label: "Applica Kit",
+        callback: async (html) => {
+          const selectedName = html[0].querySelector("select").value;
+          const selectedPage = journal.pages.getName(selectedName);
+
+          if (!selectedPage) {
+            ui.notifications.error(`Pagina "${selectedName}" non trovata.`);
+            return;
+          }
+
+          const pageContent = selectedPage.text?.content || selectedPage.content || "";
+
+          // Logica Regex
+          const regexLink = /(?:UUID\[Compendium\.|Compendium\[)([^\]]+)\]/g;
+          let itemsToCreate = [];
+          let match;
+
+          while ((match = regexLink.exec(pageContent)) !== null) {
+            try {
+              const doc = await fromUuid(`Compendium.${match[1]}`);
+              if (doc) {
+                itemsToCreate.push(doc.toObject());
+              }
+            } catch (err) {
+              console.error(`Errore nel recupero dell'oggetto: ${match[1]}`, err);
+            }
+          }
+
+          // 6. ✅ Creazione degli oggetti
+          if (itemsToCreate.length > 0) {
+            await actor.createEmbeddedDocuments("Item", itemsToCreate);
+          }
+
+          // 7. ✅ Gestione Monete
+          if (selectedName === startingObjects) {
+            const monete = actor.items.getName("Moneta di oro");
+            if (monete) {
+              await monete.update({ "system.quantity": 500 });
+            }
+          }
+
+          ChatMessage.create({
+            user: game.user.id,
+            content: `Il kit <b>"${selectedName}"</b> è stato assegnato a <b>${actor.name}</b>.`
+          });
+
+          ui.notifications.info(`Kit "${selectedName}" applicato.`);
+        }
+      },
+      cancel: { label: "Annulla" }
+    },
+    default: "ok"
+  }).render(true);
 img: systems/fvtt-warhero/images/icons/toolbox.svg
 author: lXFgtDDsvLskIOGw
 scope: global
@@ -13,12 +123,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.361'
   systemId: fvtt-warhero
   systemVersion: '13.21'
   createdTime: 1759988603243
-  modifiedTime: 1772339767524
+  modifiedTime: 1779000101339
   lastModifiedBy: guOwSDi78TuzUGFU
 _id: nC32G7bjqGlsMKsw
-sort: 1100000
+sort: 900000
 _key: '!macros!nC32G7bjqGlsMKsw'
