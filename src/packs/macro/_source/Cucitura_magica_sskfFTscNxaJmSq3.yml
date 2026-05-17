@@ -1,0 +1,118 @@
+name: Cucitura magica
+type: script
+command: |-
+  const token = canvas.tokens.controlled[0];
+
+  if (!token) {
+      ui.notifications.warn("Per favore, seleziona un token prima di eseguire la macro!");
+  } else {
+      const pgPercentBonus = token.actor.system.secondary?.percentbonus?.value || 0;
+
+      const dialogContent = `
+          <form>
+              <div class="form-group">
+                  <label>Livello del Potere (Soglia Base):</label>
+                  <select id="power-level">
+                      <option value="1">I Livello (80%)</option>
+                      <option value="2">II Livello (50%)</option>
+                      <option value="3">III Livello (30%)</option>
+                      <option value="4">IV Livello (10%)</option>
+                  </select>
+              </div>
+              <hr>
+              <div class="form-group">
+                  <label>Bonus PG (riduce il tiro):</label>
+                  <input type="text" value="-${pgPercentBonus}%" disabled>
+              </div>
+              <div class="form-group">
+                  <label>Modificatori Extra (es. +5 malus, -10 bonus):</label>
+                  <input type="text" id="extra-bonus" placeholder="0">
+              </div>
+          </form>
+      `;
+
+      new Dialog({
+          title: `Cucitura Magica: ${token.name}`,
+          content: dialogContent,
+          buttons: {
+              roll: {
+                  icon: '<i class="fas fa-dice-d100"></i>',
+                  label: "Tenta la Cucitura",
+                  callback: async (html) => {
+                      const level = html.find('#power-level').val();
+                      // Nota: un bonus extra dovrebbe essere inserito come numero negativo per aiutare, 
+                      // ma qui lo sommiamo algebricamente per semplicità.
+                      const extraMod = parseInt(html.find('#extra-bonus').val()) || 0;
+
+                      let baseChance = 0;
+                      if (level === "1") baseChance = 80;
+                      else if (level === "2") baseChance = 50;
+                      else if (level === "3") baseChance = 30;
+                      else if (level === "4") baseChance = 10;
+
+                      let r = new Roll("1d100");
+                      await r.evaluate();
+                      const d100Result = r.total;
+
+                      // Il bonus sottrae dal risultato del dado per facilitare il "tiro sotto la soglia"
+                      // Applichiamo il bonus del PG e l'eventuale modificatore extra
+                      const valoreFinale = d100Result - pgPercentBonus + extraMod;
+
+                      const successo = valoreFinale <= baseChance;
+
+                      const styleSuccess = "color: #18520b; font-weight: bold; font-size: 14px;";
+                      const styleFailure = "color: #8a0606; font-weight: bold; font-size: 14px;";
+                      const esitoTesto = successo ? "CREAZIONE RIUSCITA!" : "CREAZIONE FALLITA";
+                      const classeColore = successo ? styleSuccess : styleFailure;
+
+                      const chatContent = `
+                          <div style="margin-bottom: 5px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
+                              <strong style="font-size: 13px;">Cucitura Magica (Livello ${level})</strong>
+                              <ul style="list-style: none; padding: 0; margin: 5px 0;">
+                                  <li>Soglia Base da non superare: <strong>${baseChance}%</strong></li>
+                                  <hr style="margin: 5px 0;">
+                                  <li>Tiro d100 base: <strong>${d100Result}</strong></li>
+                                  <li>Sconto Bonus PG: <strong>-${pgPercentBonus}</strong></li>
+                                  ${extraMod !== 0 ? `<li>Modificatore Extra: <strong>${extraMod > 0 ? "+" + extraMod : extraMod}</strong></li>` : ""}
+                                  <hr style="margin: 5px 0;">
+                                  <li><strong>Risultato Finale: ${valoreFinale}</strong></li>
+                              </ul>
+                              <div style="text-align: center; margin-top: 8px; padding: 5px; background: rgba(0,0,0,0.05); border-radius: 4px;">
+                                  <span style="${classeColore}">${esitoTesto}</span>
+                              </div>
+                          </div>
+                      `;
+
+                      await ChatMessage.create({
+                          user: game.user.id,
+                          speaker: ChatMessage.getSpeaker({token: token.document}),
+                          content: chatContent
+                      });
+                  }
+              }
+          },
+          default: "roll"
+      }).render(true);
+  }
+img: systems/fvtt-warhero/images/icons/robe.svg
+_id: sskfFTscNxaJmSq3
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  PJQCjvwdEI9nXuhc: 2
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.361'
+  systemId: fvtt-warhero
+  systemVersion: 14.80.5
+  createdTime: 1778935073037
+  modifiedTime: 1778935092832
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 500000
+_key: '!macros!sskfFTscNxaJmSq3'

@@ -70,12 +70,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.361'
   systemId: fvtt-warhero
   systemVersion: '14.46'
   createdTime: 1772339525734
-  modifiedTime: 1772339525734
+  modifiedTime: 1778935092832
   lastModifiedBy: guOwSDi78TuzUGFU
 _id: MBB0klTahmAlOkVZ
-sort: 0
+sort: 400000
 _key: '!macros!MBB0klTahmAlOkVZ'

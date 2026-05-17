@@ -73,24 +73,6 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  prepareDerivedData() {
-
-    super.prepareDerivedData();
-
-    if (this.type == 'character' || game.user.isGM) {
-      this.computeHitPoints()
-      this.setLevel()
-      this.computeDRTotal()
-      this.computeParryBonusTotal()
-    }
-
-    // Chiamata DOPO che tutti i dati sono stati preparati
-    if (this.type == 'character' || game.user.isGM) {
-      this.computeBonusLanguages()
-    }
-  }
-
-  /* -------------------------------------------- */
   _preUpdate(changed, options, user) {
 
     super._preUpdate(changed, options, user);
@@ -823,14 +805,11 @@ async resetAllSkillUses(askConfirmation = true) {
     for (let armor of armors) {
       dr += armor.system.damagereduction
     }
-    let drbonustotal = dr
-    if (this.system?.secondary?.drbonustotal) {
-      drbonustotal = this.system.secondary.drbonustotal.value
-    }
+    let drbonus = this.system?.secondary?.drbonus?.value || 0
+    let drbonustotal = dr + drbonus
     if (drbonustotal < 0) drbonustotal = 0
-    if (drbonustotal != this.system?.secondary?.drbonustotal?.value) {
-      console.log('[DEBUG] update system.secondary.drbonustotal.value', { drbonustotal });
-      this.update({ 'system.secondary.drbonustotal.value': drbonustotal })
+    if (this.system?.secondary?.drbonustotal) {
+      this.system.secondary.drbonustotal.value = drbonustotal
     }
   }
   /* -------------------------------------------- */
@@ -840,12 +819,11 @@ async resetAllSkillUses(askConfirmation = true) {
     for (let shield of shields) {
       parry += shield.system.parrybonus
     }
-    if (this.system?.secondary?.parrybonustotal == undefined) return
-    let parrybonustotal = this.system?.secondary?.parrybonustotal?.value + parry
+    let parrybonus = this.system?.secondary?.parrybonus?.value || 0
+    let parrybonustotal = parrybonus + parry
     if (parrybonustotal < 0) parrybonustotal = 0
-    if (parrybonustotal != this.system?.secondary?.parrybonustotal?.value) {
-      console.log('[DEBUG] update system.secondary.parrybonustotal.value', { parrybonustotal });
-      this.update({ 'system.secondary.parrybonustotal.value': parrybonustotal })
+    if (this.system?.secondary?.parrybonustotal) {
+      this.system.secondary.parrybonustotal.value = parrybonustotal
     }
   }
   /* -------------------------------------------- */

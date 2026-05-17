@@ -1,0 +1,48 @@
+name: Copia oggetti da scheda a item collection
+type: script
+command: >-
+  const uuid = "Actor.dBMyAq4pZodFcjgb.Item.qdkj8rCGJIndYHJX"; // ← Il tuo UUID
+
+
+  // Recupera l'oggetto dall'UUID
+
+  const item = await fromUuid(uuid);
+
+  if (!item) {
+      return ui.notifications.error(`Oggetto con UUID "${uuid}" non trovato.`);
+  }
+
+
+  // Clona i dati dell'oggetto in modo sicuro per la V14
+
+  const itemData = foundry.utils.deepClone(item.toObject());
+
+
+  // Crea l'oggetto nella directory del mondo
+
+  await Item.create(itemData);
+
+
+  ui.notifications.info(`Oggetto "${item.name}" copiato con successo nella
+  directory del mondo.`);
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.361'
+  systemId: fvtt-warhero
+  systemVersion: 14.80.5
+  createdTime: 1778941206023
+  modifiedTime: 1778941206023
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+_id: Y4ZBv8nIaF9PGEKI
+sort: 0
+_key: '!macros!Y4ZBv8nIaF9PGEKI'
