@@ -486,17 +486,7 @@ export class WarheroActor extends Actor {
     return { armor: "none" }
   }
 
-  /* -------------------------------------------- */
-  async incDecHP(formula) {
-    let dmgRoll = await new Roll(formula + "[warhero-orange]").roll()
-    await WarheroUtility.showDiceSoNice(dmgRoll, game.settings.get("core", "rollMode"))
-    let hp = foundry.utils.duplicate(this.system.secondary.hp)
-    hp.value = Number(hp.value) + Number(dmgRoll.total)
-    console.log('[DEBUG] update system.secondary.hp', { hp });
-    this.update({ 'system.secondary.hp': hp })
-    return Number(dmgRoll.total)
-  }
-  /* -------------------------------------------- */
+   /* -------------------------------------------- */
   updateCompetency(competency, obj, labelTab) {
     for (let key in obj) {
       if (obj[key]) {
@@ -578,33 +568,6 @@ export class WarheroActor extends Actor {
     await roll.evaluate()
     await WarheroUtility.showDiceSoNice(roll, game.settings.get("core", "rollMode"))
     return roll.total
-  }
-
-  /* -------------------------------------------- */
-  getSubActors() {
-    let subActors = [];
-    for (let id of this.system.subactors) {
-      subActors.push(foundry.utils.duplicate(game.actors.get(id)))
-    }
-    return subActors;
-  }
-  /* -------------------------------------------- */
-  async addSubActor(subActorId) {
-    let subActors = foundry.utils.duplicate(this.system.subactors);
-    subActors.push(subActorId);
-    console.log('[DEBUG] update system.subactors (add)', { subActors });
-    await this.update({ 'system.subactors': subActors });
-  }
-  /* -------------------------------------------- */
-  async delSubActor(subActorId) {
-    let newArray = [];
-    for (let id of this.system.subactors) {
-      if (id != subActorId) {
-        newArray.push(id);
-      }
-    }
-    console.log('[DEBUG] update system.subactors (del)', { newArray });
-    await this.update({ 'system.subactors': newArray });
   }
 
   /* -------------------------------------------- */

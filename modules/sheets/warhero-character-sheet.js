@@ -132,7 +132,6 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       powers: this.actor.sortPowers(),
       locations: this.actor.getLocations(),
       allItems: this.actor.getAllItems(),
-      subActors: foundry.utils.duplicate(this.actor.getSubActors()),
       competency: this.actor.getCompetency(),
       race: foundry.utils.duplicate(race),
       mainClass: this.actor.getMainClass(),

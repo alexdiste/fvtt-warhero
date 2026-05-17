@@ -18,17 +18,6 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
    */
   static defineSchema() {
     return {
-      // Sub-actors (companions, familiars, etc.)
-      subactors: new fields.ArrayField(
-        new fields.StringField({ required: false }),
-        {
-          initial: [],
-          required: false,
-          label: "WH.ui.subactors",
-          hint: "WH.ui.subactors.hint"
-        }
-      ),
-
       // Biographical data
       biodata: new fields.SchemaField({
         class: new fields.StringField({
