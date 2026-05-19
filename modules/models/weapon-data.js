@@ -53,6 +53,22 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
         hint: "WH.ui.damage2hands.hint"
       }),
 
+      attackbonus: new fields.NumberField({
+        initial: 0,
+        required: false,
+        integer: true,
+        label: "WH.ui.attackbonus",
+        hint: "WH.ui.attackbonus.hint"
+      }),
+
+      damagebonus: new fields.NumberField({
+        initial: 0,
+        required: false,
+        integer: true,
+        label: "WH.ui.damagebonus",
+        hint: "WH.ui.damagebonus.hint"
+      }),
+
       isCustomAttackRoll: new fields.BooleanField({
         initial: false,
         required: false,

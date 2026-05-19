@@ -294,6 +294,13 @@ export class WarheroActor extends Actor {
         weapon.damageFormula2Hands += "+" + this.system.secondary.meleedamagebonus.value
       }
     }
+    const damageBonus = Number(weapon.system.damagebonus) || 0
+    if (damageBonus) {
+      formula += "+" + damageBonus
+      if (weapon.damageFormula2Hands) {
+        weapon.damageFormula2Hands += "+" + damageBonus
+      }
+    }
     weapon.damageFormula = formula
   }
   /* -------------------------------------------- */

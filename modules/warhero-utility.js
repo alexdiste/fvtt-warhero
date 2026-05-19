@@ -262,7 +262,9 @@ static async showDiceSoNice(roll, rollMode) {
     }
 
     let diceFormula
-    if (rollData.weapon && rollData.weapon.system.weapontype == "special") {
+    if (rollData.weapon && rollData.weapon.system.isCustomAttackRoll && rollData.weapon.system.rollformula) {
+      diceFormula = rollData.weapon.system.rollformula
+    } else if (rollData.weapon && rollData.weapon.system.weapontype == "special") {
       diceFormula = rollData.weapon.system.rollformula
     } else {
       // ability/save/size => 0
@@ -272,6 +274,12 @@ static async showDiceSoNice(roll, rollMode) {
       }
       if (rollData.statBonus) {
         diceFormula += "+" + rollData.statBonus.value
+      }
+      if (rollData.weapon) {
+        const attackBonus = Number(rollData.weapon.system.attackbonus) || 0
+        if (attackBonus) {
+          diceFormula += "+" + attackBonus
+        }
       }
     }
     if (rollData.usemWeaponMalus) {

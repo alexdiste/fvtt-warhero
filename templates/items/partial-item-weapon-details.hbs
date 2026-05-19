@@ -22,6 +22,14 @@
       <input type="text" class="item-field-input-1 " name="system.damage" value="{{system.damage}}"
         data-dtype="String" />
     </li>
+    <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.attackbonus"}}</label>
+      <input type="number" class="item-field-input-1 " name="system.attackbonus" value="{{system.attackbonus}}"
+        data-dtype="Number" />
+    </li>
+    <li class="flexrow"><label class="item-field-label-medium ">{{localize "WH.ui.damagebonus"}}</label>
+      <input type="number" class="item-field-input-1 " name="system.damagebonus" value="{{system.damagebonus}}"
+        data-dtype="Number" />
+    </li>
     {{/if}}
 
     {{#if (eq system.weapontype "polearm")}}
