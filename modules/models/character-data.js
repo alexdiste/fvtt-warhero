@@ -170,6 +170,15 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           max: new fields.NumberField({ initial: 30, required: false, integer: true }),
           value: new fields.NumberField({ initial: 30, required: false, integer: true })
         }),
+        temporaryhp: new fields.SchemaField({
+          label: new fields.StringField({ initial: "WH.ui.TemporaryHitPoints", required: false }),
+          abbrev: new fields.StringField({ initial: "thp", required: false }),
+          style: new fields.StringField({ initial: "edit", required: false }),
+          hasmax: new fields.BooleanField({ initial: false, required: false }),
+          isheader: new fields.BooleanField({ initial: true, required: false }),
+          max: new fields.NumberField({ initial: 0, required: false, integer: true }),
+          value: new fields.NumberField({ initial: 0, required: false, integer: true })
+        }),
         knowledge: new fields.SchemaField({
           label: new fields.StringField({ initial: "WH.ui.Knowledge", required: false }),
           abbrev: new fields.StringField({ initial: "knowledge", required: false }),

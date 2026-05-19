@@ -634,6 +634,123 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
+  /**
+   * Apply damage to the actor, considering temporary hit points first
+   * Temporary HP are reduced first, then any excess damage goes to real HP
+   * @param {number} damageAmount - The amount of damage to apply
+   * @param {boolean} applyArmorReduction - If true, applies armor damage reduction (minimum 1 damage)
+   * @returns {Promise<void>}
+   */
+  async applyDamage(damageAmount, applyArmorReduction = false) {
+    if (!damageAmount || damageAmount <= 0) {
+      return;
+    }
+
+    let finalDamage = damageAmount;
+
+    // Apply armor damage reduction if requested
+    if (applyArmorReduction) {
+      const drbonustotal = this.system?.secondary?.drbonustotal?.value || 0;
+      finalDamage = Math.max(1, damageAmount - drbonustotal);
+      console.log('[DEBUG] applyDamage with armor reduction', {
+        originalDamage: damageAmount,
+        damageReduction: drbonustotal,
+        finalDamage: finalDamage
+      });
+    }
+
+    let currentTemporaryHP = this.system.attributes.temporaryhp?.value || 0;
+    let currentHP = this.system.attributes.hp?.value || 0;
+
+    let remainingDamage = finalDamage;
+    let tempHPLost = 0;
+    let realHPLost = 0;
+
+    // First, reduce temporary HP
+    if (currentTemporaryHP > 0) {
+      tempHPLost = Math.min(currentTemporaryHP, remainingDamage);
+      currentTemporaryHP -= tempHPLost;
+      remainingDamage -= tempHPLost;
+    }
+
+    // Then, reduce real HP with any excess damage
+    if (remainingDamage > 0) {
+      realHPLost = remainingDamage;
+      currentHP = Math.max(0, currentHP - remainingDamage);
+    }
+
+    // Update the actor with new values
+    const updates = {
+      'system.attributes.temporaryhp.value': Math.max(0, currentTemporaryHP),
+      'system.attributes.hp.value': currentHP
+    };
+
+    console.log('[DEBUG] applyDamage', {
+      originalDamageAmount: damageAmount,
+      finalDamage: finalDamage,
+      applyArmorReduction: applyArmorReduction,
+      originalTempHP: this.system.attributes.temporaryhp?.value,
+      originalHP: this.system.attributes.hp?.value,
+      tempHPLost: tempHPLost,
+      realHPLost: realHPLost,
+      newTempHP: updates['system.attributes.temporaryhp.value'],
+      newHP: updates['system.attributes.hp.value']
+    });
+
+    await this.update(updates);
+
+    // Create a chat message to notify about the damage
+    const chatData = {
+      user: game.user._id,
+      content: game.i18n.format("WH.chat.damageapplied", {
+        name: this.name,
+        damage: finalDamage,
+        tempHPLost: tempHPLost,
+        hpLost: realHPLost
+      })
+    };
+    ChatMessage.create(chatData);
+  }
+
+  /* -------------------------------------------- */
+  /**
+   * Add temporary hit points to the actor (cumulative)
+   * @param {number} tempHPAmount - The amount of temporary HP to add
+   * @returns {Promise<void>}
+   */
+  async addTemporaryHP(tempHPAmount) {
+    if (!tempHPAmount || tempHPAmount <= 0) {
+      return;
+    }
+
+    let currentTemporaryHP = this.system.attributes.temporaryhp?.value || 0;
+    // Temporary HP stack - add them together
+    let newTemporaryHP = currentTemporaryHP + tempHPAmount;
+
+    const updates = {
+      'system.attributes.temporaryhp.value': newTemporaryHP
+    };
+
+    console.log('[DEBUG] addTemporaryHP', {
+      tempHPAmount,
+      previousTempHP: currentTemporaryHP,
+      newTempHP: newTemporaryHP
+    });
+
+    await this.update(updates);
+
+    // Create a chat message to notify about the temporary HP
+    const chatData = {
+      user: game.user._id,
+      content: game.i18n.format("WH.chat.temporaryhpadded", {
+        name: this.name,
+        temphp: newTemporaryHP
+      })
+    };
+    ChatMessage.create(chatData);
+  }
+
+  /* -------------------------------------------- */
   async restActor() {
     const manamax = this.system.attributes.mana.max;
     const hpmax = this.system.attributes.hp.max;

@@ -94,6 +94,7 @@
   "WH.ui.Mind": "Mente",
   "WH.ui.Type": "Tipo",
   "WH.ui.HitPoints": "Punti ferita",
+  "WH.ui.TemporaryHitPoints": "Punti ferita temporanei",
   "WH.ui.Defence": "Difesa totale",
   "WH.ui.Throw2HitM": "Bonus Txc (corpo a corpo)",
   "WH.ui.Throw2HitR": "Bonus Txc (distanza)",
@@ -268,6 +269,8 @@
   "WH.ui.confirmrest":"Conferma riposo",
   "WH.ui.confirmrestcontent":"Sei sicuro di voler riposare?",
   "WH.chat.actorrested" : "{name} ha dormito recuperando tutti i PF, tutto il mana, tutti gli usi di contropotere e tutti gli usi delle abilità. Ricordati di controllare se hai già mangiato questo giorno o no, in caso negativo ricordati di scalare una razione",
+  "WH.chat.damageapplied": "{name} subisce {damage} danni! {tempHPLost} PF temporanei persi, {hpLost} PF veri persi.",
+  "WH.chat.temporaryhpadded": "{name} guadagna {temphp} punti ferita temporanei!",
 
   "WH.notif.skillmaxuse": "Usi massimi raggiunti",
   "WH.notif.toomanyuses": "Usi massimi raggiunti"
