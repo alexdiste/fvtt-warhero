@@ -49,6 +49,99 @@ export class WarheroUtility {
       return array.join(separator);
     })
 
+    this._patchTokenBars();
+    Hooks.on('updateActor', (actor, data, options, userId) => {
+      try {
+        actor?.getActiveTokens()?.forEach(token => token.drawBars?.());
+      } catch (error) {
+        console.error('Warhero: failed to refresh token bars after actor update', error);
+      }
+    });
+  }
+
+  /* -------------------------------------------- */
+  static _patchTokenBars() {
+    if (typeof Token === 'undefined' || !Token.prototype.drawBars) return;
+    const originalDrawBars = Token.prototype.drawBars;
+
+    Token.prototype.drawBars = function (...args) {
+      const result = originalDrawBars.apply(this, args);
+      try {
+        this._renderWarheroTempHPBar?.();
+      } catch (error) {
+        console.error('Warhero: failed to render temp HP overlay on token bar1', error);
+      }
+      return result;
+    };
+
+    Token.prototype._renderWarheroTempHPBar = function () {
+      const actor = this.actor;
+      const attributes = actor?.system?.attributes;
+      if (!actor || actor.type !== "character" || !game?.system || game.system.id !== "fvtt-warhero") {
+        this._clearWarheroTempHPBar();
+        return;
+      }
+      if (!attributes?.hp || attributes.temporaryhp === undefined) {
+        this._clearWarheroTempHPBar();
+        return;
+      }
+
+      const tempHP = Number(attributes.temporaryhp.value) || 0;
+      if (tempHP <= 0) {
+        this._clearWarheroTempHPBar();
+        return;
+      }
+
+      const hpValue = Number(attributes.hp.value) || 0;
+      const hpMax = Number(attributes.hp.max) || 1;
+      if (hpMax <= 0) {
+        this._clearWarheroTempHPBar();
+        return;
+      }
+
+      const barContainer = this.bars;
+      if (!barContainer) return;
+
+      const bar1 = barContainer.children.find(child => child.name === 'bar1') || barContainer.children[0];
+      if (!bar1) return;
+
+      const currentWidth = Math.max(0, Number(bar1.width) || 0);
+      const barHeight = Number(bar1.height) || 6;
+      const barX = Number(bar1.x) || 0;
+      const barY = Number(bar1.y) || 0;
+
+      const fullWidth = hpValue > 0
+        ? Math.round((currentWidth * hpMax) / hpValue)
+        : Math.max(barContainer.width || 0, this.w || currentWidth);
+      if (fullWidth <= 0) return;
+
+      const tempAmount = Math.min(tempHP, Math.max(0, hpMax - hpValue));
+      const tempWidth = Math.round((tempAmount / hpMax) * fullWidth);
+      const healthWidth = hpValue > 0 ? currentWidth : 0;
+      if (tempWidth <= 0) {
+        this._clearWarheroTempHPBar();
+        return;
+      }
+
+      if (!this._warheroTempHPBar) {
+        this._warheroTempHPBar = new PIXI.Graphics();
+        this._warheroTempHPBar.name = 'warhero-temp-hp-bar';
+        barContainer.addChild(this._warheroTempHPBar);
+      }
+
+      this._warheroTempHPBar.clear();
+      if (healthWidth > 0) {
+        this._warheroTempHPBar.beginFill(0x00aa00, 0.9).drawRect(barX, barY, healthWidth, barHeight);
+      }
+      this._warheroTempHPBar.beginFill(0x8a2be2, 0.9).drawRect(barX + healthWidth, barY, tempWidth, barHeight);
+      this._warheroTempHPBar.endFill();
+    };
+
+    Token.prototype._clearWarheroTempHPBar = function () {
+      if (this._warheroTempHPBar) {
+        this._warheroTempHPBar.clear();
+      }
+    };
   }
 
   /*--------------------- ----------------------- */
