@@ -110,15 +110,18 @@ export class WarheroUtility {
       const barX = Number(bar1.x) || 0;
       const barY = Number(bar1.y) || 0;
 
-      const fullWidth = hpValue > 0
-        ? Math.round((currentWidth * hpMax) / hpValue)
-        : Math.max(barContainer.width || 0, this.w || currentWidth);
+      const fullWidth = Math.max(barContainer.width || 0, this.w || currentWidth);
       if (fullWidth <= 0) return;
 
-      const tempAmount = Math.min(tempHP, Math.max(0, hpMax - hpValue));
-      const tempWidth = Math.round((tempAmount / hpMax) * fullWidth);
-      const healthWidth = hpValue > 0 ? currentWidth : 0;
-      if (tempWidth <= 0) {
+      const effectiveMax = Math.max(hpMax + tempHP, 1);
+      const healthWidth = Math.round((hpValue / effectiveMax) * fullWidth);
+      const tempWidth = Math.round((tempHP / effectiveMax) * fullWidth);
+      if (tempWidth <= 0 && healthWidth <= 0) {
+        this._clearWarheroTempHPBar();
+        return;
+      }
+      const displayTempWidth = Math.min(tempWidth, Math.max(0, fullWidth - healthWidth));
+      if (displayTempWidth <= 0) {
         this._clearWarheroTempHPBar();
         return;
       }
@@ -133,7 +136,7 @@ export class WarheroUtility {
       if (healthWidth > 0) {
         this._warheroTempHPBar.beginFill(0x00aa00, 0.9).drawRect(barX, barY, healthWidth, barHeight);
       }
-      this._warheroTempHPBar.beginFill(0x8a2be2, 0.9).drawRect(barX + healthWidth, barY, tempWidth, barHeight);
+      this._warheroTempHPBar.beginFill(0x8a2be2, 0.9).drawRect(barX + healthWidth, barY, displayTempWidth, barHeight);
       this._warheroTempHPBar.endFill();
     };
 
