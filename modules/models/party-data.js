@@ -24,7 +24,7 @@ export class PartyData extends foundry.abstract.TypeDataModel {
           required: false,
           blank: true,
           label: "WH.ui.partytype",
-          hint: "WH.ui.partytype.hint"
+          hint: "WH.ui.partytypeHint"
         }),
         founded: new fields.NumberField({
           initial: new Date().getFullYear(),
@@ -37,14 +37,14 @@ export class PartyData extends foundry.abstract.TypeDataModel {
           required: false,
           blank: true,
           label: "WH.ui.members",
-          hint: "WH.ui.members.hint"
+          hint: "WH.ui.membersHint"
         }),
         relationships: new fields.StringField({
           initial: "[]",
           required: false,
           blank: true,
           label: "WH.ui.relations",
-          hint: "WH.ui.relations.hint"
+          hint: "WH.ui.relationsHint"
         }),
         description: new fields.HTMLField({
           initial: "",
@@ -62,7 +62,8 @@ export class PartyData extends foundry.abstract.TypeDataModel {
           initial: "",
           required: false,
           blank: true,
-          label: "WH.ui.gmnotes"
+          label: "WH.ui.gmnotes",
+          hint: "WH.ui.gmnotesHint"
         })
       })
     };
