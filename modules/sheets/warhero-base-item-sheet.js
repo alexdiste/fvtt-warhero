@@ -308,7 +308,8 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
     const attr = target.dataset.edit
     const current = foundry.utils.getProperty(this.document, attr)
     const { img } = this.document.constructor.getDefaultArtwork?.(this.document.toObject()) ?? {}
-    const fp = new FilePicker({
+    const PickerClass = foundry.applications.apps?.FilePicker ?? FilePicker
+    const fp = new PickerClass({
       current,
       type: "image",
       redirectToRoot: img ? [img] : [],
