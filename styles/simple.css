@@ -172,6 +172,25 @@ a:hover {
   min-height: 0;
 }
 
+.fvtt-warhero .tab-content-scrollable .grid.grid2col {
+  margin: 0;
+  gap: 0.35rem;
+}
+
+.fvtt-warhero .tab-content-scrollable .stat-list {
+  margin: 0;
+  padding: 0;
+}
+
+.fvtt-warhero .tab-content-scrollable .stat-list.alternate-list > li {
+  margin: 0;
+  padding: 0.15rem 0;
+}
+
+.fvtt-warhero .tab-content-scrollable .grid.grid2col + .grid.grid2col {
+  margin-top: 0.25rem;
+}
+
 .fvtt-warhero .sheet-header .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 96px;
