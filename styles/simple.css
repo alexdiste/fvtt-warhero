@@ -191,34 +191,6 @@ a:hover {
   max-width: 12rem;
 }
 
-.combat-secondary-values {
-  max-height: none;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.combat-secondary-values .stat-list {
-  width: 100%;
-}
-
-.combat-secondary-values .item-field-label-vlong {
-  min-width: 9rem;
-  max-width: 12rem;
-}
-
-.combat-secondary-values .item-field-label-medium,
-.combat-secondary-values .item-field-label-short {
-  min-width: auto;
-  max-width: 8rem;
-}
-
-@media (max-width: 900px) {
-  .combat-secondary-values {
-    grid-template-columns: 1fr;
-  }
-}
 
 .item-stat-roll h4 {
   margin-left: 6px;
