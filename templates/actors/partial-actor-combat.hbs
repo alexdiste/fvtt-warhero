@@ -40,6 +40,25 @@
         </ul>
       </div>
 
+      <div class="grid grid2col combat-secondary-values">
+        <ul class="stat-list alternate-list">
+          {{#with system.secondary.disarmbonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="disarmbonus"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
+          {{#with system.secondary.tripbonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="tripbonus"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
+        </ul>
+        <ul class="stat-list alternate-list">
+          {{#with system.secondary.defensivebonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="defensivebonus"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
+        </ul>
+      </div>
+
       <div>
         <ul class="stat-list alternate-list">
           <li class="item flexrow list-item items-title-bg">

@@ -241,6 +241,13 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           max: new fields.NumberField({ initial: 6, required: false, integer: true }),
           value: new fields.NumberField({ initial: 6, required: false, integer: true })
         }),
+        movcharge: new fields.SchemaField({
+          label: new fields.StringField({ initial: "WH.ui.MovementCharge", required: false }),
+          abbrev: new fields.StringField({ initial: "movcharge", required: false }),
+          style: new fields.StringField({ initial: "edit", required: false }),
+          max: new fields.NumberField({ initial: 0, required: false, integer: true }),
+          value: new fields.NumberField({ initial: 0, required: false, integer: true })
+        }),
         movswim: new fields.SchemaField({
           label: new fields.StringField({ initial: "WH.ui.MovementSwim", required: false }),
           abbrev: new fields.StringField({ initial: "mov", required: false }),
@@ -290,6 +297,27 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           disabled: new fields.BooleanField({ initial: true, required: false }),
           style: new fields.StringField({ initial: "edit", required: false }),
           iscombat: new fields.BooleanField({ initial: true, required: false }),
+          value: new fields.NumberField({ initial: 0, required: false, integer: true })
+        }),
+        disarmbonus: new fields.SchemaField({
+          label: new fields.StringField({ initial: "WH.ui.disarmbonus", required: false }),
+          abbrev: new fields.StringField({ initial: "disarmbonus", required: false }),
+          iscombat: new fields.BooleanField({ initial: true, required: false }),
+          style: new fields.StringField({ initial: "edit", required: false }),
+          value: new fields.NumberField({ initial: 0, required: false, integer: true })
+        }),
+        tripbonus: new fields.SchemaField({
+          label: new fields.StringField({ initial: "WH.ui.tripbonus", required: false }),
+          abbrev: new fields.StringField({ initial: "tripbonus", required: false }),
+          iscombat: new fields.BooleanField({ initial: true, required: false }),
+          style: new fields.StringField({ initial: "edit", required: false }),
+          value: new fields.NumberField({ initial: 0, required: false, integer: true })
+        }),
+        defensivebonus: new fields.SchemaField({
+          label: new fields.StringField({ initial: "WH.ui.defensivebonus", required: false }),
+          abbrev: new fields.StringField({ initial: "defensivebonus", required: false }),
+          iscombat: new fields.BooleanField({ initial: true, required: false }),
+          style: new fields.StringField({ initial: "edit", required: false }),
           value: new fields.NumberField({ initial: 0, required: false, integer: true })
         }),
         percentbonus: new fields.SchemaField({
