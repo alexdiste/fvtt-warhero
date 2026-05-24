@@ -128,6 +128,7 @@
   "WH.ui.disarmbonus": "Disarm bonus",
   "WH.ui.tripbonus": "Trip bonus",
   "WH.ui.defensivebonus": "Defensive bonus",
+  "WH.ui.errorOnlyOneRace": "An actor may have at most one race.",
   "WH.ui.counterspell": "Counter spell",
   "WH.ui.classSkills": "Class Skills",
   "WH.ui.skills": "Skills based on level",

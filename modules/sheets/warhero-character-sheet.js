@@ -349,12 +349,22 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     //if (!this.isEditable || !this.isEditMode) return
     const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event)
 
-    // Handle different data types
     if (data.type === "Item") {
       const item = await fromUuid(data.uuid)
+      if (!item) return false
+
+      if (item.type === "race") {
+        const existingRace = this.actor.items.find(i => i.type === "race")
+        if (existingRace) {
+          ui.notifications.error(game.i18n.localize("WH.ui.errorOnlyOneRace"))
+          return false
+        }
+      }
+
       return super._onDropItem(item)
     }
 
+    return false
   }
 
 

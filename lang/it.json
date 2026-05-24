@@ -123,6 +123,7 @@
   "WH.ui.disarmbonus": "Bonus Disarmare",
   "WH.ui.tripbonus": "Bonus Buttare a terra",
   "WH.ui.defensivebonus": "Bonus Difesa difensiva",
+  "WH.ui.errorOnlyOneRace": "Un attore può avere al massimo una sola razza.",
   "WH.ui.counterspell": "Contropotere",
   "WH.ui.classSkills": "Abilitá di classe",
   "WH.ui.skills": "Abilitá Aggiuntiva",
