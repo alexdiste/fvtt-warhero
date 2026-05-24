@@ -41,6 +41,10 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
       "create-effect": WarheroActorSheet.#onCreateActiveEffect,
       "quantity-minus": WarheroActorSheet.#onQuantityMinus,
       "quantity-plus": WarheroActorSheet.#onQuantityPlus,
+      openMember: WarheroActorSheet.#onOpenMember,
+      removeMember: WarheroActorSheet.#onRemovePartyReference,
+      removeRelation: WarheroActorSheet.#onRemovePartyReference,
+      setRelation: WarheroActorSheet.#onSetRelation,
     },
   }
 
@@ -188,6 +192,53 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
     return fp.browse()
   }
 
+  static #parseJsonField(value) {
+    if (Array.isArray(value)) return value
+    if (typeof value !== "string") return []
+    try {
+      return JSON.parse(value) || []
+    } catch {
+      return []
+    }
+  }
+
+  static async #openActorReference(uuid) {
+    if (!uuid) return null
+    try {
+      return await fromUuid(uuid)
+    } catch {
+      return null
+    }
+  }
+
+  static async #onOpenMember(event, target) {
+    const uuid = target.dataset.memberUuid
+    const actor = await this.#openActorReference(uuid)
+    if (!actor) return
+    actor.sheet.render(true)
+  }
+
+  static async #onRemovePartyReference(event, target) {
+    const uuid = target.dataset.memberUuid
+    if (!uuid) return
+    const members = this.#parseJsonField(this.document.system.biodata.members)
+    const relations = this.#parseJsonField(this.document.system.biodata.relationships)
+    const updatedMembers = members.filter((m) => m.uuid !== uuid)
+    const updatedRelations = relations.filter((r) => r.uuid !== uuid)
+    await this.document.update({
+      "system.biodata.members": JSON.stringify(updatedMembers),
+      "system.biodata.relationships": JSON.stringify(updatedRelations),
+    })
+  }
+
+  static async #onSetRelation(event, target) {
+    const uuid = target.dataset.memberUuid
+    const relation = target.dataset.relation
+    if (!uuid || !relation) return
+    const relations = this.#parseJsonField(this.document.system.biodata.relationships)
+    const updatedRelations = relations.map((r) => r.uuid === uuid ? { ...r, relation } : r)
+    await this.document.update({ "system.biodata.relationships": JSON.stringify(updatedRelations) })
+  }
 
   /**
    * Edit an existing item within the Actor

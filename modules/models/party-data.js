@@ -26,6 +26,26 @@ export class PartyData extends foundry.abstract.TypeDataModel {
           label: "WH.ui.partytype",
           hint: "WH.ui.partytype.hint"
         }),
+        founded: new fields.NumberField({
+          initial: new Date().getFullYear(),
+          required: false,
+          integer: true,
+          label: "WH.ui.founded",
+        }),
+        members: new fields.StringField({
+          initial: "[]",
+          required: false,
+          blank: true,
+          label: "WH.ui.members",
+          hint: "WH.ui.members.hint"
+        }),
+        relationships: new fields.StringField({
+          initial: "[]",
+          required: false,
+          blank: true,
+          label: "WH.ui.relations",
+          hint: "WH.ui.relations.hint"
+        }),
         description: new fields.HTMLField({
           initial: "",
           required: false,
