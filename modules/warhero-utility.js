@@ -61,10 +61,11 @@ export class WarheroUtility {
 
   /* -------------------------------------------- */
   static _patchTokenBars() {
-    if (typeof Token === 'undefined' || !Token.prototype.drawBars) return;
-    const originalDrawBars = Token.prototype.drawBars;
+    const TokenClass = foundry.canvas?.placeables?.Token;
+    if (!TokenClass || !TokenClass.prototype?.drawBars) return;
+    const originalDrawBars = TokenClass.prototype.drawBars;
 
-    Token.prototype.drawBars = function (...args) {
+    TokenClass.prototype.drawBars = function (...args) {
       const result = originalDrawBars.apply(this, args);
       try {
         this._renderWarheroTempHPBar?.();
@@ -74,7 +75,7 @@ export class WarheroUtility {
       return result;
     };
 
-    Token.prototype._renderWarheroTempHPBar = function () {
+    TokenClass.prototype._renderWarheroTempHPBar = function () {
       const actor = this.actor;
       const attributes = actor?.system?.attributes;
       if (!actor || actor.type !== "character" || !game?.system || game.system.id !== "fvtt-warhero") {
@@ -140,7 +141,7 @@ export class WarheroUtility {
       this._warheroTempHPBar.endFill();
     };
 
-    Token.prototype._clearWarheroTempHPBar = function () {
+    TokenClass.prototype._clearWarheroTempHPBar = function () {
       if (this._warheroTempHPBar) {
         this._warheroTempHPBar.clear();
       }
