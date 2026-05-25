@@ -1,0 +1,286 @@
+name: Genera o modifica png con razza
+type: script
+_id: mg5NWSrq6wOtiyWU
+author: guOwSDi78TuzUGFU
+img: systems/fvtt-warhero/images/icons/cowled.svg
+scope: global
+command: >-
+  /* ==========================================================
+     MACRO GENERAZIONE E AGGIORNAMENTO RAZZE WARHERO
+     ========================================================== */
+
+  // 1. Mapping per la prima identificazione (Nome Oggetto -> Slug Interno)
+
+  const MAPPING_RAZZE = {
+    "dirza": "dirza",
+    "dragonide": "dragonide",
+    "elfo": "elfo",
+    "elfo oscuro": "elfo_oscuro",
+    "elfo selvaggio": "elfo_selvaggio",
+    "fata": "fata",
+    "formian": "formian",
+    "gnomo": "gnomo",
+    "goblin": "goblin",
+    "halfling": "halfling",
+    "mezz'elfo": "mezzelfo",
+    "mezzelfo": "mezzelfo",
+    "mezzo angelo": "mezzangelo",
+    "mezz'angelo": "mezzangelo",
+    "mezzo demone": "mezzodiavolo",
+    "mezzo diavolo": "mezzodiavolo",
+    "mezzo nano": "mezzonano",
+    "mezzonano": "mezzonano",
+    "mezzorco": "mezzorco",
+    "nano": "nano",
+    "ogre": "ogre",
+    "satiro": "satiro",
+    "umano": "umano"
+  };
+
+
+  // 2. Database Regole di Razza
+
+  const RAZZE_DB = {
+    "dirza": { nome: "Dirza", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Sottocomune", "Liv. 1: Comp. 'Armi Lunghe'", "Disarmare: +1 ai liv. 1, 5, 7"] },
+    "dragonide": { nome: "Dragonide", pf: 6, stats: ["fis", "men"], note: ["Lingue: Comune, Draconico", "Buttare a terra: +1 ai liv. 1, 5, 7"] },
+    "elfo": { nome: "Elfo", pf: 2, stats: ["men"], note: ["Lingue: Comune, Elfico", "Contropotere: +1 uso/g ai liv. 1, 5", "Bonus %: +2 ai liv. 1,2,4,6,8", "Mana: +1 ai liv. 2,5,7"] },
+    "elfo_oscuro": { nome: "Elfo Oscuro", pf: 4, stats: ["men"], note: ["Lingue: Comune, Elfico", "Lingue Extra: +1 ai liv. 1,7", "Bonus %: +2 ai liv. 1,2,4,6,8", "Mana: +1 al liv. 5"] },
+    "elfo_selvaggio": { nome: "Elfo Selvaggio", pf: 6, stats: ["fis", "men"], note: ["Lingue: Comune, Elfico", "Liv. 1: Comp. 'Armi da tiro'"] },
+    "fata": { nome: "Fata", pf: 2, stats: ["ist", "men"], note: ["Lingue: Comune, Elfico, Silvano", "Liv. 1: Volare (6m)", "Mana: +1 ai liv. 5,7"] },
+    "formian": { nome: "Formian", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Sottocomune", "Carica: +3m ai liv. 1, 5, 7", "Liv. 5: +1 Difesa permanente"] },
+    "gnomo": { nome: "Gnomo", pf: 4, stats: ["fis", "men"], note: ["Lingue: Comune, Gnomesco", "Conoscenze: +1 ai liv. 1,3,5,7,9", "Bonus %: +2 ai liv. 1,2,4,6,8"] },
+    "goblin": { nome: "Goblin", pf: 2, stats: ["ist"], note: ["Lingue: Comune, Goblin", "Liv. 1: Comp. 'Armi da lancio' e 'Armi da tiro'"] },
+    "halfling": { nome: "Halfling", pf: 4, stats: ["ist"], note: ["Lingue: Comune, Halfling", "Iniziativa: +1 ai liv. 1,3,5,7,9"] },
+    "nano": { nome: "Nano", pf: 6, stats: ["fis"], note: ["Lingue: Comune, Nanico", "Liv. 1: +1 Difesa permanente", "Bonus %: +2 ai liv. 1,5,7"] },
+    "ogre": { nome: "Ogre", pf: 6, stats: ["fis"], note: ["Lingue: Comune, Orchesco", "Liv. 1: Comp. 'Armi a due mani'"] },
+    "mezzangelo": { nome: "Mezz'angelo", pf: 4, stats: ["men"], note: ["Lingue: Comune, Celestiale", "Cura ferite: +1 uso/g ai liv. 1, 5, 7"] },
+    "mezzelfo": { nome: "Mezz'elfo", pf: 4, stats: ["ist", "men"], note: ["Lingue: Comune, Elfico", "Liv. 1: Comp. 'Armi da tiro'", "Mana: +1 ai liv. 5,7"] },
+    "mezzorco": { nome: "Mezzorco", pf: 4, stats: ["fis"], note: ["Lingue: Comune, Orchesco", "Liv. 3,6,9: +1 TxC", "Liv. 2-9: +1 Danni"] },
+    "mezzodiavolo": { nome: "Mezzo Diavolo", pf: 4, stats: ["ist", "men"], note: ["Lingue: Comune, Infernale/Abissale", "Maglio Oscuro: +1 uso/g ai liv. 1, 5, 7"] },
+    "mezzonano": { nome: "Mezzo Nano", pf: 4, stats: ["fis", "ist"], note: ["Lingue: Comune, Nanico", "Bonus %: +2 ai liv. 1,2,4,6,8", "Difensiva: +1 DIF ai liv. 1,3,5,7,9"] },
+    "satiro": { nome: "Satiro", pf: 2, stats: ["ist"], note: ["Lingue: Comune, Elfico, Silvano", "Sonno: +1 uso/g ai liv. 1, 5, 7", "Mana: +1 ai liv. 5,7"] },
+    "umano": { nome: "Umano", pf: 4, stats: ["fis", "ist", "men"], note: ["Lingue: Comune", "Liv. 5: +1 Abilità aggiuntiva"] }
+  };
+
+
+  // 3. Selezione Actor e Token
+
+  const token = canvas.tokens.controlled[0];
+
+  let targetActor = token ? token.actor : null;
+
+  let mode = targetActor ? "edit" : "create";
+
+
+  let razza_k = "";
+
+  let nomePG = mode === "edit" ? targetActor.name : "";
+
+
+  // --- 4. Rilevamento Slug Identifier ---
+
+  if (mode === "edit") {
+      // Cerchiamo il flag nascosto (lo slug identifier)
+      razza_k = targetActor.getFlag("world", "raceSlug");
+
+      // Se non c'è, proviamo a mapparlo dal nome dell'oggetto Item
+      if (!razza_k) {
+          const raceItem = targetActor.items.find(i => i.type === "race" || i.name.toLowerCase().includes("razza"));
+          if (raceItem) {
+              let nomePulito = raceItem.name.toLowerCase().trim();
+              razza_k = MAPPING_RAZZE[nomePulito];
+          }
+      }
+  }
+
+
+  // Se non rilevato o in modalità creazione, chiediamo all'utente
+
+  if (!razza_k || !RAZZE_DB[razza_k]) {
+      const opts = Object.keys(RAZZE_DB).map(k => `<option value="${k}">${RAZZE_DB[k].nome}</option>`).join('');
+      const formHTML = `
+          <form>
+              ${mode === "create" ? '<div class="form-group"><label>Nome PG:</label><input type="text" id="name" value="Nuovo Eroe"></div>' : ''}
+              <div class="form-group"><label>Razza (Slug):</label><select id="race">${opts}</select></div>
+          </form>`;
+      
+      let result = await new Promise((resolve) => {
+          new Dialog({
+              title: "Configurazione Iniziale",
+              content: formHTML,
+              buttons: { ok: { label: "Conferma", callback: (html) => resolve({
+                  n: html.find("#name").val(),
+                  r: html.find("#race").val()
+              })}}
+          }).render(true);
+      });
+      if (mode === "create") nomePG = result.n;
+      razza_k = result.r;
+  }
+
+
+  const r_dati = RAZZE_DB[razza_k];
+
+
+  // --- 5. Dialoghi Livello e Statistiche ---
+
+  const lv = await Dialog.prompt({ title: "Livello", content: '<input
+  type="number" id="l" value="1" min="1">', callback: h =>
+  parseInt(h.find("#l").val()) });
+
+  const statsB = await Dialog.prompt({ title: "Fisico-Istinto-Mente Base",
+  content: '<input type="text" id="s" value="2-2-1">', callback: h =>
+  h.find("#s").val() });
+
+  let [fis, ist, men] = statsB.split("-").map(Number);
+
+
+  async function upStat(l) {
+      if (r_dati.stats.length === 1) { 
+          let s = r_dati.stats[0]; if(s==="fis") fis++; if(s==="ist") ist++; if(s==="men") men++; 
+      } else {
+          let opts = r_dati.stats.map(s => `<option value="${s}">${s.toUpperCase()}</option>`).join('');
+          let s = await Dialog.prompt({ title: `Aumento Liv. ${l}`, content: `<p>Scegli bonus razza:</p><select id="st">${opts}</select>`, callback: h => h.find("#st").val() });
+          if(s==="fis") fis++; if(s==="ist") ist++; if(s==="men") men++;
+      }
+  }
+
+  await upStat(1); if(lv >= 4) await upStat(4); if(lv >= 8) await upStat(8);
+
+
+  // --- 6. Calcolo Bonus Progressivi ---
+
+  let bonusTxC = 0, bonusDanni = 0, bonusPerc = 0, bonusMana = 0, bonusDefPerm =
+  0, bonusIni = 0, bonusDifensiva = 0;
+
+
+  // Bonus Standard (3, 6, 9)
+
+  if (razza_k !== "mezzorco") {
+      if (lv >= 3) { bonusTxC++; bonusDanni++; }
+      if (lv >= 6) { bonusTxC++; bonusDanni++; }
+      if (lv >= 9) { bonusTxC++; bonusDanni++; }
+  } else {
+      // Speciale Mezzorco: TxC al 3,6,9 e Danni +1 per ogni livello dal 2 al 9
+      if (lv >= 3) bonusTxC++; if (lv >= 6) bonusTxC++; if (lv >= 9) bonusTxC++;
+      if (lv >= 2) bonusDanni = Math.min(lv - 1, 8); 
+  }
+
+
+  // Bonus Difesa Permanente
+
+  if (razza_k === "nano" && lv >= 1) bonusDefPerm = 1;
+
+  if (razza_k === "formian" && lv >= 5) bonusDefPerm = 1;
+
+
+  // Bonus Condizionali (Note)
+
+  if (razza_k === "mezzonano") bonusDifensiva = Math.ceil(lv / 2); // 1,3,5,7,9
+
+  if (razza_k === "halfling") bonusIni = Math.ceil(lv / 2); // 1,3,5,7,9
+
+
+  // Bonus Percentuale
+
+  if (["elfo", "elfo_oscuro", "gnomo", "mezzonano"].includes(razza_k)) {
+      bonusPerc = [2,4,4,6,6,8,8,10,10,10][lv-1];
+  } else if (razza_k === "nano") {
+      if (lv >= 1) bonusPerc += 2; if (lv >= 5) bonusPerc += 2; if (lv >= 7) bonusPerc += 2;
+  }
+
+
+  // Mana
+
+  if (razza_k === "elfo") { if(lv>=2) bonusMana++; if(lv>=5) bonusMana++;
+  if(lv>=7) bonusMana++; }
+
+  else if (razza_k === "elfo_oscuro" && lv>=5) bonusMana++;
+
+  else if (["fata", "mezzelfo", "satiro"].includes(razza_k)) { if(lv>=5)
+  bonusMana++; if(lv>=7) bonusMana++; }
+
+
+  // --- 7. Aggiornamento Actor ---
+
+  let noteDinamiche = `<li>Bonus Razza attuale: TxC +${bonusTxC}, Danni
+  +${bonusDanni}</li>`;
+
+  if (bonusDifensiva > 0) noteDinamiche += `<li><b>Bonus Difensiva:</b>
+  +${bonusDifensiva} alla Difesa (solo in assetto difensivo)</li>`;
+
+
+  const updateData = {
+      "system": {
+          "statistics": { "str": { value: fis }, "dex": { value: ist }, "min": { value: men } },
+          "attributes": {
+              "hp": { max: 30 + (fis * 10) + ((lv - 1) * r_dati.pf), value: 30 + (fis * 10) + ((lv - 1) * r_dati.pf) },
+              "mana": { max: 3 + men + bonusMana, value: 3 + men + bonusMana },
+              "def": { max: 12 + ist + bonusDefPerm },
+              "ini": { value: ist + bonusIni },
+              "txcm": { value: ist + bonusTxC }, "txcr": { value: ist + bonusTxC }
+          },
+          "secondary": {
+              "meleedamagebonus": { value: bonusDanni },
+              "rangeddamagebonus": { value: bonusDanni },
+              "percentbonus": { value: bonusPerc },
+              "xp": { level: lv, value: (lv-1)*10 }
+          },
+          "biodata": { "notes": `<p><b>Note di Razza (${r_dati.nome}):</b></p><ul>${r_dati.note.map(n=>`<li>${n}</li>`).join('')}${noteDinamiche}</ul>` }
+      },
+      "flags.world.raceSlug": razza_k 
+  };
+
+
+  let finalActor;
+
+  if (mode === "create") {
+      updateData.name = nomePG;
+      updateData.type = "character";
+      finalActor = await Actor.create(updateData);
+  } else {
+      await targetActor.update(updateData);
+      finalActor = targetActor;
+  }
+
+
+  // --- RIEPILOGO IN CHAT (Visibile al Master) ---
+
+  ChatMessage.create({
+      user: game.user.id,
+      speaker: ChatMessage.getSpeaker({ actor: finalActor }),
+      content: `
+          <div style="border: 1px solid #000; padding: 5px; background: #e0e0e0; border-radius: 5px;">
+              <h3 style="border-bottom: 1px solid #7a7971;">Aggiornamento Eroe: ${finalActor.name}</h3>
+              <p><b>Razza:</b> ${r_dati.nome} (Slug: <i>${razza_k}</i>)</p>
+              <p><b>Livello:</b> ${lv}</p>
+              <hr>
+              <p><b>PF:</b> ${updateData.system.attributes.hp.max} | <b>Mana:</b> ${updateData.system.attributes.mana.max}</p>
+              <p><b>DIF:</b> ${updateData.system.attributes.def.max} | <b>INI:</b> ${updateData.system.attributes.ini.value}</p>
+              <p><b>Bonus TxC/Danni:</b> +${bonusTxC} / +${bonusDanni}</p>
+              ${bonusDifensiva > 0 ? `<p style="color: blue;"><b>Bonus Difensiva:</b> +${bonusDifensiva}</p>` : ""}
+              ${razza_k === "umano" && lv >= 5 ? `<p style="color: red;"><b>⚠️ Ricorda l'Abilità aggiuntiva!</b></p>` : ""}
+          </div>
+      `,
+      whisper: ChatMessage.getWhisperRecipients("GM") // Invia il riepilogo solo al Master
+  });
+
+
+  ui.notifications.info(`Eroe ${finalActor.name} aggiornato con successo.`);
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.80.5
+  createdTime: 1778993039507
+  modifiedTime: 1779599616348
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 100000
+_key: '!macros!mg5NWSrq6wOtiyWU'
