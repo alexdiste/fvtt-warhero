@@ -23,8 +23,16 @@
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="malusmultiweapon"
           path="secondary" fieldClass="item-field-label-vlong"}}
           {{/with}}
+          {{#with system.secondary.disarmbonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="disarmbonus"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
+          {{#with system.secondary.tripbonus as |stat|}}
+          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="tripbonus"
+          path="secondary" fieldClass="item-field-label-vlong"}}
+          {{/with}}
         </ul>
-        <ul class="stat-list alternate-list">
+        <ul class="stat-list alternate-list"> <!--seconda colonna-->
           {{#with system.attributes.txcm as |stat|}}
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="txcm" path="attributes"
           fieldClass="item-field-label-vlong"}}
@@ -37,18 +45,6 @@
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="rangeddamagebonus"
           path="secondary" fieldClass="item-field-label-vlong"}}
           {{/with}}
-        </ul>
-        <ul class="stat-list alternate-list">
-          {{#with system.secondary.disarmbonus as |stat|}}
-          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="disarmbonus"
-          path="secondary" fieldClass="item-field-label-vlong"}}
-          {{/with}}
-          {{#with system.secondary.tripbonus as |stat|}}
-          {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="tripbonus"
-          path="secondary" fieldClass="item-field-label-vlong"}}
-          {{/with}}
-        </ul>
-        <ul class="stat-list alternate-list">
           {{#with system.secondary.defensivebonus as |stat|}}
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="defensivebonus"
           path="secondary" fieldClass="item-field-label-vlong"}}
