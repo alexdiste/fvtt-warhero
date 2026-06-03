@@ -66,7 +66,7 @@ export class PartyData extends foundry.abstract.TypeDataModel {
           hint: "WH.ui.gmnotesHint"
         }),
         memberAttributes: new fields.StringField({
-          initial: "Fisico=statistics.str.value, Istinto=statistics.dex.value, Mente=statistics.min.value, TS Fis=statistics.str.save, TS Ist=statistics.dex.save, TS Men=statistics.min.save, Conoscenze=attributes.knowledge.value, Parata=secondary.parrybonustotal.value, RD=secondary.drbonustotal.value, Iniziativa=attributes.ini.value",
+          initial: "Fisico=statistics.str.value, Istinto=statistics.dex.value, Mente=statistics.min.value, TS Fis=statistics.str.save, TS Ist=statistics.dex.save, TS Men=statistics.min.save, Conoscenze=attributes.knowledge.value, Parata=secondary.parrybonustotal.value, RD=secondary.drbonustotal.value, Iniziativa=attributes.ini.value, Fisico=statistics.str.value, Istinto=statistics.dex.value, Mente=statistics.min.value, TS Fis=statistics.str.save, TS Ist=statistics.dex.save, TS Men=statistics.min.save, Conoscenze=attributes.knowledge.value, Parata=secondary.parrybonustotal.value, RD=secondary.drbonustotal.value, Iniziativa=attributes.ini.value, Difesa=attributes.def.value",
           required: false,
           blank: true,
           label: "WH.ui.memberAttributes",
