@@ -185,6 +185,26 @@ export class WarheroActor extends Actor {
     return nbMoney
   }
 
+  async computeMembersTotalMoney() {
+    if (this.type !== 'party') return 0
+    let members = this.system.biodata?.members
+    if (!members) return 0
+    if (typeof members === 'string') {
+      try {
+        members = JSON.parse(members) || []
+      } catch {
+        members = []
+      }
+    }
+    if (!Array.isArray(members)) members = []
+
+    const sums = await Promise.all(members.map(async (member) => {
+      const actor = member?.uuid ? await fromUuid(member.uuid).catch(() => null) : null
+      return actor?.computeTotalMoney?.() || 0
+    }))
+    return sums.reduce((total, value) => total + value, 0)
+  }
+
   /* -------------------------------------------- */
   buildPartySlots() {
     let containers = {}

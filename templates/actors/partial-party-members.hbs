@@ -4,10 +4,74 @@
   data-tab="{{tab.id}}"
 >
   <strong>{{localize "WH.ui.totalmoney"}}:</strong> {{memberMoney}}<br><br>
-  
 
   <div class="party-members-section">
     <h3>{{localize "WH.ui.members"}}</h3>
+    {{#if isGM}}
+    <div class="member-attributes-summary" style="margin-bottom:1rem;">
+      <h4>{{localize "WH.ui.memberAttributesSummary"}}</h4>
+      {{#if memberAttributeMaxima.length}}
+      <table class="stat-list alternate-list party-members-summary-table">
+        <thead>
+          <tr>
+            <th>{{localize "WH.ui.attribute"}}</th>
+            <th>{{localize "WH.ui.maximum"}}</th>
+            <th>{{localize "WH.ui.member"}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each memberAttributeMaxima as |summary|}}
+          <tr>
+            <td>{{summary.label}}</td>
+            <td>{{summary.value}}</td>
+            <td>{{summary.actor}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      {{else}}
+      <p>{{localize "WH.ui.noMembers"}}</p>
+      {{/if}}
+    </div>
+    <div class="member-attributes-config" style="margin-bottom:1rem;">
+      <label for="party-member-attributes" class="item-field-label-medium">{{localize "WH.ui.memberAttributes"}}</label>
+      <textarea id="party-member-attributes" class="item-field-label-long" name="system.biodata.memberAttributes" rows="3">{{system.biodata.memberAttributes}}</textarea>
+      <p class="help-text">{{localize "WH.ui.memberAttributesHint"}}</p>
+    </div>
+    {{#if members.length}}
+    <table class="stat-list alternate-list party-members-table">
+      <thead>
+        <tr>
+          <th></th>
+          {{#each memberAttributeColumns as |column|}}
+          <th>{{column.label}}</th>
+          {{/each}}
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each members as |member|}}
+        <tr class="item list-item list-item-shadow" data-member-uuid="{{member.uuid}}">
+          <td class="item-name">
+            <a class="item-edit item-name-img" data-action="openMember" data-member-uuid="{{member.uuid}}" title="{{member.name}}">
+              <img class="sheet-competence-img" src="{{member.img}}" />
+            </a>
+            <span class="item-name-label-long"><a class="open-member-link" data-action="openMember" data-member-uuid="{{member.uuid}}">{{member.name}}</a></span>
+          </td>
+          {{#each member.mappedAttributes as |value|}}
+          <td>{{value}}</td>
+          {{/each}}
+          <td class="item-controls item-controls-fixed">
+            <a class="item-control item-delete" data-action="removeMember" data-member-uuid="{{member.uuid}}" title="{{localize "WH.ui.remove"}}"><i class="fas fa-trash"></i></a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    <p>{{localize "WH.ui.noMembers"}}</p>
+    {{/if}}
+    {{else}}
     {{#if members.length}}
     <ul class="stat-list alternate-list">
       {{#each members as |member|}}
@@ -16,20 +80,18 @@
           <img class="sheet-competence-img" src="{{member.img}}" />
         </a>
         <span class="item-name-label-long"><a class="open-member-link" data-action="openMember" data-member-uuid="{{member.uuid}}">{{member.name}}</a></span>
-        <div class="item-filler">&nbsp;</div>
-        <div class="item-controls item-controls-fixed">
-          <a class="item-control item-delete" data-action="removeMember" data-member-uuid="{{member.uuid}}" title="{{localize "WH.ui.remove"}}"><i class="fas fa-trash"></i></a>
-        </div>
       </li>
       {{/each}}
     </ul>
     {{else}}
     <p>{{localize "WH.ui.noMembers"}}</p>
     {{/if}}
+    {{/if}}
   </div>
 
   <div class="party-relations-section">
     <h3>{{localize "WH.ui.relations"}}</h3>
+    {{#if isGM}}
     {{#if relations.length}}
     <ul class="stat-list alternate-list">
       {{#each relations as |relation|}}
@@ -39,9 +101,15 @@
         </a>
         <span class="item-name-label-long"><a class="open-member-link" data-action="openMember" data-member-uuid="{{relation.uuid}}">{{relation.name}}</a></span>
         <div class="relation-actions" style="display:flex; gap:0.35rem; align-items:center;">
-          <a class="actor-relation-option {{#if (eq relation.relation "neutral")}}active{{/if}}" data-action="setRelation" data-member-uuid="{{relation.uuid}}" data-relation="neutral">{{localize "WH.ui.neutral"}}</a>
-          <a class="actor-relation-option {{#if (eq relation.relation "allied")}}active{{/if}}" data-action="setRelation" data-member-uuid="{{relation.uuid}}" data-relation="allied">{{localize "WH.ui.allied"}}</a>
-          <a class="actor-relation-option {{#if (eq relation.relation "hostile")}}active{{/if}}" data-action="setRelation" data-member-uuid="{{relation.uuid}}" data-relation="hostile">{{localize "WH.ui.hostile"}}</a>
+          <label class="relation-visible-label" style="display:flex; align-items:center; gap:0.35rem;">
+            <input type="checkbox" data-action="setRelationVisibility" data-member-uuid="{{relation.uuid}}" {{#if relation.visible}}checked{{/if}} />
+            {{localize "WH.ui.relationVisibleToPlayers"}}
+          </label>
+          <select class="actor-relation-select" data-action="setRelation" data-member-uuid="{{relation.uuid}}">
+            <option value="neutral" {{#if (eq relation.relation "neutral")}}selected{{/if}}>{{localize "WH.ui.neutral"}}</option>
+            <option value="allied" {{#if (eq relation.relation "allied")}}selected{{/if}}>{{localize "WH.ui.allied"}}</option>
+            <option value="hostile" {{#if (eq relation.relation "hostile")}}selected{{/if}}>{{localize "WH.ui.hostile"}}</option>
+          </select>
         </div>
         <div class="item-filler">&nbsp;</div>
         <div class="item-controls item-controls-fixed">
@@ -53,20 +121,22 @@
     {{else}}
     <p>{{localize "WH.ui.noRelations"}}</p>
     {{/if}}
+    {{else}}
+    {{#if visibleRelations.length}}
+    <ul class="stat-list alternate-list">
+      {{#each visibleRelations as |relation|}}
+      <li class="item flexrow list-item list-item-shadow" data-member-uuid="{{relation.uuid}}">
+        <a class="item-edit item-name-img" data-action="openMember" data-member-uuid="{{relation.uuid}}" title="{{relation.name}}">
+          <img class="sheet-competence-img" src="{{relation.img}}" />
+        </a>
+        <span class="item-name-label-long"><a class="open-member-link" data-action="openMember" data-member-uuid="{{relation.uuid}}">{{relation.name}}</a> <span class="relation-state">({{relation.relationLabel}})</span></span>
+      </li>
+      {{/each}}
+    </ul>
+    {{else}}
+    <p>{{localize "WH.ui.noVisibleRelations"}}</p>
+    {{/if}}
+    {{/if}}
   </div>
 
-  {{#if isGM}}
-  <div class="party-gm-notes">
-    <h3>{{localize "WH.ui.gmnotes"}} :</h3>
-    <div class="editor">
-      {{formInput
-        systemFields.biodata.fields.gmnotes
-        enriched=enrichedGmNotes
-        value=system.biodata.gmnotes
-        name="system.biodata.gmnotes"
-        toggled=true
-      }}
-    </div>
-  </div>
-  {{/if}}
 </section>

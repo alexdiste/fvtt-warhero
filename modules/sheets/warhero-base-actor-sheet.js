@@ -45,6 +45,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
       removeMember: WarheroActorSheet.#onRemovePartyReference,
       removeRelation: WarheroActorSheet.#onRemovePartyReference,
       setRelation: WarheroActorSheet.#onSetRelation,
+      setRelationVisibility: WarheroActorSheet.#onSetRelationVisibility,
     },
   }
 
@@ -88,6 +89,18 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   /** @override */
   _onRender(context, options) {
     this.#dragDrop.forEach((d) => d.bind(this.element))
+    const selects = this.element.querySelectorAll('select[data-action="setRelation"]')
+    selects.forEach((select) => {
+      select.addEventListener("change", async (event) => {
+        await WarheroActorSheet.#onSetRelation.call(this, event, event.currentTarget)
+      })
+    })
+    const visibilityToggles = this.element.querySelectorAll('input[data-action="setRelationVisibility"]')
+    visibilityToggles.forEach((input) => {
+      input.addEventListener("change", async (event) => {
+        await WarheroActorSheet.#onSetRelationVisibility.call(this, event, event.currentTarget)
+      })
+    })
   }
 
   // #region Drag-and-Drop Workflow
@@ -214,7 +227,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
 
   static async #onOpenMember(event, target) {
     const uuid = target.dataset.memberUuid
-    const actor = await this.#openActorReference(uuid)
+    const actor = await WarheroActorSheet.#openActorReference(uuid)
     if (!actor) return
     actor.sheet.render(true)
   }
@@ -222,8 +235,8 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   static async #onRemovePartyReference(event, target) {
     const uuid = target.dataset.memberUuid
     if (!uuid) return
-    const members = this.#parseJsonField(this.document.system.biodata.members)
-    const relations = this.#parseJsonField(this.document.system.biodata.relationships)
+    const members = WarheroActorSheet.#parseJsonField(this.document.system.biodata.members)
+    const relations = WarheroActorSheet.#parseJsonField(this.document.system.biodata.relationships)
     const updatedMembers = members.filter((m) => m.uuid !== uuid)
     const updatedRelations = relations.filter((r) => r.uuid !== uuid)
     await this.document.update({
@@ -234,10 +247,19 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
 
   static async #onSetRelation(event, target) {
     const uuid = target.dataset.memberUuid
-    const relation = target.dataset.relation
+    const relation = target.value
     if (!uuid || !relation) return
-    const relations = this.#parseJsonField(this.document.system.biodata.relationships)
+    const relations = WarheroActorSheet.#parseJsonField(this.document.system.biodata.relationships)
     const updatedRelations = relations.map((r) => r.uuid === uuid ? { ...r, relation } : r)
+    await this.document.update({ "system.biodata.relationships": JSON.stringify(updatedRelations) })
+  }
+
+  static async #onSetRelationVisibility(event, target) {
+    const uuid = target.dataset.memberUuid
+    const visible = target.checked
+    if (!uuid) return
+    const relations = WarheroActorSheet.#parseJsonField(this.document.system.biodata.relationships)
+    const updatedRelations = relations.map((r) => r.uuid === uuid ? { ...r, visible } : r)
     await this.document.update({ "system.biodata.relationships": JSON.stringify(updatedRelations) })
   }
 

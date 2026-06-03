@@ -71,7 +71,24 @@ export class WarheroPartySheet extends WarheroActorSheet {
     objectData.biodata.members = members
     objectData.biodata.relationships = relations
 
-    const memberMoney = await this.constructor.#computeReferencedActorsMoney([...members, ...relations])
+    const relationLabels = {
+      neutral: game.i18n.localize("WH.ui.neutral"),
+      allied: game.i18n.localize("WH.ui.allied"),
+      hostile: game.i18n.localize("WH.ui.hostile"),
+    }
+    const relationsWithLabels = relations.map((relation) => ({
+      ...relation,
+      relationLabel: relationLabels[relation.relation] ?? relation.relation ?? "",
+      visible: !!relation.visible,
+    }))
+    objectData.biodata.relationships = relationsWithLabels
+
+    const memberAttributeColumns = this.constructor.#parseAttributeMapping(objectData.biodata.memberAttributes)
+    const enrichedMembers = await this.constructor.#enrichMembers(members, memberAttributeColumns)
+    const memberAttributeMaxima = this.constructor.#computeAttributeMaximums(enrichedMembers, memberAttributeColumns)
+    const memberMoney = await this.actor.computeMembersTotalMoney()
+
+    const visibleRelations = relationsWithLabels.filter((relation) => relation.visible)
 
     let formData = {
       title: this.title,
@@ -84,8 +101,11 @@ export class WarheroPartySheet extends WarheroActorSheet {
       system: objectData,
       totalMoney: this.actor.computeTotalMoney(),
       memberMoney,
-      members,
-      relations,
+      memberAttributeColumns,
+      memberAttributeMaxima,
+      members: enrichedMembers,
+      relations: relationsWithLabels,
+      visibleRelations,
       equipments: foundry.utils.duplicate(this.actor.getEquipmentsOnly()),
       enrichedDescription: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.description, { async: true }),
       enrichedNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.notes, { async: true }),
@@ -149,7 +169,7 @@ export class WarheroPartySheet extends WarheroActorSheet {
         if (relations.some((r) => r.uuid === actor.uuid)) {
           return ui.notifications.warn(game.i18n.localize("WH.ui.relationAlreadyAdded"))
         }
-        relations.push({ uuid: actor.uuid, id: actor.id, name: actor.name, img: actor.img, type: actor.type, relation: "neutral" })
+        relations.push({ uuid: actor.uuid, id: actor.id, name: actor.name, img: actor.img, type: actor.type, relation: "neutral", visible: false })
         return this.document.update({ "system.biodata.relationships": JSON.stringify(relations) })
       }
     }
@@ -181,5 +201,89 @@ export class WarheroPartySheet extends WarheroActorSheet {
       return actor?.computeTotalMoney?.() || 0
     }))
     return sums.reduce((total, value) => total + value, 0)
+  }
+
+  static #parseAttributeMapping(value) {
+    const defaultMapping = [
+      { label: "Fisico", path: "statistics.str.value" },
+      { label: "Istinto", path: "statistics.dex.value" },
+      { label: "Mente", path: "statistics.min.value" },
+      { label: "TS Fis", path: "statistics.str.save" },
+      { label: "TS Ist", path: "statistics.dex.save" },
+      { label: "TS Men", path: "statistics.min.save" },
+      { label: "Conoscenze", path: "attributes.knowledge.value" },
+      { label: "Parata", path: "secondary.parrybonustotal.value" },
+      { label: "RD", path: "secondary.drbonustotal.value" },
+      { label: "Iniziativa", path: "attributes.ini.value" }
+    ]
+    if (!value || typeof value !== "string") return defaultMapping
+    const entries = value.split(",").map(s => s.trim()).filter(Boolean)
+    if (!entries.length) return defaultMapping
+    return entries.map((entry) => {
+      const separator = entry.includes("=") ? "=" : entry.includes(":") ? ":" : null
+      if (!separator) {
+        const label = entry.trim()
+        return { label, path: entry.trim() }
+      }
+      const [label, path] = entry.split(separator).map(s => s.trim())
+      return { label: label || path, path: path || label }
+    })
+  }
+
+  static async #enrichMembers(members, columns) {
+    return await Promise.all(members.map(async (member) => {
+      const actor = await this.#resolveActorRef(member)
+      const mappedAttributes = columns.map((column) => {
+        if (!actor || !column?.path) return "-"
+        const path = column.path.replace(/^system\./, "")
+        const value = foundry.utils.getProperty(actor.system, path)
+        return value !== undefined && value !== null ? value : "-"
+      })
+      return {
+        uuid: member.uuid,
+        id: member.id,
+        name: member.name,
+        img: member.img,
+        type: member.type,
+        mappedAttributes,
+      }
+    }))
+  }
+
+  static #computeAttributeMaximums(members, columns) {
+    return columns.map((column, index) => {
+      let best = { value: "-", actor: "-" }
+      for (const member of members) {
+        const rawValue = member.mappedAttributes?.[index]
+        if (rawValue === undefined || rawValue === null || rawValue === "-") continue
+        const value = typeof rawValue === "object" ? JSON.stringify(rawValue) : rawValue
+        const numericValue = parseFloat(value)
+        const valueIsNumeric = typeof value === "number" || (!Number.isNaN(numericValue) && String(value).trim() !== "")
+        const bestNumeric = parseFloat(best.value)
+        const bestIsNumeric = !Number.isNaN(bestNumeric) && String(best.value).trim() !== ""
+
+        if (best.value === "-") {
+          best = { value, actor: member.name }
+          continue
+        }
+
+        if (valueIsNumeric && bestIsNumeric) {
+          if (numericValue > bestNumeric) {
+            best = { value, actor: member.name }
+          }
+        } else if (valueIsNumeric && !bestIsNumeric) {
+          best = { value, actor: member.name }
+        } else if (!valueIsNumeric && !bestIsNumeric) {
+          if (String(value) > String(best.value)) {
+            best = { value, actor: member.name }
+          }
+        }
+      }
+      return {
+        label: column.label,
+        value: best.value,
+        actor: best.actor,
+      }
+    })
   }
 }
