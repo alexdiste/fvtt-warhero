@@ -36,6 +36,7 @@ Hooks.once("init", async function () {
   console.log(`Initializing Warhero RPG`);
 
   game.system.warhero = {
+    WarheroUtility,
     WarheroHotbar,
     config: WARHERO_CONFIG
   }

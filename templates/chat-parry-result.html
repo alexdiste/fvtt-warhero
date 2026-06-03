@@ -1,19 +1,12 @@
-<div class="chat-message-header">
+<div class="warhero-chat-message-header">
   {{#if actorImg}}
   <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
   {{/if}}
-  <h4 class=chat-actor-name>{{alias}}</h4>
+  <h4 class="chat-actor-name">{{alias}}</h4>
 </div>
 
-  <hr>
   
-  {{#if img}}
-  <div >
-    <img class="chat-icon" src="{{img}}" alt="{{name}}" />
-  </div>
-  {{/if}}
-
-  <div>
+<div class=warhero-chat-message-body>
     <ul>
       <li>{{localize stat.label}} : {{stat.value}}</li>
       <li><strong>Result : {{roll.total}} </strong></li>
@@ -35,6 +28,4 @@
       <li><strong>{{localize "WH.chat.paryfailed"}} </strong></li>
       {{/if}}
     </ul>  
-  </div>
-
-  </div>
+</div>

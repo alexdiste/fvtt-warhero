@@ -15,8 +15,6 @@ export class WarheroPartySheet extends WarheroActorSheet {
       height: 780,
     },
     window: {
-    },
-    actions: {
     }
   };
 
@@ -41,13 +39,13 @@ export class WarheroPartySheet extends WarheroActorSheet {
 
   /** @override */
   tabGroups = {
-    sheet: "equipment",
+    sheet: "members",
   }
 
   #getTabs() {
     const tabs = {
-      equipment: { id: "equipment", group: "sheet", icon: "fa-solid fa-shapes", label: "WH.ui.equipment" },
       members: { id: "members", group: "sheet", icon: "fa-solid fa-users", label: "WH.ui.members" },
+      equipment: { id: "equipment", group: "sheet", icon: "fa-solid fa-shapes", label: "WH.ui.equipment" },
       biography: { id: "biography", group: "sheet", icon: "fa-solid fa-book", label: "WH.ui.biography" },
     }
     for (const v of Object.values(tabs)) {

@@ -219,6 +219,7 @@ a:hover {
   object-position: 50% 0;
 }
 
+
 .warhero-chat-message-header {
   display: flex;
   align-items: center;
@@ -226,6 +227,7 @@ a:hover {
   border-bottom: 1px solid #ccc;
   padding-bottom: 4px;
 }
+
 
 .item-name-label-header-long h3,
 .item-name-label-header h3 {
@@ -374,6 +376,7 @@ a:hover {
   border-width: 0px;
 }
 
+
 .button-img {
   vertical-align: baseline;
   width: 8%;
@@ -433,24 +436,6 @@ a:hover {
 .fvtt-warhero .sheet-body .tab .editor {
   height: 100%;
   font-size: 0.8rem;
-}
-
-.editor {
-  border: 2;
-  height: 300px;
-  padding: 0 3px;
-}
-
-.medium-editor {
-  border: 2;
-  height: 240px;
-  padding: 0 3px;
-}
-
-.small-editor {
-  border: 2;
-  height: 120px;
-  padding: 0 3px;
 }
 
 .fvtt-warhero .resource-label {
@@ -579,8 +564,9 @@ a:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
 }
 
-.plus-minus-button:active,
-.chat-card-button:active {
+.plus-minus-button:active
+/*,.chat-card-button:active */
+{
   position: relative;
   top: 1px;
 }

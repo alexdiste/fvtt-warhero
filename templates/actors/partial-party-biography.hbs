@@ -6,6 +6,11 @@
 >
 
   <div>
+    <div class="flexrow" style="gap:0.75rem; align-items:center; margin-bottom:1rem;">
+      <label class="item-field-label-medium" for="party-founded">{{localize "WH.ui.founded"}}:</label>
+      <input id="party-founded" type="number" class="item-field-label-medium" name="system.biodata.founded" value="{{system.biodata.founded}}" />
+    </div>
+    <hr />
     <h3>{{localize "WH.ui.background"}} : </h3>
     <div class="editor">
       {{formInput

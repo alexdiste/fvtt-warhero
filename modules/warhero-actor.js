@@ -760,6 +760,7 @@ export class WarheroActor extends Actor {
     let updates = {
       "system.attributes.mana.value": manamax,
       "system.attributes.hp.value": hpmax,
+      "system.attributes.temporaryhp.value": 0,
       "system.secondary.counterspell.nbuse": 0
     };
 

@@ -3,13 +3,8 @@
   data-group="sheet"
   data-tab="{{tab.id}}"
 >
-  <div class="flexcol party-members-header">
-    <div class="flexrow" style="gap:0.75rem; align-items:center; margin-bottom:0.5rem;">
-      <label class="item-field-label-medium" for="party-founded">{{localize "WH.ui.founded"}}:</label>
-      <input id="party-founded" type="number" class="item-field-label-medium" name="system.biodata.founded" value="{{system.biodata.founded}}" />
-      <span class="item-field-label-medium"><strong>{{localize "WH.ui.totalmoney"}}:</strong> {{memberMoney}}</span>
-    </div>
-  </div>
+  <strong>{{localize "WH.ui.totalmoney"}}:</strong> {{memberMoney}}<br><br>
+  
 
   <div class="party-members-section">
     <h3>{{localize "WH.ui.members"}}</h3>
