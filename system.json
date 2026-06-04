@@ -2,7 +2,7 @@
   "id": "fvtt-warhero",
   "title": "Warhero RPG",
   "description": "Warhero RPG system for FoundryVTT",
-  "version": "14.85.14",
+  "version": "14.86.15",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
