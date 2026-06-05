@@ -1,0 +1,729 @@
+name: 1. Estrazione Sfera di Magia
+formula: 1d108
+results:
+  - type: text
+    range:
+      - 1
+      - 4
+    drawn: false
+    description: Ammaliamento
+    _id: sGRbDUG6ebzTRIf3
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.sGRbDUG6ebzTRIf3'
+  - type: text
+    range:
+      - 5
+      - 8
+    drawn: false
+    description: Conoscenze
+    _id: kvWC6PNk0TE9bsYR
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.kvWC6PNk0TE9bsYR'
+  - type: text
+    range:
+      - 9
+      - 12
+    drawn: false
+    description: Costrizione
+    _id: 8CkaFpcc5cZ8lP7T
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.8CkaFpcc5cZ8lP7T'
+  - type: text
+    range:
+      - 13
+      - 16
+    drawn: false
+    description: Elementale - Acqua
+    _id: M9gK7V5Cm9vsFQWM
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.M9gK7V5Cm9vsFQWM'
+  - type: text
+    range:
+      - 17
+      - 20
+    drawn: false
+    description: Elementale - Aria
+    _id: 2X8R9nVPtjnql2m3
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.2X8R9nVPtjnql2m3'
+  - type: text
+    range:
+      - 21
+      - 24
+    drawn: false
+    description: Elementale - Fuoco
+    _id: FCmVLSmxf1Ykxz6q
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.FCmVLSmxf1Ykxz6q'
+  - type: text
+    range:
+      - 25
+      - 28
+    drawn: false
+    description: Elementale - Terra
+    _id: Oj6TKZRnM2RSNlpe
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.Oj6TKZRnM2RSNlpe'
+  - type: text
+    range:
+      - 29
+      - 32
+    drawn: false
+    description: Evocazione - Animale
+    _id: VFaL6e4RTzhcXCuw
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.VFaL6e4RTzhcXCuw'
+  - type: text
+    range:
+      - 33
+      - 36
+    drawn: false
+    description: Evocazione - Non Morte
+    _id: 6IYRNQKJQE5E2ukp
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.6IYRNQKJQE5E2ukp'
+  - type: text
+    range:
+      - 37
+      - 40
+    drawn: false
+    description: Fato
+    _id: uxk7JFXnTOHJj7IT
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.uxk7JFXnTOHJj7IT'
+  - type: text
+    range:
+      - 41
+      - 44
+    drawn: false
+    description: Forza
+    _id: Pr23BPZ93PpIXgJk
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.Pr23BPZ93PpIXgJk'
+  - type: text
+    range:
+      - 45
+      - 48
+    drawn: false
+    description: Guerra
+    _id: LS96rlG5DCBP3X4D
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.LS96rlG5DCBP3X4D'
+  - type: text
+    range:
+      - 49
+      - 52
+    drawn: false
+    description: Illusione
+    _id: c3WRunGbdvigluA2
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.c3WRunGbdvigluA2'
+  - type: text
+    range:
+      - 53
+      - 56
+    drawn: false
+    description: Linguaggi
+    _id: YZPhhvirVV8hoLf6
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.YZPhhvirVV8hoLf6'
+  - type: text
+    range:
+      - 57
+      - 60
+    drawn: false
+    description: Luce
+    _id: vPXDvFHFJZpDTosP
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.vPXDvFHFJZpDTosP'
+  - type: text
+    range:
+      - 61
+      - 64
+    drawn: false
+    description: Morte
+    _id: HqBhzT7Xy5pZ025M
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.HqBhzT7Xy5pZ025M'
+  - type: text
+    range:
+      - 65
+      - 68
+    drawn: false
+    description: Negromanzia
+    _id: JDyxslbUDxlH4M0k
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.JDyxslbUDxlH4M0k'
+  - type: text
+    range:
+      - 69
+      - 72
+    drawn: false
+    description: Oscurità
+    _id: iU5y2JUBHSfL5VWJ
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.iU5y2JUBHSfL5VWJ'
+  - type: text
+    range:
+      - 73
+      - 76
+    drawn: false
+    description: Protezione
+    _id: lFqpia7XJOUZoNPf
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.lFqpia7XJOUZoNPf'
+  - type: text
+    range:
+      - 77
+      - 80
+    drawn: false
+    description: Rune
+    _id: dkPmQ27YxAFT26bx
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.dkPmQ27YxAFT26bx'
+  - type: text
+    range:
+      - 81
+      - 84
+    drawn: false
+    description: Tempo
+    _id: 5t42IaABc4cIV3YB
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.5t42IaABc4cIV3YB'
+  - type: text
+    range:
+      - 85
+      - 88
+    drawn: false
+    description: Trasmutazione
+    _id: pkaahkwDHW1yJKb6
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.pkaahkwDHW1yJKb6'
+  - type: text
+    range:
+      - 89
+      - 92
+    drawn: false
+    description: Viaggio
+    _id: gTwNf6ZjjSBGKvKb
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.gTwNf6ZjjSBGKvKb'
+  - type: text
+    range:
+      - 93
+      - 96
+    drawn: false
+    description: Visione
+    _id: 3DZjeSrH30hPG6ti
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.3DZjeSrH30hPG6ti'
+  - type: text
+    range:
+      - 97
+      - 99
+    drawn: false
+    description: Indole - Bene
+    _id: lTpiWcwzlt4gY4Pq
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.lTpiWcwzlt4gY4Pq'
+  - type: text
+    range:
+      - 100
+      - 102
+    drawn: false
+    description: Divinazione
+    _id: TKbsBkVzx1Ba5BXK
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.TKbsBkVzx1Ba5BXK'
+  - type: text
+    range:
+      - 103
+      - 105
+    drawn: false
+    description: Indole - Equilibrio
+    _id: SmZEaf84HwVRuySP
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.SmZEaf84HwVRuySP'
+  - type: text
+    range:
+      - 106
+      - 108
+    drawn: false
+    description: Guarigione
+    _id: cvRvbVEq9snS36Mj
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.cvRvbVEq9snS36Mj'
+  - type: text
+    range:
+      - 109
+      - 111
+    drawn: false
+    description: Indole - Legge
+    _id: OXWq7w5SR359jxxp
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.OXWq7w5SR359jxxp'
+  - type: text
+    range:
+      - 112
+      - 113
+    drawn: false
+    description: Indole - Caos
+    _id: 4O5mcejSKY4dRmPa
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.4O5mcejSKY4dRmPa'
+  - type: text
+    range:
+      - 114
+      - 115
+    drawn: false
+    description: Indole - Male
+    _id: rMWl1PJ616CQgIrb
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.rMWl1PJ616CQgIrb'
+  - type: text
+    range:
+      - 116
+      - 116
+    drawn: false
+    description: Vegetale
+    _id: urRvga7ep6bcBPpS
+    name: ''
+    img: null
+    weight: 1
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.15
+      createdTime: 1780664037218
+      modifiedTime: 1780664037218
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!5Se8liCyrBsJ0DUh.urRvga7ep6bcBPpS'
+description: Tabella per determinare la Sfera di Magia in base al peso.
+_id: 5Se8liCyrBsJ0DUh
+img: icons/svg/d20-grey.svg
+replacement: true
+displayRoll: true
+folder: null
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.15
+  createdTime: 1780664037218
+  modifiedTime: 1780664037221
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+sort: 0
+_key: '!tables!5Se8liCyrBsJ0DUh'
