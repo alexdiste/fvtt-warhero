@@ -2,7 +2,7 @@
   "id": "fvtt-warhero",
   "title": "Warhero RPG",
   "description": "Warhero RPG system for FoundryVTT",
-  "version": "14.86.15",
+  "version": "14.86.16",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -566,6 +566,18 @@
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "label": "Tabelle",
+      "type": "RollTable",
+      "name": "Tabelle",
+      "path": "packs/rolltable",
+      "system": "fvtt-warhero",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -670,6 +682,14 @@
 						"scudi-leggeri",
 						"scudi-pesanti",
 						"scudi-torre"
+                    ]
+                },
+                {
+                    "name": "Tabelle",
+                    "sorting": "m",
+                    "color": "#4a354f",
+                    "packs": [
+                        "rolltable"
                     ]
                 }
             ]

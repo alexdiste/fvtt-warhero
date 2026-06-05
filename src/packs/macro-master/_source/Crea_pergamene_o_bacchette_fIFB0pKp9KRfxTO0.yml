@@ -1,0 +1,383 @@
+name: Crea pergamene o bacchette
+type: script
+command: >-
+  // --- CONFIGURAZIONE COMPENDI E COSTI ---
+
+  const NOME_COMPENDIO_TABELLE = "fvtt-warhero.tabelle"; // Cambia in
+  "fvtt-warhero.tabelle" se necessario
+
+  const NOME_COMPENDIO_POTERI = "fvtt-warhero.poteri";
+
+
+  // Costi fissi per le Pergamene / Prezzo PER CARICA per le Bacchette
+
+  const SCROLL_PRICES = { "1": 100, "2": 400, "3": 900, "4": 1600 };
+
+  const WAND_PRICES_PER_CHARGE = { "1": 1000, "2": 2000, "3": 3000, "4": 4000 };
+
+
+  // Icone di default richieste
+
+  const SCROLL_IMG = "icons/sundries/scrolls/scroll-bound-orange-tan.webp";
+
+  const WAND_IMG = "icons/weapons/wands/wand-gem-violet.webp";
+
+
+  let selectedSpell = null;
+
+
+  /**
+   * Converte il livello numerico in formato romano
+   */
+  function getRomano(livello) {
+    const mappa = { "1": "I", "2": "II", "3": "III", "4": "IV" };
+    return mappa[String(livello)] || livello;
+  }
+
+
+  /**
+   * Cerca un potere nel compendio in base alla Sfera e al Livello
+   */
+  async function cercaPotereInCompendio(sfera, livello) {
+    const pack = game.packs.get(NOME_COMPENDIO_POTERI);
+    if (!pack) {
+      console.warn(`Compendio '${NOME_COMPENDIO_POTERI}' non trovato.`);
+      return null;
+    }
+
+    const prefissoCercato = `${sfera} - ${getRomano(livello)}`;
+    const index = await pack.getIndex();
+    const entry = index.find(e => e.name.startsWith(prefissoCercato));
+
+    if (entry) {
+      return await pack.getDocument(entry._id);
+    }
+    
+    return null;
+  }
+
+
+  /**
+   * Funzione per tirare su una RollTable direttamente dentro un compendio senza importarla
+   */
+  async function rollDaTabellaCompendio(pack, tableName) {
+    const index = await pack.getIndex();
+    const entry = index.find(e => e.name === tableName);
+    
+    if (!entry) {
+      ui.notifications.error(`Tabella "${tableName}" non trovata nel compendio.`);
+      return null;
+    }
+    
+    // Carica il documento completo della tabella dal compendio
+    const table = await pack.getDocument(entry._id);
+    
+    // Esegue il tiro sulla tabella
+    const rollResult = await table.roll();
+    return rollResult.results[0].text;
+  }
+
+
+  /**
+   * Estrae sfera e livello DIRETTAMENTE DAL COMPENDIO e cerca il potere
+   */
+  async function ottieniDatiTabelle() {
+    const packTabelle = game.packs.get(NOME_COMPENDIO_TABELLE);
+    
+    if (!packTabelle) {
+      ui.notifications.error(`Errore: Il compendio delle tabelle "${NOME_COMPENDIO_TABELLE}" non è stato trovato.`);
+      return null;
+    }
+
+    // Estrazione del testo dalle tabelle nel compendio
+    const sferaNome = await rollDaTabellaCompendio(packTabelle, "1. Estrazione Sfera di Magia");
+    const livelloTesto = await rollDaTabellaCompendio(packTabelle, "2. Estrazione Livello Potere");
+
+    if (!sferaNome || !livelloTesto) return null;
+
+    const livelloMatch = livelloTesto.match(/\d+/);
+    const livelloNum = livelloMatch ? livelloMatch[0] : "1";
+
+    // Cerca il potere effettivo nel compendio dei poteri
+    const potereReale = await cercaPotereInCompendio(sferaNome, livelloNum);
+
+    if (potereReale) {
+      return {
+        name: potereReale.name,
+        uuid: potereReale.uuid,
+        system: {
+          level: livelloNum,
+          magicschool: sferaNome,
+          description: potereReale.system?.description || ""
+        }
+      };
+    } else {
+      return {
+        name: `${sferaNome} - ${getRomano(livelloNum)}`,
+        uuid: "",
+        system: {
+          level: livelloNum,
+          magicschool: sferaNome,
+          description: `Potere generato della sfera di ${sferaNome}.`
+        }
+      };
+    }
+  }
+
+
+  /**
+   * Aggiorna la visualizzazione del potere selezionato nel Dialog
+   */
+  function updateSpellDisplay(html, spell, dialogInstance) {
+    const display = html.find("#spell-display");
+    const dropText = html.find("#drop-text");
+    
+    dropText.text("✓ Potere Selezionato");
+    
+    const spellLevel = spell.system?.level || "1";
+    const spellSchool = spell.system?.magicschool || "?";
+    
+    display.html(`
+      <div style="padding: 10px; background-color: #e8f4f8; border-radius: 4px; border: 1px solid #b0d4de; margin-bottom: 15px;">
+        <strong>${spell.name}</strong><br>
+        <small>Livello: ${spellLevel} (${getRomano(spellLevel)}) | Sfera/Scuola: ${spellSchool}</small>
+      </div>
+    `);
+
+    dialogInstance.setPosition({ height: "auto" });
+  }
+
+
+  /**
+   * Gestione del Drag & Drop
+   */
+  function setupDragDrop(html, onSpellSelected) {
+    const dropZone = html.find("#drop-zone");
+
+    dropZone.on("dragover", (e) => {
+      e.preventDefault(); e.stopPropagation();
+      dropZone.css("background-color", "#e8f4f8");
+    });
+
+    dropZone.on("dragleave", (e) => {
+      e.preventDefault(); e.stopPropagation();
+      dropZone.css("background-color", "#f5f5f5");
+    });
+
+    dropZone.on("drop", async (e) => {
+      e.preventDefault(); e.stopPropagation();
+      dropZone.css("background-color", "#f5f5f5");
+
+      try {
+        const data = JSON.parse(e.originalEvent.dataTransfer.getData("text/plain"));
+        if (data.type === "Item" && data.uuid) {
+          const item = await fromUuid(data.uuid);
+          if (item && item.type === "power") {
+            onSpellSelected(item);
+          } else {
+            ui.notifications.warn("Trascina un elemento di tipo 'Power' (Potere).");
+          }
+        }
+      } catch (err) {
+        console.warn("Drop error:", err);
+        ui.notifications.error("Errore nel drop. Riprova.");
+      }
+    });
+  }
+
+
+  /**
+   * Creazione dell'Item fisico
+   */
+  async function createMagicItem(spell, itemType, caricheBacchetta = 1) {
+    if (!game.user.isGM && game.user.role < 3) {
+      ui.notifications.error("Non hai i permessi per creare oggetti.");
+      return;
+    }
+
+    if (!spell || !spell.system) {
+      ui.notifications.error("Errore: Dati dell'incantesimo non ricevuti o non validi.");
+      return;
+    }
+
+    const spellLevel = spell.system?.level || "1";
+    let cost = 0;
+    let itemName = "";
+    let description = "";
+    let img = "";
+    
+    let equiptype = "scroll";
+    let maxCharges = 1;
+
+    const spellLink = spell.uuid ? `@UUID[${spell.uuid}]{${spell.name}}` : `<strong>${spell.name}</strong>`;
+
+    if (itemType === "scroll") {
+      cost = SCROLL_PRICES[spellLevel] || 100;
+      itemName = `Pergamena: ${spell.name}`;
+      img = SCROLL_IMG;
+      maxCharges = 1;
+
+      description = `<p style="font-style: italic; color: #555;"><strong>Sommario:</strong> Pergamena di un potere di ${spellLevel}° livello (${getRomano(spellLevel)}).</p>
+                     <hr>
+                     <p><strong>Incantesimo Contenuto:</strong> ${spellLink}</p>
+                     ${spell.system?.description ? `<hr><p>${spell.system.description}</p>` : ""}`;
+    } else {
+      const prezzoMoltiplicatore = WAND_PRICES_PER_CHARGE[spellLevel] || 1000;
+      cost = prezzoMoltiplicatore * caricheBacchetta;
+
+      itemName = `Bacchetta: ${spell.name}`;
+      img = WAND_IMG;
+      equiptype = "wand";
+      maxCharges = caricheBacchetta;
+
+      description = `<p style="font-style: italic; color: #555;"><strong>Sommario:</strong> Bacchetta (${caricheBacchetta} cariche) di un potere di ${spellLevel}° livello (${getRomano(spellLevel)}).</p>
+                     <hr>
+                     <p><strong>Incantesimo Contenuto:</strong> ${spellLink}</p>
+                     <p><em>Costo calcolato: ${prezzoMoltiplicatore} MO a carica (${caricheBacchetta} cariche).</em></p>
+                     ${spell.system?.description ? `<hr><p>${spell.system.description}</p>` : ""}`;
+    }
+
+    const itemData = {
+      type: "equipment",
+      name: itemName,
+      img: img,
+      system: {
+        equiptype: equiptype,
+        cost: cost,
+        quantity: 1,
+        equipped: false,
+        slotused: 1,
+        slotlocation: "backpack",
+        magiccharge: "chargelimited",
+        chargevalue: 0,                
+        chargevaluemax: maxCharges,    
+        isidentified: "yes",          
+        description: description,
+        relatedSpell: spell.uuid || "",
+        relatedSpellLevel: spellLevel,
+        relatedSpellSchool: spell.system?.magicschool || "unknown"
+      }
+    };
+
+    try {
+      const createdItem = await Item.create(itemData);
+      ui.notifications.info(`Creato: ${createdItem.name} per ${cost} MO`);
+      createdItem.sheet.render(true);
+    } catch (err) {
+      console.error("Errore nella creazione dell'oggetto:", err);
+      ui.notifications.error("Errore durante la creazione dell'oggetto magico. Verifica la console.");
+    }
+  }
+
+
+  // --- INTERFACCIA GRAFICA (DIALOG) ---
+
+
+  const dialogContent = `
+    <div class="magic-item-maker-dialog" style="display: flex; flex-direction: column; gap: 10px;">
+      <div id="drop-zone" class="drop-zone" style="
+        border: 2px dashed #999; border-radius: 8px; padding: 25px; text-align: center;
+        background-color: #f5f5f5; min-height: 60px; display: flex; align-items: center;
+        justify-content: center; font-size: 13px; cursor: pointer; margin-bottom: 5px;
+      ">
+        <span id="drop-text">Trascina un Potere qui per bloccarlo</span>
+      </div>
+      
+      <div id="spell-display"></div>
+      
+      <div class="form-group">
+        <label><strong>Tipo di Oggetto:</strong></label>
+        <select id="select-item-type" style="width: 100%;">
+          <option value="scroll">Pergamena</option>
+          <option value="wand">Bacchetta</option>
+        </select>
+      </div>
+
+      <div id="wand-options" style="display: none; border-left: 3px solid #4a354f; padding-left: 10px; margin-top: 5px;">
+        <div class="form-group">
+          <label>Numero di Cariche della Bacchetta:</label>
+          <input type="number" id="input-wand-charges" value="1" min="1" max="100" style="text-align: center; font-weight: bold;"/>
+        </div>
+      </div>
+      
+      <p style="font-size: 11px; color: #666; font-style: italic; margin-top: 5px; text-align: center; line-height: 1.3;">
+        Nota: Se la zona di drop è vuota, cliccando 'Crea' verrà estratto un incantesimo casuale dalle tabelle del compendio di sistema.
+      </p>
+    </div>
+  `;
+
+
+  const dialog = new Dialog({
+    title: "Fabbrica Oggetti Magici",
+    content: dialogContent,
+    buttons: {
+      create: {
+        icon: '<i class="fas fa-hammer"></i>',
+        label: "Crea Oggetto",
+        callback: async (html) => {
+          const itemType = html.find("#select-item-type").val();
+          const cariche = parseInt(html.find("#input-wand-charges").val()) || 1;
+
+          if (!selectedSpell) {
+            ui.notifications.info("Estrazione del potere casuale dai compendi...");
+            
+            const potereCasuale = await ottieniDatiTabelle(); 
+            if (!potereCasuale) return;
+
+            await createMagicItem(potereCasuale, itemType, cariche);
+            return;
+          }
+          
+          await createMagicItem(selectedSpell, itemType, cariche);
+        }
+      },
+      cancel: {
+        icon: '<i class="fas fa-times"></i>',
+        label: "Annulla"
+      }
+    },
+    default: "create",
+    render: (html) => {
+      html.find("#select-item-type").on("change", function() {
+        const wandOptions = html.find("#wand-options");
+        if ($(this).val() === "wand") {
+          wandOptions.slideDown(200, () => {
+            dialog.setPosition({ height: "auto" });
+          });
+        } else {
+          wandOptions.slideUp(200, () => {
+            dialog.setPosition({ height: "auto" });
+          });
+        }
+      });
+
+      setupDragDrop(html, (spell) => {
+        selectedSpell = spell;
+        updateSpellDisplay(html, spell, dialog);
+      });
+    }
+  }, { width: 400, height: "auto", classes: ["magic-item-maker"] });
+
+
+  dialog.render(true);
+img: systems/fvtt-warhero/images/icons/crafting.svg
+_id: fIFB0pKp9KRfxTO0
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.15
+  createdTime: 1780662727435
+  modifiedTime: 1780663506650
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!macros!fIFB0pKp9KRfxTO0'
