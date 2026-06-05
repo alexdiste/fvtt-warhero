@@ -544,9 +544,9 @@
 	  }
     },
 	{
-      "label": "Macro",
+      "label": "macro",
       "type": "Macro",
-      "name": "macro",
+      "name": "acro",
       "path": "packs/macro",
       "system": "fvtt-warhero",
 	  "flags": {},
@@ -556,7 +556,7 @@
       }
     },
     {
-      "label": "Macro-master",
+      "label": "macro-master",
       "type": "Macro",
       "name": "macro-master",
       "path": "packs/macro-master",
@@ -568,7 +568,7 @@
       }
     },
     {
-      "label": "Tabelle",
+      "label": "tabelle",
       "type": "RollTable",
       "name": "Tabelle",
       "path": "packs/tabelle",
@@ -593,7 +593,8 @@
 				"competenze",
 				"azioni",
 				"evocazioni",
-                "macro"
+        "macro",
+        "tabelle"
 			],
             "folders": [
                 {
