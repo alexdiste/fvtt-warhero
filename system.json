@@ -2,7 +2,7 @@
   "id": "fvtt-warhero",
   "title": "Warhero RPG",
   "description": "Warhero RPG system for FoundryVTT",
-  "version": "14.86.18",
+  "version": "14.86.19",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -592,11 +592,25 @@
         "lingue",
         "competenze",
         "azioni",
-        "evocazioni",
-        "macro",
-        "tabelle"
+        "evocazioni"
       ],
       "folders": [
+        {
+          "name": "Macro",
+          "sorting": "m",
+          "color": "#000000",
+          "packs": [
+            "macro"
+          ]
+        },
+        {
+          "name": "Tabelle",
+          "sorting": "m",
+          "color": "#4a354f",
+          "packs": [
+            "tabelle"
+          ]
+        },
         {
           "name": "Master",
           "sorting": "m",
@@ -683,14 +697,6 @@
             "scudi-leggeri",
             "scudi-pesanti",
             "scudi-torre"
-          ]
-        },
-        {
-          "name": "Tabelle",
-          "sorting": "m",
-          "color": "#4a354f",
-          "packs": [
-            "tabelle"
           ]
         }
       ]
