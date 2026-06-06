@@ -1,6 +1,6 @@
 name: Porta pozioni
 type: equipment
-img: systems/fvtt-warhero/images/icons/belt.svg
+img: icons/equipment/waist/belt-utility-black.webp
 system:
   equiptype: ''
   cost: 3
@@ -25,10 +25,10 @@ flags:
 _stats:
   systemId: fvtt-warhero
   systemVersion: 11.2.1
-  coreVersion: '13.344'
+  coreVersion: '14.363'
   createdTime: 1681050729470
-  modifiedTime: 1749220296951
-  lastModifiedBy: DWSAilUm78tyflgW
+  modifiedTime: 1780750329334
+  lastModifiedBy: guOwSDi78TuzUGFU
   compendiumSource: Item.uzb8m9QNJhpVeEY8
   duplicateSource: null
   exportSource: null

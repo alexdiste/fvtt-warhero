@@ -438,6 +438,12 @@ a:hover {
   font-size: 0.8rem;
 }
 
+.editor {
+  border: 2;
+  height: 300px;
+  padding: 0 3px;
+}
+
 .fvtt-warhero .resource-label {
   font-weight: bold;
   text-transform: uppercase;

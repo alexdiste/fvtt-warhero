@@ -1,0 +1,138 @@
+name: Cucitura magica e infusione (pg)
+type: script
+command: |-
+  const token = canvas.tokens.controlled[0];
+
+  if (!token) {
+      ui.notifications.warn("Per favore, seleziona il tuo token!");
+  } else {
+      // 1. Filtriamo gli oggetti dell'attore
+      // NOTA: Se il campo del tuo sistema non è "slotlocation", cambialo qui sotto
+      const oggettiFiltrati = token.actor.items.filter(i => 
+          i.system.slotlocation === "cloak" || i.system.slotlocation === "dress"
+      );
+
+      if (oggettiFiltrati.length === 0) {
+          return ui.notifications.warn("Nessun mantello (cloak) o vestito (dress) trovato nel tuo inventario!");
+      }
+
+      // Generiamo le opzioni per la select
+      const optionsHtml = oggettiFiltrati.map(i => `<option value="${i.id}">${i.name}</option>`).join("");
+
+      const pgPercentBonus = token.actor.system.secondary?.percentbonus?.value || 0;
+
+      const dialogContent = `
+          <div style="font-size: 13px;">
+              <div class="form-group">
+                  <label><strong>Scegli l'oggetto da modificare:</strong></label>
+                  <select id="select-oggetto-base">${optionsHtml}</select>
+              </div>
+
+              <div class="form-group" style="margin-top:10px;">
+                  <label><strong>Operazione:</strong></label>
+                  <select id="select-modalita">
+                      <option value="cucitura">Cucitura Magica</option>
+                      <option value="infusione">Infusione Magica</option>
+                  </select>
+              </div>
+
+              <hr>
+
+              <div id="blocco-cucitura">
+                  <div class="form-group"><label>Nome Potere:</label><input type="text" id="input-cucitura-nome" /></div>
+                  <div class="form-group">
+                      <label>Livello:</label>
+                      <select id="select-cucitura-livello">
+                          <option value="1">I (80%)</option><option value="2">II (50%)</option>
+                          <option value="3">III (30%)</option><option value="4">IV (10%)</option>
+                      </select>
+                  </div>
+                  <div class="form-group"><label>Bonus/Malus Extra:</label><input type="number" id="input-cucitura-extra" value="0" /></div>
+              </div>
+
+              <div id="blocco-infusione" style="display:none;">
+                  <div class="form-group">
+                      <label>Tipo Infusione:</label>
+                      <select id="select-tipo-infusione">
+                          <option value="+1 Tiri per colpire">+1 Tiri per colpire</option>
+                          <option value="+10 PF">+10 PF</option>
+                          <option value="+1 Mana">+1 Mana</option>
+                          <option value="+2 Tiri salvezza">+2 Tiri salvezza</option>
+                          <option value="+3 conoscenze">+3 conoscenze</option>
+                          <option value="+1 difesa">+1 difesa</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+      `;
+
+      new Dialog({
+          title: `Officina Arcana: ${token.name}`,
+          content: dialogContent,
+          buttons: {
+              execute: {
+                  label: "Applica Modifica",
+                  callback: async (html) => {
+                      const itemId = html.find("#select-oggetto-base").val();
+                      const item = token.actor.items.get(itemId);
+                      const modalita = html.find("#select-modalita").val();
+
+                      if (modalita === "cucitura") {
+                          const level = html.find('#select-cucitura-livello').val();
+                          const pNome = html.find("#input-cucitura-nome").val();
+                          const extraMod = parseInt(html.find('#input-cucitura-extra').val()) || 0;
+                          
+                          const baseChance = level === "1" ? 80 : level === "2" ? 50 : level === "3" ? 30 : 10;
+                          const d100 = (await new Roll("1d100").evaluate()).total;
+                          const successo = (d100 - pgPercentBonus + extraMod) <= baseChance;
+
+                          if (successo) {
+                              await item.update({
+                                  name: `${item.name} (${pNome})`,
+                                  "system.description": (item.system.description || "") + `\n\nCucitura: ${pNome} (Liv.${level})`
+                              });
+                              ui.notifications.info("Cucitura riuscita!");
+                          } else {
+                              ui.notifications.error(`Fallito! (Dado: ${d100})`);
+                          }
+                      } else {
+                          const inf = html.find("#select-tipo-infusione").val();
+                          await item.update({
+                              name: `${item.name} (Infuso: ${inf})`,
+                              "system.description": (item.system.description || "") + `\n\nInfusione: ${inf}`
+                          });
+                          ui.notifications.info("Infusione completata!");
+                      }
+                  }
+              }
+          },
+          render: (html) => {
+              html.find("#select-modalita").change(function() {
+                  const isCucitura = $(this).val() === "cucitura";
+                  html.find("#blocco-cucitura").toggle(isCucitura);
+                  html.find("#blocco-infusione").toggle(!isCucitura);
+              });
+          }
+      }).render(true);
+  }
+img: systems/fvtt-warhero/images/icons/robe.svg
+_id: GgFq3XhaSvdZOBiA
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.19
+  createdTime: 1780753692407
+  modifiedTime: 1780753692407
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!macros!GgFq3XhaSvdZOBiA'

@@ -1,0 +1,320 @@
+name: Cucitura magica e infusione (master)
+type: script
+command: |-
+  const token = canvas.tokens.controlled[0];
+
+  if (!token) {
+      ui.notifications.warn("Per favore, seleziona un token prima di eseguire la macro!");
+  } else {
+      const pgPercentBonus = token.actor.system.secondary?.percentbonus?.value || 0;
+      let itemSorgente = null;
+
+      /**
+       * Valida lo stato del Dialog in tempo reale abilitando o disabilitando il bottone Esegui
+       */
+      function validaStatoMacro(html) {
+          const btn = html.closest(".app").find(".dialog-button.execute");
+          const modalita = html.find("#select-modalita").val();
+          
+          let valido = true;
+
+          // Serve sempre l'oggetto base da manipolare
+          if (!itemSorgente) valido = false;
+
+          if (modalita === "cucitura") {
+              const nomePotere = html.find("#input-cucitura-nome").val().trim();
+              const livelloPotere = parseInt(html.find("#select-cucitura-livello").val()) || 0;
+              if (!nomePotere || livelloPotere < 1 || livelloPotere > 4) {
+                  valido = false;
+              }
+          } else if (modalita === "infusione") {
+              const infusioneScelta = html.find("#select-tipo-infusione").val();
+              if (!infusioneScelta) valido = false;
+          }
+
+          // Applica stato visivo al bottone
+          if (valido) {
+              btn.prop("disabled", false).css("opacity", 1);
+          } else {
+              btn.prop("disabled", true).css("opacity", 0.5);
+          }
+      }
+
+      /**
+       * Gestione del Drag & Drop per supportare schede personaggio (Actor Items)
+       */
+      function setupDropZone(html, selector, callback) {
+          const zone = html.find(selector);
+          
+          zone.on("dragover", (e) => { e.preventDefault(); zone.css("background-color", "#eafaf1"); });
+          zone.on("dragleave", (e) => { e.preventDefault(); zone.css("background-color", ""); });
+          zone.on("drop", async (e) => {
+              e.preventDefault();
+              zone.css("background-color", "");
+              
+              let data = null;
+              const dataTransfer = e.originalEvent?.dataTransfer || e.dataTransfer;
+              if (!dataTransfer) return;
+
+              try {
+                  const textEditorImpl = foundry?.applications?.ux?.TextEditor?.implementation;
+                  if (textEditorImpl && typeof textEditorImpl.getDragEventData === "function") {
+                      data = textEditorImpl.getDragEventData(e.originalEvent || e);
+                  } else {
+                      data = JSON.parse(dataTransfer.getData("text/plain"));
+                  }
+              } catch (err) {
+                  return ui.notifications.error("Errore nella lettura dei dati trascinati.");
+              }
+
+              if (!data || data.type !== "Item") return;
+              
+              let item = null;
+
+              // 1. Tenta il recupero standard tramite UUID nativo
+              if (data.uuid) {
+                  item = await fromUuid(data.uuid).catch(() => null);
+              }
+
+              // 2. Se proviene esplicitamente da un Actor (es. trascinato da scheda PG)
+              if (!item && (data.actorId || data.context?.actor || data.parentId)) {
+                  const actorId = data.actorId || data.parentId;
+                  const actor = data.tokenId ? canvas.tokens.get(data.tokenId)?.actor : game.actors.get(actorId);
+                  if (actor) {
+                      item = actor.items.get(data.itemId || data.data?._id);
+                  }
+              }
+              
+              // 3. Fallback estremo
+              if (!item && data.data) {
+                  item = data.data;
+              }
+
+              if (!item) {
+                  return ui.notifications.error("Impossibile riconoscere l'oggetto. Assicurati di trascinarlo dal pannello di un PG o dal compendio.");
+              }
+              
+              const oggettoPronto = typeof item.toObject === "function" ? item : new Item.implementation(item);
+
+              callback(oggettoPronto);
+              validaStatoMacro(html);
+          });
+      }
+
+      const dialogContent = `
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+              <div id="macro-drop-base" style="border: 2px dashed #27ae60; border-radius: 6px; padding: 12px; text-align: center; background: #f9f9f9; cursor:pointer;">
+                  <span id="text-drop-base"><i class="fas fa-box-open"></i> Trascina qui l'oggetto da modificare</span>
+              </div>
+
+              <div class="form-group">
+                  <label><strong>Scegli l'operazione magica:</strong></label>
+                  <select id="select-modalita">
+                      <option value="cucitura">Cucitura Magica (Richiede Tiro)</option>
+                      <option value="infusione">Infondere Magia (Successo Automatico)</option>
+                  </select>
+              </div>
+
+              <hr style="margin: 4px 0;">
+
+              <div id="blocco-cucitura" style="display: flex; flex-direction: column; gap: 6px; border-left: 3px solid #8e44ad; padding-left: 8px; background: #f9f2fa;">
+                  <div id="macro-drop-potere" style="border: 2px dashed #8e44ad; border-radius: 6px; padding: 10px; text-align: center; background: #fff; cursor:pointer;">
+                      <span id="text-drop-potere"><i class="fas fa-scroll"></i> Opzionale: Trascina qui un oggetto Potere</span>
+                  </div>
+                  
+                  <div class="form-group"><label>Nome del Potere:</label><input type="text" id="input-cucitura-nome" placeholder="es. Dardo Incantato" style="width:100%;"/></div>
+                  <div class="form-group"><label>Sfera di Magia (magicschool):</label><input type="text" id="input-cucitura-sfera" placeholder="es. Arcana" style="width:100%;"/></div>
+                  
+                  <div class="form-group">
+                      <label>Livello del Potere (Soglia Base):</label>
+                      <select id="select-cucitura-livello">
+                          <option value="0">Scegli livello...</option>
+                          <option value="1">I Livello (80%)</option>
+                          <option value="2">II Livello (50%)</option>
+                          <option value="3">III Livello (30%)</option>
+                          <option value="4">IV Livello (10%)</option>
+                      </select>
+                  </div>
+
+                  <div class="form-group"><label>Bonus PG (riduce il tiro):</label><input type="text" value="-${pgPercentBonus}%" disabled style="text-align:center; background:#e9ecef;"/></div>
+                  <div class="form-group"><label>Modificatori Extra (es. +5 malus, -10 bonus):</label><input type="number" id="input-cucitura-extra" value="0" style="text-align:center;"/></div>
+              </div>
+
+              <div id="blocco-infusione" style="display: none; flex-direction: column; gap: 6px; border-left: 3px solid #e67e22; padding-left: 8px; background: #faf4ee;">
+                  <div class="form-group">
+                      <label><strong>Seleziona il tipo di Infusione:</strong></label>
+                      <select id="select-tipo-infusione">
+                          <option value="+1 Tiri per colpire">+1 Tiri per colpire</option>
+                          <option value="+10 PF">+10 PF</option>
+                          <option value="+1 Mana">+1 Mana</option>
+                          <option value="+2 Tiri salvezza">+2 Tiri salvezza</option>
+                          <option value="+3 conoscenze">+3 conoscenze</option>
+                          <option value="+1 difesa">+1 difesa</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+      `;
+
+      const dialog = new Dialog({
+          title: `Officina Arcana: ${token.name}`,
+          content: dialogContent,
+          buttons: {
+              execute: {
+                  icon: '<i class="fas fa-hammer"></i>',
+                  label: "Avvia Lavorazione",
+                  callback: async (html) => {
+                      const modalita = html.find("#select-modalita").val();
+                      const vecchioOggetto = itemSorgente.toObject();
+                      
+                      if (modalita === "cucitura") {
+                          const level = html.find('#select-cucitura-livello').val();
+                          const pNome = html.find("#input-cucitura-nome").val().trim();
+                          const pSfera = html.find("#input-cucitura-sfera").val().trim() || "Magia";
+                          const extraMod = parseInt(html.find('#input-cucitura-extra').val()) || 0;
+
+                          let baseChance = 0;
+                          if (level === "1") baseChance = 80;
+                          else if (level === "2") baseChance = 50;
+                          else if (level === "3") baseChance = 30;
+                          else if (level === "4") baseChance = 10;
+
+                          let r = new Roll("1d100");
+                          await r.evaluate();
+                          const d100Result = r.total;
+
+                          const valoreFinale = d100Result - pgPercentBonus + extraMod;
+                          const successo = valoreFinale <= baseChance;
+
+                          const styleSuccess = "color: #18520b; font-weight: bold; font-size: 14px;";
+                          const styleFailure = "color: #8a0606; font-weight: bold; font-size: 14px;";
+                          const esitoTesto = successo ? "CREAZIONE RIUSCITA!" : "CREAZIONE FALLITA";
+                          const classeColore = successo ? styleSuccess : styleFailure;
+
+                          const chatContent = `
+                              <div style="margin-bottom: 5px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
+                                  <strong style="font-size: 13px;">Cucitura Magica (Livello ${level})</strong>
+                                  <ul style="list-style: none; padding: 0; margin: 5px 0;">
+                                      <li>Soglia Base da non superare: <strong>${baseChance}%</strong></li>
+                                      <hr style="margin: 5px 0;">
+                                      <li>Tiro d100 base: <strong>${d100Result}</strong></li>
+                                      <li>Sconto Bonus PG: <strong>-${pgPercentBonus}</strong></li>
+                                      ${extraMod !== 0 ? `<li>Modificatore Extra: <strong>${extraMod > 0 ? "+" + extraMod : extraMod}</strong></li>` : ""}
+                                      <hr style="margin: 5px 0;">
+                                      <li><strong>Risultato Finale: ${valoreFinale}</strong></li>
+                                  </ul>
+                                  <div style="text-align: center; margin-top: 8px; padding: 5px; background: rgba(0,0,0,0.05); border-radius: 4px;">
+                                      <span style="${classeColore}">${esitoTesto}</span>
+                                  </div>
+                              </div>
+                          `;
+
+                          await ChatMessage.create({
+                              user: game.user.id,
+                              speaker: ChatMessage.getSpeaker({token: token.document}),
+                              content: chatContent
+                          });
+
+                          if (successo) {
+                              let bloccoDescrizione = `\n\nProprietà Magiche:\n- Cucitura riuscita del Potere: ${pNome} (${pSfera} - Liv. ${level})`;
+                              
+                              const nuovoItemData = {
+                                  ...vecchioOggetto,
+                                  name: `${vecchioOggetto.name} (${pNome})`,
+                                  identifiedState: "yes",
+                                  system: {
+                                      ...vecchioOggetto.system,
+                                      identifiedState: "yes",
+                                      description: (vecchioOggetto.system.description || "") + bloccoDescrizione
+                                  }
+                              };
+                              delete nuovoItemData._id;
+                              const nuovoOggetto = await Item.create(nuovoItemData);
+                              if (nuovoOggetto) nuovoOggetto.sheet.render(true);
+                          }
+
+                      } else {
+                          const infusioneScelta = html.find("#select-tipo-infusione").val();
+                          let bloccoDescrizione = `\n\nProprietà Magiche:\n- Infusione: ${infusioneScelta}`;
+
+                          const nuovoItemData = {
+                              ...vecchioOggetto,
+                              name: `${vecchioOggetto.name} (Infuso: ${infusioneScelta})`,
+                              identifiedState: "yes",
+                              system: {
+                                  ...vecchioOggetto.system,
+                                  identifiedState: "yes",
+                                  description: (vecchioOggetto.system.description || "") + bloccoDescrizione
+                              }
+                          };
+                          delete nuovoItemData._id;
+                          const nuovoOggetto = await Item.create(nuovoItemData);
+                          if (nuovoOggetto) nuovoOggetto.sheet.render(true);
+                          
+                          ui.notifications.info(`Oggetto infuso creato con successo!`);
+                      }
+                  }
+              },
+              cancel: { icon: '<i class="fas fa-times"></i>', label: "Annulla" }
+          },
+          default: "execute",
+          render: (html) => {
+              validaStatoMacro(html);
+
+              html.find("select, input").on("input change", () => validaStatoMacro(html));
+
+              html.find("#select-modalita").on("change", function() {
+                  const modo = $(this).val();
+                  if (modo === "cucitura") {
+                      html.find("#blocco-cucitura").show();
+                      html.find("#blocco-infusione").hide();
+                  } else {
+                      html.find("#blocco-cucitura").hide();
+                      html.find("#blocco-infusione").show();
+                  }
+                  validaStatoMacro(html);
+                  dialog.setPosition({height: "auto"});
+              });
+
+              // Drop Zone 1: OGGETTO BASE
+              setupDropZone(html, "#macro-drop-base", (item) => {
+                  itemSorgente = item;
+                  html.find("#text-drop-base").html(`✓ <strong>${item.name}</strong> [${item.type.toUpperCase()}]`);
+              });
+
+              // Drop Zone 2: POTERE PER CUCITURA
+              setupDropZone(html, "#macro-drop-potere", (item) => {
+                  if (item.type !== "power") {
+                      return ui.notifications.warn("L'oggetto trascinato deve essere di tipo 'power'!");
+                  }
+                  html.find("#input-cucitura-nome").val(item.name);
+                  html.find("#input-cucitura-sfera").val(item.system.magicschool || ""); 
+                  html.find("#select-cucitura-livello").val(item.system.level || "0");
+                  html.find("#text-drop-potere").html(`✓ Potere: <strong>${item.name}</strong> caricato!`);
+              });
+          }
+      }, { width: 420, height: "auto" });
+
+      dialog.render(true);
+  }
+img: systems/fvtt-warhero/images/icons/robe.svg
+_id: 5kdcaEtos8paTBXL
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.19
+  createdTime: 1780753689055
+  modifiedTime: 1780753689055
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!macros!5kdcaEtos8paTBXL'

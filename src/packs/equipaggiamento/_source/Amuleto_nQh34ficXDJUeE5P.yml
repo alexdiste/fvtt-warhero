@@ -1,0 +1,35 @@
+name: Amuleto
+type: equipment
+img: icons/equipment/neck/amulet-round-engraved-spiral-gold.webp
+system:
+  equiptype: ''
+  cost: 10
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: backpack
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.19
+  createdTime: 1780750113120
+  modifiedTime: 1780750113120
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+_id: nQh34ficXDJUeE5P
+sort: 0
+_key: '!items!nQh34ficXDJUeE5P'

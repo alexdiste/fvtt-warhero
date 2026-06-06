@@ -1,6 +1,6 @@
 name: Ariete portatile
 type: equipment
-img: systems/fvtt-warhero/images/icons/swap-bag.svg
+img: icons/weapons/maces/mace-skull-ram.webp
 system:
   equiptype: ''
   cost: 10
@@ -30,10 +30,10 @@ flags:
 _stats:
   systemId: fvtt-warhero
   systemVersion: 11.2.1
-  coreVersion: '13.341'
+  coreVersion: '14.363'
   createdTime: 1701591358821
-  modifiedTime: 1743437234015
-  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  modifiedTime: 1780750209633
+  lastModifiedBy: guOwSDi78TuzUGFU
   compendiumSource: null
   duplicateSource: null
   exportSource: null

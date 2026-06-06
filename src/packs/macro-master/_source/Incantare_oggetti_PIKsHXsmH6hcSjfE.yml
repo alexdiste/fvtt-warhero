@@ -1,19 +1,14 @@
 name: Incantare oggetti
 type: script
 command: |-
-  // --- CONFIGURAZIONE COSTI DA TABELLE (IMMAGINI) ---
+  // --- CONFIGURAZIONE COSTI DA TABELLE ---
   const TABELLE_PREZZI = {
-    // Il prezzo singolo per ciascuna statistica da +1 a +5
     statistiche: { 0: 0, 1: 5000, 2: 20000, 3: 45000, 4: 80000, 5: 125000 },
-    
     dannoTxC: { 0: 0, 1: 1000, 2: 4000, 3: 9000, 4: 18000, 5: 36000 },
     riduzioneDanno: { 0: 0, 1: 2000, 2: 8000, 3: 18000, 4: 36000, 5: 72000 },
     parataScudo: { 0: 0, 1: 3000, 2: 12000, 3: 27000 },
     mana: { 0: 0, 1: 600, 2: 2400, 3: 5400, 4: 9600, 5: 15000, 6: 21600 },
-    hp: { 
-      0: 0, 5: 1000, 10: 4000, 15: 9000, 20: 16000, 25: 25000, 
-      30: 36000, 35: 49000, 40: 64000, 45: 81000, 50: 100000 
-    },
+    hp: { 0: 0, 5: 1000, 10: 4000, 15: 9000, 20: 16000, 25: 25000, 30: 36000, 35: 49000, 40: 64000, 45: 81000, 50: 100000 },
     permanenti: { 0: 0, 1: 100000, 2: 200000, 3: 300000, 4: 400000 },
     caricheLimitate: { 1: 1000, 2: 2000, 3: 3000, 4: 4000 },
     giornalieri: {
@@ -28,152 +23,180 @@ command: |-
   let itemTypeRilevato = "";
 
   /**
-   * Gestione Drag & Drop dell'oggetto nel Form
+   * Valida lo stato del Dialog in tempo reale abilitando o disabilitando il bottone Genera
    */
-  function inizializzaDragDrop(html, onItemDropped) {
-    const dropZone = html.find("#enchant-drop-zone");
+  function validaStatoBottone(html) {
+    const btn = html.closest(".app").find(".dialog-button.enchant");
+    const haCariche = html.find("#select-ha-cariche").val() === "si";
+    const haPoterePerm = html.find("#select-ha-potere-permanente").val() === "si";
+    
+    let valido = true;
+    let haAlmenoUnaModifica = false;
 
-    dropZone.on("dragover", (e) => {
-      e.preventDefault(); e.stopPropagation();
-      dropZone.css("background-color", "#eafaf1");
-    });
-
-    dropZone.on("dragleave", (e) => {
-      e.preventDefault(); e.stopPropagation();
-      dropZone.css("background-color", "#f9f9f9");
-    });
-
-    dropZone.on("drop", async (e) => {
-      e.preventDefault(); e.stopPropagation();
-      dropZone.css("background-color", "#f9f9f9");
-
-      try {
-        const data = JSON.parse(e.originalEvent.dataTransfer.getData("text/plain"));
-        if (data.type === "Item" && data.uuid) {
-          const item = await fromUuid(data.uuid);
-
-          if (["weapon", "armor", "shield"].includes(item.type)) {
-            onItemDropped(item, item.type);
-          } else {
-            ui.notifications.warn("Trascina un oggetto valido di tipo Arma, Armatura o Scudo.");
-          }
-        }
-      } catch (err) {
-        console.error(err);
-        ui.notifications.error("Errore nell'analisi del Drop dell'oggetto.");
+    // 1. Controllo Oggetto Base
+    if (!itemSorgente) {
+      valido = false;
+    } else {
+      // 2. Controllo modifiche specifiche per tipo di oggetto
+      if (itemTypeRilevato === "weapon") {
+        if ((parseInt(html.find("#input-txc").val()) || 0) > 0) haAlmenoUnaModifica = true;
+        if ((parseInt(html.find("#input-danno").val()) || 0) > 0) haAlmenoUnaModifica = true;
+      } else if (itemTypeRilevato === "armor") {
+        if ((parseInt(html.find("#input-rd").val()) || 0) > 0) haAlmenoUnaModifica = true;
+      } else if (itemTypeRilevato === "shield") {
+        if ((parseInt(html.find("#input-parata").val()) || 0) > 0) haAlmenoUnaModifica = true;
       }
-    });
+    }
+
+    // 3. Controllo modifiche Cariche Magiche
+    if (haCariche) {
+      const nomePotereCarica = html.find("#input-carica-nome").val().trim();
+      const livelloPotereCarica = parseInt(html.find("#select-livello-potere-carica").val()) || 0;
+      if (!nomePotereCarica || livelloPotereCarica < 1 || livelloPotereCarica > 4) {
+        valido = false; // Se attivo ma incompleto, blocca
+      } else {
+        haAlmenoUnaModifica = true;
+      }
+    }
+
+    // 4. Controllo modifiche Caratteristiche
+    if ((parseInt(html.find("#input-pot-fis").val()) || 0) > 0) haAlmenoUnaModifica = true;
+    if ((parseInt(html.find("#input-pot-ist").val()) || 0) > 0) haAlmenoUnaModifica = true;
+    if ((parseInt(html.find("#input-pot-men").val()) || 0) > 0) haAlmenoUnaModifica = true;
+
+    // 5. Controllo risorse (Mana & HP)
+    if ((parseInt(html.find("#input-pot-mana").val()) || 0) > 0) haAlmenoUnaModifica = true;
+    if ((parseInt(html.find("#input-pot-hp").val()) || 0) > 0) haAlmenoUnaModifica = true;
+
+    // 6. Controllo modifiche Potere Permanente
+    if (haPoterePerm) {
+      const nomePoterePerm = html.find("#input-perm-nome").val().trim();
+      const livelloPoterePerm = parseInt(html.find("#input-perm-livello").val()) || 0;
+      if (!nomePoterePerm || livelloPoterePerm < 1 || livelloPoterePerm > 4) {
+        valido = false; // Se attivo ma incompleto, blocca
+      } else {
+        haAlmenoUnaModifica = true;
+      }
+    }
+
+    // Il bottone si attiva SOLO SE l'oggetto è valido e c'è almeno un incantamento reale selezionato
+    if (valido && haAlmenoUnaModifica) {
+      btn.prop("disabled", false).css("opacity", 1);
+    } else {
+      btn.prop("disabled", true).css("opacity", 0.5);
+    }
   }
 
   /**
-   * Mostra dinamicamente i campi nel Dialog in base al tipo di oggetto caricato
+   * Gestione Drag & Drop nativa per Foundry V14
    */
-  function aggiornaInterfacciaDinamica(html, item, tipo, dialogInstance) {
-    html.find("#enchant-drop-text").html(`✓ <strong>${item.name}</strong> (${tipo.toUpperCase()})`);
+  function setupDropZone(html, selector, callback) {
+    const zone = html.find(selector);
     
-    html.find(".condizionale-tipo").hide();
+    zone.on("dragover", (e) => { 
+      e.preventDefault(); 
+      zone.css("background-color", "#eafaf1"); 
+    });
     
-    if (tipo === "weapon") html.find("#blocco-arma").slideDown(200);
-    if (tipo === "armor") html.find("#blocco-armatura").slideDown(200);
-    if (tipo === "shield") html.find("#blocco-scudo").slideDown(200);
+    zone.on("dragleave", (e) => { 
+      e.preventDefault(); 
+      zone.css("background-color", ""); 
+    });
     
-    html.find("#opzioni-globali-incanto").slideDown(200, () => {
-      dialogInstance.setPosition({ height: "auto" });
+    zone.on("drop", async (e) => {
+      e.preventDefault();
+      zone.css("background-color", "");
+      
+      let data = null;
+      const dataTransfer = e.originalEvent?.dataTransfer || e.dataTransfer;
+      
+      if (!dataTransfer) return;
+
+      try {
+        const textEditorImpl = foundry?.applications?.ux?.TextEditor?.implementation;
+        if (textEditorImpl && typeof textEditorImpl.getDragEventData === "function") {
+           data = textEditorImpl.getDragEventData(e.originalEvent || e);
+        } else {
+           data = JSON.parse(dataTransfer.getData("text/plain"));
+        }
+      } catch (err) {
+        return ui.notifications.error("Errore nella lettura dei dati trascinati.");
+      }
+
+      if (!data || data.type !== "Item") return;
+      
+      let item = null;
+
+      if (data.uuid) {
+        item = await fromUuid(data.uuid);
+      } 
+      else if (data.actorId || data.tokenId) {
+        const actor = data.tokenId ? canvas.tokens.get(data.tokenId)?.actor : game.actors.get(data.actorId);
+        item = actor ? actor.items.get(data.itemId) : null;
+      }
+      
+      if (!item) return ui.notifications.error("Impossibile recuperare l'oggetto. Verifica che sia accessibile.");
+      
+      callback(item);
+      validaStatoBottone(html);
     });
   }
 
-  // --- CONTENUTO HTML DEL DIALOG ---
   const dialogContent = `
     <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
-      
-      <div id="enchant-drop-zone" style="
-        border: 2px dashed #27ae60; border-radius: 6px; padding: 20px; text-align: center;
-        background-color: #f9f9f9; cursor: pointer; transition: background 0.2s;
-      ">
-        <span id="enchant-drop-text"><i class="fas fa-box-open"></i> Trascina qui l'oggetto da incantare</span>
+      <div id="enchant-drop-zone" style="border: 2px dashed #27ae60; border-radius: 6px; padding: 15px; text-align: center; background: #f9f9f9; cursor:pointer;">
+        <span id="enchant-drop-text"><i class="fas fa-box-open"></i> Trascina qui un oggetto qualsiasi da incantare</span>
       </div>
 
-      <div id="opzioni-globali-incanto" style="display: none; display: flex; flex-direction: column; gap: 8px;">
+      <div id="opzioni-globali-incanto" style="display: none; flex-direction: column; gap: 8px;">
         
-        <!-- ARMA -->
-        <div id="blocco-arma" class="condizionale-tipo" style="display:none; border-left: 3px solid #c0392b; padding-left: 8px; background: #fdf2f2;">
-          <div class="form-group">
-            <label>Aggiungi al Bonus Colpire (TxC):</label>
-            <select id="input-txc"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
-          </div>
-          <div class="form-group">
-            <label>Aggiungi al Bonus Danno:</label>
-            <select id="input-danno"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
-          </div>
+        <div id="blocco-weapon" class="condizionale-tipo" style="display:none; border-left: 3px solid #c0392b; padding-left: 8px; background: #fdf2f2;">
+          <div class="form-group"><label>Bonus Colpire (TxC):</label><select id="input-txc">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
+          <div class="form-group"><label>Bonus Danno:</label><select id="input-danno">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
         </div>
-
-        <!-- ARMATURA -->
-        <div id="blocco-armatura" class="condizionale-tipo" style="display:none; border-left: 3px solid #2980b9; padding-left: 8px; background: #f2f7fb;">
-          <div class="form-group">
-            <label>Aggiungi a Riduzione Danno (RD):</label>
-            <select id="input-rd"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
-          </div>
+        
+        <div id="blocco-armor" class="condizionale-tipo" style="display:none; border-left: 3px solid #2980b9; padding-left: 8px; background: #f2f7fb;">
+          <div class="form-group"><label>Bonus Riduzione Danno (RD):</label><select id="input-rd">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
         </div>
-
-        <!-- SCUDO -->
-        <div id="blocco-scudo" class="condizionale-tipo" style="display:none; border-left: 3px solid #f39c12; padding-left: 8px; background: #fef9f2;">
-          <div class="form-group">
-            <label>Aggiungi a Bonus Parata Scudo:</label>
-            <select id="input-parata"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option></select>
-          </div>
+        
+        <div id="blocco-shield" class="condizionale-tipo" style="display:none; border-left: 3px solid #f39c12; padding-left: 8px; background: #fef9f2;">
+          <div class="form-group"><label>Bonus Parata Scudo:</label><select id="input-parata">${[0,1,2,3].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
         </div>
 
         <hr style="margin: 4px 0;">
 
-        <!-- CARICHE MAGICHE -->
         <div class="form-group">
-          <label><strong>L'oggetto possiede cariche magiche?</strong></label>
-          <select id="select-ha-cariche">
-            <option value="no">No</option>
-            <option value="si">Sì</option>
-          </select>
+          <label>Possiede cariche magiche?</label>
+          <select id="select-ha-cariche"><option value="no">No</option><option value="si">Sì</option></select>
         </div>
-
-        <div id="blocco-cariche" style="display: none; border-left: 3px solid #8e44ad; padding-left: 8px; background: #f9f2fa; display: flex; flex-direction: column; gap: 4px;">
+        <div id="blocco-cariche" style="display: none; border-left: 3px solid #8e44ad; padding-left: 8px; background: #f9f2fa; flex-direction: column; gap: 4px;">
+          <div id="blocco-drop-carica" style="border: 2px dashed #8e44ad; border-radius: 6px; padding: 10px; text-align: center; background: #fff; cursor:pointer; margin-bottom: 4px;">
+              <span id="text-drop-carica"><i class="fas fa-scroll"></i> Opzionale: Trascina qui un oggetto Potere</span>
+          </div>
+          <div class="form-group"><label>Nome del Potere infuso:</label><input type="text" id="input-carica-nome" placeholder="es. Dardo Incantato" style="width:100%;"/></div>
+          <div class="form-group"><label>Sfera di Magia (magicschool):</label><input type="text" id="input-carica-sfera" placeholder="es. Arcana" style="width:100%;"/></div>
           <div class="form-group">
             <label>Tipo di funzionamento Cariche:</label>
             <select id="select-tipo-cariche">
-              <option value="limitate">Limitate (Usa e Getta)</option>
-              <option value="giornaliere">Giornaliere (Ripristino giornaliero)</option>
+              <option value="chargelimited">Limitate (Usa e Getta)</option>
+              <option value="chargedaily">Giornaliere</option>
             </select>
           </div>
-          <div class="form-group">
-            <label>Livello del Potere infuso (1-4):</label>
-            <select id="select-livello-potere-carica"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
-          </div>
-          <div class="form-group">
-            <label id="label-quantita-cariche">Numero totale Cariche:</label>
-            <input type="number" id="input-num-cariche" value="1" min="1" max="100" style="text-align: center; font-weight: bold;"/>
-          </div>
+          <div class="form-group"><label>Livello del Potere infuso (1-4):</label><select id="select-livello-potere-carica"><option value="0">Scegli livello...</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>
+          <div class="form-group"><label id="label-quantita-cariche">Numero totale Cariche / Massime:</label><input type="number" id="input-num-cariche" value="1" min="1" max="100"/></div>
         </div>
 
         <hr style="margin: 4px 0;">
 
-        <!-- SEZIONE CARATTERISTICHE SINGOLE SPLITTATE -->
         <div style="border-left: 3px solid #16a085; padding-left: 8px; background: #f4fbf9; display: flex; flex-direction: column; gap: 4px;">
           <span style="font-weight: bold; color: #16a085; margin-bottom: 2px;">Potenziamento Caratteristiche:</span>
-          <div class="form-group">
-            <label>Bonus FISICO (FIS):</label>
-            <select id="input-pot-fis"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
-          </div>
-          <div class="form-group">
-            <label>Bonus AGILITÀ (AGI):</label>
-            <select id="input-pot-agi"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
-          </div>
-          <div class="form-group">
-            <label>Bonus MENTE (MEN):</label>
-            <select id="input-pot-men"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
-          </div>
+          <div class="form-group"><label>Bonus FISICO (FIS):</label><select id="input-pot-fis">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
+          <div class="form-group"><label>Bonus ISTINTO (IST):</label><select id="input-pot-ist">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
+          <div class="form-group"><label>Bonus MENTE (MEN):</label><select id="input-pot-men">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
         </div>
 
         <hr style="margin: 4px 0;">
 
-        <!-- RISORSE (MANA & HP) -->
         <div class="form-group">
           <label>Potenziamento Riserva Mana (+0 a +6):</label>
           <select id="input-pot-mana"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option><option value="6">+6</option></select>
@@ -189,23 +212,43 @@ command: |-
 
         <hr style="margin: 4px 0;">
 
-        <!-- EFFETTO PERMANENTE -->
         <div class="form-group">
-          <label><strong>Incolla un Potere reso Permanente?</strong></label>
-          <select id="select-potere-permanente">
-            <option value="0">No</option>
-            <option value="1">Sì, Potere di Livello 1</option>
-            <option value="2">Sì, Potere di Livello 2</option>
-            <option value="3">Sì, Potere di Livello 3</option>
-            <option value="4">Sì, Potere di Livello 4</option>
+          <label><strong>Rendere un Potere Permanente?</strong></label>
+          <select id="select-ha-potere-permanente">
+            <option value="no">No</option>
+            <option value="si">Sì</option>
           </select>
+        </div>
+        
+        <div id="sezione-potere-permanente" style="display: none; flex-direction: column; gap: 6px; border-left: 3px solid #e67e22; padding-left: 8px; background: #faf4ee;">
+           <div id="blocco-drop-potere" style="border: 2px dashed #e67e22; border-radius: 6px; padding: 10px; text-align: center; background: #fff; cursor:pointer;">
+              <span id="text-drop-potere"><i class="fas fa-scroll"></i> Opzionale: Trascina qui un oggetto Potere</span>
+           </div>
+           <div style="font-size: 11px; color:#7f8c8d; text-align:center;">oppure compila/modifica i dati manualmente sotto:</div>
+           <div class="form-group">
+              <label>Nome del Potere:</label>
+              <input type="text" id="input-perm-nome" placeholder="es. Palla di Fuoco" style="width:100%;"/>
+           </div>
+           <div class="form-group">
+              <label>Sfera di Magia (magicschool):</label>
+              <input type="text" id="input-perm-sfera" placeholder="es. Piromanzia" style="width:100%;"/>
+           </div>
+           <div class="form-group">
+              <label>Livello del Potere (1-4):</label>
+              <select id="input-perm-livello">
+                 <option value="0">Scegli livello...</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+              </select>
+           </div>
         </div>
 
       </div>
     </div>
   `;
 
-  // --- LOGICA DI CALCOLO E GENERAZIONE ---
   const dialog = new Dialog({
     title: "Fabbrica Oggetti Magici Avanzata",
     content: dialogContent,
@@ -214,164 +257,197 @@ command: |-
         icon: '<i class="fas fa-wand-magic-sparkles"></i>',
         label: "Genera Nuovo Oggetto Magico",
         callback: async (html) => {
-          if (!itemSorgente) {
-            ui.notifications.warn("Trascina prima un oggetto nella zona designata!");
-            return;
-          }
-
           const vecchioOggetto = itemSorgente.toObject();
           let upgradeDatiSystem = {};
           let costoIncantamento = 0;
           let noteDescrizione = [];
+          let tagNomeOggetto = [];
 
-          // 1. Elaborazione dati per tipo (Arma / Armatura / Scudo)
+          // --- 1. Logica Arma / Armatura / Scudo ---
           if (itemTypeRilevato === "weapon") {
-            const txc = parseInt(html.find("#input-txc").val()) || 0;
-            const danno = parseInt(html.find("#input-danno").val()) || 0;
-            costoIncantamento += (TABELLE_PREZZI.dannoTxC[txc] || 0) + (TABELLE_PREZZI.dannoTxC[danno] || 0);
-            
-            upgradeDatiSystem.hitbonus = (vecchioOggetto.system.hitbonus || 0) + txc;
-            upgradeDatiSystem.damagebonus = (vecchioOggetto.system.damagebonus || 0) + danno;
-
-            if (txc > 0) noteDescrizione.push(`Precisione Magica: +${txc} al Tiro per Colpire`);
-            if (danno > 0) noteDescrizione.push(`Affilatura Magica: +${danno} al Danno`);
-          } 
-          else if (itemTypeRilevato === "armor") {
-            const rd = parseInt(html.find("#input-rd").val()) || 0;
-            costoIncantamento += (TABELLE_PREZZI.riduzioneDanno[rd] || 0);
-            
-            upgradeDatiSystem.damagereduction = (vecchioOggetto.system.damagereduction || 0) + rd;
-            if (rd > 0) noteDescrizione.push(`Infrangibilità: +${rd} alla Riduzione Danno (RD)`);
-          } 
-          else if (itemTypeRilevato === "shield") {
-            const parata = parseInt(html.find("#input-parata").val()) || 0;
-            costoIncantamento += (TABELLE_PREZZI.parataScudo[parata] || 0);
-            
-            upgradeDatiSystem.parrybonus = (vecchioOggetto.system.parrybonus || 0) + parata;
-            if (parata > 0) noteDescrizione.push(`Deviazione Magica: +${parata} alla Parata`);
+              const txc = parseInt(html.find("#input-txc").val()) || 0;
+              const danno = parseInt(html.find("#input-danno").val()) || 0;
+              costoIncantamento += (TABELLE_PREZZI.dannoTxC[txc] || 0) + (TABELLE_PREZZI.dannoTxC[danno] || 0);
+              
+              upgradeDatiSystem.attackbonus = (vecchioOggetto.system.attackbonus || 0) + txc;
+              upgradeDatiSystem.damagebonus = (vecchioOggetto.system.damagebonus || 0) + danno;
+              
+              if (txc > 0) { noteDescrizione.push(`+${txc} al Tiro per Colpire (TxC)`); tagNomeOggetto.push(`+${txc} TxC`); }
+              if (danno > 0) { noteDescrizione.push(`+${danno} al Danno`); tagNomeOggetto.push(`+${danno} Danno`); }
+          } else if (itemTypeRilevato === "armor") {
+              const rd = parseInt(html.find("#input-rd").val()) || 0;
+              costoIncantamento += (TABELLE_PREZZI.riduzioneDanno[rd] || 0);
+              upgradeDatiSystem.damagereduction = (vecchioOggetto.system.damagereduction || 0) + rd;
+              if (rd > 0) { noteDescrizione.push(`+${rd} alla Riduzione Danno (RD)`); tagNomeOggetto.push(`+${rd} RD`); }
+          } else if (itemTypeRilevato === "shield") {
+              const parata = parseInt(html.find("#input-parata").val()) || 0;
+              costoIncantamento += (TABELLE_PREZZI.parataScudo[parata] || 0);
+              upgradeDatiSystem.parrybonus = (vecchioOggetto.system.parrybonus || 0) + parata;
+              if (parata > 0) { noteDescrizione.push(`+${parata} alla Parata`); tagNomeOggetto.push(`+${parata} Parata`); }
           }
 
-          // 2. Cariche Magiche
+          // --- 2. Logica Cariche Magiche ---
           const haCariche = html.find("#select-ha-cariche").val() === "si";
           if (haCariche) {
-            const tipoCariche = html.find("#select-tipo-cariche").val();
+            const cNome = html.find("#input-carica-nome").val().trim();
+            const cSfera = html.find("#input-carica-sfera").val().trim() || "Magia";
+            const tipoCariche = html.find("#select-tipo-cariche").val(); 
             const livPotere = parseInt(html.find("#select-livello-potere-carica").val()) || 1;
             const numCariche = parseInt(html.find("#input-num-cariche").val()) || 1;
+            
+            upgradeDatiSystem.magicCharge = tipoCariche; 
+            upgradeDatiSystem.chargevalue = 0; 
 
-            if (tipoCariche === "limitate") {
+            if (tipoCariche === "chargelimited") {
               costoIncantamento += (TABELLE_PREZZI.caricheLimitate[livPotere] || 0) * numCariche;
-              upgradeDatiSystem.magiccharge = "chargelimited";
               upgradeDatiSystem.chargevaluemax = numCariche;
-              upgradeDatiSystem.chargevalue = numCariche;
-              noteDescrizione.push(`Infuso con ${numCariche} Cariche Limitate (Potere Liv. ${livPotere})`);
+              noteDescrizione.push(`${numCariche} Cariche Limitate del Potere: ${cNome} (${cSfera} - Liv. ${livPotere})`);
+              tagNomeOggetto.push(`${cSfera} - Liv. ${livPotere} ${cNome}`);
             } else {
               const utilizziQuotidiani = Math.min(numCariche, 3);
               costoIncantamento += TABELLE_PREZZI.giornalieri[livPotere]?.[utilizziQuotidiani] || 0;
-              upgradeDatiSystem.magiccharge = "chargerefresh";
               upgradeDatiSystem.chargevaluemax = utilizziQuotidiani;
-              upgradeDatiSystem.chargevalue = utilizziQuotidiani;
-              noteDescrizione.push(`Infuso con ${utilizziQuotidiani} Utilizzi Giornalieri (Potere Liv. ${livPotere})`);
+              noteDescrizione.push(`${utilizziQuotidiani}/Giorno del Potere: ${cNome} (${cSfera} - Liv. ${livPotere})`);
+              tagNomeOggetto.push(`${cSfera} - Liv. ${livPotere} ${cNome}`);
             }
           }
 
-          // 3. Potenziamenti Caratteristiche (Fisico, Agilità, Mente calcolati singolarmente)
+          // --- 3. Statistiche (FIS, IST, MEN) ---
           const fis = parseInt(html.find("#input-pot-fis").val()) || 0;
-          const agi = parseInt(html.find("#input-pot-agi").val()) || 0;
+          const ist = parseInt(html.find("#input-pot-ist").val()) || 0;
           const men = parseInt(html.find("#input-pot-men").val()) || 0;
+          costoIncantamento += (TABELLE_PREZZI.statistiche[fis] || 0) + (TABELLE_PREZZI.statistiche[ist] || 0) + (TABELLE_PREZZI.statistiche[men] || 0);
+          if (fis > 0) { noteDescrizione.push(`+${fis} FIS`); tagNomeOggetto.push(`+${fis} FIS`); }
+          if (ist > 0) { noteDescrizione.push(`+${ist} IST`); tagNomeOggetto.push(`+${ist} IST`); }
+          if (men > 0) { noteDescrizione.push(`+${men} MEN`); tagNomeOggetto.push(`+${men} MEN`); }
 
-          costoIncantamento += (TABELLE_PREZZI.statistiche[fis] || 0) + (TABELLE_PREZZI.statistiche[agi] || 0) + (TABELLE_PREZZI.statistiche[men] || 0);
-
-          if (fis > 0) noteDescrizione.push(`Vigore Arcano: +${fis} a Fisico (FIS)`);
-          if (agi > 0) noteDescrizione.push(`Riflessi di Luce: +${agi} a Agilità (AGI)`);
-          if (men > 0) noteDescrizione.push(`Mente del Saggio: +${men} a Mente (MEN)`);
-
-          // 4. Risorse (Mana & HP)
+          // --- 4. Mana & HP ---
           const mana = parseInt(html.find("#input-pot-mana").val()) || 0;
           const hp = parseInt(html.find("#input-pot-hp").val()) || 0;
-
           costoIncantamento += (TABELLE_PREZZI.mana[mana] || 0) + (TABELLE_PREZZI.hp[hp] || 0);
+          if (mana > 0) { noteDescrizione.push(`+${mana} Mana`); tagNomeOggetto.push(`+${mana} Mana`); }
+          if (hp > 0) { noteDescrizione.push(`+${hp} PF`); tagNomeOggetto.push(`+${hp} PF`); }
 
-          if (mana > 0) noteDescrizione.push(`Riserva del Saggio: +${mana} al Mana Massimo`);
-          if (hp > 0) noteDescrizione.push(`Riserva della Fenice: +${hp} ai Punti Ferita Massimi`);
+          // --- 5. Logica Potere Permanente ---
+          const haPerm = html.find("#select-ha-potere-permanente").val() === "si";
+          if (haPerm) {
+              const pNome = html.find("#input-perm-nome").val().trim();
+              const pSfera = html.find("#input-perm-sfera").val().trim() || "Magia";
+              const pLivello = parseInt(html.find("#input-perm-livello").val()) || 0;
+              
+              costoIncantamento += (TABELLE_PREZZI.permanenti[pLivello] || 0);
+              noteDescrizione.push(`Potere Permanente: ${pNome} (Sfera: ${pSfera}, Livello: ${pLivello})`);
+              tagNomeOggetto.push(`${pSfera} - Liv. ${pLivello} ${pNome}`);
+          }
 
-          // 5. Potere Permanente
-          const livPerm = parseInt(html.find("#select-potere-permanente").val()) || 0;
-          costoIncantamento += (TABELLE_PREZZI.permanenti[livPerm] || 0);
-          if (livPerm > 0) noteDescrizione.push(`Effetto Permanente Innato (Livello Potere: ${livPerm})`);
+          // --- Composizione Nome ---
+          let nuovoNome = vecchioOggetto.name;
+          if (tagNomeOggetto.length > 0) {
+              nuovoNome += " " + tagNomeOggetto.map(tag => `(${tag})`).join(" ");
+          } else {
+              nuovoNome += " [Magico]";
+          }
 
-          // --- CALCOLO COSTI TOTALI ---
-          const costoBaseOggetto = vecchioOggetto.system.cost || 0;
-          const costoFinaleCoo = costoBaseOggetto + costoIncantamento;
+          // --- Descrizione ---
+          let bloccoDescrizionePuroTesto = "";
+          if (noteDescrizione.length > 0) {
+              bloccoDescrizionePuroTesto = "\n\nProprietà Magiche:\n" + 
+                  noteDescrizione.map(nota => `- ${nota}`).join("\n") + 
+                  `\nValore di Incanto: +${costoIncantamento} MO`;
+          }
 
-          let bloccoEsteticoText = `
-            <div class="magic-enchantment" style="border: 2px solid #27ae60; padding: 10px; margin-top: 12px; background: #f2fbf5; border-radius: 6px;">
-              <h4 style="margin: 0 0 6px 0; color: #27ae60; font-family: sans-serif;"><i class="fas fa-sparkles"></i> Proprietà Magiche dell'Oggetto</h4>
-              <ul style="margin: 0; padding-left: 18px; font-size: 12px; line-height: 1.4;">
-                ${noteDescrizione.map(nota => `<li>${nota}</li>`).join("")}
-              </ul>
-              <p style="margin: 8px 0 0 0; font-size: 11px; color: #555; text-align: right;"><em>Valore di Incanto: +${costoIncantamento} MO</em></p>
-            </div>
-          `;
+          upgradeDatiSystem.identifiedState = "yes";
 
-          // Generazione della struttura dati del NUOVO oggetto
           const nuovoItemData = {
             ...vecchioOggetto,
-            name: `${vecchioOggetto.name} [Magico]`,
+            name: nuovoNome,
+            identifiedState: "yes", 
             system: {
               ...vecchioOggetto.system,
               ...upgradeDatiSystem,
-              cost: costoFinaleCoo,
-              description: (vecchioOggetto.system.description || "") + bloccoEsteticoText
+              identifiedState: "yes", 
+              cost: (vecchioOggetto.system.cost || 0) + costoIncantamento,
+              description: (vecchioOggetto.system.description || "") + bloccoDescrizionePuroTesto
             }
           };
 
-          // Pulizia degli identificativi di istanza per forzarne una nuova slegata
           delete nuovoItemData._id;
-          if (nuovoItemData.parent) delete nuovoItemData.parent;
-
-          try {
-            // Crea l'oggetto esclusivamente nel World Item panel
-            const itemFatto = await Item.create(nuovoItemData);
-            ui.notifications.info(`Oggetto magico creato con successo nel pannello di Foundry!`);
-            
-            if (itemFatto) itemFatto.sheet.render(true);
-          } catch (ecc) {
-            console.error(ecc);
-            ui.notifications.error("Errore durante la generazione dell'oggetto.");
-          }
+          const itemFatto = await Item.create(nuovoItemData);
+          if (itemFatto) itemFatto.sheet.render(true);
         }
       },
-      cancel: {
-        icon: '<i class="fas fa-times"></i>',
-        label: "Annulla"
-      }
+      cancel: { icon: '<i class="fas fa-times"></i>', label: "Annulla" }
     },
     default: "enchant",
     render: (html) => {
-      html.find("#select-ha-cariche").on("change", function() {
-        if ($(this).val() === "si") {
-          html.find("#blocco-cariche").slideDown(200, () => dialog.setPosition({ height: "auto" }));
-        } else {
-          html.find("#blocco-cariche").slideUp(200, () => dialog.setPosition({ height: "auto" }));
-        }
-      });
+      validaStatoBottone(html);
 
-      html.find("#select-tipo-cariche").on("change", function() {
-        const label = html.find("#label-quantita-cariche");
-        const input = html.find("#input-num-cariche");
-        if ($(this).val() === "giornaliere") {
-          label.text("Utilizzi Giornalieri consentiti (Max 3):");
-          input.attr("max", "3").val(Math.min(parseInt(input.val()), 3));
-        } else {
-          label.text("Numero totale Cariche (Usa e Getta):");
-          input.removeAttr("max");
-        }
-      });
+      // Rileva in tempo reale qualsiasi modifica agli input e alle select per ricalcolare la validità del bottone
+      html.find("select, input").on("input change", () => validaStatoBottone(html));
 
-      inizializzaDragDrop(html, (item, tipo) => {
+      // Drop Zone 1: OGGETTO PRINCIPALE
+      setupDropZone(html, "#enchant-drop-zone", (item) => {
         itemSorgente = item;
-        itemTypeRilevato = tipo;
-        aggiornaInterfacciaDinamica(html, item, tipo, dialog);
+        itemTypeRilevato = item.type;
+        html.find("#enchant-drop-text").html(`✓ <strong>${item.name}</strong> [${item.type.toUpperCase()}]`);
+        html.find(".condizionale-tipo").hide();
+        if (["weapon", "armor", "shield"].includes(item.type)) {
+           html.find(`#blocco-${item.type}`).show();
+        }
+        html.find("#opzioni-globali-incanto").css("display", "flex");
+        dialog.setPosition({height: "auto"});
+      });
+
+      // Drop Zone 2: POTERE PER CARICHE
+      setupDropZone(html, "#blocco-drop-carica", (item) => {
+        if (item.type !== "power") {
+          return ui.notifications.warn("L'oggetto trascinato deve essere di tipo 'power'!");
+        }
+        html.find("#input-carica-nome").val(item.name);
+        html.find("#input-carica-sfera").val(item.system.magicschool || ""); 
+        html.find("#select-livello-potere-carica").val(item.system.level || "0");
+        html.find("#text-drop-carica").html(`✓ <strong>${item.name}</strong> caricato nelle cariche!`);
+        validaStatoBottone(html);
+      });
+
+      // Drop Zone 3: POTERE PERMANENTE
+      setupDropZone(html, "#blocco-drop-potere", (item) => {
+        if (item.type !== "power") {
+          return ui.notifications.warn("L'oggetto trascinato deve essere di tipo 'power'!");
+        }
+        html.find("#input-perm-nome").val(item.name);
+        html.find("#input-perm-sfera").val(item.system.magicschool || ""); 
+        html.find("#input-perm-livello").val(item.system.level || "0");
+        html.find("#text-drop-potere").html(`✓ <strong>${item.name}</strong> caricato nei permanenti!`);
+        validaStatoBottone(html);
+      });
+
+      // Toggle Cariche
+      html.find("#select-ha-cariche").on("change", function() {
+        const show = $(this).val() === "si";
+        html.find("#blocco-cariche").toggle(show).css("display", show ? "flex" : "none");
+        if (!show) {
+          html.find("#input-carica-nome").val("");
+          html.find("#input-carica-sfera").val("");
+          html.find("#select-livello-potere-carica").val("0");
+          html.find("#text-drop-carica").html(`<i class="fas fa-scroll"></i> Opzionale: Trascina qui un oggetto Potere`);
+        }
+        validaStatoBottone(html);
+        dialog.setPosition({height: "auto"});
+      });
+
+      // Toggle Potere Permanente
+      html.find("#select-ha-potere-permanente").on("change", function() {
+        const show = $(this).val() === "si";
+        html.find("#sezione-potere-permanente").toggle(show).css("display", show ? "flex" : "none");
+        if (!show) {
+          html.find("#input-perm-nome").val("");
+          html.find("#input-perm-sfera").val("");
+          html.find("#input-perm-livello").val("0");
+          html.find("#text-drop-potere").html(`<i class="fas fa-scroll"></i> Opzionale: Trascina qui un oggetto Potere`);
+        }
+        validaStatoBottone(html);
+        dialog.setPosition({height: "auto"});
       });
     }
   }, { width: 430, height: "auto" });
@@ -390,11 +466,11 @@ _stats:
   coreVersion: '14.363'
   systemId: fvtt-warhero
   systemVersion: 14.86.19
-  createdTime: 1780743914073
-  modifiedTime: 1780743914083
+  createdTime: 1780752281304
+  modifiedTime: 1780753091826
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null
   duplicateSource: null
-sort: 200000
+sort: 300000
 _key: '!macros!PIKsHXsmH6hcSjfE'

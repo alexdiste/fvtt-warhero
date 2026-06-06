@@ -1,0 +1,39 @@
+name: Anello
+type: equipment
+img: icons/equipment/finger/ring-band-engraved-lines-gold.webp
+system:
+  equiptype: ''
+  cost: 1
+  quantity: 1
+  equipped: false
+  slotused: 1
+  slotlocation: ring
+  providedslot: 0
+  isidentified: notapplicable
+  magiccharge: notapplicable
+  chargevalue: 0
+  chargevaluemax: 0
+  description: ''
+effects: []
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags:
+  scene-packer:
+    hash: be684d7e09ed47de74785aea8c162d8c32ebe4c4
+    sourceId: Item.HnSV4WIJjK7NhuUj
+  core: {}
+_stats:
+  systemId: fvtt-warhero
+  systemVersion: 14.86.19
+  coreVersion: '14.363'
+  createdTime: 1780750120359
+  modifiedTime: 1780750120359
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+_id: d1tmGx23yhOrUp3E
+sort: 0
+_key: '!items!d1tmGx23yhOrUp3E'

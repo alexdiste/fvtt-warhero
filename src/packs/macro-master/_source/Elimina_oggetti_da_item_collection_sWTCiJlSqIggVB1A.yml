@@ -1,0 +1,61 @@
+name: Elimina oggetti da item collection
+type: script
+command: |-
+  // Recupera gli oggetti correnti nel database del mondo
+  const itemsToDelete = game.items.contents;
+  const itemCount = itemsToDelete.length;
+
+  if (itemCount === 0) {
+      ui.notifications.info("La Item Collection del mondo è già vuota.");
+  } else {
+      // Sintassi standard e nativa per DialogV2 in Foundry v14 Stable
+      const proceed = await foundry.applications.api.DialogV2.confirm({
+          window: { 
+              title: "ATTENZIONE: Eliminazione Massiva" 
+          },
+          content: `
+              <div style="text-align: center; font-size: 14px; line-height: 1.5;">
+                  <p>Rilevati <b style="font-size: 16px; color: var(--color-shadow-highlight);">${itemCount}</b> oggetti nel mondo.</p>
+                  <p style="color: #ff5555; font-weight: bold;">L'azione è irreversibile e svuoterà l'intera Item Collection globale!</p>
+                  <p>Vuoi procedere con la cancellazione?</p>
+              </div>
+          `,
+          modal: true,
+          rejectClose: false
+      });
+
+      if (proceed) {
+          ui.notifications.warn("Svuotamento della Item Collection in corso...");
+          
+          // Estrazione degli ID dei documenti
+          const ids = itemsToDelete.map(item => item.id);
+          
+          // Rimozione massiva nativa v14
+          await Item.deleteDocuments(ids);
+          
+          ui.notifications.info(`Database pulito con successo. Rimossi ${itemCount} oggetti.`);
+      } else {
+          ui.notifications.info("Operazione annullata. Nessun oggetto è stato rimosso.");
+      }
+  }
+img: systems/fvtt-warhero/images/icons/toolbox.svg
+_id: sWTCiJlSqIggVB1A
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.19
+  createdTime: 1780749858029
+  modifiedTime: 1780753091825
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 100000
+_key: '!macros!sWTCiJlSqIggVB1A'
