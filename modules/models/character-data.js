@@ -479,12 +479,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
 
     // Character is alive/conscious
     this.isAlive = this.attributes.hp.value > 0;
-    this.isConscious = this.attributes.hp.value > 0;
-    this.isWounded = this.attributes.hp.value < this.attributes.hp.max;
-
-    // Magic user
-    this.isMagicUser = this.attributes.mana.max > 0;
-    this.hasMana = this.attributes.mana.value > 0;
+    this.isWounded = this.attributes.hp.value < this.attributes.hp.max;  
   }
 
 

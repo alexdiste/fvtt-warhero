@@ -438,11 +438,12 @@ a:hover {
   font-size: 0.8rem;
 }
 
+/*--se metto questa classe la chat si rompe. Prende altezza fissa anche quella invece di adattarsi al contenuto. Da capire meglio--
 .editor {
   border: 2;
   height: 300px;
   padding: 0 3px;
-}
+}*/
 
 .fvtt-warhero .resource-label {
   font-weight: bold;

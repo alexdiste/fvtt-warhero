@@ -29,7 +29,7 @@ command: |-
     const btn = html.closest(".app").find(".dialog-button.enchant");
     const haCariche = html.find("#select-ha-cariche").val() === "si";
     const haPoterePerm = html.find("#select-ha-potere-permanente").val() === "si";
-    
+
     let valido = true;
     let haAlmenoUnaModifica = false;
 
@@ -92,24 +92,24 @@ command: |-
    */
   function setupDropZone(html, selector, callback) {
     const zone = html.find(selector);
-    
-    zone.on("dragover", (e) => { 
-      e.preventDefault(); 
-      zone.css("background-color", "#eafaf1"); 
+
+    zone.on("dragover", (e) => {
+      e.preventDefault();
+      zone.css("background-color", "#eafaf1");
     });
-    
-    zone.on("dragleave", (e) => { 
-      e.preventDefault(); 
-      zone.css("background-color", ""); 
+
+    zone.on("dragleave", (e) => {
+      e.preventDefault();
+      zone.css("background-color", "");
     });
-    
+
     zone.on("drop", async (e) => {
       e.preventDefault();
       zone.css("background-color", "");
-      
+
       let data = null;
       const dataTransfer = e.originalEvent?.dataTransfer || e.dataTransfer;
-      
+
       if (!dataTransfer) return;
 
       try {
@@ -124,19 +124,19 @@ command: |-
       }
 
       if (!data || data.type !== "Item") return;
-      
+
       let item = null;
 
       if (data.uuid) {
         item = await fromUuid(data.uuid);
-      } 
+      }
       else if (data.actorId || data.tokenId) {
         const actor = data.tokenId ? canvas.tokens.get(data.tokenId)?.actor : game.actors.get(data.actorId);
         item = actor ? actor.items.get(data.itemId) : null;
       }
-      
+
       if (!item) return ui.notifications.error("Impossibile recuperare l'oggetto. Verifica che sia accessibile.");
-      
+
       callback(item);
       validaStatoBottone(html);
     });
@@ -149,16 +149,16 @@ command: |-
       </div>
 
       <div id="opzioni-globali-incanto" style="display: none; flex-direction: column; gap: 8px;">
-        
+
         <div id="blocco-weapon" class="condizionale-tipo" style="display:none; border-left: 3px solid #c0392b; padding-left: 8px; background: #fdf2f2;">
           <div class="form-group"><label>Bonus Colpire (TxC):</label><select id="input-txc">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
           <div class="form-group"><label>Bonus Danno:</label><select id="input-danno">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
         </div>
-        
+
         <div id="blocco-armor" class="condizionale-tipo" style="display:none; border-left: 3px solid #2980b9; padding-left: 8px; background: #f2f7fb;">
           <div class="form-group"><label>Bonus Riduzione Danno (RD):</label><select id="input-rd">${[0,1,2,3,4,5].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
         </div>
-        
+
         <div id="blocco-shield" class="condizionale-tipo" style="display:none; border-left: 3px solid #f39c12; padding-left: 8px; background: #fef9f2;">
           <div class="form-group"><label>Bonus Parata Scudo:</label><select id="input-parata">${[0,1,2,3].map(v=>`<option value="${v}">${v}</option>`).join("")}</select></div>
         </div>
@@ -219,7 +219,7 @@ command: |-
             <option value="si">Sì</option>
           </select>
         </div>
-        
+
         <div id="sezione-potere-permanente" style="display: none; flex-direction: column; gap: 6px; border-left: 3px solid #e67e22; padding-left: 8px; background: #faf4ee;">
            <div id="blocco-drop-potere" style="border: 2px dashed #e67e22; border-radius: 6px; padding: 10px; text-align: center; background: #fff; cursor:pointer;">
               <span id="text-drop-potere"><i class="fas fa-scroll"></i> Opzionale: Trascina qui un oggetto Potere</span>
@@ -268,10 +268,10 @@ command: |-
               const txc = parseInt(html.find("#input-txc").val()) || 0;
               const danno = parseInt(html.find("#input-danno").val()) || 0;
               costoIncantamento += (TABELLE_PREZZI.dannoTxC[txc] || 0) + (TABELLE_PREZZI.dannoTxC[danno] || 0);
-              
+
               upgradeDatiSystem.attackbonus = (vecchioOggetto.system.attackbonus || 0) + txc;
               upgradeDatiSystem.damagebonus = (vecchioOggetto.system.damagebonus || 0) + danno;
-              
+
               if (txc > 0) { noteDescrizione.push(`+${txc} al Tiro per Colpire (TxC)`); tagNomeOggetto.push(`+${txc} TxC`); }
               if (danno > 0) { noteDescrizione.push(`+${danno} al Danno`); tagNomeOggetto.push(`+${danno} Danno`); }
           } else if (itemTypeRilevato === "armor") {
@@ -291,12 +291,12 @@ command: |-
           if (haCariche) {
             const cNome = html.find("#input-carica-nome").val().trim();
             const cSfera = html.find("#input-carica-sfera").val().trim() || "Magia";
-            const tipoCariche = html.find("#select-tipo-cariche").val(); 
+            const tipoCariche = html.find("#select-tipo-cariche").val();
             const livPotere = parseInt(html.find("#select-livello-potere-carica").val()) || 1;
             const numCariche = parseInt(html.find("#input-num-cariche").val()) || 1;
-            
-            upgradeDatiSystem.magicCharge = tipoCariche; 
-            upgradeDatiSystem.chargevalue = 0; 
+
+            upgradeDatiSystem.magicCharge = tipoCariche;
+            upgradeDatiSystem.chargevalue = 0;
 
             if (tipoCariche === "chargelimited") {
               costoIncantamento += (TABELLE_PREZZI.caricheLimitate[livPotere] || 0) * numCariche;
@@ -334,7 +334,7 @@ command: |-
               const pNome = html.find("#input-perm-nome").val().trim();
               const pSfera = html.find("#input-perm-sfera").val().trim() || "Magia";
               const pLivello = parseInt(html.find("#input-perm-livello").val()) || 0;
-              
+
               costoIncantamento += (TABELLE_PREZZI.permanenti[pLivello] || 0);
               noteDescrizione.push(`Potere Permanente: ${pNome} (Sfera: ${pSfera}, Livello: ${pLivello})`);
               tagNomeOggetto.push(`${pSfera} - Liv. ${pLivello} ${pNome}`);
@@ -351,21 +351,20 @@ command: |-
           // --- Descrizione ---
           let bloccoDescrizionePuroTesto = "";
           if (noteDescrizione.length > 0) {
-              bloccoDescrizionePuroTesto = "\n\nProprietà Magiche:\n" + 
-                  noteDescrizione.map(nota => `- ${nota}`).join("\n") + 
+              bloccoDescrizionePuroTesto = "\n\nProprietà Magiche:\n" +
+                  noteDescrizione.map(nota => `- ${nota}`).join("\n") +
                   `\nValore di Incanto: +${costoIncantamento} MO`;
           }
 
-          upgradeDatiSystem.identifiedState = "yes";
 
           const nuovoItemData = {
             ...vecchioOggetto,
             name: nuovoNome,
-            identifiedState: "yes", 
+            
             system: {
               ...vecchioOggetto.system,
               ...upgradeDatiSystem,
-              identifiedState: "yes", 
+              isidentified: "yes",
               cost: (vecchioOggetto.system.cost || 0) + costoIncantamento,
               description: (vecchioOggetto.system.description || "") + bloccoDescrizionePuroTesto
             }
@@ -404,7 +403,7 @@ command: |-
           return ui.notifications.warn("L'oggetto trascinato deve essere di tipo 'power'!");
         }
         html.find("#input-carica-nome").val(item.name);
-        html.find("#input-carica-sfera").val(item.system.magicschool || ""); 
+        html.find("#input-carica-sfera").val(item.system.magicschool || "");
         html.find("#select-livello-potere-carica").val(item.system.level || "0");
         html.find("#text-drop-carica").html(`✓ <strong>${item.name}</strong> caricato nelle cariche!`);
         validaStatoBottone(html);
@@ -416,7 +415,7 @@ command: |-
           return ui.notifications.warn("L'oggetto trascinato deve essere di tipo 'power'!");
         }
         html.find("#input-perm-nome").val(item.name);
-        html.find("#input-perm-sfera").val(item.system.magicschool || ""); 
+        html.find("#input-perm-sfera").val(item.system.magicschool || "");
         html.find("#input-perm-livello").val(item.system.level || "0");
         html.find("#text-drop-potere").html(`✓ <strong>${item.name}</strong> caricato nei permanenti!`);
         validaStatoBottone(html);
@@ -467,7 +466,7 @@ _stats:
   systemId: fvtt-warhero
   systemVersion: 14.86.19
   createdTime: 1780752281304
-  modifiedTime: 1780753091826
+  modifiedTime: 1780758381745
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null

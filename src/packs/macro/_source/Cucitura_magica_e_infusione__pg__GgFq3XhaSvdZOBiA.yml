@@ -6,111 +6,112 @@ command: |-
   if (!token) {
       ui.notifications.warn("Per favore, seleziona il tuo token!");
   } else {
-      // 1. Filtriamo gli oggetti dell'attore
-      // NOTA: Se il campo del tuo sistema non è "slotlocation", cambialo qui sotto
-      const oggettiFiltrati = token.actor.items.filter(i => 
-          i.system.slotlocation === "cloak" || i.system.slotlocation === "dress"
-      );
+      // Funzione di utilità per recuperare la skill
+      const getSkill = (modo) => token.actor.items.find(i => i.name === (modo === "cucitura" ? "Sarto: cucitura magica" : "Sarto: infondere magia") && i.type === "skill");
 
-      if (oggettiFiltrati.length === 0) {
-          return ui.notifications.warn("Nessun mantello (cloak) o vestito (dress) trovato nel tuo inventario!");
+      // Funzione di validazione usi
+      function validaUsi(html) {
+          const modo = html.find("#select-modalita").val();
+          const skill = getSkill(modo);
+          const btn = html.closest(".app").find(".dialog-button.execute");
+
+          if (!skill) {
+              html.find("#info-skill").html(`<span style="color:red;">Skill non trovata!</span>`);
+              btn.prop("disabled", true);
+              return;
+          }
+
+          const rimanenti = (skill.system.maxuse || 0) - (skill.system.currentuse || 0);
+          if (rimanenti <= 0) {
+              html.find("#info-skill").html(`<span style="color:red;"><b>Errore:</b> Nessun uso di ${skill.name} rimasto!</span>`);
+              btn.prop("disabled", true);
+          } else {
+              html.find("#info-skill").html(`<span style="color:green;">Usi rimasti: <b>${rimanenti}</b></span>`);
+              btn.prop("disabled", false);
+          }
       }
 
-      // Generiamo le opzioni per la select
+      const oggettiFiltrati = token.actor.items.filter(i => i.system.slotlocation === "cloak" || i.system.slotlocation === "dress");
       const optionsHtml = oggettiFiltrati.map(i => `<option value="${i.id}">${i.name}</option>`).join("");
 
-      const pgPercentBonus = token.actor.system.secondary?.percentbonus?.value || 0;
-
-      const dialogContent = `
-          <div style="font-size: 13px;">
-              <div class="form-group">
-                  <label><strong>Scegli l'oggetto da modificare:</strong></label>
-                  <select id="select-oggetto-base">${optionsHtml}</select>
-              </div>
-
-              <div class="form-group" style="margin-top:10px;">
-                  <label><strong>Operazione:</strong></label>
-                  <select id="select-modalita">
-                      <option value="cucitura">Cucitura Magica</option>
-                      <option value="infusione">Infusione Magica</option>
-                  </select>
-              </div>
-
-              <hr>
-
-              <div id="blocco-cucitura">
-                  <div class="form-group"><label>Nome Potere:</label><input type="text" id="input-cucitura-nome" /></div>
-                  <div class="form-group">
-                      <label>Livello:</label>
-                      <select id="select-cucitura-livello">
-                          <option value="1">I (80%)</option><option value="2">II (50%)</option>
-                          <option value="3">III (30%)</option><option value="4">IV (10%)</option>
-                      </select>
-                  </div>
-                  <div class="form-group"><label>Bonus/Malus Extra:</label><input type="number" id="input-cucitura-extra" value="0" /></div>
-              </div>
-
-              <div id="blocco-infusione" style="display:none;">
-                  <div class="form-group">
-                      <label>Tipo Infusione:</label>
-                      <select id="select-tipo-infusione">
-                          <option value="+1 Tiri per colpire">+1 Tiri per colpire</option>
-                          <option value="+10 PF">+10 PF</option>
-                          <option value="+1 Mana">+1 Mana</option>
-                          <option value="+2 Tiri salvezza">+2 Tiri salvezza</option>
-                          <option value="+3 conoscenze">+3 conoscenze</option>
-                          <option value="+1 difesa">+1 difesa</option>
-                      </select>
-                  </div>
-              </div>
-          </div>
-      `;
-
       new Dialog({
-          title: `Officina Arcana: ${token.name}`,
-          content: dialogContent,
+          title: `Sarto: ${token.name}`,
+          content: `
+              <div style="font-size: 13px;">
+                  <div id="info-skill" style="margin-bottom:10px; font-weight:bold;"></div>
+                  <div class="form-group"><label>Oggetto:</label><select id="select-oggetto-base">${optionsHtml}</select></div>
+                  <div class="form-group"><label>Operazione:</label><select id="select-modalita"><option value="cucitura">Cucitura Magica</option><option value="infusione">Infusione Magica</option></select></div>
+                  <hr>
+                  <div id="blocco-cucitura">
+                      <div id="drop-zone-potere" style="border: 2px dashed #8e44ad; padding: 10px; margin-bottom: 10px; text-align: center; cursor: pointer;">Trascina qui il Potere</div>
+                      <div class="form-group"><label>Nome:</label><input type="text" id="input-cucitura-nome" /></div>
+                      <div class="form-group"><label>Sfera:</label><input type="text" id="input-cucitura-sfera" /></div>
+                      <div class="form-group"><label>Livello:</label><select id="select-cucitura-livello"><option value="0">...</option><option value="1">I (80%)</option><option value="2">II (50%)</option><option value="3">III (30%)</option><option value="4">IV (10%)</option></select></div>
+                  </div>
+                  <div id="blocco-infusione" style="display:none;"><div class="form-group"><label>Tipo:</label><select id="select-tipo-infusione"><option value="+1 Tiri per colpire">+1 Tiri per colpire</option><option value="+10 PF">+10 PF</option><option value="+1 Mana">+1 Mana</option><option value="+2 Tiri salvezza">+2 Tiri salvezza</option><option value="+3 conoscenze">+3 conoscenze</option><option value="+1 difesa">+1 difesa</option></select></div></div>
+              </div>`,
           buttons: {
               execute: {
                   label: "Applica Modifica",
                   callback: async (html) => {
-                      const itemId = html.find("#select-oggetto-base").val();
-                      const item = token.actor.items.get(itemId);
-                      const modalita = html.find("#select-modalita").val();
+                      const modo = html.find("#select-modalita").val();
+                      const skill = getSkill(modo);
+                      const item = token.actor.items.get(html.find("#select-oggetto-base").val());
+                      const speaker = ChatMessage.getSpeaker({token: token.document});
 
-                      if (modalita === "cucitura") {
-                          const level = html.find('#select-cucitura-livello').val();
+                      if (modo === "cucitura") {
+                          if (item.getFlag("world", "cucito")) return ui.notifications.error("Già cucito!");
                           const pNome = html.find("#input-cucitura-nome").val();
-                          const extraMod = parseInt(html.find('#input-cucitura-extra').val()) || 0;
-                          
-                          const baseChance = level === "1" ? 80 : level === "2" ? 50 : level === "3" ? 30 : 10;
+                          const level = parseInt(html.find('#select-cucitura-livello').val());
+                          const baseChance = level === 1 ? 80 : level === 2 ? 50 : level === 3 ? 30 : 10;
                           const d100 = (await new Roll("1d100").evaluate()).total;
-                          const successo = (d100 - pgPercentBonus + extraMod) <= baseChance;
+                          const successo = (d100 - (token.actor.system.secondary?.percentbonus?.value || 0)) <= baseChance;
 
                           if (successo) {
                               await item.update({
                                   name: `${item.name} (${pNome})`,
+                                  "system.price": (item.system.price || 0) + (level * 1000),
+                                  "system.magicCharge": "chargelimited",
+                                  "system.chargevalue": 0,
+                                  "system.chargevaluemax": 1,
                                   "system.description": (item.system.description || "") + `\n\nCucitura: ${pNome} (Liv.${level})`
                               });
-                              ui.notifications.info("Cucitura riuscita!");
+                              await item.setFlag("world", "cucito", true);
+                              await skill.update({"system.currentuse": skill.system.currentuse + 1});
+                              ChatMessage.create({speaker, content: `<h3>Cucitura: Successo</h3><p>${item.name} ora ha il potere ${pNome}.</p>`});
                           } else {
-                              ui.notifications.error(`Fallito! (Dado: ${d100})`);
+                              await skill.update({"system.currentuse": skill.system.currentuse + 1});
+                              ChatMessage.create({speaker, content: `<h3>Cucitura: Fallimento</h3><p>Abilità ${skill.name} consumata senza successo.</p>`});
                           }
                       } else {
+                          if (item.getFlag("world", "infuso")) return ui.notifications.error("Già infuso!");
                           const inf = html.find("#select-tipo-infusione").val();
                           await item.update({
                               name: `${item.name} (Infuso: ${inf})`,
                               "system.description": (item.system.description || "") + `\n\nInfusione: ${inf}`
                           });
-                          ui.notifications.info("Infusione completata!");
+                          await item.setFlag("world", "infuso", true);
+                          await skill.update({"system.currentuse": skill.system.currentuse + 1});
+                          ChatMessage.create({speaker, content: `<h3>Infusione completata</h3><p>${item.name} infuso con ${inf}.</p>`});
                       }
                   }
               }
           },
           render: (html) => {
+              validaUsi(html);
               html.find("#select-modalita").change(function() {
-                  const isCucitura = $(this).val() === "cucitura";
-                  html.find("#blocco-cucitura").toggle(isCucitura);
-                  html.find("#blocco-infusione").toggle(!isCucitura);
+                  validaUsi(html);
+                  html.find("#blocco-cucitura").toggle($(this).val() === "cucitura");
+                  html.find("#blocco-infusione").toggle($(this).val() !== "cucitura");
+              });
+              html.find("#drop-zone-potere").on("drop", async (e) => {
+                  const data = JSON.parse(e.originalEvent.dataTransfer.getData("text/plain"));
+                  const item = await fromUuid(data.uuid);
+                  if (item) {
+                      html.find("#input-cucitura-nome").val(item.name);
+                      html.find("#input-cucitura-sfera").val(item.system.magicschool || "");
+                      html.find("#select-cucitura-livello").val(item.system.level || "0");
+                  }
               });
           }
       }).render(true);
@@ -122,14 +123,15 @@ scope: global
 folder: null
 ownership:
   default: 0
+  PJQCjvwdEI9nXuhc: 2
   guOwSDi78TuzUGFU: 3
 flags: {}
 _stats:
   coreVersion: '14.363'
   systemId: fvtt-warhero
   systemVersion: 14.86.19
-  createdTime: 1780753692407
-  modifiedTime: 1780753692407
+  createdTime: 1780758117339
+  modifiedTime: 1780758117339
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null
