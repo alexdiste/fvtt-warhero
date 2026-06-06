@@ -1,0 +1,400 @@
+name: Incantare oggetti
+type: script
+command: |-
+  // --- CONFIGURAZIONE COSTI DA TABELLE (IMMAGINI) ---
+  const TABELLE_PREZZI = {
+    // Il prezzo singolo per ciascuna statistica da +1 a +5
+    statistiche: { 0: 0, 1: 5000, 2: 20000, 3: 45000, 4: 80000, 5: 125000 },
+    
+    dannoTxC: { 0: 0, 1: 1000, 2: 4000, 3: 9000, 4: 18000, 5: 36000 },
+    riduzioneDanno: { 0: 0, 1: 2000, 2: 8000, 3: 18000, 4: 36000, 5: 72000 },
+    parataScudo: { 0: 0, 1: 3000, 2: 12000, 3: 27000 },
+    mana: { 0: 0, 1: 600, 2: 2400, 3: 5400, 4: 9600, 5: 15000, 6: 21600 },
+    hp: { 
+      0: 0, 5: 1000, 10: 4000, 15: 9000, 20: 16000, 25: 25000, 
+      30: 36000, 35: 49000, 40: 64000, 45: 81000, 50: 100000 
+    },
+    permanenti: { 0: 0, 1: 100000, 2: 200000, 3: 300000, 4: 400000 },
+    caricheLimitate: { 1: 1000, 2: 2000, 3: 3000, 4: 4000 },
+    giornalieri: {
+      1: { 1: 6000,  2: 10500, 3: 19000 },
+      2: { 1: 12000, 2: 21500, 3: 38000 },
+      3: { 1: 18000, 2: 32000, 3: 58000 },
+      4: { 1: 24000, 2: 43000, 3: 76000 }
+    }
+  };
+
+  let itemSorgente = null;
+  let itemTypeRilevato = "";
+
+  /**
+   * Gestione Drag & Drop dell'oggetto nel Form
+   */
+  function inizializzaDragDrop(html, onItemDropped) {
+    const dropZone = html.find("#enchant-drop-zone");
+
+    dropZone.on("dragover", (e) => {
+      e.preventDefault(); e.stopPropagation();
+      dropZone.css("background-color", "#eafaf1");
+    });
+
+    dropZone.on("dragleave", (e) => {
+      e.preventDefault(); e.stopPropagation();
+      dropZone.css("background-color", "#f9f9f9");
+    });
+
+    dropZone.on("drop", async (e) => {
+      e.preventDefault(); e.stopPropagation();
+      dropZone.css("background-color", "#f9f9f9");
+
+      try {
+        const data = JSON.parse(e.originalEvent.dataTransfer.getData("text/plain"));
+        if (data.type === "Item" && data.uuid) {
+          const item = await fromUuid(data.uuid);
+
+          if (["weapon", "armor", "shield"].includes(item.type)) {
+            onItemDropped(item, item.type);
+          } else {
+            ui.notifications.warn("Trascina un oggetto valido di tipo Arma, Armatura o Scudo.");
+          }
+        }
+      } catch (err) {
+        console.error(err);
+        ui.notifications.error("Errore nell'analisi del Drop dell'oggetto.");
+      }
+    });
+  }
+
+  /**
+   * Mostra dinamicamente i campi nel Dialog in base al tipo di oggetto caricato
+   */
+  function aggiornaInterfacciaDinamica(html, item, tipo, dialogInstance) {
+    html.find("#enchant-drop-text").html(`✓ <strong>${item.name}</strong> (${tipo.toUpperCase()})`);
+    
+    html.find(".condizionale-tipo").hide();
+    
+    if (tipo === "weapon") html.find("#blocco-arma").slideDown(200);
+    if (tipo === "armor") html.find("#blocco-armatura").slideDown(200);
+    if (tipo === "shield") html.find("#blocco-scudo").slideDown(200);
+    
+    html.find("#opzioni-globali-incanto").slideDown(200, () => {
+      dialogInstance.setPosition({ height: "auto" });
+    });
+  }
+
+  // --- CONTENUTO HTML DEL DIALOG ---
+  const dialogContent = `
+    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+      
+      <div id="enchant-drop-zone" style="
+        border: 2px dashed #27ae60; border-radius: 6px; padding: 20px; text-align: center;
+        background-color: #f9f9f9; cursor: pointer; transition: background 0.2s;
+      ">
+        <span id="enchant-drop-text"><i class="fas fa-box-open"></i> Trascina qui l'oggetto da incantare</span>
+      </div>
+
+      <div id="opzioni-globali-incanto" style="display: none; display: flex; flex-direction: column; gap: 8px;">
+        
+        <!-- ARMA -->
+        <div id="blocco-arma" class="condizionale-tipo" style="display:none; border-left: 3px solid #c0392b; padding-left: 8px; background: #fdf2f2;">
+          <div class="form-group">
+            <label>Aggiungi al Bonus Colpire (TxC):</label>
+            <select id="input-txc"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
+          </div>
+          <div class="form-group">
+            <label>Aggiungi al Bonus Danno:</label>
+            <select id="input-danno"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
+          </div>
+        </div>
+
+        <!-- ARMATURA -->
+        <div id="blocco-armatura" class="condizionale-tipo" style="display:none; border-left: 3px solid #2980b9; padding-left: 8px; background: #f2f7fb;">
+          <div class="form-group">
+            <label>Aggiungi a Riduzione Danno (RD):</label>
+            <select id="input-rd"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
+          </div>
+        </div>
+
+        <!-- SCUDO -->
+        <div id="blocco-scudo" class="condizionale-tipo" style="display:none; border-left: 3px solid #f39c12; padding-left: 8px; background: #fef9f2;">
+          <div class="form-group">
+            <label>Aggiungi a Bonus Parata Scudo:</label>
+            <select id="input-parata"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option></select>
+          </div>
+        </div>
+
+        <hr style="margin: 4px 0;">
+
+        <!-- CARICHE MAGICHE -->
+        <div class="form-group">
+          <label><strong>L'oggetto possiede cariche magiche?</strong></label>
+          <select id="select-ha-cariche">
+            <option value="no">No</option>
+            <option value="si">Sì</option>
+          </select>
+        </div>
+
+        <div id="blocco-cariche" style="display: none; border-left: 3px solid #8e44ad; padding-left: 8px; background: #f9f2fa; display: flex; flex-direction: column; gap: 4px;">
+          <div class="form-group">
+            <label>Tipo di funzionamento Cariche:</label>
+            <select id="select-tipo-cariche">
+              <option value="limitate">Limitate (Usa e Getta)</option>
+              <option value="giornaliere">Giornaliere (Ripristino giornaliero)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Livello del Potere infuso (1-4):</label>
+            <select id="select-livello-potere-carica"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
+          </div>
+          <div class="form-group">
+            <label id="label-quantita-cariche">Numero totale Cariche:</label>
+            <input type="number" id="input-num-cariche" value="1" min="1" max="100" style="text-align: center; font-weight: bold;"/>
+          </div>
+        </div>
+
+        <hr style="margin: 4px 0;">
+
+        <!-- SEZIONE CARATTERISTICHE SINGOLE SPLITTATE -->
+        <div style="border-left: 3px solid #16a085; padding-left: 8px; background: #f4fbf9; display: flex; flex-direction: column; gap: 4px;">
+          <span style="font-weight: bold; color: #16a085; margin-bottom: 2px;">Potenziamento Caratteristiche:</span>
+          <div class="form-group">
+            <label>Bonus FISICO (FIS):</label>
+            <select id="input-pot-fis"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
+          </div>
+          <div class="form-group">
+            <label>Bonus AGILITÀ (AGI):</label>
+            <select id="input-pot-agi"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
+          </div>
+          <div class="form-group">
+            <label>Bonus MENTE (MEN):</label>
+            <select id="input-pot-men"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option></select>
+          </div>
+        </div>
+
+        <hr style="margin: 4px 0;">
+
+        <!-- RISORSE (MANA & HP) -->
+        <div class="form-group">
+          <label>Potenziamento Riserva Mana (+0 a +6):</label>
+          <select id="input-pot-mana"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option><option value="4">+4</option><option value="5">+5</option><option value="6">+6</option></select>
+        </div>
+
+        <div class="form-group">
+          <label>Potenziamento Punti Ferita (HP):</label>
+          <select id="input-pot-hp">
+            <option value="0">0</option><option value="5">+5</option><option value="10">+10</option><option value="15">+15</option><option value="20">+20</option>
+            <option value="25">+25</option><option value="30">+30</option><option value="35">+35</option><option value="40">+40</option><option value="45">+45</option><option value="50">+50</option>
+          </select>
+        </div>
+
+        <hr style="margin: 4px 0;">
+
+        <!-- EFFETTO PERMANENTE -->
+        <div class="form-group">
+          <label><strong>Incolla un Potere reso Permanente?</strong></label>
+          <select id="select-potere-permanente">
+            <option value="0">No</option>
+            <option value="1">Sì, Potere di Livello 1</option>
+            <option value="2">Sì, Potere di Livello 2</option>
+            <option value="3">Sì, Potere di Livello 3</option>
+            <option value="4">Sì, Potere di Livello 4</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  `;
+
+  // --- LOGICA DI CALCOLO E GENERAZIONE ---
+  const dialog = new Dialog({
+    title: "Fabbrica Oggetti Magici Avanzata",
+    content: dialogContent,
+    buttons: {
+      enchant: {
+        icon: '<i class="fas fa-wand-magic-sparkles"></i>',
+        label: "Genera Nuovo Oggetto Magico",
+        callback: async (html) => {
+          if (!itemSorgente) {
+            ui.notifications.warn("Trascina prima un oggetto nella zona designata!");
+            return;
+          }
+
+          const vecchioOggetto = itemSorgente.toObject();
+          let upgradeDatiSystem = {};
+          let costoIncantamento = 0;
+          let noteDescrizione = [];
+
+          // 1. Elaborazione dati per tipo (Arma / Armatura / Scudo)
+          if (itemTypeRilevato === "weapon") {
+            const txc = parseInt(html.find("#input-txc").val()) || 0;
+            const danno = parseInt(html.find("#input-danno").val()) || 0;
+            costoIncantamento += (TABELLE_PREZZI.dannoTxC[txc] || 0) + (TABELLE_PREZZI.dannoTxC[danno] || 0);
+            
+            upgradeDatiSystem.hitbonus = (vecchioOggetto.system.hitbonus || 0) + txc;
+            upgradeDatiSystem.damagebonus = (vecchioOggetto.system.damagebonus || 0) + danno;
+
+            if (txc > 0) noteDescrizione.push(`Precisione Magica: +${txc} al Tiro per Colpire`);
+            if (danno > 0) noteDescrizione.push(`Affilatura Magica: +${danno} al Danno`);
+          } 
+          else if (itemTypeRilevato === "armor") {
+            const rd = parseInt(html.find("#input-rd").val()) || 0;
+            costoIncantamento += (TABELLE_PREZZI.riduzioneDanno[rd] || 0);
+            
+            upgradeDatiSystem.damagereduction = (vecchioOggetto.system.damagereduction || 0) + rd;
+            if (rd > 0) noteDescrizione.push(`Infrangibilità: +${rd} alla Riduzione Danno (RD)`);
+          } 
+          else if (itemTypeRilevato === "shield") {
+            const parata = parseInt(html.find("#input-parata").val()) || 0;
+            costoIncantamento += (TABELLE_PREZZI.parataScudo[parata] || 0);
+            
+            upgradeDatiSystem.parrybonus = (vecchioOggetto.system.parrybonus || 0) + parata;
+            if (parata > 0) noteDescrizione.push(`Deviazione Magica: +${parata} alla Parata`);
+          }
+
+          // 2. Cariche Magiche
+          const haCariche = html.find("#select-ha-cariche").val() === "si";
+          if (haCariche) {
+            const tipoCariche = html.find("#select-tipo-cariche").val();
+            const livPotere = parseInt(html.find("#select-livello-potere-carica").val()) || 1;
+            const numCariche = parseInt(html.find("#input-num-cariche").val()) || 1;
+
+            if (tipoCariche === "limitate") {
+              costoIncantamento += (TABELLE_PREZZI.caricheLimitate[livPotere] || 0) * numCariche;
+              upgradeDatiSystem.magiccharge = "chargelimited";
+              upgradeDatiSystem.chargevaluemax = numCariche;
+              upgradeDatiSystem.chargevalue = numCariche;
+              noteDescrizione.push(`Infuso con ${numCariche} Cariche Limitate (Potere Liv. ${livPotere})`);
+            } else {
+              const utilizziQuotidiani = Math.min(numCariche, 3);
+              costoIncantamento += TABELLE_PREZZI.giornalieri[livPotere]?.[utilizziQuotidiani] || 0;
+              upgradeDatiSystem.magiccharge = "chargerefresh";
+              upgradeDatiSystem.chargevaluemax = utilizziQuotidiani;
+              upgradeDatiSystem.chargevalue = utilizziQuotidiani;
+              noteDescrizione.push(`Infuso con ${utilizziQuotidiani} Utilizzi Giornalieri (Potere Liv. ${livPotere})`);
+            }
+          }
+
+          // 3. Potenziamenti Caratteristiche (Fisico, Agilità, Mente calcolati singolarmente)
+          const fis = parseInt(html.find("#input-pot-fis").val()) || 0;
+          const agi = parseInt(html.find("#input-pot-agi").val()) || 0;
+          const men = parseInt(html.find("#input-pot-men").val()) || 0;
+
+          costoIncantamento += (TABELLE_PREZZI.statistiche[fis] || 0) + (TABELLE_PREZZI.statistiche[agi] || 0) + (TABELLE_PREZZI.statistiche[men] || 0);
+
+          if (fis > 0) noteDescrizione.push(`Vigore Arcano: +${fis} a Fisico (FIS)`);
+          if (agi > 0) noteDescrizione.push(`Riflessi di Luce: +${agi} a Agilità (AGI)`);
+          if (men > 0) noteDescrizione.push(`Mente del Saggio: +${men} a Mente (MEN)`);
+
+          // 4. Risorse (Mana & HP)
+          const mana = parseInt(html.find("#input-pot-mana").val()) || 0;
+          const hp = parseInt(html.find("#input-pot-hp").val()) || 0;
+
+          costoIncantamento += (TABELLE_PREZZI.mana[mana] || 0) + (TABELLE_PREZZI.hp[hp] || 0);
+
+          if (mana > 0) noteDescrizione.push(`Riserva del Saggio: +${mana} al Mana Massimo`);
+          if (hp > 0) noteDescrizione.push(`Riserva della Fenice: +${hp} ai Punti Ferita Massimi`);
+
+          // 5. Potere Permanente
+          const livPerm = parseInt(html.find("#select-potere-permanente").val()) || 0;
+          costoIncantamento += (TABELLE_PREZZI.permanenti[livPerm] || 0);
+          if (livPerm > 0) noteDescrizione.push(`Effetto Permanente Innato (Livello Potere: ${livPerm})`);
+
+          // --- CALCOLO COSTI TOTALI ---
+          const costoBaseOggetto = vecchioOggetto.system.cost || 0;
+          const costoFinaleCoo = costoBaseOggetto + costoIncantamento;
+
+          let bloccoEsteticoText = `
+            <div class="magic-enchantment" style="border: 2px solid #27ae60; padding: 10px; margin-top: 12px; background: #f2fbf5; border-radius: 6px;">
+              <h4 style="margin: 0 0 6px 0; color: #27ae60; font-family: sans-serif;"><i class="fas fa-sparkles"></i> Proprietà Magiche dell'Oggetto</h4>
+              <ul style="margin: 0; padding-left: 18px; font-size: 12px; line-height: 1.4;">
+                ${noteDescrizione.map(nota => `<li>${nota}</li>`).join("")}
+              </ul>
+              <p style="margin: 8px 0 0 0; font-size: 11px; color: #555; text-align: right;"><em>Valore di Incanto: +${costoIncantamento} MO</em></p>
+            </div>
+          `;
+
+          // Generazione della struttura dati del NUOVO oggetto
+          const nuovoItemData = {
+            ...vecchioOggetto,
+            name: `${vecchioOggetto.name} [Magico]`,
+            system: {
+              ...vecchioOggetto.system,
+              ...upgradeDatiSystem,
+              cost: costoFinaleCoo,
+              description: (vecchioOggetto.system.description || "") + bloccoEsteticoText
+            }
+          };
+
+          // Pulizia degli identificativi di istanza per forzarne una nuova slegata
+          delete nuovoItemData._id;
+          if (nuovoItemData.parent) delete nuovoItemData.parent;
+
+          try {
+            // Crea l'oggetto esclusivamente nel World Item panel
+            const itemFatto = await Item.create(nuovoItemData);
+            ui.notifications.info(`Oggetto magico creato con successo nel pannello di Foundry!`);
+            
+            if (itemFatto) itemFatto.sheet.render(true);
+          } catch (ecc) {
+            console.error(ecc);
+            ui.notifications.error("Errore durante la generazione dell'oggetto.");
+          }
+        }
+      },
+      cancel: {
+        icon: '<i class="fas fa-times"></i>',
+        label: "Annulla"
+      }
+    },
+    default: "enchant",
+    render: (html) => {
+      html.find("#select-ha-cariche").on("change", function() {
+        if ($(this).val() === "si") {
+          html.find("#blocco-cariche").slideDown(200, () => dialog.setPosition({ height: "auto" }));
+        } else {
+          html.find("#blocco-cariche").slideUp(200, () => dialog.setPosition({ height: "auto" }));
+        }
+      });
+
+      html.find("#select-tipo-cariche").on("change", function() {
+        const label = html.find("#label-quantita-cariche");
+        const input = html.find("#input-num-cariche");
+        if ($(this).val() === "giornaliere") {
+          label.text("Utilizzi Giornalieri consentiti (Max 3):");
+          input.attr("max", "3").val(Math.min(parseInt(input.val()), 3));
+        } else {
+          label.text("Numero totale Cariche (Usa e Getta):");
+          input.removeAttr("max");
+        }
+      });
+
+      inizializzaDragDrop(html, (item, tipo) => {
+        itemSorgente = item;
+        itemTypeRilevato = tipo;
+        aggiornaInterfacciaDinamica(html, item, tipo, dialog);
+      });
+    }
+  }, { width: 430, height: "auto" });
+
+  dialog.render(true);
+img: systems/fvtt-warhero/images/icons/riposte.svg
+_id: PIKsHXsmH6hcSjfE
+author: guOwSDi78TuzUGFU
+scope: global
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.19
+  createdTime: 1780743914073
+  modifiedTime: 1780743914083
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 200000
+_key: '!macros!PIKsHXsmH6hcSjfE'

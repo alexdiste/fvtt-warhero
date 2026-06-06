@@ -1,15 +1,15 @@
 name: 2. Estrazione Livello Potere
-formula: 1d10000
+formula: 1d100
 results:
   - type: text
     range:
       - 1
-      - 5060
+      - 51
     drawn: false
     description: 1° Livello
     _id: yFWZyQ977zuI1WuI
     name: ''
-    img: null
+    img: icons/svg/d20-black.svg
     weight: 1
     flags: {}
     _stats:
@@ -17,7 +17,7 @@ results:
       systemId: fvtt-warhero
       systemVersion: 14.86.15
       createdTime: 1780664039137
-      modifiedTime: 1780664039137
+      modifiedTime: 1780675336954
       lastModifiedBy: guOwSDi78TuzUGFU
       compendiumSource: null
       duplicateSource: null
@@ -25,13 +25,13 @@ results:
     _key: '!tables.results!W1YHEymxdPYkTei8.yFWZyQ977zuI1WuI'
   - type: text
     range:
-      - 5061
-      - 7590
+      - 52
+      - 76
     drawn: false
     description: 2° Livello
     _id: U4SWXW7pUecAqmFa
     name: ''
-    img: null
+    img: icons/svg/d20-black.svg
     weight: 1
     flags: {}
     _stats:
@@ -39,7 +39,7 @@ results:
       systemId: fvtt-warhero
       systemVersion: 14.86.15
       createdTime: 1780664039137
-      modifiedTime: 1780664039137
+      modifiedTime: 1780675336954
       lastModifiedBy: guOwSDi78TuzUGFU
       compendiumSource: null
       duplicateSource: null
@@ -47,13 +47,13 @@ results:
     _key: '!tables.results!W1YHEymxdPYkTei8.U4SWXW7pUecAqmFa'
   - type: text
     range:
-      - 7591
-      - 9277
+      - 77
+      - 93
     drawn: false
     description: 3° Livello
     _id: NQNKzAA6cXRzSgba
     name: ''
-    img: null
+    img: icons/svg/d20-black.svg
     weight: 1
     flags: {}
     _stats:
@@ -61,7 +61,7 @@ results:
       systemId: fvtt-warhero
       systemVersion: 14.86.15
       createdTime: 1780664039137
-      modifiedTime: 1780664039137
+      modifiedTime: 1780675336954
       lastModifiedBy: guOwSDi78TuzUGFU
       compendiumSource: null
       duplicateSource: null
@@ -69,13 +69,13 @@ results:
     _key: '!tables.results!W1YHEymxdPYkTei8.NQNKzAA6cXRzSgba'
   - type: text
     range:
-      - 9278
-      - 10000
+      - 94
+      - 100
     drawn: false
     description: 4° Livello
     _id: 98Hq1YJVXbKwR1dq
     name: ''
-    img: null
+    img: icons/svg/d20-black.svg
     weight: 1
     flags: {}
     _stats:
@@ -83,13 +83,15 @@ results:
       systemId: fvtt-warhero
       systemVersion: 14.86.15
       createdTime: 1780664039137
-      modifiedTime: 1780664039137
+      modifiedTime: 1780675336954
       lastModifiedBy: guOwSDi78TuzUGFU
       compendiumSource: null
       duplicateSource: null
       exportSource: null
     _key: '!tables.results!W1YHEymxdPYkTei8.98Hq1YJVXbKwR1dq'
-description: Tabella per determinare il livello del potere (1-4) con scaling non lineare.
+description: >-
+  <p>Tabella per determinare il livello del potere (1-4) con scaling non
+  lineare.</p>
 _id: W1YHEymxdPYkTei8
 img: icons/svg/d20-grey.svg
 replacement: true
@@ -101,7 +103,7 @@ _stats:
   systemId: fvtt-warhero
   systemVersion: 14.86.15
   createdTime: 1780664039137
-  modifiedTime: 1780664039138
+  modifiedTime: 1780675904295
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null
@@ -109,5 +111,5 @@ _stats:
 ownership:
   default: 0
   guOwSDi78TuzUGFU: 3
-sort: 0
+sort: 300000
 _key: '!tables!W1YHEymxdPYkTei8'

@@ -13,12 +13,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.361'
+  coreVersion: '14.363'
   systemId: fvtt-warhero
   systemVersion: '13.21'
   createdTime: 1760072917967
-  modifiedTime: 1779000101339
+  modifiedTime: 1780743914084
   lastModifiedBy: guOwSDi78TuzUGFU
 _id: zGSXvYGGNy14YHom
-sort: 700000
+sort: 800000
 _key: '!macros!zGSXvYGGNy14YHom'

@@ -34,15 +34,15 @@ ownership:
   guOwSDi78TuzUGFU: 3
 flags: {}
 _stats:
-  coreVersion: '14.361'
+  coreVersion: '14.363'
   systemId: fvtt-warhero
   systemVersion: 14.80.5
   createdTime: 1778941206023
-  modifiedTime: 1779000101339
+  modifiedTime: 1780743914083
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null
   duplicateSource: null
 _id: Y4ZBv8nIaF9PGEKI
-sort: 400000
+sort: 500000
 _key: '!macros!Y4ZBv8nIaF9PGEKI'

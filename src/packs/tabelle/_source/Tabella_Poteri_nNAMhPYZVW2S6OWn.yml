@@ -1,0 +1,3659 @@
+name: Tabella Poteri
+formula: 1d158
+results:
+  - type: document
+    weight: 1
+    range:
+      - 1
+      - 1
+    name: Linguaggi - III Parlare linguaggi
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.08BXcOaoGE192zNB
+    description: ''
+    _id: jZ85XOIc759NH46h
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.jZ85XOIc759NH46h'
+  - type: document
+    weight: 1
+    range:
+      - 2
+      - 2
+    name: Elementale - Fuoco - IV Muro di fuoco
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.0fuQ1vuv4uUfReik
+    description: ''
+    _id: ybHtYQ4UHlaDi8dL
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.ybHtYQ4UHlaDi8dL'
+  - type: document
+    weight: 1
+    range:
+      - 3
+      - 3
+    name: Protezione - IV Solo difesa
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.0hqW3CDSxT0sb2jc
+    description: ''
+    _id: slAXScPMcFeahMOk
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.slAXScPMcFeahMOk'
+  - type: document
+    weight: 1
+    range:
+      - 4
+      - 4
+    name: Tempo - II Lentezza
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.0s6X0VfFHJgKeYBs
+    description: ''
+    _id: 5pCBWMVxuTaMlh9q
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.5pCBWMVxuTaMlh9q'
+  - type: document
+    weight: 1
+    range:
+      - 5
+      - 5
+    name: Elementale - Acqua - II Cono di freddo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.1HjRX5S3R2TuqnIN
+    description: ''
+    _id: KETnqt30xty0sibm
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.KETnqt30xty0sibm'
+  - type: document
+    weight: 1
+    range:
+      - 6
+      - 6
+    name: Viaggio - III Teletrasporto
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.1UrtrLZ51eLjsEIx
+    description: ''
+    _id: ydPgKTnkmvZfDD17
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.ydPgKTnkmvZfDD17'
+  - type: document
+    weight: 1
+    range:
+      - 7
+      - 7
+    name: Indole - Caos - IV Contropotere caotico
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.1ZCVzbwTVtuxwVxC
+    description: ''
+    _id: DIbJiO563mT3yoAV
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.DIbJiO563mT3yoAV'
+  - type: document
+    weight: 1
+    range:
+      - 8
+      - 8
+    name: Viaggio - II Volare
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.1on8iKAjWzcbJkBd
+    description: ''
+    _id: SXaPC8AWa9iC6oDY
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.SXaPC8AWa9iC6oDY'
+  - type: document
+    weight: 1
+    range:
+      - 9
+      - 9
+    name: Linguaggi - II Comprensione dei linguaggi
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.1x6LaCg71VjIcaHg
+    description: ''
+    _id: ivvQG12SlovIHScC
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.ivvQG12SlovIHScC'
+  - type: document
+    weight: 1
+    range:
+      - 10
+      - 10
+    name: Elementale - Fuoco - II Mani brucianti
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.1ychDvTMJrneQrl0
+    description: ''
+    _id: m1OXT4i9Gy45DR9j
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.m1OXT4i9Gy45DR9j'
+  - type: document
+    weight: 1
+    range:
+      - 11
+      - 11
+    name: Forza - I Dardo incantato
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.2hAooR3fELiaIv9N
+    description: ''
+    _id: CK3l7qY1OeCi2sC2
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.CK3l7qY1OeCi2sC2'
+  - type: document
+    weight: 1
+    range:
+      - 12
+      - 12
+    name: Elementale - Terra - IV Gabbia di terra
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.2t6zBr9FOTemb7ef
+    description: ''
+    _id: 9IMvIBIgWfVna7Dx
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.9IMvIBIgWfVna7Dx'
+  - type: document
+    weight: 1
+    range:
+      - 13
+      - 13
+    name: Guarigione - IV Cura di massa
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.2xzmVKeu7aXWCTRD
+    description: ''
+    _id: eiel80zuen1QIRvZ
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.eiel80zuen1QIRvZ'
+  - type: document
+    weight: 1
+    range:
+      - 14
+      - 14
+    name: Indole - Male - III Sofferenza
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.2zZ7J0Rjbak48Ljr
+    description: ''
+    _id: 1sZ6E58kxRI5BL0s
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.1sZ6E58kxRI5BL0s'
+  - type: document
+    weight: 1
+    range:
+      - 15
+      - 15
+    name: Indole - Male - II Di fronte al male
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.3l8fdh3vXRvjoJr7
+    description: ''
+    _id: m9iyahStk19bqBFW
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.m9iyahStk19bqBFW'
+  - type: document
+    weight: 1
+    range:
+      - 16
+      - 16
+    name: Rune - III Segno esplosivo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.3mDBK9zIf9R4PbLo
+    description: ''
+    _id: OMQZcresGGCGgD1g
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.OMQZcresGGCGgD1g'
+  - type: document
+    weight: 1
+    range:
+      - 17
+      - 17
+    name: Conoscenze - III Identificare
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.4YCGLK5hBA1dymta
+    description: ''
+    _id: 8rQ2x2R2YQupDYRj
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.8rQ2x2R2YQupDYRj'
+  - type: document
+    weight: 1
+    range:
+      - 18
+      - 18
+    name: Indole - Equilibrio - IV Ristabilire equilibrio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.4uxhEUuNFuDjlnr6
+    description: ''
+    _id: x7GAGM3XlvQmiX5A
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.x7GAGM3XlvQmiX5A'
+  - type: document
+    weight: 1
+    range:
+      - 19
+      - 19
+    name: Evocazione - Non Morte - II Evoca zombie
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.5C07VRo8z41Kh70Y
+    description: ''
+    _id: Npn88n9j1ukvdKea
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Npn88n9j1ukvdKea'
+  - type: document
+    weight: 1
+    range:
+      - 20
+      - 20
+    name: Negromanzia - III Resurrezione veloce
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.6Z73jbvTwFqsiKOw
+    description: ''
+    _id: Tkj2rPms3QQIWkAa
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Tkj2rPms3QQIWkAa'
+  - type: document
+    weight: 1
+    range:
+      - 21
+      - 21
+    name: Divinazione - I Individuazione dell'allineamento
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.6olhY5wohzlkW96u
+    description: ''
+    _id: xM93048tKtwM86uv
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.xM93048tKtwM86uv'
+  - type: document
+    weight: 1
+    range:
+      - 22
+      - 22
+    name: Divinazione - II Scrutare
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.6vZEQ1wjQsmCXMtR
+    description: ''
+    _id: pgH9H01ZMqnVEEmW
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.pgH9H01ZMqnVEEmW'
+  - type: document
+    weight: 1
+    range:
+      - 23
+      - 23
+    name: Negromanzia - I Risucchia vita
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.7b6lal71wDDJAEd0
+    description: ''
+    _id: xLiho8jY7XKvtaAA
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.xLiho8jY7XKvtaAA'
+  - type: document
+    weight: 1
+    range:
+      - 24
+      - 24
+    name: Elementale - Acqua - IV Resistenza al gelo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.7n6sxQKYPaM7pkh4
+    description: ''
+    _id: 74Suz0oz5zR6EQ4C
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.74Suz0oz5zR6EQ4C'
+  - type: document
+    weight: 1
+    range:
+      - 25
+      - 25
+    name: Ammaliamento - I Sonno
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.9KljFSjM3pWaoI73
+    description: ''
+    _id: 8TQ2svq1uWtxBXPc
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.8TQ2svq1uWtxBXPc'
+  - type: document
+    weight: 1
+    range:
+      - 26
+      - 26
+    name: Visione - IV Visione futura
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.9StvYUTQ7V0YhtOf
+    description: ''
+    _id: xgpJBa7wdX8cHo0K
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.xgpJBa7wdX8cHo0K'
+  - type: document
+    weight: 1
+    range:
+      - 27
+      - 27
+    name: Divinazione - IV Precognizione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.9UH6CVtklssk2AVo
+    description: ''
+    _id: vgjyNIuwokAPBdmK
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.vgjyNIuwokAPBdmK'
+  - type: document
+    weight: 1
+    range:
+      - 28
+      - 28
+    name: Indole - Legge - IV Legge suprema
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.AM3ATrHNkOsc9dXk
+    description: ''
+    _id: 9EucRwfuyWQQARIr
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.9EucRwfuyWQQARIr'
+  - type: document
+    weight: 1
+    range:
+      - 29
+      - 29
+    name: Rune - IV Marchio del mago
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.APjlRqats9YPRcli
+    description: ''
+    _id: fOx2w0d2lBQDf3bS
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.fOx2w0d2lBQDf3bS'
+  - type: document
+    weight: 1
+    range:
+      - 30
+      - 30
+    name: Ammaliamento - IV Confusione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.Bo6yukhbjHibVLOR
+    description: ''
+    _id: 4Z3eIHg9yHt4Py2e
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.4Z3eIHg9yHt4Py2e'
+  - type: document
+    weight: 1
+    range:
+      - 31
+      - 31
+    name: Costrizione - III Patto
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.BzDXrpTEM55aFIqg
+    description: ''
+    _id: JQ3HW52QzRiesRvo
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.JQ3HW52QzRiesRvo'
+  - type: document
+    weight: 1
+    range:
+      - 32
+      - 32
+    name: Elementale - Fuoco - I Raggio rovente
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.CLp5TRPccBPANHUe
+    description: ''
+    _id: acZ0xR0RQExPgywK
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.acZ0xR0RQExPgywK'
+  - type: document
+    weight: 1
+    range:
+      - 33
+      - 33
+    name: Divinazione - IV Telepatia
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.CQ8MWucM1IWeDNQq
+    description: ''
+    _id: ThHYz2lGOxlh02qD
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.ThHYz2lGOxlh02qD'
+  - type: document
+    weight: 1
+    range:
+      - 34
+      - 34
+    name: Evocazione - Non Morte - IV Evoca mummia
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.CjIg6780ZHG14ffq
+    description: ''
+    _id: kVCcLlGFK8Eenjp0
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.kVCcLlGFK8Eenjp0'
+  - type: document
+    weight: 1
+    range:
+      - 35
+      - 35
+    name: Illusione - IV Mappa del tesoro
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.CkDS9usOUkTMPGo7
+    description: ''
+    _id: zKvAFaN4DGUkaNSz
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.zKvAFaN4DGUkaNSz'
+  - type: document
+    weight: 1
+    range:
+      - 36
+      - 36
+    name: Morte - I Risucchio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.CpkqRsUQEjUBAgms
+    description: ''
+    _id: HlFoZ61z8Zcg3Vmg
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.HlFoZ61z8Zcg3Vmg'
+  - type: document
+    weight: 1
+    range:
+      - 37
+      - 37
+    name: Oscurità - I Maglio oscuro
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.DH9Fxd3yM8mEpOBi
+    description: ''
+    _id: 320ypk3jovsTCbRW
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.320ypk3jovsTCbRW'
+  - type: document
+    weight: 1
+    range:
+      - 38
+      - 38
+    name: Indole - Bene - III Castigo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.DNkcEyBQYp78RUeK
+    description: ''
+    _id: nA1n9duZEtFOEux0
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.nA1n9duZEtFOEux0'
+  - type: document
+    weight: 1
+    range:
+      - 39
+      - 39
+    name: Rune - I Segno negatorio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.DsPn3lqhpGAU77kL
+    description: ''
+    _id: qPhGNm1bRs9eMpuI
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.qPhGNm1bRs9eMpuI'
+  - type: document
+    weight: 1
+    range:
+      - 40
+      - 40
+    name: Illusione - III Sfocatura
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.EG2xA3TWqTHG8e28
+    description: ''
+    _id: MvaB5nwTp1eHKKWl
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.MvaB5nwTp1eHKKWl'
+  - type: document
+    weight: 1
+    range:
+      - 41
+      - 41
+    name: Vegetale - I Viticci
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ENRZyKNPGk9KfCzq
+    description: ''
+    _id: RjiqN2URNeBymq7R
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.RjiqN2URNeBymq7R'
+  - type: document
+    weight: 1
+    range:
+      - 42
+      - 42
+    name: Indole - Legge - I Punire il caos
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.FAUFfMhdebRdKBnR
+    description: ''
+    _id: UD1hN5LHBknpI3C5
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.UD1hN5LHBknpI3C5'
+  - type: document
+    weight: 1
+    range:
+      - 43
+      - 43
+    name: Indole - Bene - I Punire il male
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.FD2jB2MQjwqX26F4
+    description: ''
+    _id: 6oJ9AoZ7oo1qkjYh
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.6oJ9AoZ7oo1qkjYh'
+  - type: document
+    weight: 1
+    range:
+      - 44
+      - 44
+    name: Elementale - Acqua - I Raggio di gelo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.Faq8SbGNkVrQ5pvp
+    description: ''
+    _id: kbXVIhDKFQCOwviv
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.kbXVIhDKFQCOwviv'
+  - type: document
+    weight: 1
+    range:
+      - 45
+      - 45
+    name: Trasmutazione - I Alterazione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.FkJ49VbCvSL2ca6c
+    description: ''
+    _id: 3U92wg7QImA0c12J
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.3U92wg7QImA0c12J'
+  - type: document
+    weight: 1
+    range:
+      - 46
+      - 46
+    name: Conoscenza - I Individuazione del magico
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.FxvVobEr8NoXAW1R
+    description: ''
+    _id: CNdifrumFEpYsWLv
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.CNdifrumFEpYsWLv'
+  - type: document
+    weight: 1
+    range:
+      - 47
+      - 47
+    name: Tempo - IV Messaggio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.G1D0R27jxq7qkZ69
+    description: ''
+    _id: d3RynYRUFO3spTju
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.d3RynYRUFO3spTju'
+  - type: document
+    weight: 1
+    range:
+      - 48
+      - 48
+    name: Protezione - I Scudo magico
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.GEUOxFWgjZ72MadL
+    description: ''
+    _id: xIiiksRjaGID7yUH
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.xIiiksRjaGID7yUH'
+  - type: document
+    weight: 1
+    range:
+      - 49
+      - 49
+    name: Trasmutazione - IV Colosso
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.GHfTTQwR6rtkRcJO
+    description: ''
+    _id: XmObFy4ufFeYepG9
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.XmObFy4ufFeYepG9'
+  - type: document
+    weight: 1
+    range:
+      - 50
+      - 50
+    name: Negromanzia - IV Incatenare l' anima
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.GtDC6tnsJwJ8ddL1
+    description: ''
+    _id: Yj4Vq9LquRekRV7c
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Yj4Vq9LquRekRV7c'
+  - type: document
+    weight: 1
+    range:
+      - 51
+      - 51
+    name: Indole - Caos - II Potere caotico
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.GuFclf6ZPIaESPS0
+    description: ''
+    _id: bjLsnbRL4q6P1FhM
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.bjLsnbRL4q6P1FhM'
+  - type: document
+    weight: 1
+    range:
+      - 52
+      - 52
+    name: Linguaggi - IV Obbligo di parola
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.HC832SufJP78O0kC
+    description: ''
+    _id: JhCt0JNj3eUweWq6
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.JhCt0JNj3eUweWq6'
+  - type: document
+    weight: 1
+    range:
+      - 53
+      - 53
+    name: Luce - IV Esplosione solare
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.HU6CGjn215elzxZy
+    description: ''
+    _id: 8MV7V1XNNe4DJD5q
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.8MV7V1XNNe4DJD5q'
+  - type: document
+    weight: 1
+    range:
+      - 54
+      - 54
+    name: Indole - Male - I Punire il bene
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.I0s3vfXtaej6XOsT
+    description: ''
+    _id: MiNEbcM08EQyHo2n
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.MiNEbcM08EQyHo2n'
+  - type: document
+    weight: 1
+    range:
+      - 55
+      - 55
+    name: Elementale - Aria - II Fulmine
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.InXfXuABQDHb5zV5
+    description: ''
+    _id: SA50Iug2M2rc93DW
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.SA50Iug2M2rc93DW'
+  - type: document
+    weight: 1
+    range:
+      - 56
+      - 56
+    name: Elementale - Fuoco - IV Resistenza al fuoco
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.IwckOzpQuieWvcOn
+    description: ''
+    _id: JZClsZfsrnDOvQh0
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.JZClsZfsrnDOvQh0'
+  - type: document
+    weight: 1
+    range:
+      - 57
+      - 57
+    name: Viaggio - IV Spostamento planare
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.JdEYwDx8fzvPchwS
+    description: ''
+    _id: Wq77yDdTvQYQ1brP
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Wq77yDdTvQYQ1brP'
+  - type: document
+    weight: 1
+    range:
+      - 58
+      - 58
+    name: Protezione - IV Resistenza all' energia
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.K9klyiLkV95kwTIe
+    description: ''
+    _id: Fc4FGacZd1xJ1qga
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Fc4FGacZd1xJ1qga'
+  - type: document
+    weight: 1
+    range:
+      - 59
+      - 59
+    name: Fato - I Cambio esito
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.KAtzfJafxDsLk9BL
+    description: ''
+    _id: q0eK448zpwRdtis5
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.q0eK448zpwRdtis5'
+  - type: document
+    weight: 1
+    range:
+      - 60
+      - 60
+    name: Evocazione - Animale - IV Evoca dinosauro
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.KBxBDMo05wN3L649
+    description: ''
+    _id: MRIRopb5KBWgiCeH
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.MRIRopb5KBWgiCeH'
+  - type: document
+    weight: 1
+    range:
+      - 61
+      - 61
+    name: Trasmutazione - II Ingrandire/Ridurre
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.Kba4gKFruhTWdP5U
+    description: ''
+    _id: cYWpTuLGpjYbqQ1Q
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.cYWpTuLGpjYbqQ1Q'
+  - type: document
+    weight: 1
+    range:
+      - 62
+      - 62
+    name: Costrizione - I Richiamo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.KhIIZD2xav1wVqem
+    description: ''
+    _id: bupT8vB57Y3mc6iW
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.bupT8vB57Y3mc6iW'
+  - type: document
+    weight: 1
+    range:
+      - 63
+      - 63
+    name: Morte - III Dito di morte
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.KqvWjxWIifyTKNJy
+    description: ''
+    _id: 6gKCEVz2qVnyvpcw
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.6gKCEVz2qVnyvpcw'
+  - type: document
+    weight: 1
+    range:
+      - 64
+      - 64
+    name: Elementale - Aria - IV Folata di vento
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.L42LjIoOFanFf2gZ
+    description: ''
+    _id: mQgt7961jNMCPaxo
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.mQgt7961jNMCPaxo'
+  - type: document
+    weight: 1
+    range:
+      - 65
+      - 65
+    name: Costrizione - IV Bersaglio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.Ls96wsHFWG8F7Emb
+    description: ''
+    _id: eDBNeZZOs7zFGcDj
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.eDBNeZZOs7zFGcDj'
+  - type: document
+    weight: 1
+    range:
+      - 66
+      - 66
+    name: Ammaliamento - IV Modificare memoria
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.MJQ0ZobtTdCjduDn
+    description: ''
+    _id: wX0WaF5Ngd0vgzpv
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.wX0WaF5Ngd0vgzpv'
+  - type: document
+    weight: 1
+    range:
+      - 67
+      - 67
+    name: Tempo - III Velocità
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.O1yGotIS8YidAFh1
+    description: ''
+    _id: Vvkkk8Bt7ANq7WGd
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Vvkkk8Bt7ANq7WGd'
+  - type: document
+    weight: 1
+    range:
+      - 68
+      - 68
+    name: Luce - I Luce magica
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.O6FhPQp1rV8YaJQA
+    description: ''
+    _id: dFwhA5YsNkIQXtqd
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.dFwhA5YsNkIQXtqd'
+  - type: document
+    weight: 1
+    range:
+      - 69
+      - 69
+    name: Oscurità - IV Mezzanotte polare
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.PzM7UtU8u6h39z5O
+    description: ''
+    _id: La3ifVgTRvCeh45X
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.La3ifVgTRvCeh45X'
+  - type: document
+    weight: 1
+    range:
+      - 70
+      - 70
+    name: Guerra - I Precisione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.QGh1VtNFgRRKVvNK
+    description: ''
+    _id: 0sp6XyMEYCAQ5nGy
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.0sp6XyMEYCAQ5nGy'
+  - type: document
+    weight: 1
+    range:
+      - 71
+      - 71
+    name: Protezione - III Pelle di pietra
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.QiWw4fEN7atSXqat
+    description: ''
+    _id: i7rs4EPsqFX6Vq4z
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.i7rs4EPsqFX6Vq4z'
+  - type: document
+    weight: 1
+    range:
+      - 72
+      - 72
+    name: Elementale - Terra - I Fiotto acido
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.RNz7yZA5Hb3avPEC
+    description: ''
+    _id: 01ILjEMooztsQF0R
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.01ILjEMooztsQF0R'
+  - type: document
+    weight: 1
+    range:
+      - 73
+      - 73
+    name: Luce - III Colpo del sole
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.SayG2Rx5JA3e7aus
+    description: ''
+    _id: 8vnLFMIodWsDDqWa
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.8vnLFMIodWsDDqWa'
+  - type: document
+    weight: 1
+    range:
+      - 74
+      - 74
+    name: Evocazione - Animale - II Evoca lupo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.SmGpYUgJY9PEIWhf
+    description: ''
+    _id: EslLVtYUuujzo8bL
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.EslLVtYUuujzo8bL'
+  - type: document
+    weight: 1
+    range:
+      - 75
+      - 75
+    name: Vegetale - III Terremoto
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.Sz183GOBEDrQcGd1
+    description: ''
+    _id: 9F5kAMXgyWtJ28oJ
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.9F5kAMXgyWtJ28oJ'
+  - type: document
+    weight: 1
+    range:
+      - 76
+      - 76
+    name: Indole - Equilibrio - I Punire l'equilibrio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.T0eZtZLUZm9K2BzP
+    description: ''
+    _id: QHd3x0Pa2V37fnQU
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.QHd3x0Pa2V37fnQU'
+  - type: document
+    weight: 1
+    range:
+      - 77
+      - 77
+    name: Guarigione - III Resurrezione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.Tnbo5qZBLCiZAli4
+    description: ''
+    _id: dzkBqw3ZsrKwSc3K
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.dzkBqw3ZsrKwSc3K'
+  - type: document
+    weight: 1
+    range:
+      - 78
+      - 78
+    name: Fato - IV Passo del fato
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.UidgozfLZsoPIBoK
+    description: ''
+    _id: fufCFcVm9UIljbPi
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.fufCFcVm9UIljbPi'
+  - type: document
+    weight: 1
+    range:
+      - 79
+      - 79
+    name: Indole - Male - IV Fine dei giochi
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.V8KL2tzLEd12xRP8
+    description: ''
+    _id: lyaUED189NqNJGyM
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.lyaUED189NqNJGyM'
+  - type: document
+    weight: 1
+    range:
+      - 80
+      - 80
+    name: Trasmutazione - III Trasformazione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.Wiw3J9c1AGCZGbno
+    description: ''
+    _id: SUBRBuOMLvwoklTQ
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.SUBRBuOMLvwoklTQ'
+  - type: document
+    weight: 1
+    range:
+      - 81
+      - 81
+    name: Illusione - IV Muro illusorio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.XO7MkRoN270zyu7q
+    description: ''
+    _id: KgEANT3EG0vJ3Llb
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.KgEANT3EG0vJ3Llb'
+  - type: document
+    weight: 1
+    range:
+      - 82
+      - 82
+    name: Forza - II Armatura magica
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.YH6sayoSaQeWIwW7
+    description: ''
+    _id: nUfLul46zSnm0MNa
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.nUfLul46zSnm0MNa'
+  - type: document
+    weight: 1
+    range:
+      - 83
+      - 83
+    name: Costrizione - II Ragnatela
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.Z1enNb056VVT8v5C
+    description: ''
+    _id: f1f04741Ctb63Bno
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.f1f04741Ctb63Bno'
+  - type: document
+    weight: 1
+    range:
+      - 84
+      - 84
+    name: Costrizione - IV Pietrificazione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ZTzGLsI7fYvMZK44
+    description: ''
+    _id: tHMWb4HtIeek0uOz
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.tHMWb4HtIeek0uOz'
+  - type: document
+    weight: 1
+    range:
+      - 85
+      - 85
+    name: Indole - Caos - III Catastrofe
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.b2ftOwRXke7sRraG
+    description: ''
+    _id: JiNN4oKZiK97rUUa
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.JiNN4oKZiK97rUUa'
+  - type: document
+    weight: 1
+    range:
+      - 86
+      - 86
+    name: Guerra - IV Potere della furia
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.b2nNuZqzQSJv8p1P
+    description: ''
+    _id: DkKtmVGGfzz2Mh6n
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.DkKtmVGGfzz2Mh6n'
+  - type: document
+    weight: 1
+    range:
+      - 87
+      - 87
+    name: Elementale - Fuoco - III Palla di Fuoco
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.bnWyUAi6Su0InjRo
+    description: ''
+    _id: fnjSKX8JbSs5qvDW
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.fnjSKX8JbSs5qvDW'
+  - type: document
+    weight: 1
+    range:
+      - 88
+      - 88
+    name: Elementale - Aria - III Tempesta di fulmini
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.cOXbmiXeQRJwlhdd
+    description: ''
+    _id: 2OUSEYYUCP0YHhoH
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.2OUSEYYUCP0YHhoH'
+  - type: document
+    weight: 1
+    range:
+      - 89
+      - 89
+    name: Evocazione - Animale - III Evoca Orso
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.dIl9bt79csKa8qSQ
+    description: ''
+    _id: vt4ylyR9N897823K
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.vt4ylyR9N897823K'
+  - type: document
+    weight: 1
+    range:
+      - 90
+      - 90
+    name: Indole - Legge - IV Cerchio contro il caos
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.dKeIgbWOvb5WyQZ8
+    description: ''
+    _id: bZ1Bg0jBFDdNAahR
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.bZ1Bg0jBFDdNAahR'
+  - type: document
+    weight: 1
+    range:
+      - 91
+      - 91
+    name: Fato - IV Destino casuale
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.e5sdgdR1TBcKEpoO
+    description: ''
+    _id: Lxgu7jRSVpb6hesd
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Lxgu7jRSVpb6hesd'
+  - type: document
+    weight: 1
+    range:
+      - 92
+      - 92
+    name: Evocazione - Non Morte - III Evoca spettro
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.fJ30QpZ9OAb5JJyB
+    description: ''
+    _id: 5sZ9hgSxmiUz5DYL
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.5sZ9hgSxmiUz5DYL'
+  - type: document
+    weight: 1
+    range:
+      - 93
+      - 93
+    name: Forza - III Globo di forza
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.fKEXWz1U2rXN10bh
+    description: ''
+    _id: Of9P0JUUWG2gc0Bm
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Of9P0JUUWG2gc0Bm'
+  - type: document
+    weight: 1
+    range:
+      - 94
+      - 94
+    name: Negromanzia - II Vita Falsa
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.fYgXo7Pcq4HKOQqK
+    description: ''
+    _id: Ilkj8K34XInt6t3i
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Ilkj8K34XInt6t3i'
+  - type: document
+    weight: 1
+    range:
+      - 95
+      - 95
+    name: Evocazione - Animale - I Evoca aquila
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.fzJGod0FE4WiReR0
+    description: ''
+    _id: kkRlHBKHCrYiKaam
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.kkRlHBKHCrYiKaam'
+  - type: document
+    weight: 1
+    range:
+      - 96
+      - 96
+    name: Vegetale - IV Rampicanti
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.gJGGSLgSqnJ8f7NZ
+    description: ''
+    _id: R4rMugQFA3ltaY1s
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.R4rMugQFA3ltaY1s'
+  - type: document
+    weight: 1
+    range:
+      - 97
+      - 97
+    name: Oscurità - IV Vera invisibilità
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.gVLEpQCmNRI1d9lo
+    description: ''
+    _id: D2bOMMytiMdEpDlj
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.D2bOMMytiMdEpDlj'
+  - type: document
+    weight: 1
+    range:
+      - 98
+      - 98
+    name: Elementale - Terra - II Bomba al vetriolo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.gW2OzkrdGkW38XK6
+    description: ''
+    _id: IeSMeoEwknbJNCTS
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.IeSMeoEwknbJNCTS'
+  - type: document
+    weight: 1
+    range:
+      - 99
+      - 99
+    name: Fato - III Stretta del fato
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.geWk4VaGVcX40eb0
+    description: ''
+    _id: qgNhBg1r5QNWKYmH
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.qgNhBg1r5QNWKYmH'
+  - type: document
+    weight: 1
+    range:
+      - 100
+      - 100
+    name: Indole - Caos - IV Cerchio contro la legge
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.guHItAsGkNVxsEyf
+    description: ''
+    _id: XjwdhBA23eyq02Ev
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.XjwdhBA23eyq02Ev'
+  - type: document
+    weight: 1
+    range:
+      - 101
+      - 101
+    name: Indole - Bene - II Buona speranza
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.h1wvKCb0vzWc6VLI
+    description: ''
+    _id: usbTRyKmkDEDnWSM
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.usbTRyKmkDEDnWSM'
+  - type: document
+    weight: 1
+    range:
+      - 102
+      - 102
+    name: Conoscenze - II Dissolvi magie
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.hsNBWzXXYCTtRxte
+    description: ''
+    _id: 1TzG8hmpyXnaxQMr
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.1TzG8hmpyXnaxQMr'
+  - type: document
+    weight: 1
+    range:
+      - 103
+      - 103
+    name: Indole - Bene - IV Immolarsi
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.iHsSDP1pZMS8LwxC
+    description: ''
+    _id: lmw40mCKDdlTBlcu
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.lmw40mCKDdlTBlcu'
+  - type: document
+    weight: 1
+    range:
+      - 104
+      - 104
+    name: Forza - IV Ancora dimensionale
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.iNo5f9tC1uLoUN9L
+    description: ''
+    _id: vDWt7mUVfLlq5vcE
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.vDWt7mUVfLlq5vcE'
+  - type: document
+    weight: 1
+    range:
+      - 105
+      - 105
+    name: Elementale - Aria - IV Resistenza alla scossa
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ip5OKhEQxoeb7pNy
+    description: ''
+    _id: ZpcLW374f7zZaCBp
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.ZpcLW374f7zZaCBp'
+  - type: document
+    weight: 1
+    range:
+      - 106
+      - 106
+    name: Guerra - II Forza
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ipXemqc1aOOxqoyG
+    description: ''
+    _id: 97BQqFtE4RXhyhEF
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.97BQqFtE4RXhyhEF'
+  - type: document
+    weight: 1
+    range:
+      - 107
+      - 107
+    name: Elementale - Terra - III Nube tossica
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ivnemz1L6Q3HTsjA
+    description: ''
+    _id: ShCMUOubDmZDj6LD
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.ShCMUOubDmZDj6LD'
+  - type: document
+    weight: 1
+    range:
+      - 108
+      - 108
+    name: Oscurità - III Manto celato
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ivuHaYY53wtFZGkJ
+    description: ''
+    _id: 3R1oVFthQHKw78sQ
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.3R1oVFthQHKw78sQ'
+  - type: document
+    weight: 1
+    range:
+      - 109
+      - 109
+    name: Viaggio - I Levitazione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.j7RjSZH85KRovJKc
+    description: ''
+    _id: fFY5p6rYZ0Ew6YMR
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.fFY5p6rYZ0Ew6YMR'
+  - type: document
+    weight: 1
+    range:
+      - 110
+      - 110
+    name: Elementale - Terra - IV Resistenza all' acido
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.jSH5a5NALT6v8E6H
+    description: ''
+    _id: yytTlDHlrGRIWR21
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.yytTlDHlrGRIWR21'
+  - type: document
+    weight: 1
+    range:
+      - 111
+      - 111
+    name: Rune - IV Trappola superiore
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.jfGVhTT1diGxg3LR
+    description: ''
+    _id: S2l2CMNPxXfptRxh
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.S2l2CMNPxXfptRxh'
+  - type: document
+    weight: 1
+    range:
+      - 112
+      - 112
+    name: Illusione - I Immagine Speculare
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.kMn8UGS6YtugQVi2
+    description: ''
+    _id: fuYdiGXrAatV13Q7
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.fuYdiGXrAatV13Q7'
+  - type: document
+    weight: 1
+    range:
+      - 113
+      - 113
+    name: Indole - Equilibrio - II Occhio per occhio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ku6axOQVWmkXgyAV
+    description: ''
+    _id: Ie3I82Xhq3nzB6nr
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Ie3I82Xhq3nzB6nr'
+  - type: document
+    weight: 1
+    range:
+      - 114
+      - 114
+    name: Illusione - II Immagine illusoria
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.lRyyrm32BmBH05OM
+    description: ''
+    _id: kxUV8pEdFWkFGNuD
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.kxUV8pEdFWkFGNuD'
+  - type: document
+    weight: 1
+    range:
+      - 115
+      - 115
+    name: Indole - Caos - I Punire la legge
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.leMppxqSJDUNxpuo
+    description: ''
+    _id: ZAjlQC2REFFpbptl
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.ZAjlQC2REFFpbptl'
+  - type: document
+    weight: 1
+    range:
+      - 116
+      - 116
+    name: Vegetale - II Spore velenose
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.lgjVKvYLB62C5OyL
+    description: ''
+    _id: JX93RIyZdoSoI4n0
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.JX93RIyZdoSoI4n0'
+  - type: document
+    weight: 1
+    range:
+      - 117
+      - 117
+    name: Indole - Legge - II Di Fronte alla legge
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.lrvqjBpUmos0t4HB
+    description: ''
+    _id: nssrMcIVwVlKIdLI
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.nssrMcIVwVlKIdLI'
+  - type: document
+    weight: 1
+    range:
+      - 118
+      - 118
+    name: Elementale - Acqua - IV Tsunami
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.luMwwiXjCbV7zV2k
+    description: ''
+    _id: rFvZDfiYMTO4eQ4T
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.rFvZDfiYMTO4eQ4T'
+  - type: document
+    weight: 1
+    range:
+      - 119
+      - 119
+    name: Conoscenze - IV Identificare artefatti
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.lx6FGweyivwXnUS4
+    description: ''
+    _id: NHI2IJaZDfmJyAWn
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.NHI2IJaZDfmJyAWn'
+  - type: document
+    weight: 1
+    range:
+      - 120
+      - 120
+    name: Ammaliamento - III Comando
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.mIMKFBYf3Wjdz2DU
+    description: ''
+    _id: zKBBx0CbIlz9Yuwn
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.zKBBx0CbIlz9Yuwn'
+  - type: document
+    weight: 1
+    range:
+      - 121
+      - 121
+    name: Indole - Male - IV Cerchio contro il bene
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.mTJvyuuhZr9wORuu
+    description: ''
+    _id: MNXN3Be50jEMYYVn
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.MNXN3Be50jEMYYVn'
+  - type: document
+    weight: 1
+    range:
+      - 122
+      - 122
+    name: Visione - III Epurare invisibilità
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.mrBJcZlqf2AXWfnU
+    description: ''
+    _id: WSfhS2kG4CvwmW06
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.WSfhS2kG4CvwmW06'
+  - type: document
+    weight: 1
+    range:
+      - 123
+      - 123
+    name: Morte - II Prosciugare
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.nJFSR7YDdiC5aI5F
+    description: ''
+    _id: viD4ywdB26Lpd18K
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.viD4ywdB26Lpd18K'
+  - type: document
+    weight: 1
+    range:
+      - 124
+      - 124
+    name: Viaggio - IV Camminare nel vento
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ntMeWTWn23Z87hdD
+    description: ''
+    _id: OzdCniPLNxWMTK2G
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.OzdCniPLNxWMTK2G'
+  - type: document
+    weight: 1
+    range:
+      - 125
+      - 125
+    name: Linguaggi - IV Parlare con il morto
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.oClFfv4HOgXgbk6u
+    description: ''
+    _id: xsGwhGwAP3ZG4E0l
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.xsGwhGwAP3ZG4E0l'
+  - type: document
+    weight: 1
+    range:
+      - 126
+      - 126
+    name: Trasmutazione - IV Reggia meravigliosa
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.oHTmpHJrU8hzVEv7
+    description: ''
+    _id: piDMny5UvcKt07dl
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.piDMny5UvcKt07dl'
+  - type: document
+    weight: 1
+    range:
+      - 127
+      - 127
+    name: Elementale - Acqua - III Tempesta di ghiaccio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.omCX4zDN753iGPNr
+    description: ''
+    _id: kbycKqOUCcpnwg4s
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.kbycKqOUCcpnwg4s'
+  - type: document
+    weight: 1
+    range:
+      - 128
+      - 128
+    name: Indole - Equilibrio - III Retaggio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.on4EicWu0uubdb5o
+    description: ''
+    _id: cYy4eQmMZR8yHtor
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.cYy4eQmMZR8yHtor'
+  - type: document
+    weight: 1
+    range:
+      - 129
+      - 129
+    name: Oscurità - II Oscurità magica
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.oqWkBcoDNbdIj4ya
+    description: ''
+    _id: bOmBFXnI038QHGIW
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.bOmBFXnI038QHGIW'
+  - type: document
+    weight: 1
+    range:
+      - 130
+      - 130
+    name: Indole - Bene - IV Cerchio contro il male
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.pRLjX4jdslpxXHfR
+    description: ''
+    _id: 9jxayBk4UCFMnGQg
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.9jxayBk4UCFMnGQg'
+  - type: document
+    weight: 1
+    range:
+      - 131
+      - 131
+    name: Visione - I Scurovisione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.pyO4ExVqT7vRaBeK
+    description: ''
+    _id: JbLdTssX3yxerW8y
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.JbLdTssX3yxerW8y'
+  - type: document
+    weight: 1
+    range:
+      - 132
+      - 132
+    name: Linguaggi - I Parlare con i morti
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.qFvbYLTi3t2C0iD0
+    description: ''
+    _id: zkQrzR6VAHgXNg33
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.zkQrzR6VAHgXNg33'
+  - type: document
+    weight: 1
+    range:
+      - 133
+      - 133
+    name: Tempo - I Tempo atmosferico
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.qRyiUS9gGHy4Op9X
+    description: ''
+    _id: lkvGxzPGGF6O0Wh1
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.lkvGxzPGGF6O0Wh1'
+  - type: document
+    weight: 1
+    range:
+      - 134
+      - 134
+    name: Luce - IV Cecitá
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.rN03o7ursWpEHlNN
+    description: ''
+    _id: YwIrc0jQECw0cDdN
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.YwIrc0jQECw0cDdN'
+  - type: document
+    weight: 1
+    range:
+      - 135
+      - 135
+    name: Guarigione - I Cura ferite
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.sqqxalQvLW3iSebG
+    description: ''
+    _id: Z9HfChHw0fsViS7J
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Z9HfChHw0fsViS7J'
+  - type: document
+    weight: 1
+    range:
+      - 136
+      - 136
+    name: Morte - IV Alito di morte
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.tiDoC5PMgbOgfgIa
+    description: ''
+    _id: u9RRuEAHSzB9z99d
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.u9RRuEAHSzB9z99d'
+  - type: document
+    weight: 1
+    range:
+      - 137
+      - 137
+    name: Indole - Equilibrio - IV Cerchio contro l' equilibrio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.u60tRTInSsCwthRj
+    description: ''
+    _id: H71obDf5BWzPoyYq
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.H71obDf5BWzPoyYq'
+  - type: document
+    weight: 1
+    range:
+      - 138
+      - 138
+    name: Fato - II Cambia bersaglio
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ucedLMom9HNyIar6
+    description: ''
+    _id: SUqF9Is5BBfrEneU
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.SUqF9Is5BBfrEneU'
+  - type: document
+    weight: 1
+    range:
+      - 139
+      - 139
+    name: Morte - IV Interdizione alla morte
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.ukjoDdLQ3EG8YG8X
+    description: ''
+    _id: wNYphpUsRqvfZZEI
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.wNYphpUsRqvfZZEI'
+  - type: document
+    weight: 1
+    range:
+      - 140
+      - 140
+    name: Ammaliamento - II Charme
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.uqJljByAKFAlnI2Z
+    description: ''
+    _id: LvWjdtTHzSLd1KHb
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.LvWjdtTHzSLd1KHb'
+  - type: document
+    weight: 1
+    range:
+      - 141
+      - 141
+    name: Divinazione - III Domanda divina
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.v1p3CqaMjGn4032X
+    description: ''
+    _id: EsDvcvvMo21wPmK6
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.EsDvcvvMo21wPmK6'
+  - type: document
+    weight: 1
+    range:
+      - 142
+      - 142
+    name: Rune - II Segno di protezione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.vDxv1Amvg7xs2cM4
+    description: ''
+    _id: U6thtxRJcpinmNQB
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.U6thtxRJcpinmNQB'
+  - type: document
+    weight: 1
+    range:
+      - 143
+      - 143
+    name: Negromanzia - IV Rigenerazione
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.vSGeP4nrgzmoixcw
+    description: ''
+    _id: A3KoYW63vaF6icSp
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.A3KoYW63vaF6icSp'
+  - type: document
+    weight: 1
+    range:
+      - 144
+      - 144
+    name: Indole - Legge - III Dettame
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.vj2MXWRP76IF9gdQ
+    description: ''
+    _id: iNe9N8K0TwHZukpt
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.iNe9N8K0TwHZukpt'
+  - type: document
+    weight: 1
+    range:
+      - 145
+      - 145
+    name: Vegetale - IV Aiuto della natura
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.vtmeYf3FxtbUlc8k
+    description: ''
+    _id: fC33xqtb3f5xVgvf
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.fC33xqtb3f5xVgvf'
+  - type: document
+    weight: 1
+    range:
+      - 146
+      - 146
+    name: Conoscenze - IV Dissolvi magie superiori
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.wQp0B9jxS1XQQ9oi
+    description: ''
+    _id: 1PoQpyrDSdhIUujs
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.1PoQpyrDSdhIUujs'
+  - type: document
+    weight: 1
+    range:
+      - 147
+      - 147
+    name: Guerra - III Titano
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.wnw46cRzlPWbO5PV
+    description: ''
+    _id: PkYTUAROCJPcjoVU
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.PkYTUAROCJPcjoVU'
+  - type: document
+    weight: 1
+    range:
+      - 148
+      - 148
+    name: Evocazione - Non Morte - I Evoca scheletro
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.x2Wn2yyZzfuS67r5
+    description: ''
+    _id: jGfdMKDqpuI4hlbK
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.jGfdMKDqpuI4hlbK'
+  - type: document
+    weight: 1
+    range:
+      - 149
+      - 149
+    name: Luce - II Luce abbagliante
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.x6dRKlegqwmp0dh9
+    description: ''
+    _id: gX1vRbWDExdP71vg
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.gX1vRbWDExdP71vg'
+  - type: document
+    weight: 1
+    range:
+      - 150
+      - 150
+    name: Visione - IV Visione del vero
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.x77FS5eTPPTlfvqU
+    description: ''
+    _id: ZATae6RXNLQe6mB1
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.ZATae6RXNLQe6mB1'
+  - type: document
+    weight: 1
+    range:
+      - 151
+      - 151
+    name: Guerra - IV Vendetta della furia
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.x96WvKX2sEQHJjJZ
+    description: ''
+    _id: Xsa4pZulNhBQeSck
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Xsa4pZulNhBQeSck'
+  - type: document
+    weight: 1
+    range:
+      - 152
+      - 152
+    name: Tempo - IV Bloccare il tempo
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.xSeI7UXUOy20nx4U
+    description: ''
+    _id: adrSHez7C6zqSNPD
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.adrSHez7C6zqSNPD'
+  - type: document
+    weight: 1
+    range:
+      - 153
+      - 153
+    name: Forza - IV Permanenza
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.xipmns7LBQ3k3HuG
+    description: ''
+    _id: n33rxsA0G0OytWn3
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.n33rxsA0G0OytWn3'
+  - type: document
+    weight: 1
+    range:
+      - 154
+      - 154
+    name: Guarigione - II Rimuovi status
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.yYPcGqpad7uxCLlo
+    description: ''
+    _id: Wtw2Fz7f543qYXLF
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.Wtw2Fz7f543qYXLF'
+  - type: document
+    weight: 1
+    range:
+      - 155
+      - 155
+    name: Elementale - Aria - I Scintilla
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.zTe8Bxq5Rc3lrrCo
+    description: ''
+    _id: j4Zx7BqWvMQtadrq
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.j4Zx7BqWvMQtadrq'
+  - type: document
+    weight: 1
+    range:
+      - 156
+      - 156
+    name: Protezione - II Salvezza
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.zV19MhRi8xVJBGWq
+    description: ''
+    _id: I2GBW7AIw7kP1Wav
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.I2GBW7AIw7kP1Wav'
+  - type: document
+    weight: 1
+    range:
+      - 157
+      - 157
+    name: Guarigione - IV Alito di vita
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.zbZ8urPD9fwpHNeR
+    description: ''
+    _id: DDHG5wxnSsEY2NqZ
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.DDHG5wxnSsEY2NqZ'
+  - type: document
+    weight: 1
+    range:
+      - 158
+      - 158
+    name: Visione - II Vedere invisibile
+    documentUuid: Compendium.fvtt-warhero.poteri.Item.zdi9q4TiPn7KSSOZ
+    description: ''
+    _id: GlvWq0P0EIRTrF3k
+    img: systems/fvtt-warhero/images/icons/burning-meteor.svg
+    drawn: false
+    flags: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.19
+      createdTime: 1780675904246
+      modifiedTime: 1780675904246
+      lastModifiedBy: guOwSDi78TuzUGFU
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!tables.results!nNAMhPYZVW2S6OWn.GlvWq0P0EIRTrF3k'
+_id: nNAMhPYZVW2S6OWn
+img: icons/svg/d20-grey.svg
+description: ''
+replacement: true
+displayRoll: true
+folder: null
+ownership:
+  default: 0
+  guOwSDi78TuzUGFU: 3
+flags: {}
+_stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.19
+  createdTime: 1780675904246
+  modifiedTime: 1780675904293
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 200000
+_key: '!tables!nNAMhPYZVW2S6OWn'
