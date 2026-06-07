@@ -31,7 +31,7 @@
                 class="sheet-competence-img" src="{{skill.img}}" /></a>
             <span class="item-name-label-long">{{skill.name}}</a></span>
 
-            <span class="item-field-label-medium">N/A</span>
+            <span class="item-field-label-medium">{{skill.system.acquiredatlevel}}</span>
 
             {{#if skill.system.unlimited}}
             <span class="item-field-label-medium">N/A</span>
@@ -77,7 +77,7 @@
                 class="sheet-competence-img" src="{{skill.img}}" /></a>
             <span class="item-name-label-long">{{skill.name}}</a></span>
 
-            <span class="item-field-label-medium">N/A</span>
+            <span class="item-field-label-medium">{{skill.system.acquiredatlevel}}</span>
             {{#if skill.system.unlimited}}
             <span class="item-field-label-medium">N/A</span>
             <span class="item-field-label-medium">N/A</span>

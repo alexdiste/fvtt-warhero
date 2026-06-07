@@ -432,13 +432,6 @@
   font-size: 0.8rem;
 }
 
-/*--se metto questa classe la chat si rompe. Prende altezza fissa anche quella invece di adattarsi al contenuto. Da capire meglio--
-.editor {
-  border: 2;
-  height: 300px;
-  padding: 0 3px;
-}*/
-
 /* Usiamo il punto per la classe e limitiamo il raggio d'azione alla tua scheda */
 form .form-group.editor {
   border: 2px solid #ccc; /* Aggiungi 'solid' o il tipo di bordo, '2' da solo spesso non funziona */
@@ -569,13 +562,11 @@ form .form-group.editor {
 }
 
 
-.plus-minus-button:hover{
+.plus-minus-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
 }
 
-.plus-minus-button:active
-/*,.chat-card-button:active */
-{
+.plus-minus-button:active {
   position: relative;
   top: 1px;
 }
