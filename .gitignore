@@ -5,6 +5,7 @@ node_modules/
 dist/
 
 # File di configurazione locale (opzionali da ignorare)
+.continue/
 .vscode/
 localscripts/
 docs/

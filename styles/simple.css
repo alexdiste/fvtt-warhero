@@ -2,12 +2,6 @@
   font-weight: bold;
 }
 
-.tabs .item.active,
-.blessures-list li ul li:first-child:hover,
-a:hover {
-  text-shadow: 1px 0px 0px #ff6600;
-}
-
 .rollable:hover,
 .rollable:focus {
   cursor: pointer;
@@ -445,6 +439,14 @@ a:hover {
   padding: 0 3px;
 }*/
 
+/* Usiamo il punto per la classe e limitiamo il raggio d'azione alla tua scheda */
+form .form-group.editor {
+  border: 2px solid #ccc; /* Aggiungi 'solid' o il tipo di bordo, '2' da solo spesso non funziona */
+  height: 300px;
+  padding: 0 3px;
+  overflow-y: auto; /* Utile per gestire il contenuto se supera l'altezza */
+}
+
 .fvtt-warhero .resource-label {
   font-weight: bold;
   text-transform: uppercase;
@@ -618,6 +620,6 @@ a:hover {
   color: black;
 }
 
-ems-title-bg-red {
+.items-title-bg-red {
   background: darkred;
 }
