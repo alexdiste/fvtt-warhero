@@ -16,7 +16,7 @@ command: |-
       // Rilascia il blocco configurando la proprietà 'locked' a false
       await pack.configure({ locked: false });
       unlockedCount++;
-      console.log(`Sbloccato il compendio: ${pack.collection}`);
+      //console.log(`Sbloccato il compendio: ${pack.collection}`);
     }
   }
 

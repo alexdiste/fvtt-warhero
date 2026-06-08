@@ -189,7 +189,7 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
     const li = $(event.target).parents(".item")
     let effectId = li.data("item-id")
     let effect = this.document.effects.get(effectId);
-    console.log("Deleting effect", this.document.effects, effect);
+    //console.log("Deleting effect", this.document.effects, effect);
     if (!effect) return;
     await effect.delete();
   }
@@ -198,7 +198,7 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
     const li = $(event.target).parents(".item")
     let effectId = li.data("item-id")
     let effect = this.document.effects.get(effectId);
-    console.log("Editing effect", this.document.effects, effect);
+    //console.log("Editing effect", this.document.effects, effect);
     if (!effect) return;
     effect.sheet.render(true);
   }

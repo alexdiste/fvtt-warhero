@@ -14,7 +14,7 @@ command: |-
     if (pack.metadata.packageType !== "world" && !pack.locked) {
       await pack.configure({ locked: true });
       lockedCount++;
-      console.log(`Bloccato il compendio di sistema/modulo: ${pack.collection}`);
+      //console.log(`Bloccato il compendio di sistema/modulo: ${pack.collection}`);
     }
   }
 

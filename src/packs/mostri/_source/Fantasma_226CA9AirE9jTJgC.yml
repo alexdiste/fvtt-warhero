@@ -1,15 +1,16 @@
-name: Zombie
+name: Fantasma
 type: character
+img: systems/dnd5e/tokens/undead/Ghost.webp
 items:
-  - name: Schianto
+  - name: Tocco fantasma
     type: weapon
     img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
     system:
-      weapontype: short
+      weapontype: special
       damage: 1d6
       damage2hands: 1d6
-      rollformula: ''
-      damageformula: ''
+      rollformula: 1d20+4
+      damageformula: 1d6+2
       cost: 0
       equipped: false
       quantity: 1
@@ -19,37 +20,160 @@ items:
       magiccharge: notapplicable
       chargevalue: 0
       chargevaluemax: 0
-      description: ''
+      description: >-
+        <p>1d6+2+risucchio<br>Risucchio: un fantasma quando colpisce un
+        bersaglio toglie 1 a FIS</p>
       isCustomAttackRoll: false
       attackbonus: 0
       damagebonus: 0
     effects: []
     flags:
       scene-packer:
-        hash: 8a663e95faedf211d749defbf09bea82548494c8
+        hash: 0b7b8d45a58aa42d45fa62ee2921013bdf6baa90
         sourceId: Item.wdqnHGHUqtvhlUyv
+      core: {}
+    _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.20
+      lastModifiedBy: guOwSDi78TuzUGFU
+      createdTime: 1780856166820
+      modifiedTime: 1780856166820
+      exportSource: null
+      compendiumSource: null
+      duplicateSource: null
+    folder: null
+    _id: TznbHnE79o7dDQWI
+    sort: 0
+    ownership:
+      default: 0
+    _key: '!actors.items!226CA9AirE9jTJgC.TznbHnE79o7dDQWI'
+  - name: Incorporeo
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Alcune creature (spettri, fantasmi...) sono inconsistenti, possono
+        essere danneggiati solo da altri esseri incorporei, da armi magiche,
+        elementali o da magie, effetti simili a poteri o effetti soprannaturali,
+        possono comunque manipolare oggetti o esercitare una forza fisica su
+        oggetti. Se colpita da un potere, armi magiche o elementali, una
+        creatura incorporea lancia 1d10 con 6+ ignorare qualsiasi danno da una
+        fonte corporea, tranne per la sfera di forza. Gli attacchi fisici di
+        creature incorporee ignorano l’armatura materiale, anche se magica, a
+        meno che non sia fatta di forza. Quindi non viene applicata la sua
+        riduzione del danno ovviamente se non stanno usando<br>armi. Le creature
+        incorporee non lasciano orme, non hanno profumo, e non fanno rumore a
+        meno che non si manifestino, e anche allora fanno rumore solo
+        intenzionalmente</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 7caf10a34a75321bb2f104f4ead3e2db107f9249
+        sourceId: Item.HKoxeCXqiwLIyOX7
       core: {}
     _stats:
       systemId: fvtt-warhero
       systemVersion: 14.86.20
       coreVersion: '14.363'
-      createdTime: 1780855511851
-      modifiedTime: 1780855511851
+      createdTime: 1780856166820
+      modifiedTime: 1780856166820
       lastModifiedBy: guOwSDi78TuzUGFU
       exportSource: null
       compendiumSource: null
       duplicateSource: null
     folder: null
-    sort: 0
+    sort: 5100000
     ownership:
       default: 0
       vvRutjambw1JfPoO: 3
-    _id: RUOaUFAG3nG9Fmzc
-    _key: '!actors.items!OOqBrVvvXur5Oa0M.RUOaUFAG3nG9Fmzc'
-img: systems/dnd5e/tokens/undead/Zombie.webp
+      guOwSDi78TuzUGFU: 3
+    _id: RIP8PGkXcoV5UTLG
+    _key: '!actors.items!226CA9AirE9jTJgC.RIP8PGkXcoV5UTLG'
+  - name: Volare (9 metri)
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: >-
+        <p>Una creatura con questa abilità può cessare o riprendere il volo come
+        mossa di movimento. Se l’abilità è soprannaturale, diventa inefficace in
+        un campo anti potere finché questo rimane attivo. Può terminare il
+        movimento in un quadrato già occupato</p>
+      maxuseFormula: '1'
+    effects: []
+    flags:
+      scene-packer:
+        hash: 9e95cc9ebf8cedc88b06eec76fffcaaf4213c8e9
+        sourceId: Item.VweNQKJ9g2v1K3FK
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 14.86.20
+      coreVersion: '14.363'
+      createdTime: 1780856166820
+      modifiedTime: 1780856166820
+      lastModifiedBy: guOwSDi78TuzUGFU
+      exportSource: null
+      compendiumSource: null
+      duplicateSource: null
+    folder: null
+    sort: 3200000
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+      guOwSDi78TuzUGFU: 3
+    _id: 5STrjcDTDMzU4zxT
+    _key: '!actors.items!226CA9AirE9jTJgC.5STrjcDTDMzU4zxT'
+  - name: Risucchio
+    type: skill
+    img: systems/fvtt-warhero/images/icons/spark-spirit.svg
+    system:
+      raceskill: false
+      classskill: false
+      unlimited: true
+      acquiredatlevel: 0
+      currentuse: 0
+      description: "<p>un fantasma quando colpisce un bersaglio toglie 1 a\_FIS</p>"
+      maxuseFormula: '1'
+    effects: []
+    folder: null
+    ownership:
+      default: 0
+      vvRutjambw1JfPoO: 3
+      guOwSDi78TuzUGFU: 3
+    flags:
+      scene-packer:
+        hash: e6a899c503c16d249c4e9409a5a471542436bd8a
+        sourceId: Item.r2mEpk3p4V9tJ5fX
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 14.86.20
+      coreVersion: '14.363'
+      createdTime: 1780856166820
+      modifiedTime: 1780856166820
+      lastModifiedBy: guOwSDi78TuzUGFU
+      exportSource: null
+      compendiumSource: null
+      duplicateSource: null
+    _id: D6YCQwhEUyNBdlnT
+    sort: 2300000
+    _key: '!actors.items!226CA9AirE9jTJgC.D6YCQwhEUyNBdlnT'
 system:
   biodata:
     class: ''
+    origin: ''
     age: 0
     size: medium
     weight: ''
@@ -62,16 +186,14 @@ system:
     description: ''
     notes: >-
       <p>Le creature evocate scompaiono quando muoiono o all'alba del giorno
-      seguente e non &egrave; possibile evocare pi&ugrave; di una creatura alla
-      volta. E&rsquo; necessario usare una mossa per far seguire le 2 mosse alla
-      propria evocazione. Usare pi&ugrave; di un colpo con una singola mossa
-      attacco si ottiene lo stessomalus come nell&rsquo;uso delle due armi. Le
-      evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12
-      +IST, il tempo di lancio di questi poteri &egrave; di 4 mosse consecutive.
-      E necessario usareuna mossa per poter far eseguire 2 mosse
-      all&rsquo;evocazione</p>
+      seguente e non è possibile evocare più di una creatura alla volta. E’
+      necessario usare una mossa per far seguire le 2 mosse alla propria
+      evocazione. Usare più di un colpo con una singola mossa attacco si ottiene
+      lo stesso malus come nell’ uso delle due armi. Le evocazioni hanno punti
+      ferita pari a 10 +(10*FIS) e una difesa pari a 12 +IST, il tempo di lancio
+      di questi poteri è di 4 mosse consecutive. E necessario usare una mossa
+      per poter far eseguire 2 mosse all’ evocazione</p>
     gmnotes: ''
-    origin: ''
   statistics:
     str:
       label: WH.ui.Strength
@@ -79,24 +201,24 @@ system:
       style: edit
       hassave: true
       roll: true
-      save: 4
-      value: 4
+      save: 2
+      value: 2
     dex:
       label: WH.ui.Dexterity
       abbrev: dex
       style: edit
       hassave: true
       roll: true
-      save: 1
-      value: 1
+      save: 4
+      value: 4
     min:
       label: WH.ui.Mind
       abbrev: min
       style: edit
       hassave: true
       roll: true
-      save: 0
-      value: 0
+      save: 4
+      value: 4
   attributes:
     hp:
       label: WH.ui.HitPoints
@@ -104,8 +226,8 @@ system:
       style: edit
       hasmax: true
       isheader: true
-      max: 50
-      value: 50
+      max: 60
+      value: 60
     knowledge:
       label: WH.ui.Knowledge
       abbrev: knowledge
@@ -113,14 +235,14 @@ system:
       hasmax: false
       roll: true
       max: 0
-      value: 0
+      value: 4
     def:
       label: WH.ui.Defence
       abbrev: def
       style: edit
       iscombat: true
       max: 12
-      value: 13
+      value: 16
     txcm:
       label: WH.ui.Throw2HitM
       abbrev: txcm
@@ -129,7 +251,7 @@ system:
       roll: true
       iscombat: true
       max: 0
-      value: 1
+      value: 4
     txcr:
       label: WH.ui.Throw2HitR
       abbrev: txcr
@@ -138,15 +260,15 @@ system:
       roll: true
       iscombat: true
       max: 0
-      value: 1
+      value: 4
     mana:
       label: WH.ui.Mana
       abbrev: pm
       style: edit
       hasmax: true
       isheader: true
-      max: 3
-      value: 3
+      max: 5
+      value: 5
     ini:
       label: WH.ui.Initiative
       abbrev: ini
@@ -154,7 +276,7 @@ system:
       iscombat: true
       roll: true
       max: 0
-      value: 1
+      value: 4
     movearth:
       label: WH.ui.Movement
       abbrev: mov
@@ -172,7 +294,7 @@ system:
       abbrev: mov
       style: edit
       max: 0
-      value: 0
+      value: 9
     temporaryhp:
       label: WH.ui.TemporaryHitPoints
       abbrev: thp
@@ -194,7 +316,7 @@ system:
       islevel: true
       style: edit
       value: 0
-      level: 0
+      level: 1
     malusmultiweapon:
       label: WH.ui.malusmultiweapon
       abbrev: malusmultiweapon
@@ -214,6 +336,12 @@ system:
       style: edit
       iscombat: true
       value: 0
+    percentbonus:
+      label: WH.ui.percentbonus
+      abbrev: percentbonus
+      style: edit
+      value: 0
+      rollD100: true
     meleedamagebonus:
       label: WH.ui.meleedamagebonus
       abbrev: meleedamagebonus
@@ -258,13 +386,7 @@ system:
       abbrev: nblanguage
       style: edit
       disabled: true
-      value: 0
-    percentbonus:
-      label: WH.ui.percentbonus
-      abbrev: percentbonus
-      style: edit
-      value: 0
-      rollD100: true
+      value: 2
     disarmbonus:
       label: WH.ui.disarmbonus
       abbrev: disarmbonus
@@ -284,20 +406,20 @@ system:
       style: edit
       value: 0
 prototypeToken:
-  name: Zombie
-  displayName: 30
+  name: Fantasma
+  displayName: 0
   actorLink: false
+  width: 1
+  height: 1
   texture:
-    src: systems/dnd5e/tokens/undead/Zombie.webp
-    scaleX: 1
-    scaleY: 1
-    tint: '#ffffff'
+    src: systems/dnd5e/tokens/undead/Specter.webp
     anchorX: 0.5
     anchorY: 0.5
     fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
     alphaThreshold: 0.75
-  width: 1
-  height: 1
   lockRotation: false
   rotation: 0
   alpha: 1
@@ -308,6 +430,8 @@ prototypeToken:
   bar2:
     attribute: attributes.mana
   light:
+    negative: false
+    priority: 0
     alpha: 0.5
     angle: 360
     bright: 0
@@ -327,8 +451,6 @@ prototypeToken:
     darkness:
       min: 0
       max: 1
-    negative: false
-    priority: 0
   sight:
     enabled: true
     range: 0
@@ -340,18 +462,6 @@ prototypeToken:
     saturation: 0
     contrast: 0
   detectionModes: {}
-  flags:
-    wall-height:
-      tokenHeight: 0
-    monks-tokenbar:
-      include: exclude
-    tagger: {}
-    core: {}
-    monks-enhanced-journal:
-      chatbubble: ''
-  randomImg: false
-  appendNumber: false
-  prependAdjective: false
   occludable:
     radius: 0
   ring:
@@ -369,27 +479,29 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
   depth: 1
 effects: []
-flags:
-  scene-packer:
-    hash: 92e1dbb852d73132fb10fbafc60d4092f7e10b31
-    sourceId: Actor.roXHQvBFh6YP3QPr
-  core: {}
+folder: null
+flags: {}
 _stats:
+  coreVersion: '14.363'
   systemId: fvtt-warhero
   systemVersion: 14.86.20
-  coreVersion: '14.363'
-  createdTime: 1780855511851
-  modifiedTime: 1780855511851
+  createdTime: 1780856166820
+  modifiedTime: 1780856166820
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null
   duplicateSource: null
-folder: null
 ownership:
   default: 0
   guOwSDi78TuzUGFU: 3
-_id: OOqBrVvvXur5Oa0M
+_id: 226CA9AirE9jTJgC
 sort: 0
-_key: '!actors!OOqBrVvvXur5Oa0M'
+_key: '!actors!226CA9AirE9jTJgC'

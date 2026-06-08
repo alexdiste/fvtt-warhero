@@ -1,7 +1,7 @@
 name: Copia oggetti da scheda a item collection
 type: script
 command: >-
-  const uuid = "Actor.dBMyAq4pZodFcjgb.Item.qdkj8rCGJIndYHJX"; // ← Il tuo UUID
+  const uuid = "Actor.j3EFz1R0foElqyic.Item.bx9QNqGNUYtnfIms"; // ← Il tuo UUID
 
 
   // Recupera l'oggetto dall'UUID
@@ -38,7 +38,7 @@ _stats:
   systemId: fvtt-warhero
   systemVersion: 14.80.5
   createdTime: 1778941206023
-  modifiedTime: 1780753091826
+  modifiedTime: 1780814053712
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null

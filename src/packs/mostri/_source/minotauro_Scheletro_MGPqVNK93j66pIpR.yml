@@ -1,20 +1,20 @@
-name: Zombie
+name: minotauro Scheletro
 type: character
 items:
-  - name: Schianto
+  - name: Artigli
     type: weapon
     img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
     system:
       weapontype: short
-      damage: 1d6
+      damage: 1d4
       damage2hands: 1d6
       rollformula: ''
       damageformula: ''
       cost: 0
       equipped: false
       quantity: 1
-      slotused: 0
-      slotlocation: weapon1
+      slotused: 1
+      slotlocation: weapon2
       isidentified: notapplicable
       magiccharge: notapplicable
       chargevalue: 0
@@ -24,34 +24,33 @@ items:
       attackbonus: 0
       damagebonus: 0
     effects: []
-    flags:
-      scene-packer:
-        hash: 8a663e95faedf211d749defbf09bea82548494c8
-        sourceId: Item.wdqnHGHUqtvhlUyv
-      core: {}
-    _stats:
-      systemId: fvtt-warhero
-      systemVersion: 14.86.20
-      coreVersion: '14.363'
-      createdTime: 1780855511851
-      modifiedTime: 1780855511851
-      lastModifiedBy: guOwSDi78TuzUGFU
-      exportSource: null
-      compendiumSource: null
-      duplicateSource: null
     folder: null
     sort: 0
     ownership:
       default: 0
       vvRutjambw1JfPoO: 3
-    _id: RUOaUFAG3nG9Fmzc
-    _key: '!actors.items!OOqBrVvvXur5Oa0M.RUOaUFAG3nG9Fmzc'
-img: systems/dnd5e/tokens/undead/Zombie.webp
+    flags:
+      scene-packer:
+        hash: 06c4aeb8964abc03723a5bfba006243837b00dbe
+      core: {}
+    _stats:
+      systemId: fvtt-warhero
+      systemVersion: 14.86.20
+      coreVersion: '14.363'
+      createdTime: 1780856223529
+      modifiedTime: 1780856223529
+      lastModifiedBy: guOwSDi78TuzUGFU
+      exportSource: null
+      compendiumSource: null
+      duplicateSource: null
+    _id: elk5NwuYVtY8Dxil
+    _key: '!actors.items!MGPqVNK93j66pIpR.elk5NwuYVtY8Dxil'
+img: systems/dnd5e/tokens/undead/MinotaurSkeleton.webp
 system:
   biodata:
     class: ''
     age: 0
-    size: medium
+    size: large
     weight: ''
     height: ''
     hair: ''
@@ -79,16 +78,16 @@ system:
       style: edit
       hassave: true
       roll: true
-      save: 4
-      value: 4
+      save: 2
+      value: 2
     dex:
       label: WH.ui.Dexterity
       abbrev: dex
       style: edit
       hassave: true
       roll: true
-      save: 1
-      value: 1
+      save: 2
+      value: 2
     min:
       label: WH.ui.Mind
       abbrev: min
@@ -104,8 +103,8 @@ system:
       style: edit
       hasmax: true
       isheader: true
-      max: 50
-      value: 50
+      max: 30
+      value: 30
     knowledge:
       label: WH.ui.Knowledge
       abbrev: knowledge
@@ -113,14 +112,14 @@ system:
       hasmax: false
       roll: true
       max: 0
-      value: 0
+      value: 2
     def:
       label: WH.ui.Defence
       abbrev: def
       style: edit
       iscombat: true
       max: 12
-      value: 13
+      value: 14
     txcm:
       label: WH.ui.Throw2HitM
       abbrev: txcm
@@ -129,7 +128,7 @@ system:
       roll: true
       iscombat: true
       max: 0
-      value: 1
+      value: 0
     txcr:
       label: WH.ui.Throw2HitR
       abbrev: txcr
@@ -138,7 +137,7 @@ system:
       roll: true
       iscombat: true
       max: 0
-      value: 1
+      value: 0
     mana:
       label: WH.ui.Mana
       abbrev: pm
@@ -154,7 +153,7 @@ system:
       iscombat: true
       roll: true
       max: 0
-      value: 1
+      value: 0
     movearth:
       label: WH.ui.Movement
       abbrev: mov
@@ -194,7 +193,7 @@ system:
       islevel: true
       style: edit
       value: 0
-      level: 0
+      level: 1
     malusmultiweapon:
       label: WH.ui.malusmultiweapon
       abbrev: malusmultiweapon
@@ -284,11 +283,11 @@ system:
       style: edit
       value: 0
 prototypeToken:
-  name: Zombie
+  name: Minotauro Scheletro
   displayName: 30
   actorLink: false
   texture:
-    src: systems/dnd5e/tokens/undead/Zombie.webp
+    src: systems/dnd5e/tokens/undead/MinotaurSkeleton.webp
     scaleX: 1
     scaleY: 1
     tint: '#ffffff'
@@ -296,8 +295,8 @@ prototypeToken:
     anchorY: 0.5
     fit: contain
     alphaThreshold: 0.75
-  width: 1
-  height: 1
+  width: 2
+  height: 2
   lockRotation: false
   rotation: 0
   alpha: 1
@@ -380,8 +379,8 @@ _stats:
   systemId: fvtt-warhero
   systemVersion: 14.86.20
   coreVersion: '14.363'
-  createdTime: 1780855511851
-  modifiedTime: 1780855511851
+  createdTime: 1780856223529
+  modifiedTime: 1780856223529
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null
@@ -390,6 +389,6 @@ folder: null
 ownership:
   default: 0
   guOwSDi78TuzUGFU: 3
-_id: OOqBrVvvXur5Oa0M
+_id: MGPqVNK93j66pIpR
 sort: 0
-_key: '!actors!OOqBrVvvXur5Oa0M'
+_key: '!actors!MGPqVNK93j66pIpR'

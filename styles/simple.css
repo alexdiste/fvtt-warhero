@@ -17,106 +17,6 @@
   padding: 0;
 }
 
-.grid-3col {
-  grid-column: span 3 / span 3;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-4col {
-  grid-column: span 4 / span 4;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-5col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-6col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-7col {
-  grid-column: span 7 / span 7;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-8col {
-  grid-column: span 8 / span 8;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.grid-9col {
-  grid-column: span 9 / span 9;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-
-.grid-10col {
-  grid-column: span 10 / span 10;
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-}
-
-.grid-11col {
-  grid-column: span 11 / span 11;
-  grid-template-columns: repeat(11, minmax(0, 1fr));
-}
-
-.grid-12col {
-  grid-column: span 12 / span 12;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.flex-group-center,
-.flex-group-left,
-.flex-group-right {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  padding: 5px;
-}
-
-.flex-group-left {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.flex-group-right {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.flex-center {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.table-create-actor {
-  font-size: 0.8rem;
-}
-
-.flex-between {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.flex-shrink {
-  flex: 'flex-shrink';
-}
 
 /* Spefic styles for Warhero */
 .fvtt-warhero .sheet-header {
@@ -214,15 +114,6 @@
 }
 
 
-.warhero-chat-message-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 4px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 4px;
-}
-
-
 .item-name-label-header-long h3,
 .item-name-label-header h3 {
   margin: 0;
@@ -232,31 +123,12 @@
   align-self: center;
 }
 
-.item-field-label-2rem {
-  text-align: center;
-}
-
 .item-field-label-race {
   text-align: center;
   min-width: 8rem;
   max-width: 8rem;
 }
 
-.item-field-label-slots-used {
-  text-align: center;
-  min-width: 6.2rem;
-  max-width: 6.2rem;
-}
-
-.actor-magic-stat-header {
-  max-width: 12rem;
-  min-width: 12rem;
-}
-
-.description-title {
-  margin-top: 12px;
-  font-weight: bold;
-}
 
 .warhero-location-overflow {
   background-color: #3e0101;
@@ -303,16 +175,6 @@
   max-width: 8rem;
 }
 
-.actor-skill-title1 {
-  min-width: 16rem;
-  max-width: 16rem;
-}
-
-.condition-effect-label {
-  min-width: 13.2rem;
-  max-width: 13.2rem;
-}
-
 .item-name-label-long {
   min-width: 14rem;
   max-width: 14rem;
@@ -351,6 +213,14 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.warhero-chat-message-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
 }
 
 .warhero-chat-message-body {
@@ -393,13 +263,6 @@
   border-width: 0;
 }
 
-.small-button-container {
-  height: 16px;
-  width: 16px;
-  border: 0;
-  vertical-align: bottom;
-}
-
 .fvtt-warhero .sheet-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -432,12 +295,11 @@
   font-size: 0.8rem;
 }
 
-/* Usiamo il punto per la classe e limitiamo il raggio d'azione alla tua scheda */
 form .form-group.editor {
-  border: 2px solid #ccc; /* Aggiungi 'solid' o il tipo di bordo, '2' da solo spesso non funziona */
+  border: 2px solid #ccc;
   height: 300px;
   padding: 0 3px;
-  overflow-y: auto; /* Utile per gestire il contenuto se supera l'altezza */
+  overflow-y: auto;
 }
 
 .fvtt-warhero .resource-label {
@@ -510,21 +372,6 @@ form .form-group.editor {
   margin-right: 0.25rem;
 }
 
-.competence-column {
-  flex-direction: column;
-  align-content: flex-start;
-  justify-content: flex-start;
-  flex-grow: 0;
-  flex-basis: 1;
-}
-
-.competence-header {
-  align-content: flex-start;
-  justify-content: flex-start;
-  font-weight: bold;
-  flex-grow: 0;
-}
-
 .crit-success {
   color: darkgreen;
 }
@@ -533,26 +380,23 @@ form .form-group.editor {
   color: darkred;
 }
 
-.plus-minus {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
 .fvtt-warhero .tabs .item.active {
   text-decoration: underline;
   text-shadow: none;
 }
 
+.plus-minus {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
 .plus-minus-button {
-  box-shadow: inset 0px 1px 0px 0px #a6827e;
-  /*background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);*/
-  background: gray;
-  /*background-color: #7d5d3b00;*/
+  box-shadow: inset 0px 1px 0px 0px #a6827e;  
+  background: gray;  
   border-radius: 2px;
   border: 1px ridge;
   display: inline-block;
   cursor: pointer;
-  /*color: #ffffff;*/
   margin: 2px 2px 2px 2px;
   padding: 2px 2px 2px 2px;
   text-decoration: none;
@@ -560,7 +404,6 @@ form .form-group.editor {
   position: relative;
   margin: 0px;
 }
-
 
 .plus-minus-button:hover {
   background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
@@ -571,40 +414,6 @@ form .form-group.editor {
   top: 1px;
 }
 
-.plus-minus {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.drop-equipment-effect,
-.drop-power-effect,
-.drop-perk-effect,
-.drop-ability-effect,
-.drop-effect-specaffected,
-.drop-effect-spec,
-.drop-ability-weapon,
-.drop-ability-armor,
-.drop-race-perk,
-.drop-spec-perk,
-.drop-ability-power,
-.drop-ability-spec,
-.drop-spec-power,
-.drop-specialability,
-.drop-abilities,
-.drop-optionnal-abilities,
-.drop-virtue-vice-effect,
-.drop-virtue-vice,
-.drop-vice-virtue,
-.drop-specialperk1,
-.drop-perk2,
-.drop-spec1,
-.drop-spec2 {
-  background: linear-gradient(to bottom, #6c95b9fc 5%, #105177ab 100%);
-  border-radius: 3px;
-  border: 2px ridge;
-}
-
-
 .items-title-bg {
   margin-top: 6px;
   background: gray;
@@ -613,4 +422,11 @@ form .form-group.editor {
 
 .items-title-bg-red {
   background: darkred;
+}
+
+.editor .item-text-long-line {
+  border: 2px solid #ccc;
+  height: 500px;
+  padding: 0 3px;
+  overflow-y: auto;
 }

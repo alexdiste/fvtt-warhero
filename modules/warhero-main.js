@@ -10,8 +10,6 @@ import { WarheroActor } from "./warhero-actor.js";
 import { WarheroUtility } from "./warhero-utility.js";
 import { WarheroCombat } from "./warhero-combat.js";
 import { WarheroItem } from "./warhero-item.js";
-import { WarheroHotbar } from "./warhero-hotbar.js"
-// ...existing code...
 import { WARHERO_CONFIG } from "./warhero-config.js"
 
 // Import Data Models
@@ -37,7 +35,6 @@ Hooks.once("init", async function () {
 
   game.system.warhero = {
     WarheroUtility,
-    WarheroHotbar,
     config: WARHERO_CONFIG
   }
 

@@ -546,7 +546,7 @@
     {
       "label": "macro",
       "type": "Macro",
-      "name": "acro",
+      "name": "macro",
       "path": "packs/macro",
       "system": "fvtt-warhero",
       "flags": {},
@@ -570,7 +570,7 @@
     {
       "label": "tabelle",
       "type": "RollTable",
-      "name": "Tabelle",
+      "name": "tabelle",
       "path": "packs/tabelle",
       "system": "fvtt-warhero",
       "flags": {},

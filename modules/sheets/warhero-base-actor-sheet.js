@@ -160,7 +160,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   _onDragOver(event) { }
 
   async _onDropItem(item) {
-    console.log("Dropped item", item)
+    //console.log("Dropped item", item)
     let itemData = item.toObject()
     await this.document.createEmbeddedDocuments("Item", [itemData], { renderSheet: false })
   }

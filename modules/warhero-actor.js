@@ -47,14 +47,12 @@ export class WarheroActor extends Actor {
   /**
    * Prepara i dati derivati dell'attore. Non deve mai chiamare this.update()!
    * Tutti i campi calcolati vanno assegnati direttamente a this.system.*
-   * Funziona sia su Foundry V10+ che V14.
    */
   prepareDerivedData() {
     super.prepareDerivedData();
 
     // Solo per personaggi o GM
     if (this.type == 'character' || game.user.isGM) {
-      this.computeHitPoints();
       this.setLevel();
       this.computeDRTotal();
       this.computeParryBonusTotal();
@@ -63,12 +61,6 @@ export class WarheroActor extends Actor {
     // Chiamata DOPO che tutti i dati sono stati preparati
     if (this.type == 'character' || game.user.isGM) {
       this.computeBonusLanguages();
-    }
-  }
-
-  /* -------------------------------------------- */
-  computeHitPoints() {
-    if (this.type == "character") {
     }
   }
 
@@ -383,13 +375,6 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  getRelevantAbility(statKey) {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'skill' && item.system.ability == ability) || []);
-    return comp;
-  }
-
-
-  /* -------------------------------------------- */
   async equipItem(itemId) {
     let item = this.items.find(item => item.id == itemId)
     if (item && item.system) {
@@ -408,7 +393,7 @@ export class WarheroActor extends Actor {
         }
       }
       let update = { _id: item.id, "system.equipped": !item.system.equipped };
-      console.log("[DEBUG] equipItem updateEmbeddedDocuments", update);
+      //console.log("[DEBUG] equipItem updateEmbeddedDocuments", update);
       await this.updateEmbeddedDocuments('Item', [update]); // Updates one EmbeddedEntity
     }
   }
@@ -434,31 +419,6 @@ export class WarheroActor extends Actor {
   /* ------------------------------------------- */
   getEquipmentsOnly() {
     return foundry.utils.duplicate(this.items.filter(item => item.type == "equipment") || [])
-  }
-
-  /* ------------------------------------------- */
-  /**
-   * Return an object whose keys match the statistic keys used on the sheet
-   * ("str","dex","min").  Each entry contains the save bonus configured
-   * on the statistic.  This keeps the logic decoupled from earlier
-   * implementations that derived saves from unrelated ability scores.
-   */
-  getSaveRoll() {
-    const stats = this.system?.statistics || {};
-    return {
-      str: {
-        label: "Fortitude Save",
-        value: stats.str?.save || 0
-      },
-      dex: {
-        label: "Reflex Save",
-        value: stats.dex?.save || 0
-      },
-      min: {
-        label: "Willpower Save",
-        value: stats.min?.save || 0
-      }
-    };
   }
 
   /* ------------------------------------------- */
@@ -546,12 +506,6 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  getAbility(abilKey) {
-    // return a safe object even if abilities are missing
-    return (this.system?.abilities || {})[abilKey] || { value: 0 };
-  }
-
-  /* -------------------------------------------- */
   async addObjectToContainer(itemId, containerId) {
     let container = this.items.find(item => item.id == containerId && item.system.iscontainer)
     let object = this.items.find(item => item.id == itemId)
@@ -631,7 +585,7 @@ export class WarheroActor extends Actor {
     let skill = this.items.get(skillId)
     if (skill) {
       let update = { _id: skill.id, 'system.exp': skill.system.exp + inc };
-      console.log("[DEBUG] incrementSkillExp updateEmbeddedDocuments", update);
+      //console.log("[DEBUG] incrementSkillExp updateEmbeddedDocuments", update);
       await this.updateEmbeddedDocuments('Item', [update])
       let chatData = {
         user: game.user.id,
@@ -672,11 +626,11 @@ export class WarheroActor extends Actor {
     if (applyArmorReduction) {
       const drbonustotal = this.system?.secondary?.drbonustotal?.value || 0;
       finalDamage = Math.max(1, damageAmount - drbonustotal);
-      console.log('[DEBUG] applyDamage with armor reduction', {
+      /*console.log('[DEBUG] applyDamage with armor reduction', {
         originalDamage: damageAmount,
         damageReduction: drbonustotal,
         finalDamage: finalDamage
-      });
+      });*/
     }
 
     let currentTemporaryHP = this.system.attributes.temporaryhp?.value || 0;
@@ -705,7 +659,7 @@ export class WarheroActor extends Actor {
       'system.attributes.hp.value': currentHP
     };
 
-    console.log('[DEBUG] applyDamage', {
+    /*console.log('[DEBUG] applyDamage', {
       originalDamageAmount: damageAmount,
       finalDamage: finalDamage,
       applyArmorReduction: applyArmorReduction,
@@ -716,6 +670,7 @@ export class WarheroActor extends Actor {
       newTempHP: updates['system.attributes.temporaryhp.value'],
       newHP: updates['system.attributes.hp.value']
     });
+    */
 
     await this.update(updates);
 
@@ -751,11 +706,12 @@ export class WarheroActor extends Actor {
       'system.attributes.temporaryhp.value': newTemporaryHP
     };
 
-    console.log('[DEBUG] addTemporaryHP', {
+    /*console.log('[DEBUG] addTemporaryHP', {
       tempHPAmount,
       previousTempHP: currentTemporaryHP,
       newTempHP: newTemporaryHP
     });
+    */
 
     await this.update(updates);
 
@@ -784,7 +740,7 @@ export class WarheroActor extends Actor {
       "system.secondary.counterspell.nbuse": 0
     };
 
-    console.log('[DEBUG] update resetAllSkillUses', { updates });
+    //console.log('[DEBUG] update resetAllSkillUses', { updates });
     await this.update(updates);
 
     ChatMessage.create({
@@ -851,60 +807,17 @@ async resetAllSkillUses(askConfirmation = true) {
       let newQ = objetQ.system.quantity + incDec
       if (newQ >= 0) {
         let update = { _id: objetQ.id, 'system.quantity': newQ };
-        console.log("[DEBUG] incDecQuantity updateEmbeddedDocuments", update);
+        //console.log("[DEBUG] incDecQuantity updateEmbeddedDocuments", update);
         const updated = await this.updateEmbeddedDocuments('Item', [update]) // Updates one EmbeddedEntity
       }
     }
   }
   /* -------------------------------------------- */
-  async incDecAmmo(objetId, incDec = 0) {
-    let objetQ = this.items.get(objetId)
-    if (objetQ) {
-      let newQ = objetQ.system.ammocurrent + incDec;
-      if (newQ >= 0 && newQ <= objetQ.system.ammomax) {
-        let update = { _id: objetQ.id, 'system.ammocurrent': newQ };
-        console.log("[DEBUG] incDecAmmo updateEmbeddedDocuments", update);
-        const updated = await this.updateEmbeddedDocuments('Item', [update]); // Updates one EmbeddedEntity
-      }
-    }
-  }
-
-  /* -------------------------------------------- */
-  isForcedAdvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.advantage)
-  }
-  isForcedDisadvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.disadvantage)
-  }
-  isForcedRollAdvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.rolladvantage)
-  }
-  isForcedRollDisadvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.rolldisadvantage)
-  }
-  isNoAdvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.noadvantage)
-  }
-  isNoAction() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.noaction)
-  }
-  isAttackDisadvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.attackdisadvantage)
-  }
-  isDefenseDisadvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.defensedisadvantage)
-  }
-  isAttackerAdvantage() {
-    return this.items.find(cond => cond.type == "condition" && cond.system.targetadvantage)
-  }
-  /* -------------------------------------------- */
   setLevel() {
     // xp.value è input utente, xp.level è calcolato (assegnazione diretta, NO update!)
-    let xp = this.system?.secondary?.xp?.value;
-    if (xp == undefined) return;
-    let level = 1 + Math.floor(xp / 10);
-    this.system.secondary.xp.level = level;
-    // NB: nessuna chiamata a this.update() qui, per evitare loop e problemi di update
+    let xp = this.system?.secondary?.xp?.value ?? 0;
+    let calculated_level = 1 + Math.floor(xp / 10);
+    this.system.secondary.xp.level = calculated_level; //forse errore
   }
   /* -------------------------------------------- */
   computeDRTotal() {
@@ -913,11 +826,11 @@ async resetAllSkillUses(askConfirmation = true) {
     for (let armor of armors) {
       dr += armor.system.damagereduction
     }
-    let drbonus = this.system?.secondary?.drbonus?.value || 0
+    let drbonus = this.system?.secondary?.drbonus?.value || 0 //errore
     let drbonustotal = dr + drbonus
     if (drbonustotal < 0) drbonustotal = 0
     if (this.system?.secondary?.drbonustotal) {
-      this.system.secondary.drbonustotal.value = drbonustotal
+      this.system.secondary.drbonustotal.value = drbonustotal //errore
     }
   }
   /* -------------------------------------------- */
@@ -931,19 +844,14 @@ async resetAllSkillUses(askConfirmation = true) {
     let parrybonustotal = parrybonus + parry
     if (parrybonustotal < 0) parrybonustotal = 0
     if (this.system?.secondary?.parrybonustotal) {
-      this.system.secondary.parrybonustotal.value = parrybonustotal
+      this.system.secondary.parrybonustotal.value = parrybonustotal //errore
     }
   }
   /* -------------------------------------------- */
   computeBonusLanguages() {
-    // Log difensivo per debug
-    console.log("[DEBUG] computeBonusLanguages:", {
-      statistics: this.system?.statistics,
-      min: this.system?.statistics?.min
-    });
-    if (!this.system?.statistics?.min?.value || this.system?.secondary?.nblanguage == undefined) return;
-    let nblanguage = Math.floor(this.system.statistics.min.value / 2);
-    this.system.secondary.nblanguage.value = nblanguage;
+   const minStat = this.system.statistics?.min?.value ?? 0;
+   const nblanguage = Math.floor(minStat / 2);
+   this.system.secondary.nblanguage.value = nblanguage; //errore
   }
   /* -------------------------------------------- */
   spentMana(spentValue) {
@@ -953,7 +861,7 @@ async resetAllSkillUses(askConfirmation = true) {
       return false
     }
     mana.value -= Number(spentValue)
-    console.log('[DEBUG] update system.attributes.mana', { mana });
+    //console.log('[DEBUG] update system.attributes.mana', { mana });
     this.update({ 'system.attributes.mana': mana })
     return true
   }
@@ -962,7 +870,7 @@ async resetAllSkillUses(askConfirmation = true) {
   incrementUse(rollData) {
     let stat = foundry.utils.duplicate(this.system[rollData.mode][rollData.statKey])
     stat.nbuse++
-    console.log('[DEBUG] update incrementUse', { stat, rollData });
+    //console.log('[DEBUG] update incrementUse', { stat, rollData });
     this.update({ [`system.${rollData.mode}.${rollData.statKey}`]: stat })
   }
 

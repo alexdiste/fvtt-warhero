@@ -312,7 +312,7 @@ static async showDiceSoNice(roll, rollMode) {
       content: await renderTemplate(`systems/fvtt-warhero/templates/chat-parry-result.html`, rollData)
     })
     msg.setFlag("world", "rolldata", rollData)
-    console.log("Rolldata result", rollData)
+    //console.log("Rolldata result", rollData)
   }
 
   static async rollWarhero(rollData) {
@@ -385,7 +385,7 @@ static async showDiceSoNice(roll, rollMode) {
     diceFormula += "+" + rollData.bonusMalus
 
     // Performs roll
-    console.log("Roll formula", diceFormula)
+    //console.log("Roll formula", diceFormula)
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
       myRoll = await new Roll(diceFormula, actor.system).roll()
@@ -409,7 +409,7 @@ static async showDiceSoNice(roll, rollMode) {
       content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
     })
     await msg.setFlag("world", "rolldata", rollData)
-    console.log("Rolldata result", rollData)
+    //console.log("Rolldata result", rollData)
 
   }
 

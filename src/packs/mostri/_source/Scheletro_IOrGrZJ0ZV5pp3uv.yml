@@ -21,6 +21,8 @@ items:
       chargevaluemax: 0
       description: ''
       isCustomAttackRoll: false
+      attackbonus: 0
+      damagebonus: 0
     effects: []
     folder: null
     sort: 0
@@ -33,10 +35,10 @@ items:
       core: {}
     _stats:
       systemId: fvtt-warhero
-      systemVersion: 14.80.5
-      coreVersion: '14.361'
-      createdTime: 1778960290135
-      modifiedTime: 1778960290135
+      systemVersion: 14.86.20
+      coreVersion: '14.363'
+      createdTime: 1780855357240
+      modifiedTime: 1780855357240
       lastModifiedBy: guOwSDi78TuzUGFU
       exportSource: null
       compendiumSource: null
@@ -59,17 +61,15 @@ system:
     description: ''
     notes: >-
       <p>Le creature evocate scompaiono quando muoiono o all'alba del giorno
-      seguente e non &egrave; possibile evocare pi&ugrave; di una creatura alla
-      volta. E&rsquo; necessario usare una mossa per far seguire le 2 mosse alla
-      propria evocazione. Usare pi&ugrave; di un colpo con una singola mossa
-      attacco si ottiene lo stessomalus come nell&rsquo;uso delle due armi. Le
-      evocazioni hanno punti ferita pari a 10 +(10*FIS) e una difesa pari a 12
-      +IST, il tempo di lancio di questi poteri &egrave; di 4 mosse consecutive.
-      E necessario usareuna mossa per poter far eseguire 2 mosse
-      all&rsquo;evocazione</p>
+      seguente e non è possibile evocare più di una creatura alla volta. E’
+      necessario usare una mossa per far seguire le 2 mosse alla propria
+      evocazione. Usare più di un colpo con una singola mossa attacco si ottiene
+      lo stessomalus come nell’uso delle due armi. Le evocazioni hanno punti
+      ferita pari a 10 +(10*FIS) e una difesa pari a 12 +IST, il tempo di lancio
+      di questi poteri è di 4 mosse consecutive. E necessario usare una mossa
+      per poter far eseguire 2 mosse all’ evocazione</p>
     gmnotes: ''
     origin: ''
-  subactors: []
   statistics:
     str:
       label: WH.ui.Strength
@@ -111,7 +111,7 @@ system:
       hasmax: false
       roll: true
       max: 0
-      value: 2
+      value: 0
     def:
       label: WH.ui.Defence
       abbrev: def
@@ -127,7 +127,7 @@ system:
       roll: true
       iscombat: true
       max: 0
-      value: 0
+      value: 2
     txcr:
       label: WH.ui.Throw2HitR
       abbrev: txcr
@@ -136,7 +136,7 @@ system:
       roll: true
       iscombat: true
       max: 0
-      value: 0
+      value: 2
     mana:
       label: WH.ui.Mana
       abbrev: pm
@@ -152,7 +152,7 @@ system:
       iscombat: true
       roll: true
       max: 0
-      value: 0
+      value: 2
     movearth:
       label: WH.ui.Movement
       abbrev: mov
@@ -168,6 +168,20 @@ system:
     movfly:
       label: WH.ui.MovementFly
       abbrev: mov
+      style: edit
+      max: 0
+      value: 0
+    temporaryhp:
+      label: WH.ui.TemporaryHitPoints
+      abbrev: thp
+      style: edit
+      hasmax: false
+      isheader: true
+      max: 0
+      value: 0
+    movcharge:
+      label: WH.ui.MovementCharge
+      abbrev: movcharge
       style: edit
       max: 0
       value: 0
@@ -249,6 +263,24 @@ system:
       style: edit
       value: 0
       rollD100: true
+    disarmbonus:
+      label: WH.ui.disarmbonus
+      abbrev: disarmbonus
+      iscombat: true
+      style: edit
+      value: 0
+    tripbonus:
+      label: WH.ui.tripbonus
+      abbrev: tripbonus
+      iscombat: true
+      style: edit
+      value: 0
+    defensivebonus:
+      label: WH.ui.defensivebonus
+      abbrev: defensivebonus
+      iscombat: true
+      style: edit
+      value: 0
 prototypeToken:
   name: Scheletro
   displayName: 30
@@ -344,10 +376,10 @@ flags:
   core: {}
 _stats:
   systemId: fvtt-warhero
-  systemVersion: 14.80.5
-  coreVersion: '14.361'
-  createdTime: 1778960290135
-  modifiedTime: 1778960290135
+  systemVersion: 14.86.20
+  coreVersion: '14.363'
+  createdTime: 1780855357240
+  modifiedTime: 1780855774438
   lastModifiedBy: guOwSDi78TuzUGFU
   exportSource: null
   compendiumSource: null

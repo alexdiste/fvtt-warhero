@@ -10,7 +10,7 @@ items:
       unlimited: true
       acquiredatlevel: 0
       currentuse: 0
-      description: "<p>un mimic può creare sulla sua superficie corporea del\_muco che funziona come una colla, se si fallisce un tiro su IST CD\_18, ci si considera in lotta con lui. Per potersi liberare invece di fare<br />una prova di lotta si deve ripetere il Tiro Salvezza</p>"
+      description: "<p>un mimic può creare sulla sua superficie corporea del\_muco che funziona come una colla, se si fallisce un tiro su IST CD\_18, ci si considera in lotta con lui. Per potersi liberare invece di fare<br>una prova di lotta si deve ripetere il Tiro Salvezza</p>"
       maxuseFormula: '1'
     effects: []
     folder: null
@@ -20,20 +20,20 @@ items:
         sourceId: Item.ttOadVbwZSJ2KFDN
       core: {}
     _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.20
+      lastModifiedBy: guOwSDi78TuzUGFU
+      createdTime: 1780856221725
+      modifiedTime: 1780856221725
+      exportSource: null
       compendiumSource: null
       duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: fvtt-warhero
-      systemVersion: '13.40'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
     _id: fNViMjAymwJwTsD3
     sort: 1900000
     ownership:
       default: 0
-    _key: '!actors.items!lvmH8wHvii3sOyWu.fNViMjAymwJwTsD3'
+    _key: '!actors.items!JqpFNDQFbF7hLhcE.fNViMjAymwJwTsD3'
   - name: Imitare oggetto
     type: skill
     img: systems/fvtt-warhero/images/icons/spark-spirit.svg
@@ -53,20 +53,20 @@ items:
         sourceId: Item.ttOadVbwZSJ2KFDN
       core: {}
     _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.20
+      lastModifiedBy: guOwSDi78TuzUGFU
+      createdTime: 1780856221725
+      modifiedTime: 1780856221725
+      exportSource: null
       compendiumSource: null
       duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: fvtt-warhero
-      systemVersion: '13.40'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
     _id: 3dMrEyjGMrlAnPZp
     sort: 1500000
     ownership:
       default: 0
-    _key: '!actors.items!lvmH8wHvii3sOyWu.3dMrEyjGMrlAnPZp'
+    _key: '!actors.items!JqpFNDQFbF7hLhcE.3dMrEyjGMrlAnPZp'
   - name: Schianto
     type: weapon
     img: systems/fvtt-warhero/images/icons/flat-paw-print.svg
@@ -87,6 +87,8 @@ items:
       chargevaluemax: 0
       description: ''
       isCustomAttackRoll: false
+      attackbonus: 0
+      damagebonus: 0
     effects: []
     flags:
       scene-packer:
@@ -94,21 +96,21 @@ items:
         sourceId: Item.wdqnHGHUqtvhlUyv
       core: {}
     _stats:
+      coreVersion: '14.363'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.20
+      lastModifiedBy: guOwSDi78TuzUGFU
+      createdTime: 1780856221725
+      modifiedTime: 1780856221725
+      exportSource: null
       compendiumSource: null
       duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: fvtt-warhero
-      systemVersion: '13.40'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
     folder: null
     sort: 1400000
     _id: IVx9bgYKZkOk769k
     ownership:
       default: 0
-    _key: '!actors.items!lvmH8wHvii3sOyWu.IVx9bgYKZkOk769k'
+    _key: '!actors.items!JqpFNDQFbF7hLhcE.IVx9bgYKZkOk769k'
 img: systems/dnd5e/tokens/monstrosity/Mimic.webp
 system:
   biodata:
@@ -126,7 +128,6 @@ system:
     notes: ''
     gmnotes: ''
     origin: ''
-  subactors: []
   statistics:
     str:
       label: WH.ui.Strength
@@ -228,6 +229,20 @@ system:
       style: edit
       max: 0
       value: 0
+    temporaryhp:
+      label: WH.ui.TemporaryHitPoints
+      abbrev: thp
+      style: edit
+      hasmax: false
+      isheader: true
+      max: 0
+      value: 0
+    movcharge:
+      label: WH.ui.MovementCharge
+      abbrev: movcharge
+      style: edit
+      max: 0
+      value: 0
   secondary:
     xp:
       label: WH.ui.XP
@@ -294,11 +309,6 @@ system:
       hasuse: true
       nbuse: 0
       maxuse: 0
-    createitem:
-      label: WH.ui.createitem
-      abbrev: createitem
-      style: edit
-      value: 0
     nblanguage:
       label: WH.ui.languagesbonus
       abbrev: nblanguage
@@ -311,6 +321,24 @@ system:
       style: edit
       value: 0
       rollD100: true
+    disarmbonus:
+      label: WH.ui.disarmbonus
+      abbrev: disarmbonus
+      iscombat: true
+      style: edit
+      value: 0
+    tripbonus:
+      label: WH.ui.tripbonus
+      abbrev: tripbonus
+      iscombat: true
+      style: edit
+      value: 0
+    defensivebonus:
+      label: WH.ui.defensivebonus
+      abbrev: defensivebonus
+      iscombat: true
+      style: edit
+      value: 0
 prototypeToken:
   name: Mimic
   displayName: 0
@@ -396,18 +424,18 @@ effects: []
 folder: null
 flags: {}
 _stats:
+  coreVersion: '14.363'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.20
+  createdTime: 1780856221725
+  modifiedTime: 1780856221725
+  lastModifiedBy: guOwSDi78TuzUGFU
+  exportSource: null
   compendiumSource: null
   duplicateSource: null
-  exportSource: null
-  coreVersion: '14.360'
-  systemId: fvtt-warhero
-  systemVersion: '13.40'
-  createdTime: 1766239337735
-  modifiedTime: 1772340564249
-  lastModifiedBy: guOwSDi78TuzUGFU
-_id: lvmH8wHvii3sOyWu
 ownership:
   default: 0
-  uzeu86bhmL5CiHhN: 3
-sort: 2400000
-_key: '!actors!lvmH8wHvii3sOyWu'
+  guOwSDi78TuzUGFU: 3
+_id: JqpFNDQFbF7hLhcE
+sort: 0
+_key: '!actors!JqpFNDQFbF7hLhcE'
