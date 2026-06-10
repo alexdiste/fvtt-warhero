@@ -489,6 +489,4 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
   static migrateData(data) {
     return super.migrateData(data);
   }
-
-
 }

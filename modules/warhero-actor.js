@@ -1033,6 +1033,5 @@ async resetAllSkillUses(askConfirmation = true) {
 
     rollData = { ...rollData, ...rollContext }
     WarheroUtility.rollWarhero(rollData)
-
   }
 }

@@ -371,3 +371,4 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   }
   // #endregion
 }
+

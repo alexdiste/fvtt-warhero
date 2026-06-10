@@ -58,5 +58,4 @@ export class LocationData extends foundry.abstract.TypeDataModel {
   static migrateData(data) {
     return super.migrateData(data);
   }
-
 }

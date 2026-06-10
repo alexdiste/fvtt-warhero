@@ -366,7 +366,4 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
 
     return false
   }
-
-
-
 }
