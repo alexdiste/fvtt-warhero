@@ -1,8 +1,8 @@
 {
   "TYPES": {
-    "Actor" : {
+    "Actor": {
       "character": "PG",
-	  "party": "Gruppo"
+      "party": "Gruppo"
     },
     "Item": {
       "weapon": "Arma",
@@ -29,7 +29,7 @@
   "WH.conf.twohanded": "A due mani",
   "WH.conf.shooting": "Da Tiro",
   "WH.conf.throwing": "Da Lancio",
-  "WH.conf.lightarmor" : "Leggera",
+  "WH.conf.lightarmor": "Leggera",
   "WH.conf.mediumarmor": "Media",
   "WH.conf.heavyarmor": "Pesante",
   "WH.conf.lightshield": "Leggero",
@@ -37,10 +37,9 @@
   "WH.conf.towershield": "Torre",
   "WH.conf.polearm": "In asta",
   "WH.conf.special": "Speciale",
-
   "WH.conf.head": "Testa",
   "WH.conf.goggles": "Occhiali",
-  "WH.conf.necklace" :"Amuleto",
+  "WH.conf.necklace": "Amuleto",
   "WH.conf.cloak": "Mantello",
   "WH.conf.weapon1": "Arma 1",
   "WH.conf.weapon2": "Arma 2",
@@ -76,7 +75,6 @@
   "WH.conf.undefined": "Non applicabile",
   "WH.ui.level": "Livello",
   "WH.ui.notes": "Note",
-
   "WH.ui.hpprog": "Progressione PF",
   "WH.ui.lan": "Lingue",
   "WH.ui.attrbonus": "Attributo",
@@ -84,7 +82,6 @@
   "WH.ui.armors": "Armature",
   "WH.ui.shields": "Scudi",
   "WH.ui.weapon": "Arma",
-
   "WH.ui.Strength": "Fisico",
   "WH.ui.Instinct": "Istinto",
   "WH.ui.Dexterity": "Istinto",
@@ -105,7 +102,6 @@
   "WH.ui.MovementSwim": "Movimento (Nuoto)",
   "WH.ui.MovementFly": "Movimento (Volare)",
   "WH.ui.power": "Potere",
-
   "WH.ui.Qty": "Quantitá",
   "WH.ui.maxslots": "Max slots",
   "WH.ui.slotsused": "Slots usati",
@@ -141,7 +137,6 @@
   "WH.ui.competency": "Competenze",
   "WH.ui.conditions": "Condizione",
   "WH.ui.effect": "Effetto",
-
   "WH.ui.main": "Principale",
   "WH.ui.combat": "Combattimento",
   "WH.ui.skillstab": "Abilità ed effetti",
@@ -230,7 +225,7 @@
   "WH.ui.untilendcombat": "Fino alla fine del combattimento",
   "WH.ui.beginturn": "Inizio del turno",
   "WH.ui.endturn": "Fine del turno",
-  "WH.ui.endday":"Fino alla fine del giorno",
+  "WH.ui.endday": "Fino alla fine del giorno",
   "WH.ui.durationvalue": "Durata",
   "WH.ui.durationunit": "Durata (unità di misura)",
   "WH.ui.dcsave": "CD",
@@ -260,10 +255,10 @@
   "WH.ui.large": "Grande",
   "WH.ui.huge": "Enorme",
   "WH.ui.gargantuan": "Gargantuesca",
-  "WH.ui.conditiontype":"Tipo condizione",
+  "WH.ui.conditiontype": "Tipo condizione",
   "WH.ui.bodyslots": "Corpo",
   "WH.ui.containerslot": "Contenitori",
-  "WH.ui.duration":"Durata",
+  "WH.ui.duration": "Durata",
   "WH.ui.isCustomAttackRoll": "Tiro di attacco personalizzato",
   "WH.ui.resetSkillUse": "Resetta uso abilità",
   "WH.ui.actorSleep": "Riposo",
@@ -285,7 +280,6 @@
   "WH.ui.effects": "Effetti",
   "WH.ui.toggleeffect": "Attiva/Disattiva effetto",
   "WH.ui.EffectDeletionFromItem": "L'effetto deve essere eliminato dal suo oggetto genitore.",
-
   "WH.chat.save": "Tiro salvezza su",
   "WH.chat.mweaponmalus": "Malus attacchi con più armi",
   "WH.chat.diceresult": "Risultato del dado",
@@ -293,15 +287,14 @@
   "WH.chat.parysuccess": "Parato con successo !",
   "WH.chat.paryfailed": "Parata fallita !",
   "WH.chat.rollformula": "Formula del dado",
-  "WH.chat.useshield":"Usare scudo?",
+  "WH.chat.useshield": "Usare scudo?",
   "WH.chat.power": "Potere",
   "WH.chat.powerlevel": "Livello di potere",
-  "WH.ui.confirmrest":"Conferma riposo",
-  "WH.ui.confirmrestcontent":"Sei sicuro di voler riposare?",
-  "WH.chat.actorrested" : "{name} ha dormito recuperando tutti i PF, tutto il mana, tutti gli usi di contropotere e tutti gli usi delle abilità. Ricordati di controllare se hai già mangiato questo giorno o no, in caso negativo ricordati di scalare una razione",
+  "WH.ui.confirmrest": "Conferma riposo",
+  "WH.ui.confirmrestcontent": "Sei sicuro di voler riposare?",
+  "WH.chat.actorrested": "{name} ha dormito recuperando tutti i PF, tutto il mana, tutti gli usi di contropotere e tutti gli usi delle abilità. Ricordati di controllare se hai già mangiato questo giorno o no, in caso negativo ricordati di scalare una razione",
   "WH.chat.damageapplied": "{name} subisce {damage} danni! {tempHPLost} PF temporanei persi, {hpLost} PF veri persi.",
   "WH.chat.temporaryhpadded": "{name} guadagna {temphp} punti ferita temporanei!",
-
   "WH.notif.skillmaxuse": "Usi massimi raggiunti",
   "WH.notif.toomanyuses": "Usi massimi raggiunti"
 }

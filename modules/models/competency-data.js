@@ -12,6 +12,8 @@ import { WARHERO_CONFIG } from "../warhero-config.js";
  */
 export class CompetencyData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Competency"];
+
   /**
    * Define the data schema for competency items
    * @returns {Object} The data schema definition

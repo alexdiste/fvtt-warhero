@@ -12,6 +12,8 @@ import { WARHERO_CONFIG } from "../warhero-config.js";
  */
 export class ClassData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Class"];
+
   /**
    * Define the data schema for class items
    * @returns {Object} The data schema definition

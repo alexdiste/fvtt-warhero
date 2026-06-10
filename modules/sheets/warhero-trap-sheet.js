@@ -1,8 +1,8 @@
 import { WarheroBaseItemSheet } from "./warhero-base-item-sheet.js";
 
 /**
- * Warhero Skill Sheet Application v2
- * Extends the basic ApplicationV2 with skill-specific functionality
+ * Warhero Trap Sheet Application v2
+ * Extends the basic ApplicationV2 with trap-specific functionality
  * @extends {WarheroBaseItemSheet}
  */
 
@@ -10,7 +10,7 @@ export class WarheroTrapSheetV2 extends WarheroBaseItemSheet {
 
   /** @override */
   static DEFAULT_OPTIONS = {
-    classes: ["fvtt-warhero", "sheet", "item", "skill"],
+    classes: ["fvtt-warhero", "sheet", "item", "trap"],
     position: {
       width: 620
     },
@@ -31,7 +31,7 @@ export class WarheroTrapSheetV2 extends WarheroBaseItemSheet {
       template: "systems/fvtt-warhero/templates/items/partial-item-description.hbs",
     },
     details: {
-      template: `systems/fvtt-warhero/templates/items/partial-item-poison-details.hbs`,
+      template: `systems/fvtt-warhero/templates/items/partial-item-trap-details.hbs`,
     },
   };
 

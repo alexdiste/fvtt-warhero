@@ -35,7 +35,17 @@ Hooks.once("init", async function () {
 
   game.system.warhero = {
     WarheroUtility,
-    config: WARHERO_CONFIG
+    config: WARHERO_CONFIG,
+    applications: sheets,
+    models: {
+      EquipmentData, WeaponData, ArmorData, ShieldData, SkillData, PowerData,
+      LanguageData, LocationData, ConditionData, ClassData, RaceData, MoneyData,
+      PotionData, PoisonData, TrapData, ClassItemData, CompetencyData,
+      CharacterData, PartyData
+    },
+    documents: {
+      WarheroActor, WarheroItem, WarheroCombat
+    }
   }
 
   /* -------------------------------------------- */
@@ -51,7 +61,7 @@ Hooks.once("init", async function () {
 
   /* -------------------------------------------- */
   game.socket.on("system.fvtt-warhero", data => {
-    WarheroUtility.onSocketMesssage(data)
+    WarheroUtility.onSocketMessage(data)
   });
 
   // Ensure new effect transfer
@@ -94,7 +104,6 @@ Hooks.once("init", async function () {
 
   /* -------------------------------------------- */
   // Register sheet application classes
-  foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
   foundry.documents.collections.Actors.registerSheet("fvtt-warhero", sheets.WarheroCharacterSheet, {
     types: ["character"],
     makeDefault: true,
@@ -106,7 +115,6 @@ Hooks.once("init", async function () {
     label: "WH.sheet.partyV2"
   });
 
-  foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroEquipmentSheetV2, { types: ["equipment"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroShieldSheetV2, { types: ["shield"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("fvtt-warhero", sheets.WarheroWeaponSheetV2, { types: ["weapon"], makeDefault: true });
@@ -134,7 +142,7 @@ Hooks.once("init", async function () {
 Hooks.once("ready", function () {
 
   // User warning
-  if (!game.user.isGM && game.user.character == undefined) {
+  if (!game.user.isGM && !game.user.character) {
     ui.notifications.info("Warning ! No character linked to your user !");
   }
 

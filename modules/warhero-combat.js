@@ -18,6 +18,7 @@ export class WarheroCombat extends Combat {
 
   /* -------------------------------------------- */
   _onUpdate(changed, options, userId) {
+    super._onUpdate(changed, options, userId);
   }
 
   /* -------------------------------------------- */

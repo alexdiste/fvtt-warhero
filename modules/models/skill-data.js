@@ -12,6 +12,8 @@ const fields = foundry.data.fields;
  */
 export class SkillData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Skill"];
+
   /**
    * Define the data schema for skill items
    * @returns {Object} The data schema definition
@@ -82,12 +84,6 @@ export class SkillData extends foundry.abstract.TypeDataModel {
 
     this.acquiredatlevel = Math.max(0, this.acquiredatlevel);
     this.currentuse = Math.max(0, this.currentuse);
-    this.maxuse = Math.max(0, this.maxuse);
-
-    // Clamp current use to max use if max is set
-    if (this.maxuse > 0) {
-      this.currentuse = Math.min(this.currentuse, this.maxuse);
-    }
   }
 
   /**
@@ -96,6 +92,17 @@ export class SkillData extends foundry.abstract.TypeDataModel {
   prepareDerivedData() {
     super.prepareDerivedData();
 
+    // Compute max uses from formula (only when owned by an actor)
+    this.maxuse = 0;
+    if (!this.unlimited && this.parent?.parent) {
+      const formula = (this.maxuseFormula && this.maxuseFormula.trim() !== "")
+        ? this.maxuseFormula : "1";
+      const roll = new Roll(String(formula), this.parent.parent).evaluateSync();
+      this.maxuse = roll.total;
+    } else if (this.unlimited) {
+      this.maxuse = Infinity;
+    }
+
     // Skill-specific properties
     this.isUsable = this.unlimited || (this.maxuse > 0 && this.currentuse < this.maxuse);
     this.remainingUses = this.unlimited ? Infinity : Math.max(0, this.maxuse - this.currentuse);
@@ -103,14 +110,6 @@ export class SkillData extends foundry.abstract.TypeDataModel {
     this.isRacial = this.raceskill;
     this.isClass = this.classskill;
     this.isGeneral = !this.raceskill && !this.classskill;
-    this.maxuse = -1;
-    if (!this.unlimited && this.parent?.parent) {
-      if (!this.maxuseFormula || this.maxuseFormula.trim() === "") {
-        this.maxuseFormula = "1";
-      }
-      let roll = new Roll(String(this.maxuseFormula), this.parent.parent).evaluateSync();
-      this.maxuse = roll.total;
-    }
   }
 
   /**

@@ -5,7 +5,7 @@
 
     <div class="flexcol">
 
-      <div class="grid grid2col">
+      <div class="grid grid-2col">
         <ul class="stat-list alternate-list">
           {{#with system.attributes.def as |stat|}}
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="def" path="attributes"
@@ -75,7 +75,7 @@
 
             <span class="item-field-label-medium">{{localize (concat "WH.conf." weapon.system.weapontype)}}</span>
 
-            {{#if (eq system.weapontype "special")}}
+            {{#if (eq weapon.system.weapontype "special")}}
             <span class="item-field-label-medium"><a class="roll-damage" data-action="roll-damage"><i
                   class="fa-solid fa-dice-d20"></i>{{weapon.system.damageformula}}</a></span>
             {{else}}
@@ -83,7 +83,7 @@
                   class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula}}</a></span>
             {{/if}}
 
-            {{#if (eq system.weapontype "polearm")}}
+            {{#if (eq weapon.system.weapontype "polearm")}}
             <span class="item-field-label-medium"><a class="roll-damage-2hands" data-action="roll-damage-2hands"><i
                   class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula2Hands}}</a></span>
             {{/if}}
@@ -98,7 +98,7 @@
         </ul>
       </div>
 
-      <div class="grid grid2col">
+      <div class="grid grid-2col">
         <ul class="stat-list alternate-list">
           {{#with system.secondary.parrybonus as |stat|}}
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="parrybonus"
@@ -148,7 +148,7 @@
         </ul>
       </div>
 
-      <div class="grid grid2col">
+      <div class="grid grid-2col">
         <ul class="stat-list alternate-list">
           {{#with system.secondary.drbonus as |stat|}}
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="drbonus"

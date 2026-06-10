@@ -134,7 +134,7 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
     event.preventDefault();
 
     const doc = this.document;
-    let chatData = foundry.utils.duplicate(doc.toObject());
+    let chatData = foundry.utils.deepClone(doc.toObject());
 
     if (doc.actor) {
       chatData.actor = { id: doc.actor.id };
@@ -151,8 +151,8 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
       payload: chatData,
     });
 
-    const html = await renderTemplate('systems/fvtt-warhero/templates/post-item.html', chatData);
-    const chatOptions = WarheroUtility.chatDataSetup(html);
+    const html = await foundry.applications.handlebars.renderTemplate('systems/fvtt-warhero/templates/post-item.html', chatData);
+    const chatOptions = { content: html };
     await ChatMessage.create(chatOptions);
   }
 
@@ -165,7 +165,8 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
     event.preventDefault();
 
     const doc = this.document;
-    new ImagePopout(doc.img, {
+    new foundry.applications.api.ImagePopoutApp({
+      source: doc.img,
       title: doc.name,
       uuid: doc.uuid
     }).render(true);

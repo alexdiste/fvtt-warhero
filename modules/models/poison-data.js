@@ -12,6 +12,8 @@ import { WARHERO_CONFIG } from "../warhero-config.js";
  */
 export class PoisonData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Poison"];
+
   /**
    * Define the data schema for poison items
    * @returns {Object} The data schema definition
@@ -63,7 +65,7 @@ export class PoisonData extends foundry.abstract.TypeDataModel {
         initial: "unknown",
         required: false,
         blank: false,
-        choices: foundry.utils.duplicate(WARHERO_CONFIG.identifiedState),
+        choices: foundry.utils.deepClone(WARHERO_CONFIG.identifiedState),
         label: "WH.ui.isidentified",
         hint: "WH.ui.isidentified.hint"
       }),
@@ -72,7 +74,7 @@ export class PoisonData extends foundry.abstract.TypeDataModel {
         initial: "",
         required: false,
         blank: true,
-        choices: foundry.utils.duplicate(WARHERO_CONFIG.poisonApplication),
+        choices: foundry.utils.deepClone(WARHERO_CONFIG.poisonApplication),
         label: "WH.ui.application",
         hint: "WH.ui.application.hint"
       }),
@@ -123,7 +125,7 @@ export class PoisonData extends foundry.abstract.TypeDataModel {
         initial: "",
         required: false,
         blank: true,
-        choices: foundry.utils.duplicate(WARHERO_CONFIG.saveType),
+        choices: foundry.utils.deepClone(WARHERO_CONFIG.saveType),
         label: "WH.ui.savetype",
         hint: "WH.ui.savetype.hint"
       }),

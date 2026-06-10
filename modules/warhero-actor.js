@@ -66,8 +66,30 @@ export class WarheroActor extends Actor {
 
   /* -------------------------------------------- */
   _preUpdate(changed, options, user) {
-
-    super._preUpdate(changed, options, user);
+    if (changed.system) {
+      const additiveChanges = new Map();
+      for (const effect of this.allApplicableEffects()) {
+        if (effect.disabled) continue;
+        for (const change of effect.changes) {
+          if (!change.key.startsWith('system.')) continue;
+          if (change.type !== 'add') continue;
+          const value = Number(change.value);
+          if (!Number.isFinite(value)) continue;
+          const path = change.key;
+          const prev = additiveChanges.get(path) ?? 0;
+          additiveChanges.set(path, prev + value);
+        }
+      }
+      for (const [path, delta] of additiveChanges) {
+        if (delta === 0) continue;
+        const docPath = path.slice(7);
+        const submitted = foundry.utils.getProperty(changed.system, docPath);
+        if (submitted !== undefined) {
+          foundry.utils.setProperty(changed.system, docPath, Number(submitted) - delta);
+        }
+      }
+    }
+    return super._preUpdate(changed, options, user);
   }
 
   /* -------------------------------------------- */
@@ -77,24 +99,18 @@ export class WarheroActor extends Actor {
     return comp;
   }
   /* -------------------------------------------- */
-  getEquippedWeapons() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'weapon' && item.system.equipped) || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
-  }
-  /* -------------------------------------------- */
   getEquippedArmors() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'armor' && item.system.slotlocation == 'armor') || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'armor' && item.system.slotlocation == 'armor') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getArmors() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'armor') || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'armor') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getPowers() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'power') || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'power') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
@@ -102,7 +118,7 @@ export class WarheroActor extends Actor {
     let schools = {}
     for (let power of this.items) {
       if (power.type == "power") {
-        power = foundry.utils.duplicate(power)
+        power = foundry.utils.deepClone(power)
         let school = schools[power.system.magicschool] || []
         school.push(power)
         WarheroUtility.sortArrayObjectsByNameAndLevel(school)
@@ -112,25 +128,25 @@ export class WarheroActor extends Actor {
     return schools
   }
   getAllItems() {
-    let comp = foundry.utils.duplicate(this.items || []);
+    let comp = Array.from(this.items);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getEquippedShields() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'shield' && item.system.slotlocation == "shield") || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'shield' && item.system.slotlocation == "shield") || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getShields() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'shield') || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'shield') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   /* -------------------------------------------- */
   getRace() {
     let race = this.items.filter(item => item.type == 'race')
-    return race[0] ?? [];
+    return race[0] ?? null;
   }
   /* -------------------------------------------- */
   getMainClass() {
@@ -142,12 +158,12 @@ export class WarheroActor extends Actor {
     return classWH
   }
   getClasses() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == "class") || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == "class") || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
   getLocations() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'location') || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'location') || []);
     // Add a class option when the number of locations is more that "mind" statistics
     for (let i = 0; i < comp.length; i++) {
       let c = comp[i]
@@ -159,17 +175,6 @@ export class WarheroActor extends Actor {
     return comp;
   }
 
-  /* -------------------------------------------- */
-  checkAndPrepareEquipment(item) {
-  }
-
-  /* -------------------------------------------- */
-  checkAndPrepareEquipments(listItem) {
-    for (let item of listItem) {
-      this.checkAndPrepareEquipment(item)
-    }
-    return listItem
-  }
   /* -------------------------------------------- */
   computeTotalMoney() {
     let nbMoney = 0
@@ -202,7 +207,7 @@ export class WarheroActor extends Actor {
     let containers = {}
     for (let slotName in game.system.warhero.config.partySlotNames) {
       let slotDef = game.system.warhero.config.partySlotNames[slotName]
-      containers[slotName] = foundry.utils.duplicate(slotDef)
+      containers[slotName] = foundry.utils.deepClone(slotDef)
       containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem'))
       let slotUsed = 0
       for (let item of containers[slotName].content) {
@@ -227,7 +232,7 @@ export class WarheroActor extends Actor {
     for (let slotName in game.system.warhero.config.slotNames) {
       let slotDef = game.system.warhero.config.slotNames[slotName]
       if (!slotDef.container) {
-        containers[slotName] = foundry.utils.duplicate(slotDef)
+        containers[slotName] = foundry.utils.deepClone(slotDef)
         containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
           && it.system.slotlocation == slotName)
         // Manage specific shields case : merge shield with weapon2
@@ -260,7 +265,7 @@ export class WarheroActor extends Actor {
     for (let slotName in game.system.warhero.config.slotNames) {
       let slotDef = game.system.warhero.config.slotNames[slotName]
       if (slotDef.container) {
-        containers[slotName] = foundry.utils.duplicate(slotDef)
+        containers[slotName] = foundry.utils.deepClone(slotDef)
         containers[slotName].content = this.items.filter(it => (it.type == 'money' || it.type == 'weapon' || it.type == 'armor' || it.type == 'shield' || it.type == 'equipment' || it.type == 'potion' || it.type == 'poison' || it.type == 'trap' || it.type == 'classitem')
           && it.system.slotlocation == slotName)
         let slotUsed = 0
@@ -280,10 +285,9 @@ export class WarheroActor extends Actor {
     return containers
   }
   /* -------------------------------------------- */
-  getConditions() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'condition') || []);
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp;
+  getEquippedArmor() {
+    let armor = this.items.find(item => item.type == 'armor' && item.system.slotlocation == 'armor');
+    return armor ?? null;
   }
   /* -------------------------------------------- */
   prepareWeapon(weapon) {
@@ -317,7 +321,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   getEquippedWeapons() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'weapon' && (item.system.slotlocation == "weapon1" || item.system.slotlocation == "weapon2")) || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'weapon' && (item.system.slotlocation == "weapon1" || item.system.slotlocation == "weapon2")) || []);
     for (let weapon of comp) {
       this.prepareWeapon(weapon)
     }
@@ -325,7 +329,7 @@ export class WarheroActor extends Actor {
     return comp;
   }
   getWeapons() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'weapon') || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'weapon') || []);
     for (let weapon of comp) {
       this.prepareWeapon(weapon)
     }
@@ -334,7 +338,7 @@ export class WarheroActor extends Actor {
   }
   /* -------------------------------------------- */
   getConditions() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'condition') || []);
+    let comp = foundry.utils.deepClone(this.items.filter(item => item.type == 'condition') || []);
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp;
   }
@@ -342,7 +346,7 @@ export class WarheroActor extends Actor {
   getItemById(id) {
     let item = this.items.find(item => item.id == id);
     if (item) {
-      item = foundry.utils.duplicate(item)
+      item = foundry.utils.deepClone(item)
     }
     return item;
   }
@@ -368,12 +372,6 @@ export class WarheroActor extends Actor {
     WarheroUtility.sortArrayObjectsByName(comp)
     return comp
   }
-  getSkills() {
-    let comp = foundry.utils.duplicate(this.items.filter(item => item.type == 'skill') || [])
-    WarheroUtility.sortArrayObjectsByName(comp)
-    return comp
-  }
-
   /* -------------------------------------------- */
   async equipItem(itemId) {
     let item = this.items.find(item => item.id == itemId)
@@ -398,70 +396,13 @@ export class WarheroActor extends Actor {
     }
   }
 
-  /* -------------------------------------------- */
-  compareName(a, b) {
-    if (a.name < b.name) {
-      return -1;
-    }
-    if (a.name > b.name) {
-      return 1;
-    }
-    return 0;
-  }
-
   /* ------------------------------------------- */
-  getEquipments() {
-    return this.items.filter(item => item.type == 'shield' || item.type == 'armor' || item.type == "weapon" || item.type == "equipment" || item.type == "potion" || item.type == "poison" || item.type == "trap" || item.type == "classitem");
-  }
   getCompetencyItems() {
-    return foundry.utils.duplicate(this.items.filter(item => item.type == "competency") || [])
+    return foundry.utils.deepClone(this.items.filter(item => item.type == "competency") || [])
   }
   /* ------------------------------------------- */
   getEquipmentsOnly() {
-    return foundry.utils.duplicate(this.items.filter(item => item.type == "equipment") || [])
-  }
-
-  /* ------------------------------------------- */
-  async buildContainerTree() {
-    let equipments = foundry.utils.duplicate(this.items.filter(item => item.type == "equipment") || [])
-    for (let equip1 of equipments) {
-      if (equip1.system.iscontainer) {
-        equip1.system.contents = []
-        equip1.system.contentsEnc = 0
-        for (let equip2 of equipments) {
-          if (equip1._id != equip2.id && equip2.system.containerid == equip1.id) {
-            equip1.system.contents.push(equip2)
-            let q = equip2.system.quantity ?? 1
-            equip1.system.contentsEnc += q * equip2.system.weight
-          }
-        }
-      }
-    }
-
-    // Compute whole enc
-    let enc = 0
-    for (let item of equipments) {
-      //item.data.idrDice = WarheroUtility.getDiceFromLevel(Number(item.data.idr))
-      if (item.system.equipped) {
-        if (item.system.iscontainer) {
-          enc += item.system.contentsEnc
-        } else if (item.system.containerid == "") {
-          let q = item.system.quantity ?? 1
-          enc += q * item.system.weight
-        }
-      }
-    }
-    for (let item of this.items) { // Process items/shields/armors
-      if ((item.type == "weapon" || item.type == "shield" || item.type == "armor") && item.system.equipped) {
-        let q = item.system.quantity ?? 1
-        enc += q * item.system.weight
-      }
-    }
-
-    // Store local values
-    this.encCurrent = enc
-    this.containersTree = equipments.filter(item => item.system.containerid == "") // Returns the root of equipements without container
-
+    return foundry.utils.deepClone(this.items.filter(item => item.type == "equipment") || [])
   }
 
   /* -------------------------------------------- */
@@ -487,7 +428,7 @@ export class WarheroActor extends Actor {
     let myClass1 = this.getMainClass()
     let myClass2 = this.getSecondaryClass()
     let competency = { weapons: {}, armors: {}, shields: {} }
-    if (myRace.system) {
+    if (myRace && myRace.system) {
       this.updateCompetency(competency.weapons, myRace.system.weapons, game.system.warhero.config.weaponTypes)
       this.updateCompetency(competency.armors, myRace.system.armors, game.system.warhero.config.armorTypes)
       this.updateCompetency(competency.shields, myRace.system.shields, game.system.warhero.config.shieldTypes)
@@ -522,7 +463,6 @@ export class WarheroActor extends Actor {
         await this.updateEmbeddedDocuments("Item", [{ _id: object.id, 'system.containerid': containerId }])
       }
     } else if (object && object.system.containerid) { // remove from container
-      console.log("Removeing: ", object)
       await this.updateEmbeddedDocuments("Item", [{ _id: object.id, 'system.containerid': "" }]);
     }
   }
@@ -547,7 +487,7 @@ export class WarheroActor extends Actor {
   async getInitiativeScore(combatId, combatantId) {
     let roll = new Roll("1d20+" + this.system.attributes.ini.value)
     await roll.evaluate()
-    await WarheroUtility.showDiceSoNice(roll, game.settings.get("core", "rollMode"))
+    await WarheroUtility.showDiceSoNice(roll, game.settings.get("core", "messageMode"))
     return roll.total
   }
 
@@ -561,7 +501,7 @@ export class WarheroActor extends Actor {
   getOneSkill(skillId) {
     let skill = this.items.find(item => item.type == 'skill' && item.id == skillId)
     if (skill) {
-      skill = foundry.utils.duplicate(skill);
+      skill = foundry.utils.deepClone(skill);
     }
     return skill;
   }
@@ -589,20 +529,20 @@ export class WarheroActor extends Actor {
       await this.updateEmbeddedDocuments('Item', [update])
       let chatData = {
         user: game.user.id,
-        rollMode: game.settings.get("core", "rollMode"),
+        rollMode: game.settings.get("core", "messageMode"),
         whisper: [game.user.id].concat(ChatMessage.getWhisperRecipients('GM')),
-        content: `<div>${this.name} has gained 1 exp in the skill ${skill.name} (exp = ${skill.system.exp})</div`
+        content: `<div>${this.name} has gained 1 exp in the skill ${skill.name} (exp = ${skill.system.exp})</div>`
       }
-      ChatMessage.create(chatData)
+      await ChatMessage.create(chatData)
       if (skill.system.exp >= 25) {
         await this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.exp': 0, 'system.explevel': skill.system.explevel + 1 }])
         let chatData = {
           user: game.user.id,
-          rollMode: game.settings.get("core", "rollMode"),
+          rollMode: game.settings.get("core", "messageMode"),
           whisper: [game.user.id].concat(ChatMessage.getWhisperRecipients('GM')),
-          content: `<div>${this.name} has gained 1 exp SL in the skill ${skill.name} (new exp SL :  ${skill.system.explevel}) !</div`
+          content: `<div>${this.name} has gained 1 exp SL in the skill ${skill.name} (new exp SL :  ${skill.system.explevel}) !</div>`
         }
-        ChatMessage.create(chatData)
+        await ChatMessage.create(chatData)
       }
     }
   }
@@ -676,7 +616,7 @@ export class WarheroActor extends Actor {
 
     // Create a chat message to notify about the damage
     const chatData = {
-      user: game.user._id,
+      user: game.user.id,
       content: game.i18n.format("WH.chat.damageapplied", {
         name: this.name,
         damage: finalDamage,
@@ -684,7 +624,7 @@ export class WarheroActor extends Actor {
         hpLost: realHPLost
       })
     };
-    ChatMessage.create(chatData);
+    await ChatMessage.create(chatData);
   }
 
   /* -------------------------------------------- */
@@ -717,13 +657,13 @@ export class WarheroActor extends Actor {
 
     // Create a chat message to notify about the temporary HP
     const chatData = {
-      user: game.user._id,
+      user: game.user.id,
       content: game.i18n.format("WH.chat.temporaryhpadded", {
         name: this.name,
         temphp: newTemporaryHP
       })
     };
-    ChatMessage.create(chatData);
+    await ChatMessage.create(chatData);
   }
 
   /* -------------------------------------------- */
@@ -743,8 +683,8 @@ export class WarheroActor extends Actor {
     //console.log('[DEBUG] update resetAllSkillUses', { updates });
     await this.update(updates);
 
-    ChatMessage.create({
-      user: game.user._id,
+    await ChatMessage.create({
+      user: game.user.id,
       content: game.i18n.format("WH.chat.actorrested", { name: this.name })
     });
   }
@@ -797,7 +737,7 @@ async resetAllSkillUses(askConfirmation = true) {
         return
       }
       newUse = Math.max(newUse, 0)
-      this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.currentuse': newUse }])
+      await this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.currentuse': newUse }])
     }
   }
   /* -------------------------------------------- */
@@ -814,10 +754,14 @@ async resetAllSkillUses(askConfirmation = true) {
   }
   /* -------------------------------------------- */
   setLevel() {
-    // xp.value è input utente, xp.level è calcolato (assegnazione diretta, NO update!)
-    let xp = this.system?.secondary?.xp?.value ?? 0;
-    let calculated_level = 1 + Math.floor(xp / 10);
-    this.system.secondary.xp.level = calculated_level; //forse errore
+    // prepareDerivedData fires during document creation, before the data
+    // model is fully populated — optional chaining on the read is not enough;
+    // the write target must also be guarded.
+    let xpValue = this.system?.secondary?.xp?.value ?? 0;
+    let calculated_level = 1 + Math.floor(xpValue / 10);
+    if (this.system?.secondary?.xp) {
+      this.system.secondary.xp.level = calculated_level;
+    }
   }
   /* -------------------------------------------- */
   computeDRTotal() {
@@ -851,27 +795,27 @@ async resetAllSkillUses(askConfirmation = true) {
   computeBonusLanguages() {
    const minStat = this.system.statistics?.min?.value ?? 0;
    const nblanguage = Math.floor(minStat / 2);
-   this.system.secondary.nblanguage.value = nblanguage; //errore
+   if (this.system?.secondary?.nblanguage) {
+     this.system.secondary.nblanguage.value = nblanguage;
+   }
   }
   /* -------------------------------------------- */
-  spentMana(spentValue) {
-    let mana = foundry.utils.duplicate(this.system.attributes.mana)
+  async spentMana(spentValue) {
+    let mana = foundry.utils.deepClone(this.system.attributes.mana)
     if (Number(spentValue) > mana.value) {
       ui.notifications.warn("Not enough Mana points  : you have " + mana.value + " points, tried to spend " + spentValue)
       return false
     }
     mana.value -= Number(spentValue)
-    //console.log('[DEBUG] update system.attributes.mana', { mana });
-    this.update({ 'system.attributes.mana': mana })
+    await this.update({ 'system.attributes.mana': mana })
     return true
   }
 
   /* -------------------------------------------- */
-  incrementUse(rollData) {
-    let stat = foundry.utils.duplicate(this.system[rollData.mode][rollData.statKey])
+  async incrementUse(rollData) {
+    let stat = foundry.utils.deepClone(this.system[rollData.mode][rollData.statKey])
     stat.nbuse++
-    //console.log('[DEBUG] update incrementUse', { stat, rollData });
-    this.update({ [`system.${rollData.mode}.${rollData.statKey}`]: stat })
+    await this.update({ [`system.${rollData.mode}.${rollData.statKey}`]: stat })
   }
 
   /* -------------------------------------------- */
@@ -881,21 +825,20 @@ async resetAllSkillUses(askConfirmation = true) {
     rollData.actorImg = this.img
     rollData.actorId = this.id
     rollData.img = this.img
-    console.log("ROLLDATA", rollData)
 
     return rollData
   }
 
   /* -------------------------------------------- */
   rollFromType(rollType, rollKey) {
-    let stat = foundry.utils.duplicate(this.system[rollType][rollKey])
+    let stat = foundry.utils.deepClone(this.system[rollType][rollKey])
     let rollData = this.getCommonRollData()
     rollData.mode = rollType
     rollData.statKey = rollKey
     rollData.stat = stat
     rollData.title = `${this.name} - ${game.i18n.localize(stat.label)}`
     if (stat && stat.stat) {
-      rollData.statBonus = foundry.utils.duplicate(this.system.statistics[stat.stat])
+      rollData.statBonus = foundry.utils.deepClone(this.system.statistics[stat.stat])
     }
     if (stat.hasuse && stat.nbuse >= stat.maxuse) {
       ui.notifications.warn(game.i18n.localize("WH.notif.toomanyuses"))
@@ -916,7 +859,7 @@ async resetAllSkillUses(askConfirmation = true) {
     // with the dedicated "save" field – the game designer populates that
     // manually on the sheet (statistics.str.save, statistics.dex.save,
     // statistics.min.save).
-    let stat = foundry.utils.duplicate(this.system[rollType][rollKey]);
+    let stat = foundry.utils.deepClone(this.system[rollType][rollKey]);
     if (stat) {
       stat.value = stat.save ?? 0;
       // keep the save property in sync for display in the chat message
@@ -933,13 +876,13 @@ async resetAllSkillUses(askConfirmation = true) {
   rollWeapon(weaponId) {
     let weapon = this.items.get(weaponId)
     if (weapon) {
-      weapon = foundry.utils.duplicate(weapon)
+      weapon = foundry.utils.deepClone(weapon)
       let rollData = this.getCommonRollData()
       rollData.mode = "weapon"
       if (weapon.system.weapontype === "shooting" || weapon.system.weapontype === "throwing") {
-        rollData.stat = foundry.utils.duplicate(this.system.attributes.txcr)
+        rollData.stat = foundry.utils.deepClone(this.system.attributes.txcr)
       } else {
-        rollData.stat = foundry.utils.duplicate(this.system.attributes.txcm)
+        rollData.stat = foundry.utils.deepClone(this.system.attributes.txcm)
       }
       rollData.usemWeaponMalus = false
       rollData.mWeaponMalus = this.system.secondary.malusmultiweapon.value
@@ -953,7 +896,7 @@ async resetAllSkillUses(askConfirmation = true) {
   rollDamage(weaponId, is2hands = false) {
     let weapon = this.items.get(weaponId)
     if (weapon) {
-      weapon = foundry.utils.duplicate(weapon)
+      weapon = foundry.utils.deepClone(weapon)
       this.prepareWeapon(weapon)
       let rollData = this.getCommonRollData()
       rollData.mode = "damage"
@@ -968,7 +911,7 @@ async resetAllSkillUses(askConfirmation = true) {
   rollPower(powerId) {
     let power = this.items.get(powerId)
     if (power) {
-      power = foundry.utils.duplicate(power)
+      power = foundry.utils.deepClone(power)
       let rollData = this.getCommonRollData()
       rollData.mode = "power"
       rollData.power = power

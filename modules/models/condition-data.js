@@ -12,6 +12,8 @@ import { WARHERO_CONFIG } from "../warhero-config.js";
  */
 export class ConditionData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Condition"];
+
   /**
    * Define the data schema for condition items
    * @returns {Object} The data schema definition

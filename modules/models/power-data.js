@@ -12,6 +12,8 @@ import { WARHERO_CONFIG } from "../warhero-config.js";
  */
 export class PowerData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Power"];
+
   /**
    * Define the data schema for power items
    * @returns {Object} The data schema definition

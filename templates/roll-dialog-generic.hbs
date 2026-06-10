@@ -70,7 +70,7 @@
     </div>
     <div class="flexrow">
       <span class="item-field-label-vlong">{{shield.name}} : </span>
-      <span class="item-field-label-medium">{{shield.data.shielddie}}</span>
+      <span class="item-field-label-medium">{{shield.system.parrybonus}}</span>
     </div>
     {{/if}}
 
@@ -81,7 +81,7 @@
     </div>
     <div class="flexrow">
       <span class="item-field-label-vlong">{{localize "WH.chat.powerlevel"}} : </span>
-      <span class="item-field-label-medium">{{power.system.level}}</span>
+      <input class="item-field-label-medium" type="number" id="powerLevel" name="powerLevel" value="{{powerLevel}}" min="1" />
     </div>
     {{#if power.system.isteleport}}
     {{#if locations}}

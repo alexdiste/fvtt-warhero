@@ -116,6 +116,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
         drop: this._canDragDrop.bind(this),
       }
       d.callbacks = {
+        dragstart: this._onDragStart.bind(this),
         dragover: this._onDragOver.bind(this),
         drop: this._onDrop.bind(this),
       }
@@ -129,6 +130,11 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
    * @protected
    */
   async _onDrop(event) {
+    const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event)
+    if (data.type === "Item") {
+      const item = await fromUuid(data.uuid)
+      if (item) await this._onDropItem(item)
+    }
   }
 
 
@@ -139,7 +145,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
    * @protected
    */
   _canDragStart(selector) {
-    return true; //this.isEditable
+    return this.isEditable
   }
 
   /**
@@ -149,7 +155,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
    * @protected
    */
   _canDragDrop(selector) {
-    return true //this.isEditable && this.document.isOwner
+    return this.isEditable && this.document.isOwner
   }
 
   /**
@@ -266,7 +272,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   /**
    * Edit an existing item within the Actor
    * Start with the uuid, if it's not found, fallback to the id (as Embedded item in the actor)
-   * @this CthulhuEternalCharacterSheet
+   * @this WarheroActorSheet
    * @param {PointerEvent} event The originating click event
    * @param {HTMLElement} target the capturing HTML element which defined a [data-action]
    */
@@ -305,7 +311,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   static async #onEffectEdit(event, target) {
     const li = $(event.target).parents(".item");
     let effectId = li.data("item-id");
-    let effect = this.actor.appliedEffects.find(e => e.id === effectId);
+    let effect = this.actor.allApplicableEffects().find(e => e.id === effectId);
     if (!effect) return;
     effect.sheet.render(true);
   }
@@ -313,10 +319,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   static async #onEffectToggle(event, target) {
     const li = $(target).parents(".item");
     const effectId = li.data("item-id");
-    let effect = this.actor.appliedEffects.find(e => e.id === effectId);
-    if (!effect) {
-      effect = this.document.effects.get(effectId);
-    }
+    let effect = this.document.effects.get(effectId);
     if (!effect) {
       // Find if the effect exists in the actor's items (ie effects collection inside an item)
       effect = this.actor.items.reduce((found, item) => {
@@ -348,7 +351,7 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
         origin: owner.uuid,
         "duration.rounds": durationValue,
         disabled: disabled,
-        changes: [{}],
+        changes: [],
       },
       { parent: owner },
     );
@@ -357,17 +360,17 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   static async #onItemAdd(event, target) {
     const dataType = target.getAttribute("data-type")
     const slotKey = target.getAttribute("data-slot")
-    this.actor.createEmbeddedDocuments('Item', [{ name: "NewItem", type: dataType, system: { slotlocation: slotKey } }], { renderSheet: true })
+    await this.actor.createEmbeddedDocuments('Item', [{ name: "NewItem", type: dataType, system: { slotlocation: slotKey } }], { renderSheet: true })
   }
 
   static async #onQuantityMinus(event, target) {
     const li = $(target).parents(".item");
-    this.actor.incDecQuantity(li.data("item-id"), -1);
+    await this.actor.incDecQuantity(li.data("item-id"), -1);
   }
 
   static async #onQuantityPlus(event, target) {
     const li = $(target).parents(".item");
-    this.actor.incDecQuantity(li.data("item-id"), +1);
+    await this.actor.incDecQuantity(li.data("item-id"), +1);
   }
   // #endregion
 }

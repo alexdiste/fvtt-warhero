@@ -12,6 +12,8 @@ import { WARHERO_CONFIG } from "../warhero-config.js";
  */
 export class PotionData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Potion"];
+
   /**
    * Define the data schema for potion items
    * @returns {Object} The data schema definition
@@ -63,7 +65,7 @@ export class PotionData extends foundry.abstract.TypeDataModel {
         initial: "unknown",
         required: false,
         blank: false,
-        choices: foundry.utils.duplicate(WARHERO_CONFIG.identifiedState),
+        choices: foundry.utils.deepClone(WARHERO_CONFIG.identifiedState),
         label: "WH.ui.isidentified",
         hint: "WH.ui.isidentified.hint"
       }),

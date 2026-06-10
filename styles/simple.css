@@ -7,8 +7,8 @@
   cursor: pointer;
 }
 
-.grid,
-.grid-2col {
+.fvtt-warhero .grid,
+.fvtt-warhero .grid-2col {
   display: grid;
   grid-column: span 2 / span 2;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -87,9 +87,14 @@
   max-height: 2.5rem;
 }
 
+.item-stat-roll {
+  align-items: center;
+}
+
 .item-stat-roll h4 {
-  margin-left: 6px;
+  margin: 0 0 0 6px;
   font-size: 0.9rem;
+  line-height: 1;
 }
 
 .item-stat-roll input {
@@ -226,7 +231,7 @@
   margin-top: 4px;
 }
 
-.chat-icon,
+.warhero-chat-message-body .chat-icon,
 .warhero-chat-message-header .actor-icon,
 .roll-dialog-header .actor-icon {
   width: 48px;
@@ -293,7 +298,7 @@
   font-size: 0.8rem;
 }
 
-form .form-group.editor {
+.fvtt-warhero form .form-group.editor {
   border: 2px solid #ccc;
   height: 300px;
   padding: 0 3px;
@@ -422,7 +427,7 @@ form .form-group.editor {
   background: darkred;
 }
 
-.editor .item-text-long-line {
+.fvtt-warhero .editor.item-text-long-line {
   border: 2px solid #ccc;
   height: 500px;
   padding: 0 3px;
