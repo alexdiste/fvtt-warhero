@@ -12,6 +12,8 @@ const fields = foundry.data.fields;
  */
 export class RaceData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Race"];
+
   /**
    * Define the data schema for race items
    * @returns {Object} The data schema definition
@@ -30,7 +32,7 @@ export class RaceData extends foundry.abstract.TypeDataModel {
         initial: "medium",
         required: false,
         blank: false,
-        choices: foundry.utils.duplicate(WARHERO_CONFIG.progressionList),
+        choices: foundry.utils.deepClone(WARHERO_CONFIG.progressionList),
         label: "WH.ui.hpprogresion",
         hint: "WH.ui.hpprogresion.hint"
       }),
@@ -130,8 +132,9 @@ export class RaceData extends foundry.abstract.TypeDataModel {
   prepareBaseData() {
     super.prepareBaseData();
 
-    // Parse HP progression numeric value
-    this.hpProgressionValue = parseInt(this.hpprogresion.replace('hp', '')) || 2;
+    // Map progression key to numeric HP per level
+    const hpValues = { high: 6, medium: 4, low: 2 };
+    this.hpProgressionValue = hpValues[this.hpprogresion] ?? 2;
   }
 
   /**
@@ -181,8 +184,8 @@ export class RaceData extends foundry.abstract.TypeDataModel {
     super.validateJoint(options);
 
     // Validate HP progression value
-    const validHPProgressions = ["hp2", "hp4", "hp6", "hp8"];
-    if (!validHPProgressions.includes(this.hpprogresion)) {
+    const validProgressions = ["high", "medium", "low"];
+    if (!validProgressions.includes(this.hpprogresion)) {
       throw new foundry.data.validation.DataModelValidationFailure({
         unresolved: true,
         message: "Invalid HP progression value"
@@ -194,6 +197,10 @@ export class RaceData extends foundry.abstract.TypeDataModel {
    * Migrate race data
    */
   static migrateData(data) {
+    const hpMap = { hp2: "low", hp4: "medium", hp6: "high", hp8: "high" };
+    if (data.hpprogresion && hpMap[data.hpprogresion]) {
+      data.hpprogresion = hpMap[data.hpprogresion];
+    }
     return super.migrateData(data);
   }
 

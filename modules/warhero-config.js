@@ -97,7 +97,7 @@ export const WARHERO_CONFIG = {
 
   conditionSpecialDuration: {
     infinite: "WH.ui.infinite",
-    withineor: "WH.uiwithineor",
+    withineor: "WH.ui.withineor",
     beginr: "WH.ui.beginr",
     nextr: "WH.ui.nextr",
     nextcombat: "WH.ui.nextcombat",

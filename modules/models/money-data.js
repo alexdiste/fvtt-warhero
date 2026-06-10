@@ -12,6 +12,8 @@ const fields = foundry.data.fields;
  */
 export class MoneyData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Money"];
+
   /**
    * Define the data schema for money items
    * @returns {Object} The data schema definition

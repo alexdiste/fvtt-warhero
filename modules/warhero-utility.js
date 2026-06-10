@@ -4,7 +4,12 @@ import { WARHERO_CONFIG } from "./warhero-config.js";
 export class WarheroUtility {
 
   static async ready() {
-    console.log("WarheroUtility.ready() called");
+  }
+
+  static onSocketMessage(data) {
+    if (data.name === "msg_update_roll") {
+      this.updateRollData(data.data);
+    }
   }
 
   /* -------------------------------------------- */
@@ -150,25 +155,12 @@ export class WarheroUtility {
 
   /*--------------------- ----------------------- */
   static getActorStats() {
-    return foundry.utils.duplicate(WARHERO_CONFIG.statList)
+    return foundry.utils.deepClone(WARHERO_CONFIG.statList)
   }
   /*--------------------- ----------------------- */
   static upperFirst(text) {
     if (typeof text !== 'string') return text
     return text.charAt(0).toUpperCase() + text.slice(1)
-  }
-
-  /*-------------------------------------------- */
-  static getSkills() {
-    return foundry.utils.duplicate(this.skills)
-  }
-  /*-------------------------------------------- */
-  static getWeaponSkills() {
-    return foundry.utils.duplicate(this.weaponSkills)
-  }
-  /*-------------------------------------------- */
-  static getShieldSkills() {
-    return foundry.utils.duplicate(this.shieldSkills)
   }
 
    /* -------------------------------------------- */
@@ -237,7 +229,7 @@ export class WarheroUtility {
   }
   /* -------------------------------------------- */
   static saveRollData(rollData) {
-    game.socket.emit("system.warhero-rpg", {
+    game.socket.send("system.fvtt-warhero", {
       name: "msg_update_roll", data: rollData
     }); // Notify all other clients of the roll
     this.updateRollData(rollData)
@@ -247,7 +239,7 @@ export class WarheroUtility {
   static async displayDefenseMessage(rollData) {
     if (rollData.mode == "weapon" && rollData.defenderTokenId) {
       let defender = game.canvas.tokens.get(rollData.defenderTokenId).actor
-      if (game.user.isGM || (game.user.character && game.user.character.id == defender.id)) {
+      if (game.user.isGM || (game.user.character && game.user.character === defender.id)) {
         rollData.defender = defender
         rollData.defenderWeapons = defender.getEquippedWeapons()
         rollData.isRangedAttack = rollData.weapon?.system.isranged
@@ -255,7 +247,7 @@ export class WarheroUtility {
           name: defender.name,
           alias: defender.name,
           //user: defender.id,
-          content: await renderTemplate(`systems/fvtt-warhero/templates/chat-request-defense.html`, rollData),
+          content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-request-defense.html`, rollData),
           whisper: [defender.id].concat(ChatMessage.getWhisperRecipients('GM')),
         })
       }
@@ -267,7 +259,7 @@ static async showDiceSoNice(roll, rollMode) {
       if (game.dice3d) {
         let whisper = null;
         let blind = false;
-        rollMode = rollMode ?? game.settings.get("core", "rollMode");
+        rollMode = rollMode ?? game.settings.get("core", "messageMode");
         switch (rollMode) {
           case "blindroll": //GM only
             blind = true;
@@ -291,8 +283,8 @@ static async showDiceSoNice(roll, rollMode) {
     let diceFormula = "1d12+" + rollData.stat.value
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
-      myRoll = await new Roll(diceFormula).roll()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
+      myRoll = await new Roll(diceFormula).evaluate()
+      await this.showDiceSoNice(myRoll, game.settings.get("core", "messageMode"))
     }
     rollData.roll = myRoll
     rollData.diceFormula = diceFormula
@@ -309,7 +301,7 @@ static async showDiceSoNice(roll, rollMode) {
       rollData.isCriticalFailure = true
     }
     let msg = await this.createChatWithRollMode(rollData.alias, {
-      content: await renderTemplate(`systems/fvtt-warhero/templates/chat-parry-result.html`, rollData)
+      content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-parry-result.html`, rollData)
     })
     msg.setFlag("world", "rolldata", rollData)
     //console.log("Rolldata result", rollData)
@@ -321,7 +313,7 @@ static async showDiceSoNice(roll, rollMode) {
 
     if (rollData.mode == "power") {
       let manaCost = rollData.powerLevel
-      if (actor.spentMana(manaCost)) {
+      if (await actor.spentMana(manaCost)) {
         let powerKey = "level" + rollData.powerLevel
         rollData.powerText = rollData.power.system[powerKey]
         // If teleport power and location selected, get location name
@@ -345,8 +337,8 @@ static async showDiceSoNice(roll, rollMode) {
       } else {
         formula = (rollData.is2hands) ? rollData.weapon.damageFormula2Hands : rollData.weapon.damageFormula
       }
-      let myRoll = await new Roll(formula + "+" + rollData.bonusMalus, actor.system).roll()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
+      let myRoll = await new Roll(formula + "+" + rollData.bonusMalus, actor.system).evaluate()
+      await this.showDiceSoNice(myRoll, game.settings.get("core", "messageMode"))
       rollData.roll = myRoll
       rollData.diceFormula = myRoll.formula
       rollData.diceResult = myRoll.terms[0].results[0].result
@@ -389,7 +381,7 @@ static async showDiceSoNice(roll, rollMode) {
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
       myRoll = await new Roll(diceFormula, actor.system).roll()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "rollMode"))
+      await this.showDiceSoNice(myRoll, game.settings.get("core", "messageMode"))
     }
     rollData.roll = myRoll
     rollData.diceFormula = diceFormula
@@ -402,7 +394,7 @@ static async showDiceSoNice(roll, rollMode) {
     }
 
     if (rollData.stat.hasuse) {
-      actor.incrementUse(rollData)
+      await actor.incrementUse(rollData)
     }
 
     let msg = await this.createChatWithRollMode(rollData.alias, {
@@ -484,7 +476,7 @@ static async showDiceSoNice(roll, rollMode) {
   static getBasicRollData() {
     let rollData = {
       rollId: foundry.utils.randomID(16),
-      rollMode: game.settings.get("core", "rollMode"),
+      rollMode: game.settings.get("core", "messageMode"),
       advantage: "none",
       bonusMalus: 0,
       powerLevel: "1",
@@ -505,57 +497,22 @@ static async showDiceSoNice(roll, rollMode) {
 
   /* -------------------------------------------- */
   static async createChatWithRollMode(name, chatOptions) {
-    return this.createChatMessage(name, game.settings.get("core", "rollMode"), chatOptions)
+    return this.createChatMessage(name, game.settings.get("core", "messageMode"), chatOptions)
   }
 
   /* -------------------------------------------- */
   static async confirmDelete(actorSheet, li, itemType) {
     let itemId = li.data("item-id");
     let msgTxt = `<p>Are you sure to remove this ${itemType}?</p>`;
-    new Dialog({
-      title: "Confirm removal",
+    const confirmed = await foundry.applications.api.DialogV2.confirm({
+      window: { title: "Confirm removal" },
       content: msgTxt,
-      buttons: {
-        yes: {
-          label: "Yes, remove it",
-          icon: '<i class="fas fa-check"></i>',
-          callback: () => {
-            actorSheet.actor.deleteEmbeddedDocuments(itemType, [itemId]);
-            li.slideUp(200, () => actorSheet.render(false));
-          }
-        },
-        no: {
-          label: "Cancel",
-          icon: '<i class="fas fa-times"></i>'
-        }
-      }
-    }).render(true);
-  }
-
-  /* -------------------------------------------- */
-  static prepareActiveEffect(effectId) {
-    let status = CONFIG.ACKS.statusEffects.find((it) => it.id.includes(effectId));
-    if (status) {
-      status = foundry.utils.duplicate(status);
-      status.statuses = [effectId];
-    }
-    return status;
-  }
-
-  /* -------------------------------------------- */
-  static addUniqueStatus(actor, statusId) {
-    let status = actor.effects.find((it) => it.statuses.has(statusId));
-    if (!status) {
-      let effect = this.prepareActiveEffect(statusId);
-      actor.createEmbeddedDocuments("ActiveEffect", [effect]);
-    }
-  }
-
-  /* -------------------------------------------- */
-  static async removeEffect(actor, statusId) {
-    let effect = actor.effects.find((it) => it.statuses.has(statusId));
-    if (effect) {
-      await actor.deleteEmbeddedDocuments("ActiveEffect", [effect.id]);
+      rejectClose: false,
+      modal: true
+    });
+    if (confirmed) {
+      await actorSheet.actor.deleteEmbeddedDocuments(itemType, [itemId]);
+      li.slideUp(200, () => actorSheet.render(false));
     }
   }
 
@@ -590,33 +547,4 @@ static async showDiceSoNice(roll, rollMode) {
     return categories;
   }
 
-  /* -------------------------------------------- */
-  static async onManageActiveEffect(event, owner) {
-    event.preventDefault();
-    const a = event.currentTarget;
-    const li = a.closest("li");
-    let effect = li.dataset.effectId ? owner.effects.get(li.dataset.effectId) : null;
-    switch (a.dataset.action) {
-      case "create":
-        effect = await ActiveEffect.implementation.create(
-          {
-            name: game.i18n.format("DOCUMENT.New", { type: game.i18n.localize("DOCUMENT.ActiveEffect") }),
-            transfer: true,
-            img: "icons/svg/aura.svg",
-            origin: owner.uuid,
-            "duration.rounds": li.dataset.effectType === "temporary" ? 1 : undefined,
-            disabled: li.dataset.effectType === "inactive",
-            changes: [{}],
-          },
-          { parent: owner },
-        );
-        return effect.sheet.render(true);
-      case "edit":
-        return effect.sheet.render(true);
-      case "delete":
-        return effect.delete();
-      case "toggle":
-        return effect.update({ disabled: !effect.disabled });
-    }
-  }
 }

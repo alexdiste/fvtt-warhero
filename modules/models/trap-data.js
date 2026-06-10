@@ -12,6 +12,8 @@ const fields = foundry.data.fields;
  */
 export class TrapData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Trap"];
+
   /**
    * Define the data schema for trap items
    * @returns {Object} The data schema definition
@@ -63,7 +65,7 @@ export class TrapData extends foundry.abstract.TypeDataModel {
         initial: "unknown",
         required: false,
         blank: false,
-        choices: foundry.utils.duplicate(WARHERO_CONFIG.identifiedState),
+        choices: foundry.utils.deepClone(WARHERO_CONFIG.identifiedState),
         label: "WH.ui.isidentified",
         hint: "WH.ui.isidentified.hint"
       }),

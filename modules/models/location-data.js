@@ -1,19 +1,20 @@
 /**
- * Warhero Condition Data Model
- * Defines the data schema for condition items using Foundry DataModel API
+ * Warhero Location Data Model
+ * Defines the data schema for location items using Foundry DataModel API
  */
 
 const fields = foundry.data.fields;
-import { WARHERO_CONFIG } from "../warhero-config.js";
 
 /**
- * Data model class for condition items
+ * Data model class for location items
  * @extends foundry.abstract.TypeDataModel
  */
 export class LocationData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Location"];
+
   /**
-   * Define the data schema for condition items
+   * Define the data schema for location items
    * @returns {Object} The data schema definition
    */
   static defineSchema() {
@@ -37,7 +38,7 @@ export class LocationData extends foundry.abstract.TypeDataModel {
   }
 
   /**
-   * Prepare base data for the condition
+   * Prepare base data for the location
    */
   prepareBaseData() {
     super.prepareBaseData();
@@ -45,7 +46,7 @@ export class LocationData extends foundry.abstract.TypeDataModel {
   }
 
   /**
-   * Prepare derived data for the condition
+   * Prepare derived data for the location
    */
   prepareDerivedData() {
     super.prepareDerivedData();
@@ -53,7 +54,7 @@ export class LocationData extends foundry.abstract.TypeDataModel {
   }
 
   /**
-   * Migrate condition data
+   * Migrate location data
    */
   static migrateData(data) {
     return super.migrateData(data);

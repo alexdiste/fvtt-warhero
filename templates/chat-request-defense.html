@@ -1,0 +1,21 @@
+<div class="warhero-chat-message-header">
+  <h4 class="chat-actor-name">{{alias}} - Defense Request</h4>
+</div>
+
+<div class="warhero-chat-message-body">
+  <ul>
+    <li><strong>{{localize "WH.ui.weapon"}}:</strong> {{weapon.name}}</li>
+    {{#if isRangedAttack}}
+    <li>{{localize "WH.ui.Throw2HitR"}}</li>
+    {{else}}
+    <li>{{localize "WH.ui.Throw2HitM"}}</li>
+    {{/if}}
+  </ul>
+  <hr>
+  <p><strong>{{localize "WH.ui.parrybonus"}}: {{defender.system.secondary.parrybonustotal.value}}</strong></p>
+  {{#each defenderWeapons as |defWeapon|}}
+  <div class="flexrow">
+    <span>{{defWeapon.name}}</span>
+  </div>
+  {{/each}}
+</div>

@@ -64,7 +64,7 @@ export class WarheroPartySheet extends WarheroActorSheet {
     const context = await super._prepareContext()
     context.tabs = this.#getTabs()
     const doc = this.document
-    const objectData = foundry.utils.duplicate(doc.system)
+    const objectData = foundry.utils.deepClone(doc.system)
 
     const members = this.constructor.#parseJsonField(objectData.biodata.members)
     const relations = this.constructor.#parseJsonField(objectData.biodata.relationships)
@@ -106,7 +106,7 @@ export class WarheroPartySheet extends WarheroActorSheet {
       members: enrichedMembers,
       relations: relationsWithLabels,
       visibleRelations,
-      equipments: foundry.utils.duplicate(this.actor.getEquipmentsOnly()),
+      equipments: foundry.utils.deepClone(this.actor.getEquipmentsOnly()),
       enrichedDescription: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.description, { async: true }),
       enrichedNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.notes, { async: true }),
       enrichedGmNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.gmnotes, { async: true }),

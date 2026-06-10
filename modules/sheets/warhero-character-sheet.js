@@ -105,7 +105,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     this.actor.computeDRTotal()
     this.actor.computeParryBonusTotal()
     this.actor.computeBonusLanguages()
-    const objectData = foundry.utils.duplicate(this.document.system)
+    const objectData = foundry.utils.deepClone(this.document.system)
     let race = this.actor.getRace()
 
     let formData = {
@@ -122,22 +122,22 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       raceSkills: this.actor.getRaceSkills(),
       classSkills: this.actor.getClassSkills(),
       languages: this.actor.getLanguages(),
-      weapons: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getWeapons())),
-      conditions: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getConditions())),
-      armors: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getArmors())),
-      shields: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getShields())),
-      equippedWeapons: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getEquippedWeapons())),
-      equippedArmors: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getEquippedArmors())),
-      equippedShields: this.actor.checkAndPrepareEquipments(foundry.utils.duplicate(this.actor.getEquippedShields())),
+      weapons: this.actor.getWeapons(),
+      conditions: this.actor.getConditions(),
+      armors: this.actor.getArmors(),
+      shields: this.actor.getShields(),
+      equippedWeapons: this.actor.getEquippedWeapons(),
+      equippedArmors: this.actor.getEquippedArmors(),
+      equippedShields: this.actor.getEquippedShields(),
       powers: this.actor.sortPowers(),
       locations: this.actor.getLocations(),
       allItems: this.actor.getAllItems(),
       competency: this.actor.getCompetency(),
-      race: foundry.utils.duplicate(race),
+      race: foundry.utils.deepClone(race),
       mainClass: this.actor.getMainClass(),
       secondaryClass: this.actor.getSecondaryClass(),
       totalMoney: this.actor.computeTotalMoney(),
-      equipments: foundry.utils.duplicate(this.actor.getEquipmentsOnly()),
+      equipments: foundry.utils.deepClone(this.actor.getEquipmentsOnly()),
       enrichedDescription: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.description, { async: true }),
       enrichedNotes: await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.biodata.notes, { async: true }),
       options: this.options,
@@ -267,19 +267,19 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
 
     const li = $(event.target).parents(".item")
     const skillId = li.data("item-id")
-    this.actor.incDecSkillUse(skillId, -1)
+    await this.actor.incDecSkillUse(skillId, -1)
   }
 
   static async #onSkillUsePlus(event, target) {
     event.preventDefault();
     const li = $(event.target).parents(".item")
     const skillId = li.data("item-id")
-    this.actor.incDecSkillUse(skillId, 1)
+    await this.actor.incDecSkillUse(skillId, 1)
   }
 
   static async #onResetSkillUse(event, target) {
     event.preventDefault();
-    this.actor.resetAllSkillUses()
+    await this.actor.resetAllSkillUses()
   }
 
   static async #onActorSleep(event, target) {
@@ -310,7 +310,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     if (!confirmed) return;
 
     // Esecuzione del riposo
-    this.actor.restActor();
+    await this.actor.restActor();
 }
 
   /**

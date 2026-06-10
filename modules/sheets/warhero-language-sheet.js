@@ -1,8 +1,8 @@
 import { WarheroBaseItemSheet } from "./warhero-base-item-sheet.js";
 
 /**
- * Warhero Skill Sheet Application v2
- * Extends the basic ApplicationV2 with skill-specific functionality
+ * Warhero Language Sheet Application v2
+ * Extends the basic ApplicationV2 with language-specific functionality
  * @extends {WarheroBaseItemSheet}
  */
 
@@ -10,7 +10,7 @@ export class WarheroLanguageSheetV2 extends WarheroBaseItemSheet {
 
   /** @override */
   static DEFAULT_OPTIONS = {
-    classes: ["fvtt-warhero", "sheet", "item", "skill"],
+    classes: ["fvtt-warhero", "sheet", "item", "language"],
     position: {
       width: 620
     },

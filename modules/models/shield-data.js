@@ -12,6 +12,8 @@ const fields = foundry.data.fields;
  */
 export class ShieldData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Shield"];
+
   /**
    * Define the data schema for shield items
    * @returns {Object} The data schema definition
@@ -92,7 +94,7 @@ export class ShieldData extends foundry.abstract.TypeDataModel {
         initial: "unknown",
         required: false,
         blank: false,
-        choices: foundry.utils.duplicate(WARHERO_CONFIG.identifiedState),
+        choices: foundry.utils.deepClone(WARHERO_CONFIG.identifiedState),
         label: "WH.ui.isidentified",
         hint: "WH.ui.isidentified.hint"
       }),
@@ -101,7 +103,7 @@ export class ShieldData extends foundry.abstract.TypeDataModel {
         initial: "notapplicable",
         required: false,
         blank: false,
-        choices: foundry.utils.duplicate(WARHERO_CONFIG.magicCharge),
+        choices: foundry.utils.deepClone(WARHERO_CONFIG.magicCharge),
         label: "WH.ui.magiccharge",
         hint: "WH.ui.magiccharge.hint"
       }),

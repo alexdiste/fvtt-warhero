@@ -11,6 +11,8 @@ const fields = foundry.data.fields;
  */
 export class LanguageData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Language"];
+
   /**
    * Define the data schema for language items
    * @returns {Object} The data schema definition

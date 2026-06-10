@@ -12,6 +12,8 @@ const fields = foundry.data.fields;
  */
 export class CharacterData extends foundry.abstract.TypeDataModel {
 
+  static LOCALIZATION_PREFIXES = ["WH.Character"];
+
   /**
    * Define the data schema for character actors
    * @returns {Object} The data schema definition
@@ -46,7 +48,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           initial: "medium",
           required: false,
           blank: false,
-          choices: foundry.utils.duplicate(WARHERO_CONFIG.sizeOptions),
+          choices: foundry.utils.deepClone(WARHERO_CONFIG.sizeOptions),
           label: "WH.ui.size",
           hint: "WH.ui.size.hint"
         }),
@@ -426,29 +428,11 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
   prepareDerivedData() {
     super.prepareDerivedData();
 
-    // Calculate derived combat values
-    this._calculateCombatValues();
-
     // Calculate resource usage
     this._calculateResourceUsage();
 
     // Calculate totals
     this._calculateTotals();
-  }
-
-  /**
-   * Calculate combat-related derived values
-   * @private
-   */
-  _calculateCombatValues() {
-    // Calculate total damage reduction
-    this.secondary.drbonustotal.value = this.secondary.drbonus.value;
-
-    // Calculate total parry bonus
-    this.secondary.parrybonustotal.value = this.secondary.parrybonus.value;
-
-    // Add equipment bonuses (would be calculated from equipped items)
-    // This would be done in the actor's prepareDerivedData method
   }
 
   /**
@@ -474,12 +458,9 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
    * @private
    */
   _calculateTotals() {
-    // Calculate total languages known
-    this.secondary.nblanguage.value = this.biodata.class ? 1 : 0; // Base + bonuses
-
     // Character is alive/conscious
     this.isAlive = this.attributes.hp.value > 0;
-    this.isWounded = this.attributes.hp.value < this.attributes.hp.max;  
+    this.isWounded = this.attributes.hp.value < this.attributes.hp.max;
   }
 
 

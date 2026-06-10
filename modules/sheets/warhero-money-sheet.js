@@ -1,8 +1,8 @@
 import { WarheroBaseItemSheet } from "./warhero-base-item-sheet.js";
 
 /**
- * Warhero Race Sheet Application v2
- * Extends the basic ApplicationV2 with race-specific functionality
+ * Warhero Money Sheet Application v2
+ * Extends the basic ApplicationV2 with money-specific functionality
  * @extends {WarheroBaseItemSheet}
  */
 
@@ -10,7 +10,7 @@ export class WarheroMoneySheetV2 extends WarheroBaseItemSheet {
 
   /** @override */
   static DEFAULT_OPTIONS = {
-    classes: ["fvtt-warhero", "sheet", "item", "race"],
+    classes: ["fvtt-warhero", "sheet", "item", "money"],
     position: {
       width: 620
     },
