@@ -39,6 +39,4 @@ export class WarheroLanguageSheetV2 extends WarheroBaseItemSheet {
   tabGroups = {
     sheet: "description",
   }
-
-
 }

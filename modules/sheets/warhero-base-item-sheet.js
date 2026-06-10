@@ -324,3 +324,4 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
   }
   // #endregion
 }
+

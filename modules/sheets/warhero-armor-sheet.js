@@ -42,5 +42,4 @@ export class WarheroArmorSheetV2 extends WarheroBaseItemSheet {
   tabGroups = {
     sheet: "description",
   }
-
 }

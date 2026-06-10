@@ -39,6 +39,4 @@ export class WarheroTrapSheetV2 extends WarheroBaseItemSheet {
   tabGroups = {
     sheet: "description",
   }
-
-
 }

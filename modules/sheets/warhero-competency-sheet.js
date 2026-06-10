@@ -40,5 +40,4 @@ export class WarheroCompetencySheetV2 extends WarheroBaseItemSheet {
   tabGroups = {
     sheet: "description",
   }
-
 }

@@ -42,6 +42,4 @@ export class WarheroPotionSheetV2 extends WarheroBaseItemSheet {
   tabGroups = {
     sheet: "description",
   }
-
-
 }

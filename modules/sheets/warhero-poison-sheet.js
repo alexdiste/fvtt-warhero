@@ -42,6 +42,4 @@ export class WarheroPoisonSheetV2 extends WarheroBaseItemSheet {
   tabGroups = {
     sheet: "description",
   }
-
-
 }
