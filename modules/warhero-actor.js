@@ -81,8 +81,10 @@ export class WarheroActor extends Actor {
           additiveChanges.set(path, prev + value);
         }
       }
+      const computedPaths = new Set(["system.attributes.hp.max"]);
       for (const [path, delta] of additiveChanges) {
         if (delta === 0) continue;
+        if (computedPaths.has(path)) continue;
         const docPath = path.slice(7);
         const submitted = foundry.utils.getProperty(changed.system, docPath);
         if (submitted !== undefined) {
@@ -677,7 +679,7 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   async restActor() {
     const manamax = this.system.attributes.mana.max;
-    const hpmax = this.system.attributes.hp.max;
+    const hpmax = this.system.attributes.hp.effectiveMax ?? this.system.attributes.hp.max;
 
     this.resetAllSkillUses(false);
 

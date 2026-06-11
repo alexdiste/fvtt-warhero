@@ -26,8 +26,8 @@
   <input type="text" class="item-field-label-short" data-tooltip="{{localize "WH.ui.bonusvalue"}}" {{#if disabled}}disabled{{/if}} name="system.{{path}}.{{key}}.value"
     value="{{stat.value}}" data-dtype="Number" />
   {{#if hasmax}}
-  <input type="text" class="item-field-label-short" data-tooltip="{{localize "WH.ui.max"}}" name="system.{{path}}.{{key}}.max" value="{{stat.max}}"
-    data-dtype="Number" />
+  <input type="text" class="item-field-label-short" data-tooltip="{{localize "WH.ui.max"}}" name="system.{{path}}.{{key}}.max" value="{{#if stat.effectiveMax}}{{stat.effectiveMax}}{{else}}{{stat.max}}{{/if}}"
+    data-dtype="Number" {{#if stat.maxLocked}}disabled{{/if}} />
   {{/if}}
   {{#if hasuse}}
   <span class="flexrow item-has-use">

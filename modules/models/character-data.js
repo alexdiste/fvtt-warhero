@@ -396,19 +396,29 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     // Ensure all numeric values are valid
     this.biodata.age = Math.max(0, this.biodata.age);
 
-    // Statistics
+    // Stats
     for (let stat of Object.values(this.statistics)) {
       //stat.save = Math.max(0, stat.save);
       //stat.value = Math.max(0, stat.value);
     }
 
+    // Auto-compute hp.max from STR: base 30 + str*10
+    const str = this.statistics?.str?.value ?? 0;
+    this.attributes.hp.max = 30 + Math.max(0, str) * 10;
+    // Snapshot the clean base BEFORE applyActiveEffects() mutates it.
+    // Used in prepareDerivedData() to separate base vs effective max.
+    this.attributes.hp._baseMax = this.attributes.hp.max;
+
     // Attributes
-    for (let attr of Object.values(this.attributes)) {
+    for (let [key, attr] of Object.entries(this.attributes)) {
       if (attr.max !== undefined) attr.max = Math.max(0, attr.max);
       if (attr.value !== undefined) attr.value = Math.max(0, attr.value);
 
-      // Clamp current value to max if applicable
-      if (attr.hasmax && attr.max > 0) {
+      // Clamp current value to max if applicable.
+      // Skip hp — its effective max may be higher due to ActiveEffects
+      // (effect deltas applied between prepareBaseData and prepareDerivedData).
+      // Clamping is deferred to prepareDerivedData where effectiveMax is known.
+      if (attr.hasmax && attr.max > 0 && key !== "hp") {
         attr.value = Math.min(attr.value, attr.max);
       }
     }
@@ -428,6 +438,31 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
   prepareDerivedData() {
     super.prepareDerivedData();
 
+    // ── Schema-level separation: hp.max vs hp.effectiveMax ──────────
+    // Foundry's applyActiveEffects() runs between prepareBaseData() and
+    // prepareDerivedData(), directly mutating schema fields. After that:
+    //   hp.max       = _baseMax + sum of ADD-mode ActiveEffect deltas
+    //   hp._baseMax  = the clean base saved before effects (see prepareBaseData)
+    //
+    // We save the effective (post-effects) value as hp.effectiveMax (runtime-only,
+    // not persisted) and restore hp.max to the clean base. This lets form inputs
+    // bind to the base while derived display logic uses the effective value.
+    // Without this separation, submitOnChange would bake effect deltas into the DB,
+    // causing compounding on every save.
+    // ─────────────────────────────────────────────────────────────────
+    this.attributes.hp.effectiveMax = this.attributes.hp.max;
+    this.attributes.hp.max = this.attributes.hp._baseMax;
+    delete this.attributes.hp._baseMax;
+
+    // Clamp hp.value to effectiveMax (deferred from prepareBaseData because
+    // only here do we know the post-effects effective max).
+    if (this.attributes.hp.effectiveMax > 0) {
+      this.attributes.hp.value = Math.min(this.attributes.hp.value, this.attributes.hp.effectiveMax);
+    }
+
+    // Mark auto-computed fields so sheets can disable their inputs
+    this.attributes.hp.maxLocked = true;
+
     // Calculate resource usage
     this._calculateResourceUsage();
 
@@ -440,9 +475,12 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
    * @private
    */
   _calculateResourceUsage() {
+    // Use effectiveMax (includes ActiveEffect contributions) for denominators
+    const effMax = this.attributes.hp.effectiveMax ?? this.attributes.hp.max;
+
     // HP percentage
-    this.hpPercentage = this.attributes.hp.max > 0 ?
-      (this.attributes.hp.value / this.attributes.hp.max) * 100 : 0;
+    this.hpPercentage = effMax > 0 ?
+      (this.attributes.hp.value / effMax) * 100 : 0;
 
     // Mana percentage
     this.manaPercentage = this.attributes.mana.max > 0 ?
@@ -458,9 +496,12 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
    * @private
    */
   _calculateTotals() {
+    // Use effectiveMax (includes ActiveEffect contributions) for thresholds
+    const effMax = this.attributes.hp.effectiveMax ?? this.attributes.hp.max;
+
     // Character is alive/conscious
     this.isAlive = this.attributes.hp.value > 0;
-    this.isWounded = this.attributes.hp.value < this.attributes.hp.max;
+    this.isWounded = this.attributes.hp.value < effMax;
   }
 
 
