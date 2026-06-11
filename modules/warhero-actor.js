@@ -72,7 +72,8 @@ export class WarheroActor extends Actor {
         if (effect.disabled) continue;
         for (const change of effect.changes) {
           if (!change.key.startsWith('system.')) continue;
-          if (change.type !== 'add') continue;
+          const changeType = change.type ?? WarheroActor.#modeToType(change.mode);
+          if (changeType !== 'add') continue;
           const value = Number(change.value);
           if (!Number.isFinite(value)) continue;
           const path = change.key;
@@ -80,8 +81,10 @@ export class WarheroActor extends Actor {
           additiveChanges.set(path, prev + value);
         }
       }
+      const computedPaths = new Set(["system.attributes.hp.max"]);
       for (const [path, delta] of additiveChanges) {
         if (delta === 0) continue;
+        if (computedPaths.has(path)) continue;
         const docPath = path.slice(7);
         const submitted = foundry.utils.getProperty(changed.system, docPath);
         if (submitted !== undefined) {
@@ -90,6 +93,13 @@ export class WarheroActor extends Actor {
       }
     }
     return super._preUpdate(changed, options, user);
+  }
+
+  static #modeToType(mode) {
+    return mode === undefined ? undefined
+      : mode === 0 ? "custom" : mode === 1 ? "multiply" : mode === 2 ? "add"
+      : mode === 3 ? "downgrade" : mode === 4 ? "upgrade" : mode === 5 ? "override"
+      : `custom.${mode}`;
   }
 
   /* -------------------------------------------- */
