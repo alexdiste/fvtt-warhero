@@ -99,7 +99,7 @@ export class WarheroUtility {
       }
 
       const hpValue = Number(attributes.hp.value) || 0;
-      const hpMax = Number(attributes.hp.effectiveMax ?? attributes.hp.max) || 1;
+      const hpMax = Number(attributes.hp.max) || 1;
       if (hpMax <= 0) {
         this._clearWarheroTempHPBar();
         return;

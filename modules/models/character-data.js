@@ -402,22 +402,15 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       //stat.value = Math.max(0, stat.value);
     }
 
-    // Auto-compute hp.max from STR: base 30 + str*10
-    const str = this.statistics?.str?.value ?? 0;
-    this.attributes.hp.max = 30 + Math.max(0, str) * 10;
-    // Snapshot the clean base BEFORE applyActiveEffects() mutates it.
-    // Used in prepareDerivedData() to separate base vs effective max.
-    this.attributes.hp._baseMax = this.attributes.hp.max;
-
     // Attributes
     for (let [key, attr] of Object.entries(this.attributes)) {
       if (attr.max !== undefined) attr.max = Math.max(0, attr.max);
       if (attr.value !== undefined) attr.value = Math.max(0, attr.value);
 
       // Clamp current value to max if applicable.
-      // Skip hp — its effective max may be higher due to ActiveEffects
-      // (effect deltas applied between prepareBaseData and prepareDerivedData).
-      // Clamping is deferred to prepareDerivedData where effectiveMax is known.
+      // Skip hp — its effective max is recomputed in prepareDerivedData() to
+      // account for ActiveEffects on STR and on hp.max directly. Clamping
+      // against the base max would drop valid HP when effects raise the ceiling.
       if (attr.hasmax && attr.max > 0 && key !== "hp") {
         attr.value = Math.min(attr.value, attr.max);
       }
@@ -433,34 +426,40 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
   }
 
   /**
-   * Prepare derived data for the character
+   * Prepare derived data for the character.
+   *
+   * Lifecycle reminder (Foundry v14):
+   *   1. prepareBaseData()          — base values, before effects
+   *   2. applyActiveEffects()       — Foundry mutates schema fields directly
+   *   3. prepareDerivedData()       — computed / derived fields
+   *
+   * STR effects and direct hp.max effects both land between (1) and (3).
+   * We recompute hp.max here from the (already-mutated) STR so that STR
+   * debuffs/buffs flow through to HP. Direct ADD effects on hp.max are
+   * summed separately and added on top. The final hp.max is the effective
+   * (gameplay) value; the stored value in the DB is irrelevant because
+   * prepareBaseData always overwrites it.
    */
   prepareDerivedData() {
     super.prepareDerivedData();
 
-    // ── Schema-level separation: hp.max vs hp.effectiveMax ──────────
-    // Foundry's applyActiveEffects() runs between prepareBaseData() and
-    // prepareDerivedData(), directly mutating schema fields. After that:
-    //   hp.max       = _baseMax + sum of ADD-mode ActiveEffect deltas
-    //   hp._baseMax  = the clean base saved before effects (see prepareBaseData)
-    //
-    // We save the effective (post-effects) value as hp.effectiveMax (runtime-only,
-    // not persisted) and restore hp.max to the clean base. This lets form inputs
-    // bind to the base while derived display logic uses the effective value.
-    // Without this separation, submitOnChange would bake effect deltas into the DB,
-    // causing compounding on every save.
-    // ─────────────────────────────────────────────────────────────────
-    this.attributes.hp.effectiveMax = this.attributes.hp.max;
-    this.attributes.hp.max = this.attributes.hp._baseMax;
-    delete this.attributes.hp._baseMax;
+    // 1. Read STR after any ActiveEffect mutations
+    const postStr = this.statistics?.str?.value ?? 0;
+    const hpFromStr = 30 + Math.max(0, postStr) * 10;
 
-    // Clamp hp.value to effectiveMax (deferred from prepareBaseData because
-    // only here do we know the post-effects effective max).
-    if (this.attributes.hp.effectiveMax > 0) {
-      this.attributes.hp.value = Math.min(this.attributes.hp.value, this.attributes.hp.effectiveMax);
+    // 2. Sum direct ADD effects targeting system.attributes.hp.max
+    const hpDirectEffects = this._getAdditiveEffectTotal("system.attributes.hp.max");
+
+    // 3. Effective max = STR-derived portion + direct effect deltas
+    this.attributes.hp.max = hpFromStr + hpDirectEffects;
+
+    // 4. Clamp current value to the effective max (deferred from
+    //    prepareBaseData because only now do we know the final value).
+    if (this.attributes.hp.max > 0) {
+      this.attributes.hp.value = Math.min(this.attributes.hp.value, this.attributes.hp.max);
     }
 
-    // Mark auto-computed fields so sheets can disable their inputs
+    // 5. Mark auto-computed fields so sheets can disable their inputs
     this.attributes.hp.maxLocked = true;
 
     // Calculate resource usage
@@ -471,16 +470,39 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
   }
 
   /**
+   * Sum the values of all ADD-mode ActiveEffect changes targeting a given key.
+   * Handles both v14 (change.type) and v12/v13 (change.mode) formats.
+   * @param {string} key  The effect change key (e.g. "system.attributes.hp.max")
+   * @returns {number}
+   * @private
+   */
+  _getAdditiveEffectTotal(key) {
+    const effects = this.parent?.allApplicableEffects?.() ?? [];
+    let total = 0;
+    for (const effect of effects) {
+      if (effect.disabled) continue;
+      for (const change of effect.changes) {
+        if (change.key !== key) continue;
+        const t = change.type ?? (
+          change.mode === undefined ? undefined :
+          change.mode === 2 ? "add" : undefined
+        );
+        if (t !== "add") continue;
+        const v = Number(change.value);
+        if (Number.isFinite(v)) total += v;
+      }
+    }
+    return total;
+  }
+
+  /**
    * Calculate resource usage and availability
    * @private
    */
   _calculateResourceUsage() {
-    // Use effectiveMax (includes ActiveEffect contributions) for denominators
-    const effMax = this.attributes.hp.effectiveMax ?? this.attributes.hp.max;
-
-    // HP percentage
-    this.hpPercentage = effMax > 0 ?
-      (this.attributes.hp.value / effMax) * 100 : 0;
+    // hp.max is now the effective value (STR-derived + ActiveEffects)
+    this.hpPercentage = this.attributes.hp.max > 0 ?
+      (this.attributes.hp.value / this.attributes.hp.max) * 100 : 0;
 
     // Mana percentage
     this.manaPercentage = this.attributes.mana.max > 0 ?
@@ -496,12 +518,9 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
    * @private
    */
   _calculateTotals() {
-    // Use effectiveMax (includes ActiveEffect contributions) for thresholds
-    const effMax = this.attributes.hp.effectiveMax ?? this.attributes.hp.max;
-
-    // Character is alive/conscious
+    // hp.max is now the effective value (STR-derived + ActiveEffects)
     this.isAlive = this.attributes.hp.value > 0;
-    this.isWounded = this.attributes.hp.value < effMax;
+    this.isWounded = this.attributes.hp.value < this.attributes.hp.max;
   }
 
 

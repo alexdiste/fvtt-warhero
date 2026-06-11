@@ -679,7 +679,7 @@ export class WarheroActor extends Actor {
   /* -------------------------------------------- */
   async restActor() {
     const manamax = this.system.attributes.mana.max;
-    const hpmax = this.system.attributes.hp.effectiveMax ?? this.system.attributes.hp.max;
+    const hpmax = this.system.attributes.hp.max;
 
     this.resetAllSkillUses(false);
 
