@@ -81,7 +81,7 @@ export class WarheroActor extends Actor {
           additiveChanges.set(path, prev + value);
         }
       }
-      const computedPaths = new Set(["system.attributes.hp.max"]);
+      const computedPaths = new Set(["system.attributes.hp.max", "system.attributes.mana.max"]);
       for (const [path, delta] of additiveChanges) {
         if (delta === 0) continue;
         if (computedPaths.has(path)) continue;
