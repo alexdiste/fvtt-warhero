@@ -1,0 +1,77 @@
+name: Affaticato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  shortdescription: Penalità -1 a FIS/IST.
+  description: >-
+    <p>Non può eseguire due mosse di movimento di fila. Penalità di -1 a FIS e
+    IST.</p>
+  begin: ''
+  specialduration: ''
+  durationvalue: 0
+  durationunit: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+effects:
+  - name: Affaticato
+    img: icons/svg/downgrade.svg
+    disabled: false
+    transfer: true
+    system:
+      changes:
+        - key: system.statistics.str.value
+          value: -1
+          type: add
+          phase: initial
+        - key: system.statistics.dex.value
+          value: -1
+          type: add
+          phase: initial
+    _id: Nh3wDil8xHtQVXlS
+    type: base
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.364'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.23
+      createdTime: 1781321466118
+      modifiedTime: 1781321466118
+      lastModifiedBy: iRIcYden187eueZP
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!6V232PZA8YWymrUa.Nh3wDil8xHtQVXlS'
+_id: 6V232PZA8YWymrUa
+folder: null
+ownership:
+  default: 0
+  iRIcYden187eueZP: 3
+flags: {}
+_stats:
+  coreVersion: '14.364'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.23
+  createdTime: 1781321466118
+  modifiedTime: 1781321466118
+  lastModifiedBy: iRIcYden187eueZP
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!items!6V232PZA8YWymrUa'

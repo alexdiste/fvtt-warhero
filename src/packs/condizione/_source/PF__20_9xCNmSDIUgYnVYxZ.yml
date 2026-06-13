@@ -1,0 +1,71 @@
+name: PF +20
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  shortdescription: Aumenta i Punti Ferita massimi di 20.
+  description: <p>Questo effetto Aumenta i Punti Ferita massimi di 20.</p>
+  begin: ''
+  specialduration: ''
+  durationvalue: 0
+  durationunit: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+effects:
+  - name: PF +20
+    img: icons/svg/aura.svg
+    disabled: false
+    transfer: true
+    system:
+      changes:
+        - key: system.attributes.hp.max
+          value: 20
+          type: add
+          phase: initial
+    _id: OjF6NDafiNdXl3KG
+    type: base
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.364'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.23
+      createdTime: 1781320981833
+      modifiedTime: 1781320981833
+      lastModifiedBy: iRIcYden187eueZP
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!9xCNmSDIUgYnVYxZ.OjF6NDafiNdXl3KG'
+_id: 9xCNmSDIUgYnVYxZ
+folder: null
+ownership:
+  default: 0
+  iRIcYden187eueZP: 3
+flags: {}
+_stats:
+  coreVersion: '14.364'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.23
+  createdTime: 1781320981833
+  modifiedTime: 1781320981833
+  lastModifiedBy: iRIcYden187eueZP
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!items!9xCNmSDIUgYnVYxZ'

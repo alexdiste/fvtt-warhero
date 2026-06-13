@@ -1,0 +1,71 @@
+name: Fisico +4
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  shortdescription: Aumenta il Fisico di 4.
+  description: <p>Questo effetto Aumenta il Fisico di 4.</p>
+  begin: ''
+  specialduration: ''
+  durationvalue: 0
+  durationunit: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+effects:
+  - name: Fisico +4
+    img: icons/svg/aura.svg
+    disabled: false
+    transfer: true
+    system:
+      changes:
+        - key: system.statistics.str.value
+          value: 4
+          type: add
+          phase: initial
+    _id: pb49e10ex0h8ApiL
+    type: base
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.364'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.23
+      createdTime: 1781320955965
+      modifiedTime: 1781320955965
+      lastModifiedBy: iRIcYden187eueZP
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!H1qTz7oc5CGVOQJl.pb49e10ex0h8ApiL'
+_id: H1qTz7oc5CGVOQJl
+folder: null
+ownership:
+  default: 0
+  iRIcYden187eueZP: 3
+flags: {}
+_stats:
+  coreVersion: '14.364'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.23
+  createdTime: 1781320955965
+  modifiedTime: 1781320962094
+  lastModifiedBy: iRIcYden187eueZP
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 1900000
+_key: '!items!H1qTz7oc5CGVOQJl'

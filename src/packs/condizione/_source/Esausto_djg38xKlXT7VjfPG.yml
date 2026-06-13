@@ -1,0 +1,93 @@
+name: Esausto
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  shortdescription: Penalità -2 a FIS/IST, movimento dimezzato.
+  description: >-
+    <p>Non può eseguire due mosse di movimento di fila, la velocità di movimento
+    è dimezzata e subisce una penalità di -2 a FIS e IST.</p>
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+effects:
+  - name: Esausto
+    img: icons/svg/downgrade.svg
+    disabled: false
+    transfer: true
+    system:
+      changes:
+        - key: system.statistics.str.value
+          value: -2
+          type: add
+          phase: initial
+        - key: system.statistics.dex.value
+          value: -2
+          type: add
+          phase: initial
+        - key: system.attributes.movearth.value
+          value: 0.5
+          type: multiply
+          phase: initial
+        - key: system.attributes.movswim.value
+          value: 0.5
+          type: multiply
+          phase: initial
+        - key: system.attributes.movfly.value
+          value: 0.5
+          type: multiply
+          phase: initial
+        - key: system.attributes.movcharge.value
+          value: 0.5
+          type: multiply
+          phase: initial
+    _id: VEeE0WE1IOCs4Sgl
+    type: base
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.364'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.23
+      createdTime: 1781321468656
+      modifiedTime: 1781321468656
+      lastModifiedBy: iRIcYden187eueZP
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!djg38xKlXT7VjfPG.VEeE0WE1IOCs4Sgl'
+_id: djg38xKlXT7VjfPG
+folder: null
+ownership:
+  default: 0
+  iRIcYden187eueZP: 3
+flags: {}
+_stats:
+  coreVersion: '14.364'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.23
+  createdTime: 1781321468656
+  modifiedTime: 1781321468656
+  lastModifiedBy: iRIcYden187eueZP
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!items!djg38xKlXT7VjfPG'

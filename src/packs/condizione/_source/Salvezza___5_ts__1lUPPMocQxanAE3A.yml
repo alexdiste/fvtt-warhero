@@ -24,15 +24,15 @@ flags:
 _stats:
   systemId: fvtt-warhero
   systemVersion: 11.2.1
-  coreVersion: '13.341'
+  coreVersion: '14.364'
   createdTime: 1681506477274
-  modifiedTime: 1743437150785
-  lastModifiedBy: 3qSgeSFSnvxe6cjb
+  modifiedTime: 1781320962095
+  lastModifiedBy: iRIcYden187eueZP
   compendiumSource: Item.HJRAwr6OVi4pJUKm
   duplicateSource: null
   exportSource: null
 folder: null
-sort: 4600000
+sort: 6900000
 ownership:
   default: 0
   vvRutjambw1JfPoO: 3

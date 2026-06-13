@@ -1,0 +1,71 @@
+name: Istinto +5
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  shortdescription: Aumenta l'Istinto di 5.
+  description: <p>Questo effetto Aumenta l'Istinto di 5.</p>
+  begin: ''
+  specialduration: ''
+  durationvalue: 0
+  durationunit: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+effects:
+  - name: Istinto +5
+    img: icons/svg/aura.svg
+    disabled: false
+    transfer: true
+    system:
+      changes:
+        - key: system.statistics.dex.value
+          value: 5
+          type: add
+          phase: initial
+    _id: qbSgwmWiO1qwiAta
+    type: base
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.364'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.23
+      createdTime: 1781320963255
+      modifiedTime: 1781320963255
+      lastModifiedBy: iRIcYden187eueZP
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!BmC825FvXCznt0aU.qbSgwmWiO1qwiAta'
+_id: BmC825FvXCznt0aU
+folder: null
+ownership:
+  default: 0
+  iRIcYden187eueZP: 3
+flags: {}
+_stats:
+  coreVersion: '14.364'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.23
+  createdTime: 1781320963255
+  modifiedTime: 1781320963255
+  lastModifiedBy: iRIcYden187eueZP
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!items!BmC825FvXCznt0aU'

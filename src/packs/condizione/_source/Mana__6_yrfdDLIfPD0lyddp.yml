@@ -1,0 +1,71 @@
+name: Mana +6
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  shortdescription: Aumenta il Mana massimo di 6.
+  description: <p>Questo effetto Aumenta il Mana massimo di 6.</p>
+  begin: ''
+  specialduration: ''
+  durationvalue: 0
+  durationunit: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+effects:
+  - name: Mana +6
+    img: icons/svg/aura.svg
+    disabled: false
+    transfer: true
+    system:
+      changes:
+        - key: system.attributes.mana.max
+          value: 6
+          type: add
+          phase: initial
+    _id: D5VhQEOavM2gbMR8
+    type: base
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    statuses: []
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.364'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.23
+      createdTime: 1781320971013
+      modifiedTime: 1781320971013
+      lastModifiedBy: iRIcYden187eueZP
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!yrfdDLIfPD0lyddp.D5VhQEOavM2gbMR8'
+_id: yrfdDLIfPD0lyddp
+folder: null
+ownership:
+  default: 0
+  iRIcYden187eueZP: 3
+flags: {}
+_stats:
+  coreVersion: '14.364'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.23
+  createdTime: 1781320971013
+  modifiedTime: 1781320971013
+  lastModifiedBy: iRIcYden187eueZP
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!items!yrfdDLIfPD0lyddp'

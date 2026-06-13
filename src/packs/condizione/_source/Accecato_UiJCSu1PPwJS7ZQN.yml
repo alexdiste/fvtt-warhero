@@ -1,0 +1,82 @@
+name: Accecato
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  shortdescription: 'Condizione blind: visione disattivata e -5 al TxC.'
+  description: >-
+    <p>Il personaggio è accecato (condizione 'blind'). La visione è disattivata
+    e subisce -5 a TxC mischia e distanza.</p>
+  begin: ''
+  specialduration: ''
+  durationvalue: 0
+  durationunit: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+effects:
+  - name: Accecato
+    img: icons/svg/blind.svg
+    disabled: false
+    transfer: true
+    statuses:
+      - blind
+    system:
+      changes:
+        - key: sight.enabled
+          value: false
+          type: override
+          phase: initial
+        - key: system.attributes.txcm.value
+          value: -5
+          type: add
+          phase: initial
+        - key: system.attributes.txcr.value
+          value: -5
+          type: add
+          phase: initial
+    _id: XY7N4Zeo2XCQaErP
+    type: base
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.364'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.23
+      createdTime: 1781321103193
+      modifiedTime: 1781321103193
+      lastModifiedBy: iRIcYden187eueZP
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!UiJCSu1PPwJS7ZQN.XY7N4Zeo2XCQaErP'
+_id: UiJCSu1PPwJS7ZQN
+folder: null
+ownership:
+  default: 0
+  iRIcYden187eueZP: 3
+flags: {}
+_stats:
+  coreVersion: '14.364'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.23
+  createdTime: 1781321103193
+  modifiedTime: 1781321103193
+  lastModifiedBy: iRIcYden187eueZP
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!items!UiJCSu1PPwJS7ZQN'

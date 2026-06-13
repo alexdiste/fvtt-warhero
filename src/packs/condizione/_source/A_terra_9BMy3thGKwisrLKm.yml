@@ -1,0 +1,79 @@
+name: A terra
+type: condition
+img: systems/fvtt-warhero/images/icons/aura.svg
+system:
+  conditiontype: generic
+  duration: permanent
+  shortdescription: 'Condizione prone: -5 al TxC.'
+  description: >-
+    <p>Il personaggio è a terra (condizione 'prono'). Subisce una penalità di -5
+    a tutti i tiri per colpire (mischia e distanza). Rialzarsi da terra costa 3
+    metri/quadretti di movimento</p>
+  begin: ''
+  specialduration: infinite
+  durationvalue: 0
+  durationunit: ''
+  dcsave: 0
+  incubationtime: ''
+  diseaseduration: ''
+effects:
+  - name: A terra
+    img: icons/svg/falling.svg
+    disabled: false
+    transfer: true
+    statuses:
+      - prone
+    system:
+      changes:
+        - key: system.attributes.txcm.value
+          value: -5
+          type: add
+          phase: initial
+        - key: system.attributes.txcr.value
+          value: -5
+          type: add
+          phase: initial
+    _id: rnpMl1Bo56UzstV7
+    type: base
+    start: null
+    duration:
+      value: null
+      units: seconds
+      expiry: null
+      expired: false
+    description: ''
+    origin: null
+    tint: '#ffffff'
+    showIcon: 1
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      coreVersion: '14.364'
+      systemId: fvtt-warhero
+      systemVersion: 14.86.23
+      createdTime: 1781321686927
+      modifiedTime: 1781321686927
+      lastModifiedBy: iRIcYden187eueZP
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _key: '!items.effects!9BMy3thGKwisrLKm.rnpMl1Bo56UzstV7'
+_id: 9BMy3thGKwisrLKm
+folder: null
+ownership:
+  default: 0
+  iRIcYden187eueZP: 3
+flags: {}
+_stats:
+  coreVersion: '14.364'
+  systemId: fvtt-warhero
+  systemVersion: 14.86.23
+  createdTime: 1781321686927
+  modifiedTime: 1781321686927
+  lastModifiedBy: iRIcYden187eueZP
+  exportSource: null
+  compendiumSource: null
+  duplicateSource: null
+sort: 0
+_key: '!items!9BMy3thGKwisrLKm'
