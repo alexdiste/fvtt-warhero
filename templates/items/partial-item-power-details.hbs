@@ -1,15 +1,15 @@
 <section class="tab equipment-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
   <ul>
     <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.magicschool"}}</label>
-      <input type="text" class="item-field-label-long" name="system.magicschool" value="{{system.magicschool}}"
+      <input type="text" class="item-field-label-medium" name="system.magicschool" value="{{system.magicschool}}"
         data-dtype="String" />
     </li>
     <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.level"}}</label>
-      <input type="text" class="item-field-label-long" name="system.level" value="{{system.level}}"
+      <input type="text" class="item-field-label-medium" name="system.level" value="{{system.level}}"
         data-dtype="Number" />
     </li>
     <li class="flexrow"><label class="item-field-label-long ">{{localize "WH.ui.isteleport"}}</label>
-      <input type="checkbox" class="item-field-label-long" name="system.isteleport" {{#if system.isteleport}}checked{{/if}}
+      <input type="checkbox" name="system.isteleport" {{#if system.isteleport}}checked{{/if}}
         data-dtype="Boolean" />
     </li>
   </ul>

@@ -173,6 +173,21 @@
   max-width: 4.5rem;
 }
 
+.item-field-label-long {
+  min-width: 8rem;
+  max-width: 8rem;
+}
+
+.item-field-label-wide {
+  min-width: 7rem;
+  max-width: 7rem;
+}
+
+.item-field-label-fill {
+  flex: 1;
+  min-width: 10rem;
+}
+
 .item-has-use {
   margin-left: 4px;
   max-width: 8rem;
@@ -427,9 +442,11 @@
   background: darkred;
 }
 
+/* Editor in item sheets: no fixed height cap, starts at 200px and grows
+   with content. Scrollbar appears only when editor exceeds the window. */
 .fvtt-warhero .editor.item-text-long-line {
   border: 2px solid #ccc;
-  height: 500px;
+  min-height: 200px;
   padding: 0 3px;
   overflow-y: auto;
 }
