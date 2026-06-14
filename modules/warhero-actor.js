@@ -45,6 +45,32 @@ export class WarheroActor extends Actor {
 
    /* -------------------------------------------- */
   /**
+   * Override prepareData to reset the system to _source before the
+   * standard prepare chain. This prevents ActiveEffect compounding
+   * because Actor.prepareBaseData() → _clearData() clears the
+   * _completedActiveEffectPhases Set, which would allow effects to
+   * be re-applied on every call. Resetting from _source ensures
+   * effects always start from the same baseline.
+   */
+  prepareData() {
+    this.system.reset();
+    super.prepareData();
+  }
+
+   /* -------------------------------------------- */
+  /**
+   * Override to apply "initial" ActiveEffects before embedded documents
+   * prepare. This ensures items (e.g. skills computing maxuse from rolls)
+   * see post-effects stat values. Actor.prepareEmbeddedDocuments() applies
+   * effects AFTER super, so the order is reversed here.
+   */
+  prepareEmbeddedDocuments() {
+    this.applyActiveEffects("initial");
+    super.prepareEmbeddedDocuments();
+  }
+
+   /* -------------------------------------------- */
+  /**
    * Prepara i dati derivati dell'attore. Non deve mai chiamare this.update()!
    * Tutti i campi calcolati vanno assegnati direttamente a this.system.*
    */
@@ -62,6 +88,8 @@ export class WarheroActor extends Actor {
     if (this.type == 'character' || game.user.isGM) {
       this.computeBonusLanguages();
     }
+
+
   }
 
   /* -------------------------------------------- */

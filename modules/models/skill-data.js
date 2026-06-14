@@ -97,7 +97,10 @@ export class SkillData extends foundry.abstract.TypeDataModel {
     if (!this.unlimited && this.parent?.parent) {
       const formula = (this.maxuseFormula && this.maxuseFormula.trim() !== "")
         ? this.maxuseFormula : "1";
-      const roll = new Roll(String(formula), this.parent.parent).evaluateSync();
+      // Strip @system. prefix for backwards compat; use the actor's TypeDataModel
+      // (which has post-effects values) as roll data.
+      const clean = String(formula).replace(/@system\./g, "@");
+      const roll = new Roll(clean, this.parent.parent?.system).evaluateSync();
       this.maxuse = roll.total;
     } else if (this.unlimited) {
       this.maxuse = Infinity;

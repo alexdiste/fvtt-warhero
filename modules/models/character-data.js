@@ -433,33 +433,53 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
    *   2. applyActiveEffects()       — Foundry mutates schema fields directly
    *   3. prepareDerivedData()       — computed / derived fields
    *
-   * STR effects and direct hp.max effects both land between (1) and (3).
-   * We recompute hp.max here from the (already-mutated) STR so that STR
-   * debuffs/buffs flow through to HP. Direct ADD effects on hp.max are
-   * summed separately and added on top. The final hp.max is the effective
-   * (gameplay) value; the stored value in the DB is irrelevant because
-   * prepareBaseData always overwrites it.
+   * hp.max formula:
+   *   30 + STR×10 + raceHpPerLvl×(level-1) + direct ADD effects
+   *
+   * All stat reads (STR, MIND, XP) happen after applyActiveEffects() so
+   * ActiveEffect buffs/debuffs flow through automatically. Level is
+   * computed inline because setLevel() (which does the same calc) is
+   * called from WarheroActor.prepareDerivedData() after this method.
+   *
+   * mana.max formula:
+   *   3 + MIND + direct ADD effects
+   *
+   * Both hp.max and mana.max are overwritten every cycle — the stored
+   * DB values are irrelevant. Sheet inputs are disabled via maxLocked.
    */
   prepareDerivedData() {
     super.prepareDerivedData();
 
-    // 1. Read STR after any ActiveEffect mutations
+    // ── hp.max ──────────────────────────────────────────────
+    // Formula: 30 + STR×10 + raceHpPerLvl×(level-1) + direct ADD effects
+    //
+    // All reads happen after applyActiveEffects() has mutated the
+    // actor system, so STR buffs/debuffs flow through automatically.
+    // Level is computed inline because setLevel() (which also does
+    // this) runs later in WarheroActor.prepareDerivedData().
+
+    // Read post-effects STR
     const postStr = this.statistics?.str?.value ?? 0;
-    const hpFromStr = 30 + Math.max(0, postStr) * 10;
 
-    // 2. Sum direct ADD effects targeting system.attributes.hp.max
-    const hpDirectEffects = this._getAdditiveEffectTotal("system.attributes.hp.max");
+    // Race HP progression (high=6, medium=4, low=2 — from race-data.js)
+    const raceItem = this.parent?.items?.find(i => i.type === "race");
+    const raceHpPerLvl = raceItem?.system?.hpProgressionValue ?? 0;
 
-    // 3. Effective max = STR-derived portion + direct effect deltas
-    this.attributes.hp.max = hpFromStr + hpDirectEffects;
+    // Level derived from XP
+    const xpVal = this.secondary?.xp?.value ?? 0;
+    const level = 1 + Math.floor(xpVal / 10);
 
-    // 4. Clamp current value to the effective max (deferred from
-    //    prepareBaseData because only now do we know the final value).
+    this.attributes.hp.max = 30
+      + Math.max(0, postStr) * 10
+      + raceHpPerLvl * Math.max(0, level - 1);
+
+    // Sum direct ADD effects targeting system.attributes.hp.max
+    this.attributes.hp.max += this._getAdditiveEffectTotal("system.attributes.hp.max");
+
+    // Clamp current value to the effective max
     if (this.attributes.hp.max > 0) {
       this.attributes.hp.value = Math.min(this.attributes.hp.value, this.attributes.hp.max);
     }
-
-    // 5. Mark auto-computed fields so sheets can disable their inputs
     this.attributes.hp.maxLocked = true;
 
     // Mana max = 3 + post-effects MIND value + direct ADD effects
