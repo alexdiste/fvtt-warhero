@@ -279,10 +279,9 @@ export default class WarheroActorSheet extends HandlebarsApplicationMixin(foundr
   static async #onItemEdit(event, target) {
     const li = $(event.target).parents(".item")
     let itemId = li.data("item-id")
+    if (!itemId) return;
     let item = this.actor.items.get(itemId);
-    if (!item) {
-      item = this.actor.effects.get(itemId);
-    }
+    if (!item) return;
     item.sheet.render(true);
   }
 

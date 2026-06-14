@@ -411,7 +411,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       // Skip hp — its effective max is recomputed in prepareDerivedData() to
       // account for ActiveEffects on STR and on hp.max directly. Clamping
       // against the base max would drop valid HP when effects raise the ceiling.
-      if (attr.hasmax && attr.max > 0 && key !== "hp") {
+      if (attr.hasmax && attr.max > 0 && key !== "hp" && key !== "mana") {
         attr.value = Math.min(attr.value, attr.max);
       }
     }
@@ -461,6 +461,16 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
 
     // 5. Mark auto-computed fields so sheets can disable their inputs
     this.attributes.hp.maxLocked = true;
+
+    // Mana max = 3 + post-effects MIND value + direct ADD effects
+    const postMin = this.statistics?.min?.value ?? 0;
+    const manaDirectEffects = this._getAdditiveEffectTotal("system.attributes.mana.max");
+    this.attributes.mana.max = 3 + Math.max(0, postMin) + manaDirectEffects;
+
+    if (this.attributes.mana.max > 0) {
+      this.attributes.mana.value = Math.min(this.attributes.mana.value, this.attributes.mana.max);
+    }
+    this.attributes.mana.maxLocked = true;
 
     // Calculate resource usage
     this._calculateResourceUsage();
