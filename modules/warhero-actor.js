@@ -62,11 +62,14 @@ export class WarheroActor extends Actor {
    * Override to apply "initial" ActiveEffects before embedded documents
    * prepare. This ensures items (e.g. skills computing maxuse from rolls)
    * see post-effects stat values. Actor.prepareEmbeddedDocuments() applies
-   * effects AFTER super, so the order is reversed here.
+   * effects AFTER super, which results in a harmless-but-noisy error when
+   * "initial" is called a second time, so we call the grandparent
+   * (ClientDocumentMixin) directly.
    */
   prepareEmbeddedDocuments() {
     this.applyActiveEffects("initial");
-    super.prepareEmbeddedDocuments();
+    const grandparent = Object.getPrototypeOf(Actor.prototype);
+    grandparent.prepareEmbeddedDocuments.call(this);
   }
 
    /* -------------------------------------------- */
