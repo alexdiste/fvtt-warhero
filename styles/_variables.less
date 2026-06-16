@@ -1,0 +1,107 @@
+// ============================================================
+// WARHERO RPG — Variables & Mixins
+// ============================================================
+
+// ===== Variables =====
+
+@color-dark-red: #3e0101;
+@color-red-hover: #800000;
+@color-gray: gray;
+@color-darkred-text: darkred;
+@color-darkgreen-text: darkgreen;
+@color-button-shadow: #a6827e;
+@color-border-light: #ccc;
+@color-item-border: #bbb;
+@color-black: black;
+@color-button-gradient-top: #21374afc;
+@color-button-gradient-bottom: #152833ab;
+
+// Dark palette — backgrounds
+@bg-main: #16202b;
+@bg-darker: #0e151e;
+@bg-gradient-start: #121e2e;
+@bg-gradient-end: #1f2e3e;
+
+@img-xs: 16px;
+@img-sm: 24px;
+@img-md: 32px;
+@img-lg: 48px;
+@img-xl: 96px;
+
+@field-input-narrow: 3rem;
+@field-input-standard: 10rem;
+@field-input-wide: 18rem;
+@field-label-medium: 4.5rem;
+@field-label-long: 8rem;
+@field-label-race: 8rem;
+@field-label-wide: 7rem;
+@field-label-fill: 10rem;
+@field-name-long: 14rem;
+@field-name-header-long: 16rem;
+
+@slot-name-width: 12rem;
+
+// ===== Mixins =====
+
+.flex-vendor(@grow) {
+  -webkit-box-flex: @grow;
+  -ms-flex: @grow;
+  flex: @grow;
+}
+
+.flex-vendor-basis(@grow, @basis) {
+  -webkit-box-flex: @grow;
+  -ms-flex: @grow 0 @basis;
+  flex: @grow 0 @basis;
+}
+
+.flex-display() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-direction-row() {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-wrap-wrap() {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.justify-start() {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.button-base() {
+  box-shadow: inset 0px 1px 0px 0px @color-button-shadow;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px;
+  position: relative;
+}
+
+.button-hover() {
+  background: linear-gradient(to bottom, @color-red-hover 5%, @color-dark-red 100%);
+}
+
+.item-field(@width) {
+  min-width: @width;
+  max-width: @width;
+}
+
+.image-icon(@size) {
+  width: @size;
+  max-width: @size;
+  height: @size;
+  max-height: @size;
+  flex-grow: 0;
+  margin-right: 0.25rem;
+}

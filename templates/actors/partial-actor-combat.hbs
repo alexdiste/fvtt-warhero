@@ -9,7 +9,7 @@
         <ul class="stat-list alternate-list">
           {{#with system.attributes.def as |stat|}}
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="def" path="attributes"
-          fieldClass="item-field-label-vlong"}}
+          fieldClass="item-field-label-vlong" disabled=true}}
           {{/with}}
           {{#with system.attributes.ini as |stat|}}
           {{> systems/fvtt-warhero/templates/actors/partial-actor-stat-block.hbs stat=stat key="ini" path="attributes"
@@ -61,7 +61,7 @@
             <span class="item-field-label-medium">
               <label class="short-label">{{localize "WH.ui.Type"}}</label>
             </span>
-            <span class="item-field-label-medium">
+            <span class="item-field-label-medium damage-formula">
               <label class="short-label">{{localize "WH.ui.Damage"}}</label>
             </span>
             <div class="item-filler">&nbsp;</div>
@@ -76,15 +76,15 @@
             <span class="item-field-label-medium">{{localize (concat "WH.conf." weapon.system.weapontype)}}</span>
 
             {{#if (eq weapon.system.weapontype "special")}}
-            <span class="item-field-label-medium"><a class="roll-damage" data-action="roll-damage"><i
+            <span class="item-field-label-medium damage-formula"><a class="roll-damage" data-action="roll-damage"><i
                   class="fa-solid fa-dice-d20"></i>{{weapon.system.damageformula}}</a></span>
             {{else}}
-            <span class="item-field-label-medium"><a class="roll-damage" data-action="roll-damage"><i
+            <span class="item-field-label-medium damage-formula"><a class="roll-damage" data-action="roll-damage"><i
                   class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula}}</a></span>
             {{/if}}
 
             {{#if (eq weapon.system.weapontype "polearm")}}
-            <span class="item-field-label-medium"><a class="roll-damage-2hands" data-action="roll-damage-2hands"><i
+            <span class="item-field-label-medium damage-formula"><a class="roll-damage-2hands" data-action="roll-damage-2hands"><i
                   class="fa-solid fa-dice-d20"></i>{{weapon.damageFormula2Hands}}</a></span>
             {{/if}}
 

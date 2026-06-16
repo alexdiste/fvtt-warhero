@@ -5,6 +5,28 @@
 
     <div class="flexrow">
       <label class="">{{localize "WH.ui.totalmoney"}} : {{totalMoney}}</label>
+      <label><input type="checkbox" data-action="toggle-empty-slots"> {{localize "WH.ui.hideemptyslots"}}</label>
+    </div>
+
+    <div class="flexrow equipment-filter-bar">
+      <div class="item-filter-search-wrapper">
+        <input type="text" class="item-filter-search" placeholder="{{localize "WH.ui.searchitems"}}">
+        <i class="fa-solid fa-times item-filter-clear"></i>
+      </div>
+      <select class="item-filter-type">
+        <option value="">{{localize "WH.ui.filterall"}}</option>
+        <option value="weapon">{{localize "WH.ui.weapon"}}</option>
+        <option value="armor">{{localize "WH.ui.armor"}}</option>
+        <option value="shield">{{localize "WH.ui.shield"}}</option>
+        <option value="equipment">{{localize "WH.ui.equipment"}}</option>
+        <option value="potion">{{localize "WH.ui.potion"}}</option>
+        <option value="poison">{{localize "WH.ui.poison"}}</option>
+        <option value="trap">{{localize "WH.ui.trap"}}</option>
+        <option value="classitem">{{localize "WH.ui.classitem"}}</option>
+        <option value="money">{{localize "WH.ui.money"}}</option>
+      </select>
+      <label class="item-filter-label"><input type="checkbox" class="item-filter-equipped"> {{localize "WH.ui.equipped"}}</label>
+      <label class="item-filter-label"><input type="checkbox" class="item-filter-magical"> {{localize "WH.ui.magical"}}</label>
     </div>
 
     <hr>

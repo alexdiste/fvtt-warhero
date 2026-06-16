@@ -1,0 +1,109 @@
+// ============================================================
+// WARHERO RPG — Item sheets
+// ============================================================
+
+.item-stat-roll {
+  align-items: center;
+
+  h4 {
+    margin: 0 0 0 6px;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+
+  input {
+    .item-field(@field-input-narrow);
+  }
+}
+
+.item-sheet-img {
+  .flex-vendor-basis(0, @img-xl);
+  width: @img-xl;
+  height: auto;
+  max-height: @img-xl;
+  margin-top: 0;
+  margin-right: 10px;
+  object-fit: cover;
+  border-width: 0;
+  object-position: 50% 0;
+}
+
+.item-name-label-header,
+.item-name-label-header-long {
+  h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    min-height: 1.4rem;
+    align-self: center;
+  }
+
+  .items-title-text {
+    align-self: center;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    min-height: 1.4rem;
+    margin-left: 4px;
+  }
+}
+
+.item-name-label-header-long {
+  .item-field(@field-name-header-long);
+}
+
+.item-name-label-long {
+  .item-field(@field-name-long);
+}
+
+.item-name-img {
+  .image-icon(@img-md);
+}
+
+.item-field-input-1,
+.item-field-select-1 {
+  .item-field(@field-input-standard);
+}
+
+.item-field-input-2 {
+  .item-field(@field-input-wide);
+}
+
+.item-field-label-medium {
+  .item-field(@field-label-medium);
+}
+
+.skill-current-use {
+  .item-field(6.5rem);
+}
+
+.damage-formula {
+  .item-field(8rem);
+}
+
+.container-header-stat {
+  .item-field(6.5rem);
+}
+
+.item-field-label-long {
+  .item-field(@field-label-long);
+}
+
+.item-field-label-race {
+  .item-field(@field-label-race);
+  text-align: center;
+}
+
+.item-field-label-wide {
+  .item-field(@field-label-wide);
+}
+
+.item-field-label-fill {
+  flex: 1;
+  min-width: @field-label-fill;
+}
+
+.item-has-use {
+  margin-left: 4px;
+  max-width: @field-label-long;
+}

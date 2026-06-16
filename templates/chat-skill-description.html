@@ -1,0 +1,22 @@
+<div class="warhero-chat-card">
+  <div class="warhero-chat-card-header">
+    {{#if actorImg}}
+    <img class="header-icon" src="{{actorImg}}" alt="{{alias}}" />
+    {{/if}}
+    <div class="header-text">
+      <h4 class="header-name">{{alias}}</h4>
+      <span class="header-subtitle">{{localize "WH.ui.skills"}}</span>
+    </div>
+  </div>
+
+  <div class="warhero-chat-card-body">
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.chat.skillname"}}</span>
+      <span class="detail-value">{{skillName}}</span>
+    </div>
+
+    {{#if description}}
+    <div class="warhero-skill-description">{{{description}}}</div>
+    {{/if}}
+  </div>
+</div>

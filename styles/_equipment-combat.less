@@ -1,0 +1,83 @@
+// ============================================================
+// WARHERO RPG — Equipment & combat
+// ============================================================
+
+.character-equipment h3 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+
+.equipment-slot-name {
+  .item-field(@slot-name-width);
+}
+
+.equipment-filter-bar {
+  gap: 8px;
+  align-items: center;
+  margin: 4px 0 8px;
+
+  .item-filter-search-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .item-filter-search {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .item-filter-clear {
+      position: absolute;
+      right: 4px;
+      cursor: pointer;
+      color: #647888;
+      font-size: 0.85rem;
+
+      &:hover {
+        color: #ecf0f1;
+      }
+    }
+  }
+
+  .item-filter-label {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .item-filter-type {
+    min-width: 8rem;
+  }
+}
+
+.item-hidden {
+  display: none !important;
+}
+
+[data-slot].drag-over {
+  outline: 2px dashed #5a8bba;
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.combat-secondary-values {
+  max-height: 2.5rem;
+}
+
+.character-equipment.hide-empty-slots .container-empty {
+  display: none;
+}
+
+.use-charge {
+  cursor: pointer;
+  color: #5a8bba;
+  white-space: nowrap;
+  &:hover { color: #8ab4d6; text-shadow: 0 0 4px rgba(90,139,186,0.3); }
+}
+.no-charges {
+  color: #647888;
+  white-space: nowrap;
+}

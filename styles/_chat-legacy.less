@@ -1,0 +1,34 @@
+// ============================================================
+// WARHERO RPG — Legacy chat message styles
+// ============================================================
+
+.warhero-chat-message-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  border-bottom: 1px solid @color-border-light;
+  padding-bottom: 4px;
+
+  .chat-actor-name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.warhero-chat-message-body {
+  display: flex;
+  margin-top: 4px;
+}
+
+.warhero-chat-message-body .chat-icon,
+.warhero-chat-message-header .actor-icon,
+.roll-dialog-header .actor-icon {
+  width: @img-lg;
+  max-width: @img-lg;
+  height: auto;
+  max-height: @img-lg;
+  margin-top: 0;
+  margin-right: 10px;
+  border-width: 0;
+}

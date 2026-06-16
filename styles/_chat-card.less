@@ -1,0 +1,228 @@
+// ============================================================
+// WARHERO RPG — Enhanced Roll Chat Card
+// ============================================================
+
+.warhero-chat-card {
+  background: @bg-main;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 4px;
+}
+
+.warhero-chat-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, @bg-gradient-start 0%, @bg-gradient-end 100%);
+  color: #ecf0f1;
+
+  .header-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+    flex: 0 0 40px;
+  }
+
+  .header-text {
+    flex: 1;
+    min-width: 0;
+
+    .header-name {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .header-subtitle {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.warhero-chat-card-body {
+  padding: 10px 14px 14px;
+  color: #ecf0f1;
+}
+
+.warhero-chat-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  .detail-label {
+    color: #8899aa;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .detail-value {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #ecf0f1;
+    text-align: right;
+  }
+}
+
+.warhero-dice-display {
+  text-align: center;
+  padding: 10px;
+  margin: 8px 0;
+  background: @bg-darker;
+  border-radius: 8px;
+  border: 2px solid #2c3e50;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+  .dice-number {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ecf0f1;
+  }
+
+  .dice-label {
+    font-size: 0.7rem;
+    color: #647888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2px;
+  }
+
+  .dice-formula {
+    font-size: 0.7rem;
+    color: #4a5a6a;
+    font-family: monospace;
+    margin-top: 2px;
+  }
+
+  &.crit-success {
+    border-color: #2ecc71;
+    background: linear-gradient(135deg, #0a2a1a 0%, @bg-darker 100%);
+
+    .dice-number { color: #2ecc71; }
+    .dice-label { color: #2ecc71; font-weight: 700; }
+  }
+
+  &.crit-failure {
+    border-color: #e74c3c;
+    background: linear-gradient(135deg, #2a0a0a 0%, @bg-darker 100%);
+
+    .dice-number { color: #e74c3c; }
+    .dice-label { color: #e74c3c; font-weight: 700; }
+  }
+}
+
+.warhero-roll-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: @bg-gradient-end;
+  border-radius: 6px;
+  color: #fff;
+
+  .footer-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+  }
+
+  .footer-value {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+}
+
+.warhero-parry-badge {
+  text-align: center;
+  padding: 6px;
+  margin-top: 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &.parry-success {
+    background: #27ae60;
+    color: #fff;
+  }
+
+  &.parry-failure {
+    background: #c0392b;
+    color: #fff;
+  }
+}
+
+.warhero-power-description {
+  margin-top: 8px;
+  padding: 8px;
+  background: @bg-darker;
+  border-radius: 6px;
+  border: 1px solid #2c3e50;
+  font-size: 0.85rem;
+  color: #b0c0d0;
+  line-height: 1.4;
+}
+
+.warhero-skill-description {
+  margin-top: 8px;
+  padding: 8px;
+  background: @bg-darker;
+  border-radius: 6px;
+  border: 1px solid #2c3e50;
+  font-size: 0.9rem;
+  color: #e0e8f0;
+  line-height: 1.5;
+}
+
+.warhero-chat-damage-button {
+  text-align: center;
+  margin: 6px 0;
+
+  button {
+    background: linear-gradient(135deg, @bg-gradient-start 0%, @bg-gradient-end 100%);
+    color: #ecf0f1;
+    border: 1px solid #2c3e50;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      background: linear-gradient(135deg, @bg-gradient-end 0%, #2e4558 100%);
+      border-color: #3d5a73;
+    }
+
+    i {
+      margin-right: 4px;
+    }
+  }
+}
+
+.warhero-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 6px 0;
+}

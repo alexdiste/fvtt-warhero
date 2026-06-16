@@ -1,21 +1,43 @@
-<div class="warhero-chat-message-header">
-  <h4 class="chat-actor-name">{{alias}} - Defense Request</h4>
-</div>
-
-<div class="warhero-chat-message-body">
-  <ul>
-    <li><strong>{{localize "WH.ui.weapon"}}:</strong> {{weapon.name}}</li>
-    {{#if isRangedAttack}}
-    <li>{{localize "WH.ui.Throw2HitR"}}</li>
-    {{else}}
-    <li>{{localize "WH.ui.Throw2HitM"}}</li>
-    {{/if}}
-  </ul>
-  <hr>
-  <p><strong>{{localize "WH.ui.parrybonus"}}: {{defender.system.secondary.parrybonustotal.value}}</strong></p>
-  {{#each defenderWeapons as |defWeapon|}}
-  <div class="flexrow">
-    <span>{{defWeapon.name}}</span>
+<div class="warhero-chat-card">
+  <div class="warhero-chat-card-header">
+    <div class="header-text">
+      <h4 class="header-name">{{alias}}</h4>
+      <span class="header-subtitle">{{localize "WH.ui.Defence"}} Request</span>
+    </div>
   </div>
-  {{/each}}
+
+  <div class="warhero-chat-card-body">
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.ui.weapon"}}</span>
+      <span class="detail-value">{{weapon.name}}</span>
+    </div>
+
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.ui.type"}}</span>
+      <span class="detail-value">
+        {{#if isRangedAttack}}
+        {{localize "WH.ui.Throw2HitR"}}
+        {{else}}
+        {{localize "WH.ui.Throw2HitM"}}
+        {{/if}}
+      </span>
+    </div>
+
+    <hr class="warhero-divider">
+
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.ui.parrybonus"}}</span>
+      <span class="detail-value">{{defender.system.secondary.parrybonustotal.value}}</span>
+    </div>
+
+    <div class="warhero-chat-detail" style="margin-top:6px; font-size:0.8rem; font-weight:600; color:#888; text-transform:uppercase; letter-spacing:0.3px; border-bottom:none;">
+      <span class="detail-value" style="text-align:left;">{{localize "WH.ui.weapons"}}</span>
+    </div>
+
+    {{#each defenderWeapons as |defWeapon|}}
+    <div class="warhero-chat-detail">
+      <span class="detail-value" style="font-weight:600; text-align:left;">{{defWeapon.name}}</span>
+    </div>
+    {{/each}}
+  </div>
 </div>

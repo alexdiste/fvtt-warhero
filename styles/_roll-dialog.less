@@ -1,0 +1,92 @@
+// ============================================================
+// WARHERO RPG — Roll dialog
+// ============================================================
+
+.fvtt-warhero .dialog-content,
+.fvtt-warhero .window-content,
+.warhero-roll-dialog {
+  background: @bg-main;
+  color: #ecf0f1;
+}
+
+.warhero-roll-dialog {
+  padding: 8px;
+
+  .roll-dialog-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    margin: 0 0 10px;
+    background: linear-gradient(135deg, @bg-gradient-start 0%, @bg-gradient-end 100%);
+    color: #ecf0f1;
+    border-radius: 8px;
+
+    .dialog-roll-title {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      border: none;
+    }
+  }
+
+  .dialog-section {
+    padding: 0 12px;
+    margin-bottom: 10px;
+
+    .section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #8899aa;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-bottom: 4px;
+      margin-bottom: 4px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  .dialog-row {
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+
+    .row-label {
+      flex: 0 0 160px;
+      font-weight: 600;
+      color: #8899aa;
+      font-size: 0.85rem;
+    }
+
+    .row-value {
+      flex: 1;
+      color: #ecf0f1;
+    }
+
+    select, input:not([type="checkbox"]) {
+      width: 100%;
+      background: @bg-darker;
+      color: #ecf0f1;
+      border: 1px solid #2c3e50;
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+
+    select {
+      option {
+        background: @bg-main;
+        color: #ecf0f1;
+      }
+    }
+
+    input[type="checkbox"] {
+      margin: 0;
+      width: 16px;
+      height: 16px;
+      accent-color: #5a8bba;
+      cursor: pointer;
+    }
+  }
+}

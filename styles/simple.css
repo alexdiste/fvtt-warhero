@@ -1,12 +1,34 @@
 .strong-text {
   font-weight: bold;
 }
-
 .rollable:hover,
 .rollable:focus {
   cursor: pointer;
 }
-
+.crit-success {
+  color: darkgreen;
+}
+.crit-failure {
+  color: darkred;
+}
+.plus-minus {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.fvtt-warhero {
+  background: #16202b;
+  color: #ecf0f1;
+}
+.fvtt-warhero .window-content {
+  background: #16202b;
+  color: #ecf0f1;
+}
+.fvtt-warhero a {
+  color: #8ab4d6;
+}
+.fvtt-warhero a:hover {
+  color: #b0d4f0;
+}
 .fvtt-warhero .grid,
 .fvtt-warhero .grid-2col {
   display: grid;
@@ -16,10 +38,45 @@
   margin: 2px 0;
   padding: 0;
 }
-
+.fvtt-warhero input:not([type="checkbox"]):not([type="radio"]),
+.fvtt-warhero select,
+.fvtt-warhero textarea {
+  background: #0e151e;
+  color: #ecf0f1;
+  border: 1px solid #2c3e50;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+.fvtt-warhero input:not([type="checkbox"]):not([type="radio"]):focus,
+.fvtt-warhero select:focus,
+.fvtt-warhero textarea:focus {
+  border-color: #5a8bba;
+  outline: none;
+}
+.fvtt-warhero select option {
+  background: #16202b;
+  color: #ecf0f1;
+}
+.fvtt-warhero input[type="checkbox"] {
+  accent-color: #5a8bba;
+}
+.fvtt-warhero .actor-magic-stat-header {
+  flex: 0 1 auto;
+}
+.fvtt-warhero .actor-magic-stat-header .item-stat-roll {
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  width: auto;
+  border-bottom: none;
+  height: auto;
+  padding: 0 4px;
+  gap: 2px;
+  white-space: nowrap;
+}
 .fvtt-warhero .sheet-header {
   -webkit-box-flex: 0;
-  overflow: hidden;
+  -ms-flex: 0;
+  flex: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,38 +89,12 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-bottom: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #121e2e 0%, #1f2e3e 100%);
+  border-radius: 8px;
+  padding: 6px;
 }
-
-.fvtt-warhero .sheet-header-actor {
-  min-height: 17rem;
-}
-
-.fvtt-warhero .align-items-start {
-  align-items: flex-start;
-}
-
-.character-equipment h3 {
-  margin: 0;
-  margin-bottom: 4px;
-  font-size: 1.2rem;
-}
-
-
-.fvtt-warhero .div-align-top {
-  vertical-align: top;
-  text-align: left;
-  align-self: flex-start;
-}
-
-.fvtt-warhero .tab-content-scrollable {
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 5px;
-  flex: 1;
-  min-height: 0;
-}
-
 .fvtt-warhero .sheet-header .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 96px;
@@ -71,37 +102,277 @@
   width: 96px;
   height: auto;
   max-height: 96px;
-  margin-top: 0px;
-  margin-right: 10px;
+  margin-top: 0;
+  margin-right: 8px;
   object-fit: cover;
-  border-width: 0px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
   object-position: 50% 0;
 }
-
+.fvtt-warhero .sheet-header .header-fields {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.fvtt-warhero .sheet-header h1.charname {
+  height: 36px;
+  padding: 0;
+  margin: 2px 0;
+  border-bottom: 0;
+}
+.fvtt-warhero .sheet-header h1.charname input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.fvtt-warhero .sheet-header h1.charname input:focus {
+  border-color: #5a8bba;
+}
+.fvtt-warhero .sheet-header-actor {
+  min-height: 17rem;
+}
+.fvtt-warhero.party .sheet-header-actor {
+  min-height: 5rem;
+  padding: 6px 0;
+}
+.fvtt-warhero .party-header-layout {
+  display: flex;
+  flex-direction: column;
+}
+.fvtt-warhero .party-header-layout .party-header-top {
+  display: flex;
+}
+.fvtt-warhero .party-header-layout .party-header-top .profile-img {
+  flex: 0 0 64px;
+  width: 64px;
+  max-height: 64px;
+  margin: 0;
+}
+.fvtt-warhero .party-header-layout .charname {
+  width: 100%;
+  height: 36px;
+  margin: 4px 0 0;
+  padding: 0;
+}
+.fvtt-warhero .party-header-layout .charname input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+.fvtt-warhero .align-items-start {
+  align-items: flex-start;
+}
+.fvtt-warhero .div-align-top {
+  vertical-align: top;
+  text-align: left;
+  align-self: flex-start;
+}
+.fvtt-warhero .tab-content-scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 5px;
+  flex: 1;
+  min-height: 0;
+}
+.fvtt-warhero .sheet-tabs {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+.fvtt-warhero .sheet-body,
+.fvtt-warhero .sheet-body .tab,
+.fvtt-warhero .sheet-body .tab .editor {
+  height: 100%;
+  font-size: 0.8rem;
+}
+.fvtt-warhero form .form-group.editor {
+  border: 2px solid #2c3e50;
+  height: 300px;
+  padding: 0 3px;
+  overflow-y: auto;
+  background: #0e151e;
+  border-radius: 4px;
+}
+.fvtt-warhero .resource-label {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #8899aa;
+}
+.fvtt-warhero .tabs {
+  height: 40px;
+  border-top: 1px solid #2c3e50;
+  border-bottom: 1px solid #2c3e50;
+}
+.fvtt-warhero .tabs .item {
+  line-height: 40px;
+  font-weight: bold;
+  color: #8899aa;
+}
+.fvtt-warhero .tabs .item:hover {
+  color: #ecf0f1;
+  text-shadow: none;
+}
+.fvtt-warhero .tabs .item.active {
+  color: #ffffff;
+  box-shadow: inset 0 -2px 0 #5a8bba;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+.fvtt-warhero .items-list {
+  list-style: none;
+  margin: 1px 0;
+  padding: 0;
+  overflow-y: auto;
+}
+.fvtt-warhero .items-list .item-header {
+  font-weight: bold;
+}
+.fvtt-warhero .items-list .item {
+  height: 30px;
+  line-height: 24px;
+  padding: 1px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.fvtt-warhero .items-list .item .item-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 24px;
+  flex: 0 0 24px;
+  margin-right: 5px;
+}
+.fvtt-warhero .items-list .item img {
+  display: block;
+}
+.fvtt-warhero .items-list .item-name {
+  margin: 0;
+}
+.fvtt-warhero .items-list .item-controls {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 86px;
+  flex: 0 0 86px;
+  text-align: right;
+}
+.fvtt-warhero .editor.item-text-long-line {
+  border: 2px solid #2c3e50;
+  min-height: 200px;
+  padding: 0 3px;
+  overflow-y: auto;
+  background: #0e151e;
+  border-radius: 4px;
+}
+.fvtt-warhero .list-item:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+.fvtt-warhero .item-filler {
+  flex: 1;
+}
+.fvtt-warhero .item-controls-fixed {
+  flex: 0 0 auto;
+  min-width: 60px;
+  text-align: right;
+}
+.fvtt-warhero .list-item-shadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.fvtt-warhero .short-label {
+  color: #8899aa;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.fvtt-warhero .item-field-label-short {
+  min-width: 3rem;
+  max-width: 3rem;
+}
+.fvtt-warhero .item-field-label-vlong {
+  min-width: 12rem;
+  max-width: 12rem;
+}
+.character-equipment h3 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
 .equipment-slot-name {
   min-width: 12rem;
   max-width: 12rem;
 }
-
+.equipment-filter-bar {
+  gap: 8px;
+  align-items: center;
+  margin: 4px 0 8px;
+}
+.equipment-filter-bar .item-filter-search-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.equipment-filter-bar .item-filter-search-wrapper .item-filter-search {
+  flex: 1;
+  padding-right: 20px;
+}
+.equipment-filter-bar .item-filter-search-wrapper .item-filter-clear {
+  position: absolute;
+  right: 4px;
+  cursor: pointer;
+  color: #647888;
+  font-size: 0.85rem;
+}
+.equipment-filter-bar .item-filter-search-wrapper .item-filter-clear:hover {
+  color: #ecf0f1;
+}
+.equipment-filter-bar .item-filter-label {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.equipment-filter-bar .item-filter-type {
+  min-width: 8rem;
+}
+.item-hidden {
+  display: none !important;
+}
+[data-slot].drag-over {
+  outline: 2px dashed #5a8bba;
+  outline-offset: -2px;
+  border-radius: 4px;
+}
 .combat-secondary-values {
   max-height: 2.5rem;
 }
-
+.character-equipment.hide-empty-slots .container-empty {
+  display: none;
+}
+.use-charge {
+  cursor: pointer;
+  color: #5a8bba;
+  white-space: nowrap;
+}
+.use-charge:hover {
+  color: #8ab4d6;
+  text-shadow: 0 0 4px rgba(90, 139, 186, 0.3);
+}
+.no-charges {
+  color: #647888;
+  white-space: nowrap;
+}
 .item-stat-roll {
   align-items: center;
 }
-
 .item-stat-roll h4 {
   margin: 0 0 0 6px;
   font-size: 0.9rem;
   line-height: 1;
 }
-
 .item-stat-roll input {
   min-width: 3rem;
   max-width: 3rem;
 }
-
 .item-sheet-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 96px;
@@ -109,100 +380,37 @@
   width: 96px;
   height: auto;
   max-height: 96px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-right: 10px;
   object-fit: cover;
-  border-width: 0px;
+  border-width: 0;
   object-position: 50% 0;
 }
-
-
-.item-name-label-header-long h3,
-.item-name-label-header h3 {
+.item-name-label-header h3,
+.item-name-label-header-long h3 {
   margin: 0;
   font-size: 1.1rem;
   font-weight: bold;
   min-height: 1.4rem;
   align-self: center;
 }
-
-.item-field-label-race {
-  text-align: center;
-  min-width: 8rem;
-  max-width: 8rem;
-}
-
-
-.warhero-location-overflow {
-  background-color: #3e0101;
-}
-
-.actor-sheet-button {
-  box-shadow: inset 0px 1px 0px 0px #a6827e;
-  background: linear-gradient(to bottom, #21374afc 5%, #152833ab 100%);
-  border-radius: 3px;
-  border: 2px ridge;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 0.8rem;
-  padding: 2px 4px 0px 4px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px;
-  position: relative;
-  margin-top: 8px;
-  max-width: 8rem;
-}
-
-.actor-sheet-button:hover {
-  background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
-}
-
-.item-field-input-1,
-.item-field-select-1 {
-  min-width: 10rem;
-  max-width: 10rem;
-}
-
-.item-field-input-2 {
-  min-width: 18rem;
-  max-width: 18rem;
-}
-
-.item-field-label-medium {
-  min-width: 4.5rem;
-  max-width: 4.5rem;
-}
-
-.item-field-label-long {
-  min-width: 8rem;
-  max-width: 8rem;
-}
-
-.item-field-label-wide {
-  min-width: 7rem;
-  max-width: 7rem;
-}
-
-.item-field-label-fill {
-  flex: 1;
-  min-width: 10rem;
-}
-
-.item-has-use {
+.item-name-label-header .items-title-text,
+.item-name-label-header-long .items-title-text {
+  align-self: center;
+  color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  min-height: 1.4rem;
   margin-left: 4px;
-  max-width: 8rem;
 }
-
+.item-name-label-header-long {
+  min-width: 16rem;
+  max-width: 16rem;
+}
 .item-name-label-long {
   min-width: 14rem;
   max-width: 14rem;
 }
-
-.character-effects .effect-image {
-  min-width: 24px;
-  max-width: 24px;
-}
-
 .item-name-img {
   width: 32px;
   max-width: 32px;
@@ -211,28 +419,56 @@
   flex-grow: 0;
   margin-right: 0.25rem;
 }
-
-.item-name-label-header-long {
-  min-width: 16rem;
-  max-width: 16rem;
+.item-field-input-1,
+.item-field-select-1 {
+  min-width: 10rem;
+  max-width: 10rem;
 }
-
-.item-name-label-header .items-title-text,
-.item-name-label-header-long .items-title-text {
-  align-self: center;
-  color: black;
-  display: flex;
-  align-items: center;
-  min-height: 1.4rem;
+.item-field-input-2 {
+  min-width: 18rem;
+  max-width: 18rem;
+}
+.item-field-label-medium {
+  min-width: 4.5rem;
+  max-width: 4.5rem;
+}
+.skill-current-use {
+  min-width: 6.5rem;
+  max-width: 6.5rem;
+}
+.damage-formula {
+  min-width: 8rem;
+  max-width: 8rem;
+}
+.container-header-stat {
+  min-width: 6.5rem;
+  max-width: 6.5rem;
+}
+.item-field-label-long {
+  min-width: 8rem;
+  max-width: 8rem;
+}
+.item-field-label-race {
+  min-width: 8rem;
+  max-width: 8rem;
+  text-align: center;
+}
+.item-field-label-wide {
+  min-width: 7rem;
+  max-width: 7rem;
+}
+.item-field-label-fill {
+  flex: 1;
+  min-width: 10rem;
+}
+.item-has-use {
   margin-left: 4px;
+  max-width: 8rem;
 }
-
-.warhero-chat-message-header .chat-actor-name {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
+.character-effects .effect-image {
+  min-width: 24px;
+  max-width: 24px;
 }
-
 .warhero-chat-message-header {
   display: flex;
   align-items: center;
@@ -240,12 +476,15 @@
   border-bottom: 1px solid #ccc;
   padding-bottom: 4px;
 }
-
+.warhero-chat-message-header .chat-actor-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 .warhero-chat-message-body {
   display: flex;
   margin-top: 4px;
 }
-
 .warhero-chat-message-body .chat-icon,
 .warhero-chat-message-header .actor-icon,
 .roll-dialog-header .actor-icon {
@@ -253,134 +492,351 @@
   max-width: 48px;
   height: auto;
   max-height: 48px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-right: 10px;
-  border-width: 0px;
+  border-width: 0;
 }
-
-
+.warhero-chat-card {
+  background: #16202b;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 4px;
+}
+.warhero-chat-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, #121e2e 0%, #1f2e3e 100%);
+  color: #ecf0f1;
+}
+.warhero-chat-card-header .header-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  object-fit: cover;
+  flex: 0 0 40px;
+}
+.warhero-chat-card-header .header-text {
+  flex: 1;
+  min-width: 0;
+}
+.warhero-chat-card-header .header-text .header-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+.warhero-chat-card-header .header-text .header-subtitle {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.warhero-chat-card-body {
+  padding: 10px 14px 14px;
+  color: #ecf0f1;
+}
+.warhero-chat-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.warhero-chat-detail:last-of-type {
+  border-bottom: none;
+}
+.warhero-chat-detail .detail-label {
+  color: #8899aa;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.warhero-chat-detail .detail-value {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #ecf0f1;
+  text-align: right;
+}
+.warhero-dice-display {
+  text-align: center;
+  padding: 10px;
+  margin: 8px 0;
+  background: #0e151e;
+  border-radius: 8px;
+  border: 2px solid #2c3e50;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.warhero-dice-display .dice-number {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #ecf0f1;
+}
+.warhero-dice-display .dice-label {
+  font-size: 0.7rem;
+  color: #647888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+.warhero-dice-display .dice-formula {
+  font-size: 0.7rem;
+  color: #4a5a6a;
+  font-family: monospace;
+  margin-top: 2px;
+}
+.warhero-dice-display.crit-success {
+  border-color: #2ecc71;
+  background: linear-gradient(135deg, #0a2a1a 0%, #0e151e 100%);
+}
+.warhero-dice-display.crit-success .dice-number {
+  color: #2ecc71;
+}
+.warhero-dice-display.crit-success .dice-label {
+  color: #2ecc71;
+  font-weight: 700;
+}
+.warhero-dice-display.crit-failure {
+  border-color: #e74c3c;
+  background: linear-gradient(135deg, #2a0a0a 0%, #0e151e 100%);
+}
+.warhero-dice-display.crit-failure .dice-number {
+  color: #e74c3c;
+}
+.warhero-dice-display.crit-failure .dice-label {
+  color: #e74c3c;
+  font-weight: 700;
+}
+.warhero-roll-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #1f2e3e;
+  border-radius: 6px;
+  color: #fff;
+}
+.warhero-roll-footer .footer-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+.warhero-roll-footer .footer-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.warhero-parry-badge {
+  text-align: center;
+  padding: 6px;
+  margin-top: 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.warhero-parry-badge.parry-success {
+  background: #27ae60;
+  color: #fff;
+}
+.warhero-parry-badge.parry-failure {
+  background: #c0392b;
+  color: #fff;
+}
+.warhero-power-description {
+  margin-top: 8px;
+  padding: 8px;
+  background: #0e151e;
+  border-radius: 6px;
+  border: 1px solid #2c3e50;
+  font-size: 0.85rem;
+  color: #b0c0d0;
+  line-height: 1.4;
+}
+.warhero-skill-description {
+  margin-top: 8px;
+  padding: 8px;
+  background: #0e151e;
+  border-radius: 6px;
+  border: 1px solid #2c3e50;
+  font-size: 0.9rem;
+  color: #e0e8f0;
+  line-height: 1.5;
+}
+.warhero-chat-damage-button {
+  text-align: center;
+  margin: 6px 0;
+}
+.warhero-chat-damage-button button {
+  background: linear-gradient(135deg, #121e2e 0%, #1f2e3e 100%);
+  color: #ecf0f1;
+  border: 1px solid #2c3e50;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  width: 100%;
+}
+.warhero-chat-damage-button button:hover {
+  background: linear-gradient(135deg, #1f2e3e 0%, #2e4558 100%);
+  border-color: #3d5a73;
+}
+.warhero-chat-damage-button button i {
+  margin-right: 4px;
+}
+.warhero-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 6px 0;
+}
+.fvtt-warhero .dialog-content,
+.fvtt-warhero .window-content,
+.warhero-roll-dialog {
+  background: #16202b;
+  color: #ecf0f1;
+}
+.warhero-roll-dialog {
+  padding: 8px;
+}
+.warhero-roll-dialog .roll-dialog-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  margin: 0 0 10px;
+  background: linear-gradient(135deg, #121e2e 0%, #1f2e3e 100%);
+  color: #ecf0f1;
+  border-radius: 8px;
+}
+.warhero-roll-dialog .roll-dialog-header .dialog-roll-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  border: none;
+}
+.warhero-roll-dialog .dialog-section {
+  padding: 0 12px;
+  margin-bottom: 10px;
+}
+.warhero-roll-dialog .dialog-section .section-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #8899aa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.warhero-roll-dialog .dialog-row {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+.warhero-roll-dialog .dialog-row .row-label {
+  flex: 0 0 160px;
+  font-weight: 600;
+  color: #8899aa;
+  font-size: 0.85rem;
+}
+.warhero-roll-dialog .dialog-row .row-value {
+  flex: 1;
+  color: #ecf0f1;
+}
+.warhero-roll-dialog .dialog-row select,
+.warhero-roll-dialog .dialog-row input:not([type="checkbox"]) {
+  width: 100%;
+  background: #0e151e;
+  color: #ecf0f1;
+  border: 1px solid #2c3e50;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+.warhero-roll-dialog .dialog-row select option {
+  background: #16202b;
+  color: #ecf0f1;
+}
+.warhero-roll-dialog .dialog-row input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  accent-color: #5a8bba;
+  cursor: pointer;
+}
+.actor-sheet-button {
+  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px;
+  position: relative;
+  background: linear-gradient(to bottom, #182a38 5%, #0e1b24 100%);
+  border-radius: 4px;
+  border: 1px solid #2c3e50;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  margin-top: 8px;
+  max-width: 8rem;
+  color: #ecf0f1;
+}
+.actor-sheet-button:hover {
+  background: linear-gradient(to bottom, #1f2e3e 5%, #121e2e 100%);
+}
+.plus-minus-button {
+  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px;
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0 2px;
+  margin: 0 1px;
+  color: #5a8bba;
+  font-size: 0.95rem;
+  line-height: 1;
+  vertical-align: middle;
+  box-shadow: none;
+  text-shadow: none;
+  transition: color 0.15s ease;
+}
+.plus-minus-button:hover {
+  color: #8ab4d6;
+  text-shadow: 0 0 4px rgba(90, 139, 186, 0.4);
+}
+.plus-minus-button:active {
+  top: 1px;
+}
 .button-img {
   vertical-align: baseline;
   width: 8%;
   height: 8%;
   max-height: 48px;
-  border-width: 0;
   border: 1px solid rgba(0, 0, 0, 0);
 }
-
 .button-img:hover {
   border: 1px solid;
   cursor: pointer;
 }
-
 .button-effect-img {
   vertical-align: baseline;
   width: 16px;
   max-height: 16px;
-  height: 16;
-  border-width: 0;
+  height: 16px;
 }
-
-.fvtt-warhero .sheet-header .header-fields {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.fvtt-warhero .sheet-header h1.charname {
-  height: 50px;
-  padding: 0px;
-  margin: 5px 0;
-  border-bottom: 0;
-}
-
-.fvtt-warhero .sheet-header h1.charname input {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.fvtt-warhero .sheet-tabs {
-  -webkit-box-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
-}
-
-.fvtt-warhero .sheet-body,
-.fvtt-warhero .sheet-body .tab,
-.fvtt-warhero .sheet-body .tab .editor {
-  height: 100%;
-  font-size: 0.8rem;
-}
-
-.fvtt-warhero form .form-group.editor {
-  border: 2px solid #ccc;
-  height: 300px;
-  padding: 0 3px;
-  overflow-y: auto;
-}
-
-.fvtt-warhero .resource-label {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.fvtt-warhero .tabs {
-  height: 40px;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-}
-
-.fvtt-warhero .tabs .item {
-  line-height: 40px;
-  font-weight: bold;
-}
-
-.fvtt-warhero .tabs .item.active {
-  text-decoration: underline;
-  text-shadow: none;
-}
-
-.fvtt-warhero .items-list {
-  list-style: none;
-  margin: 1px 0;
-  padding: 0;
-  overflow-y: auto;
-}
-
-.fvtt-warhero .items-list .item-header {
-  font-weight: bold;
-}
-
-.fvtt-warhero .items-list .item {
-  height: 30px;
-  line-height: 24px;
-  padding: 1px 0;
-  border-bottom: 1px solid #bbb;
-}
-
-.fvtt-warhero .items-list .item .item-image {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 24px;
-  flex: 0 0 24px;
-  margin-right: 5px;
-}
-
-.fvtt-warhero .items-list .item img {
-  display: block;
-}
-
-.fvtt-warhero .items-list .item-name {
-  margin: 0;
-}
-
-.fvtt-warhero .items-list .item-controls {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 86px;
-  flex: 0 0 86px;
-  text-align: right;
-}
-
 .sheet-competence-img {
   width: 24px;
   max-width: 24px;
@@ -389,64 +845,15 @@
   flex-grow: 0;
   margin-right: 0.25rem;
 }
-
-.crit-success {
-  color: darkgreen;
-}
-
-.crit-failure {
-  color: darkred;
-}
-
-.fvtt-warhero .tabs .item.active {
-  text-decoration: underline;
-  text-shadow: none;
-}
-
-.plus-minus {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.plus-minus-button {
-  box-shadow: inset 0px 1px 0px 0px #a6827e;  
-  background: gray;  
-  border-radius: 2px;
-  border: 1px ridge;
-  display: inline-block;
-  cursor: pointer;
-  margin: 2px 2px 2px 2px;
-  padding: 2px 2px 2px 2px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px;
-  position: relative;
-  margin: 0px;
-}
-
-.plus-minus-button:hover {
-  background: linear-gradient(to bottom, #800000 5%, #3e0101 100%);
-}
-
-.plus-minus-button:active {
-  position: relative;
-  top: 1px;
-}
-
 .items-title-bg {
   margin-top: 6px;
-  background: gray;
-  color: black;
+  background: linear-gradient(135deg, #121e2e 0%, #1f2e3e 100%);
+  color: #ecf0f1;
+  border-radius: 4px;
 }
-
 .items-title-bg-red {
-  background: darkred;
+  background: #5c1010;
 }
-
-/* Editor in item sheets: no fixed height cap, starts at 200px and grows
-   with content. Scrollbar appears only when editor exceeds the window. */
-.fvtt-warhero .editor.item-text-long-line {
-  border: 2px solid #ccc;
-  min-height: 200px;
-  padding: 0 3px;
-  overflow-y: auto;
+.warhero-location-overflow {
+  background-color: #3e0101;
 }

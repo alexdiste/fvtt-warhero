@@ -17,7 +17,7 @@
             <span class="item-field-label-medium">
               <label class="short-label">{{localize "WH.ui.level"}}</label>
             </span>
-            <span class="item-field-label-medium">
+            <span class="item-field-label-medium skill-current-use">
               <label class="short-label">{{localize "WH.ui.currentuse"}}</label>
             </span>
             <span class="item-field-label-medium">
@@ -34,18 +34,20 @@
             <span class="item-field-label-medium">{{skill.system.acquiredatlevel}}</span>
 
             {{#if skill.system.unlimited}}
-            <span class="item-field-label-medium">N/A</span>
+            <span class="item-field-label-medium skill-current-use">N/A</span>
             <span class="item-field-label-medium">N/A</span>
             {{else}}
-            <span class="item-field-label-medium">{{skill.system.currentuse}}
-              (<a class="skill-use-minus plus-minus-button" data-action="skill-minus" >&nbsp;-</a>/<a
-                class="skill-use-plus plus-minus-button" data-action="skill-plus">+</a>)
+            <span class="item-field-label-medium skill-current-use">{{skill.system.currentuse}}
+              (<a class="skill-use-minus plus-minus-button" data-action="skill-minus"><i class="fa-solid fa-circle-minus"></i></a>/<a
+                class="skill-use-plus plus-minus-button" data-action="skill-plus"><i class="fa-solid fa-circle-plus"></i></a>)
             </span>
             <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
             {{/if}}
 
             <div class="item-filler">&nbsp;</div>
             <div class="item-controls item-controls-fixed">
+              <a class="item-control" data-action="skill-description-chat" title="{{localize "WH.ui.skillChat"}}"><i
+                  class="fas fa-comment"></i></a>
               <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
                   class="fas fa-trash"></i></a>
             </div>
@@ -63,7 +65,7 @@
             <span class="item-field-label-medium">
               <label class="short-label">{{localize "WH.ui.level"}}</label>
             </span>
-            <span class="item-field-label-medium">
+            <span class="item-field-label-medium skill-current-use">
               <label class="short-label">{{localize "WH.ui.currentuse"}}</label>
             </span>
             <span class="item-field-label-medium">
@@ -79,18 +81,20 @@
 
             <span class="item-field-label-medium">{{skill.system.acquiredatlevel}}</span>
             {{#if skill.system.unlimited}}
-            <span class="item-field-label-medium">N/A</span>
+            <span class="item-field-label-medium skill-current-use">N/A</span>
             <span class="item-field-label-medium">N/A</span>
             {{else}}
-            <span class="item-field-label-medium">{{skill.system.currentuse}}
-              (<a class="skill-use-minus plus-minus-button" data-action="skill-minus">&nbsp;-</a>/<a
-                class="skill-use-plus plus-minus-button" data-action="skill-plus">+</a>)
+            <span class="item-field-label-medium skill-current-use">{{skill.system.currentuse}}
+              (<a class="skill-use-minus plus-minus-button" data-action="skill-minus"><i class="fa-solid fa-circle-minus"></i></a>/<a
+                class="skill-use-plus plus-minus-button" data-action="skill-plus"><i class="fa-solid fa-circle-plus"></i></a>)
             </span>
             <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
             {{/if}}
 
             <div class="item-filler">&nbsp;</div>
             <div class="item-controls item-controls-fixed">
+              <a class="item-control" data-action="skill-description-chat" title="{{localize "WH.ui.skillChat"}}"><i
+                  class="fas fa-comment"></i></a>
               <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
                   class="fas fa-trash"></i></a>
             </div>
@@ -108,7 +112,7 @@
             <span class="item-field-label-medium">
               <label class="short-label">{{localize "WH.ui.level"}}</label>
             </span>
-            <span class="item-field-label-medium">
+            <span class="item-field-label-medium skill-current-use">
               <label class="short-label">{{localize "WH.ui.currentuse"}}</label>
             </span>
             <span class="item-field-label-medium">
@@ -125,18 +129,20 @@
             <span class="item-field-label-medium">{{skill.system.acquiredatlevel}}</span>
 
             {{#if skill.system.unlimited}}
-            <span class="item-field-label-medium">N/A</span>
+            <span class="item-field-label-medium skill-current-use">N/A</span>
             <span class="item-field-label-medium">N/A</span>
             {{else}}
-            <span class="item-field-label-medium">{{skill.system.currentuse}}
-              (<a class="skill-use-minus plus-minus-button" data-action="skill-minus">&nbsp;-</a>/<a
-                class="skill-use-plus plus-minus-button" data-action="skill-plus">+</a>)
+            <span class="item-field-label-medium skill-current-use">{{skill.system.currentuse}}
+              (<a class="skill-use-minus plus-minus-button" data-action="skill-minus"><i class="fa-solid fa-circle-minus"></i></a>/<a
+                class="skill-use-plus plus-minus-button" data-action="skill-plus"><i class="fa-solid fa-circle-plus"></i></a>)
             </span>
             <span class="item-field-label-medium">{{skill.system.maxuse}}</span>
             {{/if}}
 
             <div class="item-filler">&nbsp;</div>
             <div class="item-controls item-controls-fixed">
+              <a class="item-control" data-action="skill-description-chat" title="{{localize "WH.ui.skillChat"}}"><i
+                  class="fas fa-comment"></i></a>
               <a class="item-control item-delete" data-action="item-delete" title="Delete Item"><i
                   class="fas fa-trash"></i></a>
             </div>

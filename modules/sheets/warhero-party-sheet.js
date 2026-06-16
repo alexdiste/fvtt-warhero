@@ -1,4 +1,5 @@
 import WarheroActorSheet from "./warhero-base-actor-sheet.js";
+import { WarheroUtility } from "../warhero-utility.js";
 
 /**
  * Warhero Party Sheet Application v2
@@ -15,7 +16,10 @@ export class WarheroPartySheet extends WarheroActorSheet {
       height: 780,
     },
     window: {
-    }
+    },
+    actions: {
+      "use-charge": WarheroPartySheet.#onUseCharge,
+    },
   };
 
   /** @override */
@@ -117,6 +121,14 @@ export class WarheroPartySheet extends WarheroActorSheet {
     }
     formData.partySlots = this.actor.buildPartySlots()
 
+    // Add filter flags for item search
+    for (const container of Object.values(formData.partySlots)) {
+      for (const item of container.content) {
+        item._filterMagical = item.system.magiccharge && item.system.magiccharge !== "notapplicable";
+        item._filterEquipped = item.system.equipped;
+      }
+    }
+
     // merge context and formData
     Object.assign(context, formData)
 
@@ -174,6 +186,92 @@ export class WarheroPartySheet extends WarheroActorSheet {
       }
     }
 
+  }
+
+  /** @override */
+  _onRender(context, options) {
+    super._onRender(context, options);
+    this.element.addEventListener("input", WarheroPartySheet.#onFilterEquipment.bind(this));
+    this.element.addEventListener("change", WarheroPartySheet.#onFilterEquipment.bind(this));
+    this.element.addEventListener("click", WarheroPartySheet.#onClearFilterSearch.bind(this));
+  }
+
+  /**
+   * Filter equipment items by search text, type, equipped status, and magical status.
+   */
+  static #onFilterEquipment(event) {
+    const target = event.target;
+    if (!target.matches(".item-filter-search, .item-filter-equipped, .item-filter-magical, .item-filter-type")) return;
+    const section = target.closest(".party-equipment");
+    if (!section) return;
+
+    const search = (section.querySelector(".item-filter-search")?.value || "").toLowerCase();
+    const filterType = section.querySelector(".item-filter-type")?.value || "";
+    const showEquipped = section.querySelector(".item-filter-equipped")?.checked || false;
+    const showMagical = section.querySelector(".item-filter-magical")?.checked || false;
+    const hasFilters = search || filterType || showEquipped || showMagical;
+
+    for (const row of section.querySelectorAll("[data-item-id]")) {
+      if (!hasFilters) {
+        row.classList.remove("item-hidden");
+        continue;
+      }
+      let visible = true;
+      if (search) {
+        const name = (row.dataset.itemName || "").toLowerCase();
+        if (!name.includes(search)) visible = false;
+      }
+      if (visible && filterType && row.dataset.filterType !== filterType) visible = false;
+      if (visible && showEquipped && row.dataset.filterEquipped !== "true") visible = false;
+      if (visible && showMagical && row.dataset.filterMagical !== "true") visible = false;
+      row.classList.toggle("item-hidden", !visible);
+    }
+  }
+
+  /**
+   * Click on the clear icon → reset search and re-run filter.
+   */
+  static #onClearFilterSearch(event) {
+    const target = event.target;
+    if (!target.matches(".item-filter-clear")) return;
+    const section = target.closest(".party-equipment");
+    if (!section) return;
+    const input = section.querySelector(".item-filter-search");
+    if (input) {
+      input.value = "";
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+  }
+
+  /**
+   * Consume one charge from a magical item and send chat warning if depleted.
+   */
+  static async #onUseCharge(event, target) {
+    event.preventDefault();
+    const itemId = target.closest("[data-item-id]")?.dataset.itemId;
+    if (!itemId) return;
+    const item = this.document.items.get(itemId);
+    if (!item) return;
+
+    const system = item.system;
+    if (system.magiccharge === "notapplicable" || system.chargevalue <= 0) return;
+
+    const newValue = system.chargevalue - 1;
+    await item.update({ "system.chargevalue": newValue });
+
+    if (newValue <= 0) {
+      const content = await foundry.applications.handlebars.renderTemplate(
+        "systems/fvtt-warhero/templates/chat-charge-depleted.html",
+        {
+          actorImg: this.actor.img,
+          alias: this.actor.name,
+          itemName: item.name,
+        }
+      );
+      await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
+    }
+
+    this.render();
   }
 
   static #parseJsonField(value) {

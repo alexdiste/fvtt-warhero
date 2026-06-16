@@ -137,6 +137,38 @@ Hooks.once("init", async function () {
 });
 
 /* -------------------------------------------- */
+// Hotbar: drag & drop item macros
+Hooks.on("hotbarDrop", (bar, data, slot) => {
+  if (data.type !== "Item") return true
+
+  foundry.utils.fromUuid(data.uuid).then(item => {
+    if (!item || !item.actor) return
+
+    let command
+    if (item.type === "weapon") {
+      command = [
+        `const actor = game.actors.get('${item.actor.id}') || canvas.tokens.controlled[0]?.actor`,
+        `if (actor) actor.rollWeapon('${item.id}')`,
+        `else ui.notifications.warn(game.i18n.localize("WH.chat.noactor"))`
+      ].join(";\n")
+    }
+
+    if (command) {
+      Macro.create({
+        name: item.name,
+        type: "script",
+        img: item.img,
+        command
+      }).then(macro => {
+        if (macro) game.user.assignHotbarMacro(macro, slot)
+      })
+    }
+  })
+
+  return false
+})
+
+/* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
 /* -------------------------------------------- */
 Hooks.once("ready", function () {
@@ -145,6 +177,43 @@ Hooks.once("ready", function () {
   if (!game.user.isGM && !game.user.character) {
     ui.notifications.info("Warning ! No character linked to your user !");
   }
+
+  // Chat message action buttons
+  document.addEventListener("click", async (event) => {
+    const button = event.target.closest('[data-action="roll-damage"]')
+    if (!button) return
+    event.preventDefault()
+
+    let weaponId = button.dataset.weaponId
+    const messageEl = button.closest("[data-message-id]")
+    if (!messageEl) return
+    const message = game.messages.get(messageEl.dataset.messageId)
+    if (!message) return
+
+    if (!weaponId) {
+      weaponId = message.getFlag("world", "weaponId")
+    }
+    if (!weaponId) {
+      const rd = message.getFlag("world", "rolldata")
+      weaponId = rd?.weaponId || rd?.weapon?._id
+    }
+    if (!weaponId) {
+      console.warn("Warhero | Roll Damage: no weaponId found", { button, message })
+      return
+    }
+
+    let actor = game.actors.get(message.speaker?.actor)
+    if (!actor) {
+      const rd = message.getFlag("world", "rolldata")
+      actor = game.actors.get(rd?.actorId)
+    }
+    if (!actor) {
+      console.warn("Warhero | Roll Damage: no actor found", { message })
+      return
+    }
+
+    await actor.rollDamage(weaponId)
+  })
 
   WarheroUtility.ready()
 })

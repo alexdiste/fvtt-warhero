@@ -187,6 +187,8 @@ export class WarheroUtility {
       'systems/fvtt-warhero/templates/items/partial-item-equipment-details.hbs',
       'systems/fvtt-warhero/templates/items/partial-item-common-equipment.hbs',
       'systems/fvtt-warhero/templates/items/partial-item-shield-details.hbs',
+      'systems/fvtt-warhero/templates/chat-skill-description.html',
+      'systems/fvtt-warhero/templates/chat-charge-depleted.html',
     ]
     return foundry.applications.handlebars.loadTemplates(templatePaths);
   }
@@ -264,10 +266,10 @@ static async showDiceSoNice(roll, rollMode) {
           case "blindroll": //GM only
             blind = true;
           case "gmroll": //GM + rolling player
-            whisper = this.getUsers(user => user.isGM);
+            whisper = game.users.filter(u => u.isGM).map(u => u.id);
             break;
           case "roll": //everybody
-            whisper = this.getUsers(user => user.active);
+            whisper = game.users.filter(u => u.active).map(u => u.id);
             break;
           case "selfroll":
             whisper = [game.user.id];
@@ -284,7 +286,7 @@ static async showDiceSoNice(roll, rollMode) {
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
       myRoll = await new Roll(diceFormula).evaluate()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "messageMode"))
+      await this.showDiceSoNice(myRoll, rollData.rollMode)
     }
     rollData.roll = myRoll
     rollData.diceFormula = diceFormula
@@ -302,8 +304,9 @@ static async showDiceSoNice(roll, rollMode) {
     }
     let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-parry-result.html`, rollData)
-    })
+    }, rollData.rollMode)
     msg.setFlag("world", "rolldata", rollData)
+    if (rollData.weaponId) msg.setFlag("world", "weaponId", rollData.weaponId)
     //console.log("Rolldata result", rollData)
   }
 
@@ -325,8 +328,9 @@ static async showDiceSoNice(roll, rollMode) {
         }
         let msg = await this.createChatWithRollMode(rollData.alias, {
           content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
-        })
+        }, rollData.rollMode)
         msg.setFlag("world", "rolldata", rollData)
+        if (rollData.weaponId) msg.setFlag("world", "weaponId", rollData.weaponId)
       }
       return
     }
@@ -338,15 +342,17 @@ static async showDiceSoNice(roll, rollMode) {
         formula = (rollData.is2hands) ? rollData.weapon.damageFormula2Hands : rollData.weapon.damageFormula
       }
       let myRoll = await new Roll(formula + "+" + rollData.bonusMalus, actor.system).evaluate()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "messageMode"))
+      await this.showDiceSoNice(myRoll, rollData.rollMode)
       rollData.roll = myRoll
       rollData.diceFormula = myRoll.formula
-      rollData.diceResult = myRoll.terms[0].results[0].result
+      const keptResult = myRoll.terms[0].results.find(r => r.active)
+      rollData.diceResult = keptResult ? keptResult.result : myRoll.terms[0].results[0].result
 
       let msg = await this.createChatWithRollMode(rollData.alias, {
         content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
-      })
+      }, rollData.rollMode)
       msg.setFlag("world", "rolldata", rollData)
+      if (rollData.weaponId) msg.setFlag("world", "weaponId", rollData.weaponId)
       return
     }
 
@@ -357,9 +363,18 @@ static async showDiceSoNice(roll, rollMode) {
       diceFormula = rollData.weapon.system.rollformula
     } else {
       // ability/save/size => 0
-      diceFormula = "1d20"
+      if (rollData.advantage === "advantage") {
+        diceFormula = "2d20kh1"
+      } else if (rollData.advantage === "disadvantage") {
+        diceFormula = "2d20kl1"
+      } else {
+        diceFormula = "1d20"
+      }
       if (rollData.stat) {
         diceFormula += "+" + rollData.stat.value
+      }
+      if (rollData.dexValue !== undefined) {
+        diceFormula += "+" + rollData.dexValue
       }
       if (rollData.statBonus) {
         diceFormula += "+" + rollData.statBonus.value
@@ -381,11 +396,12 @@ static async showDiceSoNice(roll, rollMode) {
     let myRoll = rollData.roll
     if (!myRoll) { // New rolls only of no rerolls
       myRoll = await new Roll(diceFormula, actor.system).roll()
-      await this.showDiceSoNice(myRoll, game.settings.get("core", "messageMode"))
+      await this.showDiceSoNice(myRoll, rollData.rollMode)
     }
     rollData.roll = myRoll
     rollData.diceFormula = diceFormula
-    rollData.diceResult = myRoll.terms[0].results[0].result
+    const keptResult = myRoll.terms[0].results.find(r => r.active)
+    rollData.diceResult = keptResult ? keptResult.result : myRoll.terms[0].results[0].result
     if (rollData.diceResult == 20) {
       rollData.isCriticalSuccess = true
     }
@@ -399,8 +415,9 @@ static async showDiceSoNice(roll, rollMode) {
 
     let msg = await this.createChatWithRollMode(rollData.alias, {
       content: await foundry.applications.handlebars.renderTemplate(`systems/fvtt-warhero/templates/chat-generic-result.html`, rollData)
-    })
+    }, rollData.rollMode)
     await msg.setFlag("world", "rolldata", rollData)
+    if (rollData.weaponId) await msg.setFlag("world", "weaponId", rollData.weaponId)
     //console.log("Rolldata result", rollData)
 
   }
@@ -496,8 +513,9 @@ static async showDiceSoNice(roll, rollMode) {
   }
 
   /* -------------------------------------------- */
-  static async createChatWithRollMode(name, chatOptions) {
-    return this.createChatMessage(name, game.settings.get("core", "messageMode"), chatOptions)
+  static async createChatWithRollMode(name, chatOptions, rollMode) {
+    rollMode = rollMode ?? game.settings.get("core", "messageMode");
+    return this.createChatMessage(name, rollMode, chatOptions)
   }
 
   /* -------------------------------------------- */

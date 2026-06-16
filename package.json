@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "build:css": "lessc styles/simple.less styles/simple.css",
+    "watch:css": "onchange 'styles/simple.less' -- npm run build:css"
+  },
+  "devDependencies": {
+    "less": "^4.2.2",
+    "onchange": "^7.1.0"
+  }
+}

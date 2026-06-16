@@ -29,6 +29,9 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       "reset-skill-use": WarheroCharacterSheet.#onResetSkillUse,
       "actor-sleep": WarheroCharacterSheet.#onActorSleep,
       "roll-d100-this": WarheroCharacterSheet.#onRollD100This,
+      "skill-description-chat": WarheroCharacterSheet.#onSkillDescriptionChat,
+      "toggle-empty-slots": WarheroCharacterSheet.#onToggleEmptySlots,
+      "use-charge": WarheroCharacterSheet.#onUseCharge,
     }
   };
 
@@ -149,6 +152,14 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     }
     formData.equipmentContainers = this.actor.buildEquipmentsSlot()
     formData.bodyContainers = this.actor.buildBodySlot()
+    // Add filter flags for item search
+    const equippedSlots = new Set(["armor", "shield", "weapon1", "weapon2", "ring", "belt"]);
+    for (const [slotKey, container] of Object.entries({...formData.bodyContainers, ...formData.equipmentContainers})) {
+      for (const item of container.content) {
+        item._filterMagical = item.system.magiccharge && item.system.magiccharge !== "notapplicable";
+        item._filterEquipped = equippedSlots.has(slotKey);
+      }
+    }
     // Dynamic patch
     formData.system.secondary.counterspell.hasmax = false
     // Race mngt
@@ -215,10 +226,30 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     event.preventDefault();
 
     let d100Bonus = this.actor.system.secondary.percentbonus.value || 0
-    new Roll(`1d100 + ${d100Bonus}`).toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-      flavor: `${game.i18n.localize("WH.ui.percentroll")} : 1d100 + ${d100Bonus}`
-    })
+    let roll = new Roll(`1d100 + ${d100Bonus}`)
+    await roll.evaluate({ async: true })
+
+    let diceResult = roll.terms[0].results[0].result
+    let rollData = {
+      actorImg: this.actor.img,
+      alias: this.actor.name,
+      actorId: this.actor.id,
+      mode: "percent",
+      img: this.actor.img,
+      diceResult,
+      diceFormula: roll.formula,
+      roll,
+      isCriticalSuccess: diceResult === 100,
+      isCriticalFailure: diceResult === 1,
+      hasBM: false,
+      advantage: "none"
+    }
+
+    let content = await foundry.applications.handlebars.renderTemplate(
+      "systems/fvtt-warhero/templates/chat-generic-result.html", rollData
+    )
+    let msg = await WarheroUtility.createChatWithRollMode(rollData.alias, { content })
+    await msg.setFlag("world", "rolldata", rollData)
   }
 
   /**
@@ -280,6 +311,26 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
   static async #onResetSkillUse(event, target) {
     event.preventDefault();
     await this.actor.resetAllSkillUses()
+  }
+
+  static async #onSkillDescriptionChat(event, target) {
+    event.preventDefault();
+    const li = $(event.target).parents(".item")
+    const skillId = li.data("item-id")
+    const skill = this.actor.items.get(skillId)
+    if (!skill) return
+
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/fvtt-warhero/templates/chat-skill-description.html",
+      {
+        actorImg: this.actor.img,
+        alias: this.actor.name,
+        skillName: skill.name,
+        skillImg: skill.img,
+        description: skill.system.description || game.i18n.localize("WH.ui.nodescription")
+      }
+    )
+    await WarheroUtility.createChatWithRollMode(this.actor.name, { content })
   }
 
   static async #onActorSleep(event, target) {
@@ -344,15 +395,131 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     await item.update({ "system.equipped": !currentEquipped });
   }
 
+  /**
+   * Toggle visibility of empty container slots on the equipment tab
+   * @param {Event} event - The triggering event
+   * @param {HTMLElement} target - The target element
+   */
+  static #onToggleEmptySlots(event, target) {
+    const section = target.closest('[data-tab="equipment"]');
+    section.classList.toggle("hide-empty-slots");
+  }
 
+  /**
+   * Consume one charge from a magical item and send chat warning if depleted.
+   * @param {Event} event - The triggering event
+   * @param {HTMLElement} target - The target element
+   */
+  static async #onUseCharge(event, target) {
+    event.preventDefault();
+    const itemId = target.closest("[data-item-id]")?.dataset.itemId;
+    if (!itemId) return;
+    const item = this.document.items.get(itemId);
+    if (!item) return;
+
+    const system = item.system;
+    if (system.magiccharge === "notapplicable" || system.chargevalue <= 0) return;
+
+    const newValue = system.chargevalue - 1;
+    await item.update({ "system.chargevalue": newValue });
+
+    if (newValue <= 0) {
+      const content = await foundry.applications.handlebars.renderTemplate(
+        "systems/fvtt-warhero/templates/chat-charge-depleted.html",
+        {
+          actorImg: this.actor.img,
+          alias: this.actor.name,
+          itemName: item.name,
+        }
+      );
+      await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
+    }
+
+    this.render();
+  }
+
+  /** @override */
+  _onRender(context, options) {
+    super._onRender(context, options);
+    this.element.addEventListener("input", WarheroCharacterSheet.#onFilterEquipment.bind(this));
+    this.element.addEventListener("change", WarheroCharacterSheet.#onFilterEquipment.bind(this));
+    this.element.addEventListener("click", WarheroCharacterSheet.#onClearFilterSearch.bind(this));
+  }
+
+  /**
+   * Filter equipment items by search text, type, equipped status, and magical status.
+   */
+  static #onFilterEquipment(event) {
+    const target = event.target;
+    if (!target.matches(".item-filter-search, .item-filter-equipped, .item-filter-magical, .item-filter-type")) return;
+    const section = target.closest('[data-tab="equipment"]');
+    if (!section) return;
+
+    const search = (section.querySelector(".item-filter-search")?.value || "").toLowerCase();
+    const filterType = section.querySelector(".item-filter-type")?.value || "";
+    const showEquipped = section.querySelector(".item-filter-equipped")?.checked || false;
+    const showMagical = section.querySelector(".item-filter-magical")?.checked || false;
+    const hasFilters = search || filterType || showEquipped || showMagical;
+
+    for (const row of section.querySelectorAll("[data-item-id]")) {
+      if (!hasFilters) {
+        row.classList.remove("item-hidden");
+        continue;
+      }
+      let visible = true;
+      if (search) {
+        const name = (row.dataset.itemName || "").toLowerCase();
+        if (!name.includes(search)) visible = false;
+      }
+      if (visible && filterType && row.dataset.filterType !== filterType) visible = false;
+      if (visible && showEquipped && row.dataset.filterEquipped !== "true") visible = false;
+      if (visible && showMagical && row.dataset.filterMagical !== "true") visible = false;
+      row.classList.toggle("item-hidden", !visible);
+    }
+  }
+
+  /**
+   * Click on the clear icon → reset search and re-run filter.
+   */
+  static #onClearFilterSearch(event) {
+    const target = event.target;
+    if (!target.matches(".item-filter-clear")) return;
+    const section = target.closest('[data-tab="equipment"]');
+    if (!section) return;
+    const input = section.querySelector(".item-filter-search");
+    if (input) {
+      input.value = "";
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+  }
+
+
+  /**
+   * Handle drop events for item relocation between equipment slots.
+   * - Existing actor item dropped on a different slot → update slotlocation
+   * - New item (compendium/sidebar) dropped on a slot → create with that slot
+   * - Otherwise → existing creation behavior
+   */
   async _onDrop(event) {
-    //if (!this.isEditable || !this.isEditMode) return
     const data = foundry.applications.ux.TextEditor.implementation.getDragEventData(event)
 
     if (data.type === "Item") {
       const item = await fromUuid(data.uuid)
       if (!item) return false
 
+      const slotElement = event.target.closest("[data-slot]");
+      const targetSlot = slotElement?.dataset.slot;
+
+      // Existing actor item → relocate if dropped on a different slot
+      if (item.parent === this.document) {
+        if (targetSlot && item.system.slotlocation !== undefined && item.system.slotlocation !== targetSlot) {
+          await item.update({ "system.slotlocation": targetSlot });
+          this.render();
+        }
+        return false;
+      }
+
+      // New item from compendium/sidebar — apply race check then create
       if (item.type === "race") {
         const existingRace = this.actor.items.find(i => i.type === "race")
         if (existingRace) {
@@ -361,9 +528,22 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
         }
       }
 
-      return super._onDropItem(item)
+      const itemData = item.toObject();
+      if (targetSlot && itemData.system?.slotlocation !== undefined) {
+        itemData.system.slotlocation = targetSlot;
+      }
+      return this.document.createEmbeddedDocuments("Item", [itemData], { renderSheet: false });
     }
 
     return false
+  }
+
+  /**
+   * Highlight the equipment slot being hovered during a drag.
+   */
+  _onDragOver(event) {
+    this.element.querySelectorAll("[data-slot]").forEach(el => el.classList.remove("drag-over"));
+    const slot = event.target.closest("[data-slot]");
+    if (slot) slot.classList.add("drag-over");
   }
 }
