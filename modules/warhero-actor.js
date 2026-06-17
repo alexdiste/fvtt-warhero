@@ -112,7 +112,7 @@ export class WarheroActor extends Actor {
           additiveChanges.set(path, prev + value);
         }
       }
-      const computedPaths = new Set(["system.attributes.hp.max", "system.attributes.mana.max"]);
+      const computedPaths = new Set(["system.attributes.hp.max", "system.attributes.mana.max", "system.attributes.def.value", "system.attributes.def.max"]);
       for (const [path, delta] of additiveChanges) {
         if (delta === 0) continue;
         if (computedPaths.has(path)) continue;
@@ -927,7 +927,9 @@ async resetAllSkillUses(askConfirmation = true) {
       }
       rollData.usemWeaponMalus = false
       rollData.mWeaponMalus = this.system.secondary.malusmultiweapon.value
+      rollData.dexValue = this.system.statistics.dex.value
       rollData.weapon = weapon
+      rollData.weaponId = weaponId
       rollData.img = weapon.img
       rollData.title = `${this.name} - ${weapon.name}`
       this.startRoll(rollData)

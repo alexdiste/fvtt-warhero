@@ -155,5 +155,18 @@ export const WARHERO_CONFIG = {
     { value: "4", label: "+4" },
     { value: "5", label: "+5" },
     { value: "6", label: "+6" }
+  ],
+
+  advantageOptions: [
+    { value: "none", label: "WH.dialog.normal" },
+    { value: "advantage", label: "WH.dialog.advantage" },
+    { value: "disadvantage", label: "WH.dialog.disadvantage" }
+  ],
+
+  rollModeOptions: [
+    { value: "roll", label: "WH.dialog.rollmode.public" },
+    { value: "gmroll", label: "WH.dialog.rollmode.gmroll" },
+    { value: "blindroll", label: "WH.dialog.rollmode.blindroll" },
+    { value: "selfroll", label: "WH.dialog.rollmode.selfroll" }
   ]
 }

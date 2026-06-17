@@ -1,16 +1,8 @@
 <section class="fvtt-warhero sheet-header sheet-header-actor">
-
-  <div class="header-fields">
-    <h1 class="charname margin-right"><input
-        name="name"
-        type="text"
-        value="{{name}}"
-        placeholder="Name"
-      /></h1>
-    <div class="flexrow">
-      <img class="profile-img" src="{{img}}" data-action="editImage" data-edit="img" title="{{name}}" style="cursor:pointer;" />
-      <div class="flexcol">
-      </div>
+  <div class="party-header-layout">
+    <div class="party-header-top">
+      <img class="profile-img" src="{{img}}" data-action="editImage" data-edit="img" title="{{name}}" />
     </div>
+    <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name" /></h1>
   </div>
 </section>

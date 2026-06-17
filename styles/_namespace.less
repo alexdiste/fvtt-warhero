@@ -1,0 +1,327 @@
+// ============================================================
+// WARHERO RPG — .fvtt-warhero namespace (sheet layout, tabs, items)
+// ============================================================
+
+.fvtt-warhero {
+  background: @bg-main;
+  color: #ecf0f1;
+
+  .window-content {
+    background: @bg-main;
+    color: #ecf0f1;
+  }
+
+  a {
+    color: #8ab4d6;
+
+    &:hover {
+      color: #b0d4f0;
+    }
+  }
+
+  .grid,
+  .grid-2col {
+    display: grid;
+    grid-column: span 2 / span 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+    margin: 2px 0;
+    padding: 0;
+  }
+
+  // ===== Base form elements =====
+
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    background: @bg-darker;
+    color: #ecf0f1;
+    border: 1px solid #2c3e50;
+    border-radius: 4px;
+    padding: 2px 4px;
+
+    &:focus {
+      border-color: #5a8bba;
+      outline: none;
+    }
+  }
+
+  select {
+    option {
+      background: @bg-main;
+      color: #ecf0f1;
+    }
+  }
+
+  input[type="checkbox"] {
+    accent-color: #5a8bba;
+  }
+
+  // ===== HP / Mana / Sleep row =====
+
+  .actor-magic-stat-header {
+    flex: 0 1 auto;
+
+    .item-stat-roll {
+      flex: 0 1 auto;
+      flex-wrap: nowrap;
+      width: auto;
+      border-bottom: none;
+      height: auto;
+      padding: 0 4px;
+      gap: 2px;
+      white-space: nowrap;
+    }
+  }
+
+  // ===== Sheet header =====
+
+  .sheet-header {
+    .flex-vendor(0);
+    .flex-display();
+    .flex-direction-row();
+    .flex-wrap-wrap();
+    .justify-start();
+    overflow: hidden;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, @bg-gradient-start 0%, @bg-gradient-end 100%);
+    border-radius: 8px;
+    padding: 6px;
+
+    .profile-img {
+      .flex-vendor-basis(0, @img-xl);
+      width: @img-xl;
+      height: auto;
+      max-height: @img-xl;
+      margin-top: 0;
+      margin-right: 8px;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      object-position: 50% 0;
+    }
+
+    .header-fields {
+      .flex-vendor(1);
+    }
+
+    h1.charname {
+      height: 36px;
+      padding: 0;
+      margin: 2px 0;
+      border-bottom: 0;
+
+      input {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        &:focus {
+          border-color: #5a8bba;
+        }
+      }
+    }
+  }
+
+  .sheet-header-actor {
+    min-height: 17rem;
+  }
+
+  &.party .sheet-header-actor {
+    min-height: 5rem;
+    padding: 6px 0;
+  }
+
+  .party-header-layout {
+    display: flex;
+    flex-direction: column;
+
+    .party-header-top {
+      display: flex;
+
+      .profile-img {
+        flex: 0 0 64px;
+        width: 64px;
+        max-height: 64px;
+        margin: 0;
+      }
+    }
+
+    .charname {
+      width: 100%;
+      height: 36px;
+      margin: 4px 0 0;
+      padding: 0;
+
+      input {
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .align-items-start {
+    align-items: flex-start;
+  }
+
+  .div-align-top {
+    vertical-align: top;
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  .tab-content-scrollable {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .sheet-tabs {
+    .flex-vendor(0);
+  }
+
+  .sheet-body,
+  .sheet-body .tab,
+  .sheet-body .tab .editor {
+    height: 100%;
+    font-size: 0.8rem;
+  }
+
+  form .form-group.editor {
+    border: 2px solid #2c3e50;
+    height: 300px;
+    padding: 0 3px;
+    overflow-y: auto;
+    background: @bg-darker;
+    border-radius: 4px;
+  }
+
+  .resource-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #8899aa;
+  }
+
+  // ===== Tabs =====
+
+  .tabs {
+    height: 40px;
+    border-top: 1px solid #2c3e50;
+    border-bottom: 1px solid #2c3e50;
+
+    .item {
+      line-height: 40px;
+      font-weight: bold;
+      color: #8899aa;
+
+      &:hover {
+        color: #ecf0f1;
+        text-shadow: none;
+      }
+
+      &.active {
+        color: #ffffff;
+        box-shadow: inset 0 -2px 0 #5a8bba;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+
+  // ===== Items list =====
+
+  .items-list {
+    list-style: none;
+    margin: 1px 0;
+    padding: 0;
+    overflow-y: auto;
+
+    .item-header {
+      font-weight: bold;
+    }
+
+    .item {
+      height: 30px;
+      line-height: 24px;
+      padding: 1px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      .item-image {
+        .flex-vendor-basis(0, @img-sm);
+        margin-right: 5px;
+      }
+
+      img {
+        display: block;
+      }
+    }
+
+    .item-name {
+      margin: 0;
+    }
+
+    .item-controls {
+      .flex-vendor-basis(0, 86px);
+      text-align: right;
+    }
+  }
+
+  // Editor in item sheets: starts at 200px, grows with content.
+  // Scrollbar appears only when editor exceeds the window.
+  .editor.item-text-long-line {
+    border: 2px solid #2c3e50;
+    min-height: 200px;
+    padding: 0 3px;
+    overflow-y: auto;
+    background: @bg-darker;
+    border-radius: 4px;
+  }
+
+  // ===== List rows =====
+
+  .list-item {
+    &:nth-child(even) {
+      background: rgba(255, 255, 255, 0.02);
+    }
+  }
+
+  .item-filler {
+    flex: 1;
+  }
+
+  .item-controls-fixed {
+    flex: 0 0 auto;
+    min-width: 60px;
+    text-align: right;
+  }
+
+  .list-item-shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  // ===== Short label / field sizing =====
+
+  .short-label {
+    color: #8899aa;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .item-field-label-short {
+    min-width: 3rem;
+    max-width: 3rem;
+  }
+
+  .item-field-label-vlong {
+    min-width: 12rem;
+    max-width: 12rem;
+  }
+}

@@ -1,10 +1,31 @@
-<section class="tab-content-scrollable tab sheet-body party-{{ tab.id }} {{ tab.cssClass }}"
+<section class="tab-content-scrollable tab sheet-body party-{{ tab.id }} {{ tab.cssClass }} party-equipment"
   data-group="sheet"
   data-tab="{{ tab.id }}">
 
 <div>
+    <div class="flexrow equipment-filter-bar">
+      <div class="item-filter-search-wrapper">
+        <input type="text" class="item-filter-search" placeholder="{{localize "WH.ui.searchitems"}}">
+        <i class="fa-solid fa-times item-filter-clear"></i>
+      </div>
+      <select class="item-filter-type">
+        <option value="">{{localize "WH.ui.filterall"}}</option>
+        <option value="weapon">{{localize "WH.ui.weapon"}}</option>
+        <option value="armor">{{localize "WH.ui.armor"}}</option>
+        <option value="shield">{{localize "WH.ui.shield"}}</option>
+        <option value="equipment">{{localize "WH.ui.equipment"}}</option>
+        <option value="potion">{{localize "WH.ui.potion"}}</option>
+        <option value="poison">{{localize "WH.ui.poison"}}</option>
+        <option value="trap">{{localize "WH.ui.trap"}}</option>
+        <option value="classitem">{{localize "WH.ui.classitem"}}</option>
+        <option value="money">{{localize "WH.ui.money"}}</option>
+      </select>
+      <label class="item-filter-label"><input type="checkbox" class="item-filter-equipped"> {{localize "WH.ui.equipped"}}</label>
+      <label class="item-filter-label"><input type="checkbox" class="item-filter-magical"> {{localize "WH.ui.magical"}}</label>
+    </div>
+
       {{#each partySlots as |slot slotKey|}}
-      <ul class="item-list alternate-list">
+      <ul class="item-list alternate-list" data-slot="{{slotKey}}">
         <li class="item flexrow list-item items-title-bg {{#if (gt slot.slotUsed slot.nbslots)}}items-title-bg-red{{/if}}">
           <span class="item-name-label-header">
             <h3><label class="items-title-text">{{localize slot.label}}</label></h3>
@@ -15,10 +36,10 @@
           <span class="item-field-label-long">
             <label class="short-label">{{localize "WH.ui.Qty"}}</label>
           </span>
-          <span class="item-field-label-medium">
+          <span class="item-field-label-medium container-header-stat">
             <label class="short-label">{{localize "WH.ui.maxslots"}}: {{slot.nbslots}}</label>
           </span>
-          <span class="item-field-label-medium">
+          <span class="item-field-label-medium container-header-stat">
             <label class="short-label">{{localize "WH.ui.slotsused"}}: {{slot.slotUsed}}</label>
           </span>
           <div class="item-filler">&nbsp;</div>
@@ -27,7 +48,11 @@
           </div>
         </li>
         {{#each slot.content as |item itemKey|}}
-        <li class="item flexrow list-item list-item-shadow" data-item-id="{{item._id}}">
+        <li class="item flexrow list-item list-item-shadow" data-item-id="{{item._id}}"
+            data-item-name="{{item.name}}"
+            data-filter-type="{{item.type}}"
+            data-filter-equipped="{{item._filterEquipped}}"
+            data-filter-magical="{{item._filterMagical}}">
           <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img class="sheet-competence-img"
               src="{{item.img}}" /></a>
           <span class="item-name-label">{{item.name}}</span>
@@ -38,9 +63,21 @@
 
           <span class="item-field-label-long"><label>
               {{item.system.quantity}}
-              (<a class="quantity-minus plus-minus-button"> -</a>/<a class="quantity-plus plus-minus-button">+</a>)
+              (<a class="quantity-minus plus-minus-button" data-action="quantity-minus"><i class="fa-solid fa-circle-minus"></i></a>/<a class="quantity-plus plus-minus-button" data-action="quantity-plus"><i class="fa-solid fa-circle-plus"></i></a>)
             </label>
           </span>
+
+          {{#if item._filterMagical}}
+          <span class="item-field-label-medium">
+            {{#if item.system.chargevalue}}
+            <a class="use-charge" data-action="use-charge" data-tooltip="{{localize "WH.ui.usecharge"}}">
+              <i class="fa-solid fa-bolt"></i> {{item.system.chargevalue}}/{{item.system.chargevaluemax}}
+            </a>
+            {{else}}
+            <span class="no-charges"><i class="fa-solid fa-bolt"></i> 0/{{item.system.chargevaluemax}}</span>
+            {{/if}}
+          </span>
+          {{/if}}
 
           <div class="item-filler">&nbsp;</div>
           <div class="item-controls item-controls-fixed">

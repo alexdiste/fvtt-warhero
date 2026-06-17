@@ -284,7 +284,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           abbrev: new fields.StringField({ initial: "malusmultiweapon", required: false }),
           iscombat: new fields.BooleanField({ initial: true, required: false }),
           style: new fields.StringField({ initial: "edit", required: false }),
-          value: new fields.NumberField({ initial: 0, required: false, integer: true })
+          value: new fields.NumberField({ initial: -2, required: false, integer: true })
         }),
         drbonus: new fields.SchemaField({
           label: new fields.StringField({ initial: "WH.ui.drbonus", required: false }),
@@ -417,7 +417,8 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
     }
 
     // Secondary attributes
-    for (let sec of Object.values(this.secondary)) {
+    for (let [sk, sec] of Object.entries(this.secondary)) {
+      if (sk === "malusmultiweapon") continue;
       if (sec.value !== undefined) sec.value = Math.max(0, sec.value);
       if (sec.max !== undefined) sec.max = Math.max(0, sec.max);
       if (sec.nbuse !== undefined) sec.nbuse = Math.max(0, sec.nbuse);
@@ -491,6 +492,13 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       this.attributes.mana.value = Math.min(this.attributes.mana.value, this.attributes.mana.max);
     }
     this.attributes.mana.maxLocked = true;
+
+    // Defence = 12 + post-effects DEX + direct ADD effects
+    const postDex = this.statistics?.dex?.value ?? 0;
+    const defBase = 12 + Math.max(0, postDex);
+    const defEffects = this._getAdditiveEffectTotal("system.attributes.def.value");
+    this.attributes.def.value = defBase + defEffects;
+    this.attributes.def.max = defBase + defEffects;
 
     // Calculate resource usage
     this._calculateResourceUsage();

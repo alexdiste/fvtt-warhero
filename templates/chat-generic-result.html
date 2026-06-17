@@ -1,62 +1,111 @@
-<div class="warhero-chat-message-header">
-  {{#if actorImg}}
-  <img class="actor-icon" src="{{actorImg}}" alt="{{alias}}" />
-  {{/if}}
-  <h4 class="chat-actor-name">{{alias}}</h4>
-</div>
-
-<div class=warhero-chat-message-body>
-    {{#if img}}
-      <img class="chat-icon" src="{{img}}" alt="{{name}}" />
+<div class="warhero-chat-card">
+  <div class="warhero-chat-card-header">
+    {{#if actorImg}}
+    <img class="header-icon" src="{{actorImg}}" alt="{{alias}}" />
     {{/if}}
-    <ul>
-      {{#if (eq mode "save")}}
-      <li>{{localize "WH.chat.save"}} {{localize stat.label}} : {{stat.save}}</li>
-      {{else}}
-        {{#if stat}}
-        <li>{{localize stat.label}} : {{stat.value}}</li>
-        {{/if}}
-      {{/if}}
-
-      {{#if weapon}}
-      <li>{{localize "WH.ui.weapon"}} : {{weapon.name}}</li>
-      {{/if}}
-      {{#if hasBM}}
-      <li>Bonus/Malus : {{bonusMalus}}</li>
-      {{/if}}
-
-      {{#if usemWeaponMalus}}
-      <li>{{localize "WH.chat.mweaponmalus"}}: {{mWeaponMalus}}</li>
-      {{/if}}
-
-      {{#if diceFormula}}
-        <li>Formula : {{diceFormula}}</li>
-        {{#if isCriticalSuccess}}
-          <li><span class="crit-success">{{localize "WH.chat.diceresult"}} : {{diceResult}}</span></li>
-        {{else}}
-          {{#if isCriticalFailure}}
-            <li><span class="crit-failure">{{localize "WH.chat.diceresult"}} : {{diceResult}}</span></li>
-          {{else}}
-            <li>{{localize "WH.chat.diceresult"}} : <span>{{diceResult}}</span></li>
-          {{/if}}
-        {{/if}}
-      {{/if}}
-
+    <div class="header-text">
+      <h4 class="header-name">{{alias}}</h4>
       {{#if power}}
-      <li>{{localize "WH.ui.power"}} : {{power.name}}</li>
-      <li>{{localize "WH.ui.magicschool"}} : {{power.system.magicschool}}</li>
-      <li>{{localize "WH.ui.level"}} : {{power.system.level}}</li>
-      {{#if locationName}}
-      <li>{{localize "WH.ui.location"}} : {{locationName}}</li>
+      <span class="header-subtitle">{{localize "WH.ui.power"}}</span>
+      {{else if (eq mode "damage")}}
+      <span class="header-subtitle">{{localize "WH.ui.damage"}}</span>
+      {{else if weapon}}
+      <span class="header-subtitle">{{localize "WH.ui.weapon"}}</span>
+      {{else if (eq mode "percent")}}
+      <span class="header-subtitle">{{localize "WH.ui.percentbonus"}}</span>
       {{/if}}
-      {{#if (and powerDescription (not (eq powerDescription "")))}}
-      <li class="power-description">{{{powerDescription}}}</li>
+    </div>
+  </div>
+
+  <div class="warhero-chat-card-body">
+    {{#if (eq mode "save")}}
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.chat.save"}} {{localize stat.label}}</span>
+      <span class="detail-value">{{stat.save}}</span>
+    </div>
+    {{else}}
+      {{#if stat}}
+      <div class="warhero-chat-detail">
+        <span class="detail-label">{{localize stat.label}}</span>
+        <span class="detail-value">{{stat.value}}</span>
+      </div>
       {{/if}}
-      {{/if}}
-      
-      {{#if (and roll.total (not (eq roll.total "")))}}
-      <li><strong>{{localize "WH.chat.result"}} : {{roll.total}} </strong></li>
-      {{/if}}
-    </ul>
+    {{/if}}
+
+    {{#if weapon}}
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.ui.weapon"}}</span>
+      <span class="detail-value">{{weapon.name}}</span>
+    </div>
+    {{#unless (eq mode "damage")}}
+    <div class="warhero-chat-damage-button">
+      <button type="button" data-action="roll-damage" data-weapon-id="{{weaponId}}">
+        <i class="fa-solid fa-dice-d6"></i> {{localize "WH.chat.rolldamage"}}
+      </button>
+    </div>
+    {{/unless}}
+    {{/if}}
+
+    {{#if hasBM}}
+    <div class="warhero-chat-detail">
+      <span class="detail-label">Bonus/Malus</span>
+      <span class="detail-value">{{bonusMalus}}</span>
+    </div>
+    {{/if}}
+
+    {{#if usemWeaponMalus}}
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.chat.mweaponmalus"}}</span>
+      <span class="detail-value">{{mWeaponMalus}}</span>
+    </div>
+    {{/if}}
+
+    {{#if power}}
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.ui.magicschool"}}</span>
+      <span class="detail-value">{{power.system.magicschool}}</span>
+    </div>
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.ui.level"}}</span>
+      <span class="detail-value">{{power.system.level}}</span>
+    </div>
+    {{#if locationName}}
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{localize "WH.ui.location"}}</span>
+      <span class="detail-value">{{locationName}}</span>
+    </div>
+    {{/if}}
+    {{/if}}
+
+    {{#if diceFormula}}
+    {{#if (eq advantage "advantage")}}
+    <div class="warhero-chat-detail advantage-indicator">
+      <span class="detail-label">{{localize "WH.dialog.rolldice"}}</span>
+      <span class="detail-value">{{localize "WH.dialog.advantage"}}</span>
+    </div>
+    {{/if}}
+    {{#if (eq advantage "disadvantage")}}
+    <div class="warhero-chat-detail advantage-indicator">
+      <span class="detail-label">{{localize "WH.dialog.rolldice"}}</span>
+      <span class="detail-value">{{localize "WH.dialog.disadvantage"}}</span>
+    </div>
+    {{/if}}
+    <div class="warhero-dice-display {{#if isCriticalSuccess}}crit-success{{/if}}{{#if isCriticalFailure}}crit-failure{{/if}}">
+      <div class="dice-number">{{diceResult}}</div>
+      <div class="dice-label">{{localize "WH.chat.diceresult"}}</div>
+      <div class="dice-formula">{{diceFormula}}</div>
+    </div>
+    {{/if}}
+
+    {{#if (and powerDescription (not (eq powerDescription "")))}}
+    <div class="warhero-power-description">{{{powerDescription}}}</div>
+    {{/if}}
+
+    {{#if (and roll.total (not (eq roll.total "")))}}
+    <div class="warhero-roll-footer">
+      <span class="footer-label">{{localize "WH.chat.result"}}</span>
+      <span class="footer-value">{{roll.total}}</span>
+    </div>
+    {{/if}}
   </div>
 </div>
