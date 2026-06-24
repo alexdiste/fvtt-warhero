@@ -307,6 +307,8 @@
   "WH.ui.searchitems": "Search items...",
   "WH.ui.equipped": "Equipped",
   "WH.ui.magical": "Magical",
+  "WH.ui.hascharge": "Has charge",
+  "WH.ui.unidentified": "Unidentified",
   "WH.dialog.normal": "Normal",
   "WH.dialog.advantage": "Advantage",
   "WH.dialog.disadvantage": "Disadvantage",
@@ -324,5 +326,8 @@
   "WH.ui.armor": "Armor",
   "WH.ui.shield": "Shield",
   "WH.ui.classitem": "Class Item",
-  "WH.ui.money": "Money"
+  "WH.ui.money": "Money",
+  "WH.ui.consumable": "Consumable",
+  "WH.ui.consumable.hint": "Mark this item as consumable (torch, ration, etc.)",
+  "WH.ui.consume": "Consume one"
 }

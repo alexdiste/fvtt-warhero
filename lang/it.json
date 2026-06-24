@@ -307,6 +307,8 @@
   "WH.ui.searchitems": "Cerca oggetti...",
   "WH.ui.equipped": "Equipaggiato",
   "WH.ui.magical": "Magico",
+  "WH.ui.hascharge": "Ha carica",
+  "WH.ui.unidentified": "Non identificato",
   "WH.dialog.normal": "Normale",
   "WH.dialog.advantage": "Vantaggio",
   "WH.dialog.disadvantage": "Svantaggio",
@@ -324,5 +326,8 @@
   "WH.ui.armor": "Armatura",
   "WH.ui.shield": "Scudo",
   "WH.ui.classitem": "Oggetto di Classe",
-  "WH.ui.money": "Denaro"
+  "WH.ui.money": "Denaro",
+  "WH.ui.consumable": "Consumabile",
+  "WH.ui.consumable.hint": "Segna questo oggetto come consumabile (torcia, razione, ecc.)",
+  "WH.ui.consume": "Consuma uno"
 }

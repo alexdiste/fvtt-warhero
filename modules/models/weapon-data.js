@@ -119,6 +119,13 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
         hint: "WH.ui.quantity.hint"
       }),
 
+      consumable: new fields.BooleanField({
+        initial: false,
+        required: false,
+        label: "WH.ui.consumable",
+        hint: "WH.ui.consumable.hint"
+      }),
+
       slotused: new fields.NumberField({
         initial: 1,
         required: false,
@@ -207,7 +214,7 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
 
     this.isUsable = this.magiccharge === "notapplicable" ||
       this.magiccharge === "unlimited" ||
-      (this.magiccharge === "charged" && this.chargevalue > 0);
+      (this.magiccharge === "charged" && this.chargevalue < this.chargevaluemax);
 
     this.totalCost = this.cost * this.quantity;
     this.isMagical = this.magiccharge !== "notapplicable";
@@ -244,6 +251,10 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
    * Migrate weapon data
    */
   static migrateData(data) {
+    if (data.chargevaluemax > 0 && !data._chargeAscending) {
+      data.chargevalue = data.chargevaluemax - (data.chargevalue ?? 0);
+      data._chargeAscending = true;
+    }
     return super.migrateData(data);
   }
 
@@ -256,14 +267,20 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
       return false;
     }
 
-    if (this.magiccharge === "charged" && this.chargevalue > 0) {
+    if (this.magiccharge === "charged" && this.chargevalue < this.chargevaluemax) {
+      const newValue = this.chargevalue + 1;
       const updateData = {
-        "system.chargevalue": this.chargevalue - 1
+        "system.chargevalue": newValue
       };
+
+      if (newValue >= this.chargevaluemax) {
+        updateData["system.magiccharge"] = "notapplicable";
+        updateData["system.chargevaluemax"] = 0;
+      }
 
       await this.parent.update(updateData);
 
-      if (this.chargevalue - 1 <= 0) {
+      if (newValue >= this.chargevaluemax) {
         ui.notifications.info(`${this.parent.name} has no charges remaining`);
       }
     }

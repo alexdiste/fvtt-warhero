@@ -26,7 +26,9 @@
       data-item-name="{{item.name}}"
       data-filter-type="{{item.type}}"
       data-filter-equipped="{{item._filterEquipped}}"
-      data-filter-magical="{{item._filterMagical}}">
+      data-filter-has-charge="{{item._filterHasCharge}}"
+      data-filter-magical="{{item._filterMagical}}"
+      data-filter-unidentified="{{item._filterUnidentified}}">
     <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img class="sheet-competence-img"
         src="{{item.img}}" /></a>
     <span class="item-name-label">{{item.name}}</span>
@@ -39,6 +41,11 @@
         {{item.system.quantity}}
         (<a class="quantity-minus plus-minus-button" data-action="quantity-minus"><i class="fa-solid fa-circle-minus"></i></a>/<a
           class="quantity-plus plus-minus-button" data-action="quantity-plus"><i class="fa-solid fa-circle-plus"></i></a>)
+        {{#if item.system.consumable}}
+        <a class="item-consume plus-minus-button" data-action="item-consume" data-tooltip="{{localize "WH.ui.consume"}}">
+          <i class="fa-solid fa-fire"></i>
+        </a>
+        {{/if}}
       </label>
     </span>
 
@@ -46,15 +53,11 @@
       <label class="short-label">{{localize (concat "WH.conf." item.system.isidentified)}}</label>
     </span>
 
-    {{#if item._filterMagical}}
+    {{#if item._filterHasCharge}}
     <span class="item-field-label-medium">
-      {{#if item.system.chargevalue}}
       <a class="use-charge" data-action="use-charge" data-tooltip="{{localize "WH.ui.usecharge"}}">
         <i class="fa-solid fa-bolt"></i> {{item.system.chargevalue}}/{{item.system.chargevaluemax}}
       </a>
-      {{else}}
-      <span class="no-charges"><i class="fa-solid fa-bolt"></i> 0/{{item.system.chargevaluemax}}</span>
-      {{/if}}
     </span>
     {{/if}}
 

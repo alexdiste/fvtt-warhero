@@ -32,6 +32,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       "skill-description-chat": WarheroCharacterSheet.#onSkillDescriptionChat,
       "toggle-empty-slots": WarheroCharacterSheet.#onToggleEmptySlots,
       "use-charge": WarheroCharacterSheet.#onUseCharge,
+      "item-consume": WarheroCharacterSheet.#onConsumeItem,
     }
   };
 
@@ -156,7 +157,9 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     const equippedSlots = new Set(["armor", "shield", "weapon1", "weapon2", "ring", "belt"]);
     for (const [slotKey, container] of Object.entries({...formData.bodyContainers, ...formData.equipmentContainers})) {
       for (const item of container.content) {
-        item._filterMagical = item.system.magiccharge && item.system.magiccharge !== "notapplicable";
+        item._filterHasCharge = item.system.magiccharge && item.system.magiccharge !== "notapplicable";
+        item._filterMagical = item.system.isidentified && item.system.isidentified !== "notapplicable";
+        item._filterUnidentified = item.system.isidentified === "unknown";
         item._filterEquipped = equippedSlots.has(slotKey);
       }
     }
@@ -418,12 +421,19 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     if (!item) return;
 
     const system = item.system;
-    if (system.magiccharge === "notapplicable" || system.chargevalue <= 0) return;
+    if (system.magiccharge !== "charged" || system.chargevalue >= system.chargevaluemax) return;
 
-    const newValue = system.chargevalue - 1;
-    await item.update({ "system.chargevalue": newValue });
+    const newValue = system.chargevalue + 1;
+    const updateData = { "system.chargevalue": newValue };
 
-    if (newValue <= 0) {
+    if (newValue >= system.chargevaluemax) {
+      updateData["system.magiccharge"] = "notapplicable";
+      updateData["system.chargevaluemax"] = 0;
+    }
+
+    await item.update(updateData);
+
+    if (newValue >= system.chargevaluemax) {
       const content = await foundry.applications.handlebars.renderTemplate(
         "systems/fvtt-warhero/templates/chat-charge-depleted.html",
         {
@@ -436,6 +446,21 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     }
 
     this.render();
+  }
+
+  static async #onConsumeItem(event, target) {
+    event.preventDefault();
+    const itemId = target.closest("[data-item-id]")?.dataset.itemId;
+    if (!itemId) return;
+    const item = this.document.items.get(itemId);
+    if (!item) return;
+
+    const newQuantity = item.system.quantity - 1;
+    if (newQuantity <= 0) {
+      await item.delete();
+    } else {
+      await item.update({ "system.quantity": newQuantity });
+    }
   }
 
   /** @override */
@@ -451,15 +476,17 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
    */
   static #onFilterEquipment(event) {
     const target = event.target;
-    if (!target.matches(".item-filter-search, .item-filter-equipped, .item-filter-magical, .item-filter-type")) return;
+    if (!target.matches(".item-filter-search, .item-filter-equipped, .item-filter-magical, .item-filter-has-charge, .item-filter-unidentified, .item-filter-type")) return;
     const section = target.closest('[data-tab="equipment"]');
     if (!section) return;
 
     const search = (section.querySelector(".item-filter-search")?.value || "").toLowerCase();
     const filterType = section.querySelector(".item-filter-type")?.value || "";
     const showEquipped = section.querySelector(".item-filter-equipped")?.checked || false;
+    const showHasCharge = section.querySelector(".item-filter-has-charge")?.checked || false;
     const showMagical = section.querySelector(".item-filter-magical")?.checked || false;
-    const hasFilters = search || filterType || showEquipped || showMagical;
+    const showUnidentified = section.querySelector(".item-filter-unidentified")?.checked || false;
+    const hasFilters = search || filterType || showEquipped || showHasCharge || showMagical || showUnidentified;
 
     for (const row of section.querySelectorAll("[data-item-id]")) {
       if (!hasFilters) {
@@ -473,7 +500,9 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       }
       if (visible && filterType && row.dataset.filterType !== filterType) visible = false;
       if (visible && showEquipped && row.dataset.filterEquipped !== "true") visible = false;
+      if (visible && showHasCharge && row.dataset.filterHasCharge !== "true") visible = false;
       if (visible && showMagical && row.dataset.filterMagical !== "true") visible = false;
+      if (visible && showUnidentified && row.dataset.filterUnidentified !== "true") visible = false;
       row.classList.toggle("item-hidden", !visible);
     }
   }
