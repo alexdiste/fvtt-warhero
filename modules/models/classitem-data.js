@@ -43,6 +43,13 @@ export class ClassItemData extends foundry.abstract.TypeDataModel {
         hint: "WH.ui.quantity.hint"
       }),
 
+      consumable: new fields.BooleanField({
+        initial: false,
+        required: false,
+        label: "WH.ui.consumable",
+        hint: "WH.ui.consumable.hint"
+      }),
+
       slotused: new fields.NumberField({
         initial: 1,
         required: false,
