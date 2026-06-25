@@ -188,7 +188,7 @@ export class WarheroUtility {
       'systems/fvtt-warhero/templates/items/partial-item-common-equipment.hbs',
       'systems/fvtt-warhero/templates/items/partial-item-shield-details.hbs',
       'systems/fvtt-warhero/templates/chat-skill-description.html',
-      'systems/fvtt-warhero/templates/chat-charge-depleted.html',
+      'systems/fvtt-warhero/templates/chat-charge-result.html',
     ]
     return foundry.applications.handlebars.loadTemplates(templatePaths);
   }

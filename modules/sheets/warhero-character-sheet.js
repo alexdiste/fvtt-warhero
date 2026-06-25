@@ -437,19 +437,20 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
 
     const result = await item.system.use();
 
-    if (result === "depleted") {
+    if (result === "consumed" || result === "depleted") {
       const content = await foundry.applications.handlebars.renderTemplate(
-        "systems/fvtt-warhero/templates/chat-charge-depleted.html",
+        "systems/fvtt-warhero/templates/chat-charge-result.html",
         {
           actorImg: this.actor.img,
           alias: this.actor.name,
           itemName: item.name,
+          subtitle: game.i18n.localize("WH.ui.equipment"),
+          message: result === "depleted"
+            ? game.i18n.localize("WH.chat.chargedepleted")
+            : game.i18n.localize("WH.chat.chargeused"),
         }
       );
       await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
-    }
-
-    if (result === "consumed" || result === "depleted") {
       this.render();
     }
   }
@@ -459,14 +460,41 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     const itemId = target.closest("[data-item-id]")?.dataset.itemId;
     if (!itemId) return;
     const item = this.document.items.get(itemId);
-    if (!item) return;
+    if (!item || item.system.quantity <= 0) return;
 
+    const itemName = item.name;
     const newQuantity = item.system.quantity - 1;
+
     if (newQuantity <= 0) {
-      await item.delete();
+      const destroy = await foundry.applications.api.DialogV2.confirm({
+        window: { title: game.i18n.format("WH.ui.consumeTitle", { item: itemName }) },
+        content: `<p>${game.i18n.format("WH.ui.consumeLast", { item: itemName })}</p>`,
+        yes: { label: game.i18n.localize("WH.ui.consumeDestroy"), callback: () => true },
+        no: { label: game.i18n.localize("WH.ui.consumeKeep"), callback: () => false },
+        rejectClose: false,
+        modal: true
+      });
+
+      if (destroy) {
+        await item.delete();
+      } else {
+        await item.update({ "system.quantity": 0 });
+      }
     } else {
       await item.update({ "system.quantity": newQuantity });
     }
+
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/fvtt-warhero/templates/chat-charge-result.html",
+      {
+        actorImg: this.actor.img,
+        alias: this.actor.name,
+        itemName,
+        subtitle: game.i18n.localize("WH.ui.equipment"),
+        message: game.i18n.format("WH.chat.itemconsumed", { item: itemName })
+      }
+    );
+    await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
   }
 
   /** @override */

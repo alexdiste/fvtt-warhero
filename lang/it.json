@@ -320,6 +320,7 @@
   "WH.dialog.rollmode.blindroll": "Tiro Cieco GM",
   "WH.dialog.rollmode.selfroll": "Tiro Personale",
   "WH.ui.usecharge": "Usa Carica",
+  "WH.chat.chargeused": "Carica usata",
   "WH.chat.chargedepleted": "Nessuna carica rimasta!",
   "WH.chat.skillused": "{skill} usato",
   "WH.ui.filterall": "Tutti i Tipi",
@@ -331,5 +332,10 @@
   "WH.ui.money": "Denaro",
   "WH.ui.consumable": "Consumabile",
   "WH.ui.consumableHint": "Segna questo oggetto come consumabile (torcia, razione, ecc.)",
-  "WH.ui.consume": "Consuma uno"
+  "WH.ui.consume": "Consuma uno",
+  "WH.chat.itemconsumed": "{item} consumato",
+  "WH.ui.consumeTitle": "Consuma {item}",
+  "WH.ui.consumeLast": "Questo è l'ultimo {item}. Cosa vuoi fare?",
+  "WH.ui.consumeDestroy": "Distruggi oggetto",
+  "WH.ui.consumeKeep": "Mantieni a quantità 0"
 }

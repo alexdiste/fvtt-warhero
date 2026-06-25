@@ -320,6 +320,7 @@
   "WH.dialog.rollmode.blindroll": "Blind GM Roll",
   "WH.dialog.rollmode.selfroll": "Self Roll",
   "WH.ui.usecharge": "Use Charge",
+  "WH.chat.chargeused": "Charge used",
   "WH.chat.chargedepleted": "No charges remaining!",
   "WH.chat.skillused": "{skill} used",
   "WH.ui.filterall": "All Types",
@@ -331,5 +332,10 @@
   "WH.ui.money": "Money",
   "WH.ui.consumable": "Consumable",
   "WH.ui.consumableHint": "Mark this item as consumable (torch, ration, etc.)",
-  "WH.ui.consume": "Consume one"
+  "WH.ui.consume": "Consume one",
+  "WH.chat.itemconsumed": "{item} consumed",
+  "WH.ui.consumeTitle": "Consume {item}",
+  "WH.ui.consumeLast": "This is the last {item}. What do you want to do?",
+  "WH.ui.consumeDestroy": "Destroy item",
+  "WH.ui.consumeKeep": "Keep with quantity 0"
 }
