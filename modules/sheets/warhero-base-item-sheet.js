@@ -259,12 +259,9 @@ export class WarheroBaseItemSheet extends HandlebarsApplicationMixin(foundry.app
     const el = event.currentTarget
     if ("link" in event.target.dataset) return
 
-    // Extract the data you need
-    let dragData = null
-
+    const dragData = this.document.toDragData()
     if (!dragData) return
 
-    // Set data transfer
     event.dataTransfer.setData("text/plain", JSON.stringify(dragData))
   }
 

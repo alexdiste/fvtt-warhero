@@ -19,9 +19,9 @@ export class WarheroUtility {
 
    Handlebars.registerHelper('concat', function () {
       var outStr = '';
-      for (var arg in arguments) {
-        if (typeof arguments[arg] != 'object') {
-          outStr += arguments[arg];
+      for (var i = 0; i < arguments.length; i++) {
+        if (typeof arguments[i] != 'object') {
+          outStr += arguments[i];
         }
       }
       return outStr;
@@ -240,7 +240,9 @@ export class WarheroUtility {
   /* -------------------------------------------- */
   static async displayDefenseMessage(rollData) {
     if (rollData.mode == "weapon" && rollData.defenderTokenId) {
-      let defender = game.canvas.tokens.get(rollData.defenderTokenId).actor
+      const token = game.canvas.tokens.get(rollData.defenderTokenId)
+      if (!token) return
+      let defender = token.actor
       if (game.user.isGM || (game.user.character && game.user.character === defender.id)) {
         rollData.defender = defender
         rollData.defenderWeapons = defender.getEquippedWeapons()
