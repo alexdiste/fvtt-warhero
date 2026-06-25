@@ -29,7 +29,7 @@ export class WarheroActor extends Actor {
     }
     // If the created actor has items (only applicable to duplicated actors) bypass the new actor creation logic
     if (data.items) {
-      let actor = super.create(data, options);
+      let actor = await super.create(data, options);
       return actor;
     }
     data.img = data?.img || "systems/fvtt-warhero/images/icons/cowled.svg";
@@ -447,15 +447,6 @@ export class WarheroActor extends Actor {
   }
 
   /* -------------------------------------------- */
-  async rollArmor(rollData) {
-    let armor = this.getEquippedArmor()
-    if (armor) {
-
-    }
-    return { armor: "none" }
-  }
-
-   /* -------------------------------------------- */
   updateCompetency(competency, obj, labelTab) {
     for (let key in obj) {
       if (obj[key]) {
@@ -775,11 +766,13 @@ async resetAllSkillUses(askConfirmation = true) {
       let newUse = skill.system.currentuse + value
       if (newUse > skill.system.maxuse) {
         ui.notifications.warn(game.i18n.localize("WH.notif.skillmaxuse"))
-        return
+        return false
       }
       newUse = Math.max(newUse, 0)
       await this.updateEmbeddedDocuments('Item', [{ _id: skill.id, 'system.currentuse': newUse }])
+      return true
     }
+    return false
   }
   /* -------------------------------------------- */
   async incDecQuantity(objetId, incDec = 0) {
@@ -843,11 +836,12 @@ async resetAllSkillUses(askConfirmation = true) {
   /* -------------------------------------------- */
   async spentMana(spentValue) {
     let mana = foundry.utils.deepClone(this.system.attributes.mana)
-    if (Number(spentValue) > mana.value) {
+    const cost = Number(spentValue)
+    if (isNaN(cost) || cost > mana.value) {
       ui.notifications.warn("Not enough Mana points  : you have " + mana.value + " points, tried to spend " + spentValue)
       return false
     }
-    mana.value -= Number(spentValue)
+    mana.value -= cost
     await this.update({ 'system.attributes.mana': mana })
     return true
   }

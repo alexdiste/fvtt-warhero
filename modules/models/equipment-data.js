@@ -237,18 +237,13 @@ export class EquipmentData extends foundry.abstract.TypeDataModel {
    * @returns {Promise<boolean>} Whether the item was successfully used
    */
   async use(options = {}) {
-    // Check if item can be used
     if (!this.isUsable) {
-      ui.notifications.warn("This item cannot be used (no charges remaining or not usable)");
       return false;
     }
 
-    // If item has charges, consume one
     if (this.magiccharge === "charged" && this.chargevalue < this.chargevaluemax) {
       const newValue = this.chargevalue + 1;
-      const updateData = {
-        "system.chargevalue": newValue
-      };
+      const updateData = { "system.chargevalue": newValue };
 
       if (newValue >= this.chargevaluemax) {
         updateData["system.magiccharge"] = "notapplicable";
@@ -257,10 +252,11 @@ export class EquipmentData extends foundry.abstract.TypeDataModel {
 
       await this.parent.update(updateData);
 
-      // Notify about charge consumption
       if (newValue >= this.chargevaluemax) {
-        ui.notifications.info(`${this.parent.name} has no charges remaining`);
+        return "depleted";
       }
+
+      return "consumed";
     }
 
     return true;

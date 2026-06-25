@@ -219,15 +219,12 @@ export class ArmorData extends foundry.abstract.TypeDataModel {
    */
   async use(options = {}) {
     if (!this.isUsable) {
-      ui.notifications.warn("This armor cannot be used (no charges remaining or not usable)");
       return false;
     }
 
     if (this.magiccharge === "charged" && this.chargevalue < this.chargevaluemax) {
       const newValue = this.chargevalue + 1;
-      const updateData = {
-        "system.chargevalue": newValue
-      };
+      const updateData = { "system.chargevalue": newValue };
 
       if (newValue >= this.chargevaluemax) {
         updateData["system.magiccharge"] = "notapplicable";
@@ -237,8 +234,10 @@ export class ArmorData extends foundry.abstract.TypeDataModel {
       await this.parent.update(updateData);
 
       if (newValue >= this.chargevaluemax) {
-        ui.notifications.info(`${this.parent.name} has no charges remaining`);
+        return "depleted";
       }
+
+      return "consumed";
     }
 
     return true;

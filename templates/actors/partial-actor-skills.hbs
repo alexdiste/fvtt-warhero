@@ -2,8 +2,22 @@
   data-group="{{ tab.group }}">
   {{!-- Skills Tab --}}
   <div>
-      <div class="flexcol">
+    <div class="flexcol">
       <button type="button" class="actor-sheet-button" data-action="reset-skill-use">{{localize "WH.ui.resetSkillUse"}}</button>
+    </div>
+
+    <div class="flexrow equipment-filter-bar">
+      <div class="item-filter-search-wrapper">
+        <input type="text" class="item-filter-search" placeholder="{{localize "WH.ui.searchitems"}}">
+        <i class="fa-solid fa-times item-filter-clear"></i>
+      </div>
+      <select class="item-filter-category">
+        <option value="">{{localize "WH.ui.filterall"}}</option>
+        <option value="race">{{localize "WH.ui.raceSkills"}}</option>
+        <option value="class">{{localize "WH.ui.classSkills"}}</option>
+        <option value="level">{{localize "WH.ui.skills"}}</option>
+      </select>
+      <label class="item-filter-label"><input type="checkbox" class="item-filter-passive"> {{localize "WH.ui.hidepassive"}}</label>
     </div>
 
     <div class="flexcol">
@@ -26,7 +40,7 @@
             <div class="item-filler">&nbsp;</div>
           </li>
           {{#each raceSkills as |skill key|}}
-          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}" data-item-name="{{skill.name}}" data-filter-passive="{{skill.system.unlimited}}" data-filter-category="race">
             <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
                 class="sheet-competence-img" src="{{skill.img}}" /></a>
             <span class="item-name-label-long">{{skill.name}}</a></span>
@@ -74,7 +88,7 @@
             <div class="item-filler">&nbsp;</div>
           </li>
           {{#each classSkills as |skill key|}}
-          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}" data-item-name="{{skill.name}}" data-filter-passive="{{skill.system.unlimited}}" data-filter-category="class">
             <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
                 class="sheet-competence-img" src="{{skill.img}}" /></a>
             <span class="item-name-label-long">{{skill.name}}</a></span>
@@ -121,7 +135,7 @@
             <div class="item-filler">&nbsp;</div>
           </li>
           {{#each skills as |skill key|}}
-          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}">
+          <li class="item flexrow list-item list-item-shadow" data-item-id="{{skill._id}}" data-item-name="{{skill.name}}" data-filter-passive="{{skill.system.unlimited}}" data-filter-category="level">
             <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img
                 class="sheet-competence-img" src="{{skill.img}}" /></a>
             <span class="item-name-label-long">{{skill.name}}</span>

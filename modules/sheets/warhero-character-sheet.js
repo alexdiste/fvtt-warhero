@@ -231,6 +231,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     let d100Bonus = this.actor.system.secondary.percentbonus.value || 0
     let roll = new Roll(`1d100 + ${d100Bonus}`)
     await roll.evaluate({ async: true })
+    await WarheroUtility.showDiceSoNice(roll, game.settings.get("core", "messageMode"))
 
     let diceResult = roll.terms[0].results[0].result
     let rollData = {
@@ -308,7 +309,21 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     event.preventDefault();
     const li = $(event.target).parents(".item")
     const skillId = li.data("item-id")
-    await this.actor.incDecSkillUse(skillId, 1)
+    const skill = this.actor.items.get(skillId)
+    if (!skill) return
+    const ok = await this.actor.incDecSkillUse(skillId, 1)
+    if (!ok) return
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/fvtt-warhero/templates/chat-skill-description.html",
+      {
+        actorImg: this.actor.img,
+        alias: this.actor.name,
+        skillName: skill.name,
+        skillImg: skill.img,
+        description: game.i18n.format("WH.chat.skillused", { skill: skill.name })
+      }
+    )
+    await WarheroUtility.createChatWithRollMode(this.actor.name, { content })
   }
 
   static async #onResetSkillUse(event, target) {
@@ -420,20 +435,9 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     const item = this.document.items.get(itemId);
     if (!item) return;
 
-    const system = item.system;
-    if (system.magiccharge !== "charged" || system.chargevalue >= system.chargevaluemax) return;
+    const result = await item.system.use();
 
-    const newValue = system.chargevalue + 1;
-    const updateData = { "system.chargevalue": newValue };
-
-    if (newValue >= system.chargevaluemax) {
-      updateData["system.magiccharge"] = "notapplicable";
-      updateData["system.chargevaluemax"] = 0;
-    }
-
-    await item.update(updateData);
-
-    if (newValue >= system.chargevaluemax) {
+    if (result === "depleted") {
       const content = await foundry.applications.handlebars.renderTemplate(
         "systems/fvtt-warhero/templates/chat-charge-depleted.html",
         {
@@ -445,7 +449,9 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
     }
 
-    this.render();
+    if (result === "consumed" || result === "depleted") {
+      this.render();
+    }
   }
 
   static async #onConsumeItem(event, target) {
@@ -469,6 +475,8 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     this.element.addEventListener("input", WarheroCharacterSheet.#onFilterEquipment.bind(this));
     this.element.addEventListener("change", WarheroCharacterSheet.#onFilterEquipment.bind(this));
     this.element.addEventListener("click", WarheroCharacterSheet.#onClearFilterSearch.bind(this));
+    this.element.addEventListener("input", WarheroCharacterSheet.#onFilterSkillsPowers.bind(this));
+    this.element.addEventListener("change", WarheroCharacterSheet.#onFilterSkillsPowers.bind(this));
   }
 
   /**
@@ -513,7 +521,7 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
   static #onClearFilterSearch(event) {
     const target = event.target;
     if (!target.matches(".item-filter-clear")) return;
-    const section = target.closest('[data-tab="equipment"]');
+    const section = target.closest('[data-tab]');
     if (!section) return;
     const input = section.querySelector(".item-filter-search");
     if (input) {
@@ -522,6 +530,36 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     }
   }
 
+
+  /**
+   * Filter skills/powers by search text and hide passive skills.
+   */
+  static #onFilterSkillsPowers(event) {
+    const target = event.target;
+    if (!target.matches(".item-filter-search, .item-filter-passive, .item-filter-category")) return;
+    const section = target.closest('[data-tab="skills"], [data-tab="powers"]');
+    if (!section) return;
+
+    const search = (section.querySelector(".item-filter-search")?.value || "").toLowerCase();
+    const filterCategory = section.querySelector(".item-filter-category")?.value || "";
+    const hidePassive = section.querySelector(".item-filter-passive")?.checked || false;
+    const hasFilters = search || filterCategory || hidePassive;
+
+    for (const row of section.querySelectorAll("[data-item-id]")) {
+      if (!hasFilters) {
+        row.classList.remove("item-hidden");
+        continue;
+      }
+      let visible = true;
+      if (search) {
+        const name = (row.dataset.itemName || "").toLowerCase();
+        if (!name.includes(search)) visible = false;
+      }
+      if (visible && filterCategory && row.dataset.filterCategory !== filterCategory) visible = false;
+      if (visible && hidePassive && row.dataset.filterPassive === "true") visible = false;
+      row.classList.toggle("item-hidden", !visible);
+    }
+  }
 
   /**
    * Handle drop events for item relocation between equipment slots.

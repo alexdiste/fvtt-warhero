@@ -1,9 +1,14 @@
 <section class="tab-content-scrollable tab sheet-body character-{{tab.id}} {{tab.cssClass}}" data-tab="{{tab.id}}"
   data-group="{{tab.group}}">
-  {{!-- Powers Tab --}}
-  <div>
-
-    <div class="flexcol">
+    {{!-- Powers Tab --}}
+    <div>
+      <div class="flexrow equipment-filter-bar">
+        <div class="item-filter-search-wrapper">
+          <input type="text" class="item-filter-search" placeholder="{{localize "WH.ui.searchitems"}}">
+          <i class="fa-solid fa-times item-filter-clear"></i>
+        </div>
+      </div>
+      <div class="flexcol">
 
       {{#each powers as |school schoolKey|}}
       <ul class="stat-list alternate-list">
@@ -14,7 +19,7 @@
         </li>
 
         {{#each school as |power key|}}
-        <li class="item stat flexrow list-item list-item-shadow" data-item-id="{{power._id}}">
+          <li class="item stat flexrow list-item list-item-shadow" data-item-id="{{power._id}}" data-item-name="{{power.name}}">
           <a class="item-edit item-name-img" data-action="item-edit" title="Edit Item"><img class="sheet-competence-img"
               src="{{power.img}}" /></a>
           <span class="item-name-label-long3">

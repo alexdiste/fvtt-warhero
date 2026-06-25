@@ -260,20 +260,9 @@ export class WarheroPartySheet extends WarheroActorSheet {
     const item = this.document.items.get(itemId);
     if (!item) return;
 
-    const system = item.system;
-    if (system.magiccharge !== "charged" || system.chargevalue >= system.chargevaluemax) return;
+    const result = await item.system.use();
 
-    const newValue = system.chargevalue + 1;
-    const updateData = { "system.chargevalue": newValue };
-
-    if (newValue >= system.chargevaluemax) {
-      updateData["system.magiccharge"] = "notapplicable";
-      updateData["system.chargevaluemax"] = 0;
-    }
-
-    await item.update(updateData);
-
-    if (newValue >= system.chargevaluemax) {
+    if (result === "depleted") {
       const content = await foundry.applications.handlebars.renderTemplate(
         "systems/fvtt-warhero/templates/chat-charge-depleted.html",
         {
@@ -285,7 +274,9 @@ export class WarheroPartySheet extends WarheroActorSheet {
       await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
     }
 
-    this.render();
+    if (result === "consumed" || result === "depleted") {
+      this.render();
+    }
   }
 
   static async #onConsumeItem(event, target) {

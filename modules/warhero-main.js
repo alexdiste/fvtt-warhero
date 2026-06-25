@@ -142,7 +142,7 @@ Hooks.on("hotbarDrop", (bar, data, slot) => {
   if (data.type !== "Item") return true
 
   foundry.utils.fromUuid(data.uuid).then(item => {
-    if (!item || !item.actor) return
+    if (!item || !item.actor) return null
 
     let command
     if (item.type === "weapon") {
@@ -154,15 +154,18 @@ Hooks.on("hotbarDrop", (bar, data, slot) => {
     }
 
     if (command) {
-      Macro.create({
+      return Macro.create({
         name: item.name,
         type: "script",
         img: item.img,
         command
-      }).then(macro => {
-        if (macro) game.user.assignHotbarMacro(macro, slot)
       })
     }
+    return null
+  }).then(macro => {
+    if (macro) game.user.assignHotbarMacro(macro, slot)
+  }).catch(err => {
+    console.error("Failed to create macro from hotbar drop", err)
   })
 
   return false
