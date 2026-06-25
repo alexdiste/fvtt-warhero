@@ -263,6 +263,9 @@
   background: #0e151e;
   border-radius: 4px;
 }
+.fvtt-warhero .ability-item > ul {
+  padding-left: 0;
+}
 .fvtt-warhero .list-item:nth-child(even) {
   background: rgba(255, 255, 255, 0.02);
 }

@@ -123,7 +123,7 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
         initial: false,
         required: false,
         label: "WH.ui.consumable",
-        hint: "WH.ui.consumable.hint"
+        hint: "WH.ui.consumableHint"
       }),
 
       slotused: new fields.NumberField({

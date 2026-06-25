@@ -227,7 +227,7 @@
   "WH.ui.begin": "Begin",
   "WH.ui.specialduration": "Special duration",
   "WH.ui.infinite": "Infinite",
-  "WH.uiwithineor": "Within end of round",
+  "WH.ui.withineor": "Within end of round",
   "WH.ui.beginr": "Beginning of round",
   "WH.ui.nextr": "Next round",
   "WH.ui.nextcombat": "Next combat",
@@ -328,6 +328,6 @@
   "WH.ui.classitem": "Class Item",
   "WH.ui.money": "Money",
   "WH.ui.consumable": "Consumable",
-  "WH.ui.consumable.hint": "Mark this item as consumable (torch, ration, etc.)",
+  "WH.ui.consumableHint": "Mark this item as consumable (torch, ration, etc.)",
   "WH.ui.consume": "Consume one"
 }
