@@ -1,0 +1,18 @@
+<div class="warhero-chat-card">
+  <div class="warhero-chat-card-header">
+    {{#if actorImg}}
+    <img class="header-icon" src="{{actorImg}}" alt="{{alias}}" />
+    {{/if}}
+    <div class="header-text">
+      <h4 class="header-name">{{alias}}</h4>
+      <span class="header-subtitle">{{subtitle}}</span>
+    </div>
+  </div>
+
+  <div class="warhero-chat-card-body">
+    <div class="warhero-chat-detail">
+      <span class="detail-label">{{itemName}}</span>
+      <span class="detail-value">{{message}}</span>
+    </div>
+  </div>
+</div>
