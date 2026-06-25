@@ -221,7 +221,7 @@
   "WH.ui.begin": "Inizio",
   "WH.ui.specialduration": "Durata speciale",
   "WH.ui.infinite": "Infinita",
-  "WH.uiwithineor": "Entro la fine del round",
+  "WH.ui.withineor": "Entro la fine del round",
   "WH.ui.beginr": "All' inizio del prossimo round",
   "WH.ui.nextr": "Prossimo round",
   "WH.ui.nextcombat": "Al prossimo combattimento",
@@ -328,6 +328,6 @@
   "WH.ui.classitem": "Oggetto di Classe",
   "WH.ui.money": "Denaro",
   "WH.ui.consumable": "Consumabile",
-  "WH.ui.consumable.hint": "Segna questo oggetto come consumabile (torcia, razione, ecc.)",
+  "WH.ui.consumableHint": "Segna questo oggetto come consumabile (torcia, razione, ecc.)",
   "WH.ui.consume": "Consuma uno"
 }
