@@ -3,6 +3,10 @@
   data-tab="{{ tab.id }}">
 
 <div>
+    <div class="flexrow equipment-header-top">
+      <button type="button" class="item-filter-label" data-action="restore-charges"><i class="fa-solid fa-rotate-left"></i> {{localize "WH.ui.restorecharges"}}</button>
+    </div>
+
     <div class="flexrow equipment-filter-bar">
       <div class="item-filter-search-wrapper">
         <input type="text" class="item-filter-search" placeholder="{{localize "WH.ui.searchitems"}}">
@@ -78,9 +82,19 @@
 
           {{#if item._filterHasCharge}}
           <span class="item-field-label-medium">
+            {{#if item._chargeDepleted}}
+              {{#if item._chargeLimited}}
+              <span class="no-charges">{{localize "WH.ui.depleted"}}</span>
+              {{else}}
+              <span class="no-charges">
+                <i class="fa-solid fa-bolt"></i> {{item.system.chargevalue}}/{{item.system.chargevaluemax}}
+              </span>
+              {{/if}}
+            {{else}}
             <a class="use-charge" data-action="use-charge" data-tooltip="{{localize "WH.ui.usecharge"}}">
               <i class="fa-solid fa-bolt"></i> {{item.system.chargevalue}}/{{item.system.chargevaluemax}}
             </a>
+            {{/if}}
           </span>
           {{/if}}
 

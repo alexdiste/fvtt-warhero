@@ -715,10 +715,16 @@ export class WarheroActor extends Actor {
     //console.log('[DEBUG] update resetAllSkillUses', { updates });
     await this.update(updates);
 
-    await ChatMessage.create({
-      user: game.user.id,
-      content: game.i18n.format("WH.chat.actorrested", { name: this.name })
-    });
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/fvtt-warhero/templates/chat-generic-result.html",
+      {
+        actorImg: this.img,
+        alias: this.name,
+        mode: "rest",
+        powerDescription: game.i18n.format("WH.chat.actorrested", { name: this.name })
+      }
+    );
+    await WarheroUtility.createChatWithRollMode(this.name, { content });
   }
 
   /* -------------------------------------------- */

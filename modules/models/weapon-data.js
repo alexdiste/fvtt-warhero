@@ -180,6 +180,13 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
         hint: "WH.ui.chargevaluemax.hint"
       }),
 
+      destroyWhenDepleted: new fields.BooleanField({
+        initial: false,
+        required: false,
+        label: "WH.ui.destroyWhenDepleted",
+        hint: "WH.ui.destroyWhenDepletedHint"
+      }),
+
       description: new fields.HTMLField({
         initial: "",
         required: false,
@@ -214,7 +221,7 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
 
     this.isUsable = this.magiccharge === "notapplicable" ||
       this.magiccharge === "unlimited" ||
-      (this.magiccharge === "charged" && this.chargevalue < this.chargevaluemax);
+      (this.magiccharge !== "notapplicable" && this.magiccharge !== "unlimited" && this.chargevalue < this.chargevaluemax);
 
     this.totalCost = this.cost * this.quantity;
     this.isMagical = this.magiccharge !== "notapplicable";
@@ -232,7 +239,7 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
   validateJoint(options = {}) {
     super.validateJoint(options);
 
-    if (this.magiccharge === "charged" && this.chargevaluemax <= 0) {
+    if (this.magiccharge !== "notapplicable" && this.magiccharge !== "unlimited" && this.chargevaluemax <= 0) {
       throw new foundry.data.validation.DataModelValidationFailure({
         unresolved: true,
         message: "Weapons with 'charged' magic type must have a maximum charge value greater than 0"
@@ -266,14 +273,15 @@ export class WeaponData extends foundry.abstract.TypeDataModel {
       return false;
     }
 
-    if (this.magiccharge === "charged" && this.chargevalue < this.chargevaluemax) {
+    if (this.magiccharge !== "notapplicable" && this.magiccharge !== "unlimited" && this.chargevalue < this.chargevaluemax) {
       const newValue = this.chargevalue + 1;
-      const updateData = { "system.chargevalue": newValue };
 
-      if (newValue >= this.chargevaluemax) {
-        updateData["system.magiccharge"] = "notapplicable";
-        updateData["system.chargevaluemax"] = 0;
+      if (newValue >= this.chargevaluemax && this.destroyWhenDepleted && this.magiccharge === "chargelimited") {
+        await this.parent.delete();
+        return "destroyed";
       }
+
+      const updateData = { "system.chargevalue": newValue };
 
       await this.parent.update(updateData);
 
