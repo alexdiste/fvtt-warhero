@@ -89,6 +89,18 @@
 </li>
 
 <li class="flexrow"><label class="item-field-label-medium">{{localize
+      "WH.ui.destroyWhenDepleted"
+    }}</label>
+  <input
+    type="checkbox"
+    class="item-field-label-medium"
+    name="system.destroyWhenDepleted"
+    {{checked system.destroyWhenDepleted}}
+    data-dtype="Boolean"
+  />
+</li>
+
+<li class="flexrow"><label class="item-field-label-medium">{{localize
       "WH.ui.quantity"
     }}</label>
   <input

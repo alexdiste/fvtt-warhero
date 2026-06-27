@@ -3,9 +3,10 @@
    {{!-- Equipment Tab --}}
   <div>
 
-    <div class="flexrow">
+    <div class="flexrow equipment-header-top">
       <label class="">{{localize "WH.ui.totalmoney"}} : {{totalMoney}}</label>
       <label><input type="checkbox" data-action="toggle-empty-slots"> {{localize "WH.ui.hideemptyslots"}}</label>
+      <button type="button" class="item-filter-label" data-action="restore-charges"><i class="fa-solid fa-rotate-left"></i> {{localize "WH.ui.restorecharges"}}</button>
     </div>
 
     <div class="flexrow equipment-filter-bar">

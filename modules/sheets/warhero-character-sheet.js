@@ -33,8 +33,40 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
       "toggle-empty-slots": WarheroCharacterSheet.#onToggleEmptySlots,
       "use-charge": WarheroCharacterSheet.#onUseCharge,
       "item-consume": WarheroCharacterSheet.#onConsumeItem,
+      "restore-charges": WarheroCharacterSheet.#onRestoreCharges,
     }
-  };
+  }
+
+  /* -------------------------------------------- */
+  /**
+   * Restore all daily charges on the actor's items.
+   * @param {Event} event - The triggering event
+   * @param {HTMLElement} target - The target element
+   */
+  static async #onRestoreCharges(event, target) {
+    event.preventDefault();
+    const updates = [];
+    for (const item of this.actor.items) {
+      if (item.system.magiccharge === "chargedaily" && item.system.chargevalue > 0) {
+        updates.push({ _id: item.id, "system.chargevalue": 0 });
+      }
+    }
+    if (!updates.length) return;
+    await this.actor.updateEmbeddedDocuments("Item", updates);
+    const count = updates.length;
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/fvtt-warhero/templates/chat-charge-result.html",
+      {
+        actorImg: this.actor.img,
+        alias: this.actor.name,
+        itemName: game.i18n.format("WH.chat.chargesrestored", { actor: this.actor.name, count }),
+        subtitle: game.i18n.localize("WH.ui.equipment"),
+        message: game.i18n.localize("WH.ui.restorecharges"),
+      }
+    );
+    await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
+    this.render();
+  }
 
   /** @override */
   static PARTS = {
@@ -158,6 +190,8 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     for (const [slotKey, container] of Object.entries({...formData.bodyContainers, ...formData.equipmentContainers})) {
       for (const item of container.content) {
         item._filterHasCharge = item.system.magiccharge && item.system.magiccharge !== "notapplicable";
+        item._chargeDepleted = item._filterHasCharge && item.system.chargevalue >= item.system.chargevaluemax;
+        item._chargeLimited = item._filterHasCharge && item.system.magiccharge === "chargelimited";
         item._filterMagical = item.system.isidentified && item.system.isidentified !== "notapplicable";
         item._filterUnidentified = item.system.isidentified === "unknown";
         item._filterEquipped = equippedSlots.has(slotKey);
@@ -435,7 +469,24 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
     const item = this.document.items.get(itemId);
     if (!item) return;
 
+    const itemName = item.name;
     const result = await item.system.use();
+
+    if (result === "destroyed") {
+      const content = await foundry.applications.handlebars.renderTemplate(
+        "systems/fvtt-warhero/templates/chat-charge-result.html",
+        {
+          actorImg: this.actor.img,
+          alias: this.actor.name,
+          itemName,
+          subtitle: game.i18n.localize("WH.ui.equipment"),
+          message: game.i18n.format("WH.chat.itemdestroyed", { item: itemName }),
+        }
+      );
+      await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
+      this.render();
+      return;
+    }
 
     if (result === "consumed" || result === "depleted") {
       const content = await foundry.applications.handlebars.renderTemplate(
@@ -443,14 +494,27 @@ export class WarheroCharacterSheet extends WarheroActorSheet {
         {
           actorImg: this.actor.img,
           alias: this.actor.name,
-          itemName: item.name,
+          itemName,
           subtitle: game.i18n.localize("WH.ui.equipment"),
-          message: result === "depleted"
-            ? game.i18n.localize("WH.chat.chargedepleted")
-            : game.i18n.localize("WH.chat.chargeused"),
+          message: game.i18n.localize("WH.chat.chargeused"),
         }
       );
       await WarheroUtility.createChatWithRollMode(this.actor.name, { content });
+
+      if (result === "depleted") {
+        const depletedContent = await foundry.applications.handlebars.renderTemplate(
+          "systems/fvtt-warhero/templates/chat-charge-result.html",
+          {
+            actorImg: this.actor.img,
+            alias: this.actor.name,
+            itemName,
+            subtitle: game.i18n.localize("WH.ui.equipment"),
+            message: game.i18n.localize("WH.chat.chargedepleted"),
+          }
+        );
+        await WarheroUtility.createChatWithRollMode(this.actor.name, { content: depletedContent });
+      }
+
       this.render();
     }
   }

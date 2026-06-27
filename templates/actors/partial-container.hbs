@@ -55,9 +55,19 @@
 
     {{#if item._filterHasCharge}}
     <span class="item-field-label-medium">
+      {{#if item._chargeDepleted}}
+        {{#if item._chargeLimited}}
+        <span class="no-charges">{{localize "WH.ui.depleted"}}</span>
+        {{else}}
+        <span class="no-charges">
+          <i class="fa-solid fa-bolt"></i> {{item.system.chargevalue}}/{{item.system.chargevaluemax}}
+        </span>
+        {{/if}}
+      {{else}}
       <a class="use-charge" data-action="use-charge" data-tooltip="{{localize "WH.ui.usecharge"}}">
         <i class="fa-solid fa-bolt"></i> {{item.system.chargevalue}}/{{item.system.chargevaluemax}}
       </a>
+      {{/if}}
     </span>
     {{/if}}
 
